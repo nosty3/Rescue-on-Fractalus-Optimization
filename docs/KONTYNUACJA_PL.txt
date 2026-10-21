@@ -1,3 +1,9 @@
+AKTUALIZACJA v9 — PMG, 7,764418 FPS
+Pasek różnicowy: fallback pełnego odrysowania przy starej wartości 0.
+Helpery w banku 2: $83CA..$8470 i $84B0..$84F3. Wywołania z VBI.
+Osłona buforów v8 pozostaje. Odtworzenie: scripts/rebuild_v9.py.
+Raport: WYDANIE_V9_PL.md. Zalecany zimny start CAR v9.
+
 AKTUALIZACJA v8 — NAPRAWA KLINÓW, 7.720697 FPS
 Bank2 $9214 -> $84A0: osłona własności bufora, oczekiwanie na $42=0
 przed czyszczeniem. Geometria nadal wykonuje się wcześniej.

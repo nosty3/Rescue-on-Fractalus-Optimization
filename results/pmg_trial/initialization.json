@@ -1,0 +1,246 @@
+{
+  "result": "pass",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "first_updates_after_cold_start": [
+    {
+      "i": 0,
+      "previous": 0,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 1,
+      "previous": 29,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 2,
+      "previous": 28,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 3,
+      "previous": 29,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 4,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 5,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 6,
+      "previous": 28,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 7,
+      "previous": 29,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 8,
+      "previous": 29,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 9,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 10,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 11,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 12,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 13,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 14,
+      "previous": 28,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 15,
+      "previous": 29,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 16,
+      "previous": 29,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 17,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 18,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 19,
+      "previous": 28,
+      "new": 28,
+      "same_result": true
+    },
+    {
+      "i": 20,
+      "previous": 28,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 21,
+      "previous": 29,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 22,
+      "previous": 29,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 23,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 24,
+      "previous": 30,
+      "new": 29,
+      "same_result": true
+    },
+    {
+      "i": 25,
+      "previous": 29,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 26,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 27,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 28,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 29,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 30,
+      "previous": 30,
+      "new": 30,
+      "same_result": true
+    },
+    {
+      "i": 31,
+      "previous": 30,
+      "new": 31,
+      "same_result": true
+    },
+    {
+      "i": 32,
+      "previous": 31,
+      "new": 31,
+      "same_result": true
+    },
+    {
+      "i": 33,
+      "previous": 31,
+      "new": 31,
+      "same_result": true
+    },
+    {
+      "i": 34,
+      "previous": 31,
+      "new": 31,
+      "same_result": true
+    },
+    {
+      "i": 35,
+      "previous": 31,
+      "new": 32,
+      "same_result": true
+    },
+    {
+      "i": 36,
+      "previous": 32,
+      "new": 32,
+      "same_result": true
+    },
+    {
+      "i": 37,
+      "previous": 32,
+      "new": 32,
+      "same_result": true
+    },
+    {
+      "i": 38,
+      "previous": 32,
+      "new": 34,
+      "same_result": true
+    },
+    {
+      "i": 39,
+      "previous": 34,
+      "new": 34,
+      "same_result": true
+    }
+  ]
+}

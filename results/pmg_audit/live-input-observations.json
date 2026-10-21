@@ -1,0 +1,1082 @@
+{
+  "rom_sha256": "02da0221c95fc8896720a7ca17181bbb1c3c7502dadf62d933d1ba0c341347bd",
+  "hardware": {
+    "ok": true,
+    "DMACTL": "$3f",
+    "CHACTL": "$02",
+    "DLISTL": "$10",
+    "DLISTH": "$32",
+    "HSCROL": "$00",
+    "VSCROL": "$00",
+    "PMBASE": "$08",
+    "CHBASE": "$3c",
+    "NMIEN": "$c0",
+    "DLIST": "$3210",
+    "beam_x": 0,
+    "beam_y": 248
+  },
+  "samples": [
+    {
+      "entry": "A527",
+      "sample": 0,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$3c",
+        "Y": "$23",
+        "S": "$f0",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1616302241,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 43,
+        "2875": 43,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 1,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$3d",
+        "Y": "$23",
+        "S": "$f2",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1617229653,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 42,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 31,
+        "2846": 31
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 2,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$b4",
+        "Y": "$23",
+        "S": "$ef",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1618155360,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 3,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$04",
+        "Y": "$23",
+        "S": "$f0",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1619083286,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 44,
+        "2875": 44,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 4,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$0c",
+        "Y": "$23",
+        "S": "$f2",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1620008483,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 5,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$00",
+        "Y": "$23",
+        "S": "$f4",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1620936477,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 32,
+        "2875": 33,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 6,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$e9",
+        "Y": "$23",
+        "S": "$f0",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1621861609,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 27,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A527",
+      "sample": 7,
+      "regs": {
+        "ok": true,
+        "PC": "$a527",
+        "A": "$04",
+        "X": "$a1",
+        "Y": "$23",
+        "S": "$f4",
+        "P": "$34",
+        "flags": "---B-I--",
+        "cycles": 1622788966,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 27,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 28,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 0,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$08",
+        "Y": "$07",
+        "S": "$f0",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1624909578,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 75,
+      "pmg_writes": 4,
+      "changed_writes": 1,
+      "write_sites": {
+        "A58C": 1,
+        "A594": 1,
+        "A59C": 1,
+        "A5A4": 1
+      },
+      "key_inputs": {
+        "281A": 43,
+        "2875": 43,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 1,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$08",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1625836968,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 637,
+      "pmg_writes": 57,
+      "changed_writes": 1,
+      "write_sites": {
+        "A569": 42,
+        "A574": 15
+      },
+      "key_inputs": {
+        "281A": 41,
+        "2875": 42,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 31,
+        "2846": 31
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 2,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$09",
+        "S": "$ef",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1626762701,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 75,
+      "pmg_writes": 4,
+      "changed_writes": 1,
+      "write_sites": {
+        "A58C": 1,
+        "A594": 1,
+        "A59C": 1,
+        "A5A4": 1
+      },
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 3,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$0a",
+        "S": "$f0",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1627690630,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 28,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 44,
+        "2875": 44,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 4,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$0a",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1628615829,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 28,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 5,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$0b",
+        "S": "$ec",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1629543795,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 655,
+      "pmg_writes": 57,
+      "changed_writes": 1,
+      "write_sites": {
+        "A569": 33,
+        "A574": 24
+      },
+      "key_inputs": {
+        "281A": 32,
+        "2875": 33,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 6,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$0b",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1630468966,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 28,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 27,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A55C",
+      "sample": 7,
+      "regs": {
+        "ok": true,
+        "PC": "$a55c",
+        "A": "$04",
+        "X": "$0a",
+        "Y": "$0b",
+        "S": "$f3",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1631396828,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 663,
+      "pmg_writes": 57,
+      "changed_writes": 1,
+      "write_sites": {
+        "A569": 29,
+        "A574": 28
+      },
+      "key_inputs": {
+        "281A": 28,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 0,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$08",
+        "X": "$ff",
+        "Y": "$46",
+        "S": "$f0",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1633517073,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 49,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 43,
+        "2875": 43,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 1,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$ff",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1634445660,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 49,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 31,
+        "2846": 31
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 2,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$ff",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$ef",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1635370831,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 49,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 3,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$ff",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f0",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1636298713,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 49,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 44,
+        "2875": 44,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 4,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$ff",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1637223912,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 51,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 5,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$08",
+        "X": "$ff",
+        "Y": "$18",
+        "S": "$ec",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1638151870,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 165,
+      "pmg_writes": 6,
+      "changed_writes": 6,
+      "write_sites": {
+        "A96A": 3,
+        "A97A": 3
+      },
+      "key_inputs": {
+        "281A": 32,
+        "2875": 32,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 6,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$08",
+        "X": "$ff",
+        "Y": "$0d",
+        "S": "$f2",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1639076414,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 53,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 27,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A94D",
+      "sample": 7,
+      "regs": {
+        "ok": true,
+        "PC": "$a94d",
+        "A": "$08",
+        "X": "$ff",
+        "Y": "$0c",
+        "S": "$f3",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1640004911,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 161,
+      "pmg_writes": 6,
+      "changed_writes": 6,
+      "write_sites": {
+        "A96A": 3,
+        "A97A": 3
+      },
+      "key_inputs": {
+        "281A": 28,
+        "2875": 28,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A71E",
+      "not_reached": true
+    },
+    {
+      "entry": "A8DE",
+      "sample": 0,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f2",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1648241373,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 38,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 43,
+        "2875": 43,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 1,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f2",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1649167940,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 41,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 31,
+        "2846": 31
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 2,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f0",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1650094495,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 38,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 3,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f0",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1651021069,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 38,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 44,
+        "2875": 44,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 4,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f0",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1651947630,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 38,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 41,
+        "2875": 41,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 5,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f4",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1652874181,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 101,
+      "pmg_writes": 5,
+      "changed_writes": 0,
+      "write_sites": {
+        "A8EA": 5
+      },
+      "key_inputs": {
+        "281A": 32,
+        "2875": 32,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 6,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f0",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1653800743,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 38,
+      "pmg_writes": 0,
+      "changed_writes": 0,
+      "write_sites": {},
+      "key_inputs": {
+        "281A": 27,
+        "2875": 27,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 0,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "A8DE",
+      "sample": 7,
+      "regs": {
+        "ok": true,
+        "PC": "$a8de",
+        "A": "$cc",
+        "X": "$00",
+        "Y": "$00",
+        "S": "$f4",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 1654727301,
+        "mode": "6502"
+      },
+      "mode": 2,
+      "cycles_cpu_no_dma": 101,
+      "pmg_writes": 5,
+      "changed_writes": 0,
+      "write_sites": {
+        "A8EA": 5
+      },
+      "key_inputs": {
+        "281A": 28,
+        "2875": 28,
+        "2865": 0,
+        "2866": 0,
+        "286F": 0,
+        "2835": 0,
+        "2826": 255,
+        "2845": 149,
+        "2846": 0
+      }
+    },
+    {
+      "entry": "710D",
+      "not_reached": true
+    }
+  ],
+  "method": "Actual emulator entry states, CPU-only replay with frozen hardware registers. Not a timing profile; random hardware paths are not exact emulator replays."
+}

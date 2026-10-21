@@ -1,0 +1,91 @@
+{
+  "sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "rom_bytes": 131072,
+  "cart_type": 14,
+  "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "performance": {
+    "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+    "fps": {
+      "buffer_sync": 7.720697106261212,
+      "pmg_trial": 7.764418032074795
+    },
+    "delta_fps": 0.043720925813583555,
+    "percent": 0.5662821013678601,
+    "meets_0_05_fps_threshold": false,
+    "benchmark": [
+      {
+        "variant": "buffer_sync",
+        "scenario": "straight",
+        "intervals": 453,
+        "ticks": 106917404,
+        "fps": 7.5139470978925,
+        "mode": 2
+      },
+      {
+        "variant": "buffer_sync",
+        "scenario": "right",
+        "intervals": 466,
+        "ticks": 106739566,
+        "fps": 7.742457328335024,
+        "mode": 2
+      },
+      {
+        "variant": "buffer_sync",
+        "scenario": "left",
+        "intervals": 472,
+        "ticks": 106704003,
+        "fps": 7.844759301110756,
+        "mode": 2
+      },
+      {
+        "variant": "buffer_sync",
+        "scenario": "fast_right",
+        "intervals": 469,
+        "ticks": 106881840,
+        "fps": 7.7819288805282545,
+        "mode": 2
+      },
+      {
+        "variant": "pmg_trial",
+        "scenario": "straight",
+        "intervals": 457,
+        "ticks": 106739564,
+        "fps": 7.59292503293343,
+        "mode": 2
+      },
+      {
+        "variant": "pmg_trial",
+        "scenario": "right",
+        "intervals": 469,
+        "ticks": 106952973,
+        "fps": 7.776753223119847,
+        "mode": 2
+      },
+      {
+        "variant": "pmg_trial",
+        "scenario": "left",
+        "intervals": 477,
+        "ticks": 106775134,
+        "fps": 7.922579216805291,
+        "mode": 2
+      },
+      {
+        "variant": "pmg_trial",
+        "scenario": "fast_right",
+        "intervals": 468,
+        "ticks": 106881843,
+        "fps": 7.765336063675474,
+        "mode": 2
+      }
+    ],
+    "baseline": "v8 standard four-scenario measurement",
+    "status": "released_v9",
+    "threshold_exception": "User explicitly accepted the small gain after the first trial; this does not change the default threshold for future work."
+  },
+  "sources": {
+    "src/pmg_short_loops.asm": "deba9bd09abb2eccfb64d941fecda3908f6380f617702eefb173ddfd333baf79",
+    "src/pmg_bar_delta.asm": "28b7bdda807a8fddb7624a274ad958c6bbe2750783d1cf67515af60be73b7921",
+    "scripts/build_pmg_trial.py": "56059929cab402a60dd6dd1a821b18fbec8e1039f8b3baec1ca5643cccde68c1",
+    "scripts/rebuild_v9.py": "16baf93c9fc3cd0908bc117e55e22d3d818a502e610346ffc3ee63f6dcdf7e53"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "variant": "pmg_trial",
+  "sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "base": "buffer_sync",
+  "ram_patches": [
+    {
+      "address": 32491,
+      "hex": "a90e8d00d52000900848a9028d00d5682860eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea8e387faabd00808d337fbd009eaabd00801869008d3d7fa200bd008069008d497fbd009eaabd0080690060eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea"
+    }
+  ],
+  "labels": {
+    "copy21": 33738,
+    "clear5": 33769,
+    "draw5": 33794,
+    "clear3": 33841,
+    "draw3": 33873
+  }
+}

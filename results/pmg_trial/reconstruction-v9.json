@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "rom_bytes": 131072,
+  "ips_verified": true,
+  "fixtures_required": false
+}

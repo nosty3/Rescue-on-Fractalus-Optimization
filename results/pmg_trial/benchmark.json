@@ -1,0 +1,66 @@
+[
+  {
+    "variant": "buffer_sync",
+    "scenario": "straight",
+    "intervals": 453,
+    "ticks": 106917404,
+    "fps": 7.5139470978925,
+    "mode": 2
+  },
+  {
+    "variant": "buffer_sync",
+    "scenario": "right",
+    "intervals": 466,
+    "ticks": 106739566,
+    "fps": 7.742457328335024,
+    "mode": 2
+  },
+  {
+    "variant": "buffer_sync",
+    "scenario": "left",
+    "intervals": 472,
+    "ticks": 106704003,
+    "fps": 7.844759301110756,
+    "mode": 2
+  },
+  {
+    "variant": "buffer_sync",
+    "scenario": "fast_right",
+    "intervals": 469,
+    "ticks": 106881840,
+    "fps": 7.7819288805282545,
+    "mode": 2
+  },
+  {
+    "variant": "pmg_trial",
+    "scenario": "straight",
+    "intervals": 457,
+    "ticks": 106739564,
+    "fps": 7.59292503293343,
+    "mode": 2
+  },
+  {
+    "variant": "pmg_trial",
+    "scenario": "right",
+    "intervals": 469,
+    "ticks": 106952973,
+    "fps": 7.776753223119847,
+    "mode": 2
+  },
+  {
+    "variant": "pmg_trial",
+    "scenario": "left",
+    "intervals": 477,
+    "ticks": 106775134,
+    "fps": 7.922579216805291,
+    "mode": 2
+  },
+  {
+    "variant": "pmg_trial",
+    "scenario": "fast_right",
+    "intervals": 468,
+    "ticks": 106881843,
+    "fps": 7.765336063675474,
+    "mode": 2
+  }
+]

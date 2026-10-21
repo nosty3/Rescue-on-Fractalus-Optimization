@@ -1,0 +1,44 @@
+{
+  "result": "pass",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "cases": 5268,
+  "summary": {
+    "0xa527": {
+      "cases": 600,
+      "cycles_saved_sum": 63600,
+      "min_saved": 106,
+      "max_saved": 106
+    },
+    "0xa8de": {
+      "cases": 600,
+      "cycles_saved_sum": 12576,
+      "min_saved": 0,
+      "max_saved": 44
+    },
+    "0xa94d": {
+      "cases": 600,
+      "cycles_saved_sum": 7188,
+      "min_saved": 0,
+      "max_saved": 12
+    },
+    "bar": {
+      "cases": 3136,
+      "cycles_saved_sum": 952820,
+      "min_saved": -233,
+      "max_saved": 621
+    },
+    "bar-fallback": {
+      "cases": 300,
+      "cycles_saved_sum": -4527,
+      "min_saved": -23,
+      "max_saved": 0
+    },
+    "live": {
+      "cases": 32,
+      "cycles_saved_sum": 1715,
+      "min_saved": 0,
+      "max_saved": 563
+    }
+  },
+  "comparison": "all RAM except dead stack, GTIA registers, A/X/Y/P/SP; delta bar requires coherent previous image, fallback covers old=0 or out of range"
+}

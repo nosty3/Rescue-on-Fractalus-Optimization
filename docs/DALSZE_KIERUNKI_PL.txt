@@ -1,3 +1,8 @@
+AKTUALIZACJA v9 — przyjęto pierwszą próbę PMG
+Zysk +0,043721 FPS przyjęty na wyraźną prośbę użytkownika jako wyjątek
+od progu +0,05. Pozostałe pomysły PMG pozostają w AUDYT_PMG_PL.md.
+Nie rozszerzono implementacji na renderer RAM, RANDOM ani przewijanie.
+
 AKTUALIZACJA v8 — SYNCHRONIZACJA WYŚWIETLANIA
 Utrzymywać test braku czyszczenia przed potwierdzeniem VBI ($42=0).
 Testy końcowego RAM nie wykrywają wszystkich błędów czasu wyświetlania.

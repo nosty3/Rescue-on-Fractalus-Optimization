@@ -1,0 +1,64 @@
+[
+  {
+    "state": "level8",
+    "entry": "710D",
+    "reached": false,
+    "mode": 2
+  },
+  {
+    "state": "level8",
+    "entry": "A71E",
+    "reached": true,
+    "mode": 2,
+    "regs": {
+      "ok": true,
+      "PC": "$a71e",
+      "A": "$7f",
+      "X": "$00",
+      "Y": "$00",
+      "S": "$f2",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 1728279715,
+      "mode": "6502"
+    },
+    "inputs": {
+      "2865": 0,
+      "2866": 0,
+      "2835": 0,
+      "286F": 0,
+      "2826": 255
+    }
+  },
+  {
+    "state": "level16",
+    "entry": "710D",
+    "reached": false,
+    "mode": 0
+  },
+  {
+    "state": "level16",
+    "entry": "A71E",
+    "reached": true,
+    "mode": 2,
+    "regs": {
+      "ok": true,
+      "PC": "$a71e",
+      "A": "$7f",
+      "X": "$00",
+      "Y": "$00",
+      "S": "$f2",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 1767612511,
+      "mode": "6502"
+    },
+    "inputs": {
+      "2865": 0,
+      "2866": 0,
+      "2835": 0,
+      "286F": 0,
+      "2826": 255
+    }
+  }
+]

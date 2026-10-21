@@ -1,0 +1,30 @@
+{
+  "result": "pass",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "checks": [
+    {
+      "scenario": "cold",
+      "entries": 80,
+      "coherent_nonzero_previous": 80,
+      "mode": 2
+    },
+    {
+      "scenario": "flight",
+      "entries": 80,
+      "coherent_nonzero_previous": 80,
+      "mode": 2
+    },
+    {
+      "scenario": "level10",
+      "entries": 80,
+      "coherent_nonzero_previous": 80,
+      "mode": 2
+    },
+    {
+      "scenario": "level26",
+      "entries": 80,
+      "coherent_nonzero_previous": 80,
+      "mode": 2
+    }
+  ]
+}
