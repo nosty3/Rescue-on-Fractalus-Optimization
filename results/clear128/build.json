@@ -1,0 +1,17 @@
+{
+  "sha256": "268a401d9bb0cfdffa627adec73ef79b901c7d08813cefa4426eba24ce8713f2",
+  "rom_bytes": 131072,
+  "cart_type": 14,
+  "variants": [
+    {
+      "bank": 6,
+      "buffer_x": 3,
+      "stores": 1880
+    },
+    {
+      "bank": 8,
+      "buffer_x": 51,
+      "stores": 1880
+    }
+  ]
+}

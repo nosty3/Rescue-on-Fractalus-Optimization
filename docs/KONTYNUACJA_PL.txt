@@ -1,3 +1,7 @@
+AKTUALIZACJA v4: patrz WYDANIE_V4_PL.txt. ROM ma 128 KiB, bank stały 15;
+czyszczenie jest w bankach 6 i 8, osłona VBI obsługuje 2/5/6/8.
+Poniższa mapa zachowuje opis etapu v3 jako punkt odniesienia.
+
 MAPA KODU I STAN PRAC
 
 Najpierw README_PL.md, ODTWORZENIE_PL.txt i WYDANIE_V3_PL.txt.

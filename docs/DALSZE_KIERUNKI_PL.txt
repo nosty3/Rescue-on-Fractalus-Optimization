@@ -1,3 +1,10 @@
+AKTUALIZACJA v4: punkt 1 wdrożono, uzyskując 7,316840 FPS.
+Rozszerzenie do 128 KiB z punktu 8 jest już zrealizowane.
+Kolejny priorytet: wypełnianie $9308 (12 477 061 taktów, około 11,7%
+ze 106 704 000 w świeżym profilu v4). Nadal bez nowego wdrożenia.
+Wyniki profilu: results/clear128/v4-callgraph.json; bankowany adres
+$02B308 oznacza CPU $9308 w banku 2. Poniżej historyczna lista hipotez.
+
 DALSZE KIERUNKI — HIPOTEZY, NIE POTWIERDZONE ZYSKI
 
 1. Czyszczenie bitmapy $9214: pierwotny profil około 5,4% czasu maszyny.

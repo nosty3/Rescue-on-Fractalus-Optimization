@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "clear_cases": 456,
+  "renderer_scenes": 58,
+  "banks": [
+    2,
+    5,
+    6,
+    8
+  ],
+  "fast_paths": [
+    {
+      "x": 3,
+      "old": 9792,
+      "new": 7586,
+      "saved": 2206
+    },
+    {
+      "x": 51,
+      "old": 9792,
+      "new": 7590,
+      "saved": 2202
+    }
+  ],
+  "fallback_saved_cycles": -21
+}
