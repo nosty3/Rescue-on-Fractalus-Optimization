@@ -1,3 +1,11 @@
+NOWY AUDYT v5 — 21.10.2026
+Aktualne zestawienie: OPCJE_OPTYMALIZACJI_V5_PL.md.
+Zebrano cztery świeże profile; największe priorytety: pominięcie normalizacji
+dzielenia (warunek martwego stanu), krótkie odcinki 4/5, kod stałych komend
+geometrii i tablicowa interpolacja RAM. Dostępne puste banki 10–14: 40 KiB.
+Są to modele i hipotezy, bez nowego ROM-u lub nowego pomiaru FPS.
+Poniżej pozostaje historyczny zapis kolejnych etapów badań.
+
 AKTUALIZACJA v5: wypełnianie wdrożono w banku 9. Wynik 7,367256 FPS;
 czas samego wypełniania w 58 scenach spadł o 7,26%. Warianty fill_zero
 i fill_first odrzucono: pierwszy zwiększa koszt CPU, drugi pogarsza średni FPS.

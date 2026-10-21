@@ -1,0 +1,742 @@
+{
+  "ticks_each": 106704000,
+  "profiles": [
+    {
+      "scenario": "straight",
+      "key": "2:982a",
+      "name": "mountain",
+      "calls": 10065,
+      "own": 36102147,
+      "inclusive": 36102147,
+      "own_percent": 33.83392094017094
+    },
+    {
+      "scenario": "straight",
+      "key": "2:9308",
+      "name": "fill",
+      "calls": 431,
+      "own": 11511062,
+      "inclusive": 11511062,
+      "own_percent": 10.787844879292248
+    },
+    {
+      "scenario": "straight",
+      "key": "2:8224",
+      "name": "division",
+      "calls": 20824,
+      "own": 9805318,
+      "inclusive": 9805318,
+      "own_percent": 9.189269380716748
+    },
+    {
+      "scenario": "straight",
+      "key": "2:87d3",
+      "name": "terrain_other",
+      "calls": 430,
+      "own": 7151407,
+      "inclusive": 65240880,
+      "own_percent": 6.70209832808517
+    },
+    {
+      "scenario": "straight",
+      "key": "2:8309",
+      "name": "geometry",
+      "calls": 430,
+      "own": 6779548,
+      "inclusive": 8408903,
+      "own_percent": 6.3536024891288045
+    },
+    {
+      "scenario": "straight",
+      "key": "2:85d4",
+      "name": "projection_other",
+      "calls": 10413,
+      "own": 5196371,
+      "inclusive": 14984323,
+      "own_percent": 4.86989334982756
+    },
+    {
+      "scenario": "straight",
+      "key": "2:9627",
+      "name": "clipping",
+      "calls": 14681,
+      "own": 5189126,
+      "inclusive": 42158543,
+      "own_percent": 4.863103538761433
+    },
+    {
+      "scenario": "straight",
+      "key": "2:9214",
+      "name": "clear",
+      "calls": 431,
+      "own": 4946693,
+      "inclusive": 4946693,
+      "own_percent": 4.635902121757385
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:7eeb",
+      "name": "interpolation",
+      "calls": 2250,
+      "own": 2168049,
+      "inclusive": 2168049,
+      "own_percent": 2.0318347953216374
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:7310",
+      "name": "flight_logic",
+      "calls": 1500,
+      "own": 1940870,
+      "inclusive": 3074985,
+      "own_percent": 1.8189289998500524
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:b91c",
+      "name": "sound_main",
+      "calls": 3000,
+      "own": 1678763,
+      "inclusive": 3725787,
+      "own_percent": 1.5732896611186085
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:b46c",
+      "name": "VBI",
+      "calls": 3000,
+      "own": 1355635,
+      "inclusive": 12590974,
+      "own_percent": 1.270463150397361
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:7cd6",
+      "name": "multiply_RAM",
+      "calls": 4500,
+      "own": 607058,
+      "inclusive": 607058,
+      "own_percent": 0.5689177537861748
+    },
+    {
+      "scenario": "straight",
+      "key": "2:814c",
+      "name": "multiply_ROM",
+      "calls": 1722,
+      "own": 658467,
+      "inclusive": 658467,
+      "own_percent": 0.6170968286099865
+    },
+    {
+      "scenario": "straight",
+      "key": "ram:aeef",
+      "name": "DLI_WSYNC",
+      "calls": 3000,
+      "own": 1067132,
+      "inclusive": 1067132,
+      "own_percent": 1.000086219823062
+    },
+    {
+      "scenario": "right",
+      "key": "2:982a",
+      "name": "mountain",
+      "calls": 11272,
+      "own": 37215471,
+      "inclusive": 37215471,
+      "own_percent": 34.87729700854701
+    },
+    {
+      "scenario": "right",
+      "key": "2:9308",
+      "name": "fill",
+      "calls": 441,
+      "own": 8030056,
+      "inclusive": 8030056,
+      "own_percent": 7.5255435597540865
+    },
+    {
+      "scenario": "right",
+      "key": "2:8224",
+      "name": "division",
+      "calls": 21803,
+      "own": 10268872,
+      "inclusive": 10268872,
+      "own_percent": 9.623699205278152
+    },
+    {
+      "scenario": "right",
+      "key": "2:87d3",
+      "name": "terrain_other",
+      "calls": 440,
+      "own": 7292674,
+      "inclusive": 68528061,
+      "own_percent": 6.834489803568751
+    },
+    {
+      "scenario": "right",
+      "key": "2:8309",
+      "name": "geometry",
+      "calls": 440,
+      "own": 6888345,
+      "inclusive": 8629508,
+      "own_percent": 6.455563990103464
+    },
+    {
+      "scenario": "right",
+      "key": "2:85d4",
+      "name": "projection_other",
+      "calls": 10898,
+      "own": 5575573,
+      "inclusive": 15820411,
+      "own_percent": 5.225270842705053
+    },
+    {
+      "scenario": "right",
+      "key": "2:9627",
+      "name": "clipping",
+      "calls": 15074,
+      "own": 5664991,
+      "inclusive": 44467443,
+      "own_percent": 5.309070887689309
+    },
+    {
+      "scenario": "right",
+      "key": "2:9214",
+      "name": "clear",
+      "calls": 440,
+      "own": 5089401,
+      "inclusive": 5089401,
+      "own_percent": 4.769644062078273
+    },
+    {
+      "scenario": "right",
+      "key": "ram:7eeb",
+      "name": "interpolation",
+      "calls": 2250,
+      "own": 2166577,
+      "inclusive": 2166577,
+      "own_percent": 2.0304552781526466
+    },
+    {
+      "scenario": "right",
+      "key": "ram:7310",
+      "name": "flight_logic",
+      "calls": 1500,
+      "own": 1788223,
+      "inclusive": 2937630,
+      "own_percent": 1.6758725071225071
+    },
+    {
+      "scenario": "right",
+      "key": "ram:b91c",
+      "name": "sound_main",
+      "calls": 3000,
+      "own": 1601369,
+      "inclusive": 3450798,
+      "own_percent": 1.5007581721397512
+    },
+    {
+      "scenario": "right",
+      "key": "ram:b46c",
+      "name": "VBI",
+      "calls": 3000,
+      "own": 1346670,
+      "inclusive": 12523029,
+      "own_percent": 1.2620614035087718
+    },
+    {
+      "scenario": "right",
+      "key": "ram:7cd6",
+      "name": "multiply_RAM",
+      "calls": 4500,
+      "own": 619450,
+      "inclusive": 619450,
+      "own_percent": 0.5805311890838206
+    },
+    {
+      "scenario": "right",
+      "key": "2:814c",
+      "name": "multiply_ROM",
+      "calls": 1762,
+      "own": 732370,
+      "inclusive": 732370,
+      "own_percent": 0.6863566501724396
+    },
+    {
+      "scenario": "right",
+      "key": "ram:aeef",
+      "name": "DLI_WSYNC",
+      "calls": 3000,
+      "own": 1067137,
+      "inclusive": 1067137,
+      "own_percent": 1.000090905683011
+    },
+    {
+      "scenario": "left",
+      "key": "2:982a",
+      "name": "mountain",
+      "calls": 9415,
+      "own": 32679690,
+      "inclusive": 32679690,
+      "own_percent": 30.626490103463787
+    },
+    {
+      "scenario": "left",
+      "key": "2:9308",
+      "name": "fill",
+      "calls": 448,
+      "own": 11674084,
+      "inclusive": 11674084,
+      "own_percent": 10.940624531414006
+    },
+    {
+      "scenario": "left",
+      "key": "2:8224",
+      "name": "division",
+      "calls": 21989,
+      "own": 10430959,
+      "inclusive": 10430959,
+      "own_percent": 9.775602601589444
+    },
+    {
+      "scenario": "left",
+      "key": "2:87d3",
+      "name": "terrain_other",
+      "calls": 448,
+      "own": 7407338,
+      "inclusive": 64252804,
+      "own_percent": 6.941949692607587
+    },
+    {
+      "scenario": "left",
+      "key": "2:8309",
+      "name": "geometry",
+      "calls": 447,
+      "own": 7138508,
+      "inclusive": 8850991,
+      "own_percent": 6.690009746588694
+    },
+    {
+      "scenario": "left",
+      "key": "2:85d4",
+      "name": "projection_other",
+      "calls": 10997,
+      "own": 5721754,
+      "inclusive": 16136267,
+      "own_percent": 5.362267581346528
+    },
+    {
+      "scenario": "left",
+      "key": "2:9627",
+      "name": "clipping",
+      "calls": 15207,
+      "own": 5544184,
+      "inclusive": 39771186,
+      "own_percent": 5.195853951117109
+    },
+    {
+      "scenario": "left",
+      "key": "2:9214",
+      "name": "clear",
+      "calls": 447,
+      "own": 5171742,
+      "inclusive": 5171742,
+      "own_percent": 4.846811740890688
+    },
+    {
+      "scenario": "left",
+      "key": "ram:7eeb",
+      "name": "interpolation",
+      "calls": 2250,
+      "own": 2167267,
+      "inclusive": 2167267,
+      "own_percent": 2.031101926825611
+    },
+    {
+      "scenario": "left",
+      "key": "ram:7310",
+      "name": "flight_logic",
+      "calls": 1500,
+      "own": 1802367,
+      "inclusive": 2977257,
+      "own_percent": 1.6891278677462889
+    },
+    {
+      "scenario": "left",
+      "key": "ram:b91c",
+      "name": "sound_main",
+      "calls": 3000,
+      "own": 1675543,
+      "inclusive": 3786230,
+      "own_percent": 1.570271967311441
+    },
+    {
+      "scenario": "left",
+      "key": "ram:b46c",
+      "name": "VBI",
+      "calls": 3000,
+      "own": 1355504,
+      "inclusive": 12822781,
+      "own_percent": 1.2703403808666967
+    },
+    {
+      "scenario": "left",
+      "key": "ram:7cd6",
+      "name": "multiply_RAM",
+      "calls": 4500,
+      "own": 618000,
+      "inclusive": 618000,
+      "own_percent": 0.5791722896986055
+    },
+    {
+      "scenario": "left",
+      "key": "2:814c",
+      "name": "multiply_ROM",
+      "calls": 1794,
+      "own": 723477,
+      "inclusive": 723477,
+      "own_percent": 0.6780223796671165
+    },
+    {
+      "scenario": "left",
+      "key": "ram:aeef",
+      "name": "DLI_WSYNC",
+      "calls": 3000,
+      "own": 1066911,
+      "inclusive": 1066911,
+      "own_percent": 0.9998791048133153
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:982a",
+      "name": "mountain",
+      "calls": 11280,
+      "own": 37244197,
+      "inclusive": 37244197,
+      "own_percent": 34.90421821112611
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:9308",
+      "name": "fill",
+      "calls": 441,
+      "own": 8006867,
+      "inclusive": 8006867,
+      "own_percent": 7.503811478482531
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:8224",
+      "name": "division",
+      "calls": 21792,
+      "own": 10259996,
+      "inclusive": 10259996,
+      "own_percent": 9.615380866696656
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:87d3",
+      "name": "terrain_other",
+      "calls": 440,
+      "own": 7289899,
+      "inclusive": 68574223,
+      "own_percent": 6.831889151297046
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:8309",
+      "name": "geometry",
+      "calls": 440,
+      "own": 6876431,
+      "inclusive": 8624646,
+      "own_percent": 6.444398523016944
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:85d4",
+      "name": "projection_other",
+      "calls": 10893,
+      "own": 5571695,
+      "inclusive": 15807657,
+      "own_percent": 5.221636489728595
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:9627",
+      "name": "clipping",
+      "calls": 15074,
+      "own": 5672790,
+      "inclusive": 44512024,
+      "own_percent": 5.316379892037787
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:9214",
+      "name": "clear",
+      "calls": 440,
+      "own": 5095588,
+      "inclusive": 5095588,
+      "own_percent": 4.775442345179187
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:7eeb",
+      "name": "interpolation",
+      "calls": 2250,
+      "own": 2166548,
+      "inclusive": 2166548,
+      "own_percent": 2.0304281001649422
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:7310",
+      "name": "flight_logic",
+      "calls": 1500,
+      "own": 1788127,
+      "inclusive": 2936596,
+      "own_percent": 1.675782538611486
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:b91c",
+      "name": "sound_main",
+      "calls": 3000,
+      "own": 1601449,
+      "inclusive": 3450885,
+      "own_percent": 1.5008331458989355
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:b46c",
+      "name": "VBI",
+      "calls": 3000,
+      "own": 1346294,
+      "inclusive": 12517732,
+      "own_percent": 1.2617090268406057
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:7cd6",
+      "name": "multiply_RAM",
+      "calls": 4500,
+      "own": 618325,
+      "inclusive": 618325,
+      "own_percent": 0.5794768705952916
+    },
+    {
+      "scenario": "fast_right",
+      "key": "2:814c",
+      "name": "multiply_ROM",
+      "calls": 1761,
+      "own": 734509,
+      "inclusive": 734509,
+      "own_percent": 0.6883612610586295
+    },
+    {
+      "scenario": "fast_right",
+      "key": "ram:aeef",
+      "name": "DLI_WSYNC",
+      "calls": 3000,
+      "own": 1067130,
+      "inclusive": 1067130,
+      "own_percent": 1.0000843454790824
+    }
+  ],
+  "summary": {
+    "2:982a": {
+      "name": "mountain",
+      "mean_calls": 10508.0,
+      "mean_own": 35810376.25,
+      "mean_inclusive": 35810376.25,
+      "own_percent": 33.56048156582696,
+      "own_percent_range": [
+        30.626490103463787,
+        34.90421821112611
+      ]
+    },
+    "2:9308": {
+      "name": "fill",
+      "mean_calls": 440.25,
+      "mean_own": 9805517.25,
+      "mean_inclusive": 9805517.25,
+      "own_percent": 9.189456112235717,
+      "own_percent_range": [
+        7.503811478482531,
+        10.940624531414006
+      ]
+    },
+    "2:8224": {
+      "name": "division",
+      "mean_calls": 21602.0,
+      "mean_own": 10191286.25,
+      "mean_inclusive": 10191286.25,
+      "own_percent": 9.550988013570251,
+      "own_percent_range": [
+        9.189269380716748,
+        9.775602601589444
+      ]
+    },
+    "2:87d3": {
+      "name": "terrain_other",
+      "mean_calls": 439.5,
+      "mean_own": 7285329.5,
+      "mean_inclusive": 66648992.0,
+      "own_percent": 6.827606743889639,
+      "own_percent_range": [
+        6.70209832808517,
+        6.941949692607587
+      ]
+    },
+    "2:8309": {
+      "name": "geometry",
+      "mean_calls": 439.25,
+      "mean_own": 6920708.0,
+      "mean_inclusive": 8628512.0,
+      "own_percent": 6.485893687209477,
+      "own_percent_range": [
+        6.3536024891288045,
+        6.690009746588694
+      ]
+    },
+    "2:85d4": {
+      "name": "projection_other",
+      "mean_calls": 10800.25,
+      "mean_own": 5516348.25,
+      "mean_inclusive": 15687164.5,
+      "own_percent": 5.169767065901934,
+      "own_percent_range": [
+        4.86989334982756,
+        5.362267581346528
+      ]
+    },
+    "2:9627": {
+      "name": "clipping",
+      "mean_calls": 15009.0,
+      "mean_own": 5517772.75,
+      "mean_inclusive": 42727299.0,
+      "own_percent": 5.171102067401409,
+      "own_percent_range": [
+        4.863103538761433,
+        5.316379892037787
+      ]
+    },
+    "2:9214": {
+      "name": "clear",
+      "mean_calls": 439.5,
+      "mean_own": 5075856.0,
+      "mean_inclusive": 5075856.0,
+      "own_percent": 4.756950067476383,
+      "own_percent_range": [
+        4.635902121757385,
+        4.846811740890688
+      ]
+    },
+    "ram:7eeb": {
+      "name": "interpolation",
+      "mean_calls": 2250.0,
+      "mean_own": 2167110.25,
+      "mean_inclusive": 2167110.25,
+      "own_percent": 2.030955025116209,
+      "own_percent_range": [
+        2.0304281001649422,
+        2.0318347953216374
+      ]
+    },
+    "ram:7310": {
+      "name": "flight_logic",
+      "mean_calls": 1500.0,
+      "mean_own": 1829896.75,
+      "mean_inclusive": 2981617.0,
+      "own_percent": 1.7149279783325837,
+      "own_percent_range": [
+        1.675782538611486,
+        1.8189289998500524
+      ]
+    },
+    "ram:b91c": {
+      "name": "sound_main",
+      "mean_calls": 3000.0,
+      "mean_own": 1639281.0,
+      "mean_inclusive": 3603425.0,
+      "own_percent": 1.536288236617184,
+      "own_percent_range": [
+        1.5007581721397512,
+        1.5732896611186085
+      ]
+    },
+    "ram:b46c": {
+      "name": "VBI",
+      "mean_calls": 3000.0,
+      "mean_own": 1351025.75,
+      "mean_inclusive": 12613629.0,
+      "own_percent": 1.2661434904033588,
+      "own_percent_range": [
+        1.2617090268406057,
+        1.270463150397361
+      ]
+    },
+    "ram:7cd6": {
+      "name": "multiply_RAM",
+      "mean_calls": 4500.0,
+      "mean_own": 615708.25,
+      "mean_inclusive": 615708.25,
+      "own_percent": 0.5770245257909732,
+      "own_percent_range": [
+        0.5689177537861748,
+        0.5805311890838206
+      ]
+    },
+    "2:814c": {
+      "name": "multiply_ROM",
+      "mean_calls": 1759.75,
+      "mean_own": 712205.75,
+      "mean_inclusive": 712205.75,
+      "own_percent": 0.667459279877043,
+      "own_percent_range": [
+        0.6170968286099865,
+        0.6883612610586295
+      ]
+    },
+    "ram:aeef": {
+      "name": "DLI_WSYNC",
+      "mean_calls": 3000.0,
+      "mean_own": 1067077.5,
+      "mean_inclusive": 1067077.5,
+      "own_percent": 1.0000351439496176,
+      "own_percent_range": [
+        0.9998791048133153,
+        1.000090905683011
+      ]
+    }
+  },
+  "trace_statistics": {
+    "divider_calls": 2766,
+    "normalization_shifts": {
+      "4": 198,
+      "3": 660,
+      "5": 52,
+      "2": 1559,
+      "1": 281,
+      "8": 2,
+      "7": 4,
+      "6": 10
+    },
+    "mean_shifts": 2.3626174981923356,
+    "same_previous_divisor": 949,
+    "unique_divisors": 1558,
+    "zero_numerators": 4,
+    "total_pixel_writes": 13893,
+    "consecutive_pixel_same_address": 5019,
+    "fill_first_above32": 501,
+    "fill_columns": 2436,
+    "total_page_penalties": 55116,
+    "branch_page_penalties": 17700,
+    "empty_rom_banks": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "baseline_fps": 7.367256208389218,
+  "machine_ticks": 106704000,
+  "method": "Fnew=F/(1-alpha*delta_CPU/T); alpha=1 low, 1.5 high are sensitivity assumptions, not a confidence interval. No patch or new FPS measured. Budgets may fail; do not add overlapping rows.",
+  "rows": [
+    {
+      "name": "division_no_normalization",
+      "saved_cpu_cycles_3000_frames": [
+        1444350.6435285609,
+        1444350.6435285609
+      ],
+      "fps_delta_sensitivity": [
+        0.10109193134009331,
+        0.15268545577388704
+      ],
+      "assumption": "Observed quotient/cycle model; assumes normalized scratch and V dead, no new guard/glue."
+    },
+    {
+      "name": "width4_width5",
+      "saved_cpu_cycles_3000_frames": [
+        766889.6120689656,
+        1453115.8189655172
+      ],
+      "fps_delta_sensitivity": [
+        0.053332323630265854,
+        0.15363136392244758
+      ],
+      "assumption": "Budget: 35..55 cycles gross per target; 5-cycle dispatch per width>3. Requires code in same bank/RAM, no per-leaf switching."
+    },
+    {
+      "name": "geometry_commands",
+      "saved_cpu_cycles_3000_frames": [
+        377755.0,
+        871911.25
+      ],
+      "fps_delta_sensitivity": [
+        0.026174326658484404,
+        0.09142071980157684
+      ],
+      "assumption": "Budget: save 20..45 cycles for each of 45 points, subtract 40 per invocation for banking."
+    },
+    {
+      "name": "interpolation_lookup",
+      "saved_cpu_cycles_3000_frames": [
+        450000,
+        787500
+      ],
+      "fps_delta_sensitivity": [
+        0.03120132224457617,
+        0.0824710443592469
+      ],
+      "assumption": "Budget: net 200..350 cycles saved per call including lookup setup/banking; arithmetic verified, assembly cost unverified."
+    },
+    {
+      "name": "fill_late_rows",
+      "saved_cpu_cycles_3000_frames": [
+        57042.737068965514,
+        133099.7198275862
+      ],
+      "fps_delta_sensitivity": [
+        0.0039405574204876,
+        0.01381041807257688
+      ],
+      "assumption": "Budget: 15..35 cycles net for 501/2436 columns starting after row32; no extra per-column banking."
+    },
+    {
+      "name": "layout_pages",
+      "saved_cpu_cycles_3000_frames": [
+        104411.56034482758,
+        271470.05689655175
+      ],
+      "fps_delta_sensitivity": [
+        0.007216038330331465,
+        0.028222715421504674
+      ],
+      "assumption": "Assume 25..65% observed page penalties removable, no other path regression; all penalties would be an upper bound."
+    },
+    {
+      "name": "multiply_lookup",
+      "saved_cpu_cycles_3000_frames": [
+        90000,
+        202500
+      ],
+      "fps_delta_sensitivity": [
+        0.006219193152447566,
+        0.021031943752935156
+      ],
+      "assumption": "Budget: 20..45 cycles net; reuse interpolation table, exact residue/flags still unresolved."
+    },
+    {
+      "name": "sound_dispatch",
+      "saved_cpu_cycles_3000_frames": [
+        84000,
+        210000
+      ],
+      "fps_delta_sensitivity": [
+        0.005804253625067091,
+        0.02181321100529754
+      ],
+      "assumption": "Budget: remove 2..5 cycles from 14-channel scan per VBI; preserve event order and hardware writes."
+    }
+  ]
+}

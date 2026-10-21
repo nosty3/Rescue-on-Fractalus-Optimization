@@ -1,0 +1,25 @@
+{
+  "calls": 2766,
+  "read_before_overwrite": {},
+  "first_overwrites": {
+    "86bc:ae": 1383,
+    "86c1:af": 1383,
+    "86d8:b0": 975,
+    "86df:b1": 975,
+    "85e1:ae": 1325,
+    "85e6:af": 1325,
+    "85fd:b0": 613,
+    "8604:b1": 613,
+    "85ed:b1": 712,
+    "85f2:b0": 712,
+    "86c8:b1": 408,
+    "86cd:b0": 408
+  },
+  "still_unresolved_at_renderer_return": {
+    "0xb0": 58,
+    "0xb1": 58,
+    "0xae": 58,
+    "0xaf": 58
+  },
+  "scope": "58 renderer invocations only; no interrupts and no subsequent main-loop/VBI liveness proof."
+}

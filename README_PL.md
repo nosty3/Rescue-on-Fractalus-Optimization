@@ -11,6 +11,7 @@ Odtworzenie gry: python scripts/rebuild_v5.py --mads ŚCIEŻKA_DO_MADS
 Instrukcja środowiska: docs/ODTWORZENIE_PL.txt
 Mapa kodu i istotne pułapki: docs/KONTYNUACJA_PL.txt
 Dalsze kierunki: docs/DALSZE_KIERUNKI_PL.txt
+Nowy audyt v5, bez wdrożenia poprawek: docs/OPCJE_OPTYMALIZACJI_V5_PL.md
 Raport bieżącego wydania: docs/WYDANIE_V5_PL.txt
 Lista plików i SHA-256: docs/backup-manifest.json
 

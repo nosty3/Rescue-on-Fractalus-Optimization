@@ -1,0 +1,21 @@
+{
+  "division": {
+    "input_count": 2766,
+    "model_verified_on_original_calls": 163,
+    "quotients_match": true,
+    "divisor_min": 64,
+    "divisor_max": 15330,
+    "cycles_saved_min": 13,
+    "cycles_saved_max": 164,
+    "cycles_saved_mean": 66.86189443239334,
+    "slower_cases": 0,
+    "caveat": "Only quotient/cycles modeled. Changed normalized scratch state requires liveness proof; no patched code or ROM."
+  },
+  "nibble_table": {
+    "bytes": 4096,
+    "contribution_identities_checked": 65536,
+    "full_interpolation_cases_against_original_6502": 1000,
+    "result": "pass",
+    "caveat": "Arithmetic output only; integration, all registers, flags, scratch and interrupts not validated."
+  }
+}
