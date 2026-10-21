@@ -1,0 +1,172 @@
+{
+  "result": "pass",
+  "rom_sha256": "104503c1be0ce8ab9fff7238122559dd2f537c101052ed0128e213b8ecc36da9",
+  "configuration": {
+    "ok": true,
+    "basic": false,
+    "machine": "800XL",
+    "memory": "64K",
+    "video": "pal",
+    "selftest": false,
+    "fastboot": true,
+    "u1mb": false,
+    "u1mbrom_id": "$0000000000000008",
+    "fppatch": false,
+    "stereo": false,
+    "stereomono": false,
+    "siopatch": "on",
+    "burstio": false,
+    "accuratedisk": false,
+    "casautoboot": true,
+    "casautobasicboot": false,
+    "artifact": "none",
+    "axlonmemsize": "none",
+    "highbanks": 0,
+    "highbanks_overridden": false,
+    "randmem": false,
+    "randdelay": false,
+    "diskemu": "generic",
+    "vbxe": false,
+    "covox": false,
+    "soundboard": false,
+    "rapidus": false,
+    "slightsid": false,
+    "addons": "off",
+    "exeloadmode": "default",
+    "kernel_id": "$0000000000000000",
+    "actual_kernel_id": "$0000000000000003",
+    "basic_id": "$0000000000000000",
+    "actual_basic_id": "$0000000000000005",
+    "debugbrkrun": false,
+    "history": false
+  },
+  "checks": [
+    {
+      "name": "cold-title",
+      "frames": 3000,
+      "ticks": 106739568,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "cold-flight",
+      "frames": 2000,
+      "ticks": 71136000,
+      "mode": 2,
+      "bank": 12
+    },
+    {
+      "name": "level10-left",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "level10-right",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 2,
+      "bank": 8
+    },
+    {
+      "name": "level10-center",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "level26-left",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "level26-right",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "level26-center",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "start-from-bank5",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "start-from-bank6",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 5
+    },
+    {
+      "name": "start-from-bank8",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-from-bank9",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "start-from-bank10",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 5
+    },
+    {
+      "name": "start-from-bank11",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 8
+    },
+    {
+      "name": "start-from-bank12",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "start-from-bank13",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 8
+    },
+    {
+      "name": "start-from-bank14",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "restart-flight",
+      "frames": 2000,
+      "ticks": 71136000,
+      "mode": 2,
+      "bank": 9
+    }
+  ],
+  "note": "Bank guard tested for all extension banks separately; real START tested for listed banks."
+}

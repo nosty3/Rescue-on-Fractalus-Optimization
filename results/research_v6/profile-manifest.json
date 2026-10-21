@@ -1,0 +1,53 @@
+{
+  "sha256": "cc2a6a1001d4471431bd03b37a496cfd3b1088baf457ed5403b79b0d58767f21",
+  "runs": [
+    {
+      "scenario": "straight",
+      "mode": "callgraph",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "straight",
+      "mode": "insns",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "right",
+      "mode": "callgraph",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "right",
+      "mode": "insns",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "left",
+      "mode": "callgraph",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "left",
+      "mode": "insns",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "fast_right",
+      "mode": "callgraph",
+      "ticks": 106704000,
+      "flight_mode": 2
+    },
+    {
+      "scenario": "fast_right",
+      "mode": "insns",
+      "ticks": 106704000,
+      "flight_mode": 2
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "result": "pass",
+  "stream_selection": "explicit test input, all four tables",
+  "cases": [
+    {
+      "i": 0,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 1,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 2,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 3,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 4,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 5,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 6,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 7,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 8,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 9,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 10,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 11,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 12,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 13,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 14,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 15,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 16,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 17,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 18,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 19,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 20,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 21,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 22,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 23,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 24,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 25,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 26,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 27,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 28,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 29,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 30,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 31,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 32,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 33,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 34,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 35,
+      "table": "0x9adc",
+      "result": "pass"
+    },
+    {
+      "i": 36,
+      "table": "0x9a55",
+      "result": "pass"
+    },
+    {
+      "i": 37,
+      "table": "0x9a82",
+      "result": "pass"
+    },
+    {
+      "i": 38,
+      "table": "0x9aaf",
+      "result": "pass"
+    },
+    {
+      "i": 39,
+      "table": "0x9adc",
+      "result": "pass"
+    }
+  ]
+}

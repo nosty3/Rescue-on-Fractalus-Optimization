@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "opt14_interpolation",
+    "scenario": "straight",
+    "intervals": 448,
+    "ticks": 106810700,
+    "fps": 7.438435287850375,
+    "mode": 2
+  },
+  {
+    "variant": "opt14_interpolation",
+    "scenario": "right",
+    "intervals": 465,
+    "ticks": 106952974,
+    "fps": 7.71042689752601,
+    "mode": 2
+  },
+  {
+    "variant": "opt14_interpolation",
+    "scenario": "left",
+    "intervals": 470,
+    "ticks": 106775133,
+    "fps": 7.806315024679014,
+    "mode": 2
+  },
+  {
+    "variant": "opt14_interpolation",
+    "scenario": "fast_right",
+    "intervals": 470,
+    "ticks": 106739571,
+    "fps": 7.808915823729515,
+    "mode": 2
+  },
+  {
+    "variant": "v7_geometry",
+    "scenario": "straight",
+    "intervals": 462,
+    "ticks": 106775136,
+    "fps": 7.67344136185413,
+    "mode": 2
+  },
+  {
+    "variant": "v7_geometry",
+    "scenario": "right",
+    "intervals": 471,
+    "ticks": 106881836,
+    "fps": 7.815114370789813,
+    "mode": 2
+  },
+  {
+    "variant": "v7_geometry",
+    "scenario": "left",
+    "intervals": 480,
+    "ticks": 106881839,
+    "fps": 7.964447542860859,
+    "mode": 2
+  },
+  {
+    "variant": "v7_geometry",
+    "scenario": "fast_right",
+    "intervals": 468,
+    "ticks": 106739568,
+    "fps": 7.7756866132341855,
+    "mode": 2
+  },
+  {
+    "variant": "v7_clipping",
+    "scenario": "straight",
+    "intervals": 461,
+    "ticks": 106952974,
+    "fps": 7.644100644644066,
+    "mode": 2
+  },
+  {
+    "variant": "v7_clipping",
+    "scenario": "right",
+    "intervals": 473,
+    "ticks": 106775130,
+    "fps": 7.856142788119294,
+    "mode": 2
+  },
+  {
+    "variant": "v7_clipping",
+    "scenario": "left",
+    "intervals": 488,
+    "ticks": 106775136,
+    "fps": 8.105280053213887,
+    "mode": 2
+  },
+  {
+    "variant": "v7_clipping",
+    "scenario": "fast_right",
+    "intervals": 477,
+    "ticks": 106704003,
+    "fps": 7.927860564893709,
+    "mode": 2
+  }
+]

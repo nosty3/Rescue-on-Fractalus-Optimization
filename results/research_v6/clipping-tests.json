@@ -1,0 +1,354 @@
+{
+  "result": "pass",
+  "scenes": [
+    {
+      "scene": "center-0",
+      "old": 139097,
+      "new": 136551,
+      "saved": 2546
+    },
+    {
+      "scene": "center-1",
+      "old": 109353,
+      "new": 107553,
+      "saved": 1800
+    },
+    {
+      "scene": "center-2",
+      "old": 124347,
+      "new": 121666,
+      "saved": 2681
+    },
+    {
+      "scene": "center-3",
+      "old": 120103,
+      "new": 118461,
+      "saved": 1642
+    },
+    {
+      "scene": "center-4",
+      "old": 111300,
+      "new": 109715,
+      "saved": 1585
+    },
+    {
+      "scene": "center-5",
+      "old": 120124,
+      "new": 117763,
+      "saved": 2361
+    },
+    {
+      "scene": "center-6",
+      "old": 118982,
+      "new": 117345,
+      "saved": 1637
+    },
+    {
+      "scene": "center-7",
+      "old": 123400,
+      "new": 121763,
+      "saved": 1637
+    },
+    {
+      "scene": "right-0",
+      "old": 129304,
+      "new": 127386,
+      "saved": 1918
+    },
+    {
+      "scene": "right-1",
+      "old": 101559,
+      "new": 100277,
+      "saved": 1282
+    },
+    {
+      "scene": "right-2",
+      "old": 102178,
+      "new": 100037,
+      "saved": 2141
+    },
+    {
+      "scene": "right-3",
+      "old": 102039,
+      "new": 99957,
+      "saved": 2082
+    },
+    {
+      "scene": "right-4",
+      "old": 115796,
+      "new": 113948,
+      "saved": 1848
+    },
+    {
+      "scene": "right-5",
+      "old": 111020,
+      "new": 109536,
+      "saved": 1484
+    },
+    {
+      "scene": "right-6",
+      "old": 122427,
+      "new": 120879,
+      "saved": 1548
+    },
+    {
+      "scene": "right-7",
+      "old": 109296,
+      "new": 107355,
+      "saved": 1941
+    },
+    {
+      "scene": "left-0",
+      "old": 116583,
+      "new": 114811,
+      "saved": 1772
+    },
+    {
+      "scene": "left-1",
+      "old": 106522,
+      "new": 104427,
+      "saved": 2095
+    },
+    {
+      "scene": "left-2",
+      "old": 89290,
+      "new": 87941,
+      "saved": 1349
+    },
+    {
+      "scene": "left-3",
+      "old": 109792,
+      "new": 107876,
+      "saved": 1916
+    },
+    {
+      "scene": "left-4",
+      "old": 117192,
+      "new": 115707,
+      "saved": 1485
+    },
+    {
+      "scene": "left-5",
+      "old": 98989,
+      "new": 97849,
+      "saved": 1140
+    },
+    {
+      "scene": "left-6",
+      "old": 98598,
+      "new": 96484,
+      "saved": 2114
+    },
+    {
+      "scene": "left-7",
+      "old": 95817,
+      "new": 94278,
+      "saved": 1539
+    },
+    {
+      "scene": "down-0",
+      "old": 119495,
+      "new": 117181,
+      "saved": 2314
+    },
+    {
+      "scene": "down-1",
+      "old": 58819,
+      "new": 57359,
+      "saved": 1460
+    },
+    {
+      "scene": "down-2",
+      "old": 68460,
+      "new": 66685,
+      "saved": 1775
+    },
+    {
+      "scene": "down-3",
+      "old": 62583,
+      "new": 61104,
+      "saved": 1479
+    },
+    {
+      "scene": "down-4",
+      "old": 63442,
+      "new": 62612,
+      "saved": 830
+    },
+    {
+      "scene": "down-5",
+      "old": 57785,
+      "new": 57125,
+      "saved": 660
+    },
+    {
+      "scene": "down-6",
+      "old": 63695,
+      "new": 62450,
+      "saved": 1245
+    },
+    {
+      "scene": "down-7",
+      "old": 65594,
+      "new": 64907,
+      "saved": 687
+    },
+    {
+      "scene": "up-0",
+      "old": 130344,
+      "new": 127766,
+      "saved": 2578
+    },
+    {
+      "scene": "up-1",
+      "old": 98510,
+      "new": 96575,
+      "saved": 1935
+    },
+    {
+      "scene": "up-2",
+      "old": 107380,
+      "new": 105781,
+      "saved": 1599
+    },
+    {
+      "scene": "up-3",
+      "old": 111425,
+      "new": 109826,
+      "saved": 1599
+    },
+    {
+      "scene": "up-4",
+      "old": 111891,
+      "new": 110292,
+      "saved": 1599
+    },
+    {
+      "scene": "up-5",
+      "old": 100939,
+      "new": 99172,
+      "saved": 1767
+    },
+    {
+      "scene": "up-6",
+      "old": 103453,
+      "new": 101686,
+      "saved": 1767
+    },
+    {
+      "scene": "up-7",
+      "old": 127456,
+      "new": 124542,
+      "saved": 2914
+    },
+    {
+      "scene": "cold_start-0",
+      "old": 101986,
+      "new": 100401,
+      "saved": 1585
+    },
+    {
+      "scene": "cold_start-1",
+      "old": 102808,
+      "new": 101223,
+      "saved": 1585
+    },
+    {
+      "scene": "cold_start-2",
+      "old": 92915,
+      "new": 91346,
+      "saved": 1569
+    },
+    {
+      "scene": "cold_start-3",
+      "old": 117018,
+      "new": 114781,
+      "saved": 2237
+    },
+    {
+      "scene": "cold_start-4",
+      "old": 103925,
+      "new": 101784,
+      "saved": 2141
+    },
+    {
+      "scene": "cold_start-5",
+      "old": 99998,
+      "new": 98233,
+      "saved": 1765
+    },
+    {
+      "scene": "level10-0",
+      "old": 128875,
+      "new": 126547,
+      "saved": 2328
+    },
+    {
+      "scene": "level10-1",
+      "old": 123070,
+      "new": 121426,
+      "saved": 1644
+    },
+    {
+      "scene": "level10-2",
+      "old": 115353,
+      "new": 113631,
+      "saved": 1722
+    },
+    {
+      "scene": "level10-3",
+      "old": 143296,
+      "new": 140631,
+      "saved": 2665
+    },
+    {
+      "scene": "level10-4",
+      "old": 130367,
+      "new": 128401,
+      "saved": 1966
+    },
+    {
+      "scene": "level10-5",
+      "old": 109949,
+      "new": 108272,
+      "saved": 1677
+    },
+    {
+      "scene": "level26-0",
+      "old": 127454,
+      "new": 125565,
+      "saved": 1889
+    },
+    {
+      "scene": "level26-1",
+      "old": 144313,
+      "new": 141842,
+      "saved": 2471
+    },
+    {
+      "scene": "level26-2",
+      "old": 142154,
+      "new": 140245,
+      "saved": 1909
+    },
+    {
+      "scene": "level26-3",
+      "old": 122797,
+      "new": 120810,
+      "saved": 1987
+    },
+    {
+      "scene": "level26-4",
+      "old": 122106,
+      "new": 119431,
+      "saved": 2675
+    },
+    {
+      "scene": "level26-5",
+      "old": 108479,
+      "new": 106680,
+      "saved": 1799
+    }
+  ],
+  "random_cases": 3000
+}

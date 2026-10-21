@@ -1,0 +1,22 @@
+{
+  "result": "pass",
+  "clear_all_x": 256,
+  "vbi_bank_restore": [
+    2,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "full_vbi_equivalence": 232,
+  "excluded_ram": [
+    "dead hardware stack",
+    "replaced code 7EEB..7FC1"
+  ],
+  "hardware_inputs": "D40B=80 D20A=00"
+}

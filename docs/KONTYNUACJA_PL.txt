@@ -1,3 +1,10 @@
+AKTUALIZACJA v7 — wynik 7,883239 FPS, patrz WYDANIE_V7_PL.txt.
+Banki 10..13: rozwinięte ogony geometrii i tabele $9D00/$9E00; $9F
+jest zachowany na stosie i przywracany. Wejście/wyjście banków bez zmian.
+Bank2 $963D skacze do szybkiego obcinania $8380 (dawny interpreter).
+Przy breakpointach i testach CPU rozróżniać PC wraz z bankiem.
+Odtworzenie offline: scripts/rebuild_v7.py.
+
 AKTUALIZACJA v6: raport WYDANIE_V6_PL.txt, wynik 7,691000 FPS.
 Punkty 1–4 wdrożone. Banki 10..13: stałe komendy geometrii; bank14:
 interpolacja tablicowa; RAM $7EEB..$7FC1 zawiera nowy kod i osiem operandów

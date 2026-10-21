@@ -1,0 +1,116 @@
+WYDANIE v7 — DALSZY AUDYT v6, PRÓG 0,05 FPS
+21.10.2026, Atari XL/XE PAL, 64 KiB RAM, XEGS 128 KiB / CART 14.
+
+WYNIK
+opt14_interpolation      7.691000
+v7_geometry              7.807216
+v7_clipping              7.883239
+Geometria: +0.116216 FPS.
+Obcinanie, po geometrii: +0.076023 FPS.
+Łącznie: +0.192239 FPS, +2.500% względem v6.
+Względem oryginału 6,553531 FPS: +20.290%.
+
+Scenariusz       v6       geometria   v7
+straight         7.438435 7.673441 7.644101
+right            7.710427 7.815114 7.856143
+left             7.806315 7.964448 8.105280
+fast_right       7.808916 7.775687 7.927861
+
+Metoda jak poprzednio: suma prezentacji nowych obrazów przy $B516 / suma
+czasu emulowanego, cztery loty po >=3000 klatek PAL, rozgrzewka 50 klatek.
+To nie częstotliwość odświeżania PAL ani gwarancja tempa każdego lotu.
+Baza v6 to zatwierdzony pomiar z poprzedniej sesji; nowe warianty mają ten
+sam protokół i stan wejściowy. Szybszy kod zmienia przebieg lotu w czasie.
+Nie wykonywano serii statystycznych powtórzeń ani pomiaru na fizycznym Atari.
+Obcinanie nie przyspiesza każdego scenariusza: lot prosty zwalnia względem
+samej nowej geometrii, ale pozostaje szybszy od v6.
+
+ŚWIEŻY PROFIL v6
+Po cztery pomiary callgraph i insns, każdy 3000 klatek PAL.
+Góry: 35,13% czasu własnego; wypełnianie 9,40%; dzielenie 7,92%; pozostała
+część terenu 7,17%; projekcja 5,43%; obcinanie 5,42%; czyszczenie 4,97%.
+Ogon geometrii rozdziela się na banki 10..13; nie wolno przypisać całego
+jego kosztu wyłącznie adresowi wejścia $8309.
+
+1. SPECJALIZACJA OGONA GEOMETRII
+Banki 10..13 nadal odpowiadają czterem niezmiennym strumieniom komend.
+Dla punktów 0..32 rozwinięto również klasyfikację punktu i zastąpiono
+adresowanie abs,Y stałymi adresami. Punkty 33..44 zachowują wspólną
+klasyfikację, aby zmieścić kod i tabele w tych samych bankach 8 KiB.
+Tablice $9D00 i $9E00 zastępują wysoką i niską część przesunięcia o 4 bity.
+Niezmienny fragment zależny od $8B jest przygotowany raz na geometrię
+w $9F. Stara wartość $9F jest odkładana na stos i przywracana przy wyjściu.
+Odtworzono carry, znaki i zaokrąglenia; wynik końcowy A/X/Y/P/SP identyczny.
+Bankowe wejście $9893 i wyjście $98E0 są zachowane; kod omija te miejsca.
+Bez zwiększenia cartridge'a ani nowej rezerwacji RAM; jeden dodatkowy
+bajt na istniejącym stosie sprzętowym przez czas geometrii.
+58 scen: oszczędność 70336 cykli, średnio 1212,69 na geometrię.
+
+Szacunek przed FPS: 0,0406..0,0610 FPS przy współczynniku wrażliwości
+DMA 1..1,5; środkowy wariant 1,25 dawał 0,0508 FPS. Kandydat był blisko
+progu, nie miał gwarantowanego minimum 0,05. Rzeczywisty pomiar dał +0,1162.
+Rozbieżność jest powodem, by nie utożsamiać modelu CPU z końcowym FPS.
+
+2. SZYBKA ŚCIEŻKA OBCINANIA
+W 1938 wywołaniach z 58 scen 1533 miały X=0 i zerowe wysokie bajty
+współrzędnych; 1521 dodatkowo zachowywało kolejność i zakres lewej strony.
+905 można prowadzić bezpośrednio do rysowania, 283 pominąć, 333 wymagają
+oryginalnego sprawdzenia mieszanego przypadku wysokości.
+Nowy kod rozpoznaje ten przypadek i omija normalizację oraz redundantne
+kontrole. Pozostałe dane idą oryginalną ścieżką. Nie zmieniono clippingu,
+poziomu szczegółowości, rozdzielczości ani matematyki gór.
+Wejście: bank2 $963D -> $8380, w obszarze nieużywanego już interpretera.
+Powroty: oryginalne $972E/$974A/$9788/$9797; fallback odtwarza pierwszą
+normalizację i wraca do $9648. Stan pomocniczy $9F/$B5 jest zachowany.
+58 scen: oszczędność 105365 cykli, średnio 1816,64 na scenę.
+Szacunek 0,061..0,092 FPS, środkowy 0,0763; zmierzono +0,0760 FPS.
+
+ODRZUCONE / NIEPODJĘTE
+- Łączenie diagonalnych kroków geometrii: tylko 16..20 powtórnych zapisów
+  współrzędnych na 45 punktów. Budżet brutto 0,008..0,012 FPS, jeszcze
+  przed przygotowaniem współczynników. Poniżej progu, bez implementacji.
+- Osobny dzielnik dla D<256: historyczny ślad 6/2766 przypadków. Nawet
+  250 cykli oszczędności na trafienie daje około 0,0013 FPS brutto przed
+  kosztem rozpoznania. Nie zbierano dodatkowego śladu dla tego małego zysku.
+- Prosta zamiana wskaźnika piksela na samomodyfikujące się operandy:
+  około 2 zaoszczędzone cykle adresowania pochłaniają droższe zapisy
+  operandów. Brak uzasadnionego budżetu >=0,05 FPS; nie wdrożono.
+- Cache między klatkami: nie wykazano wystarczającej niezmienności danych
+  i oszczędności >=0,05 FPS. Nie wprowadzano przybliżeń ani zmiany logiki.
+- Punkty 5..8 wcześniejszego audytu pozostają odłożone na życzenie
+  użytkownika; ich opis jest w OPCJE_OPTYMALIZACJI_V5_PL.md.
+To nie dowód absolutnego optimum. Dalszy pomysł musi przejść ten sam
+próg oszacowania i test dokładności, zanim otrzyma czas implementacji.
+
+WERYFIKACJA
+- Geometria: 1000 losowych przypadków czterech orientacji i 58 pełnych
+  wywołań $8309; cały RAM poza martwym stosem i wszystkie rejestry/flag.
+- Emulator: 40 wejść geometrii, jawnie wybrane wszystkie cztery tablice,
+  porównanie z CPU wykonującym v6; zgodne tablice, rejestry i odtworzone $9F.
+- Obcinanie: 3000 losowych przypadków oraz renderer+wypełnianie 58 scen;
+  zgodność całego RAM poza martwym stosem i A/X/Y/P/SP.
+- Integracja: 256 wejść czyszczenia, osłona banków 2,5,6,8..14 oraz
+  232 pełne VBI, zgodność stanu przy stałych wejściach sprzętowych testu CPU.
+- Zimny start, 2000 klatek lotu, próby poziomów 10/26 po 3000 klatek,
+  START z banków 5,6,8,9,10,11,12,13,14 i ponowny zimny start: bez zawieszeń.
+  W bankach 10..13 START następuje po zachowaniu $9F na stosie; wybór
+  orientacji jest jawnie wymuszonym wejściem testowym. Na poziomie 10
+  lot środkowy oraz wszystkie loty poziomu 26 kończą w trybie 0, więc
+  nie opisujemy ich jako nieprzerwanego lotu przez cały okres.
+- Ręczna kontrola końcowego obrazu lotu. Screeny pozostają lokalnie.
+
+Poprawki narzędzi testowych: punkt końcowy $84FD należy sprawdzać wraz
+z bankiem 2, także w modelu CPU; ten sam adres występuje w kodzie bankowym.
+Wspólny adres pierwszej instrukcji po prologu to $800F, a nie $8010
+(w części banków $8010 jest operandem). Te błędy dotyczyły testów;
+nie zmieniały ROM-u ani zmierzonych wariantów benchmarku.
+
+ODTWORZENIE I KOPIA
+ROM SHA256: 104503c1be0ce8ab9fff7238122559dd2f537c101052ed0128e213b8ecc36da9
+python scripts/rebuild_v7.py --mads PEŁNA_ŚCIEŻKA_DO_MADS
+Builder odtwarza v1..v7 bez SDK, dumpów i stanów emulatora; sprawdza ROM,
+CAR i IPS. Stare stany sprzed v6 wymagają nadal podmiany kodu RAM $7EEB;
+normalne uruchamianie odbywa się przez zimny start pliku CAR.
+Repo zawiera wybrane źródła, raporty i zwarte wyniki, bez surowych profili,
+screenów, dumpów, stanów i narzędzi. Odtworzenie identycznych dawnych lotów
+po utracie stanów nie jest możliwe: należy zebrać nowe wejścia i pomiary.

@@ -1,0 +1,126 @@
+{
+  "sha256": "104503c1be0ce8ab9fff7238122559dd2f537c101052ed0128e213b8ecc36da9",
+  "rom_bytes": 131072,
+  "cart_type": 14,
+  "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "performance": {
+    "result": "pass",
+    "fps": {
+      "opt14_interpolation": 7.69100049687045,
+      "v7_geometry": 7.807216352269489,
+      "v7_clipping": 7.883239007958486
+    },
+    "gain_vs_v6_percent": 2.4995254020105717,
+    "gain_vs_original_percent": 20.289943575725978,
+    "scenarios": [
+      {
+        "variant": "opt14_interpolation",
+        "scenario": "straight",
+        "intervals": 448,
+        "ticks": 106810700,
+        "fps": 7.438435287850375,
+        "mode": 2
+      },
+      {
+        "variant": "opt14_interpolation",
+        "scenario": "right",
+        "intervals": 465,
+        "ticks": 106952974,
+        "fps": 7.71042689752601,
+        "mode": 2
+      },
+      {
+        "variant": "opt14_interpolation",
+        "scenario": "left",
+        "intervals": 470,
+        "ticks": 106775133,
+        "fps": 7.806315024679014,
+        "mode": 2
+      },
+      {
+        "variant": "opt14_interpolation",
+        "scenario": "fast_right",
+        "intervals": 470,
+        "ticks": 106739571,
+        "fps": 7.808915823729515,
+        "mode": 2
+      },
+      {
+        "variant": "v7_geometry",
+        "scenario": "straight",
+        "intervals": 462,
+        "ticks": 106775136,
+        "fps": 7.67344136185413,
+        "mode": 2
+      },
+      {
+        "variant": "v7_geometry",
+        "scenario": "right",
+        "intervals": 471,
+        "ticks": 106881836,
+        "fps": 7.815114370789813,
+        "mode": 2
+      },
+      {
+        "variant": "v7_geometry",
+        "scenario": "left",
+        "intervals": 480,
+        "ticks": 106881839,
+        "fps": 7.964447542860859,
+        "mode": 2
+      },
+      {
+        "variant": "v7_geometry",
+        "scenario": "fast_right",
+        "intervals": 468,
+        "ticks": 106739568,
+        "fps": 7.7756866132341855,
+        "mode": 2
+      },
+      {
+        "variant": "v7_clipping",
+        "scenario": "straight",
+        "intervals": 461,
+        "ticks": 106952974,
+        "fps": 7.644100644644066,
+        "mode": 2
+      },
+      {
+        "variant": "v7_clipping",
+        "scenario": "right",
+        "intervals": 473,
+        "ticks": 106775130,
+        "fps": 7.856142788119294,
+        "mode": 2
+      },
+      {
+        "variant": "v7_clipping",
+        "scenario": "left",
+        "intervals": 488,
+        "ticks": 106775136,
+        "fps": 8.105280053213887,
+        "mode": 2
+      },
+      {
+        "variant": "v7_clipping",
+        "scenario": "fast_right",
+        "intervals": 477,
+        "ticks": 106704003,
+        "fps": 7.927860564893709,
+        "mode": 2
+      }
+    ],
+    "rom_sha256": "104503c1be0ce8ab9fff7238122559dd2f537c101052ed0128e213b8ecc36da9",
+    "method": "sum presentations at B516 / sum emulated PAL time; four scenarios >=3000 frames each"
+  },
+  "sources": {
+    "src/v7_clipping.asm": "eab9a7ef2b2b8e5822f67e2d224fd28d43621f60039a753c22d15519256201d3",
+    "src/v7_geometry_bank10.asm": "69a5db3c56b0504f3622a73cfc26522f9a65613fb73b28a92de2cf13a4904e76",
+    "src/v7_geometry_bank11.asm": "b2993f93c6b13a2f17311e061e675e6d5f4ea7acab6da998d6d9c3b87e56088d",
+    "src/v7_geometry_bank12.asm": "82c5240f5d7884225b0e08b325a91e5ddc19421b4d149e5ded322e98de3fd17a",
+    "src/v7_geometry_bank13.asm": "cd1057666a2b6c2a68fe74f8194acdc2bce58ce8bebda51b55054d521e57491e",
+    "scripts/build_v7_clipping.py": "ca4cff5abcbac136c8df32c999bb8714e609124debdd49e7f613965581fcca3a",
+    "scripts/build_v7_geometry.py": "59430adca2f1b35288dc5982728c922fc61e3f55f02d584d65558bb3ab35a09c",
+    "scripts/rebuild_v7.py": "813ea1ed16e42a8e121dfa9faedb0f8cb45e4af60b012ed4190f3bef6b9e5ef7"
+  }
+}

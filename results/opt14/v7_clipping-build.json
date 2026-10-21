@@ -1,0 +1,11 @@
+{
+  "variant": "v7_clipping",
+  "sha256": "104503c1be0ce8ab9fff7238122559dd2f537c101052ed0128e213b8ecc36da9",
+  "base": "v7_geometry",
+  "ram_patches": [
+    {
+      "address": 32491,
+      "hex": "a90e8d00d52000900848a9028d00d5682860eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea8e387faabd00808d337fbd009eaabd00801869008d3d7fa200bd008069008d497fbd009eaabd0080690060eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea"
+    }
+  ]
+}

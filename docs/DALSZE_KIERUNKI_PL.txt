@@ -1,3 +1,12 @@
+AKTUALIZACJA v7 / PRÓG 0,05 FPS
+Wdrożono dalszą specjalizację geometrii (+0,1162 FPS) oraz szybkie
+obcinanie (+0,0760 FPS). Pozostałe sprawdzone drobne pomysły poniżej
+0,05 FPS odrzucono; patrz WYDANIE_V7_PL.txt i candidate-estimates.json.
+Punkty 5..8 wcześniejszego audytu nadal odłożone. Cache między klatkami
+nie ma wykazanego kontraktu poprawności ani wiarygodnego budżetu zysku.
+Nie ogłaszamy absolutnego optimum; dalsza implementacja wymaga nowego
+kandydata z uzasadnionym zyskiem >=0,05 FPS i zachowaniem wyników gry.
+
 DECYZJA UŻYTKOWNIKA / v6 — 21.10.2026
 Punkty 1–4 audytu OPCJE_OPTYMALIZACJI_V5_PL.md wykonane i sprawdzone.
 Punkty 5–8 odłożone: wyrównanie stron; mnożenie $7CD6; kanały dźwięku;

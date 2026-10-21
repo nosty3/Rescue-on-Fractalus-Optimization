@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "total": 1938,
+    "all_high_zero": 1533,
+    "ordered_inside": 1521,
+    "mixed": 333,
+    "direct_skip": 283,
+    "direct_draw": 905
+  },
+  "fixtures": 58
+}

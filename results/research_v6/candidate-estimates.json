@@ -1,0 +1,79 @@
+{
+  "baseline_fps": 7.69100049687045,
+  "threshold": 0.05,
+  "method": "CPU savings scaled from fixtures by fresh v6 call counts. alpha=1/1.25/1.5 are sensitivity assumptions, not confidence bounds. Geometry central estimate just exceeds threshold; measured FPS decides retention.",
+  "implemented": [
+    {
+      "name": "geometry_inline",
+      "measured_cpu_saved_per_fixture_mean": 1212.6896551724137,
+      "projected_cpu_saved_per_3000_pal_frames": 559959.448275862,
+      "fps_delta_sensitivity_alpha_1_125_15": [
+        0.04057362403514553,
+        0.050784007390498154,
+        0.061021394247253724
+      ],
+      "status": "implemented_and_benchmarked"
+    },
+    {
+      "name": "clipping_fast",
+      "measured_cpu_saved_per_fixture_mean": 1816.6379310344828,
+      "projected_cpu_saved_per_3000_pal_frames": 838832.5646551724,
+      "fps_delta_sensitivity_alpha_1_125_15": [
+        0.06094036242368528,
+        0.07632664836550163,
+        0.0917741341070073
+      ],
+      "status": "implemented_and_benchmarked"
+    }
+  ],
+  "screened": {
+    "fused_diagonal_steps": {
+      "bank_counts": {
+        "10": {
+          "redundant_intermediate_coordinate_stores": 16,
+          "gross_budget_cycles": 192
+        },
+        "11": {
+          "redundant_intermediate_coordinate_stores": 20,
+          "gross_budget_cycles": 240
+        },
+        "12": {
+          "redundant_intermediate_coordinate_stores": 16,
+          "gross_budget_cycles": 192
+        },
+        "13": {
+          "redundant_intermediate_coordinate_stores": 16,
+          "gross_budget_cycles": 192
+        }
+      },
+      "gross_fps_budget_alpha_1_125_15": [
+        0.00799597755750625,
+        0.009997570449800541,
+        0.012000204365032019
+      ],
+      "setup_cost_excluded": true
+    },
+    "small_divisor": {
+      "historical_observations": 2766,
+      "small_count": 6,
+      "optimistic_saving_per_target": 250,
+      "gross_fps_delta": 0.0013318884231425798,
+      "dispatch_cost_excluded": true,
+      "status": "below threshold; not implemented"
+    },
+    "pixel_smc": {
+      "analysis": "Replacing the existing zero-page pointer with two self-modified absolute operands adds 2 cycles of stores, while absolute indexed load/store saves about 2; no credible >=0.05 FPS budget for this substitution.",
+      "status": "not implemented"
+    },
+    "cross_frame_reuse": {
+      "analysis": "Camera, map access and recursive fractal state can change. No demonstrated invariant with a defensible >=0.05 FPS budget; no cache or approximation introduced.",
+      "status": "unproven; not implemented"
+    }
+  },
+  "deferred_original_options": [
+    5,
+    6,
+    7,
+    8
+  ]
+}
