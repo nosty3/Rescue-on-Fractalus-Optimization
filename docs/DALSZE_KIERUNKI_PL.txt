@@ -1,3 +1,11 @@
+AKTUALIZACJA v8 — SYNCHRONIZACJA WYŚWIETLANIA
+Utrzymywać test braku czyszczenia przed potwierdzeniem VBI ($42=0).
+Testy końcowego RAM nie wykrywają wszystkich błędów czasu wyświetlania.
+Ewentualne ukrycie oczekiwania pracą bez zapisów do obrazu wymaga dowodu
+rozłączności danych i zysku >=0,05 FPS. Trzeci bufor wymaga analizy RAM
+i ANTIC; dodatkowy ROM sam nie wystarczy. Tych pomysłów nie wdrożono.
+Punkty 5–8 wcześniejszego audytu pozostają odłożone.
+
 AKTUALIZACJA v7 / PRÓG 0,05 FPS
 Wdrożono dalszą specjalizację geometrii (+0,1162 FPS) oraz szybkie
 obcinanie (+0,0760 FPS). Pozostałe sprawdzone drobne pomysły poniżej

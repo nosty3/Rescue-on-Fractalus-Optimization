@@ -1,0 +1,7 @@
+{
+  "result": "pass",
+  "clear_inputs": 256,
+  "pending_flag_wait_cases": 4,
+  "nonflight_bypass": true,
+  "registers_flags_and_ram_preserved": true
+}

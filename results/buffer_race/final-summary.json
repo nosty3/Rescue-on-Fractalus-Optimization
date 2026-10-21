@@ -1,0 +1,92 @@
+{
+  "result": "pass",
+  "rom_sha256": "02da0221c95fc8896720a7ca17181bbb1c3c7502dadf62d933d1ba0c341347bd",
+  "fps": {
+    "v7_clipping": 7.883239007958486,
+    "buffer_sync": 7.720697106261212
+  },
+  "delta_fps": -0.16254190169727423,
+  "gain_vs_original_percent": 17.8097249544058,
+  "race_before": {
+    "original": {
+      "clear_entries": 120,
+      "pending_presentation": 51
+    },
+    "v7_clipping": {
+      "clear_entries": 45,
+      "pending_presentation": 18
+    }
+  },
+  "safe_clear_checks": 240,
+  "visual_observation": {
+    "continuous_frames_per_variant": 3000,
+    "v7_glitch_example_frame": 237,
+    "fixed_sample_review": "no matching wedge seen in reviewed candidates; candidate detector also flags normal terrain changes, not a proof of zero artifacts"
+  },
+  "scenarios": [
+    {
+      "variant": "v7_clipping",
+      "scenario": "straight",
+      "intervals": 461,
+      "ticks": 106952974,
+      "fps": 7.644100644644066,
+      "mode": 2
+    },
+    {
+      "variant": "v7_clipping",
+      "scenario": "right",
+      "intervals": 473,
+      "ticks": 106775130,
+      "fps": 7.856142788119294,
+      "mode": 2
+    },
+    {
+      "variant": "v7_clipping",
+      "scenario": "left",
+      "intervals": 488,
+      "ticks": 106775136,
+      "fps": 8.105280053213887,
+      "mode": 2
+    },
+    {
+      "variant": "v7_clipping",
+      "scenario": "fast_right",
+      "intervals": 477,
+      "ticks": 106704003,
+      "fps": 7.927860564893709,
+      "mode": 2
+    },
+    {
+      "variant": "buffer_sync",
+      "scenario": "straight",
+      "intervals": 453,
+      "ticks": 106917404,
+      "fps": 7.5139470978925,
+      "mode": 2
+    },
+    {
+      "variant": "buffer_sync",
+      "scenario": "right",
+      "intervals": 466,
+      "ticks": 106739566,
+      "fps": 7.742457328335024,
+      "mode": 2
+    },
+    {
+      "variant": "buffer_sync",
+      "scenario": "left",
+      "intervals": 472,
+      "ticks": 106704003,
+      "fps": 7.844759301110756,
+      "mode": 2
+    },
+    {
+      "variant": "buffer_sync",
+      "scenario": "fast_right",
+      "intervals": 469,
+      "ticks": 106881840,
+      "fps": 7.7819288805282545,
+      "mode": 2
+    }
+  ]
+}

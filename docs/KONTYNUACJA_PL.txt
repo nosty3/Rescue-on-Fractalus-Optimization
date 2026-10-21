@@ -1,3 +1,9 @@
+AKTUALIZACJA v8 — NAPRAWA KLINÓW, 7.720697 FPS
+Bank2 $9214 -> $84A0: osłona własności bufora, oczekiwanie na $42=0
+przed czyszczeniem. Geometria nadal wykonuje się wcześniej.
+Nie usuwać oczekiwania dla poprawy FPS. Raport: WYDANIE_V8_PL.txt.
+Odtworzenie: scripts/rebuild_v8.py. Zalecany zimny start CAR v8.
+
 AKTUALIZACJA v7 — wynik 7,883239 FPS, patrz WYDANIE_V7_PL.txt.
 Banki 10..13: rozwinięte ogony geometrii i tabele $9D00/$9E00; $9F
 jest zachowany na stosie i przywracany. Wejście/wyjście banków bez zmian.
