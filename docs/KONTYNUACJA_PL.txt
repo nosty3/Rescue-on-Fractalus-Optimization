@@ -1,3 +1,12 @@
+AKTUALIZACJA v6: raport WYDANIE_V6_PL.txt, wynik 7,691000 FPS.
+Punkty 1–4 wdrożone. Banki 10..13: stałe komendy geometrii; bank14:
+interpolacja tablicowa; RAM $7EEB..$7FC1 zawiera nowy kod i osiem operandów
+SMC. Osłona VBI akceptuje znaczniki <15. Stare save-state wymagają podmiany
+kodu RAM przez opt14_common.patch_state(); zimny start ładuje go z ROM.
+Zapasowa ścieżka czyszczenia $921A..$9307 musi pozostać nienaruszona.
+Testy CPU korzystają z opt14_cpu.py, który odrzuca nieobsługiwane opcodes.
+Odtworzenie bez fixture/SDK: scripts/rebuild_v6.py.
+
 AKTUALIZACJA v5: patrz WYDANIE_V5_PL.txt. Wypełnianie $9308 przeniesiono do banku 9;
 osłona VBI akceptuje także bank 9. Specjalizacja adresów wierszy zakłada D=0
 i standardową tabelę wierszy gry, sprawdzoną w 58 scenach. Długi ogon ma

@@ -1,0 +1,296 @@
+{
+  "result": "pass",
+  "checks": [
+    {
+      "scene": "center-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-6",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "center-7",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-6",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "right-7",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-6",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "left-7",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-6",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "down-7",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-6",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "up-7",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "cold_start-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level10-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-0",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-1",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-2",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-3",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-4",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    },
+    {
+      "scene": "level26-5",
+      "vbi_passes": 4,
+      "divider_scratch_reads": {}
+    }
+  ],
+  "scope": "Full flight VBI paths on 58 fixtures x4; fixed hardware inputs for standalone CPU test."
+}

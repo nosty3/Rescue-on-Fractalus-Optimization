@@ -1,0 +1,367 @@
+{
+  "result": "pass",
+  "division_cases": 20033,
+  "scenes": [
+    {
+      "scene": "center-0",
+      "old_cycles": 142831,
+      "new_cycles": 139224,
+      "saved": 3607
+    },
+    {
+      "scene": "center-1",
+      "old_cycles": 112325,
+      "new_cycles": 109543,
+      "saved": 2782
+    },
+    {
+      "scene": "center-2",
+      "old_cycles": 127904,
+      "new_cycles": 124501,
+      "saved": 3403
+    },
+    {
+      "scene": "center-3",
+      "old_cycles": 123427,
+      "new_cycles": 120318,
+      "saved": 3109
+    },
+    {
+      "scene": "center-4",
+      "old_cycles": 114222,
+      "new_cycles": 111559,
+      "saved": 2663
+    },
+    {
+      "scene": "center-5",
+      "old_cycles": 123660,
+      "new_cycles": 120697,
+      "saved": 2963
+    },
+    {
+      "scene": "center-6",
+      "old_cycles": 122164,
+      "new_cycles": 119226,
+      "saved": 2938
+    },
+    {
+      "scene": "center-7",
+      "old_cycles": 127197,
+      "new_cycles": 124046,
+      "saved": 3151
+    },
+    {
+      "scene": "right-0",
+      "old_cycles": 133112,
+      "new_cycles": 129827,
+      "saved": 3285
+    },
+    {
+      "scene": "right-1",
+      "old_cycles": 104857,
+      "new_cycles": 101877,
+      "saved": 2980
+    },
+    {
+      "scene": "right-2",
+      "old_cycles": 105522,
+      "new_cycles": 102387,
+      "saved": 3135
+    },
+    {
+      "scene": "right-3",
+      "old_cycles": 105412,
+      "new_cycles": 102298,
+      "saved": 3114
+    },
+    {
+      "scene": "right-4",
+      "old_cycles": 118795,
+      "new_cycles": 115743,
+      "saved": 3052
+    },
+    {
+      "scene": "right-5",
+      "old_cycles": 114216,
+      "new_cycles": 111403,
+      "saved": 2813
+    },
+    {
+      "scene": "right-6",
+      "old_cycles": 126001,
+      "new_cycles": 122918,
+      "saved": 3083
+    },
+    {
+      "scene": "right-7",
+      "old_cycles": 112562,
+      "new_cycles": 109656,
+      "saved": 2906
+    },
+    {
+      "scene": "left-0",
+      "old_cycles": 120267,
+      "new_cycles": 116919,
+      "saved": 3348
+    },
+    {
+      "scene": "left-1",
+      "old_cycles": 110127,
+      "new_cycles": 106878,
+      "saved": 3249
+    },
+    {
+      "scene": "left-2",
+      "old_cycles": 92255,
+      "new_cycles": 89684,
+      "saved": 2571
+    },
+    {
+      "scene": "left-3",
+      "old_cycles": 113172,
+      "new_cycles": 110203,
+      "saved": 2969
+    },
+    {
+      "scene": "left-4",
+      "old_cycles": 120728,
+      "new_cycles": 117499,
+      "saved": 3229
+    },
+    {
+      "scene": "left-5",
+      "old_cycles": 101940,
+      "new_cycles": 99048,
+      "saved": 2892
+    },
+    {
+      "scene": "left-6",
+      "old_cycles": 102268,
+      "new_cycles": 98876,
+      "saved": 3392
+    },
+    {
+      "scene": "left-7",
+      "old_cycles": 98958,
+      "new_cycles": 95822,
+      "saved": 3136
+    },
+    {
+      "scene": "down-0",
+      "old_cycles": 123294,
+      "new_cycles": 119724,
+      "saved": 3570
+    },
+    {
+      "scene": "down-1",
+      "old_cycles": 61597,
+      "new_cycles": 58819,
+      "saved": 2778
+    },
+    {
+      "scene": "down-2",
+      "old_cycles": 71698,
+      "new_cycles": 68460,
+      "saved": 3238
+    },
+    {
+      "scene": "down-3",
+      "old_cycles": 65365,
+      "new_cycles": 62583,
+      "saved": 2782
+    },
+    {
+      "scene": "down-4",
+      "old_cycles": 66625,
+      "new_cycles": 63442,
+      "saved": 3183
+    },
+    {
+      "scene": "down-5",
+      "old_cycles": 60225,
+      "new_cycles": 57785,
+      "saved": 2440
+    },
+    {
+      "scene": "down-6",
+      "old_cycles": 66523,
+      "new_cycles": 63695,
+      "saved": 2828
+    },
+    {
+      "scene": "down-7",
+      "old_cycles": 68703,
+      "new_cycles": 65594,
+      "saved": 3109
+    },
+    {
+      "scene": "up-0",
+      "old_cycles": 134144,
+      "new_cycles": 130693,
+      "saved": 3451
+    },
+    {
+      "scene": "up-1",
+      "old_cycles": 101499,
+      "new_cycles": 98675,
+      "saved": 2824
+    },
+    {
+      "scene": "up-2",
+      "old_cycles": 110135,
+      "new_cycles": 107281,
+      "saved": 2854
+    },
+    {
+      "scene": "up-3",
+      "old_cycles": 114656,
+      "new_cycles": 111598,
+      "saved": 3058
+    },
+    {
+      "scene": "up-4",
+      "old_cycles": 115239,
+      "new_cycles": 112108,
+      "saved": 3131
+    },
+    {
+      "scene": "up-5",
+      "old_cycles": 103632,
+      "new_cycles": 101139,
+      "saved": 2493
+    },
+    {
+      "scene": "up-6",
+      "old_cycles": 105892,
+      "new_cycles": 103446,
+      "saved": 2446
+    },
+    {
+      "scene": "up-7",
+      "old_cycles": 130955,
+      "new_cycles": 127498,
+      "saved": 3457
+    },
+    {
+      "scene": "cold_start-0",
+      "old_cycles": 105322,
+      "new_cycles": 102301,
+      "saved": 3021
+    },
+    {
+      "scene": "cold_start-1",
+      "old_cycles": 106189,
+      "new_cycles": 103012,
+      "saved": 3177
+    },
+    {
+      "scene": "cold_start-2",
+      "old_cycles": 95727,
+      "new_cycles": 93161,
+      "saved": 2566
+    },
+    {
+      "scene": "cold_start-3",
+      "old_cycles": 120498,
+      "new_cycles": 117406,
+      "saved": 3092
+    },
+    {
+      "scene": "cold_start-4",
+      "old_cycles": 107083,
+      "new_cycles": 104088,
+      "saved": 2995
+    },
+    {
+      "scene": "cold_start-5",
+      "old_cycles": 103326,
+      "new_cycles": 100217,
+      "saved": 3109
+    },
+    {
+      "scene": "level10-0",
+      "old_cycles": 132834,
+      "new_cycles": 129242,
+      "saved": 3592
+    },
+    {
+      "scene": "level10-1",
+      "old_cycles": 126366,
+      "new_cycles": 123267,
+      "saved": 3099
+    },
+    {
+      "scene": "level10-2",
+      "old_cycles": 118448,
+      "new_cycles": 115754,
+      "saved": 2694
+    },
+    {
+      "scene": "level10-3",
+      "old_cycles": 147149,
+      "new_cycles": 143766,
+      "saved": 3383
+    },
+    {
+      "scene": "level10-4",
+      "old_cycles": 133983,
+      "new_cycles": 130900,
+      "saved": 3083
+    },
+    {
+      "scene": "level10-5",
+      "old_cycles": 113530,
+      "new_cycles": 110498,
+      "saved": 3032
+    },
+    {
+      "scene": "level26-0",
+      "old_cycles": 130924,
+      "new_cycles": 127939,
+      "saved": 2985
+    },
+    {
+      "scene": "level26-1",
+      "old_cycles": 148026,
+      "new_cycles": 144885,
+      "saved": 3141
+    },
+    {
+      "scene": "level26-2",
+      "old_cycles": 145496,
+      "new_cycles": 142574,
+      "saved": 2922
+    },
+    {
+      "scene": "level26-3",
+      "old_cycles": 125612,
+      "new_cycles": 122907,
+      "saved": 2705
+    },
+    {
+      "scene": "level26-4",
+      "old_cycles": 125688,
+      "new_cycles": 122257,
+      "saved": 3431
+    },
+    {
+      "scene": "level26-5",
+      "old_cycles": 112001,
+      "new_cycles": 108798,
+      "saved": 3203
+    }
+  ],
+  "scratch_exceptions": [
+    "AE",
+    "AF",
+    "B0",
+    "B1"
+  ],
+  "following_calls": [
+    "8E51",
+    "A444",
+    "8309"
+  ],
+  "division_saved_min": 5,
+  "division_saved_max": 259
+}

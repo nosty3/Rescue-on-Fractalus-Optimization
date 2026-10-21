@@ -1,0 +1,22 @@
+{
+  "variant": "opt14_interpolation",
+  "sha256": "cc2a6a1001d4471431bd03b37a496cfd3b1088baf457ed5403b79b0d58767f21",
+  "base": "opt14_geometry",
+  "ram_patches": [
+    {
+      "address": 32491,
+      "hex": "a90e8d00d52000900848a9028d00d5682860eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea8e387faabd00808d337fbd009eaabd00801869008d3d7fa200bd008069008d497fbd009eaabd0080690060eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea"
+    }
+  ],
+  "smc_labels": {
+    "high0": 32548,
+    "low0": 32558,
+    "sum1": 32562,
+    "value1": 32567,
+    "high1": 32569,
+    "sum2": 32572,
+    "low1": 32581,
+    "sum3": 32584
+  },
+  "bank_entry": 36864
+}

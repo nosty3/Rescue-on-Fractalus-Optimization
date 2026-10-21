@@ -1,0 +1,11 @@
+{
+  "variant": "opt14_division",
+  "sha256": "ae573a0eae57de25d5b17de28026ce1b073fafc2ad71b9ffde134477b56fea64",
+  "base": "opt14_base",
+  "scratch_changed": [
+    174,
+    175,
+    176,
+    177
+  ]
+}

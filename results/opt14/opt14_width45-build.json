@@ -1,0 +1,11 @@
+{
+  "variant": "opt14_width45",
+  "sha256": "5078833c180823470e63c0359a656c67a06a59725392dcade295c443c96132e8",
+  "base": "opt14_division",
+  "depths": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

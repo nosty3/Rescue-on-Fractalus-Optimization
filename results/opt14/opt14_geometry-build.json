@@ -1,0 +1,24 @@
+{
+  "variant": "opt14_geometry",
+  "sha256": "239b2d82ab4b017f11468690e9450a0b5f4753559818809718c7372797f9114f",
+  "base": "opt14_width45",
+  "banks": [
+    {
+      "bank": 10,
+      "command_table": "0x9a55"
+    },
+    {
+      "bank": 11,
+      "command_table": "0x9a82"
+    },
+    {
+      "bank": 12,
+      "command_table": "0x9aaf"
+    },
+    {
+      "bank": 13,
+      "command_table": "0x9adc"
+    }
+  ],
+  "bank_entry": 39059
+}

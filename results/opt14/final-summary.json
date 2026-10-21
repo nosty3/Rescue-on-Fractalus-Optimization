@@ -1,0 +1,176 @@
+{
+  "result": "pass",
+  "fps_method": "sum presentations / sum emulated time, 4 scenarios, >=3000 PAL frames each",
+  "fps": {
+    "opt14_base": 7.367256208389218,
+    "opt14_division": 7.504849607582401,
+    "opt14_width45": 7.511900787549067,
+    "opt14_geometry": 7.577043014697659,
+    "opt14_interpolation": 7.69100049687045
+  },
+  "gain_vs_v5_percent": 4.394367174479141,
+  "gain_vs_original_percent": 17.35658590021769,
+  "scenarios": [
+    {
+      "variant": "opt14_base",
+      "scenario": "straight",
+      "intervals": 432,
+      "ticks": 106917411,
+      "fps": 7.165617955339378,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_base",
+      "scenario": "right",
+      "intervals": 444,
+      "ticks": 106775134,
+      "fps": 7.374476252120648,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_base",
+      "scenario": "left",
+      "intervals": 455,
+      "ticks": 106810701,
+      "fps": 7.554660768493599,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_base",
+      "scenario": "fast_right",
+      "intervals": 444,
+      "ticks": 106775136,
+      "fps": 7.374476113989684,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_division",
+      "scenario": "straight",
+      "intervals": 439,
+      "ticks": 106810701,
+      "fps": 7.289002367843274,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_division",
+      "scenario": "right",
+      "intervals": 450,
+      "ticks": 106810705,
+      "fps": 7.47164223848162,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_division",
+      "scenario": "left",
+      "intervals": 461,
+      "ticks": 106775135,
+      "fps": 7.656832253127098,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_division",
+      "scenario": "fast_right",
+      "intervals": 458,
+      "ticks": 106846275,
+      "fps": 7.601939843012777,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_width45",
+      "scenario": "straight",
+      "intervals": 439,
+      "ticks": 106775132,
+      "fps": 7.291430484955991,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_width45",
+      "scenario": "right",
+      "intervals": 456,
+      "ticks": 106704000,
+      "fps": 7.57883547008547,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_width45",
+      "scenario": "left",
+      "intervals": 461,
+      "ticks": 106917407,
+      "fps": 7.6466435208253785,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_width45",
+      "scenario": "fast_right",
+      "intervals": 454,
+      "ticks": 106917408,
+      "fps": 7.530533895846035,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "straight",
+      "intervals": 436,
+      "ticks": 106846272,
+      "fps": 7.236781363789651,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "right",
+      "intervals": 459,
+      "ticks": 106917404,
+      "fps": 7.6134695760102815,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "left",
+      "intervals": 471,
+      "ticks": 106739563,
+      "fps": 7.825531124762053,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "fast_right",
+      "intervals": 460,
+      "ticks": 106881841,
+      "fps": 7.632595419085268,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_interpolation",
+      "scenario": "straight",
+      "intervals": 448,
+      "ticks": 106810700,
+      "fps": 7.438435287850375,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_interpolation",
+      "scenario": "right",
+      "intervals": 465,
+      "ticks": 106952974,
+      "fps": 7.71042689752601,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_interpolation",
+      "scenario": "left",
+      "intervals": 470,
+      "ticks": 106775133,
+      "fps": 7.806315024679014,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_interpolation",
+      "scenario": "fast_right",
+      "intervals": 470,
+      "ticks": 106739571,
+      "fps": 7.808915823729515,
+      "mode": 2
+    }
+  ],
+  "rom_sha256": "cc2a6a1001d4471431bd03b37a496cfd3b1088baf457ed5403b79b0d58767f21"
+}

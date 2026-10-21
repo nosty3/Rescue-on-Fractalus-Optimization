@@ -1,0 +1,38 @@
+{
+  "status": "invalid_do_not_use",
+  "reason": "Missing JMP before FF padding in selector; actual NMOS executed undocumented opcode, py65 silently ignored it. Corrected, strict CPU harness added, all FPS for this variant must be rerun.",
+  "discarded_measurements": [
+    {
+      "variant": "opt14_geometry",
+      "scenario": "straight",
+      "intervals": 646,
+      "ticks": 106775138,
+      "fps": 10.729530361271928,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "right",
+      "intervals": 485,
+      "ticks": 106704002,
+      "fps": 8.060822662490203,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "left",
+      "intervals": 497,
+      "ticks": 106704003,
+      "fps": 8.260265620025521,
+      "mode": 2
+    },
+    {
+      "variant": "opt14_geometry",
+      "scenario": "fast_right",
+      "intervals": 490,
+      "ticks": 106881837,
+      "fps": 8.130373685474735,
+      "mode": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "random_cases": 5000,
+  "poisoned_smc_operands": [
+    32550,
+    32560,
+    32563,
+    32568,
+    32571,
+    32573,
+    32583,
+    32585
+  ],
+  "saved_min": 314,
+  "saved_max": 339,
+  "saved_mean": 326.4432,
+  "full_ram_except_code_and_dead_stack": true,
+  "all_registers_flags_match": true
+}

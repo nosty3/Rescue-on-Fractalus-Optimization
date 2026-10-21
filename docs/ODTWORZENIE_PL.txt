@@ -4,9 +4,9 @@ ODTWORZENIE PO UTRACIE KOMPUTERA
 2. Zainstaluj Python 3 oraz MADS: https://github.com/tebe6502/Mad-Assembler
    Użyty lokalny MADS: changelog z 2026-10-05, wersja wskazana w nim 020109.
    SHA-256 lokalnego mads.exe zapisano w docs/backup-manifest.json.
-3. Uruchom python scripts/rebuild_v5.py --mads C:/sciezka/mads.exe
-   Nowy skrypt buduje v1, v2, v3, v4, v5 ze źródeł .asm bez SDK, py65 i dumpów RAM.
-   Sprawdza SHA-256 wszystkich pięciu ROM-ów względem zachowanych wydań.
+3. Uruchom python scripts/rebuild_v6.py --mads C:/sciezka/mads.exe
+   Nowy skrypt buduje v1, v2, v3, v4, v5, v6 ze źródeł .asm bez SDK, py65 i dumpów RAM.
+   Sprawdza SHA-256 wszystkich sześciu ROM-ów względem zachowanych wydań.
    Nie trzeba uruchamiać historycznych publish_*.py (nie są częścią kopii).
 
 DO NOWYCH BADAŃ I TESTÓW
