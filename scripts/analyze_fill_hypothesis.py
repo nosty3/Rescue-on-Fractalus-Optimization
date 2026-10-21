@@ -1,5 +1,5 @@
 from cpu_test_support import *
-orig=(ROOT/'Rescue on Fractalus!.rom').read_bytes()
+orig=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes()
 fixtures=json.loads((ROOT/'tests/fixtures/index.json').read_text());diff=[];count=0
 for f in fixtures:
  mem=(ROOT/f"tests/fixtures/{f['name']}.bin").read_bytes();c=cpu(orig,mem);run(c,0x87d3,f['regs']);m=c.memory;base=int(f['regs']['X'][1:],16)+3

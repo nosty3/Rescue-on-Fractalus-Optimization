@@ -25,7 +25,7 @@ def save(version,rom,name):
  car=b'CART'+(13).to_bytes(4,'big')+(sum(rom)&0xffffffff).to_bytes(4,'big')+bytes(4)+rom
  (BUILD/(name+'.car')).write_bytes(car)
  print(version,sha(rom),'PASS',flush=True)
-original=(ROOT/'Rescue on Fractalus!.rom').read_bytes()
+original=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes()
 assert sha(original)==EXPECTED['original']
 rom=bytearray(original)
 code=assemble('division_fast');assert len(code)<=0x8309-0x8224

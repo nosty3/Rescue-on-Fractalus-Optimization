@@ -1,5 +1,5 @@
 from session import *
-a=connect();a.pause();a.boot(str(ROOT/'Rescue on Fractalus!.rom'));a.frame(2)
+a=connect();a.pause();a.boot(str(ROOT/'original/Rescue on Fractalus!.rom'));a.frame(2)
 info=[]
 for direction in ['center','right','left','down','up']:
  a.bp_clear_all();a.state_load(str(ROOT/'results/flying.altstate2'));a.joy(0,direction)

@@ -1,5 +1,5 @@
 from cpu_test_support import *
-orig=(ROOT/'Rescue on Fractalus!.rom').read_bytes();rom=(ROOT/'build/release.rom').read_bytes()
+orig=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes();rom=(ROOT/'build/release.rom').read_bytes()
 mem=(ROOT/'tests/fixtures/center-0.bin').read_bytes();base=cpu(orig,mem)
 f=json.loads((ROOT/'tests/fixtures/index.json').read_text())[0];run(base,0x87d3,f['regs']);template=bytes(base.memory)
 rng=random.Random(982)

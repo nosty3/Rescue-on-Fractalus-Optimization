@@ -1,6 +1,6 @@
 MAPA KODU I STAN PRAC
 
-Najpierw README_PL.txt, ODTWORZENIE_PL.txt i WYDANIE_V3_PL.txt.
+Najpierw README_PL.md, ODTWORZENIE_PL.txt i WYDANIE_V3_PL.txt.
 Oryginał: 65536 bajtów, SHA256
 1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68.
 8 banków po 8192 bajty: wybieralny $8000–9FFF przez STA $D500;

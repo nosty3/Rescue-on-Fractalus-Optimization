@@ -1,7 +1,7 @@
 """Reproducible MADS build of the selected, verified patches. Never edits input ROM."""
 from session import *
 import hashlib,subprocess
-original=(ROOT/'Rescue on Fractalus!.rom').read_bytes()
+original=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes()
 expected='1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68'
 assert hashlib.sha256(original).hexdigest()==expected,'Unexpected input ROM'
 rom=bytearray(original);records=[]

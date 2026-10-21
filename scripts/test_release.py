@@ -1,5 +1,5 @@
 from cpu_test_support import *
-orig=(ROOT/'Rescue on Fractalus!.rom').read_bytes();rom=(ROOT/'build/release.rom').read_bytes();fixtures=json.loads((ROOT/'tests/fixtures/index.json').read_text());results=[]
+orig=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes();rom=(ROOT/'build/release.rom').read_bytes();fixtures=json.loads((ROOT/'tests/fixtures/index.json').read_text());results=[]
 for f in fixtures:
  mem=(ROOT/f"tests/fixtures/{f['name']}.bin").read_bytes();a=cpu(orig,mem);b=cpu(rom,mem)
  ca=run(a,0x87d3,f['regs']);cb=run(b,0x87d3,f['regs'])

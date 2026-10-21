@@ -1,7 +1,7 @@
 from session import *
 from altirra_bridge._analyzer_tables import OPCODES
 import subprocess
-rom=(ROOT/'Rescue on Fractalus!.rom').read_bytes()
+rom=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes()
 def decode(mem,pc):
  op=mem[pc]; mn,mode,n=OPCODES.get(op,('???','imp',1));v=mem[pc+1] if n>1 else 0;w=v+(mem[pc+2]<<8) if n==3 else v
  forms={'imp':'','acc':'@','imm':f'#${v:02X}','zp':f'${v:02X}','zpx':f'${v:02X},x','zpy':f'${v:02X},y','abs':f'${w:04X}','abx':f'${w:04X},x','aby':f'${w:04X},y','ind':f'(${w:04X})','izx':f'(${v:02X},x)','izy':f'(${v:02X}),y','rel':f'${(pc+2+(v if v<128 else v-256))&65535:04X}'}

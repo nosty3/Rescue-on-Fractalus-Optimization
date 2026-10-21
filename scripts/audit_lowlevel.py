@@ -1,6 +1,6 @@
 from cpu_test_support import *
 from py65.disassembler import Disassembler
-rom=(ROOT/'Rescue on Fractalus!.rom').read_bytes();mem=(ROOT/'tests/fixtures/center-0.bin').read_bytes();p=json.loads((ROOT/'analysis/optimization/insns.json').read_text())
+rom=(ROOT/'original/Rescue on Fractalus!.rom').read_bytes();mem=(ROOT/'tests/fixtures/center-0.bin').read_bytes();p=json.loads((ROOT/'analysis/optimization/insns.json').read_text())
 out=[]
 for r in p['hot']:
  g=int(r['gaddr'][1:],16)
