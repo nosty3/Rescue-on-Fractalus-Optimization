@@ -1,3 +1,10 @@
+AKTUALIZACJA v5: wypełnianie wdrożono w banku 9. Wynik 7,367256 FPS;
+czas samego wypełniania w 58 scenach spadł o 7,26%. Warianty fill_zero
+i fill_first odrzucono: pierwszy zwiększa koszt CPU, drugi pogarsza średni FPS.
+Dalsze hipotezy: specjalizacja pierwszego wiersza także dla startów 33+,
+profilowanie dzielenia $8224 i rasteryzacji $982A. Zyski tych hipotez
+pozostają niezmierzone; potrzebny nowy profil v5 przed wyborem kolejności.
+
 AKTUALIZACJA v4: punkt 1 wdrożono, uzyskując 7,316840 FPS.
 Rozszerzenie do 128 KiB z punktu 8 jest już zrealizowane.
 Kolejny priorytet: wypełnianie $9308 (12 477 061 taktów, około 11,7%

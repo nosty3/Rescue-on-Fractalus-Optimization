@@ -1,3 +1,8 @@
+AKTUALIZACJA v5: patrz WYDANIE_V5_PL.txt. Wypełnianie $9308 przeniesiono do banku 9;
+osłona VBI akceptuje także bank 9. Specjalizacja adresów wierszy zakłada D=0
+i standardową tabelę wierszy gry, sprawdzoną w 58 scenach. Długi ogon ma
+ogólną pętlę. Odtwarzanie offline: scripts/rebuild_v5.py.
+
 AKTUALIZACJA v4: patrz WYDANIE_V4_PL.txt. ROM ma 128 KiB, bank stały 15;
 czyszczenie jest w bankach 6 i 8, osłona VBI obsługuje 2/5/6/8.
 Poniższa mapa zachowuje opis etapu v3 jako punkt odniesienia.

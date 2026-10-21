@@ -1,0 +1,362 @@
+{
+  "result": "pass",
+  "scenes": [
+    {
+      "scene": "center-0",
+      "old": 14359,
+      "new": 15014,
+      "saved": -655
+    },
+    {
+      "scene": "center-1",
+      "old": 16081,
+      "new": 16719,
+      "saved": -638
+    },
+    {
+      "scene": "center-2",
+      "old": 12949,
+      "new": 13730,
+      "saved": -781
+    },
+    {
+      "scene": "center-3",
+      "old": 12737,
+      "new": 13621,
+      "saved": -884
+    },
+    {
+      "scene": "center-4",
+      "old": 11703,
+      "new": 12373,
+      "saved": -670
+    },
+    {
+      "scene": "center-5",
+      "old": 11939,
+      "new": 12720,
+      "saved": -781
+    },
+    {
+      "scene": "center-6",
+      "old": 14535,
+      "new": 15092,
+      "saved": -557
+    },
+    {
+      "scene": "center-7",
+      "old": 18854,
+      "new": 19341,
+      "saved": -487
+    },
+    {
+      "scene": "right-0",
+      "old": 17708,
+      "new": 18394,
+      "saved": -686
+    },
+    {
+      "scene": "right-1",
+      "old": 16409,
+      "new": 16723,
+      "saved": -314
+    },
+    {
+      "scene": "right-2",
+      "old": 11590,
+      "new": 11950,
+      "saved": -360
+    },
+    {
+      "scene": "right-3",
+      "old": 9924,
+      "new": 10493,
+      "saved": -569
+    },
+    {
+      "scene": "right-4",
+      "old": 8035,
+      "new": 8716,
+      "saved": -681
+    },
+    {
+      "scene": "right-5",
+      "old": 15577,
+      "new": 16146,
+      "saved": -569
+    },
+    {
+      "scene": "right-6",
+      "old": 19520,
+      "new": 20211,
+      "saved": -691
+    },
+    {
+      "scene": "right-7",
+      "old": 13987,
+      "new": 14448,
+      "saved": -461
+    },
+    {
+      "scene": "left-0",
+      "old": 13741,
+      "new": 14539,
+      "saved": -798
+    },
+    {
+      "scene": "left-1",
+      "old": 7749,
+      "new": 8083,
+      "saved": -334
+    },
+    {
+      "scene": "left-2",
+      "old": 11481,
+      "new": 12011,
+      "saved": -530
+    },
+    {
+      "scene": "left-3",
+      "old": 21832,
+      "new": 22330,
+      "saved": -498
+    },
+    {
+      "scene": "left-4",
+      "old": 21128,
+      "new": 21533,
+      "saved": -405
+    },
+    {
+      "scene": "left-5",
+      "old": 19438,
+      "new": 20099,
+      "saved": -661
+    },
+    {
+      "scene": "left-6",
+      "old": 15789,
+      "new": 16115,
+      "saved": -326
+    },
+    {
+      "scene": "left-7",
+      "old": 5463,
+      "new": 5839,
+      "saved": -376
+    },
+    {
+      "scene": "down-0",
+      "old": 22187,
+      "new": 22873,
+      "saved": -686
+    },
+    {
+      "scene": "down-1",
+      "old": 23234,
+      "new": 23612,
+      "saved": -378
+    },
+    {
+      "scene": "down-2",
+      "old": 23234,
+      "new": 23612,
+      "saved": -378
+    },
+    {
+      "scene": "down-3",
+      "old": 23234,
+      "new": 23612,
+      "saved": -378
+    },
+    {
+      "scene": "down-4",
+      "old": 23664,
+      "new": 24042,
+      "saved": -378
+    },
+    {
+      "scene": "down-5",
+      "old": 23664,
+      "new": 24042,
+      "saved": -378
+    },
+    {
+      "scene": "down-6",
+      "old": 23234,
+      "new": 23612,
+      "saved": -378
+    },
+    {
+      "scene": "down-7",
+      "old": 23664,
+      "new": 24042,
+      "saved": -378
+    },
+    {
+      "scene": "up-0",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-1",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-2",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-3",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-4",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-5",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-6",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "up-7",
+      "old": 3544,
+      "new": 3922,
+      "saved": -378
+    },
+    {
+      "scene": "cold_start-0",
+      "old": 12459,
+      "new": 13360,
+      "saved": -901
+    },
+    {
+      "scene": "cold_start-1",
+      "old": 11996,
+      "new": 12804,
+      "saved": -808
+    },
+    {
+      "scene": "cold_start-2",
+      "old": 10695,
+      "new": 11444,
+      "saved": -749
+    },
+    {
+      "scene": "cold_start-3",
+      "old": 9228,
+      "new": 9842,
+      "saved": -614
+    },
+    {
+      "scene": "cold_start-4",
+      "old": 9061,
+      "new": 9769,
+      "saved": -708
+    },
+    {
+      "scene": "cold_start-5",
+      "old": 8489,
+      "new": 9059,
+      "saved": -570
+    },
+    {
+      "scene": "level10-0",
+      "old": 17314,
+      "new": 17713,
+      "saved": -399
+    },
+    {
+      "scene": "level10-1",
+      "old": 17642,
+      "new": 17939,
+      "saved": -297
+    },
+    {
+      "scene": "level10-2",
+      "old": 18483,
+      "new": 18785,
+      "saved": -302
+    },
+    {
+      "scene": "level10-3",
+      "old": 15834,
+      "new": 16243,
+      "saved": -409
+    },
+    {
+      "scene": "level10-4",
+      "old": 16220,
+      "new": 16465,
+      "saved": -245
+    },
+    {
+      "scene": "level10-5",
+      "old": 13110,
+      "new": 13200,
+      "saved": -90
+    },
+    {
+      "scene": "level26-0",
+      "old": 10125,
+      "new": 10729,
+      "saved": -604
+    },
+    {
+      "scene": "level26-1",
+      "old": 10163,
+      "new": 10512,
+      "saved": -349
+    },
+    {
+      "scene": "level26-2",
+      "old": 6549,
+      "new": 6998,
+      "saved": -449
+    },
+    {
+      "scene": "level26-3",
+      "old": 12583,
+      "new": 12863,
+      "saved": -280
+    },
+    {
+      "scene": "level26-4",
+      "old": 10728,
+      "new": 11102,
+      "saved": -374
+    },
+    {
+      "scene": "level26-5",
+      "old": 7154,
+      "new": 7501,
+      "saved": -347
+    }
+  ],
+  "scene_input_counts": {
+    "zero": 597,
+    "nonzero": 4633
+  },
+  "scene_cycles_old": 774828,
+  "scene_cycles_new": 803391,
+  "random_cases": 256,
+  "random_saved_min": -909,
+  "random_saved_max": -621
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "clear128",
+    "scenario": "straight",
+    "intervals": 432,
+    "ticks": 106810706,
+    "seconds": 60.2277236850823,
+    "fps": 7.172776481788258,
+    "mode": 2
+  },
+  {
+    "variant": "clear128",
+    "scenario": "right",
+    "intervals": 438,
+    "ticks": 106917410,
+    "seconds": 60.28789124008464,
+    "fps": 7.265140494892273,
+    "mode": 2
+  },
+  {
+    "variant": "clear128",
+    "scenario": "left",
+    "intervals": 450,
+    "ticks": 106881836,
+    "seconds": 60.26783200517636,
+    "fps": 7.466669781009376,
+    "mode": 2
+  },
+  {
+    "variant": "clear128",
+    "scenario": "fast_right",
+    "intervals": 443,
+    "ticks": 106704003,
+    "seconds": 60.16755669395344,
+    "fps": 7.362771971169629,
+    "mode": 2
+  },
+  {
+    "variant": "fill_first",
+    "scenario": "straight",
+    "intervals": 419,
+    "ticks": 106810709,
+    "seconds": 60.22772537670272,
+    "fps": 6.956928845964312,
+    "mode": 2
+  },
+  {
+    "variant": "fill_first",
+    "scenario": "right",
+    "intervals": 440,
+    "ticks": 106846272,
+    "seconds": 60.247778409002805,
+    "fps": 7.303173853365703,
+    "mode": 2
+  },
+  {
+    "variant": "fill_first",
+    "scenario": "left",
+    "intervals": 453,
+    "ticks": 106846269,
+    "seconds": 60.247776717382386,
+    "fps": 7.518949655602855,
+    "mode": 2
+  },
+  {
+    "variant": "fill_first",
+    "scenario": "fast_right",
+    "intervals": 445,
+    "ticks": 106775138,
+    "seconds": 60.20766783341486,
+    "fps": 7.391085155984532,
+    "mode": 2
+  }
+]

@@ -1,17 +1,17 @@
 # Rescue on Fractalus! — optymalizacja Atari XL/XE PAL
 
-Stan przekazania: 21.10.2026. Aktualne wydanie: v4, 128 KiB XEGS (typ CART 14). Wydanie v3 64 KiB zachowano.
+Stan przekazania: 21.10.2026. Aktualne wydanie: v5, 128 KiB XEGS (typ CART 14). Wydanie v3 64 KiB zachowano.
 Wynik czterech lotów: oryginał 6,553531 FPS; v1 6,779769; v2 7,115256;
-v3 7,192973; v4 7,316840 FPS. Zysk v4: 11,65% względem oryginału, 1,72% względem v3.
+v3 7,192973; v4 7,316840; v5 7,367256 FPS. Zysk v5: 12,42% względem oryginału, 0,69% względem v4.
 To pomiary określonych lotów, nie gwarancja FPS dla każdego terenu.
 
-Gotowa gra: dist/Rescue on Fractalus! - PAL optimized v4 128KB.car
+Gotowa gra: dist/Rescue on Fractalus! - PAL optimized v5 128KB.car
 Oryginalny obraz: original/Rescue on Fractalus!.rom (niezmieniony).
-Odtworzenie gry: python scripts/rebuild_v4.py --mads ŚCIEŻKA_DO_MADS
+Odtworzenie gry: python scripts/rebuild_v5.py --mads ŚCIEŻKA_DO_MADS
 Instrukcja środowiska: docs/ODTWORZENIE_PL.txt
 Mapa kodu i istotne pułapki: docs/KONTYNUACJA_PL.txt
 Dalsze kierunki: docs/DALSZE_KIERUNKI_PL.txt
-Raport bieżącego wydania: docs/WYDANIE_V4_PL.txt
+Raport bieżącego wydania: docs/WYDANIE_V5_PL.txt
 Lista plików i SHA-256: docs/backup-manifest.json
 
 Repozytorium zawiera wybrany zestaw źródeł, wydań i wyników. Celowo nie ma

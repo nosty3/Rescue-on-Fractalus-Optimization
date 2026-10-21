@@ -1,0 +1,17 @@
+{
+  "result": "pass",
+  "long_tail_cases": 56,
+  "last_row": 69,
+  "tested_first_rows": [
+    0,
+    1,
+    31,
+    32,
+    33,
+    47,
+    48
+  ],
+  "row_table_fixtures": 58,
+  "vbi_bank9_restored": true,
+  "decimal_flag": 0
+}

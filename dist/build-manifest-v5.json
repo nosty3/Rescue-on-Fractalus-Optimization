@@ -1,0 +1,102 @@
+{
+  "sha256": "9a6445651455d011008238ab5038e4186badc9e4b7a84a2881b6ab2e02d0d5ef",
+  "rom_bytes": 131072,
+  "cart_type": 14,
+  "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "mads_rebuild_verified": true,
+  "ips_verified": true,
+  "performance": {
+    "fps_original": 6.553531221,
+    "fps_v4": 7.316840243375624,
+    "fps_v5": 7.367256208389218,
+    "gain_vs_v4_percent": 0.6890401230126519,
+    "gain_vs_original_percent": 12.41658824759595,
+    "fill_cycles_old": 774828,
+    "fill_cycles_new": 718543,
+    "fill_cycle_reduction_percent": 7.264192827311355,
+    "scenarios": [
+      {
+        "variant": "clear128",
+        "scenario": "straight",
+        "intervals": 432,
+        "ticks": 106810706,
+        "seconds": 60.2277236850823,
+        "fps": 7.172776481788258,
+        "mode": 2
+      },
+      {
+        "variant": "clear128",
+        "scenario": "right",
+        "intervals": 438,
+        "ticks": 106917410,
+        "seconds": 60.28789124008464,
+        "fps": 7.265140494892273,
+        "mode": 2
+      },
+      {
+        "variant": "clear128",
+        "scenario": "left",
+        "intervals": 450,
+        "ticks": 106881836,
+        "seconds": 60.26783200517636,
+        "fps": 7.466669781009376,
+        "mode": 2
+      },
+      {
+        "variant": "clear128",
+        "scenario": "fast_right",
+        "intervals": 443,
+        "ticks": 106704003,
+        "seconds": 60.16755669395344,
+        "fps": 7.362771971169629,
+        "mode": 2
+      },
+      {
+        "variant": "fill_rows",
+        "scenario": "straight",
+        "intervals": 432,
+        "ticks": 106917411,
+        "seconds": 60.28789180395811,
+        "fps": 7.165617955339378,
+        "mode": 2
+      },
+      {
+        "variant": "fill_rows",
+        "scenario": "right",
+        "intervals": 444,
+        "ticks": 106775134,
+        "seconds": 60.20766557792097,
+        "fps": 7.374476252120648,
+        "mode": 2
+      },
+      {
+        "variant": "fill_rows",
+        "scenario": "left",
+        "intervals": 455,
+        "ticks": 106810701,
+        "seconds": 60.22772086571494,
+        "fps": 7.554660768493599,
+        "mode": 2
+      },
+      {
+        "variant": "fill_rows",
+        "scenario": "fast_right",
+        "intervals": 444,
+        "ticks": 106775136,
+        "seconds": 60.20766670566792,
+        "fps": 7.374476113989684,
+        "mode": 2
+      }
+    ]
+  },
+  "validation": {
+    "renderer_scenes": 58,
+    "random_cases": 256,
+    "long_tail_cases": 56,
+    "decimal_flag": 0
+  },
+  "sources": {
+    "scripts/build_fill_rows.py": "d61d7f0d8815a299ad620330388bff73ede4dc3133c1c5e905fca56a29ebf03b",
+    "src/fill_rows.asm": "b098f67fe9f367a6f75f95418852e964c0af6f124c7c7f0659306b2e3f604620"
+  }
+}
