@@ -1,0 +1,163 @@
+; Standalone audit prototype, NOT patched into distributed game.
+ opt h-
+ org $bb3e
+ ldx #0
+ stx $0716
+ ldx #1
+ lda $0706
+ beq check_1
+ cpx $0715
+ bne next_1
+check_1
+ lda $066c
+ and #15
+ cmp $0716
+ bcc next_1
+ sta $0716
+ stx $0717
+next_1
+ ldx #2
+ lda $0707
+ beq check_2
+ cpx $0715
+ bne next_2
+check_2
+ lda $066d
+ and #15
+ cmp $0716
+ bcc next_2
+ sta $0716
+ stx $0717
+next_2
+ ldx #3
+ lda $0708
+ beq check_3
+ cpx $0715
+ bne next_3
+check_3
+ lda $066e
+ and #15
+ cmp $0716
+ bcc next_3
+ sta $0716
+ stx $0717
+next_3
+ ldx #4
+ lda $0709
+ beq check_4
+ cpx $0715
+ bne next_4
+check_4
+ lda $066f
+ and #15
+ cmp $0716
+ bcc next_4
+ sta $0716
+ stx $0717
+next_4
+ ldx #5
+ lda $070a
+ beq check_5
+ cpx $0715
+ bne next_5
+check_5
+ lda $0670
+ and #15
+ cmp $0716
+ bcc next_5
+ sta $0716
+ stx $0717
+next_5
+ ldx #6
+ lda $070b
+ beq check_6
+ cpx $0715
+ bne next_6
+check_6
+ lda $0671
+ and #15
+ cmp $0716
+ bcc next_6
+ sta $0716
+ stx $0717
+next_6
+ ldx #7
+ lda $070c
+ beq check_7
+ cpx $0715
+ bne next_7
+check_7
+ lda $0672
+ and #15
+ cmp $0716
+ bcc next_7
+ sta $0716
+ stx $0717
+next_7
+ ldx #8
+ lda $070d
+ beq check_8
+ cpx $0715
+ bne next_8
+check_8
+ lda $0673
+ and #15
+ cmp $0716
+ bcc next_8
+ sta $0716
+ stx $0717
+next_8
+ ldx #9
+ lda $070e
+ beq check_9
+ cpx $0715
+ bne next_9
+check_9
+ lda $0674
+ and #15
+ cmp $0716
+ bcc next_9
+ sta $0716
+ stx $0717
+next_9
+ ldx #10
+ lda $070f
+ beq check_10
+ cpx $0715
+ bne next_10
+check_10
+ lda $0675
+ and #15
+ cmp $0716
+ bcc next_10
+ sta $0716
+ stx $0717
+next_10
+ ldx #11
+ lda $0710
+ beq check_11
+ cpx $0715
+ bne next_11
+check_11
+ lda $0676
+ and #15
+ cmp $0716
+ bcc next_11
+ sta $0716
+ stx $0717
+next_11
+ ldx #12
+ lda $0711
+ beq check_12
+ cpx $0715
+ bne next_12
+check_12
+ lda $0677
+ and #15
+ cmp $0716
+ bcc next_12
+ sta $0716
+ stx $0717
+next_12
+ cpx #12
+ rts

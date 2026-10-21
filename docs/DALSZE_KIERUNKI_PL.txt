@@ -1,0 +1,41 @@
+DALSZE KIERUNKI — HIPOTEZY, NIE POTWIERDZONE ZYSKI
+
+1. Czyszczenie bitmapy $9214: pierwotny profil około 5,4% czasu maszyny.
+   Zbadać rozwinięte STA abs zamiast STA abs,X, specjalizację buforów
+   i koszt rozmiaru. Najpierw policzyć dynamiczne zapisy i cykle, potem
+   porównać cały RAM oraz FPS. To lepszy kandydat niż dalsze mikrooszczędności
+   w dźwięku, ale w tej kopii brak zweryfikowanego nowego wdrożenia.
+2. Wypełnianie $9308: nadal istotne. Rozważyć większe bloki zapisu i tablice
+   adresów; uwzględnić pierwszy wiersz, brzegi, maski oraz oba bufory.
+   Nie sumować udziałów czasu inclusive z kosztami ich procedur potomnych.
+3. Układ kodu: policzyć skoki i odczyty przekraczające stronę. Ustawienie
+   pętli/tablic może dać cykl bez zmiany algorytmu; nowy układ może też
+   pogorszyć inne skoki. Mierzyć na rzeczywistych danych, nie tylko losowych.
+4. Profil gór: ostrożnie poprawiać test całkowitego zasłonięcia. Zachować
+   konserwatywną granicę dodatkowej wysokości i skan każdej kolumny.
+   Agresywniejsze odrzucanie musi mieć dowód, że nie usuwa widocznych gór.
+5. Interpolacja $7EEB: spróbować częściowego rozwinięcia lub ulokowania
+   kodu bez przełączeń banku, zamiast pełnej wersji w bank6. Zachować
+   kolejność LSR/ADC, carry i destrukcyjne zmiany operandów. Obecny
+   eksperyment nie poprawił średniej FPS względem samego dźwięku.
+6. Mnożenie $7CD6: dotychczas nie zmienione. Wczesne wyjście po wyzerowaniu
+   operandu czyni naiwne rozwinięcie do 8 kroków nieoczywistym. Testować
+   pełny stan operandów i flag, nie tylko wynik liczbowy.
+7. Dźwięk: helper znacznika kosztuje dodatkowe wywołanie na ścieżce zdarzenia.
+   Można zbadać przeniesienie końca pętli i skok zamiast zagnieżdżonego JSR.
+   To pomysł, bez wdrożenia/testu. Przy wielu zdarzeniach obecna zmiana
+   flagi potrafi kosztować więcej niż oryginał; utrzymać testy wszystkich
+   14 kanałów, remisów priorytetów i kolejności zapisów POKEY.
+8. Cartridge 128 KiB: potencjalnie więcej specjalizacji i tablic wyników
+   kosztem bankowania i zgodności mapera. Obecne v3 potrzebuje tylko 64 KiB
+   i ma pusty bank6, więc najpierw wykorzystać dostępne miejsce. Sam wzrost
+   rozmiaru nie przyspiesza CPU. Brak pomierzonej wersji 128 KiB.
+9. Metodyka: przygotować więcej niezależnych lotów/poziomów oraz test
+   stałych wejść renderera z liczeniem cykli. Małe różnice FPS mogą wynikać
+   z synchronizacji VBI i zmiany kolejnych scen. Nie dobierać tylko prób,
+   w których nowy wariant wygrywa; publikować także regresje.
+
+Warunek przyjęcia zmiany: zgodność żywego stanu i obrazu, wymagane flagi,
+bezpieczne przerwania/banki, restart, osobny koszt integracji, a następnie
+pomiar pełnej gry. Nie deklarować zgodności audio próbka w próbkę na
+podstawie samej zgodności wartości i kolejności zapisów POKEY.

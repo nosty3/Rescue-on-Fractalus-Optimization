@@ -1,0 +1,31 @@
+{
+  "baseline_fps": 7.1152559717378026,
+  "profile_pal_frames": 3000,
+  "profile_machine_cycles": 106704000,
+  "models": [
+    {
+      "procedure": "$bb19",
+      "calls": 4918,
+      "saved_cpu_cycles_model": 370686.05333333334,
+      "fps_gain_model_1x": 0.02480432572564073,
+      "fps_gain_model_1_5x": 0.037271454156307726
+    },
+    {
+      "procedure": "$bb3e",
+      "calls": 1891,
+      "saved_cpu_cycles_model": 106802.41933333334,
+      "fps_gain_model_1x": 0.007128954317795255,
+      "fps_gain_model_1_5x": 0.010698791170976385
+    },
+    {
+      "procedure": "$7eeb",
+      "calls": 2250,
+      "saved_cpu_cycles_model": 205092.0,
+      "fps_gain_model_1x": 0.013702319630879423,
+      "fps_gain_model_1_5x": 0.020573289118978266
+    }
+  ],
+  "combined_fps_1x": 7.161064967749981,
+  "combined_fps_1_5x": 7.184191373552457,
+  "caveat": "Uses measured call counts and mean standalone savings on randomized inputs. Excludes relocation/bank glue; DMA factors are sensitivity assumptions. Not measured game FPS."
+}

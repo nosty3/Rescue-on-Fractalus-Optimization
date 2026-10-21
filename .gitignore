@@ -1,0 +1,9 @@
+/tools/
+/build/
+/tests/fixtures/
+__pycache__/
+*.pyc
+*.token
+*.altstate2
+*.png
+*.bin

@@ -1,0 +1,24 @@
+[
+  {
+    "entry": "0xbb19",
+    "kind": "minimum",
+    "cases": 3000,
+    "bytes": 322,
+    "old_cycles": 865868,
+    "new_cycles": 639748,
+    "saved_per_call_mean": 75.37333333333333,
+    "saved_per_call_min": 66,
+    "saved_per_call_max": 78
+  },
+  {
+    "entry": "0xbb3e",
+    "kind": "maximum",
+    "cases": 3000,
+    "bytes": 344,
+    "old_cycles": 936094,
+    "new_cycles": 766656,
+    "saved_per_call_mean": 56.47933333333334,
+    "saved_per_call_min": 56,
+    "saved_per_call_max": 57
+  }
+]

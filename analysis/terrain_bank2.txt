@@ -1,0 +1,4447 @@
+; Exploratory linear disassembly: includes data; not a complete code/data classification.
+8000 bcad6c   ldy $6CAD,x
+8003 06f0     asl $F0
+8005 35c9     and $C9,x
+8007 02       ??? 
+8008 b00a     bcs $8014
+800A ada406   lda $06A4
+800D f02c     beq $803B
+800F ad9606   lda $0696
+8012 f027     beq $803B
+8014 a9b4     lda #$B4
+8016 8d5533   sta $3355
+8019 a900     lda #$00
+801B 8d7728   sta $2877
+801E 8d9606   sta $0696
+8021 8d9706   sta $0697
+8024 a9ff     lda #$FF
+8026 8d8806   sta $0688
+8029 8d8906   sta $0689
+802C a001     ldy #$01
+802E 8ca406   sty $06A4
+8031 8ca506   sty $06A5
+8034 208bba   jsr $BA8B
+8037 c8       iny 
+8038 4c8bba   jmp $BA8B
+803B 60       rts 
+803C a901     lda #$01
+803E 8541     sta $41
+8040 a93c     lda #$3C
+8042 85dd     sta $DD
+8044 a938     lda #$38
+8046 85dc     sta $DC
+8048 a934     lda #$34
+804A 85da     sta $DA
+804C 60       rts 
+804D 00       brk 
+804E 00       brk 
+804F ff       ??? 
+8050 ff       ??? 
+8051 00       brk 
+8052 3f       ??? 
+8053 00       brk 
+8054 3f       ??? 
+8055 ad8628   lda $2886
+8058 8575     sta $75
+805A ad8528   lda $2885
+805D 0a       asl @
+805E 2675     rol $75
+8060 0a       asl @
+8061 2675     rol $75
+8063 ad8528   lda $2885
+8066 4a       lsr @
+8067 4a       lsr @
+8068 4a       lsr @
+8069 2907     and #$07
+806B 8d0d28   sta $280D
+806E 209080   jsr $8090
+8071 a577     lda $77
+8073 8d0928   sta $2809
+8076 a578     lda $78
+8078 8d0a28   sta $280A
+807B 18       clc 
+807C a575     lda $75
+807E 6940     adc #$40
+8080 8575     sta $75
+8082 209080   jsr $8090
+8085 a577     lda $77
+8087 8d0b28   sta $280B
+808A a578     lda $78
+808C 8d0c28   sta $280C
+808F 60       rts 
+8090 e675     inc $75
+8092 200a81   jsr $810A
+8095 a576     lda $76
+8097 8d1628   sta $2816
+809A a577     lda $77
+809C 8d1728   sta $2817
+809F a578     lda $78
+80A1 8d1828   sta $2818
+80A4 c675     dec $75
+80A6 200a81   jsr $810A
+80A9 a576     lda $76
+80AB 8d1328   sta $2813
+80AE a577     lda $77
+80B0 8d1428   sta $2814
+80B3 a578     lda $78
+80B5 8d1528   sta $2815
+80B8 ad0d28   lda $280D
+80BB 8d0f28   sta $280F
+80BE a003     ldy #$03
+80C0 4e0f28   lsr $280F
+80C3 9019     bcc $80DE
+80C5 18       clc 
+80C6 a576     lda $76
+80C8 6d1628   adc $2816
+80CB 8576     sta $76
+80CD a577     lda $77
+80CF 6d1728   adc $2817
+80D2 8577     sta $77
+80D4 a578     lda $78
+80D6 6d1828   adc $2818
+80D9 8578     sta $78
+80DB 4cf480   jmp $80F4
+80DE 18       clc 
+80DF a576     lda $76
+80E1 6d1328   adc $2813
+80E4 8576     sta $76
+80E6 a577     lda $77
+80E8 6d1428   adc $2814
+80EB 8577     sta $77
+80ED a578     lda $78
+80EF 6d1528   adc $2815
+80F2 8578     sta $78
+80F4 0e1328   asl $2813
+80F7 2e1428   rol $2814
+80FA 2e1528   rol $2815
+80FD 0e1628   asl $2816
+8100 2e1728   rol $2817
+8103 2e1828   rol $2818
+8106 88       dey 
+8107 d0b7     bne $80C0
+8109 60       rts 
+810A a900     lda #$00
+810C 8d0e28   sta $280E
+810F a575     lda $75
+8111 0a       asl @
+8112 2e0e28   rol $280E
+8115 0a       asl @
+8116 2e0e28   rol $280E
+8119 4a       lsr @
+811A 4a       lsr @
+811B ae0e28   ldx $280E
+811E 5d5180   eor $8051,x
+8121 a8       tay 
+8122 bd4d80   lda $804D,x
+8125 d00f     bne $8136
+8127 8578     sta $78
+8129 b930b3   lda $B330,y
+812C 8577     sta $77
+812E b971b3   lda $B371,y
+8131 8576     sta $76
+8133 4c4b81   jmp $814B
+8136 38       sec 
+8137 a900     lda #$00
+8139 f971b3   sbc $B371,y
+813C 8576     sta $76
+813E a900     lda #$00
+8140 f930b3   sbc $B330,y
+8143 8577     sta $77
+8145 a900     lda #$00
+8147 e900     sbc #$00
+8149 8578     sta $78
+814B 60       rts 
+814C 85ac     sta $AC
+814E a900     lda #$00
+8150 85a9     sta $A9
+8152 85a8     sta $A8
+8154 a5ab     lda $AB
+8156 85ad     sta $AD
+8158 100d     bpl $8167
+815A 38       sec 
+815B a900     lda #$00
+815D e5aa     sbc $AA
+815F 85aa     sta $AA
+8161 a900     lda #$00
+8163 e5ab     sbc $AB
+8165 85ab     sta $AB
+8167 66ac     ror $AC
+8169 9008     bcc $8173
+816B a5aa     lda $AA
+816D 85a8     sta $A8
+816F a5ab     lda $AB
+8171 85a9     sta $A9
+8173 46a9     lsr $A9
+8175 66a8     ror $A8
+8177 66ac     ror $AC
+8179 900d     bcc $8188
+817B 18       clc 
+817C a5aa     lda $AA
+817E 65a8     adc $A8
+8180 85a8     sta $A8
+8182 a5ab     lda $AB
+8184 65a9     adc $A9
+8186 85a9     sta $A9
+8188 46a9     lsr $A9
+818A 66a8     ror $A8
+818C 66ac     ror $AC
+818E 900d     bcc $819D
+8190 18       clc 
+8191 a5aa     lda $AA
+8193 65a8     adc $A8
+8195 85a8     sta $A8
+8197 a5ab     lda $AB
+8199 65a9     adc $A9
+819B 85a9     sta $A9
+819D 46a9     lsr $A9
+819F 66a8     ror $A8
+81A1 66ac     ror $AC
+81A3 900d     bcc $81B2
+81A5 18       clc 
+81A6 a5aa     lda $AA
+81A8 65a8     adc $A8
+81AA 85a8     sta $A8
+81AC a5ab     lda $AB
+81AE 65a9     adc $A9
+81B0 85a9     sta $A9
+81B2 46a9     lsr $A9
+81B4 66a8     ror $A8
+81B6 66ac     ror $AC
+81B8 900d     bcc $81C7
+81BA 18       clc 
+81BB a5aa     lda $AA
+81BD 65a8     adc $A8
+81BF 85a8     sta $A8
+81C1 a5ab     lda $AB
+81C3 65a9     adc $A9
+81C5 85a9     sta $A9
+81C7 46a9     lsr $A9
+81C9 66a8     ror $A8
+81CB 66ac     ror $AC
+81CD 900d     bcc $81DC
+81CF 18       clc 
+81D0 a5aa     lda $AA
+81D2 65a8     adc $A8
+81D4 85a8     sta $A8
+81D6 a5ab     lda $AB
+81D8 65a9     adc $A9
+81DA 85a9     sta $A9
+81DC 46a9     lsr $A9
+81DE 66a8     ror $A8
+81E0 66ac     ror $AC
+81E2 900d     bcc $81F1
+81E4 18       clc 
+81E5 a5aa     lda $AA
+81E7 65a8     adc $A8
+81E9 85a8     sta $A8
+81EB a5ab     lda $AB
+81ED 65a9     adc $A9
+81EF 85a9     sta $A9
+81F1 46a9     lsr $A9
+81F3 66a8     ror $A8
+81F5 66ac     ror $AC
+81F7 900d     bcc $8206
+81F9 18       clc 
+81FA a5aa     lda $AA
+81FC 65a8     adc $A8
+81FE 85a8     sta $A8
+8200 a5ab     lda $AB
+8202 65a9     adc $A9
+8204 85a9     sta $A9
+8206 46a9     lsr $A9
+8208 66a8     ror $A8
+820A 24ad     bit $AD
+820C 100d     bpl $821B
+820E 38       sec 
+820F a900     lda #$00
+8211 e5a8     sbc $A8
+8213 85a8     sta $A8
+8215 a900     lda #$00
+8217 e5a9     sbc $A9
+8219 85a9     sta $A9
+821B 60       rts 
+821C 06b0     asl $B0
+821E 26b1     rol $B1
+8220 06ae     asl $AE
+8222 26af     rol $AF
+8224 24af     bit $AF
+8226 50f4     bvc $821C
+8228 06b0     asl $B0
+822A 26b1     rol $B1
+822C 3004     bmi $8232
+822E 24b1     bit $B1
+8230 5010     bvc $8242
+8232 38       sec 
+8233 a5b0     lda $B0
+8235 e5ae     sbc $AE
+8237 a8       tay 
+8238 a5b1     lda $B1
+823A e5af     sbc $AF
+823C 9004     bcc $8242
+823E 84b0     sty $B0
+8240 85b1     sta $B1
+8242 26b2     rol $B2
+8244 06b0     asl $B0
+8246 26b1     rol $B1
+8248 3004     bmi $824E
+824A 24b1     bit $B1
+824C 5010     bvc $825E
+824E 38       sec 
+824F a5b0     lda $B0
+8251 e5ae     sbc $AE
+8253 a8       tay 
+8254 a5b1     lda $B1
+8256 e5af     sbc $AF
+8258 9004     bcc $825E
+825A 84b0     sty $B0
+825C 85b1     sta $B1
+825E 26b2     rol $B2
+8260 06b0     asl $B0
+8262 26b1     rol $B1
+8264 3004     bmi $826A
+8266 24b1     bit $B1
+8268 5010     bvc $827A
+826A 38       sec 
+826B a5b0     lda $B0
+826D e5ae     sbc $AE
+826F a8       tay 
+8270 a5b1     lda $B1
+8272 e5af     sbc $AF
+8274 9004     bcc $827A
+8276 84b0     sty $B0
+8278 85b1     sta $B1
+827A 26b2     rol $B2
+827C 06b0     asl $B0
+827E 26b1     rol $B1
+8280 3004     bmi $8286
+8282 24b1     bit $B1
+8284 5010     bvc $8296
+8286 38       sec 
+8287 a5b0     lda $B0
+8289 e5ae     sbc $AE
+828B a8       tay 
+828C a5b1     lda $B1
+828E e5af     sbc $AF
+8290 9004     bcc $8296
+8292 84b0     sty $B0
+8294 85b1     sta $B1
+8296 26b2     rol $B2
+8298 06b0     asl $B0
+829A 26b1     rol $B1
+829C 3004     bmi $82A2
+829E 24b1     bit $B1
+82A0 5010     bvc $82B2
+82A2 38       sec 
+82A3 a5b0     lda $B0
+82A5 e5ae     sbc $AE
+82A7 a8       tay 
+82A8 a5b1     lda $B1
+82AA e5af     sbc $AF
+82AC 9004     bcc $82B2
+82AE 84b0     sty $B0
+82B0 85b1     sta $B1
+82B2 26b2     rol $B2
+82B4 06b0     asl $B0
+82B6 26b1     rol $B1
+82B8 3004     bmi $82BE
+82BA 24b1     bit $B1
+82BC 5010     bvc $82CE
+82BE 38       sec 
+82BF a5b0     lda $B0
+82C1 e5ae     sbc $AE
+82C3 a8       tay 
+82C4 a5b1     lda $B1
+82C6 e5af     sbc $AF
+82C8 9004     bcc $82CE
+82CA 84b0     sty $B0
+82CC 85b1     sta $B1
+82CE 26b2     rol $B2
+82D0 06b0     asl $B0
+82D2 26b1     rol $B1
+82D4 3004     bmi $82DA
+82D6 24b1     bit $B1
+82D8 5010     bvc $82EA
+82DA 38       sec 
+82DB a5b0     lda $B0
+82DD e5ae     sbc $AE
+82DF a8       tay 
+82E0 a5b1     lda $B1
+82E2 e5af     sbc $AF
+82E4 9004     bcc $82EA
+82E6 84b0     sty $B0
+82E8 85b1     sta $B1
+82EA 26b2     rol $B2
+82EC 06b0     asl $B0
+82EE 26b1     rol $B1
+82F0 3004     bmi $82F6
+82F2 24b1     bit $B1
+82F4 5010     bvc $8306
+82F6 38       sec 
+82F7 a5b0     lda $B0
+82F9 e5ae     sbc $AE
+82FB a8       tay 
+82FC a5b1     lda $B1
+82FE e5af     sbc $AF
+8300 9004     bcc $8306
+8302 84b0     sty $B0
+8304 85b1     sta $B1
+8306 26b2     rol $B2
+8308 60       rts 
+8309 204891   jsr $9148
+830C 205885   jsr $8558
+830F a592     lda $92
+8311 3027     bmi $833A
+8313 2a       rol @
+8314 301e     bmi $8334
+8316 ada322   lda $22A3
+8319 8da422   sta $22A4
+831C add122   lda $22D1
+831F 8dd222   sta $22D2
+8322 adff22   lda $22FF
+8325 8d0023   sta $2300
+8328 ad2d23   lda $232D
+832B 8d2e23   sta $232E
+832E a2af     ldx #$AF
+8330 a09a     ldy #$9A
+8332 d013     bne $8347
+8334 a2dc     ldx #$DC
+8336 a09a     ldy #$9A
+8338 d00d     bne $8347
+833A 2a       rol @
+833B 3006     bmi $8343
+833D a282     ldx #$82
+833F a09a     ldy #$9A
+8341 d004     bne $8347
+8343 a255     ldx #$55
+8345 a09a     ldy #$9A
+8347 8680     stx $80
+8349 8481     sty $81
+834B a58a     lda $8A
+834D 2a       rol @
+834E 2a       rol @
+834F 2a       rol @
+8350 2a       rol @
+8351 29f0     and #$F0
+8353 85b6     sta $B6
+8355 a588     lda $88
+8357 290f     and #$0F
+8359 aa       tax 
+835A 05b5     ora $B5
+835C 85b4     sta $B4
+835E a000     ldy #$00
+8360 b180     lda ($80),y
+8362 85b5     sta $B5
+8364 102c     bpl $8392
+8366 a5b6     lda $B6
+8368 18       clc 
+8369 69f0     adc #$F0
+836B 85b6     sta $B6
+836D 18       clc 
+836E b9a322   lda $22A3,y
+8371 65a0     adc $A0
+8373 99a422   sta $22A4,y
+8376 b9d122   lda $22D1,y
+8379 65a1     adc $A1
+837B 99d222   sta $22D2,y
+837E 38       sec 
+837F b9ff22   lda $22FF,y
+8382 e5a2     sbc $A2
+8384 990023   sta $2300,y
+8387 b92d23   lda $232D,y
+838A e5a3     sbc $A3
+838C 992e23   sta $232E,y
+838F 4c1684   jmp $8416
+8392 26b5     rol $B5
+8394 102c     bpl $83C2
+8396 a5b6     lda $B6
+8398 18       clc 
+8399 6910     adc #$10
+839B 85b6     sta $B6
+839D 38       sec 
+839E b9a322   lda $22A3,y
+83A1 e5a0     sbc $A0
+83A3 99a422   sta $22A4,y
+83A6 b9d122   lda $22D1,y
+83A9 e5a1     sbc $A1
+83AB 99d222   sta $22D2,y
+83AE 18       clc 
+83AF b9ff22   lda $22FF,y
+83B2 65a2     adc $A2
+83B4 990023   sta $2300,y
+83B7 b92d23   lda $232D,y
+83BA 65a3     adc $A3
+83BC 992e23   sta $232E,y
+83BF 4c1684   jmp $8416
+83C2 26b5     rol $B5
+83C4 1026     bpl $83EC
+83C6 ca       dex 
+83C7 38       sec 
+83C8 b9a322   lda $22A3,y
+83CB e5a2     sbc $A2
+83CD 99a422   sta $22A4,y
+83D0 b9d122   lda $22D1,y
+83D3 e5a3     sbc $A3
+83D5 99d222   sta $22D2,y
+83D8 38       sec 
+83D9 b9ff22   lda $22FF,y
+83DC e5a0     sbc $A0
+83DE 990023   sta $2300,y
+83E1 b92d23   lda $232D,y
+83E4 e5a1     sbc $A1
+83E6 992e23   sta $232E,y
+83E9 4c6784   jmp $8467
+83EC 26b5     rol $B5
+83EE 1077     bpl $8467
+83F0 e8       inx 
+83F1 18       clc 
+83F2 b9a322   lda $22A3,y
+83F5 65a2     adc $A2
+83F7 99a422   sta $22A4,y
+83FA b9d122   lda $22D1,y
+83FD 65a3     adc $A3
+83FF 99d222   sta $22D2,y
+8402 18       clc 
+8403 b9ff22   lda $22FF,y
+8406 65a0     adc $A0
+8408 990023   sta $2300,y
+840B b92d23   lda $232D,y
+840E 65a1     adc $A1
+8410 992e23   sta $232E,y
+8413 4c6784   jmp $8467
+8416 26b5     rol $B5
+8418 1026     bpl $8440
+841A ca       dex 
+841B 38       sec 
+841C b9a422   lda $22A4,y
+841F e5a2     sbc $A2
+8421 99a422   sta $22A4,y
+8424 b9d222   lda $22D2,y
+8427 e5a3     sbc $A3
+8429 99d222   sta $22D2,y
+842C 38       sec 
+842D b90023   lda $2300,y
+8430 e5a0     sbc $A0
+8432 990023   sta $2300,y
+8435 b92e23   lda $232E,y
+8438 e5a1     sbc $A1
+843A 992e23   sta $232E,y
+843D 4c6784   jmp $8467
+8440 26b5     rol $B5
+8442 1023     bpl $8467
+8444 e8       inx 
+8445 18       clc 
+8446 b9a422   lda $22A4,y
+8449 65a2     adc $A2
+844B 99a422   sta $22A4,y
+844E b9d222   lda $22D2,y
+8451 65a3     adc $A3
+8453 99d222   sta $22D2,y
+8456 18       clc 
+8457 b90023   lda $2300,y
+845A 65a0     adc $A0
+845C 990023   sta $2300,y
+845F b92e23   lda $232E,y
+8462 65a1     adc $A1
+8464 992e23   sta $232E,y
+8467 38       sec 
+8468 a900     lda #$00
+846A e58b     sbc $8B
+846C 85b5     sta $B5
+846E 8a       txa 
+846F 290f     and #$0F
+8471 05b6     ora $B6
+8473 aa       tax 
+8474 bd0009   lda $0900,x
+8477 99b523   sta $23B5,y
+847A e58c     sbc $8C
+847C 900f     bcc $848D
+847E 4a       lsr @
+847F 66b5     ror $B5
+8481 4a       lsr @
+8482 66b5     ror $B5
+8484 4a       lsr @
+8485 66b5     ror $B5
+8487 4a       lsr @
+8488 66b5     ror $B5
+848A 4c9b84   jmp $849B
+848D 4a       lsr @
+848E 66b5     ror $B5
+8490 4a       lsr @
+8491 66b5     ror $B5
+8493 4a       lsr @
+8494 66b5     ror $B5
+8496 4a       lsr @
+8497 66b5     ror $B5
+8499 49f0     eor #$F0
+849B 998823   sta $2388,y
+849E a5b5     lda $B5
+84A0 995b23   sta $235B,y
+84A3 8a       txa 
+84A4 997622   sta $2276,y
+84A7 b92e23   lda $232E,y
+84AA 3044     bmi $84F0
+84AC d007     bne $84B5
+84AE b90023   lda $2300,y
+84B1 c920     cmp #$20
+84B3 903b     bcc $84F0
+84B5 b9d222   lda $22D2,y
+84B8 101f     bpl $84D9
+84BA 38       sec 
+84BB a900     lda #$00
+84BD f9a422   sbc $22A4,y
+84C0 85b5     sta $B5
+84C2 a900     lda #$00
+84C4 f9d222   sbc $22D2,y
+84C7 d92e23   cmp $232E,y
+84CA 9020     bcc $84EC
+84CC d007     bne $84D5
+84CE a5b5     lda $B5
+84D0 d90023   cmp $2300,y
+84D3 9017     bcc $84EC
+84D5 a940     lda #$40
+84D7 d019     bne $84F2
+84D9 d92e23   cmp $232E,y
+84DC 900e     bcc $84EC
+84DE d008     bne $84E8
+84E0 b9a422   lda $22A4,y
+84E3 d90023   cmp $2300,y
+84E6 9004     bcc $84EC
+84E8 a920     lda #$20
+84EA d006     bne $84F2
+84EC a900     lda #$00
+84EE f002     beq $84F2
+84F0 a980     lda #$80
+84F2 99b424   sta $24B4,y
+84F5 c8       iny 
+84F6 c02d     cpy #$2D
+84F8 f003     beq $84FD
+84FA 4c6083   jmp $8360
+84FD a000     ldy #$00
+84FF be099b   ldx $9B09,y
+8502 8edb28   stx $28DB
+8505 c8       iny 
+8506 bdb424   lda $24B4,x
+8509 3023     bmi $852E
+850B d042     bne $854F
+850D be099b   ldx $9B09,y
+8510 c8       iny 
+8511 bdb424   lda $24B4,x
+8514 103a     bpl $8550
+8516 84b5     sty $B5
+8518 acdb28   ldy $28DB
+851B a900     lda #$00
+851D 9d2e23   sta $232E,x
+8520 a920     lda #$20
+8522 9d0023   sta $2300,x
+8525 a900     lda #$00
+8527 9db424   sta $24B4,x
+852A a4b5     ldy $B5
+852C d022     bne $8550
+852E be099b   ldx $9B09,y
+8531 c8       iny 
+8532 bdb424   lda $24B4,x
+8535 d019     bne $8550
+8537 84b5     sty $B5
+8539 acdb28   ldy $28DB
+853C a900     lda #$00
+853E 992e23   sta $232E,y
+8541 a920     lda #$20
+8543 990023   sta $2300,y
+8546 a900     lda #$00
+8548 99b424   sta $24B4,y
+854B a4b5     ldy $B5
+854D d001     bne $8550
+854F c8       iny 
+8550 c00c     cpy #$0C
+8552 b003     bcs $8557
+8554 4cff84   jmp $84FF
+8557 60       rts 
+8558 a5a0     lda $A0
+855A 85aa     sta $AA
+855C a5a1     lda $A1
+855E 85ab     sta $AB
+8560 a589     lda $89
+8562 204c81   jsr $814C
+8565 a5a8     lda $A8
+8567 8da322   sta $22A3
+856A a5a9     lda $A9
+856C 8dd122   sta $22D1
+856F a5a2     lda $A2
+8571 85aa     sta $AA
+8573 a5a3     lda $A3
+8575 85ab     sta $AB
+8577 a587     lda $87
+8579 204c81   jsr $814C
+857C 38       sec 
+857D ada322   lda $22A3
+8580 e5a8     sbc $A8
+8582 8da322   sta $22A3
+8585 add122   lda $22D1
+8588 e5a9     sbc $A9
+858A 8dd122   sta $22D1
+858D a5a2     lda $A2
+858F 85aa     sta $AA
+8591 a5a3     lda $A3
+8593 85ab     sta $AB
+8595 a589     lda $89
+8597 204c81   jsr $814C
+859A a5a8     lda $A8
+859C 8dff22   sta $22FF
+859F a5a9     lda $A9
+85A1 8d2d23   sta $232D
+85A4 a5a0     lda $A0
+85A6 85aa     sta $AA
+85A8 a5a1     lda $A1
+85AA 85ab     sta $AB
+85AC a587     lda $87
+85AE 204c81   jsr $814C
+85B1 18       clc 
+85B2 a5a8     lda $A8
+85B4 6dff22   adc $22FF
+85B7 8dff22   sta $22FF
+85BA a5a9     lda $A9
+85BC 6d2d23   adc $232D
+85BF 8d2d23   sta $232D
+85C2 38       sec 
+85C3 a900     lda #$00
+85C5 edff22   sbc $22FF
+85C8 8dff22   sta $22FF
+85CB a900     lda #$00
+85CD ed2d23   sbc $232D
+85D0 8d2d23   sta $232D
+85D3 60       rts 
+85D4 bdb424   lda $24B4,x
+85D7 0910     ora #$10
+85D9 9db424   sta $24B4,x
+85DC a000     ldy #$00
+85DE bd0023   lda $2300,x
+85E1 85ae     sta $AE
+85E3 bd2e23   lda $232E,x
+85E6 85af     sta $AF
+85E8 bdd222   lda $22D2,x
+85EB 300a     bmi $85F7
+85ED 85b1     sta $B1
+85EF bda422   lda $22A4,x
+85F2 85b0     sta $B0
+85F4 4c0686   jmp $8606
+85F7 38       sec 
+85F8 a900     lda #$00
+85FA fda422   sbc $22A4,x
+85FD 85b0     sta $B0
+85FF a900     lda #$00
+8601 fdd222   sbc $22D2,x
+8604 85b1     sta $B1
+8606 a5b1     lda $B1
+8608 c5af     cmp $AF
+860A 9030     bcc $863C
+860C d006     bne $8614
+860E a5b0     lda $B0
+8610 c5ae     cmp $AE
+8612 9028     bcc $863C
+8614 06ae     asl $AE
+8616 26af     rol $AF
+8618 c8       iny 
+8619 c008     cpy #$08
+861B d0e9     bne $8606
+861D bdd222   lda $22D2,x
+8620 300d     bmi $862F
+8622 a940     lda #$40
+8624 9d2d24   sta $242D,x
+8627 a900     lda #$00
+8629 9d0024   sta $2400,x
+862C 4cb786   jmp $86B7
+862F a9c0     lda #$C0
+8631 9d2d24   sta $242D,x
+8634 a900     lda #$00
+8636 9d0024   sta $2400,x
+8639 4cb786   jmp $86B7
+863C 849f     sty $9F
+863E 202482   jsr $8224
+8641 a49f     ldy $9F
+8643 88       dey 
+8644 3048     bmi $868E
+8646 a900     lda #$00
+8648 06b2     asl $B2
+864A 2a       rol @
+864B 88       dey 
+864C 10fa     bpl $8648
+864E 85b5     sta $B5
+8650 4a       lsr @
+8651 a8       tay 
+8652 a5b2     lda $B2
+8654 6a       ror @
+8655 18       clc 
+8656 65b2     adc $B2
+8658 85b2     sta $B2
+865A 98       tya 
+865B 65b5     adc $B5
+865D 4a       lsr @
+865E 66b2     ror $B2
+8660 4a       lsr @
+8661 66b2     ror $B2
+8663 85b5     sta $B5
+8665 bdd222   lda $22D2,x
+8668 3012     bmi $867C
+866A a980     lda #$80
+866C 18       clc 
+866D 65b2     adc $B2
+866F 9d0024   sta $2400,x
+8672 a5b5     lda $B5
+8674 6900     adc #$00
+8676 9d2d24   sta $242D,x
+8679 4cb786   jmp $86B7
+867C a980     lda #$80
+867E 38       sec 
+867F e5b2     sbc $B2
+8681 9d0024   sta $2400,x
+8684 a900     lda #$00
+8686 e5b5     sbc $B5
+8688 9d2d24   sta $242D,x
+868B 4cb786   jmp $86B7
+868E a900     lda #$00
+8690 9d2d24   sta $242D,x
+8693 bdd222   lda $22D2,x
+8696 300f     bmi $86A7
+8698 a5b2     lda $B2
+869A 4a       lsr @
+869B 38       sec 
+869C 65b2     adc $B2
+869E 6a       ror @
+869F 4a       lsr @
+86A0 0980     ora #$80
+86A2 9d0024   sta $2400,x
+86A5 d010     bne $86B7
+86A7 a5b2     lda $B2
+86A9 4a       lsr @
+86AA 38       sec 
+86AB 65b2     adc $B2
+86AD 6a       ror @
+86AE 4a       lsr @
+86AF 49ff     eor #$FF
+86B1 38       sec 
+86B2 6980     adc #$80
+86B4 9d0024   sta $2400,x
+86B7 a000     ldy #$00
+86B9 bd0023   lda $2300,x
+86BC 85ae     sta $AE
+86BE bd2e23   lda $232E,x
+86C1 85af     sta $AF
+86C3 bd8823   lda $2388,x
+86C6 300a     bmi $86D2
+86C8 85b1     sta $B1
+86CA bd5b23   lda $235B,x
+86CD 85b0     sta $B0
+86CF 4ce186   jmp $86E1
+86D2 38       sec 
+86D3 a900     lda #$00
+86D5 fd5b23   sbc $235B,x
+86D8 85b0     sta $B0
+86DA a900     lda #$00
+86DC fd8823   sbc $2388,x
+86DF 85b1     sta $B1
+86E1 a5b1     lda $B1
+86E3 c5af     cmp $AF
+86E5 9030     bcc $8717
+86E7 d006     bne $86EF
+86E9 a5b0     lda $B0
+86EB c5ae     cmp $AE
+86ED 9028     bcc $8717
+86EF 06ae     asl $AE
+86F1 26af     rol $AF
+86F3 c8       iny 
+86F4 c008     cpy #$08
+86F6 d0e9     bne $86E1
+86F8 bd8823   lda $2388,x
+86FB 300d     bmi $870A
+86FD a940     lda #$40
+86FF 9d8724   sta $2487,x
+8702 a900     lda #$00
+8704 9d5a24   sta $245A,x
+8707 4c9287   jmp $8792
+870A a9c0     lda #$C0
+870C 9d8724   sta $2487,x
+870F a900     lda #$00
+8711 9d5a24   sta $245A,x
+8714 4c9287   jmp $8792
+8717 849f     sty $9F
+8719 202482   jsr $8224
+871C a49f     ldy $9F
+871E 88       dey 
+871F 3048     bmi $8769
+8721 a900     lda #$00
+8723 06b2     asl $B2
+8725 2a       rol @
+8726 88       dey 
+8727 10fa     bpl $8723
+8729 85b5     sta $B5
+872B 4a       lsr @
+872C a8       tay 
+872D a5b2     lda $B2
+872F 6a       ror @
+8730 18       clc 
+8731 65b2     adc $B2
+8733 85b2     sta $B2
+8735 98       tya 
+8736 65b5     adc $B5
+8738 4a       lsr @
+8739 66b2     ror $B2
+873B 4a       lsr @
+873C 66b2     ror $B2
+873E 85b5     sta $B5
+8740 bd8823   lda $2388,x
+8743 3012     bmi $8757
+8745 a980     lda #$80
+8747 18       clc 
+8748 65b2     adc $B2
+874A 9d5a24   sta $245A,x
+874D a5b5     lda $B5
+874F 6900     adc #$00
+8751 9d8724   sta $2487,x
+8754 4c9287   jmp $8792
+8757 a980     lda #$80
+8759 38       sec 
+875A e5b2     sbc $B2
+875C 9d5a24   sta $245A,x
+875F a900     lda #$00
+8761 e5b5     sbc $B5
+8763 9d8724   sta $2487,x
+8766 4c9287   jmp $8792
+8769 a900     lda #$00
+876B 9d8724   sta $2487,x
+876E bd8823   lda $2388,x
+8771 300f     bmi $8782
+8773 a5b2     lda $B2
+8775 4a       lsr @
+8776 38       sec 
+8777 65b2     adc $B2
+8779 6a       ror @
+877A 4a       lsr @
+877B 0980     ora #$80
+877D 9d5a24   sta $245A,x
+8780 d010     bne $8792
+8782 a5b2     lda $B2
+8784 4a       lsr @
+8785 38       sec 
+8786 65b2     adc $B2
+8788 6a       ror @
+8789 4a       lsr @
+878A 49ff     eor #$FF
+878C 38       sec 
+878D 6980     adc #$80
+878F 9d5a24   sta $245A,x
+8792 bd2d24   lda $242D,x
+8795 302e     bmi $87C5
+8797 d033     bne $87CC
+8799 bd0024   lda $2400,x
+879C 4a       lsr @
+879D 4a       lsr @
+879E 4a       lsr @
+879F a8       tay 
+87A0 b90e27   lda $270E,y
+87A3 3010     bmi $87B5
+87A5 18       clc 
+87A6 7d5a24   adc $245A,x
+87A9 9d5a24   sta $245A,x
+87AC bd8724   lda $2487,x
+87AF 6900     adc #$00
+87B1 9d8724   sta $2487,x
+87B4 60       rts 
+87B5 18       clc 
+87B6 7d5a24   adc $245A,x
+87B9 9d5a24   sta $245A,x
+87BC bd8724   lda $2487,x
+87BF 69ff     adc #$FF
+87C1 9d8724   sta $2487,x
+87C4 60       rts 
+87C5 ad0e27   lda $270E
+87C8 30eb     bmi $87B5
+87CA 10d9     bpl $87A5
+87CC ad2d27   lda $272D
+87CF 30e4     bmi $87B5
+87D1 10d2     bpl $87A5
+87D3 86a7     stx $A7
+87D5 a020     ldy #$20
+87D7 18       clc 
+87D8 8a       txa 
+87D9 990039   sta $3900,y
+87DC 990139   sta $3901,y
+87DF 990239   sta $3902,y
+87E2 990339   sta $3903,y
+87E5 e8       inx 
+87E6 8a       txa 
+87E7 990439   sta $3904,y
+87EA 990539   sta $3905,y
+87ED 990639   sta $3906,y
+87F0 990739   sta $3907,y
+87F3 e8       inx 
+87F4 98       tya 
+87F5 6908     adc #$08
+87F7 a8       tay 
+87F8 c0d4     cpy #$D4
+87FA 90dc     bcc $87D8
+87FC 8a       txa 
+87FD 18       clc 
+87FE 692e     adc #$2E
+8800 85b3     sta $B3
+8802 a014     ldy #$14
+8804 a967     lda #$67
+8806 88       dey 
+8807 993a26   sta $263A,y
+880A 99ce26   sta $26CE,y
+880D d0f7     bne $8806
+880F a021     ldy #$21
+8811 a96b     lda #$6B
+8813 88       dey 
+8814 994e26   sta $264E,y
+8817 996f26   sta $266F,y
+881A 999026   sta $2690,y
+881D 99b126   sta $26B1,y
+8820 d0f1     bne $8813
+8822 a528     lda $28
+8824 8d0729   sta $2907
+8827 a529     lda $29
+8829 8d0829   sta $2908
+882C 20e091   jsr $91E0
+882F a980     lda #$80
+8831 8de728   sta $28E7
+8834 8de828   sta $28E8
+8837 8d1229   sta $2912
+883A 8d1329   sta $2913
+883D 8d1429   sta $2914
+8840 8d1529   sta $2915
+8843 a4a7     ldy $A7
+8845 d005     bne $884C
+8847 8dea28   sta $28EA
+884A 8579     sta $79
+884C a900     lda #$00
+884E 8ded28   sta $28ED
+8851 8dfb28   sta $28FB
+8854 8dfc28   sta $28FC
+8857 a56a     lda $6A
+8859 3003     bmi $885E
+885B eefc28   inc $28FC
+885E a000     ldy #$00
+8860 b9099b   lda $9B09,y
+8863 c8       iny 
+8864 aa       tax 
+8865 8edb28   stx $28DB
+8868 bdb424   lda $24B4,x
+886B 3073     bmi $88E0
+886D 2920     and #$20
+886F d06f     bne $88E0
+8871 b9099b   lda $9B09,y
+8874 c8       iny 
+8875 8c2e27   sty $272E
+8878 aa       tax 
+8879 bdb424   lda $24B4,x
+887C 3063     bmi $88E1
+887E 2940     and #$40
+8880 d05f     bne $88E1
+8882 bdb424   lda $24B4,x
+8885 2910     and #$10
+8887 d006     bne $888F
+8889 20d485   jsr $85D4
+888C 20f08a   jsr $8AF0
+888F bd0024   lda $2400,x
+8892 8db425   sta $25B4
+8895 bd2d24   lda $242D,x
+8898 8dd225   sta $25D2
+889B bd5a24   lda $245A,x
+889E 8df025   sta $25F0
+88A1 bd8724   lda $2487,x
+88A4 8de224   sta $24E2
+88A7 bdb523   lda $23B5,x
+88AA 8de223   sta $23E2
+88AD aedb28   ldx $28DB
+88B0 bdb424   lda $24B4,x
+88B3 2910     and #$10
+88B5 d006     bne $88BD
+88B7 20d485   jsr $85D4
+88BA 20f08a   jsr $8AF0
+88BD bd0024   lda $2400,x
+88C0 8582     sta $82
+88C2 bd2d24   lda $242D,x
+88C5 8583     sta $83
+88C7 bd5a24   lda $245A,x
+88CA 8584     sta $84
+88CC bd8724   lda $2487,x
+88CF 8585     sta $85
+88D1 bdb523   lda $23B5,x
+88D4 8586     sta $86
+88D6 a200     ldx #$00
+88D8 202796   jsr $9627
+88DB ac2e27   ldy $272E
+88DE d001     bne $88E1
+88E0 c8       iny 
+88E1 c090     cpy #$90
+88E3 f003     beq $88E8
+88E5 4c6088   jmp $8860
+88E8 ade728   lda $28E7
+88EB 8dd928   sta $28D9
+88EE ade828   lda $28E8
+88F1 8dda28   sta $28DA
+88F4 a579     lda $79
+88F6 1008     bpl $8900
+88F8 a900     lda #$00
+88FA 8d3f06   sta $063F
+88FD 4c2189   jmp $8921
+8900 4a       lsr @
+8901 4a       lsr @
+8902 18       clc 
+8903 6901     adc #$01
+8905 c90a     cmp #$0A
+8907 9002     bcc $890B
+8909 a909     lda #$09
+890B 8d3f06   sta $063F
+890E cd3f28   cmp $283F
+8911 f00e     beq $8921
+8913 8d3f28   sta $283F
+8916 b009     bcs $8921
+8918 a53d     lda $3D
+891A d005     bne $8921
+891C a214     ldx #$14
+891E 20a4bc   jsr $BCA4
+8921 ad1229   lda $2912
+8924 c980     cmp #$80
+8926 6a       ror @
+8927 18       clc 
+8928 697d     adc #$7D
+892A 8d4728   sta $2847
+892D ad1329   lda $2913
+8930 18       clc 
+8931 6915     adc #$15
+8933 8d4528   sta $2845
+8936 ad1429   lda $2914
+8939 8d1629   sta $2916
+893C ad1029   lda $2910
+893F 8d3928   sta $2839
+8942 ad1129   lda $2911
+8945 8d3a28   sta $283A
+8948 a504     lda $04
+894A f003     beq $894F
+894C 20f790   jsr $90F7
+894F adfc28   lda $28FC
+8952 f002     beq $8956
+8954 a974     lda #$74
+8956 8d4028   sta $2840
+8959 ad7022   lda $2270
+895C 8dfd28   sta $28FD
+895F ad7122   lda $2271
+8962 8dfe28   sta $28FE
+8965 ad7222   lda $2272
+8968 8dff28   sta $28FF
+896B ad7322   lda $2273
+896E 8d0029   sta $2900
+8971 ad7422   lda $2274
+8974 8d0129   sta $2901
+8977 ad7522   lda $2275
+897A 8d0229   sta $2902
+897D ad0928   lda $2809
+8980 8d0329   sta $2903
+8983 ad0a28   lda $280A
+8986 8d0429   sta $2904
+8989 ad0b28   lda $280B
+898C 8d0529   sta $2905
+898F ad0c28   lda $280C
+8992 8d0629   sta $2906
+8995 ad0729   lda $2907
+8998 8d0929   sta $2909
+899B ad0829   lda $2908
+899E 8d0a29   sta $290A
+89A1 a01f     ldy #$1F
+89A3 38       sec 
+89A4 ad1e27   lda $271E
+89A7 f90e27   sbc $270E,y
+89AA c980     cmp #$80
+89AC 6a       ror @
+89AD 6900     adc #$00
+89AF 99b628   sta $28B6,y
+89B2 88       dey 
+89B3 10ee     bpl $89A3
+89B5 adfb28   lda $28FB
+89B8 d007     bne $89C1
+89BA 38       sec 
+89BB ad1906   lda $0619
+89BE 4c178a   jmp $8A17
+89C1 a53d     lda $3D
+89C3 f005     beq $89CA
+89C5 a900     lda #$00
+89C7 4c168a   jmp $8A16
+89CA a525     lda $25
+89CC 0a       asl @
+89CD 85c3     sta $C3
+89CF a526     lda $26
+89D1 2a       rol @
+89D2 06c3     asl $C3
+89D4 2a       rol @
+89D5 06c3     asl $C3
+89D7 2a       rol @
+89D8 85c3     sta $C3
+89DA ad1929   lda $2919
+89DD 0a       asl @
+89DE 85c4     sta $C4
+89E0 ad1a29   lda $291A
+89E3 2a       rol @
+89E4 06c4     asl $C4
+89E6 2a       rol @
+89E7 06c4     asl $C4
+89E9 2a       rol @
+89EA 38       sec 
+89EB e5c3     sbc $C3
+89ED 1005     bpl $89F4
+89EF 18       clc 
+89F0 49ff     eor #$FF
+89F2 6901     adc #$01
+89F4 85c3     sta $C3
+89F6 a527     lda $27
+89F8 c980     cmp #$80
+89FA 6a       ror @
+89FB c980     cmp #$80
+89FD 6a       ror @
+89FE 85c4     sta $C4
+8A00 ad1b29   lda $291B
+8A03 c980     cmp #$80
+8A05 6a       ror @
+8A06 c980     cmp #$80
+8A08 6a       ror @
+8A09 38       sec 
+8A0A e5c4     sbc $C4
+8A0C 1005     bpl $8A13
+8A0E 18       clc 
+8A0F 49ff     eor #$FF
+8A11 6901     adc #$01
+8A13 18       clc 
+8A14 65c3     adc $C3
+8A16 18       clc 
+8A17 654d     adc $4D
+8A19 1002     bpl $8A1D
+8A1B a97f     lda #$7F
+8A1D 38       sec 
+8A1E ed1906   sbc $0619
+8A21 b002     bcs $8A25
+8A23 a900     lda #$00
+8A25 854d     sta $4D
+8A27 a47e     ldy $7E
+8A29 c920     cmp #$20
+8A2B 9008     bcc $8A35
+8A2D 98       tya 
+8A2E 3002     bmi $8A32
+8A30 a080     ldy #$80
+8A32 4c3b8a   jmp $8A3B
+8A35 c080     cpy #$80
+8A37 d002     bne $8A3B
+8A39 a000     ldy #$00
+8A3B 847e     sty $7E
+8A3D a541     lda $41
+8A3F f00f     beq $8A50
+8A41 38       sec 
+8A42 a56d     lda $6D
+8A44 e906     sbc #$06
+8A46 9008     bcc $8A50
+8A48 cd0ad2   cmp $D20A
+8A4B 9003     bcc $8A50
+8A4D 20cfb2   jsr $B2CF
+8A50 ad4328   lda $2843
+8A53 f015     beq $8A6A
+8A55 a200     ldx #$00
+8A57 8e4328   stx $2843
+8A5A a9f9     lda #$F9
+8A5C dd000a   cmp $0A00,x
+8A5F b006     bcs $8A67
+8A61 fe000a   inc $0A00,x
+8A64 ee4328   inc $2843
+8A67 e8       inx 
+8A68 d0f2     bne $8A5C
+8A6A a663     ldx $63
+8A6C 1059     bpl $8AC7
+8A6E a53d     lda $3D
+8A70 d055     bne $8AC7
+8A72 ad1e06   lda $061E
+8A75 f050     beq $8AC7
+8A77 ce1f06   dec $061F
+8A7A d04b     bne $8AC7
+8A7C 8d1f06   sta $061F
+8A7F 18       clc 
+8A80 ad0ad2   lda $D20A
+8A83 3042     bmi $8AC7
+8A85 6940     adc #$40
+8A87 aa       tax 
+8A88 ad0ad2   lda $D20A
+8A8B 291f     and #$1F
+8A8D 696e     adc #$6E
+8A8F dd0e26   cmp $260E,x
+8A92 9033     bcc $8AC7
+8A94 f031     beq $8AC7
+8A96 8566     sta $66
+8A98 a980     lda #$80
+8A9A e566     sbc $66
+8A9C 0a       asl @
+8A9D 18       clc 
+8A9E 6942     adc #$42
+8AA0 8566     sta $66
+8AA2 8a       txa 
+8AA3 38       sec 
+8AA4 e910     sbc #$10
+8AA6 8564     sta $64
+8AA8 a900     lda #$00
+8AAA 8565     sta $65
+8AAC 8567     sta $67
+8AAE 8568     sta $68
+8AB0 8569     sta $69
+8AB2 20c88a   jsr $8AC8
+8AB5 a97f     lda #$7F
+8AB7 856a     sta $6A
+8AB9 8563     sta $63
+8ABB 8d4528   sta $2845
+8ABE a901     lda #$01
+8AC0 8535     sta $35
+8AC2 a534     lda $34
+8AC4 8d2d28   sta $282D
+8AC7 60       rts 
+8AC8 18       clc 
+8AC9 ad0ad2   lda $D20A
+8ACC 6d0ad2   adc $D20A
+8ACF 8d2928   sta $2829
+8AD2 a900     lda #$00
+8AD4 2a       rol @
+8AD5 a464     ldy $64
+8AD7 c06c     cpy #$6C
+8AD9 b002     bcs $8ADD
+8ADB 49ff     eor #$FF
+8ADD 8568     sta $68
+8ADF 38       sec 
+8AE0 a000     ldy #$00
+8AE2 ad0ad2   lda $D20A
+8AE5 e980     sbc #$80
+8AE7 b001     bcs $8AEA
+8AE9 88       dey 
+8AEA 8469     sty $69
+8AEC 8d2c28   sta $282C
+8AEF 60       rts 
+8AF0 bc7622   ldy $2276,x
+8AF3 b9000a   lda $0A00,y
+8AF6 f0f7     beq $8AEF
+8AF8 bd2e23   lda $232E,x
+8AFB d007     bne $8B04
+8AFD bd0023   lda $2300,x
+8B00 c922     cmp #$22
+8B02 90eb     bcc $8AEF
+8B04 8ee128   stx $28E1
+8B07 b90009   lda $0900,y
+8B0A 1003     bpl $8B0F
+8B0C 4cd78c   jmp $8CD7
+8B0F a5a7     lda $A7
+8B11 d00b     bne $8B1E
+8B13 b9000a   lda $0A00,y
+8B16 c902     cmp #$02
+8B18 9004     bcc $8B1E
+8B1A c9f8     cmp #$F8
+8B1C 9003     bcc $8B21
+8B1E 4c7d8b   jmp $8B7D
+8B21 bdd222   lda $22D2,x
+8B24 8559     sta $59
+8B26 855a     sta $5A
+8B28 0a       asl @
+8B29 9007     bcc $8B32
+8B2B a9ff     lda #$FF
+8B2D e55a     sbc $5A
+8B2F 855a     sta $5A
+8B31 38       sec 
+8B32 6659     ror $59
+8B34 9002     bcc $8B38
+8B36 e659     inc $59
+8B38 bd2e23   lda $232E,x
+8B3B 8de428   sta $28E4
+8B3E c55a     cmp $5A
+8B40 903b     bcc $8B7D
+8B42 18       clc 
+8B43 655a     adc $5A
+8B45 cdea28   cmp $28EA
+8B48 b033     bcs $8B7D
+8B4A 8dea28   sta $28EA
+8B4D 465a     lsr $5A
+8B4F 38       sec 
+8B50 e55a     sbc $5A
+8B52 8579     sta $79
+8B54 a559     lda $59
+8B56 8de728   sta $28E7
+8B59 ade428   lda $28E4
+8B5C 8de828   sta $28E8
+8B5F bd7622   lda $2276,x
+8B62 8de628   sta $28E6
+8B65 a964     lda #$64
+8B67 8540     sta $40
+8B69 bd2d24   lda $242D,x
+8B6C d00f     bne $8B7D
+8B6E bd8724   lda $2487,x
+8B71 d00a     bne $8B7D
+8B73 bd0024   lda $2400,x
+8B76 853f     sta $3F
+8B78 bd5a24   lda $245A,x
+8B7B 8540     sta $40
+8B7D 4cbf8d   jmp $8DBF
+8B80 98       tya 
+8B81 dd0e26   cmp $260E,x
+8B84 9027     bcc $8BAD
+8B86 f025     beq $8BAD
+8B88 c097     cpy #$97
+8B8A b021     bcs $8BAD
+8B8C 8ce228   sty $28E2
+8B8F b9ca28   lda $28CA,y
+8B92 8580     sta $80
+8B94 b9fa28   lda $28FA,y
+8B97 8581     sta $81
+8B99 bc0039   ldy $3900,x
+8B9C bd0038   lda $3800,x
+8B9F 85b5     sta $B5
+8BA1 4a       lsr @
+8BA2 05b5     ora $B5
+8BA4 2558     and $58
+8BA6 1180     ora ($80),y
+8BA8 9180     sta ($80),y
+8BAA ace228   ldy $28E2
+8BAD 60       rts 
+8BAE 00       brk 
+8BAF 3f       ??? 
+8BB0 fc       ??? 
+8BB1 00       brk 
+8BB2 03       ??? 
+8BB3 ff       ??? 
+8BB4 ff       ??? 
+8BB5 c00f     cpy #$0F
+8BB7 ff       ??? 
+8BB8 ff       ??? 
+8BB9 f01f     beq $8BDA
+8BBB ff       ??? 
+8BBC ff       ??? 
+8BBD f8       sed 
+8BBE 3f       ??? 
+8BBF ff       ??? 
+8BC0 ff       ??? 
+8BC1 fc       ??? 
+8BC2 7f       ??? 
+8BC3 ff       ??? 
+8BC4 ff       ??? 
+8BC5 fe7fff   inc $FF7F,x
+8BC8 ff       ??? 
+8BC9 feffff   inc $FFFF,x
+8BCC ff       ??? 
+8BCD ff       ??? 
+8BCE ff       ??? 
+8BCF ff       ??? 
+8BD0 ff       ??? 
+8BD1 ff       ??? 
+8BD2 ff       ??? 
+8BD3 ff       ??? 
+8BD4 ff       ??? 
+8BD5 ff       ??? 
+8BD6 ff       ??? 
+8BD7 ff       ??? 
+8BD8 ff       ??? 
+8BD9 ff       ??? 
+8BDA ff       ??? 
+8BDB ff       ??? 
+8BDC ff       ??? 
+8BDD ff       ??? 
+8BDE 00       brk 
+8BDF 00       brk 
+8BE0 00       brk 
+8BE1 00       brk 
+8BE2 00       brk 
+8BE3 00       brk 
+8BE4 00       brk 
+8BE5 00       brk 
+8BE6 00       brk 
+8BE7 00       brk 
+8BE8 3000     bmi $8BEA
+8BEA 00       brk 
+8BEB 9b       ??? 
+8BEC 78       sei 
+8BED 00       brk 
+8BEE 00       brk 
+8BEF 5f       ??? 
+8BF0 f600     inc $00,x
+8BF2 00       brk 
+8BF3 f7       ??? 
+8BF4 bb       ??? 
+8BF5 00       brk 
+8BF6 00       brk 
+8BF7 fdff80   sbc $80FF,x
+8BFA 01bf     ora ($BF,x)
+8BFC ed0000   sbc $0000
+8BFF 7efe00   ror $00FE,x
+8C02 00       brk 
+8C03 1b       ??? 
+8C04 d8       cld 
+8C05 00       brk 
+8C06 00       brk 
+8C07 00       brk 
+8C08 00       brk 
+8C09 00       brk 
+8C0A 00       brk 
+8C0B 00       brk 
+8C0C 00       brk 
+8C0D 00       brk 
+8C0E 00       brk 
+8C0F 00       brk 
+8C10 200013   jsr $1300
+8C13 8c7000   sty $0070
+8C16 05f7     ora $F7
+8C18 f90801   sbc $0108,y
+8C1B edbe00   sbc $00BE
+8C1E 01d3     ora ($D3,x)
+8C20 6e0043   ror $4300
+8C23 f0bf     beq $8BE4
+8C25 80       ??? 
+8C26 06e8     asl $E8
+8C28 9f       ??? 
+8C29 f007     beq $8C32
+8C2B ad7b00   lda $007B
+8C2E 09f6     ora #$F6
+8C30 bf       ??? 
+8C31 1004     bpl $8C37
+8C33 fb       ??? 
+8C34 ed0000   sbc $0000
+8C37 58       cli 
+8C38 f8       sed 
+8C39 00       brk 
+8C3A 00       brk 
+8C3B 00       brk 
+8C3C 00       brk 
+8C3D 00       brk 
+8C3E 00       brk 
+8C3F a130     lda ($30,x)
+8C41 00       brk 
+8C42 2104     and ($04,x)
+8C44 2a       rol @
+8C45 00       brk 
+8C46 0529     ora $29
+8C48 12       ??? 
+8C49 9043     bcc $8C8E
+8C4B 00       brk 
+8C4C 0c       ??? 
+8C4D 40       rti 
+8C4E 14       ??? 
+8C4F 40       rti 
+8C50 5680     lsr $80,x
+8C52 0d0002   ora $0200
+8C55 200600   jsr $0006
+8C58 23       ??? 
+8C59 40       rti 
+8C5A 2d4208   and $0842
+8C5D 80       ??? 
+8C5E 08       php 
+8C5F 9044     bcc $8CA5
+8C61 40       rti 
+8C62 050d     ora $0D
+8C64 62       ??? 
+8C65 88       dey 
+8C66 09a8     ora #$A8
+8C68 ae1030   ldx $3010
+8C6B 00       brk 
+8C6C 7040     bvs $8CAE
+8C6E 00       brk 
+8C6F 02       ??? 
+8C70 1000     bpl $8C72
+8C72 02       ??? 
+8C73 200880   jsr $8008
+8C76 08       php 
+8C77 00       brk 
+8C78 00       brk 
+8C79 40       rti 
+8C7A 4500     eor $00
+8C7C 02       ??? 
+8C7D 18       clc 
+8C7E 9000     bcc $8C80
+8C80 00       brk 
+8C81 40       rti 
+8C82 02       ??? 
+8C83 00       brk 
+8C84 00       brk 
+8C85 04       ??? 
+8C86 c500     cmp $00
+8C88 0107     ora ($07,x)
+8C8A 00       brk 
+8C8B 00       brk 
+8C8C 00       brk 
+8C8D 68       pla 
+8C8E 80       ??? 
+8C8F 00       brk 
+8C90 00       brk 
+8C91 08       php 
+8C92 08       php 
+8C93 00       brk 
+8C94 04       ??? 
+8C95 00       brk 
+8C96 33       ??? 
+8C97 00       brk 
+8C98 08       php 
+8C99 30c0     bmi $8C5B
+8C9B 80       ??? 
+8C9C 02       ??? 
+8C9D 13       ??? 
+8C9E de0e3e   dec $3E0E,x
+8CA1 6e8b8c   ror $8C8B
+8CA4 8c8c00   sty $008C
+8CA7 00       brk 
+8CA8 ff       ??? 
+8CA9 f000     beq $8CAB
+8CAB 0f       ??? 
+8CAC ff       ??? 
+8CAD f000     beq $8CAF
+8CAF ff       ??? 
+8CB0 ff       ??? 
+8CB1 f00f     beq $8CC2
+8CB3 ff       ??? 
+8CB4 ff       ??? 
+8CB5 f0ff     beq $8CB6
+8CB7 ff       ??? 
+8CB8 ff       ??? 
+8CB9 f0ff     beq $8CBA
+8CBB ff       ??? 
+8CBC ff       ??? 
+8CBD f000     beq $8CBF
+8CBF 00       brk 
+8CC0 0f       ??? 
+8CC1 c000     cpy #$00
+8CC3 03       ??? 
+8CC4 ff       ??? 
+8CC5 f008     beq $8CCF
+8CC7 03       ??? 
+8CC8 ff       ??? 
+8CC9 f000     beq $8CCB
+8CCB 80       ??? 
+8CCC 1000     bpl $8CCE
+8CCE 40       rti 
+8CCF 00       brk 
+8CD0 00       brk 
+8CD1 02       ??? 
+8CD2 00       brk 
+8CD3 04       ??? 
+8CD4 00       brk 
+8CD5 00       brk 
+8CD6 60       rts 
+8CD7 bd8724   lda $2487,x
+8CDA d0fa     bne $8CD6
+8CDC bd2d24   lda $242D,x
+8CDF d0f5     bne $8CD6
+8CE1 a9ae     lda #$AE
+8CE3 8ddc28   sta $28DC
+8CE6 a98b     lda #$8B
+8CE8 8ddd28   sta $28DD
+8CEB a9ff     lda #$FF
+8CED 8558     sta $58
+8CEF bd2e23   lda $232E,x
+8CF2 8551     sta $51
+8CF4 bd0023   lda $2300,x
+8CF7 8550     sta $50
+8CF9 bd5a24   lda $245A,x
+8CFC 854e     sta $4E
+8CFE a8       tay 
+8CFF bd0024   lda $2400,x
+8D02 854f     sta $4F
+8D04 bd7622   lda $2276,x
+8D07 aa       tax 
+8D08 bd000a   lda $0A00,x
+8D0B c9fa     cmp #$FA
+8D0D 9006     bcc $8D15
+8D0F 203090   jsr $9030
+8D12 4c568d   jmp $8D56
+8D15 98       tya 
+8D16 a64f     ldx $4F
+8D18 dd0e26   cmp $260E,x
+8D1B b004     bcs $8D21
+8D1D aee128   ldx $28E1
+8D20 60       rts 
+8D21 a980     lda #$80
+8D23 20648d   jsr $8D64
+8D26 ca       dex 
+8D27 20808b   jsr $8B80
+8D2A e8       inx 
+8D2B a534     lda $34
+8D2D c937     cmp #$37
+8D2F b025     bcs $8D56
+8D31 a901     lda #$01
+8D33 8dfc28   sta $28FC
+8D36 8dfb28   sta $28FB
+8D39 a56a     lda $6A
+8D3B 1019     bpl $8D56
+8D3D a53e     lda $3E
+8D3F d015     bne $8D56
+8D41 ad0ad2   lda $D20A
+8D44 1010     bpl $8D56
+8D46 aded28   lda $28ED
+8D49 d00b     bne $8D56
+8D4B 8eeb28   stx $28EB
+8D4E 8cec28   sty $28EC
+8D51 a551     lda $51
+8D53 8ded28   sta $28ED
+8D56 a551     lda $51
+8D58 c90d     cmp #$0D
+8D5A b0c1     bcs $8D1D
+8D5C a900     lda #$00
+8D5E 8ddf28   sta $28DF
+8D61 4c4f90   jmp $904F
+8D64 8d0e29   sta $290E
+8D67 a54f     lda $4F
+8D69 38       sec 
+8D6A e980     sbc #$80
+8D6C 8d0b29   sta $290B
+8D6F 1006     bpl $8D77
+8D71 38       sec 
+8D72 a900     lda #$00
+8D74 ed0b29   sbc $290B
+8D77 8d0d29   sta $290D
+8D7A 38       sec 
+8D7B a980     lda #$80
+8D7D e54e     sbc $4E
+8D7F 8d0c29   sta $290C
+8D82 1006     bpl $8D8A
+8D84 38       sec 
+8D85 a900     lda #$00
+8D87 ed0c29   sbc $290C
+8D8A 18       clc 
+8D8B 6d0d29   adc $290D
+8D8E b02e     bcs $8DBE
+8D90 8d0d29   sta $290D
+8D93 18       clc 
+8D94 6551     adc $51
+8D96 b026     bcs $8DBE
+8D98 cd1529   cmp $2915
+8D9B b021     bcs $8DBE
+8D9D 8d1529   sta $2915
+8DA0 ad0d29   lda $290D
+8DA3 8d1429   sta $2914
+8DA6 ad0b29   lda $290B
+8DA9 8d1229   sta $2912
+8DAC ad0c29   lda $290C
+8DAF 8d1329   sta $2913
+8DB2 ad0e29   lda $290E
+8DB5 8d1029   sta $2910
+8DB8 ad0f29   lda $290F
+8DBB 8d1129   sta $2911
+8DBE 60       rts 
+8DBF bd8724   lda $2487,x
+8DC2 d0fa     bne $8DBE
+8DC4 bd2d24   lda $242D,x
+8DC7 d0f5     bne $8DBE
+8DC9 a9a6     lda #$A6
+8DCB 8ddc28   sta $28DC
+8DCE a98c     lda #$8C
+8DD0 8ddd28   sta $28DD
+8DD3 bdb523   lda $23B5,x
+8DD6 2901     and #$01
+8DD8 8d0f29   sta $290F
+8DDB 8ddf28   sta $28DF
+8DDE bd0024   lda $2400,x
+8DE1 854f     sta $4F
+8DE3 bd5a24   lda $245A,x
+8DE6 854e     sta $4E
+8DE8 bd2e23   lda $232E,x
+8DEB 8551     sta $51
+8DED bd0023   lda $2300,x
+8DF0 8550     sta $50
+8DF2 bc7622   ldy $2276,x
+8DF5 b9000a   lda $0A00,y
+8DF8 c9fa     cmp #$FA
+8DFA 9003     bcc $8DFF
+8DFC 203090   jsr $9030
+8DFF a44f     ldy $4F
+8E01 a54e     lda $4E
+8E03 d90e26   cmp $260E,y
+8E06 9012     bcc $8E1A
+8E08 a900     lda #$00
+8E0A 20648d   jsr $8D64
+8E0D a9aa     lda #$AA
+8E0F 8558     sta $58
+8E11 a551     lda $51
+8E13 c90d     cmp #$0D
+8E15 b003     bcs $8E1A
+8E17 204f90   jsr $904F
+8E1A a5a7     lda $A7
+8E1C d02f     bne $8E4D
+8E1E a53e     lda $3E
+8E20 d02b     bne $8E4D
+8E22 bc7622   ldy $2276,x
+8E25 b9000a   lda $0A00,y
+8E28 c902     cmp #$02
+8E2A 9021     bcc $8E4D
+8E2C c9f8     cmp #$F8
+8E2E b01d     bcs $8E4D
+8E30 a9ff     lda #$FF
+8E32 8558     sta $58
+8E34 bc5a24   ldy $245A,x
+8E37 bd0024   lda $2400,x
+8E3A aa       tax 
+8E3B 20808b   jsr $8B80
+8E3E ca       dex 
+8E3F 88       dey 
+8E40 20808b   jsr $8B80
+8E43 ca       dex 
+8E44 c8       iny 
+8E45 20808b   jsr $8B80
+8E48 e8       inx 
+8E49 c8       iny 
+8E4A 20808b   jsr $8B80
+8E4D aee128   ldx $28E1
+8E50 60       rts 
+8E51 ceee28   dec $28EE
+8E54 1022     bpl $8E78
+8E56 ad2106   lda $0621
+8E59 2d0ad2   and $D20A
+8E5C 8dee28   sta $28EE
+8E5F ad2628   lda $2826
+8E62 d003     bne $8E67
+8E64 200fb3   jsr $B30F
+8E67 a53d     lda $3D
+8E69 d005     bne $8E70
+8E6B a9b4     lda #$B4
+8E6D 8d5533   sta $3355
+8E70 a900     lda #$00
+8E72 8541     sta $41
+8E74 8ded28   sta $28ED
+8E77 60       rts 
+8E78 d0fd     bne $8E77
+8E7A aded28   lda $28ED
+8E7D f0f8     beq $8E77
+8E7F adeb28   lda $28EB
+8E82 8df028   sta $28F0
+8E85 adec28   lda $28EC
+8E88 8df228   sta $28F2
+8E8B a901     lda #$01
+8E8D 8df428   sta $28F4
+8E90 a980     lda #$80
+8E92 8def28   sta $28EF
+8E95 8df128   sta $28F1
+8E98 8df328   sta $28F3
+8E9B a9ff     lda #$FF
+8E9D 8558     sta $58
+8E9F a900     lda #$00
+8EA1 855c     sta $5C
+8EA3 8df828   sta $28F8
+8EA6 ad0ad2   lda $D20A
+8EA9 0a       asl @
+8EAA 855b     sta $5B
+8EAC 9002     bcc $8EB0
+8EAE c65c     dec $5C
+8EB0 ad1a29   lda $291A
+8EB3 100b     bpl $8EC0
+8EB5 c9ff     cmp #$FF
+8EB7 b004     bcs $8EBD
+8EB9 a900     lda #$00
+8EBB 855c     sta $5C
+8EBD 4cc88e   jmp $8EC8
+8EC0 c902     cmp #$02
+8EC2 9004     bcc $8EC8
+8EC4 a9ff     lda #$FF
+8EC6 855c     sta $5C
+8EC8 ad0ad2   lda $D20A
+8ECB 0a       asl @
+8ECC 8df728   sta $28F7
+8ECF cef828   dec $28F8
+8ED2 a57e     lda $7E
+8ED4 c907     cmp #$07
+8ED6 f028     beq $8F00
+8ED8 a54d     lda $4D
+8EDA 49ff     eor #$FF
+8EDC 4a       lsr @
+8EDD 4a       lsr @
+8EDE 4a       lsr @
+8EDF 18       clc 
+8EE0 690c     adc #$0C
+8EE2 8df928   sta $28F9
+8EE5 20848f   jsr $8F84
+8EE8 a9be     lda #$BE
+8EEA 85db     sta $DB
+8EEC a541     lda $41
+8EEE d004     bne $8EF4
+8EF0 a928     lda #$28
+8EF2 85dd     sta $DD
+8EF4 e641     inc $41
+8EF6 a207     ldx #$07
+8EF8 20a4bc   jsr $BCA4
+8EFB a202     ldx #$02
+8EFD 4ca4bc   jmp $BCA4
+8F00 a900     lda #$00
+8F02 855c     sta $5C
+8F04 38       sec 
+8F05 a967     lda #$67
+8F07 edeb28   sbc $28EB
+8F0A 0a       asl @
+8F0B 855b     sta $5B
+8F0D 9002     bcc $8F11
+8F0F c65c     dec $5C
+8F11 38       sec 
+8F12 a96b     lda #$6B
+8F14 edec28   sbc $28EC
+8F17 8df928   sta $28F9
+8F1A 20898f   jsr $8F89
+8F1D a910     lda #$10
+8F1F 853b     sta $3B
+8F21 e641     inc $41
+8F23 a9be     lda #$BE
+8F25 85db     sta $DB
+8F27 a9bc     lda #$BC
+8F29 85dd     sta $DD
+8F2B a9b6     lda #$B6
+8F2D 85dc     sta $DC
+8F2F a9b8     lda #$B8
+8F31 85da     sta $DA
+8F33 a934     lda #$34
+8F35 8d5533   sta $3355
+8F38 a203     ldx #$03
+8F3A 20a4bc   jsr $BCA4
+8F3D e8       inx 
+8F3E 20a4bc   jsr $BCA4
+8F41 a20a     ldx #$0A
+8F43 20a4bc   jsr $BCA4
+8F46 e8       inx 
+8F47 20a4bc   jsr $BCA4
+8F4A a429     ldy $29
+8F4C c0f4     cpy #$F4
+8F4E f006     beq $8F56
+8F50 88       dey 
+8F51 c0f4     cpy #$F4
+8F53 f001     beq $8F56
+8F55 88       dey 
+8F56 8429     sty $29
+8F58 a426     ldy $26
+8F5A ad0ad2   lda $D20A
+8F5D 100d     bpl $8F6C
+8F5F c0fb     cpy #$FB
+8F61 f006     beq $8F69
+8F63 88       dey 
+8F64 c0fb     cpy #$FB
+8F66 f001     beq $8F69
+8F68 88       dey 
+8F69 4c768f   jmp $8F76
+8F6C c005     cpy #$05
+8F6E f006     beq $8F76
+8F70 c8       iny 
+8F71 c005     cpy #$05
+8F73 f001     beq $8F76
+8F75 c8       iny 
+8F76 8426     sty $26
+8F78 38       sec 
+8F79 a52e     lda $2E
+8F7B e908     sbc #$08
+8F7D b002     bcs $8F81
+8F7F a900     lda #$00
+8F81 852e     sta $2E
+8F83 60       rts 
+8F84 ad0ad2   lda $D20A
+8F87 3053     bmi $8FDC
+8F89 38       sec 
+8F8A a55b     lda $5B
+8F8C e940     sbc #$40
+8F8E 855b     sta $5B
+8F90 b002     bcs $8F94
+8F92 c65c     dec $5C
+8F94 aef028   ldx $28F0
+8F97 acf228   ldy $28F2
+8F9A c06c     cpy #$6C
+8F9C 903d     bcc $8FDB
+8F9E adf428   lda $28F4
+8FA1 8dfa28   sta $28FA
+8FA4 e02c     cpx #$2C
+8FA6 9007     bcc $8FAF
+8FA8 e0d4     cpx #$D4
+8FAA b003     bcs $8FAF
+8FAC 20888b   jsr $8B88
+8FAF e8       inx 
+8FB0 cefa28   dec $28FA
+8FB3 d0ef     bne $8FA4
+8FB5 18       clc 
+8FB6 adf328   lda $28F3
+8FB9 6df928   adc $28F9
+8FBC 8df328   sta $28F3
+8FBF 9004     bcc $8FC5
+8FC1 eef428   inc $28F4
+8FC4 18       clc 
+8FC5 adef28   lda $28EF
+8FC8 655b     adc $5B
+8FCA 8def28   sta $28EF
+8FCD adf028   lda $28F0
+8FD0 655c     adc $5C
+8FD2 8df028   sta $28F0
+8FD5 aa       tax 
+8FD6 88       dey 
+8FD7 c06c     cpy #$6C
+8FD9 b0c3     bcs $8F9E
+8FDB 60       rts 
+8FDC aef028   ldx $28F0
+8FDF acf228   ldy $28F2
+8FE2 e02c     cpx #$2C
+8FE4 90f5     bcc $8FDB
+8FE6 e0d4     cpx #$D4
+8FE8 b0f1     bcs $8FDB
+8FEA c06c     cpy #$6C
+8FEC 90ed     bcc $8FDB
+8FEE adf428   lda $28F4
+8FF1 8dfa28   sta $28FA
+8FF4 20888b   jsr $8B88
+8FF7 88       dey 
+8FF8 c06c     cpy #$6C
+8FFA 9005     bcc $9001
+8FFC cefa28   dec $28FA
+8FFF d0f3     bne $8FF4
+9001 18       clc 
+9002 adf328   lda $28F3
+9005 6df928   adc $28F9
+9008 8df328   sta $28F3
+900B 9004     bcc $9011
+900D eef428   inc $28F4
+9010 18       clc 
+9011 adf128   lda $28F1
+9014 6df728   adc $28F7
+9017 8df128   sta $28F1
+901A adf228   lda $28F2
+901D 6df828   adc $28F8
+9020 8df228   sta $28F2
+9023 a8       tay 
+9024 a55c     lda $5C
+9026 3004     bmi $902C
+9028 e8       inx 
+9029 4ce28f   jmp $8FE2
+902C ca       dex 
+902D 4ce28f   jmp $8FE2
+9030 2903     and #$03
+9032 aa       tax 
+9033 bd9e8c   lda $8C9E,x
+9036 8ddc28   sta $28DC
+9039 bda28c   lda $8CA2,x
+903C 8ddd28   sta $28DD
+903F 8a       txa 
+9040 d004     bne $9046
+9042 a9ff     lda #$FF
+9044 8558     sta $58
+9046 4651     lsr $51
+9048 6650     ror $50
+904A 4651     lsr $51
+904C 6650     ror $50
+904E 60       rts 
+904F a551     lda $51
+9051 d006     bne $9059
+9053 a900     lda #$00
+9055 8550     sta $50
+9057 e651     inc $51
+9059 a910     lda #$10
+905B 85c4     sta $C4
+905D a900     lda #$00
+905F 85c3     sta $C3
+9061 38       sec 
+9062 a5c3     lda $C3
+9064 e550     sbc $50
+9066 85c3     sta $C3
+9068 a5c4     lda $C4
+906A e551     sbc $51
+906C 85c4     sta $C4
+906E c64f     dec $4F
+9070 b0f0     bcs $9062
+9072 a54f     lda $4F
+9074 8dde28   sta $28DE
+9077 a900     lda #$00
+9079 8554     sta $54
+907B 8555     sta $55
+907D a900     lda #$00
+907F 8552     sta $52
+9081 8553     sta $53
+9083 85c4     sta $C4
+9085 a555     lda $55
+9087 0a       asl @
+9088 26c4     rol $C4
+908A 0a       asl @
+908B 26c4     rol $C4
+908D 18       clc 
+908E 6ddc28   adc $28DC
+9091 85c3     sta $C3
+9093 a5c4     lda $C4
+9095 6ddd28   adc $28DD
+9098 85c4     sta $C4
+909A adde28   lda $28DE
+909D 854f     sta $4F
+909F a553     lda $53
+90A1 aedf28   ldx $28DF
+90A4 f005     beq $90AB
+90A6 38       sec 
+90A7 a91f     lda #$1F
+90A9 e553     sbc $53
+90AB aa       tax 
+90AC 4a       lsr @
+90AD 4a       lsr @
+90AE 4a       lsr @
+90AF a8       tay 
+90B0 8a       txa 
+90B1 2907     and #$07
+90B3 aa       tax 
+90B4 b1c3     lda ($C3),y
+90B6 3def90   and $90EF,x
+90B9 f007     beq $90C2
+90BB a64f     ldx $4F
+90BD a44e     ldy $4E
+90BF 20808b   jsr $8B80
+90C2 e64f     inc $4F
+90C4 18       clc 
+90C5 a552     lda $52
+90C7 6550     adc $50
+90C9 8552     sta $52
+90CB a553     lda $53
+90CD 6551     adc $51
+90CF 8553     sta $53
+90D1 c920     cmp #$20
+90D3 90ca     bcc $909F
+90D5 c64e     dec $4E
+90D7 18       clc 
+90D8 a554     lda $54
+90DA 6550     adc $50
+90DC 8554     sta $54
+90DE a555     lda $55
+90E0 6551     adc $51
+90E2 8555     sta $55
+90E4 c90c     cmp #$0C
+90E6 b003     bcs $90EB
+90E8 4c7d90   jmp $907D
+90EB aee128   ldx $28E1
+90EE 60       rts 
+90EF 80       ??? 
+90F0 40       rti 
+90F1 201008   jsr $0810
+90F4 04       ??? 
+90F5 02       ??? 
+90F6 01a5     ora ($A5,x)
+90F8 36d0     rol $D0,x
+90FA 4ca54a   jmp $4AA5
+90FD f048     beq $9147
+90FF a563     lda $63
+9101 101c     bpl $911F
+9103 ad1229   lda $2912
+9106 c90c     cmp #$0C
+9108 9004     bcc $910E
+910A c9f5     cmp #$F5
+910C 9034     bcc $9142
+910E ad1329   lda $2913
+9111 c90c     cmp #$0C
+9113 9004     bcc $9119
+9115 c9f5     cmp #$F5
+9117 9029     bcc $9142
+9119 ae1029   ldx $2910
+911C 4c3591   jmp $9135
+911F a564     lda $64
+9121 c948     cmp #$48
+9123 901d     bcc $9142
+9125 c998     cmp #$98
+9127 b019     bcs $9142
+9129 a566     lda $66
+912B c924     cmp #$24
+912D 9013     bcc $9142
+912F c960     cmp #$60
+9131 b00f     bcs $9142
+9133 a201     ldx #$01
+9135 ee3728   inc $2837
+9138 ad3728   lda $2837
+913B c902     cmp #$02
+913D 9008     bcc $9147
+913F 8e3828   stx $2838
+9142 a900     lda #$00
+9144 8d3728   sta $2837
+9147 60       rts 
+9148 ad8728   lda $2887
+914B 8587     sta $87
+914D ad8828   lda $2888
+9150 4a       lsr @
+9151 6687     ror $87
+9153 4a       lsr @
+9154 6687     ror $87
+9156 4a       lsr @
+9157 6687     ror $87
+9159 4a       lsr @
+915A 6687     ror $87
+915C 8588     sta $88
+915E ad8928   lda $2889
+9161 8589     sta $89
+9163 ad8a28   lda $288A
+9166 4a       lsr @
+9167 6689     ror $89
+9169 4a       lsr @
+916A 6689     ror $89
+916C 4a       lsr @
+916D 6689     ror $89
+916F 4a       lsr @
+9170 6689     ror $89
+9172 858a     sta $8A
+9174 a533     lda $33
+9176 858b     sta $8B
+9178 a534     lda $34
+917A c940     cmp #$40
+917C 9007     bcc $9185
+917E a9ff     lda #$FF
+9180 858c     sta $8C
+9182 4c8d91   jmp $918D
+9185 068b     asl $8B
+9187 2a       rol @
+9188 268b     rol $8B
+918A 2a       rol @
+918B 858c     sta $8C
+918D ad8628   lda $2886
+9190 2a       rol @
+9191 2a       rol @
+9192 8592     sta $92
+9194 205580   jsr $8055
+9197 ad0928   lda $2809
+919A 85a0     sta $A0
+919C ad0a28   lda $280A
+919F 85a1     sta $A1
+91A1 ad0b28   lda $280B
+91A4 85a2     sta $A2
+91A6 ad0c28   lda $280C
+91A9 85a3     sta $A3
+91AB a529     lda $29
+91AD 85a6     sta $A6
+91AF a528     lda $28
+91B1 2a       rol @
+91B2 26a6     rol $A6
+91B4 2a       rol @
+91B5 26a6     rol $A6
+91B7 a906     lda #$06
+91B9 38       sec 
+91BA e5a6     sbc $A6
+91BC 85a6     sta $A6
+91BE a524     lda $24
+91C0 48       pha 
+91C1 c980     cmp #$80
+91C3 6a       ror @
+91C4 85a4     sta $A4
+91C6 a523     lda $23
+91C8 6a       ror @
+91C9 85a5     sta $A5
+91CB 18       clc 
+91CC 68       pla 
+91CD 6904     adc #$04
+91CF 1005     bpl $91D6
+91D1 a900     lda #$00
+91D3 4cdc91   jmp $91DC
+91D6 c909     cmp #$09
+91D8 9002     bcc $91DC
+91DA a908     lda #$08
+91DC 8d2228   sta $2822
+91DF 60       rts 
+91E0 a5a6     lda $A6
+91E2 8d1e27   sta $271E
+91E5 a200     ldx #$00
+91E7 86b5     stx $B5
+91E9 a5b5     lda $B5
+91EB 18       clc 
+91EC 65a5     adc $A5
+91EE 85b5     sta $B5
+91F0 bd1e27   lda $271E,x
+91F3 65a4     adc $A4
+91F5 9d1f27   sta $271F,x
+91F8 e8       inx 
+91F9 e00f     cpx #$0F
+91FB d0ec     bne $91E9
+91FD a900     lda #$00
+91FF 85b5     sta $B5
+9201 a5b5     lda $B5
+9203 38       sec 
+9204 e5a5     sbc $A5
+9206 85b5     sta $B5
+9208 bd0f27   lda $270F,x
+920B e5a4     sbc $A4
+920D 9d0e27   sta $270E,x
+9210 ca       dex 
+9211 10ee     bpl $9201
+9213 60       rts 
+9214 8694     stx $94
+9216 a02a     ldy #$2A
+9218 a900     lda #$00
+921A 9d1010   sta $1010,x
+921D 9d7010   sta $1070,x
+9220 9dd010   sta $10D0,x
+9223 9d3011   sta $1130,x
+9226 9d9011   sta $1190,x
+9229 9df011   sta $11F0,x
+922C 9d5012   sta $1250,x
+922F 9db012   sta $12B0,x
+9232 9d1013   sta $1310,x
+9235 9d7013   sta $1370,x
+9238 9dd013   sta $13D0,x
+923B 9d3014   sta $1430,x
+923E 9d9014   sta $1490,x
+9241 9df014   sta $14F0,x
+9244 9d5015   sta $1550,x
+9247 9db015   sta $15B0,x
+924A 9d1016   sta $1610,x
+924D 9d7016   sta $1670,x
+9250 9dd016   sta $16D0,x
+9253 9d3017   sta $1730,x
+9256 9d9017   sta $1790,x
+9259 9df017   sta $17F0,x
+925C 9d5018   sta $1850,x
+925F 9db018   sta $18B0,x
+9262 9d1019   sta $1910,x
+9265 9d7019   sta $1970,x
+9268 9dd019   sta $19D0,x
+926B 9d301a   sta $1A30,x
+926E 9d901a   sta $1A90,x
+9271 9df01a   sta $1AF0,x
+9274 9d501b   sta $1B50,x
+9277 9db01b   sta $1BB0,x
+927A 9d101c   sta $1C10,x
+927D 9d701c   sta $1C70,x
+9280 9dd01c   sta $1CD0,x
+9283 9d301d   sta $1D30,x
+9286 9d901d   sta $1D90,x
+9289 9df01d   sta $1DF0,x
+928C 9d501e   sta $1E50,x
+928F 9db01e   sta $1EB0,x
+9292 9d101f   sta $1F10,x
+9295 9d701f   sta $1F70,x
+9298 9dd01f   sta $1FD0,x
+929B 9d3020   sta $2030,x
+929E e8       inx 
+929F 88       dey 
+92A0 f003     beq $92A5
+92A2 4c1a92   jmp $921A
+92A5 a694     ldx $94
+92A7 9d9020   sta $2090,x
+92AA 9d9120   sta $2091,x
+92AD 9d9220   sta $2092,x
+92B0 9d9320   sta $2093,x
+92B3 9d9420   sta $2094,x
+92B6 9dba20   sta $20BA,x
+92B9 9db920   sta $20B9,x
+92BC 9db820   sta $20B8,x
+92BF 9db720   sta $20B7,x
+92C2 9db620   sta $20B6,x
+92C5 9db520   sta $20B5,x
+92C8 9df020   sta $20F0,x
+92CB 9df120   sta $20F1,x
+92CE 9df220   sta $20F2,x
+92D1 9df320   sta $20F3,x
+92D4 9d1a21   sta $211A,x
+92D7 9d1921   sta $2119,x
+92DA 9d1821   sta $2118,x
+92DD 9d1721   sta $2117,x
+92E0 9d1621   sta $2116,x
+92E3 9d5021   sta $2150,x
+92E6 9d5121   sta $2151,x
+92E9 9d5221   sta $2152,x
+92EC 9d7a21   sta $217A,x
+92EF 9d7921   sta $2179,x
+92F2 9d7821   sta $2178,x
+92F5 9d7721   sta $2177,x
+92F8 9db021   sta $21B0,x
+92FB 9dda21   sta $21DA,x
+92FE 9db121   sta $21B1,x
+9301 9dd921   sta $21D9,x
+9304 9dd821   sta $21D8,x
+9307 60       rts 
+9308 8a       txa 
+9309 a8       tay 
+930A a92a     lda #$2A
+930C 859f     sta $9F
+930E a900     lda #$00
+9310 d91010   cmp $1010,y
+9313 f007     beq $931C
+9315 a955     lda #$55
+9317 a200     ldx #$00
+9319 4ce495   jmp $95E4
+931C d97010   cmp $1070,y
+931F f007     beq $9328
+9321 a955     lda #$55
+9323 a201     ldx #$01
+9325 4ce195   jmp $95E1
+9328 d9d010   cmp $10D0,y
+932B f007     beq $9334
+932D a955     lda #$55
+932F a202     ldx #$02
+9331 4cde95   jmp $95DE
+9334 d93011   cmp $1130,y
+9337 f007     beq $9340
+9339 a955     lda #$55
+933B a203     ldx #$03
+933D 4cdb95   jmp $95DB
+9340 d99011   cmp $1190,y
+9343 f007     beq $934C
+9345 a955     lda #$55
+9347 a204     ldx #$04
+9349 4cd895   jmp $95D8
+934C d9f011   cmp $11F0,y
+934F f007     beq $9358
+9351 a955     lda #$55
+9353 a205     ldx #$05
+9355 4cd595   jmp $95D5
+9358 d95012   cmp $1250,y
+935B f007     beq $9364
+935D a955     lda #$55
+935F a206     ldx #$06
+9361 4cd295   jmp $95D2
+9364 d9b012   cmp $12B0,y
+9367 f007     beq $9370
+9369 a955     lda #$55
+936B a207     ldx #$07
+936D 4ccf95   jmp $95CF
+9370 d91013   cmp $1310,y
+9373 f007     beq $937C
+9375 a955     lda #$55
+9377 a208     ldx #$08
+9379 4ccc95   jmp $95CC
+937C d97013   cmp $1370,y
+937F f007     beq $9388
+9381 a955     lda #$55
+9383 a209     ldx #$09
+9385 4cc995   jmp $95C9
+9388 d9d013   cmp $13D0,y
+938B f007     beq $9394
+938D a955     lda #$55
+938F a20a     ldx #$0A
+9391 4cc695   jmp $95C6
+9394 d93014   cmp $1430,y
+9397 f007     beq $93A0
+9399 a955     lda #$55
+939B a20b     ldx #$0B
+939D 4cc395   jmp $95C3
+93A0 d99014   cmp $1490,y
+93A3 f007     beq $93AC
+93A5 a955     lda #$55
+93A7 a20c     ldx #$0C
+93A9 4cc095   jmp $95C0
+93AC d9f014   cmp $14F0,y
+93AF f007     beq $93B8
+93B1 a955     lda #$55
+93B3 a20d     ldx #$0D
+93B5 4cbd95   jmp $95BD
+93B8 d95015   cmp $1550,y
+93BB f007     beq $93C4
+93BD a955     lda #$55
+93BF a20e     ldx #$0E
+93C1 4cba95   jmp $95BA
+93C4 d9b015   cmp $15B0,y
+93C7 f007     beq $93D0
+93C9 a955     lda #$55
+93CB a20f     ldx #$0F
+93CD 4cb795   jmp $95B7
+93D0 d91016   cmp $1610,y
+93D3 f007     beq $93DC
+93D5 a955     lda #$55
+93D7 a210     ldx #$10
+93D9 4cb495   jmp $95B4
+93DC d97016   cmp $1670,y
+93DF f007     beq $93E8
+93E1 a955     lda #$55
+93E3 a211     ldx #$11
+93E5 4cb195   jmp $95B1
+93E8 d9d016   cmp $16D0,y
+93EB f007     beq $93F4
+93ED a955     lda #$55
+93EF a212     ldx #$12
+93F1 4cae95   jmp $95AE
+93F4 d93017   cmp $1730,y
+93F7 f007     beq $9400
+93F9 a955     lda #$55
+93FB a213     ldx #$13
+93FD 4cab95   jmp $95AB
+9400 d99017   cmp $1790,y
+9403 f007     beq $940C
+9405 a955     lda #$55
+9407 a214     ldx #$14
+9409 4ca895   jmp $95A8
+940C d9f017   cmp $17F0,y
+940F f007     beq $9418
+9411 a955     lda #$55
+9413 a215     ldx #$15
+9415 4ca595   jmp $95A5
+9418 d95018   cmp $1850,y
+941B f007     beq $9424
+941D a955     lda #$55
+941F a216     ldx #$16
+9421 4ca295   jmp $95A2
+9424 d9b018   cmp $18B0,y
+9427 f007     beq $9430
+9429 a955     lda #$55
+942B a217     ldx #$17
+942D 4c9f95   jmp $959F
+9430 d91019   cmp $1910,y
+9433 f007     beq $943C
+9435 a955     lda #$55
+9437 a218     ldx #$18
+9439 4c9c95   jmp $959C
+943C d97019   cmp $1970,y
+943F f007     beq $9448
+9441 a955     lda #$55
+9443 a219     ldx #$19
+9445 4c9995   jmp $9599
+9448 d9d019   cmp $19D0,y
+944B f007     beq $9454
+944D a955     lda #$55
+944F a21a     ldx #$1A
+9451 4c9695   jmp $9596
+9454 d9301a   cmp $1A30,y
+9457 f007     beq $9460
+9459 a955     lda #$55
+945B a21b     ldx #$1B
+945D 4c9395   jmp $9593
+9460 d9901a   cmp $1A90,y
+9463 f007     beq $946C
+9465 a955     lda #$55
+9467 a21c     ldx #$1C
+9469 4c9095   jmp $9590
+946C d9f01a   cmp $1AF0,y
+946F f007     beq $9478
+9471 a955     lda #$55
+9473 a21d     ldx #$1D
+9475 4c8d95   jmp $958D
+9478 d9501b   cmp $1B50,y
+947B f007     beq $9484
+947D a955     lda #$55
+947F a21e     ldx #$1E
+9481 4c8a95   jmp $958A
+9484 d9b01b   cmp $1BB0,y
+9487 f007     beq $9490
+9489 a955     lda #$55
+948B a21f     ldx #$1F
+948D 4c8795   jmp $9587
+9490 d9101c   cmp $1C10,y
+9493 f007     beq $949C
+9495 a955     lda #$55
+9497 a220     ldx #$20
+9499 4c8495   jmp $9584
+949C d9701c   cmp $1C70,y
+949F f007     beq $94A8
+94A1 a955     lda #$55
+94A3 a221     ldx #$21
+94A5 4c8195   jmp $9581
+94A8 d9d01c   cmp $1CD0,y
+94AB f007     beq $94B4
+94AD a955     lda #$55
+94AF a222     ldx #$22
+94B1 4c7e95   jmp $957E
+94B4 d9301d   cmp $1D30,y
+94B7 f007     beq $94C0
+94B9 a955     lda #$55
+94BB a223     ldx #$23
+94BD 4c7b95   jmp $957B
+94C0 d9901d   cmp $1D90,y
+94C3 f007     beq $94CC
+94C5 a955     lda #$55
+94C7 a224     ldx #$24
+94C9 4c7895   jmp $9578
+94CC d9f01d   cmp $1DF0,y
+94CF f007     beq $94D8
+94D1 a955     lda #$55
+94D3 a225     ldx #$25
+94D5 4c7595   jmp $9575
+94D8 d9501e   cmp $1E50,y
+94DB f007     beq $94E4
+94DD a955     lda #$55
+94DF a226     ldx #$26
+94E1 4c7295   jmp $9572
+94E4 d9b01e   cmp $1EB0,y
+94E7 f007     beq $94F0
+94E9 a955     lda #$55
+94EB a227     ldx #$27
+94ED 4c6f95   jmp $956F
+94F0 d9101f   cmp $1F10,y
+94F3 f007     beq $94FC
+94F5 a955     lda #$55
+94F7 a228     ldx #$28
+94F9 4c6c95   jmp $956C
+94FC d9701f   cmp $1F70,y
+94FF f007     beq $9508
+9501 a955     lda #$55
+9503 a229     ldx #$29
+9505 4c6995   jmp $9569
+9508 d9d01f   cmp $1FD0,y
+950B f007     beq $9514
+950D a955     lda #$55
+950F a22a     ldx #$2A
+9511 4c6695   jmp $9566
+9514 d93020   cmp $2030,y
+9517 f007     beq $9520
+9519 a955     lda #$55
+951B a22b     ldx #$2B
+951D 4c6395   jmp $9563
+9520 d99020   cmp $2090,y
+9523 f007     beq $952C
+9525 a955     lda #$55
+9527 a22c     ldx #$2C
+9529 4c6095   jmp $9560
+952C d9f020   cmp $20F0,y
+952F f007     beq $9538
+9531 a955     lda #$55
+9533 a22d     ldx #$2D
+9535 4c5d95   jmp $955D
+9538 d95021   cmp $2150,y
+953B f007     beq $9544
+953D a955     lda #$55
+953F a22e     ldx #$2E
+9541 4c5a95   jmp $955A
+9544 d9b021   cmp $21B0,y
+9547 f007     beq $9550
+9549 a955     lda #$55
+954B a22f     ldx #$2F
+954D 4c5795   jmp $9557
+9550 a955     lda #$55
+9552 a230     ldx #$30
+9554 99b021   sta $21B0,y
+9557 995021   sta $2150,y
+955A 99f020   sta $20F0,y
+955D 999020   sta $2090,y
+9560 993020   sta $2030,y
+9563 99d01f   sta $1FD0,y
+9566 99701f   sta $1F70,y
+9569 99101f   sta $1F10,y
+956C 99b01e   sta $1EB0,y
+956F 99501e   sta $1E50,y
+9572 99f01d   sta $1DF0,y
+9575 99901d   sta $1D90,y
+9578 99301d   sta $1D30,y
+957B 99d01c   sta $1CD0,y
+957E 99701c   sta $1C70,y
+9581 99101c   sta $1C10,y
+9584 99b01b   sta $1BB0,y
+9587 99501b   sta $1B50,y
+958A 99f01a   sta $1AF0,y
+958D 99901a   sta $1A90,y
+9590 99301a   sta $1A30,y
+9593 99d019   sta $19D0,y
+9596 997019   sta $1970,y
+9599 991019   sta $1910,y
+959C 99b018   sta $18B0,y
+959F 995018   sta $1850,y
+95A2 99f017   sta $17F0,y
+95A5 999017   sta $1790,y
+95A8 993017   sta $1730,y
+95AB 99d016   sta $16D0,y
+95AE 997016   sta $1670,y
+95B1 991016   sta $1610,y
+95B4 99b015   sta $15B0,y
+95B7 995015   sta $1550,y
+95BA 99f014   sta $14F0,y
+95BD 999014   sta $1490,y
+95C0 993014   sta $1430,y
+95C3 99d013   sta $13D0,y
+95C6 997013   sta $1370,y
+95C9 991013   sta $1310,y
+95CC 99b012   sta $12B0,y
+95CF 995012   sta $1250,y
+95D2 99f011   sta $11F0,y
+95D5 999011   sta $1190,y
+95D8 993011   sta $1130,y
+95DB 99d010   sta $10D0,y
+95DE 997010   sta $1070,y
+95E1 ea       nop 
+95E2 ea       nop 
+95E3 ea       nop 
+95E4 bd3d07   lda $073D,x
+95E7 8580     sta $80
+95E9 bd9307   lda $0793,x
+95EC 8581     sta $81
+95EE a900     lda #$00
+95F0 8595     sta $95
+95F2 a955     lda #$55
+95F4 8596     sta $96
+95F6 b180     lda ($80),y
+95F8 aa       tax 
+95F9 2595     and $95
+95FB 0596     ora $96
+95FD 1d003b   ora $3B00,x
+9600 9180     sta ($80),y
+9602 bd003a   lda $3A00,x
+9605 2596     and $96
+9607 f015     beq $961E
+9609 8596     sta $96
+960B aa       tax 
+960C bd003a   lda $3A00,x
+960F 8595     sta $95
+9611 18       clc 
+9612 a580     lda $80
+9614 6960     adc #$60
+9616 8580     sta $80
+9618 90dc     bcc $95F6
+961A e681     inc $81
+961C b0d8     bcs $95F6
+961E c8       iny 
+961F c69f     dec $9F
+9621 f003     beq $9626
+9623 4c0e93   jmp $930E
+9626 60       rts 
+9627 add225   lda $25D2
+962A 4980     eor #$80
+962C 85b5     sta $B5
+962E a583     lda $83
+9630 4980     eor #$80
+9632 c5b5     cmp $B5
+9634 d005     bne $963B
+9636 a582     lda $82
+9638 cdb425   cmp $25B4
+963B b071     bcs $96AE
+963D a583     lda $83
+963F 3005     bmi $9646
+9641 291f     and #$1F
+9643 4c4896   jmp $9648
+9646 09e0     ora #$E0
+9648 8583     sta $83
+964A a585     lda $85
+964C 3005     bmi $9653
+964E 291f     and #$1F
+9650 4c5596   jmp $9655
+9653 09e0     ora #$E0
+9655 8585     sta $85
+9657 add225   lda $25D2
+965A 3005     bmi $9661
+965C 291f     and #$1F
+965E 4c6396   jmp $9663
+9661 09e0     ora #$E0
+9663 8dd225   sta $25D2
+9666 ade224   lda $24E2
+9669 3005     bmi $9670
+966B 291f     and #$1F
+966D 4c7296   jmp $9672
+9670 09e0     ora #$E0
+9672 8de224   sta $24E2
+9675 a914     lda #$14
+9677 859f     sta $9F
+9679 a583     lda $83
+967B 1049     bpl $96C6
+967D c69f     dec $9F
+967F 302d     bmi $96AE
+9681 20b997   jsr $97B9
+9684 a58e     lda $8E
+9686 3027     bmi $96AF
+9688 d006     bne $9690
+968A a58d     lda $8D
+968C c928     cmp #$28
+968E 901f     bcc $96AF
+9690 a58d     lda $8D
+9692 9db525   sta $25B5,x
+9695 a58e     lda $8E
+9697 9dd325   sta $25D3,x
+969A a58f     lda $8F
+969C 9df125   sta $25F1,x
+969F a590     lda $90
+96A1 9de324   sta $24E3,x
+96A4 a591     lda $91
+96A6 9de323   sta $23E3,x
+96A9 e8       inx 
+96AA e00f     cpx #$0F
+96AC 90cb     bcc $9679
+96AE 60       rts 
+96AF a58d     lda $8D
+96B1 8582     sta $82
+96B3 a58e     lda $8E
+96B5 8583     sta $83
+96B7 a58f     lda $8F
+96B9 8584     sta $84
+96BB a590     lda $90
+96BD 8585     sta $85
+96BF a591     lda $91
+96C1 8586     sta $86
+96C3 4c7996   jmp $9679
+96C6 a583     lda $83
+96C8 d0e4     bne $96AE
+96CA a582     lda $82
+96CC c9d8     cmp #$D8
+96CE b0de     bcs $96AE
+96D0 bdd225   lda $25D2,x
+96D3 f029     beq $96FE
+96D5 c69f     dec $9F
+96D7 3024     bmi $96FD
+96D9 20b997   jsr $97B9
+96DC a58d     lda $8D
+96DE 9db525   sta $25B5,x
+96E1 a58e     lda $8E
+96E3 9dd325   sta $25D3,x
+96E6 a58f     lda $8F
+96E8 9df125   sta $25F1,x
+96EB a590     lda $90
+96ED 9de324   sta $24E3,x
+96F0 a591     lda $91
+96F2 9de323   sta $23E3,x
+96F5 e8       inx 
+96F6 e00f     cpx #$0F
+96F8 b003     bcs $96FD
+96FA 4cd096   jmp $96D0
+96FD 60       rts 
+96FE a585     lda $85
+9700 3008     bmi $970A
+9702 d016     bne $971A
+9704 a584     lda $84
+9706 c96c     cmp #$6C
+9708 b010     bcs $971A
+970A bde224   lda $24E2,x
+970D 301c     bmi $972B
+970F d01d     bne $972E
+9711 bdf025   lda $25F0,x
+9714 c96c     cmp #$6C
+9716 9013     bcc $972B
+9718 b014     bcs $972E
+971A bde224   lda $24E2,x
+971D 302b     bmi $974A
+971F d047     bne $9768
+9721 bdf025   lda $25F0,x
+9724 c96c     cmp #$6C
+9726 9022     bcc $974A
+9728 4c6897   jmp $9768
+972B 4c9797   jmp $9797
+972E 38       sec 
+972F bdb425   lda $25B4,x
+9732 e582     sbc $82
+9734 c914     cmp #$14
+9736 9030     bcc $9768
+9738 4a       lsr @
+9739 4a       lsr @
+973A 85b5     sta $B5
+973C a584     lda $84
+973E 38       sec 
+973F e5b5     sbc $B5
+9741 a585     lda $85
+9743 e900     sbc #$00
+9745 1021     bpl $9768
+9747 4cd596   jmp $96D5
+974A 38       sec 
+974B bdb425   lda $25B4,x
+974E e582     sbc $82
+9750 c914     cmp #$14
+9752 9014     bcc $9768
+9754 4a       lsr @
+9755 4a       lsr @
+9756 85b5     sta $B5
+9758 bdf025   lda $25F0,x
+975B 38       sec 
+975C e5b5     sbc $B5
+975E bde224   lda $24E2,x
+9761 e900     sbc #$00
+9763 1003     bpl $9768
+9765 4cd596   jmp $96D5
+9768 a585     lda $85
+976A f00a     beq $9776
+976C 3004     bmi $9772
+976E a9ff     lda #$FF
+9770 d002     bne $9774
+9772 a900     lda #$00
+9774 8584     sta $84
+9776 bde224   lda $24E2,x
+9779 f00a     beq $9785
+977B 3004     bmi $9781
+977D a9ff     lda #$FF
+977F d007     bne $9788
+9781 a900     lda #$00
+9783 f003     beq $9788
+9785 bdf025   lda $25F0,x
+9788 85ea     sta $EA
+978A bdb425   lda $25B4,x
+978D 8595     sta $95
+978F bde223   lda $23E2,x
+9792 85f4     sta $F4
+9794 202a98   jsr $982A
+9797 e000     cpx #$00
+9799 f01d     beq $97B8
+979B bdb425   lda $25B4,x
+979E 8582     sta $82
+97A0 bdd225   lda $25D2,x
+97A3 8583     sta $83
+97A5 bdf025   lda $25F0,x
+97A8 8584     sta $84
+97AA bde224   lda $24E2,x
+97AD 8585     sta $85
+97AF bde223   lda $23E2,x
+97B2 8586     sta $86
+97B4 ca       dex 
+97B5 4cc696   jmp $96C6
+97B8 60       rts 
+97B9 38       sec 
+97BA a582     lda $82
+97BC 7db425   adc $25B4,x
+97BF 858d     sta $8D
+97C1 a583     lda $83
+97C3 7dd225   adc $25D2,x
+97C6 c980     cmp #$80
+97C8 6a       ror @
+97C9 858e     sta $8E
+97CB 668d     ror $8D
+97CD 38       sec 
+97CE a584     lda $84
+97D0 7df025   adc $25F0,x
+97D3 858f     sta $8F
+97D5 a585     lda $85
+97D7 7de224   adc $24E2,x
+97DA c980     cmp #$80
+97DC 6a       ror @
+97DD 8590     sta $90
+97DF 668f     ror $8F
+97E1 a586     lda $86
+97E3 38       sec 
+97E4 7de223   adc $23E2,x
+97E7 8591     sta $91
+97E9 3001     bmi $97EC
+97EB 60       rts 
+97EC b01e     bcs $980C
+97EE a58d     lda $8D
+97F0 38       sec 
+97F1 e582     sbc $82
+97F3 85b5     sta $B5
+97F5 a58e     lda $8E
+97F7 e583     sbc $83
+97F9 4a       lsr @
+97FA 85b6     sta $B6
+97FC 66b5     ror $B5
+97FE a58f     lda $8F
+9800 38       sec 
+9801 e5b5     sbc $B5
+9803 858f     sta $8F
+9805 a590     lda $90
+9807 e5b6     sbc $B6
+9809 8590     sta $90
+980B 60       rts 
+980C a58d     lda $8D
+980E 38       sec 
+980F e582     sbc $82
+9811 85b5     sta $B5
+9813 a58e     lda $8E
+9815 e583     sbc $83
+9817 4a       lsr @
+9818 85b6     sta $B6
+981A 66b5     ror $B5
+981C a58f     lda $8F
+981E 18       clc 
+981F 65b5     adc $B5
+9821 858f     sta $8F
+9823 a590     lda $90
+9825 65b6     adc $B6
+9827 8590     sta $90
+9829 60       rts 
+982A 8660     stx $60
+982C a595     lda $95
+982E c92d     cmp #$2D
+9830 903a     bcc $986C
+9832 c582     cmp $82
+9834 9036     bcc $986C
+9836 d035     bne $986D
+9838 a695     ldx $95
+983A a5ea     lda $EA
+983C dd0e26   cmp $260E,x
+983F 9029     bcc $986A
+9841 f027     beq $986A
+9843 9d0e26   sta $260E,x
+9846 c997     cmp #$97
+9848 9007     bcc $9851
+984A a9ff     lda #$FF
+984C 9d0e26   sta $260E,x
+984F a997     lda #$97
+9851 84b5     sty $B5
+9853 a8       tay 
+9854 b9ca28   lda $28CA,y
+9857 8580     sta $80
+9859 b9fa28   lda $28FA,y
+985C 8581     sta $81
+985E bc0039   ldy $3900,x
+9861 b180     lda ($80),y
+9863 1d0038   ora $3800,x
+9866 9180     sta ($80),y
+9868 a4b5     ldy $B5
+986A a660     ldx $60
+986C 60       rts 
+986D a000     ldy #$00
+986F a582     lda $82
+9871 c92c     cmp #$2C
+9873 9004     bcc $9879
+9875 aa       tax 
+9876 4c3399   jmp $9933
+9879 18       clc 
+987A 799500   adc $0095,y
+987D 6a       ror @
+987E c92c     cmp #$2C
+9880 9002     bcc $9884
+9882 d052     bne $98D6
+9884 8582     sta $82
+9886 a586     lda $86
+9888 38       sec 
+9889 79f400   adc $00F4,y
+988C 8586     sta $86
+988E 300c     bmi $989C
+9890 18       clc 
+9891 a584     lda $84
+9893 79ea00   adc $00EA,y
+9896 6a       ror @
+9897 8584     sta $84
+9899 4c6f98   jmp $986F
+989C b01c     bcs $98BA
+989E b99500   lda $0095,y
+98A1 38       sec 
+98A2 e582     sbc $82
+98A4 4a       lsr @
+98A5 85b5     sta $B5
+98A7 18       clc 
+98A8 a584     lda $84
+98AA 79ea00   adc $00EA,y
+98AD 6a       ror @
+98AE 38       sec 
+98AF e5b5     sbc $B5
+98B1 b002     bcs $98B5
+98B3 a900     lda #$00
+98B5 8584     sta $84
+98B7 4c6f98   jmp $986F
+98BA b99500   lda $0095,y
+98BD 38       sec 
+98BE e582     sbc $82
+98C0 4a       lsr @
+98C1 85b5     sta $B5
+98C3 18       clc 
+98C4 a584     lda $84
+98C6 79ea00   adc $00EA,y
+98C9 6a       ror @
+98CA 18       clc 
+98CB 65b5     adc $B5
+98CD 9002     bcc $98D1
+98CF a9ff     lda #$FF
+98D1 8584     sta $84
+98D3 4c6f98   jmp $986F
+98D6 999600   sta $0096,y
+98D9 a586     lda $86
+98DB 38       sec 
+98DC 79f400   adc $00F4,y
+98DF 99f500   sta $00F5,y
+98E2 300e     bmi $98F2
+98E4 18       clc 
+98E5 a584     lda $84
+98E7 79ea00   adc $00EA,y
+98EA 6a       ror @
+98EB 99eb00   sta $00EB,y
+98EE c8       iny 
+98EF 4c6f98   jmp $986F
+98F2 b01e     bcs $9912
+98F4 b99600   lda $0096,y
+98F7 38       sec 
+98F8 e582     sbc $82
+98FA 4a       lsr @
+98FB 85b5     sta $B5
+98FD 18       clc 
+98FE a584     lda $84
+9900 79ea00   adc $00EA,y
+9903 6a       ror @
+9904 38       sec 
+9905 e5b5     sbc $B5
+9907 b002     bcs $990B
+9909 a900     lda #$00
+990B 99eb00   sta $00EB,y
+990E c8       iny 
+990F 4c6f98   jmp $986F
+9912 b99600   lda $0096,y
+9915 38       sec 
+9916 e582     sbc $82
+9918 4a       lsr @
+9919 85b5     sta $B5
+991B 18       clc 
+991C a584     lda $84
+991E 79ea00   adc $00EA,y
+9921 6a       ror @
+9922 18       clc 
+9923 65b5     adc $B5
+9925 9002     bcc $9929
+9927 a9ff     lda #$FF
+9929 99eb00   sta $00EB,y
+992C c8       iny 
+992D 4c6f98   jmp $986F
+9930 a660     ldx $60
+9932 60       rts 
+9933 e0d4     cpx #$D4
+9935 b0f9     bcs $9930
+9937 8a       txa 
+9938 8682     stx $82
+993A 38       sec 
+993B f99500   sbc $0095,y
+993E c9fe     cmp #$FE
+9940 d077     bne $99B9
+9942 b9ea00   lda $00EA,y
+9945 6584     adc $84
+9947 6a       ror @
+9948 dd0e26   cmp $260E,x
+994B 9029     bcc $9976
+994D f027     beq $9976
+994F 9d0e26   sta $260E,x
+9952 c997     cmp #$97
+9954 9007     bcc $995D
+9956 a9ff     lda #$FF
+9958 9d0e26   sta $260E,x
+995B a997     lda #$97
+995D 84b5     sty $B5
+995F a8       tay 
+9960 b9ca28   lda $28CA,y
+9963 8580     sta $80
+9965 b9fa28   lda $28FA,y
+9968 8581     sta $81
+996A bc0039   ldy $3900,x
+996D b180     lda ($80),y
+996F 1d0038   ora $3800,x
+9972 9180     sta ($80),y
+9974 a4b5     ldy $B5
+9976 e8       inx 
+9977 b9ea00   lda $00EA,y
+997A 8584     sta $84
+997C dd0e26   cmp $260E,x
+997F 9029     bcc $99AA
+9981 f027     beq $99AA
+9983 9d0e26   sta $260E,x
+9986 c997     cmp #$97
+9988 9007     bcc $9991
+998A a9ff     lda #$FF
+998C 9d0e26   sta $260E,x
+998F a997     lda #$97
+9991 84b5     sty $B5
+9993 a8       tay 
+9994 b9ca28   lda $28CA,y
+9997 8580     sta $80
+9999 b9fa28   lda $28FA,y
+999C 8581     sta $81
+999E bc0039   ldy $3900,x
+99A1 b180     lda ($80),y
+99A3 1d0038   ora $3800,x
+99A6 9180     sta ($80),y
+99A8 a4b5     ldy $B5
+99AA 88       dey 
+99AB 3009     bmi $99B6
+99AD e8       inx 
+99AE b9f500   lda $00F5,y
+99B1 8586     sta $86
+99B3 4c3399   jmp $9933
+99B6 a660     ldx $60
+99B8 60       rts 
+99B9 903f     bcc $99FA
+99BB b9ea00   lda $00EA,y
+99BE 8584     sta $84
+99C0 dd0e26   cmp $260E,x
+99C3 9029     bcc $99EE
+99C5 f027     beq $99EE
+99C7 9d0e26   sta $260E,x
+99CA c997     cmp #$97
+99CC 9007     bcc $99D5
+99CE a9ff     lda #$FF
+99D0 9d0e26   sta $260E,x
+99D3 a997     lda #$97
+99D5 84b5     sty $B5
+99D7 a8       tay 
+99D8 b9ca28   lda $28CA,y
+99DB 8580     sta $80
+99DD b9fa28   lda $28FA,y
+99E0 8581     sta $81
+99E2 bc0039   ldy $3900,x
+99E5 b180     lda ($80),y
+99E7 1d0038   ora $3800,x
+99EA 9180     sta ($80),y
+99EC a4b5     ldy $B5
+99EE 88       dey 
+99EF 30c5     bmi $99B6
+99F1 e8       inx 
+99F2 b9f500   lda $00F5,y
+99F5 8586     sta $86
+99F7 4c3399   jmp $9933
+99FA 8a       txa 
+99FB 799500   adc $0095,y
+99FE 6a       ror @
+99FF 999600   sta $0096,y
+9A02 a586     lda $86
+9A04 38       sec 
+9A05 79f400   adc $00F4,y
+9A08 99f500   sta $00F5,y
+9A0B 300e     bmi $9A1B
+9A0D 18       clc 
+9A0E a584     lda $84
+9A10 79ea00   adc $00EA,y
+9A13 6a       ror @
+9A14 99eb00   sta $00EB,y
+9A17 c8       iny 
+9A18 4c3399   jmp $9933
+9A1B b01c     bcs $9A39
+9A1D b99600   lda $0096,y
+9A20 e582     sbc $82
+9A22 4a       lsr @
+9A23 85b5     sta $B5
+9A25 18       clc 
+9A26 a584     lda $84
+9A28 79ea00   adc $00EA,y
+9A2B 6a       ror @
+9A2C e5b5     sbc $B5
+9A2E b002     bcs $9A32
+9A30 a900     lda #$00
+9A32 99eb00   sta $00EB,y
+9A35 c8       iny 
+9A36 4c3399   jmp $9933
+9A39 b99600   lda $0096,y
+9A3C e582     sbc $82
+9A3E 4a       lsr @
+9A3F 85b5     sta $B5
+9A41 18       clc 
+9A42 a584     lda $84
+9A44 79ea00   adc $00EA,y
+9A47 6a       ror @
+9A48 65b5     adc $B5
+9A4A 9002     bcc $9A4E
+9A4C a9ff     lda #$FF
+9A4E 99eb00   sta $00EB,y
+9A51 c8       iny 
+9A52 4c3399   jmp $9933
+9A55 1050     bpl $9AA7
+9A57 202080   jsr $8020
+9A5A 80       ??? 
+9A5B c040     cpy #$40
+9A5D 40       rti 
+9A5E 40       rti 
+9A5F 40       rti 
+9A60 1010     bpl $9A72
+9A62 1010     bpl $9A74
+9A64 5020     bvc $9A86
+9A66 202020   jsr $2020
+9A69 202080   jsr $8020
+9A6C 80       ??? 
+9A6D 80       ??? 
+9A6E 80       ??? 
+9A6F 80       ??? 
+9A70 80       ??? 
+9A71 c040     cpy #$40
+9A73 40       rti 
+9A74 40       rti 
+9A75 40       rti 
+9A76 40       rti 
+9A77 40       rti 
+9A78 40       rti 
+9A79 40       rti 
+9A7A 1010     bpl $9A8C
+9A7C 1010     bpl $9A8E
+9A7E 1010     bpl $9A90
+9A80 1010     bpl $9A92
+9A82 5060     bvc $9AE4
+9A84 80       ??? 
+9A85 80       ??? 
+9A86 1010     bpl $9A98
+9A88 a020     ldy #$20
+9A8A 202020   jsr $2020
+9A8D 40       rti 
+9A8E 40       rti 
+9A8F 40       rti 
+9A90 40       rti 
+9A91 60       rts 
+9A92 80       ??? 
+9A93 80       ??? 
+9A94 80       ??? 
+9A95 80       ??? 
+9A96 80       ??? 
+9A97 80       ??? 
+9A98 1010     bpl $9AAA
+9A9A 1010     bpl $9AAC
+9A9C 1010     bpl $9AAE
+9A9E a020     ldy #$20
+9AA0 202020   jsr $2020
+9AA3 202020   jsr $2020
+9AA6 204040   jsr $4040
+9AA9 40       rti 
+9AAA 40       rti 
+9AAB 40       rti 
+9AAC 40       rti 
+9AAD 40       rti 
+9AAE 40       rti 
+9AAF 00       brk 
+9AB0 a040     ldy #$40
+9AB2 40       rti 
+9AB3 202060   jsr $6020
+9AB6 1010     bpl $9AC8
+9AB8 1010     bpl $9ACA
+9ABA 80       ??? 
+9ABB 80       ??? 
+9ABC 80       ??? 
+9ABD 80       ??? 
+9ABE a040     ldy #$40
+9AC0 40       rti 
+9AC1 40       rti 
+9AC2 40       rti 
+9AC3 40       rti 
+9AC4 40       rti 
+9AC5 202020   jsr $2020
+9AC8 202020   jsr $2020
+9ACB 60       rts 
+9ACC 1010     bpl $9ADE
+9ACE 1010     bpl $9AE0
+9AD0 1010     bpl $9AE2
+9AD2 1010     bpl $9AE4
+9AD4 80       ??? 
+9AD5 80       ??? 
+9AD6 80       ??? 
+9AD7 80       ??? 
+9AD8 80       ??? 
+9AD9 80       ??? 
+9ADA 80       ??? 
+9ADB 80       ??? 
+9ADC 40       rti 
+9ADD c010     cpy #$10
+9ADF 1040     bpl $9B21
+9AE1 40       rti 
+9AE2 5080     bvc $9A64
+9AE4 80       ??? 
+9AE5 80       ??? 
+9AE6 80       ??? 
+9AE7 202020   jsr $2020
+9AEA 20c010   jsr $10C0
+9AED 1010     bpl $9AFF
+9AEF 1010     bpl $9B01
+9AF1 1040     bpl $9B33
+9AF3 40       rti 
+9AF4 40       rti 
+9AF5 40       rti 
+9AF6 40       rti 
+9AF7 40       rti 
+9AF8 5080     bvc $9A7A
+9AFA 80       ??? 
+9AFB 80       ??? 
+9AFC 80       ??? 
+9AFD 80       ??? 
+9AFE 80       ??? 
+9AFF 80       ??? 
+9B00 80       ??? 
+9B01 202020   jsr $2020
+9B04 202020   jsr $2020
+9B07 202002   jsr $0220
+9B0A 00       brk 
+9B0B 00       brk 
+9B0C 04       ??? 
+9B0D 02       ??? 
+9B0E 0103     ora ($03,x)
+9B10 02       ??? 
+9B11 04       ??? 
+9B12 03       ??? 
+9B13 0504     ora $04
+9B15 0507     ora $07
+9B17 04       ??? 
+9B18 08       php 
+9B19 0903     ora #$03
+9B1B 03       ??? 
+9B1C 0b       ??? 
+9B1D 0c       ??? 
+9B1E 02       ??? 
+9B1F 0d0106   ora $0601
+9B22 07       ??? 
+9B23 07       ??? 
+9B24 08       php 
+9B25 08       php 
+9B26 0909     ora #$09
+9B28 0a       asl @
+9B29 0a       asl @
+9B2A 0b       ??? 
+9B2B 0b       ??? 
+9B2C 0c       ??? 
+9B2D 0c       ??? 
+9B2E 0d0d0e   ora $0E0D
+9B31 100e     bpl $9B41
+9B33 110d     ora ($0D),y
+9B35 12       ??? 
+9B36 0c       ??? 
+9B37 0b       ??? 
+9B38 13       ??? 
+9B39 0a       asl @
+9B3A 14       ??? 
+9B3B 160a     asl $0A,x
+9B3D 17       ??? 
+9B3E 0908     ora #$08
+9B40 18       clc 
+9B41 07       ??? 
+9B42 19061a   ora $1A06,y
+9B45 1b       ??? 
+9B46 1a       ??? 
+9B47 1a       ??? 
+9B48 191918   ora $1819,y
+9B4B 18       clc 
+9B4C 17       ??? 
+9B4D 17       ??? 
+9B4E 1616     asl $16,x
+9B50 1515     ora $15,x
+9B52 14       ??? 
+9B53 14       ??? 
+9B54 13       ??? 
+9B55 13       ??? 
+9B56 12       ??? 
+9B57 12       ??? 
+9B58 1111     ora ($11),y
+9B5A 1010     bpl $9B6C
+9B5C 0f       ??? 
+9B5D 2b       ??? 
+9B5E 0f       ??? 
+9B5F 2a       rol @
+9B60 1029     bpl $9B8B
+9B62 1128     ora ($28),y
+9B64 12       ??? 
+9B65 13       ??? 
+9B66 27       ??? 
+9B67 14       ??? 
+9B68 2615     rol $15
+9B6A 2523     and $23
+9B6C 1522     ora $22,x
+9B6E 1621     asl $21,x
+9B70 17       ??? 
+9B71 18       clc 
+9B72 20191f   jsr $1F19
+9B75 1a       ??? 
+9B76 1e1b1d   asl $1D1B,x
+9B79 1c       ??? 
+9B7A 1d1d1e   ora $1E1D,x
+9B7D 1e1f1f   asl $1F1F,x
+9B80 202021   jsr $2120
+9B83 2122     and ($22,x)
+9B85 22       ??? 
+9B86 23       ??? 
+9B87 23       ??? 
+9B88 2424     bit $24
+9B8A 2525     and $25
+9B8C 2626     rol $26
+9B8E 27       ??? 
+9B8F 27       ??? 
+9B90 28       plp 
+9B91 28       plp 
+9B92 2929     and #$29
+9B94 2a       rol @
+9B95 2a       rol @
+9B96 2b       ??? 
+9B97 2b       ??? 
+9B98 2ca572   bit $72A5
+9B9B c902     cmp #$02
+9B9D f03c     beq $9BDB
+9B9F a563     lda $63
+9BA1 3038     bmi $9BDB
+9BA3 497f     eor #$7F
+9BA5 4a       lsr @
+9BA6 4a       lsr @
+9BA7 38       sec 
+9BA8 e910     sbc #$10
+9BAA 8535     sta $35
+9BAC a565     lda $65
+9BAE 85bd     sta $BD
+9BB0 a564     lda $64
+9BB2 20fc9b   jsr $9BFC
+9BB5 85bb     sta $BB
+9BB7 a567     lda $67
+9BB9 85bd     sta $BD
+9BBB a566     lda $66
+9BBD 20fc9b   jsr $9BFC
+9BC0 18       clc 
+9BC1 65bb     adc $BB
+9BC3 85bb     sta $BB
+9BC5 38       sec 
+9BC6 a90f     lda #$0F
+9BC8 e5bb     sbc $BB
+9BCA 18       clc 
+9BCB 6535     adc $35
+9BCD 1002     bpl $9BD1
+9BCF a900     lda #$00
+9BD1 4a       lsr @
+9BD2 4a       lsr @
+9BD3 18       clc 
+9BD4 6902     adc #$02
+9BD6 8535     sta $35
+9BD8 4ce39b   jmp $9BE3
+9BDB a514     lda $14
+9BDD 290f     and #$0F
+9BDF d002     bne $9BE3
+9BE1 c635     dec $35
+9BE3 a535     lda $35
+9BE5 8d7306   sta $0673
+9BE8 a9a0     lda #$A0
+9BEA 8d6506   sta $0665
+9BED a514     lda $14
+9BEF 2905     and #$05
+9BF1 18       clc 
+9BF2 6902     adc #$02
+9BF4 8d8106   sta $0681
+9BF7 a008     ldy #$08
+9BF9 4c8bba   jmp $BA8B
+9BFC 46bd     lsr $BD
+9BFE 6a       ror @
+9BFF 46bd     lsr $BD
+9C01 6a       ror @
+9C02 46bd     lsr $BD
+9C04 6a       ror @
+9C05 46bd     lsr $BD
+9C07 6a       ror @
+9C08 38       sec 
+9C09 e908     sbc #$08
+9C0B 1005     bpl $9C12
+9C0D 49ff     eor #$FF
+9C0F 18       clc 
+9C10 6901     adc #$01
+9C12 60       rts 
+9C13 a900     lda #$00
+9C15 8535     sta $35
+9C17 4ce39b   jmp $9BE3
+9C1A e2       ??? 
+9C1B f900e4   sbc $E400,y
+9C1E cee6ef   dec $EFE6
+9C21 f8       sed 
+9C22 00       brk 
+9C23 eccee3   cpx $E3CE
+9C26 e1f2     sbc ($F2,x)
+9C28 f0e5     beq $9C0F
+9C2A eef4e5   inc $E5F4
+9C2D f2       ??? 
+9C2E e3       ??? 
+9C2F ceebe5   dec $E5EB
+9C32 ececee   cpx $EEEC
+9C35 e5f2     sbc $F2
+9C37 00       brk 
+9C38 f0ce     beq $9C08
+9C3A ece1ee   cpx $EEE1
+9C3D e7       ??? 
+9C3E f3       ??? 
+9C3F f4       ??? 
+9C40 ef       ??? 
+9C41 eeffff   inc $FFFF
+9C44 ff       ??? 
+9C45 ff       ??? 
+9C46 ff       ??? 
+9C47 ff       ??? 
+9C48 ff       ??? 
+9C49 ff       ??? 
+9C4A ff       ??? 
+9C4B ff       ??? 
+9C4C ff       ??? 
+9C4D ff       ??? 
+9C4E ff       ??? 
+9C4F ff       ??? 
+9C50 ff       ??? 
+9C51 ff       ??? 
+9C52 ff       ??? 
+9C53 ff       ??? 
+9C54 ff       ??? 
+9C55 ff       ??? 
+9C56 ff       ??? 
+9C57 ff       ??? 
+9C58 ff       ??? 
+9C59 ff       ??? 
+9C5A ff       ??? 
+9C5B ff       ??? 
+9C5C ff       ??? 
+9C5D ff       ??? 
+9C5E ff       ??? 
+9C5F ff       ??? 
+9C60 ff       ??? 
+9C61 ff       ??? 
+9C62 ff       ??? 
+9C63 ff       ??? 
+9C64 ff       ??? 
+9C65 ff       ??? 
+9C66 ff       ??? 
+9C67 ff       ??? 
+9C68 ff       ??? 
+9C69 ff       ??? 
+9C6A ff       ??? 
+9C6B ff       ??? 
+9C6C ff       ??? 
+9C6D ff       ??? 
+9C6E ff       ??? 
+9C6F ff       ??? 
+9C70 ff       ??? 
+9C71 ff       ??? 
+9C72 ff       ??? 
+9C73 ff       ??? 
+9C74 ff       ??? 
+9C75 ff       ??? 
+9C76 ff       ??? 
+9C77 ff       ??? 
+9C78 ff       ??? 
+9C79 ff       ??? 
+9C7A ff       ??? 
+9C7B ff       ??? 
+9C7C ff       ??? 
+9C7D ff       ??? 
+9C7E ff       ??? 
+9C7F ff       ??? 
+9C80 ff       ??? 
+9C81 ff       ??? 
+9C82 ff       ??? 
+9C83 ff       ??? 
+9C84 ff       ??? 
+9C85 ff       ??? 
+9C86 ff       ??? 
+9C87 ff       ??? 
+9C88 ff       ??? 
+9C89 ff       ??? 
+9C8A ff       ??? 
+9C8B ff       ??? 
+9C8C ff       ??? 
+9C8D ff       ??? 
+9C8E ff       ??? 
+9C8F ff       ??? 
+9C90 ff       ??? 
+9C91 ff       ??? 
+9C92 ff       ??? 
+9C93 ff       ??? 
+9C94 ff       ??? 
+9C95 ff       ??? 
+9C96 ff       ??? 
+9C97 ff       ??? 
+9C98 ff       ??? 
+9C99 ff       ??? 
+9C9A ff       ??? 
+9C9B ff       ??? 
+9C9C ff       ??? 
+9C9D ff       ??? 
+9C9E ff       ??? 
+9C9F ff       ??? 
+9CA0 ff       ??? 
+9CA1 ff       ??? 
+9CA2 ff       ??? 
+9CA3 ff       ??? 
+9CA4 ff       ??? 
+9CA5 ff       ??? 
+9CA6 ff       ??? 
+9CA7 ff       ??? 
+9CA8 ff       ??? 
+9CA9 ff       ??? 
+9CAA ff       ??? 
+9CAB ff       ??? 
+9CAC ff       ??? 
+9CAD ff       ??? 
+9CAE ff       ??? 
+9CAF ff       ??? 
+9CB0 ff       ??? 
+9CB1 ff       ??? 
+9CB2 ff       ??? 
+9CB3 ff       ??? 
+9CB4 ff       ??? 
+9CB5 ff       ??? 
+9CB6 ff       ??? 
+9CB7 ff       ??? 
+9CB8 ff       ??? 
+9CB9 ff       ??? 
+9CBA ff       ??? 
+9CBB ff       ??? 
+9CBC ff       ??? 
+9CBD ff       ??? 
+9CBE ff       ??? 
+9CBF ff       ??? 
+9CC0 ff       ??? 
+9CC1 ff       ??? 
+9CC2 ff       ??? 
+9CC3 ff       ??? 
+9CC4 ff       ??? 
+9CC5 ff       ??? 
+9CC6 ff       ??? 
+9CC7 ff       ??? 
+9CC8 ff       ??? 
+9CC9 ff       ??? 
+9CCA ff       ??? 
+9CCB ff       ??? 
+9CCC ff       ??? 
+9CCD ff       ??? 
+9CCE ff       ??? 
+9CCF ff       ??? 
+9CD0 ff       ??? 
+9CD1 ff       ??? 
+9CD2 ff       ??? 
+9CD3 ff       ??? 
+9CD4 ff       ??? 
+9CD5 ff       ??? 
+9CD6 ff       ??? 
+9CD7 ff       ??? 
+9CD8 ff       ??? 
+9CD9 ff       ??? 
+9CDA ff       ??? 
+9CDB ff       ??? 
+9CDC ff       ??? 
+9CDD ff       ??? 
+9CDE ff       ??? 
+9CDF ff       ??? 
+9CE0 ff       ??? 
+9CE1 ff       ??? 
+9CE2 ff       ??? 
+9CE3 ff       ??? 
+9CE4 ff       ??? 
+9CE5 ff       ??? 
+9CE6 ff       ??? 
+9CE7 ff       ??? 
+9CE8 ff       ??? 
+9CE9 ff       ??? 
+9CEA ff       ??? 
+9CEB ff       ??? 
+9CEC ff       ??? 
+9CED ff       ??? 
+9CEE ff       ??? 
+9CEF ff       ??? 
+9CF0 ff       ??? 
+9CF1 ff       ??? 
+9CF2 ff       ??? 
+9CF3 ff       ??? 
+9CF4 ff       ??? 
+9CF5 ff       ??? 
+9CF6 ff       ??? 
+9CF7 ff       ??? 
+9CF8 ff       ??? 
+9CF9 ff       ??? 
+9CFA ff       ??? 
+9CFB ff       ??? 
+9CFC ff       ??? 
+9CFD ff       ??? 
+9CFE ff       ??? 
+9CFF ff       ??? 
+9D00 ff       ??? 
+9D01 ff       ??? 
+9D02 ff       ??? 
+9D03 ff       ??? 
+9D04 ff       ??? 
+9D05 ff       ??? 
+9D06 ff       ??? 
+9D07 ff       ??? 
+9D08 ff       ??? 
+9D09 ff       ??? 
+9D0A ff       ??? 
+9D0B ff       ??? 
+9D0C ff       ??? 
+9D0D ff       ??? 
+9D0E ff       ??? 
+9D0F ff       ??? 
+9D10 ff       ??? 
+9D11 ff       ??? 
+9D12 ff       ??? 
+9D13 ff       ??? 
+9D14 ff       ??? 
+9D15 ff       ??? 
+9D16 ff       ??? 
+9D17 ff       ??? 
+9D18 ff       ??? 
+9D19 ff       ??? 
+9D1A ff       ??? 
+9D1B ff       ??? 
+9D1C ff       ??? 
+9D1D ff       ??? 
+9D1E ff       ??? 
+9D1F ff       ??? 
+9D20 ff       ??? 
+9D21 ff       ??? 
+9D22 ff       ??? 
+9D23 ff       ??? 
+9D24 ff       ??? 
+9D25 ff       ??? 
+9D26 ff       ??? 
+9D27 ff       ??? 
+9D28 ff       ??? 
+9D29 ff       ??? 
+9D2A ff       ??? 
+9D2B ff       ??? 
+9D2C ff       ??? 
+9D2D ff       ??? 
+9D2E ff       ??? 
+9D2F ff       ??? 
+9D30 ff       ??? 
+9D31 ff       ??? 
+9D32 ff       ??? 
+9D33 ff       ??? 
+9D34 ff       ??? 
+9D35 ff       ??? 
+9D36 ff       ??? 
+9D37 ff       ??? 
+9D38 ff       ??? 
+9D39 ff       ??? 
+9D3A ff       ??? 
+9D3B ff       ??? 
+9D3C ff       ??? 
+9D3D ff       ??? 
+9D3E ff       ??? 
+9D3F ff       ??? 
+9D40 ff       ??? 
+9D41 ff       ??? 
+9D42 ff       ??? 
+9D43 ff       ??? 
+9D44 ff       ??? 
+9D45 ff       ??? 
+9D46 ff       ??? 
+9D47 ff       ??? 
+9D48 ff       ??? 
+9D49 ff       ??? 
+9D4A ff       ??? 
+9D4B ff       ??? 
+9D4C ff       ??? 
+9D4D ff       ??? 
+9D4E ff       ??? 
+9D4F ff       ??? 
+9D50 ff       ??? 
+9D51 ff       ??? 
+9D52 ff       ??? 
+9D53 ff       ??? 
+9D54 ff       ??? 
+9D55 ff       ??? 
+9D56 ff       ??? 
+9D57 ff       ??? 
+9D58 ff       ??? 
+9D59 ff       ??? 
+9D5A ff       ??? 
+9D5B ff       ??? 
+9D5C ff       ??? 
+9D5D ff       ??? 
+9D5E ff       ??? 
+9D5F ff       ??? 
+9D60 ff       ??? 
+9D61 ff       ??? 
+9D62 ff       ??? 
+9D63 ff       ??? 
+9D64 ff       ??? 
+9D65 ff       ??? 
+9D66 ff       ??? 
+9D67 ff       ??? 
+9D68 ff       ??? 
+9D69 ff       ??? 
+9D6A ff       ??? 
+9D6B ff       ??? 
+9D6C ff       ??? 
+9D6D ff       ??? 
+9D6E ff       ??? 
+9D6F ff       ??? 
+9D70 ff       ??? 
+9D71 ff       ??? 
+9D72 ff       ??? 
+9D73 ff       ??? 
+9D74 ff       ??? 
+9D75 ff       ??? 
+9D76 ff       ??? 
+9D77 ff       ??? 
+9D78 ff       ??? 
+9D79 ff       ??? 
+9D7A ff       ??? 
+9D7B ff       ??? 
+9D7C ff       ??? 
+9D7D ff       ??? 
+9D7E ff       ??? 
+9D7F ff       ??? 
+9D80 ff       ??? 
+9D81 ff       ??? 
+9D82 ff       ??? 
+9D83 ff       ??? 
+9D84 ff       ??? 
+9D85 ff       ??? 
+9D86 ff       ??? 
+9D87 ff       ??? 
+9D88 ff       ??? 
+9D89 ff       ??? 
+9D8A ff       ??? 
+9D8B ff       ??? 
+9D8C ff       ??? 
+9D8D ff       ??? 
+9D8E ff       ??? 
+9D8F ff       ??? 
+9D90 ff       ??? 
+9D91 ff       ??? 
+9D92 ff       ??? 
+9D93 ff       ??? 
+9D94 ff       ??? 
+9D95 ff       ??? 
+9D96 ff       ??? 
+9D97 ff       ??? 
+9D98 ff       ??? 
+9D99 ff       ??? 
+9D9A ff       ??? 
+9D9B ff       ??? 
+9D9C ff       ??? 
+9D9D ff       ??? 
+9D9E ff       ??? 
+9D9F ff       ??? 
+9DA0 ff       ??? 
+9DA1 ff       ??? 
+9DA2 ff       ??? 
+9DA3 ff       ??? 
+9DA4 ff       ??? 
+9DA5 ff       ??? 
+9DA6 ff       ??? 
+9DA7 ff       ??? 
+9DA8 ff       ??? 
+9DA9 ff       ??? 
+9DAA ff       ??? 
+9DAB ff       ??? 
+9DAC ff       ??? 
+9DAD ff       ??? 
+9DAE ff       ??? 
+9DAF ff       ??? 
+9DB0 ff       ??? 
+9DB1 ff       ??? 
+9DB2 ff       ??? 
+9DB3 ff       ??? 
+9DB4 ff       ??? 
+9DB5 ff       ??? 
+9DB6 ff       ??? 
+9DB7 ff       ??? 
+9DB8 ff       ??? 
+9DB9 ff       ??? 
+9DBA ff       ??? 
+9DBB ff       ??? 
+9DBC ff       ??? 
+9DBD ff       ??? 
+9DBE ff       ??? 
+9DBF ff       ??? 
+9DC0 ff       ??? 
+9DC1 ff       ??? 
+9DC2 ff       ??? 
+9DC3 ff       ??? 
+9DC4 ff       ??? 
+9DC5 ff       ??? 
+9DC6 ff       ??? 
+9DC7 ff       ??? 
+9DC8 ff       ??? 
+9DC9 ff       ??? 
+9DCA ff       ??? 
+9DCB ff       ??? 
+9DCC ff       ??? 
+9DCD ff       ??? 
+9DCE ff       ??? 
+9DCF ff       ??? 
+9DD0 ff       ??? 
+9DD1 ff       ??? 
+9DD2 ff       ??? 
+9DD3 ff       ??? 
+9DD4 ff       ??? 
+9DD5 ff       ??? 
+9DD6 ff       ??? 
+9DD7 ff       ??? 
+9DD8 ff       ??? 
+9DD9 ff       ??? 
+9DDA ff       ??? 
+9DDB ff       ??? 
+9DDC ff       ??? 
+9DDD ff       ??? 
+9DDE ff       ??? 
+9DDF ff       ??? 
+9DE0 ff       ??? 
+9DE1 ff       ??? 
+9DE2 ff       ??? 
+9DE3 ff       ??? 
+9DE4 ff       ??? 
+9DE5 ff       ??? 
+9DE6 ff       ??? 
+9DE7 ff       ??? 
+9DE8 ff       ??? 
+9DE9 ff       ??? 
+9DEA ff       ??? 
+9DEB ff       ??? 
+9DEC ff       ??? 
+9DED ff       ??? 
+9DEE ff       ??? 
+9DEF ff       ??? 
+9DF0 ff       ??? 
+9DF1 ff       ??? 
+9DF2 ff       ??? 
+9DF3 ff       ??? 
+9DF4 ff       ??? 
+9DF5 ff       ??? 
+9DF6 ff       ??? 
+9DF7 ff       ??? 
+9DF8 ff       ??? 
+9DF9 ff       ??? 
+9DFA ff       ??? 
+9DFB ff       ??? 
+9DFC ff       ??? 
+9DFD ff       ??? 
+9DFE ff       ??? 
+9DFF ff       ??? 
+9E00 ff       ??? 
+9E01 ff       ??? 
+9E02 ff       ??? 
+9E03 ff       ??? 
+9E04 ff       ??? 
+9E05 ff       ??? 
+9E06 ff       ??? 
+9E07 ff       ??? 
+9E08 ff       ??? 
+9E09 ff       ??? 
+9E0A ff       ??? 
+9E0B ff       ??? 
+9E0C ff       ??? 
+9E0D ff       ??? 
+9E0E ff       ??? 
+9E0F ff       ??? 
+9E10 ff       ??? 
+9E11 ff       ??? 
+9E12 ff       ??? 
+9E13 ff       ??? 
+9E14 ff       ??? 
+9E15 ff       ??? 
+9E16 ff       ??? 
+9E17 ff       ??? 
+9E18 ff       ??? 
+9E19 ff       ??? 
+9E1A ff       ??? 
+9E1B ff       ??? 
+9E1C ff       ??? 
+9E1D ff       ??? 
+9E1E ff       ??? 
+9E1F ff       ??? 
+9E20 ff       ??? 
+9E21 ff       ??? 
+9E22 ff       ??? 
+9E23 ff       ??? 
+9E24 ff       ??? 
+9E25 ff       ??? 
+9E26 ff       ??? 
+9E27 ff       ??? 
+9E28 ff       ??? 
+9E29 ff       ??? 
+9E2A ff       ??? 
+9E2B ff       ??? 
+9E2C ff       ??? 
+9E2D ff       ??? 
+9E2E ff       ??? 
+9E2F ff       ??? 
+9E30 ff       ??? 
+9E31 ff       ??? 
+9E32 ff       ??? 
+9E33 ff       ??? 
+9E34 ff       ??? 
+9E35 ff       ??? 
+9E36 ff       ??? 
+9E37 ff       ??? 
+9E38 ff       ??? 
+9E39 ff       ??? 
+9E3A ff       ??? 
+9E3B ff       ??? 
+9E3C ff       ??? 
+9E3D ff       ??? 
+9E3E ff       ??? 
+9E3F ff       ??? 
+9E40 ff       ??? 
+9E41 ff       ??? 
+9E42 ff       ??? 
+9E43 ff       ??? 
+9E44 ff       ??? 
+9E45 ff       ??? 
+9E46 ff       ??? 
+9E47 ff       ??? 
+9E48 ff       ??? 
+9E49 ff       ??? 
+9E4A ff       ??? 
+9E4B ff       ??? 
+9E4C ff       ??? 
+9E4D ff       ??? 
+9E4E ff       ??? 
+9E4F ff       ??? 
+9E50 ff       ??? 
+9E51 ff       ??? 
+9E52 ff       ??? 
+9E53 ff       ??? 
+9E54 ff       ??? 
+9E55 ff       ??? 
+9E56 ff       ??? 
+9E57 ff       ??? 
+9E58 ff       ??? 
+9E59 ff       ??? 
+9E5A ff       ??? 
+9E5B ff       ??? 
+9E5C ff       ??? 
+9E5D ff       ??? 
+9E5E ff       ??? 
+9E5F ff       ??? 
+9E60 ff       ??? 
+9E61 ff       ??? 
+9E62 ff       ??? 
+9E63 ff       ??? 
+9E64 ff       ??? 
+9E65 ff       ??? 
+9E66 ff       ??? 
+9E67 ff       ??? 
+9E68 ff       ??? 
+9E69 ff       ??? 
+9E6A ff       ??? 
+9E6B ff       ??? 
+9E6C ff       ??? 
+9E6D ff       ??? 
+9E6E ff       ??? 
+9E6F ff       ??? 
+9E70 ff       ??? 
+9E71 ff       ??? 
+9E72 ff       ??? 
+9E73 ff       ??? 
+9E74 ff       ??? 
+9E75 ff       ??? 
+9E76 ff       ??? 
+9E77 ff       ??? 
+9E78 ff       ??? 
+9E79 ff       ??? 
+9E7A ff       ??? 
+9E7B ff       ??? 
+9E7C ff       ??? 
+9E7D ff       ??? 
+9E7E ff       ??? 
+9E7F ff       ??? 
+9E80 ff       ??? 
+9E81 ff       ??? 
+9E82 ff       ??? 
+9E83 ff       ??? 
+9E84 ff       ??? 
+9E85 ff       ??? 
+9E86 ff       ??? 
+9E87 ff       ??? 
+9E88 ff       ??? 
+9E89 ff       ??? 
+9E8A ff       ??? 
+9E8B ff       ??? 
+9E8C ff       ??? 
+9E8D ff       ??? 
+9E8E ff       ??? 
+9E8F ff       ??? 
+9E90 ff       ??? 
+9E91 ff       ??? 
+9E92 ff       ??? 
+9E93 ff       ??? 
+9E94 ff       ??? 
+9E95 ff       ??? 
+9E96 ff       ??? 
+9E97 ff       ??? 
+9E98 ff       ??? 
+9E99 ff       ??? 
+9E9A ff       ??? 
+9E9B ff       ??? 
+9E9C ff       ??? 
+9E9D ff       ??? 
+9E9E ff       ??? 
+9E9F ff       ??? 
+9EA0 ff       ??? 
+9EA1 ff       ??? 
+9EA2 ff       ??? 
+9EA3 ff       ??? 
+9EA4 ff       ??? 
+9EA5 ff       ??? 
+9EA6 ff       ??? 
+9EA7 ff       ??? 
+9EA8 ff       ??? 
+9EA9 ff       ??? 
+9EAA ff       ??? 
+9EAB ff       ??? 
+9EAC ff       ??? 
+9EAD ff       ??? 
+9EAE ff       ??? 
+9EAF ff       ??? 
+9EB0 ff       ??? 
+9EB1 ff       ??? 
+9EB2 ff       ??? 
+9EB3 ff       ??? 
+9EB4 ff       ??? 
+9EB5 ff       ??? 
+9EB6 ff       ??? 
+9EB7 ff       ??? 
+9EB8 ff       ??? 
+9EB9 ff       ??? 
+9EBA ff       ??? 
+9EBB ff       ??? 
+9EBC ff       ??? 
+9EBD ff       ??? 
+9EBE ff       ??? 
+9EBF ff       ??? 
+9EC0 ff       ??? 
+9EC1 ff       ??? 
+9EC2 ff       ??? 
+9EC3 ff       ??? 
+9EC4 ff       ??? 
+9EC5 ff       ??? 
+9EC6 ff       ??? 
+9EC7 ff       ??? 
+9EC8 ff       ??? 
+9EC9 ff       ??? 
+9ECA ff       ??? 
+9ECB ff       ??? 
+9ECC ff       ??? 
+9ECD ff       ??? 
+9ECE ff       ??? 
+9ECF ff       ??? 
+9ED0 ff       ??? 
+9ED1 ff       ??? 
+9ED2 ff       ??? 
+9ED3 ff       ??? 
+9ED4 ff       ??? 
+9ED5 ff       ??? 
+9ED6 ff       ??? 
+9ED7 ff       ??? 
+9ED8 ff       ??? 
+9ED9 ff       ??? 
+9EDA ff       ??? 
+9EDB ff       ??? 
+9EDC ff       ??? 
+9EDD ff       ??? 
+9EDE ff       ??? 
+9EDF ff       ??? 
+9EE0 ff       ??? 
+9EE1 ff       ??? 
+9EE2 ff       ??? 
+9EE3 ff       ??? 
+9EE4 ff       ??? 
+9EE5 ff       ??? 
+9EE6 ff       ??? 
+9EE7 ff       ??? 
+9EE8 ff       ??? 
+9EE9 ff       ??? 
+9EEA ff       ??? 
+9EEB ff       ??? 
+9EEC ff       ??? 
+9EED ff       ??? 
+9EEE ff       ??? 
+9EEF ff       ??? 
+9EF0 ff       ??? 
+9EF1 ff       ??? 
+9EF2 ff       ??? 
+9EF3 ff       ??? 
+9EF4 ff       ??? 
+9EF5 ff       ??? 
+9EF6 ff       ??? 
+9EF7 ff       ??? 
+9EF8 ff       ??? 
+9EF9 ff       ??? 
+9EFA ff       ??? 
+9EFB ff       ??? 
+9EFC ff       ??? 
+9EFD ff       ??? 
+9EFE ff       ??? 
+9EFF ff       ??? 
+9F00 ff       ??? 
+9F01 ff       ??? 
+9F02 ff       ??? 
+9F03 ff       ??? 
+9F04 ff       ??? 
+9F05 ff       ??? 
+9F06 ff       ??? 
+9F07 ff       ??? 
+9F08 ff       ??? 
+9F09 ff       ??? 
+9F0A ff       ??? 
+9F0B ff       ??? 
+9F0C ff       ??? 
+9F0D ff       ??? 
+9F0E ff       ??? 
+9F0F ff       ??? 
+9F10 ff       ??? 
+9F11 ff       ??? 
+9F12 ff       ??? 
+9F13 ff       ??? 
+9F14 ff       ??? 
+9F15 ff       ??? 
+9F16 ff       ??? 
+9F17 ff       ??? 
+9F18 ff       ??? 
+9F19 ff       ??? 
+9F1A ff       ??? 
+9F1B ff       ??? 
+9F1C ff       ??? 
+9F1D ff       ??? 
+9F1E ff       ??? 
+9F1F ff       ??? 
+9F20 ff       ??? 
+9F21 ff       ??? 
+9F22 ff       ??? 
+9F23 ff       ??? 
+9F24 ff       ??? 
+9F25 ff       ??? 
+9F26 ff       ??? 
+9F27 ff       ??? 
+9F28 ff       ??? 
+9F29 ff       ??? 
+9F2A ff       ??? 
+9F2B ff       ??? 
+9F2C ff       ??? 
+9F2D ff       ??? 
+9F2E ff       ??? 
+9F2F ff       ??? 
+9F30 ff       ??? 
+9F31 ff       ??? 
+9F32 ff       ??? 
+9F33 ff       ??? 
+9F34 ff       ??? 
+9F35 ff       ??? 
+9F36 ff       ??? 
+9F37 ff       ??? 
+9F38 ff       ??? 
+9F39 ff       ??? 
+9F3A ff       ??? 
+9F3B ff       ??? 
+9F3C ff       ??? 
+9F3D ff       ??? 
+9F3E ff       ??? 
+9F3F ff       ??? 
+9F40 ff       ??? 
+9F41 ff       ??? 
+9F42 ff       ??? 
+9F43 ff       ??? 
+9F44 ff       ??? 
+9F45 ff       ??? 
+9F46 ff       ??? 
+9F47 ff       ??? 
+9F48 ff       ??? 
+9F49 ff       ??? 
+9F4A ff       ??? 
+9F4B ff       ??? 
+9F4C ff       ??? 
+9F4D ff       ??? 
+9F4E ff       ??? 
+9F4F ff       ??? 
+9F50 ff       ??? 
+9F51 ff       ??? 
+9F52 ff       ??? 
+9F53 ff       ??? 
+9F54 ff       ??? 
+9F55 ff       ??? 
+9F56 ff       ??? 
+9F57 ff       ??? 
+9F58 ff       ??? 
+9F59 ff       ??? 
+9F5A ff       ??? 
+9F5B ff       ??? 
+9F5C ff       ??? 
+9F5D ff       ??? 
+9F5E ff       ??? 
+9F5F ff       ??? 
+9F60 ff       ??? 
+9F61 ff       ??? 
+9F62 ff       ??? 
+9F63 ff       ??? 
+9F64 ff       ??? 
+9F65 ff       ??? 
+9F66 ff       ??? 
+9F67 ff       ??? 
+9F68 ff       ??? 
+9F69 ff       ??? 
+9F6A ff       ??? 
+9F6B ff       ??? 
+9F6C ff       ??? 
+9F6D ff       ??? 
+9F6E ff       ??? 
+9F6F ff       ??? 
+9F70 ff       ??? 
+9F71 ff       ??? 
+9F72 ff       ??? 
+9F73 ff       ??? 
+9F74 ff       ??? 
+9F75 ff       ??? 
+9F76 ff       ??? 
+9F77 ff       ??? 
+9F78 ff       ??? 
+9F79 ff       ??? 
+9F7A ff       ??? 
+9F7B ff       ??? 
+9F7C ff       ??? 
+9F7D ff       ??? 
+9F7E ff       ??? 
+9F7F ff       ??? 
+9F80 ff       ??? 
+9F81 ff       ??? 
+9F82 ff       ??? 
+9F83 ff       ??? 
+9F84 ff       ??? 
+9F85 ff       ??? 
+9F86 ff       ??? 
+9F87 ff       ??? 
+9F88 ff       ??? 
+9F89 ff       ??? 
+9F8A ff       ??? 
+9F8B ff       ??? 
+9F8C ff       ??? 
+9F8D ff       ??? 
+9F8E ff       ??? 
+9F8F ff       ??? 
+9F90 ff       ??? 
+9F91 ff       ??? 
+9F92 ff       ??? 
+9F93 ff       ??? 
+9F94 ff       ??? 
+9F95 ff       ??? 
+9F96 ff       ??? 
+9F97 ff       ??? 
+9F98 ff       ??? 
+9F99 ff       ??? 
+9F9A ff       ??? 
+9F9B ff       ??? 
+9F9C ff       ??? 
+9F9D ff       ??? 
+9F9E ff       ??? 
+9F9F ff       ??? 
+9FA0 ff       ??? 
+9FA1 ff       ??? 
+9FA2 ff       ??? 
+9FA3 ff       ??? 
+9FA4 ff       ??? 
+9FA5 ff       ??? 
+9FA6 ff       ??? 
+9FA7 ff       ??? 
+9FA8 ff       ??? 
+9FA9 ff       ??? 
+9FAA ff       ??? 
+9FAB ff       ??? 
+9FAC ff       ??? 
+9FAD ff       ??? 
+9FAE ff       ??? 
+9FAF ff       ??? 
+9FB0 ff       ??? 
+9FB1 ff       ??? 
+9FB2 ff       ??? 
+9FB3 ff       ??? 
+9FB4 ff       ??? 
+9FB5 ff       ??? 
+9FB6 ff       ??? 
+9FB7 ff       ??? 
+9FB8 ff       ??? 
+9FB9 ff       ??? 
+9FBA ff       ??? 
+9FBB ff       ??? 
+9FBC ff       ??? 
+9FBD ff       ??? 
+9FBE ff       ??? 
+9FBF ff       ??? 
+9FC0 ff       ??? 
+9FC1 ff       ??? 
+9FC2 ff       ??? 
+9FC3 ff       ??? 
+9FC4 ff       ??? 
+9FC5 ff       ??? 
+9FC6 ff       ??? 
+9FC7 ff       ??? 
+9FC8 ff       ??? 
+9FC9 ff       ??? 
+9FCA ff       ??? 
+9FCB ff       ??? 
+9FCC ff       ??? 
+9FCD ff       ??? 
+9FCE ff       ??? 
+9FCF ff       ??? 
+9FD0 ff       ??? 
+9FD1 ff       ??? 
+9FD2 ff       ??? 
+9FD3 ff       ??? 
+9FD4 ff       ??? 
+9FD5 ff       ??? 
+9FD6 ff       ??? 
+9FD7 ff       ??? 
+9FD8 ff       ??? 
+9FD9 ff       ??? 
+9FDA ff       ??? 
+9FDB ff       ??? 
+9FDC ff       ??? 
+9FDD ff       ??? 
+9FDE ff       ??? 
+9FDF ff       ??? 
+9FE0 ff       ??? 
+9FE1 ff       ??? 
+9FE2 ff       ??? 
+9FE3 ff       ??? 
+9FE4 ff       ??? 
+9FE5 ff       ??? 
+9FE6 ff       ??? 
+9FE7 ff       ??? 
+9FE8 ff       ??? 
+9FE9 ff       ??? 
+9FEA ff       ??? 
+9FEB ff       ??? 
+9FEC ff       ??? 
+9FED ff       ??? 
+9FEE ff       ??? 
+9FEF ff       ??? 
+9FF0 ff       ??? 
+9FF1 ff       ??? 
+9FF2 ff       ??? 
+9FF3 ff       ??? 
+9FF4 ff       ??? 
+9FF5 ff       ??? 
+9FF6 ff       ??? 
+9FF7 ff       ??? 
+9FF8 ff       ??? 
+9FF9 ff       ??? 
+9FFA ff       ??? 
+9FFB ff       ??? 
+9FFC ff       ??? 
+9FFD ff       ??? 

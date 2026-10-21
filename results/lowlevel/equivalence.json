@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "tests": [
+    {
+      "entry": "0xbb19",
+      "cases": 3000,
+      "saved_min": 65,
+      "saved_max": 76,
+      "saved_mean": 72.83933333333333
+    },
+    {
+      "entry": "0xbb3e",
+      "cases": 3000,
+      "saved_min": 53,
+      "saved_max": 54,
+      "saved_mean": 53.47866666666667
+    }
+  ]
+}

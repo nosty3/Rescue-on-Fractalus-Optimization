@@ -1,0 +1,47 @@
+{
+  "fps_original": 6.5535312209569065,
+  "fps_v1": 6.779768690217809,
+  "fps_v2": 7.1152559717378026,
+  "gain_vs_v1_percent": 4.948358813539633,
+  "gain_vs_original_percent": 8.571329438160147,
+  "scenarios": [
+    {
+      "variant": "mountain_cull",
+      "scenario": "straight",
+      "intervals": 420,
+      "ticks": 106704002,
+      "seconds": 60.16755613007997,
+      "fps": 6.980506223187393,
+      "mode": 2
+    },
+    {
+      "variant": "mountain_cull",
+      "scenario": "right",
+      "intervals": 429,
+      "ticks": 106846276,
+      "seconds": 60.247780664496695,
+      "fps": 7.120594240458132,
+      "mode": 2
+    },
+    {
+      "variant": "mountain_cull",
+      "scenario": "left",
+      "intervals": 436,
+      "ticks": 106810704,
+      "seconds": 60.22772255733536,
+      "fps": 7.239191214393643,
+      "mode": 2
+    },
+    {
+      "variant": "mountain_cull",
+      "scenario": "fast_right",
+      "intervals": 429,
+      "ticks": 106846279,
+      "seconds": 60.24778235611711,
+      "fps": 7.120594040528075,
+      "mode": 2
+    }
+  ],
+  "pipeline_cycles_v1": 7045783,
+  "pipeline_cycles_v2": 6528591
+}

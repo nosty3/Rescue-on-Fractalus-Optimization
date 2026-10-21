@@ -1,0 +1,13 @@
+{
+  "old_profile_gross_saved_cpu_cycles": 1854378,
+  "old_profile_raster_calls": 9209,
+  "assumed_extra_cycles_per_call": 40,
+  "old_profile_presentations": 390,
+  "baseline_fps": 6.779768690217809,
+  "note": "Analytical forecast; original long-profile path frequencies, optimized FPS baseline. DMA factor 1..1.5 is sensitivity, not a confidence interval.",
+  "net_saved_cpu_cycles_per_image": 3810.3025641025642,
+  "fps_sensitivity": {
+    "1": 6.8799861914701745,
+    "1.5": 6.931214264727155
+  }
+}

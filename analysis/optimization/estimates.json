@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Pominiecie powtornego testu X",
+    "saved_cpu_cycles_in_profile": 508452,
+    "saved_cpu_cycles_per_image": 1303.7230769230769,
+    "estimated_fps_model_1x": 6.578275106319789,
+    "estimated_fps_model_1_5x": 6.594219663518943
+  },
+  {
+    "name": "Opozniony zapis $82 (warunkowy)",
+    "saved_cpu_cycles_in_profile": 403176,
+    "saved_cpu_cycles_per_image": 1033.7846153846153,
+    "estimated_fps_model_1x": 6.571694955316748,
+    "estimated_fps_model_1_5x": 6.5843065257497315
+  },
+  {
+    "name": "Pelne rozwiniecie czyszczenia",
+    "saved_cpu_cycles_in_profile": 867360,
+    "saved_cpu_cycles_per_image": 2224.0,
+    "estimated_fps_model_1x": 6.600807602262886,
+    "estimated_fps_model_1_5x": 6.628241140552195
+  },
+  {
+    "name": "Usuniecie trzech NOP",
+    "saved_cpu_cycles_in_profile": 94296,
+    "saved_cpu_cycles_per_image": 241.7846153846154,
+    "estimated_fps_model_1x": 6.552464528655917,
+    "estimated_fps_model_1_5x": 6.555392613909915
+  }
+]

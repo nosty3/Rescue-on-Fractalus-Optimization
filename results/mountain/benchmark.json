@@ -1,0 +1,146 @@
+[
+  {
+    "variant": "mountain",
+    "scenario": "straight",
+    "intervals": 407,
+    "ticks": 106917406,
+    "seconds": 60.28788898459075,
+    "fps": 6.750941306039542,
+    "mode": 2
+  },
+  {
+    "variant": "mountain",
+    "scenario": "right",
+    "intervals": 407,
+    "ticks": 106917413,
+    "seconds": 60.28789293170505,
+    "fps": 6.7509408640480295,
+    "mode": 2
+  },
+  {
+    "variant": "mountain",
+    "scenario": "left",
+    "intervals": 427,
+    "ticks": 106704000,
+    "seconds": 60.167555002333025,
+    "fps": 7.096848126593192,
+    "mode": 2
+  },
+  {
+    "variant": "mountain",
+    "scenario": "fast_right",
+    "intervals": 422,
+    "ticks": 106704000,
+    "seconds": 60.167555002333025,
+    "fps": 7.013746860473834,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_w3",
+    "scenario": "straight",
+    "intervals": 412,
+    "ticks": 106881839,
+    "seconds": 60.26783369679678,
+    "fps": 6.8361508076222375,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_w3",
+    "scenario": "right",
+    "intervals": 412,
+    "ticks": 106846272,
+    "seconds": 60.247778409002805,
+    "fps": 6.83842642633334,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_w3",
+    "scenario": "left",
+    "intervals": 427,
+    "ticks": 106739574,
+    "seconds": 60.187614237241306,
+    "fps": 7.094482900034808,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_w3",
+    "scenario": "fast_right",
+    "intervals": 423,
+    "ticks": 106881842,
+    "seconds": 60.26783538841719,
+    "fps": 7.018669200143463,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_final",
+    "scenario": "straight",
+    "intervals": 414,
+    "ticks": 106810701,
+    "seconds": 60.22772086571494,
+    "fps": 6.873911116827142,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_final",
+    "scenario": "right",
+    "intervals": 414,
+    "ticks": 106775136,
+    "seconds": 60.20766670566792,
+    "fps": 6.876200700882273,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_final",
+    "scenario": "left",
+    "intervals": 429,
+    "ticks": 106739569,
+    "seconds": 60.187611417873946,
+    "fps": 7.127712662021335,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_final",
+    "scenario": "fast_right",
+    "intervals": 427,
+    "ticks": 106917414,
+    "seconds": 60.28789349557853,
+    "fps": 7.0826823636044915,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "straight",
+    "intervals": 420,
+    "ticks": 106704002,
+    "seconds": 60.16755613007997,
+    "fps": 6.980506223187393,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "right",
+    "intervals": 429,
+    "ticks": 106846276,
+    "seconds": 60.247780664496695,
+    "fps": 7.120594240458132,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "left",
+    "intervals": 436,
+    "ticks": 106810704,
+    "seconds": 60.22772255733536,
+    "fps": 7.239191214393643,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "fast_right",
+    "intervals": 429,
+    "ticks": 106846279,
+    "seconds": 60.24778235611711,
+    "fps": 7.120594040528075,
+    "mode": 2
+  }
+]

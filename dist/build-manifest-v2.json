@@ -1,0 +1,70 @@
+{
+  "input_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "v1_sha256": "b2b7e2ad244eb4a127b31640f5e621efc9fc6502805e2f00c6d65871baf13d72",
+  "output_sha256": "fd374e06d8a5ef28a97069408e14d52e8ab9e188706751ec243600447f11a4d0",
+  "rom_bytes": 65536,
+  "cart_type": 13,
+  "changed_bytes_vs_original": 7266,
+  "ips_verified": true,
+  "mads_rebuild_verified": true,
+  "sources": {
+    "scripts/build_mountain.py": "fb77599223608816e32a3d4a837034a8f64d25071a8759f56ea64e1bd72cc6b3",
+    "src/mountain_cull.asm": "3ea5d94dba82ffec4f3fd309985fee8c1a1db9831326f8144ed1881e4699a6df",
+    "src/mountain_vbi.asm": "ed33cd3ce818c1bc5a12858ff5203f330d174b3e4d30257473810861fb22cacf"
+  },
+  "validation": [
+    "58 full renderer/fill scenes: all live RAM/registers and bitmaps match",
+    "58 scenes with poisoned dead stack slots",
+    "5000 randomized conservative-culling cases",
+    "5000 exact-raster cases before culling",
+    "PAL cold boot, high-level flights, START from bank 5, restart"
+  ],
+  "scratch_state_note": "Only dead subdivision-stack slots may differ after culling; they are initialized before subsequent use.",
+  "performance": {
+    "fps_original": 6.5535312209569065,
+    "fps_v1": 6.779768690217809,
+    "fps_v2": 7.1152559717378026,
+    "gain_vs_v1_percent": 4.948358813539633,
+    "gain_vs_original_percent": 8.571329438160147,
+    "scenarios": [
+      {
+        "variant": "mountain_cull",
+        "scenario": "straight",
+        "intervals": 420,
+        "ticks": 106704002,
+        "seconds": 60.16755613007997,
+        "fps": 6.980506223187393,
+        "mode": 2
+      },
+      {
+        "variant": "mountain_cull",
+        "scenario": "right",
+        "intervals": 429,
+        "ticks": 106846276,
+        "seconds": 60.247780664496695,
+        "fps": 7.120594240458132,
+        "mode": 2
+      },
+      {
+        "variant": "mountain_cull",
+        "scenario": "left",
+        "intervals": 436,
+        "ticks": 106810704,
+        "seconds": 60.22772255733536,
+        "fps": 7.239191214393643,
+        "mode": 2
+      },
+      {
+        "variant": "mountain_cull",
+        "scenario": "fast_right",
+        "intervals": 429,
+        "ticks": 106846279,
+        "seconds": 60.24778235611711,
+        "fps": 7.120594040528075,
+        "mode": 2
+      }
+    ],
+    "pipeline_cycles_v1": 7045783,
+    "pipeline_cycles_v2": 6528591
+  }
+}

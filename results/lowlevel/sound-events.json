@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "synthetic_cases": 400,
+  "fixture_calls": 1160,
+  "pokey_writes_compared": 271,
+  "includes_all_14_channels_dual_event": true,
+  "note": "Register/value order compared; CPU write timestamps intentionally differ."
+}

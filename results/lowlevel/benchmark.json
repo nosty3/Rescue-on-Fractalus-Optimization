@@ -1,0 +1,182 @@
+[
+  {
+    "variant": "mountain_cull",
+    "scenario": "straight",
+    "intervals": 420,
+    "ticks": 106704002,
+    "seconds": 60.16755613007997,
+    "fps": 6.980506223187393,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "right",
+    "intervals": 429,
+    "ticks": 106846276,
+    "seconds": 60.247780664496695,
+    "fps": 7.120594240458132,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "left",
+    "intervals": 436,
+    "ticks": 106810704,
+    "seconds": 60.22772255733536,
+    "fps": 7.239191214393643,
+    "mode": 2
+  },
+  {
+    "variant": "mountain_cull",
+    "scenario": "fast_right",
+    "intervals": 429,
+    "ticks": 106846279,
+    "seconds": 60.24778235611711,
+    "fps": 7.120594040528075,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound",
+    "scenario": "straight",
+    "intervals": 425,
+    "ticks": 106881845,
+    "seconds": 60.26783708003761,
+    "fps": 7.051854199373149,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound",
+    "scenario": "right",
+    "intervals": 430,
+    "ticks": 106775137,
+    "seconds": 60.20766726954139,
+    "fps": 7.141947520985152,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound",
+    "scenario": "left",
+    "intervals": 442,
+    "ticks": 106739569,
+    "seconds": 60.187611417873946,
+    "fps": 7.343703954809861,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound",
+    "scenario": "fast_right",
+    "intervals": 433,
+    "ticks": 106881841,
+    "seconds": 60.26783482454372,
+    "fps": 7.1845952531824375,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_full",
+    "scenario": "straight",
+    "intervals": 423,
+    "ticks": 106881845,
+    "seconds": 60.26783708003761,
+    "fps": 7.018669003140805,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_full",
+    "scenario": "right",
+    "intervals": 433,
+    "ticks": 106810708,
+    "seconds": 60.22772481282925,
+    "fps": 7.189379996432567,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_full",
+    "scenario": "left",
+    "intervals": 438,
+    "ticks": 106739565,
+    "seconds": 60.187609162380056,
+    "fps": 7.277245368200629,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_full",
+    "scenario": "fast_right",
+    "intervals": 432,
+    "ticks": 106881842,
+    "seconds": 60.26783538841719,
+    "fps": 7.168002587380558,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_flag",
+    "scenario": "straight",
+    "intervals": 421,
+    "ticks": 106846273,
+    "seconds": 60.247778972876276,
+    "fps": 6.9878094624788645,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_flag",
+    "scenario": "right",
+    "intervals": 432,
+    "ticks": 106775131,
+    "seconds": 60.20766388630055,
+    "fps": 7.175166284740967,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_flag",
+    "scenario": "left",
+    "intervals": 441,
+    "ticks": 106704006,
+    "seconds": 60.16755838557386,
+    "fps": 7.3295312595855115,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_flag",
+    "scenario": "fast_right",
+    "intervals": 429,
+    "ticks": 106739569,
+    "seconds": 60.187611417873946,
+    "fps": 7.127712662021335,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound_flag",
+    "scenario": "straight",
+    "intervals": 424,
+    "ticks": 106704000,
+    "seconds": 60.167555002333025,
+    "fps": 7.046987366921577,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound_flag",
+    "scenario": "right",
+    "intervals": 434,
+    "ticks": 106917409,
+    "seconds": 60.28789067621116,
+    "fps": 7.198792247200828,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound_flag",
+    "scenario": "left",
+    "intervals": 440,
+    "ticks": 106704002,
+    "seconds": 60.16755613007997,
+    "fps": 7.3129112814344115,
+    "mode": 2
+  },
+  {
+    "variant": "lowlevel_sound_flag",
+    "scenario": "fast_right",
+    "intervals": 434,
+    "ticks": 106704002,
+    "seconds": 60.16755613007997,
+    "fps": 7.2131897639603055,
+    "mode": 2
+  }
+]

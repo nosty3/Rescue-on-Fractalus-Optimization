@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "calls": 5800,
+  "saved_mean": 77.87068965517241,
+  "saved_min": 34,
+  "saved_max": 78,
+  "coverage": {
+    "events": 35,
+    "last_channel_events": 4
+  }
+}

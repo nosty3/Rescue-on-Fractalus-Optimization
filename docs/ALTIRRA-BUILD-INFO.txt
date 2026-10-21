@@ -1,0 +1,10 @@
+AltirraBridge 0f63108c - Windows x86_64
+Built 2026-10-20 from commit 0f63108cd1a2d5804d1579ac2aa206aa7df8fc93
+
+Requirements:
+  - Windows 10 / 11 x64
+  - Microsoft Visual C++ Redistributable 2015-2022 (preinstalled
+    on most Windows 10/11 systems)
+  - Python >= 3.9 for the Python SDK
+
+See README.md for the full walkthrough and usage guide.

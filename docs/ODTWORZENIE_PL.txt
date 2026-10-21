@@ -1,0 +1,52 @@
+ODTWORZENIE PO UTRACIE KOMPUTERA
+
+1. Pobierz repozytorium z GitHub. Zachowaj strukturę folderów.
+2. Zainstaluj Python 3 oraz MADS: https://github.com/tebe6502/Mad-Assembler
+   Użyty lokalny MADS: changelog z 2026-10-05, wersja wskazana w nim 020109.
+   SHA-256 lokalnego mads.exe zapisano w backup-manifest.json.
+3. Uruchom python scripts/rebuild_releases.py --mads C:/sciezka/mads.exe
+   Nowy skrypt buduje v1, v2, v3 ze źródeł .asm bez SDK, py65 i dumpów RAM.
+   Sprawdza SHA-256 wszystkich trzech ROM-ów względem zachowanych wydań.
+   Nie trzeba uruchamiać historycznych publish_*.py (nie są częścią kopii).
+
+DO NOWYCH BADAŃ I TESTÓW
+Altirra bridge: https://github.com/ilmenit/AltirraSDL/releases/tag/nightly-bridge
+Wypakuj do tools/bridge/AltirraBridge-nightly-windows-x86_64/.
+Pochodzenie użytej kompilacji: ALTIRRA-BUILD-INFO.txt. Nightly może się zmienić.
+MADS dla historycznych skryptów umieść w tools/mads/bin/windows_x86_64/mads.exe.
+Zainstaluj py65: python -m pip install -r requirements.txt
+Uruchom scripts/launch.ps1 (PowerShell). TEMP/TMP i token bridge pozostają
+w projekcie. Uruchamiaj tylko jeden serwer. Zakończ: python scripts/stop.py.
+Konfiguracja: Atari 800XL, 64K, PAL, BASIC wyłączony, bez akceleratorów.
+Stary session.py ładował SDK już podczas importu; wersja w repo ładuje je
+dopiero w connect(), żeby operacje offline nie wymagały emulatora.
+
+DANE TESTOWE CELOWO POMINIĘTE
+Historyczne testy odczytują tests/fixtures/index.json i *.bin, a pomiary
+results/flying.altstate2 i wybrane stany w results/optimized/.
+Trzeba je zebrać ponownie; nie zastępuj ich przypadkowymi zerowymi dumpami.
+Z zimnego startu oryginału rozpocznij lot, ustaw joystick centralnie,
+zapisz stan podczas lotu (bajt $4A == 2) jako results/flying.altstate2.
+Utwórz tests/fixtures/, potem capture_tests.py zbierze 40 scen z pięciu
+kierunków. capture_more_tests.py wymaga dodatkowych stanów: cold-flight,
+level8 (faktycznie poziom 10), level16 (faktycznie 26). Dawny zestaw miał
+łącznie 58 scen. Nowy zestaw nie będzie identyczny z historycznym.
+Stan lotu do benchmarku musi odpowiadać mapowaniu banku 2 przy odtworzeniu.
+Skrypty zawierają asercje; nie usuwaj ich, aby ominąć niespójne wejścia.
+Nowe wyniki porównuj parami, od tego samego nowego stanu dla obu ROM-ów.
+
+Historyczne generatory build_mountain.py i mikrotesty używają py65;
+build_lowlevel_full.py oraz test_interpolation_unroll.py dodatkowo fixture
+center-0.bin. To nie jest wymagane do odbudowy wydanego v3.
+Eksperymentalna interpolacja po state_load wymaga podmiany 18 bajtów RAM
+przez lowlevel_state.py; zimny start pobiera je bezpośrednio z ROM-u.
+Wydane v3 nie ma tej podmiany ani interpolacji w banku 6.
+
+METODA POMIARU
+CPU PAL: 3546895/2 Hz; ramka maszyny: 312*114 taktów, około 49,86076 Hz.
+Nowa klatka gry: prezentacja przy $B516, nie każde odświeżenie PAL.
+Cztery loty: prosto, prawo, lewo, prawo z OPTION przez 45 ramek na początku.
+Rozgrzewka 50 ramek; każdy odcinek około 3000 ramek PAL. Średnia ważona:
+suma prezentacji / suma czasu. Dane zagregowane są w results/.
+Zmiana czasu wykonania może zmienić przebieg lotu i kolejne sceny. Do oceny
+małych zmian łącz pomiar FPS z dokładnymi cyklami na identycznych wejściach.

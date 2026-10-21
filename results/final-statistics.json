@@ -1,0 +1,75 @@
+{
+  "pal_clock_hz": 1773447.5,
+  "pal_refresh_hz": 49.860759671614936,
+  "scenarios": [
+    {
+      "scenario": "straight",
+      "intervals": 388,
+      "seconds": 60.08733215953672,
+      "fps": 6.457267880854298,
+      "mean_frame_ms": 154.86425814313586,
+      "histogram_pal_frames": {
+        "6": 14,
+        "7": 121,
+        "8": 218,
+        "9": 34,
+        "15": 1
+      }
+    },
+    {
+      "scenario": "right",
+      "intervals": 387,
+      "seconds": 60.12744499061856,
+      "fps": 6.436328702481572,
+      "mean_frame_ms": 155.36807491115906,
+      "histogram_pal_frames": {
+        "6": 1,
+        "7": 121,
+        "8": 240,
+        "9": 25
+      }
+    },
+    {
+      "scenario": "left",
+      "intervals": 398,
+      "seconds": 60.107388011204165,
+      "fps": 6.621482203249488,
+      "mean_frame_ms": 151.02358796784964,
+      "histogram_pal_frames": {
+        "6": 21,
+        "7": 181,
+        "8": 162,
+        "9": 32,
+        "10": 2
+      }
+    },
+    {
+      "scenario": "fast_right",
+      "intervals": 401,
+      "seconds": 60.107386883457224,
+      "fps": 6.671392998293249,
+      "mean_frame_ms": 149.8937328764519,
+      "histogram_pal_frames": {
+        "6": 16,
+        "7": 193,
+        "8": 179,
+        "9": 12,
+        "10": 1
+      }
+    }
+  ],
+  "aggregate": {
+    "intervals": 1574,
+    "seconds": 240.42955204481666,
+    "fps": 6.546616198438878,
+    "mean_frame_ms": 152.75066838933716,
+    "histogram_pal_frames": {
+      "6": 52,
+      "7": 616,
+      "8": 799,
+      "9": 103,
+      "10": 3,
+      "15": 1
+    }
+  }
+}

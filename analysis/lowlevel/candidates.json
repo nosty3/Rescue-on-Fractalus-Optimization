@@ -1,0 +1,182 @@
+[
+  {
+    "where": "bank2",
+    "pc": "9977",
+    "count_old_profile": 94276,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "9977 LDA $00ea,Y",
+      "997A STA $84",
+      "997C CMP $260e,X",
+      "997F BCC $99aa",
+      "9981 BEQ $99aa",
+      "9983 STA $260e,X",
+      "9986 CMP #$97"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "9942",
+    "count_old_profile": 94276,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "9942 LDA $00ea,Y",
+      "9945 ADC $84",
+      "9947 ROR A",
+      "9948 CMP $260e,X",
+      "994B BCC $9976",
+      "994D BEQ $9976",
+      "994F STA $260e,X"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "99AE",
+    "count_old_profile": 87196,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "99AE LDA $00f5,Y",
+      "99B1 STA $86",
+      "99B3 JMP $9933",
+      "99B6 LDX $60",
+      "99B8 RTS",
+      "99B9 BCC $99fa",
+      "99BB LDA $00ea,Y"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "9A1D",
+    "count_old_profile": 50646,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "9A1D LDA $0096,Y",
+      "9A20 SBC $82",
+      "9A22 LSR A",
+      "9A23 STA $b5",
+      "9A25 CLC",
+      "9A26 LDA $84",
+      "9A28 ADC $00ea,Y"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "99F2",
+    "count_old_profile": 39997,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "99F2 LDA $00f5,Y",
+      "99F5 STA $86",
+      "99F7 JMP $9933",
+      "99FA TXA",
+      "99FB ADC $0095,Y",
+      "99FE ROR A",
+      "99FF STA $0096,Y"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "99BB",
+    "count_old_profile": 40116,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "99BB LDA $00ea,Y",
+      "99BE STA $84",
+      "99C0 CMP $260e,X",
+      "99C3 BCC $99ee",
+      "99C5 BEQ $99ee",
+      "99C7 STA $260e,X",
+      "99CA CMP #$97"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "9A39",
+    "count_old_profile": 12858,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "9A39 LDA $0096,Y",
+      "9A3C SBC $82",
+      "9A3E LSR A",
+      "9A3F STA $b5",
+      "9A41 CLC",
+      "9A42 LDA $84",
+      "9A44 ADC $00ea,Y"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "989E",
+    "count_old_profile": 1500,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "989E LDA $0095,Y",
+      "98A1 SEC",
+      "98A2 SBC $82",
+      "98A4 LSR A",
+      "98A5 STA $b5",
+      "98A7 CLC",
+      "98A8 LDA $84"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "98F4",
+    "count_old_profile": 951,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "98F4 LDA $0096,Y",
+      "98F7 SEC",
+      "98F8 SBC $82",
+      "98FA LSR A",
+      "98FB STA $b5",
+      "98FD CLC",
+      "98FE LDA $84"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "98BA",
+    "count_old_profile": 242,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "98BA LDA $0095,Y",
+      "98BD SEC",
+      "98BE SBC $82",
+      "98C0 LSR A",
+      "98C1 STA $b5",
+      "98C3 CLC",
+      "98C4 LDA $84"
+    ]
+  },
+  {
+    "where": "bank2",
+    "pc": "9912",
+    "count_old_profile": 101,
+    "reason": "absolute access to zero page: check legal indexed mode",
+    "code": [
+      "9912 LDA $0096,Y",
+      "9915 SEC",
+      "9916 SBC $82",
+      "9918 LSR A",
+      "9919 STA $b5",
+      "991B CLC",
+      "991C LDA $84"
+    ]
+  },
+  {
+    "where": "fixed",
+    "pc": "AE4E",
+    "count_old_profile": 150,
+    "reason": "compare zero: check register match and carry liveness",
+    "code": [
+      "AE4E AND #$0f",
+      "AE50 CPX #$00",
+      "AE52 BNE $ae5e",
+      "AE54 CMP #$00",
+      "AE56 BNE $ae5d",
+      "AE58 CPY $0616",
+      "AE5B BCC $ae63"
+    ]
+  }
+]

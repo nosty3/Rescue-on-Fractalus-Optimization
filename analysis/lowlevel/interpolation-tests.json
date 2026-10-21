@@ -1,0 +1,13 @@
+{
+  "cases": 1500,
+  "bytes": 740,
+  "original_bytes": 215,
+  "cycles": [
+    1331238,
+    1194510
+  ],
+  "mean_saved": 91.152,
+  "min_saved": 63,
+  "max_saved": 117,
+  "result": "pass"
+}

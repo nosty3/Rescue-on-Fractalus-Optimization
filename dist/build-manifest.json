@@ -1,0 +1,73 @@
+{
+  "input_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "output_sha256": "b2b7e2ad244eb4a127b31640f5e621efc9fc6502805e2f00c6d65871baf13d72",
+  "rom_bytes": 65536,
+  "changed_bytes": 471,
+  "patches": [
+    {
+      "cpu_address": "$8224",
+      "rom_offset": "$4224",
+      "bytes": 224,
+      "description": "Exact fractional division; high remainder in A",
+      "before": "24af50f406b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b085b126b206b026b1300424b1501038a5b0e5aea8a5b1e5af900484b0",
+      "after": "8a484c318206b026b106ae26af24af50f4a5b106b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b206b02ac5af9010aaa5b0e5aea88ae5afb0038a900284b026b285b168aa60"
+    },
+    {
+      "cpu_address": "$9937",
+      "rom_offset": "$5937",
+      "bytes": 3,
+      "description": "STX/TXA reorder; same state at common loop entry",
+      "before": "8a8682",
+      "after": "86828a"
+    },
+    {
+      "cpu_address": "$9A18",
+      "rom_offset": "$5A18",
+      "bytes": 3,
+      "description": "Subdivision: skip unchanged-X bound test and redundant STX",
+      "before": "4c3399",
+      "after": "4c3999"
+    },
+    {
+      "cpu_address": "$9A36",
+      "rom_offset": "$5A36",
+      "bytes": 3,
+      "description": "Subdivision: skip unchanged-X bound test and redundant STX",
+      "before": "4c3399",
+      "after": "4c3999"
+    },
+    {
+      "cpu_address": "$9A52",
+      "rom_offset": "$5A52",
+      "bytes": 3,
+      "description": "Subdivision: skip unchanged-X bound test and redundant STX",
+      "before": "4c3399",
+      "after": "4c3999"
+    },
+    {
+      "cpu_address": "$9C42",
+      "rom_offset": "$5C42",
+      "bytes": 249,
+      "description": "First-row fast path and exact four-row scan in unused bank padding",
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "after": "8aa8a92a859fa900d91010f007a955a2004ce495b9701019d010193011199011f005a9004c1c93b9f01119501219b012191013f005a9004c4c93b9701319d013193014199014f005a9004c7c93b9f01419501519b015191016f005a9004cac93b9701619d016193017199017f005a9004cdc93b9f01719501819b018191019f005a9004c0c94b9701919d01919301a19901af005a9004c3c94b9f01a19501b19b01b19101cf005a9004c6c94b9701c19d01c19301d19901df005a9004c9c94b9f01d19501e19b01e19101ff005a9004ccc94b9701f19d01f193020199020f005a9004cfc94b9f02019502119b021f005a9004c2c95384c5095"
+    },
+    {
+      "cpu_address": "$9308",
+      "rom_offset": "$5308",
+      "bytes": 3,
+      "description": "Fill subroutine entry",
+      "before": "8aa8a9",
+      "after": "4c429c"
+    },
+    {
+      "cpu_address": "$9623",
+      "rom_offset": "$5623",
+      "bytes": 3,
+      "description": "Next fill column",
+      "before": "4c0e93",
+      "after": "4c489c"
+    }
+  ],
+  "ips_verified": true
+}

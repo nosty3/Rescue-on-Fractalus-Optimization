@@ -1,0 +1,414 @@
+{
+  "scenes": [
+    {
+      "fixture": "center-0",
+      "baseline_cycles": 148936,
+      "new_cycles": 144372,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-1",
+      "baseline_cycles": 118886,
+      "new_cycles": 113850,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-2",
+      "baseline_cycles": 135751,
+      "new_cycles": 129101,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-3",
+      "baseline_cycles": 129206,
+      "new_cycles": 124678,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-4",
+      "baseline_cycles": 118557,
+      "new_cycles": 115395,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-5",
+      "baseline_cycles": 131061,
+      "new_cycles": 124870,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-6",
+      "baseline_cycles": 129286,
+      "new_cycles": 123609,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "center-7",
+      "baseline_cycles": 135105,
+      "new_cycles": 128543,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-0",
+      "baseline_cycles": 137654,
+      "new_cycles": 134316,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-1",
+      "baseline_cycles": 110823,
+      "new_cycles": 105798,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-2",
+      "baseline_cycles": 115024,
+      "new_cycles": 106640,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-3",
+      "baseline_cycles": 120317,
+      "new_cycles": 106168,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-4",
+      "baseline_cycles": 128048,
+      "new_cycles": 119590,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-5",
+      "baseline_cycles": 123099,
+      "new_cycles": 115332,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-6",
+      "baseline_cycles": 131317,
+      "new_cycles": 127312,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "right-7",
+      "baseline_cycles": 128658,
+      "new_cycles": 113639,
+      "dead_slot_differences": [
+        "0x9a",
+        "0xef",
+        "0xf9"
+      ]
+    },
+    {
+      "fixture": "left-0",
+      "baseline_cycles": 129042,
+      "new_cycles": 121309,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-1",
+      "baseline_cycles": 134466,
+      "new_cycles": 110987,
+      "dead_slot_differences": [
+        "0x9a",
+        "0xef",
+        "0xf9"
+      ]
+    },
+    {
+      "fixture": "left-2",
+      "baseline_cycles": 104786,
+      "new_cycles": 93027,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-3",
+      "baseline_cycles": 117302,
+      "new_cycles": 114625,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-4",
+      "baseline_cycles": 124987,
+      "new_cycles": 121667,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-5",
+      "baseline_cycles": 105656,
+      "new_cycles": 102936,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-6",
+      "baseline_cycles": 106418,
+      "new_cycles": 103014,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "left-7",
+      "baseline_cycles": 119746,
+      "new_cycles": 99610,
+      "dead_slot_differences": [
+        "0x97",
+        "0x98",
+        "0x99",
+        "0x9a",
+        "0xeb",
+        "0xec",
+        "0xed",
+        "0xee",
+        "0xef",
+        "0xf5",
+        "0xf6",
+        "0xf7",
+        "0xf8",
+        "0xf9"
+      ]
+    },
+    {
+      "fixture": "down-0",
+      "baseline_cycles": 126913,
+      "new_cycles": 124411,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-1",
+      "baseline_cycles": 61798,
+      "new_cycles": 61798,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-2",
+      "baseline_cycles": 71899,
+      "new_cycles": 71899,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-3",
+      "baseline_cycles": 65566,
+      "new_cycles": 65566,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-4",
+      "baseline_cycles": 66826,
+      "new_cycles": 66826,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-5",
+      "baseline_cycles": 60426,
+      "new_cycles": 60426,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-6",
+      "baseline_cycles": 66724,
+      "new_cycles": 66724,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "down-7",
+      "baseline_cycles": 68904,
+      "new_cycles": 68904,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-0",
+      "baseline_cycles": 153676,
+      "new_cycles": 134577,
+      "dead_slot_differences": [
+        "0x99",
+        "0xee",
+        "0xf8"
+      ]
+    },
+    {
+      "fixture": "up-1",
+      "baseline_cycles": 134232,
+      "new_cycles": 101932,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-2",
+      "baseline_cycles": 136536,
+      "new_cycles": 110568,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-3",
+      "baseline_cycles": 130512,
+      "new_cycles": 115089,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-4",
+      "baseline_cycles": 131401,
+      "new_cycles": 115672,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-5",
+      "baseline_cycles": 120042,
+      "new_cycles": 104065,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-6",
+      "baseline_cycles": 122786,
+      "new_cycles": 106325,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "up-7",
+      "baseline_cycles": 157519,
+      "new_cycles": 131388,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-0",
+      "baseline_cycles": 115629,
+      "new_cycles": 106490,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-1",
+      "baseline_cycles": 116840,
+      "new_cycles": 107330,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-2",
+      "baseline_cycles": 106326,
+      "new_cycles": 96739,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-3",
+      "baseline_cycles": 132541,
+      "new_cycles": 121377,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-4",
+      "baseline_cycles": 121295,
+      "new_cycles": 108053,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "cold_start-5",
+      "baseline_cycles": 115522,
+      "new_cycles": 104219,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-0",
+      "baseline_cycles": 139838,
+      "new_cycles": 134860,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-1",
+      "baseline_cycles": 132544,
+      "new_cycles": 128385,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-2",
+      "baseline_cycles": 124189,
+      "new_cycles": 120482,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-3",
+      "baseline_cycles": 154752,
+      "new_cycles": 148726,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-4",
+      "baseline_cycles": 145555,
+      "new_cycles": 135595,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level10-5",
+      "baseline_cycles": 133889,
+      "new_cycles": 114730,
+      "dead_slot_differences": [
+        "0x9a",
+        "0xef",
+        "0xf9"
+      ]
+    },
+    {
+      "fixture": "level26-0",
+      "baseline_cycles": 136967,
+      "new_cycles": 132143,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level26-1",
+      "baseline_cycles": 154995,
+      "new_cycles": 149495,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level26-2",
+      "baseline_cycles": 154947,
+      "new_cycles": 146281,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level26-3",
+      "baseline_cycles": 134981,
+      "new_cycles": 127313,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level26-4",
+      "baseline_cycles": 138448,
+      "new_cycles": 126970,
+      "dead_slot_differences": []
+    },
+    {
+      "fixture": "level26-5",
+      "baseline_cycles": 126634,
+      "new_cycles": 112845,
+      "dead_slot_differences": []
+    }
+  ],
+  "random_cases": 5000,
+  "poisoned_stack_scenes": 58,
+  "dead_stack_addresses": [
+    "0x96",
+    "0x97",
+    "0x98",
+    "0x99",
+    "0x9a",
+    "0x9b",
+    "0x9c",
+    "0x9d",
+    "0xeb",
+    "0xec",
+    "0xed",
+    "0xee",
+    "0xef",
+    "0xf0",
+    "0xf1",
+    "0xf2",
+    "0xf3",
+    "0xf5",
+    "0xf6",
+    "0xf7",
+    "0xf8",
+    "0xf9",
+    "0xfa",
+    "0xfb",
+    "0xfc",
+    "0xfd"
+  ],
+  "result": "pass"
+}

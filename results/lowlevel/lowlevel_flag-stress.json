@@ -1,0 +1,235 @@
+{
+  "sha256": "c148217a9eb9f0d9ce3b5c0f16bdb2a82f1f394b1bcf6e5e44be58d0d9b244bc",
+  "configuration": {
+    "ok": true,
+    "basic": false,
+    "machine": "800XL",
+    "memory": "64K",
+    "video": "pal",
+    "selftest": false,
+    "fastboot": true,
+    "u1mb": false,
+    "u1mbrom_id": "$0000000000000008",
+    "fppatch": false,
+    "stereo": false,
+    "stereomono": false,
+    "siopatch": "on",
+    "burstio": false,
+    "accuratedisk": false,
+    "casautoboot": true,
+    "casautobasicboot": false,
+    "artifact": "none",
+    "axlonmemsize": "none",
+    "highbanks": 0,
+    "highbanks_overridden": false,
+    "randmem": false,
+    "randdelay": false,
+    "diskemu": "generic",
+    "vbxe": false,
+    "covox": false,
+    "soundboard": false,
+    "rapidus": false,
+    "slightsid": false,
+    "addons": "off",
+    "exeloadmode": "default",
+    "kernel_id": "$0000000000000000",
+    "actual_kernel_id": "$0000000000000003",
+    "basic_id": "$0000000000000000",
+    "actual_basic_id": "$0000000000000005",
+    "debugbrkrun": false,
+    "history": false
+  },
+  "checks": [
+    {
+      "name": "cold-title",
+      "frames": 3000,
+      "ticks": 106739568,
+      "mode": 0,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$5ce1",
+        "A": "$01",
+        "X": "$13",
+        "Y": "$00",
+        "S": "$fb",
+        "P": "$37",
+        "flags": "---B-IZC",
+        "cycles": 1919677593,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "cold-flight",
+      "frames": 2000,
+      "ticks": 71136000,
+      "mode": 2,
+      "bank": 5,
+      "registers": {
+        "ok": true,
+        "PC": "$837f",
+        "A": "$a2",
+        "X": "$3b",
+        "Y": "$01",
+        "S": "$f9",
+        "P": "$75",
+        "flags": "-V-B-I-C",
+        "cycles": 1968204462,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level10-left",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 2,
+      "bank": 5,
+      "registers": {
+        "ok": true,
+        "PC": "$8427",
+        "A": "$91",
+        "X": "$91",
+        "Y": "$01",
+        "S": "$f7",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 2041354365,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level10-right",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 2,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$a356",
+        "A": "$4a",
+        "X": "$8a",
+        "Y": "$5d",
+        "S": "$fd",
+        "P": "$35",
+        "flags": "---B-I-C",
+        "cycles": 2114504420,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level10-center",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 2,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$9600",
+        "A": "$15",
+        "X": "$00",
+        "Y": "$49",
+        "S": "$fb",
+        "P": "$74",
+        "flags": "-V-B-I--",
+        "cycles": 2187654362,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level26-left",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$410e",
+        "A": "$00",
+        "X": "$ff",
+        "Y": "$00",
+        "S": "$f7",
+        "P": "$36",
+        "flags": "---B-IZ-",
+        "cycles": 2270491497,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level26-right",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$4111",
+        "A": "$88",
+        "X": "$ff",
+        "Y": "$00",
+        "S": "$f7",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 2356883665,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "level26-center",
+      "frames": 3000,
+      "ticks": 106704000,
+      "mode": 0,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$4112",
+        "A": "$82",
+        "X": "$ff",
+        "Y": "$00",
+        "S": "$f7",
+        "P": "$b4",
+        "flags": "N--B-I--",
+        "cycles": 2440914242,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "start-from-bank5",
+      "frames": 1000,
+      "ticks": 35568000,
+      "mode": 2,
+      "bank": 5,
+      "registers": {
+        "ok": true,
+        "PC": "$8002",
+        "A": "$2a",
+        "X": "$00",
+        "Y": "$9e",
+        "S": "$f9",
+        "P": "$36",
+        "flags": "---B-IZ-",
+        "cycles": 2466809255,
+        "mode": "6502"
+      }
+    },
+    {
+      "name": "restart-flight",
+      "frames": 2000,
+      "ticks": 71136000,
+      "mode": 2,
+      "bank": 2,
+      "registers": {
+        "ok": true,
+        "PC": "$9283",
+        "A": "$00",
+        "X": "$3b",
+        "Y": "$22",
+        "S": "$fd",
+        "P": "$35",
+        "flags": "---B-I-C",
+        "cycles": 2586751493,
+        "mode": "6502"
+      }
+    }
+  ],
+  "result": "pass"
+}

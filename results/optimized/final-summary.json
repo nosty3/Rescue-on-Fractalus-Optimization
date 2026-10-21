@@ -1,0 +1,33 @@
+{
+  "original_fps": 6.5535312209569065,
+  "optimized_fps": 6.779768690217809,
+  "improvement_percent": 3.4521460512378255,
+  "original_seconds": 241.09139740533624,
+  "optimized_seconds": 241.01117230704602,
+  "renderer_cases": 58,
+  "renderer_cycles_original": 7335741,
+  "renderer_cycles_optimized": 7045783,
+  "renderer_cycle_reduction_percent": 3.9526749922059734,
+  "scenarios": [
+    {
+      "name": "straight",
+      "original_fps": 6.489865916799286,
+      "optimized_fps": 6.724477951676492
+    },
+    {
+      "name": "right",
+      "original_fps": 6.433646288932693,
+      "optimized_fps": 6.660281230448984
+    },
+    {
+      "name": "left",
+      "original_fps": 6.620446586410942,
+      "optimized_fps": 6.900224633196322
+    },
+    {
+      "name": "fast_right",
+      "original_fps": 6.670224692331039,
+      "optimized_fps": 6.833876766836981
+    }
+  ]
+}
