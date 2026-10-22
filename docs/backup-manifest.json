@@ -418,6 +418,12 @@
       "git_blob_sha": "6017f45efbb9b0c417002b3d2676ea00bfcf5444"
     },
     {
+      "path": "docs/POROWNANIE_NTSC_PL.md",
+      "bytes": 3964,
+      "sha256": "feb13c1fb40adff3992ecb215544d1b29d72690dd0fc5547ba6484050f80bf7f",
+      "git_blob_sha": "ec30a31ac1bd1e6323f9df6f6e1417e9394b4254"
+    },
+    {
       "path": "docs/PROBA_PMG_PL.md",
       "bytes": 3936,
       "sha256": "d14ddd385849fca83f85c54a88141f06e0f85e8fbc7ceaab62f0266215ed231d",
@@ -728,6 +734,24 @@
       "bytes": 5126,
       "sha256": "1b5572d87d945711aa4a0113d538104a8f61e21c890e2a703311fcb263cb7e5d",
       "git_blob_sha": "783b57e6e3208f9ff89d9b63c5d0316509f406f8"
+    },
+    {
+      "path": "results/ntsc_comparison/benchmark.json",
+      "bytes": 1938,
+      "sha256": "7a59d1ecb6a53cc6aa38015fe3db1f5e96f78fff6019c0df42cff3fa5f92868b",
+      "git_blob_sha": "97ce880a3332fb9874ad5ac07f9b9bf5eb079a6d"
+    },
+    {
+      "path": "results/ntsc_comparison/preparation.json",
+      "bytes": 1796,
+      "sha256": "df2fd9bcfebb1ac2eb3be7dd2bed998ebbf0c495efa8a9f0d0a20e9043bf4bd8",
+      "git_blob_sha": "ced86129e169d75e5bc77bcc98622d76563ada70"
+    },
+    {
+      "path": "results/ntsc_comparison/summary.json",
+      "bytes": 2363,
+      "sha256": "aa74fcca19ad91fc96f26259f93423c4a369c68f6f80798ed0ddf06b9d312237",
+      "git_blob_sha": "75979263cd3f0adbb4d548aa9f46d37eb4965f66"
     },
     {
       "path": "results/ntsc_v9/benchmark.json",
@@ -1276,6 +1300,12 @@
       "git_blob_sha": "523abef353638fdf44f6e5c474579bd2535435b1"
     },
     {
+      "path": "scripts/compare_ntsc.py",
+      "bytes": 3596,
+      "sha256": "098df78698de81223e63f111454aee02f60a4e174b7881b18789a8599e12d2ef",
+      "git_blob_sha": "62bdc0e128db8b59f96bf4b248d38196e0551bb4"
+    },
+    {
       "path": "scripts/cpu_test_support.py",
       "bytes": 736,
       "sha256": "bf2a78e5518faa1358c6fe642fc540a83b3732da4f80a6bc0eaf9c6b280359c0",
@@ -1328,6 +1358,12 @@
       "bytes": 356,
       "sha256": "4576bf56ecf3f5e499bb66660b290061c6a7c8c5177331852bf739d8687958a2",
       "git_blob_sha": "983002d290fb2c890f098d1b2e04a4308ab06323"
+    },
+    {
+      "path": "scripts/prepare_ntsc_comparison_backup.py",
+      "bytes": 1120,
+      "sha256": "fe43aaf1b7c9d60e0a1e64c6486f0ebc0ffe219cb4dd7da84011d507fc85500f",
+      "git_blob_sha": "f1e666a89fd56531ddbdbc1a0341e6bf242289bd"
     },
     {
       "path": "scripts/prepare_ntsc_v9.py",
@@ -1484,6 +1520,12 @@
       "bytes": 4859,
       "sha256": "31ccab346ff37e0aaf5757063b53ed350fa264e609d41462d42f2ef0c2e3bcc0",
       "git_blob_sha": "8963d54b95b37ab878590a01487c82e10c3282db"
+    },
+    {
+      "path": "scripts/report_ntsc_comparison.py",
+      "bytes": 5156,
+      "sha256": "a6459e656f5b86870b0cca54283025eb86224747006fa4aca9b9a6c975621dbc",
+      "git_blob_sha": "15336fa6920dc4f41c93da8628704a48b4acd672"
     },
     {
       "path": "scripts/report_ntsc_v9.py",
@@ -2055,5 +2097,6 @@
   "v7_reconstruction_verified": true,
   "v8_reconstruction_verified": true,
   "v9_reconstruction_verified": true,
-  "v9_ntsc_tested": "2026-10-22"
+  "v9_ntsc_tested": "2026-10-22",
+  "ntsc_original_v9_comparison": "2026-10-22"
 }

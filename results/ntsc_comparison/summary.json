@@ -1,0 +1,90 @@
+{
+  "result": "pass",
+  "video": "ntsc",
+  "fps": {
+    "original": 5.81144598801469,
+    "v9": 6.982743392585087
+  },
+  "gain_fps": 1.1712974045703977,
+  "gain_percent": 20.15500801325587,
+  "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+  "v9_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "common_initial_state": true,
+  "clock_hz": 1789772.5,
+  "minimum_frames_per_scenario": 3600,
+  "rows": [
+    {
+      "variant": "original",
+      "scenario": "straight",
+      "intervals": 354,
+      "ticks": 107644274,
+      "seconds": 60.14410993575999,
+      "fps": 5.885863144007084,
+      "mode": 2
+    },
+    {
+      "variant": "original",
+      "scenario": "right",
+      "intervals": 349,
+      "ticks": 107554670,
+      "seconds": 60.094045472259744,
+      "fps": 5.807563748742848,
+      "mode": 2
+    },
+    {
+      "variant": "original",
+      "scenario": "left",
+      "intervals": 344,
+      "ticks": 107674141,
+      "seconds": 60.160797531529845,
+      "fps": 5.718009303645153,
+      "mode": 2
+    },
+    {
+      "variant": "original",
+      "scenario": "fast_right",
+      "intervals": 351,
+      "ticks": 107674142,
+      "seconds": 60.16079809026007,
+      "fps": 5.834364089940926,
+      "mode": 2
+    },
+    {
+      "variant": "v9",
+      "scenario": "straight",
+      "intervals": 417,
+      "ticks": 107674136,
+      "seconds": 60.160794737878696,
+      "fps": 6.931424390533303,
+      "mode": 2
+    },
+    {
+      "variant": "v9",
+      "scenario": "right",
+      "intervals": 426,
+      "ticks": 107554668,
+      "seconds": 60.09404435479928,
+      "fps": 7.088888833723145,
+      "mode": 2
+    },
+    {
+      "variant": "v9",
+      "scenario": "left",
+      "intervals": 411,
+      "ticks": 107763738,
+      "seconds": 60.21085808391849,
+      "fps": 6.8260113388048955,
+      "mode": 2
+    },
+    {
+      "variant": "v9",
+      "scenario": "fast_right",
+      "intervals": 426,
+      "ticks": 107614403,
+      "seconds": 60.12742010506922,
+      "fps": 7.084953907145682,
+      "mode": 2
+    }
+  ],
+  "limitations": "One paired set of four scenarios, same initial game state but trajectories can diverge as performance changes. No confidence interval or physical hardware tests."
+}
