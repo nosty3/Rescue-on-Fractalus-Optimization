@@ -12,7 +12,7 @@ for name in ('benchmark','division-tests','division-vbi-tests','geometry-live-pr
  copy(f'results/opt14/{name}.json')
 copy('results/opt14/RAPORT_V6_PL.txt','docs/WYDANIE_V6_PL.txt')
 p=DEST/'README_PL.md';s=p.read_text(encoding='utf-8').replace('Aktualne wydanie: v5','Aktualne wydanie: v6').replace('v5 7,367256 FPS. Zysk v5: 12,42% względem oryginału, 0,69% względem v4.','v5 7,367256; v6 7,691000 FPS. Zysk v6: 17,36% względem oryginału, 4,39% względem v5.').replace('optimized v5 128KB.car','optimized v6 128KB.car').replace('rebuild_v5.py','rebuild_v6.py').replace('Nowy audyt v5, bez wdrożenia poprawek:','Historyczny audyt v5 (punkty 1–4 wdrożone w v6, 5–8 odłożone):').replace('Raport bieżącego wydania: docs/WYDANIE_V5_PL.txt','Raport bieżącego wydania: docs/WYDANIE_V6_PL.txt');p.write_text(s,encoding='utf-8')
-p=DEST/'docs/ODTWORZENIE_PL.txt';s=p.read_text(encoding='utf-8').replace('rebuild_v5.py','rebuild_v6.py').replace('wszystkich pięciu ROM-ów','wszystkich sześciu ROM-ów')
+p=DEST/'docs/ODTWORZENIE_PL.md';s=p.read_text(encoding='utf-8').replace('rebuild_v5.py','rebuild_v6.py').replace('wszystkich pięciu ROM-ów','wszystkich sześciu ROM-ów')
 if 'buduje v1, v2, v3, v4, v5, v6' not in s:s=s.replace('buduje v1, v2, v3, v4, v5','buduje v1, v2, v3, v4, v5, v6')
 p.write_text(s,encoding='utf-8')
 updates={

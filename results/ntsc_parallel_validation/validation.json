@@ -1,0 +1,63 @@
+{
+  "workers": 4,
+  "emulator_sha256": "fe812e8385409d273cd518e6cbbc2ceca5176f65886384835d30067ae343c97b",
+  "results": [
+    {
+      "name": "b03-original-011",
+      "variant": "original",
+      "pid": 31176,
+      "checks": {
+        "entry_ram": true,
+        "event_ticks": true,
+        "checkpoints": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "name": "b03-original-015",
+      "variant": "original",
+      "pid": 15680,
+      "checks": {
+        "entry_ram": true,
+        "event_ticks": true,
+        "checkpoints": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "name": "b01-v9-004",
+      "variant": "v9",
+      "pid": 38556,
+      "checks": {
+        "entry_ram": true,
+        "event_ticks": true,
+        "checkpoints": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "name": "b02-v9-008",
+      "variant": "v9",
+      "pid": 35600,
+      "checks": {
+        "entry_ram": true,
+        "event_ticks": true,
+        "checkpoints": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

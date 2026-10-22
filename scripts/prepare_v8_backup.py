@@ -16,7 +16,7 @@ s=s.replace('Aktualne wydanie: v7','Aktualne wydanie: v8').replace('optimized v7
 notice=f'Bieżące v8: {fps:.6f} FPS (około +17,81% względem oryginału). Naprawia wyścig buforów powodujący jednoklatkowy klin po lewej. Wyniki v1–v7 poniżej są historyczne i nie oznaczają wersji wolnych od tego błędu.\n'
 if notice not in s: s=s.replace('Wynik czterech lotów:',notice+'\nWynik czterech lotów:')
 p.write_text(s,encoding='utf-8')
-p=DEST/'docs/ODTWORZENIE_PL.txt'; s=p.read_text(encoding='utf-8').replace('rebuild_v7.py','rebuild_v8.py').replace('wszystkich siedmiu ROM-ów','wszystkich ośmiu ROM-ów')
+p=DEST/'docs/ODTWORZENIE_PL.md'; s=p.read_text(encoding='utf-8').replace('rebuild_v7.py','rebuild_v8.py').replace('wszystkich siedmiu ROM-ów','wszystkich ośmiu ROM-ów')
 if 'v6, v7, v8' not in s: s=s.replace('v6, v7','v6, v7, v8')
 p.write_text(s,encoding='utf-8')
 updates={'KONTYNUACJA_PL.txt':f'AKTUALIZACJA v8 — NAPRAWA KLINÓW, {fps:.6f} FPS\nBank2 $9214 -> $84A0: osłona własności bufora, oczekiwanie na $42=0\nprzed czyszczeniem. Geometria nadal wykonuje się wcześniej.\nNie usuwać oczekiwania dla poprawy FPS. Raport: WYDANIE_V8_PL.txt.\nOdtworzenie: scripts/rebuild_v8.py. Zalecany zimny start CAR v8.\n', 'DALSZE_KIERUNKI_PL.txt':'AKTUALIZACJA v8 — SYNCHRONIZACJA WYŚWIETLANIA\nUtrzymywać test braku czyszczenia przed potwierdzeniem VBI ($42=0).\nTesty końcowego RAM nie wykrywają wszystkich błędów czasu wyświetlania.\nEwentualne ukrycie oczekiwania pracą bez zapisów do obrazu wymaga dowodu\nrozłączności danych i zysku >=0,05 FPS. Trzeci bufor wymaga analizy RAM\ni ANTIC; dodatkowy ROM sam nie wystarczy. Tych pomysłów nie wdrożono.\nPunkty 5–8 wcześniejszego audytu pozostają odłożone.\n'}

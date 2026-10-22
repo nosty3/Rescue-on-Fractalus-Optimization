@@ -1,28 +1,59 @@
-# Rescue on Fractalus! — optymalizacja Atari XL/XE PAL
+# Rescue on Fractalus! — optymalizacja dla Atari XL/XE
 
-Stan przekazania: 21.10.2026. Aktualne wydanie: v9, 128 KiB XEGS (typ CART 14). Wydanie v3 64 KiB zachowano.
-Bieżące v9: 7,764418 FPS. Mała optymalizacja PMG: +0,043721 FPS względem v8 (7,720697 FPS), zaakceptowana przez użytkownika mimo progu +0,05 FPS. Zachowuje naprawę wyścigu buforów z v8. Wyniki v1–v7 poniżej są historyczne i nie oznaczają wersji wolnych od tego błędu.
+[English](README.md) · [Polski](README_PL.md)
 
-Wynik czterech lotów: oryginał 6,553531 FPS; v1 6,779769; v2 7,115256;
-v3 7,192973; v4 7,316840; v5 7,367256; v6 7,691000; v7 7,883239 FPS. Zysk v7: 20,29% względem oryginału, 2,50% względem v6.
-To pomiary określonych lotów, nie gwarancja FPS dla każdego terenu.
+Inżynieria wsteczna i optymalizacja w asemblerze 6502 gry **Rescue on Fractalus!** dla Atari XL/XE. Najnowszy build, **v9**, wykorzystuje **cartridge XEGS 128 KB** i działa na komputerach PAL i NTSC z 64 KB RAM, zachowując szczegółowość terenu i rozdzielczość obrazu.
 
-Gotowa gra: dist/Rescue on Fractalus! - PAL optimized v9 128KB.car
-Oryginalny obraz: original/Rescue on Fractalus!.rom (niezmieniony).
-Odtworzenie gry: python scripts/rebuild_v9.py --mads ŚCIEŻKA_DO_MADS
-Instrukcja środowiska: docs/ODTWORZENIE_PL.txt
-Mapa kodu i istotne pułapki: docs/KONTYNUACJA_PL.txt
-Dalsze kierunki: docs/DALSZE_KIERUNKI_PL.txt
-Historyczny audyt v5 (punkty 1–4 wdrożone w v6, 5–8 odłożone): docs/OPCJE_OPTYMALIZACJI_V5_PL.md
-Raport bieżącego wydania: docs/WYDANIE_V9_PL.md
-Lista plików i SHA-256: docs/backup-manifest.json
+## Pobieranie
 
-Repozytorium zawiera wybrany zestaw źródeł, wydań i wyników. Celowo nie ma
-screenów, dumpów RAM, stanów emulatora, pakietów narzędzi, tokenów i logów
-lokalnego serwera. Bez dawnych stanów nie da się odtworzyć dokładnie tych
-samych lotów; można odtworzyć ROM-y i zebrać nowy zestaw pomiarowy.
-Dokumenty historyczne opisują stan prac z chwili ich powstania. Ich stare
-ścieżki lokalne mogą wskazywać pominięte pliki; bieżący przewodnik jest tutaj.
-Nie wykonano tłumaczeń. Polskie notatki i raporty oznaczono w nazwie _PL.
-Oryginalny ROM jest materiałem wejściowym właściciela projektu; nie nadano
-mu nowej licencji ani nie stwierdza się prawa do jego publicznej dystrybucji.
+W katalogu **[optimized version](optimized%20version/)** znajdują się najnowsze pliki `.car`, surowy `.rom` i krótka informacja o wersji. W emulatorze użyj `.car`; dla surowego ROM-u wybierz **XEGS 128 KB / typ cartridge'a 14**. Uruchom grę od zimnego startu.
+
+## Zmierzona wydajność
+
+| System | Oryginał | Zoptymalizowana v9 | Przyrost |
+| --- | ---: | ---: | ---: |
+| PAL | 6,4421 FPS | 7,5623 FPS | **+17,39%** |
+| NTSC | 5,8043 FPS | 6,8977 FPS | **+18,84%** |
+
+Są to średnie ze **155 niezależnych lotów dla każdej wersji i systemu**, trwających do 60 sekund, uruchamianych w nowym procesie emulatora od zimnego startu. Cztery odizolowane procesy emulatora zweryfikowano pod kątem pomiaru równoległego. Nie przenoszono zapisanych stanów ani nie odrzucano wyników odstających. 95-procentowe przedziały ufności przyrostu wynoszą **16,46–18,32% (PAL)** i **17,90–19,78% (NTSC)**.
+
+FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświeżania obrazu. Test obejmuje automatyczny lot z joystickiem w położeniu neutralnym; nie obejmuje skrętów ani nurkowania. Loty zakończone naturalnie przed upływem 60 sekund pozostają w próbie. Szczegóły zawierają [metoda pomiaru i raporty](docs/benchmarks/METODA_PL.md) (po polsku).
+
+### PAL
+
+![Rozkład FPS dla PAL](docs/benchmarks/charts/FPS_DISTRIBUTION_PAL_EN.png)
+![Czas lotu dla PAL](docs/benchmarks/charts/FLIGHT_DURATION_PAL_EN.png)
+
+### NTSC
+
+![Rozkład FPS dla NTSC](docs/benchmarks/charts/FPS_DISTRIBUTION_NTSC_EN.png)
+![Czas lotu dla NTSC](docs/benchmarks/charts/FLIGHT_DURATION_NTSC_EN.png)
+
+## Co zoptymalizowano
+
+- Zmieniono kolejność operacji rasteryzatora terenu i usunięto zbędną pracę po podziale odcinka.
+- Przyspieszono dokładne dzielenie całkowitoliczbowe i usunięto zbędną normalizację.
+- Wyspecjalizowano generowanie profilu gór dla typowych głębokości i szerokości.
+- Pominięto podziały terenu tylko tam, gdzie zachowawcza granica widoczności dowodzi ich całkowitego zasłonięcia.
+- Wykorzystano dodatkowe banki ROM do bezpośredniego kasowania ekranu i wyspecjalizowanego wypełniania terenu.
+- Zastąpiono powtarzane interpretowanie poleceń geometrii wyspecjalizowanym kodem i tablicami.
+- Dodano szybkie ścieżki przycinania z oryginalnym algorytmem jako ścieżką zapasową.
+- Przyspieszono interpolację za pomocą dokładnych tablic i samomodyfikującego się kodu w RAM.
+- Rozwinięto pętle miksowania dźwięku i usunięto zbędne zerowanie flag dźwięku.
+- Ograniczono aktualizację pasków PMG do zmienionych odcinków i skrócono pętle rysowania oraz kasowania PMG.
+- Zabezpieczono przełączanie banków podczas przerwań i naprawiono synchronizację buforów obrazu, aby zapobiegać chwilowym artefaktom terenu.
+
+Zobacz [pełny opis techniczny](docs/OPTYMALIZACJE_PL.md) i [instrukcję odtworzenia](docs/ODTWORZENIE_PL.md) (po polsku).
+
+## Zawartość repozytorium
+
+- **[optimized version/](optimized%20version/)** — najnowsze pliki CAR i ROM do uruchomienia oraz informacje o wersji i wydajności.
+- **[original/](original/)** — niezmieniony oryginalny ROM, używany do budowania i jako punkt odniesienia pomiarów.
+- **[dist/](dist/)** — pomocnicze pliki dystrybucji: aktualna łatka IPS i manifest buildu.
+- **[src/](src/)** — źródła asemblera MADS dla optymalizacji i eksperymentów.
+- **[scripts/](scripts/)** — narzędzia odtwarzania, analizy, weryfikacji, pomiarów i tworzenia wykresów.
+- **[analysis/](analysis/)** — deasemblacja i analiza kodu wspierające inżynierię wsteczną.
+- **[results/](results/)** — wybrane pomiary i wyniki weryfikacji w formacie maszynowym, w tym badania historyczne.
+- **[docs/](docs/)** — zbiorczy opis zmian oraz badania pogrupowane tematycznie, m.in. PMG, teren i pomiary.
+
+Starsze pliki wydań i ich opisy pozostają w historii Gita. Dokumenty badawcze są po polsku i mają nazwy z `_PL`. Repozytorium nie zawiera emulatorów, zapisanych stanów, zrzutów pamięci ani screenów z testów.

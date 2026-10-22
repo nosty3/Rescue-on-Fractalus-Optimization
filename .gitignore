@@ -5,5 +5,8 @@ __pycache__/
 *.pyc
 *.token
 *.altstate2
-*.png
 *.bin
+/results/**/*.png
+/results/**/*-server.log
+/results/**/*-completed.json
+/results/**/*-events.json

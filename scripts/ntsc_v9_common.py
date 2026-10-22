@@ -1,7 +1,7 @@
 from session import *
 import hashlib
 OUT=ROOT/'results/ntsc_v9';OUT.mkdir(exist_ok=True)
-CART=ROOT/'dist/Rescue on Fractalus! - PAL optimized v9 128KB.car'
+CART=ROOT/'optimized version/Rescue on Fractalus! - optimized 128KB.car'
 SHA='0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880'
 assert hashlib.sha256(CART.read_bytes()[16:]).hexdigest()==SHA
 FREQ=3579545/2;FRAME_TICKS=114*262

@@ -1,0 +1,146 @@
+{
+  "groups": {
+    "original_1": {
+      "mean": 5.776429143313231,
+      "median": 5.678630954777938,
+      "sd": 0.2776099987063244,
+      "q1": 5.5865816039033245,
+      "q3": 5.870880446769205,
+      "skew": 1.117047786027611,
+      "shapiro_p": 0.048339298960721755,
+      "mean_ci95": [
+        5.646503664552456,
+        5.906354622074006
+      ],
+      "order_spearman": {
+        "rho": -0.03458646616541353,
+        "p": 0.8849015088305833
+      },
+      "menu_spearman": {
+        "rho": 0.20902255639097742,
+        "p": 0.3764723395871388
+      },
+      "tukey_flagged_trials": [
+        8
+      ]
+    },
+    "original_2": {
+      "mean": 5.770803842169982,
+      "median": 5.740073306265557,
+      "sd": 0.23242847844006725,
+      "q1": 5.611521611346833,
+      "q3": 5.84774402459076,
+      "skew": 1.428076495358378,
+      "shapiro_p": 0.010370261370304954,
+      "mean_ci95": [
+        5.6620239657977685,
+        5.879583718542195
+      ],
+      "order_spearman": {
+        "rho": -0.03909774436090225,
+        "p": 0.870003704330122
+      },
+      "menu_spearman": {
+        "rho": -0.4827067669172932,
+        "p": 0.03110521686954333
+      },
+      "tukey_flagged_trials": [
+        7,
+        14
+      ]
+    },
+    "v9_1": {
+      "mean": 6.734370120709428,
+      "median": 6.7354666505507375,
+      "sd": 0.19348715328828456,
+      "q1": 6.604714232435547,
+      "q3": 6.864905933687162,
+      "skew": 0.054929710924384444,
+      "shapiro_p": 0.5683306627531896,
+      "mean_ci95": [
+        6.643815345513332,
+        6.824924895905525
+      ],
+      "order_spearman": {
+        "rho": 0.47067669172932325,
+        "p": 0.036214551666000905
+      },
+      "menu_spearman": {
+        "rho": -0.21052631578947367,
+        "p": 0.3729699095048001
+      },
+      "tukey_flagged_trials": []
+    },
+    "v9_2": {
+      "mean": 7.005417741516015,
+      "median": 7.028128440408398,
+      "sd": 0.3152722914742096,
+      "q1": 6.780905411320893,
+      "q3": 7.203349110567318,
+      "skew": 0.014740833342485335,
+      "shapiro_p": 0.6762672352044875,
+      "mean_ci95": [
+        6.857865767161065,
+        7.152969715870966
+      ],
+      "order_spearman": {
+        "rho": -0.022556390977443608,
+        "p": 0.9247982163788796
+      },
+      "menu_spearman": {
+        "rho": 0.6406015037593984,
+        "p": 0.002342270858482579
+      },
+      "tukey_flagged_trials": []
+    }
+  },
+  "comparisons": {
+    "original": {
+      "delta": -0.005625301143249217,
+      "welch_p": 0.944981136742707,
+      "delta_ci95": [
+        -0.16968666012720773,
+        0.1584360578407093
+      ],
+      "permutation_p": 0.9458405415945841,
+      "mannwhitney_p": 0.7660352392188963
+    },
+    "v9": {
+      "delta": 0.27104762080658684,
+      "welch_p": 0.0025566215045539574,
+      "delta_ci95": [
+        0.10246599856697802,
+        0.43962924304619566
+      ],
+      "permutation_p": 0.0023199768002319975,
+      "mannwhitney_p": 0.005115262023126529
+    },
+    "gain_series_1": {
+      "estimate": 16.58361859255395,
+      "percentile_bootstrap_ci95": [
+        13.792541380401797,
+        19.334374732731067
+      ]
+    },
+    "gain_series_2": {
+      "estimate": 21.39414080104627,
+      "percentile_bootstrap_ci95": [
+        18.243696574378934,
+        24.48421655312823
+      ]
+    }
+  },
+  "planning": {
+    "mean_relative_halfwidth_0.01": {
+      "original": 74,
+      "v9": 70
+    },
+    "mean_relative_halfwidth_0.02": {
+      "original": 19,
+      "v9": 18
+    },
+    "gain_halfwidth_1_percentage_points_n_per_version": 203,
+    "gain_halfwidth_2_percentage_points_n_per_version": 51
+  },
+  "caution": "Exploratory tests, unadjusted p-values. Within-flight samples are not independent. All planning/CIs assume independent stable runs; observed v9 series shift challenges this assumption. Bootstrap does not correct bias or initialization drift."
+}

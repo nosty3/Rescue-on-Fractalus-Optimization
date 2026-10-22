@@ -25,7 +25,7 @@ Wynik to suma odstępów / suma czasu, nie średnia arytmetyczna czterech FPS.
 ## Konfiguracja i metoda
 
 Altirra headless, 800XL, 64 KiB RAM, NTSC, bez Rapidusa, VBXE i U1MB.
-Plik: `dist/Rescue on Fractalus! - PAL optimized v9 128KB.car`.
+Plik: `optimized version/Rescue on Fractalus! - optimized 128KB.car`.
 ROM SHA256: `{SHA}`.
 
 Zegar NTSC: 3579545/2 = 1789772,5 Hz. Ramka: 114*262 = 29868 taktów.

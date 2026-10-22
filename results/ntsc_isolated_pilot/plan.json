@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "stage": "pilot",
+    "seed": 2026102301,
+    "count_per_version": 20,
+    "clock_hz": 1789772.5,
+    "checkpoints_seconds": [
+      15,
+      30,
+      60
+    ],
+    "warmup_frames": 170,
+    "method": "Fresh emulator process for every native ROM boot; no state loads or memory patches. Uniform sampling of menu delays 3000..3599 without replacement within each version. Blocks of five flights per version, randomized order within block. Centered joystick; first A32E entry, 170 video frames warmup, count B516 intervals until >=60 seconds. Checkpoints at >=15 and >=30 seconds are nested, not independent samples.",
+    "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+    "v9_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+    "emulator_sha256": "fe812e8385409d273cd518e6cbbc2ceca5176f65886384835d30067ae343c97b"
+  },
+  "schedule": [
+    {
+      "variant": "original",
+      "trial": 5,
+      "block": 1,
+      "menu_frames": 3412
+    },
+    {
+      "variant": "original",
+      "trial": 1,
+      "block": 1,
+      "menu_frames": 3159
+    },
+    {
+      "variant": "v9",
+      "trial": 2,
+      "block": 1,
+      "menu_frames": 3443
+    },
+    {
+      "variant": "original",
+      "trial": 4,
+      "block": 1,
+      "menu_frames": 3508
+    },
+    {
+      "variant": "v9",
+      "trial": 4,
+      "block": 1,
+      "menu_frames": 3179
+    },
+    {
+      "variant": "v9",
+      "trial": 5,
+      "block": 1,
+      "menu_frames": 3155
+    },
+    {
+      "variant": "original",
+      "trial": 2,
+      "block": 1,
+      "menu_frames": 3399
+    },
+    {
+      "variant": "original",
+      "trial": 3,
+      "block": 1,
+      "menu_frames": 3250
+    },
+    {
+      "variant": "v9",
+      "trial": 3,
+      "block": 1,
+      "menu_frames": 3504
+    },
+    {
+      "variant": "v9",
+      "trial": 1,
+      "block": 1,
+      "menu_frames": 3407
+    },
+    {
+      "variant": "original",
+      "trial": 9,
+      "block": 2,
+      "menu_frames": 3503
+    },
+    {
+      "variant": "original",
+      "trial": 6,
+      "block": 2,
+      "menu_frames": 3385
+    },
+    {
+      "variant": "original",
+      "trial": 10,
+      "block": 2,
+      "menu_frames": 3564
+    },
+    {
+      "variant": "original",
+      "trial": 7,
+      "block": 2,
+      "menu_frames": 3362
+    },
+    {
+      "variant": "v9",
+      "trial": 7,
+      "block": 2,
+      "menu_frames": 3081
+    },
+    {
+      "variant": "v9",
+      "trial": 9,
+      "block": 2,
+      "menu_frames": 3113
+    },
+    {
+      "variant": "v9",
+      "trial": 10,
+      "block": 2,
+      "menu_frames": 3548
+    },
+    {
+      "variant": "original",
+      "trial": 8,
+      "block": 2,
+      "menu_frames": 3109
+    },
+    {
+      "variant": "v9",
+      "trial": 8,
+      "block": 2,
+      "menu_frames": 3584
+    },
+    {
+      "variant": "v9",
+      "trial": 6,
+      "block": 2,
+      "menu_frames": 3185
+    },
+    {
+      "variant": "v9",
+      "trial": 11,
+      "block": 3,
+      "menu_frames": 3475
+    },
+    {
+      "variant": "v9",
+      "trial": 12,
+      "block": 3,
+      "menu_frames": 3342
+    },
+    {
+      "variant": "original",
+      "trial": 13,
+      "block": 3,
+      "menu_frames": 3078
+    },
+    {
+      "variant": "original",
+      "trial": 12,
+      "block": 3,
+      "menu_frames": 3481
+    },
+    {
+      "variant": "original",
+      "trial": 11,
+      "block": 3,
+      "menu_frames": 3297
+    },
+    {
+      "variant": "v9",
+      "trial": 13,
+      "block": 3,
+      "menu_frames": 3338
+    },
+    {
+      "variant": "v9",
+      "trial": 14,
+      "block": 3,
+      "menu_frames": 3493
+    },
+    {
+      "variant": "original",
+      "trial": 14,
+      "block": 3,
+      "menu_frames": 3581
+    },
+    {
+      "variant": "original",
+      "trial": 15,
+      "block": 3,
+      "menu_frames": 3149
+    },
+    {
+      "variant": "v9",
+      "trial": 15,
+      "block": 3,
+      "menu_frames": 3289
+    },
+    {
+      "variant": "v9",
+      "trial": 17,
+      "block": 4,
+      "menu_frames": 3581
+    },
+    {
+      "variant": "original",
+      "trial": 17,
+      "block": 4,
+      "menu_frames": 3467
+    },
+    {
+      "variant": "original",
+      "trial": 20,
+      "block": 4,
+      "menu_frames": 3425
+    },
+    {
+      "variant": "original",
+      "trial": 19,
+      "block": 4,
+      "menu_frames": 3390
+    },
+    {
+      "variant": "v9",
+      "trial": 20,
+      "block": 4,
+      "menu_frames": 3272
+    },
+    {
+      "variant": "v9",
+      "trial": 18,
+      "block": 4,
+      "menu_frames": 3101
+    },
+    {
+      "variant": "v9",
+      "trial": 16,
+      "block": 4,
+      "menu_frames": 3217
+    },
+    {
+      "variant": "original",
+      "trial": 18,
+      "block": 4,
+      "menu_frames": 3543
+    },
+    {
+      "variant": "v9",
+      "trial": 19,
+      "block": 4,
+      "menu_frames": 3552
+    },
+    {
+      "variant": "original",
+      "trial": 16,
+      "block": 4,
+      "menu_frames": 3504
+    }
+  ]
+}

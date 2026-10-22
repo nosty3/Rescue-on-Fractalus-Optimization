@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "verified_trials": 310,
+  "benchmark_sha256": "b8b8cb2fc7680b1aebdfc08b7a5f7414cce4477c63a26567632b807a10ef4154",
+  "checks": [
+    "frozen schedule",
+    "155 distinct START delays per version",
+    "strictly increasing image ticks",
+    "all checkpoint counts and FPS recomputed",
+    "early flight endings marked",
+    "all event hashes",
+    "entry RAM and terrain hashes",
+    "32 KB dumps at three points"
+  ]
+}

@@ -1,0 +1,4220 @@
+{
+  "metadata": {
+    "stage": "pilot",
+    "seed": 2026102301,
+    "count_per_version": 20,
+    "clock_hz": 1789772.5,
+    "checkpoints_seconds": [
+      15,
+      30,
+      60
+    ],
+    "warmup_frames": 170,
+    "method": "Fresh emulator process for every native ROM boot; no state loads or memory patches. Uniform sampling of menu delays 3000..3599 without replacement within each version. Blocks of five flights per version, randomized order within block. Centered joystick; first A32E entry, 170 video frames warmup, count B516 intervals until >=60 seconds. Checkpoints at >=15 and >=30 seconds are nested, not independent samples.",
+    "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+    "v9_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+    "emulator_sha256": "fe812e8385409d273cd518e6cbbc2ceca5176f65886384835d30067ae343c97b"
+  },
+  "rows": [
+    {
+      "variant": "original",
+      "trial": 5,
+      "block": 1,
+      "menu_frames": 3412,
+      "name": "b01-original-005",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91049040,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4443535394,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "5854fa7673c9692af0157247a30ac22478794770772852e3feb41bcc2a19a4ff",
+        "ram_sha256": "845f2d0bc9e8e30752daa8f0934e0abcddbcdbf000fb8876a6578a1c343bcac0",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001303f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532005000061212121204262c900006449a78ea962a2a2a2ad60044af64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "a9ed948d5529a5bda3d454c98da13c94c9ff9f8e29a25f1bfc139660d7daee07"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 89,
+            "ticks": 27000675,
+            "seconds": 15.086093344265821,
+            "fps": 5.89947297613856
+          },
+          "30": {
+            "intervals": 170,
+            "ticks": 53702664,
+            "seconds": 30.005301791149435,
+            "fps": 5.665665394178583
+          },
+          "60": {
+            "intervals": 336,
+            "ticks": 107614407,
+            "seconds": 60.12742233999014,
+            "fps": 5.588132451447695
+          }
+        },
+        "events_sha256": "25ccf34dd6b5f2bfde1e4406697f6c2a008626683f959fcd44c6f9c8a6062e6d",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 1,
+      "block": 1,
+      "menu_frames": 3159,
+      "name": "b01-original-001",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86757608,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4435932141,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "10af71f0d007473c5e5295b9badb9d9147ee34afa37ee689c703529ca913dcd8",
+        "ram_sha256": "5ecc4084e2161d9e1b66607af65d35faf8593d321d45282dae0e7f72ad2d9789",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f0012d3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320245f3ff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "07ed681cd825e7b4723f8a3195608aea0b0764631a02cd6bc6725c918810614b"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 81,
+            "ticks": 27000674,
+            "seconds": 15.086092785535591,
+            "fps": 5.369183469271915
+          },
+          "30": {
+            "intervals": 164,
+            "ticks": 53792268,
+            "seconds": 30.055366254649684,
+            "fps": 5.456596290009561
+          },
+          "60": {
+            "intervals": 336,
+            "ticks": 107674139,
+            "seconds": 60.16079641406939,
+            "fps": 5.585032446834797
+          }
+        },
+        "events_sha256": "099f21dd71faf7b644cebd1ee6a18a5ce21748057948c128d144537eebb4a0a2",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 2,
+      "block": 1,
+      "menu_frames": 3443,
+      "name": "b01-v9-002",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91437375,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4444285786,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "5c43eed31c1bb7123a105e5ce0f469cd8bc0db47ce28d432051fc56d2276c05e",
+        "ram_sha256": "caa8d94293dbedbb792941b6f86450e481864b366e1d9e139b8727ba16bdbe9a",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001a73f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532042900441212121204262c900006449a78ea962a2a2a2ad600efae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "84e69dd93d737b626b2c27fb3428dcb18bd0d3d77942bf596102331e4fddd8f3"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 106,
+            "ticks": 27000670,
+            "seconds": 15.086090550614673,
+            "fps": 7.026339901935767
+          },
+          "30": {
+            "intervals": 199,
+            "ticks": 53941611,
+            "seconds": 30.13880870334079,
+            "fps": 6.602782543888057
+          },
+          "60": {
+            "intervals": 402,
+            "ticks": 107584535,
+            "seconds": 60.11073195056914,
+            "fps": 6.68765771028336
+          }
+        },
+        "events_sha256": "6d0d63d06ae0004c1df0efd0b17648e7000277647df16b2729f3279b1f00f71d",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 4,
+      "block": 1,
+      "menu_frames": 3508,
+      "name": "b01-original-004",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 92260731,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4445895690,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "dcbd54f6153e182b2a6f3e82d02d72cb230d2507bcf98a6bf46612fd3198a3ee",
+        "ram_sha256": "26c7c461add3e9456708e6439a206ee11b5fa548379c047c672f61135e669afd",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001633f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532022653ff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "72380d13f6ba7545f2ea2ae661ddc8bb2f93baa455bac13dcb70e726486717f4"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 84,
+            "ticks": 27030541,
+            "seconds": 15.102780381305445,
+            "fps": 5.561889789775202
+          },
+          "30": {
+            "intervals": 168,
+            "ticks": 53971479,
+            "seconds": 30.15549685784087,
+            "fps": 5.571123592888755
+          },
+          "60": {
+            "intervals": 331,
+            "ticks": 107405330,
+            "seconds": 60.01060469975933,
+            "fps": 5.515691795742353
+          }
+        },
+        "events_sha256": "a85ac8df8122d1502e9271984e70fd107313226fb88ffb27a4fb77daf6312d9e",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 4,
+      "block": 1,
+      "menu_frames": 3179,
+      "name": "b01-v9-004",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86475393,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4435750675,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "8949c8918f4a7a0a2779b7bc1234709f95f773c0fe90c77cf31f9fac060595bf",
+        "ram_sha256": "f65ab58a510de148ef05a2a15282e4984bfd190823e525f28d56aac46d2c79aa",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001a03f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202141a0c1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000004001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "99a9d28cadcc6fda9e17bb82cbbb58a6554ed58e3156de4542f62a75dd5e1be0"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 98,
+            "ticks": 26940928,
+            "seconds": 15.05271088923313,
+            "fps": 6.510455207779034
+          },
+          "30": {
+            "intervals": 192,
+            "ticks": 53702656,
+            "seconds": 30.005297321307598,
+            "fps": 6.398870104301731
+          },
+          "60": {
+            "intervals": 391,
+            "ticks": 107405321,
+            "seconds": 60.01059967118726,
+            "fps": 6.515515627945472
+          }
+        },
+        "events_sha256": "53c508d68af75bdd547af4d8b00788aa8ac40bc3add5457968c55ba208c0c13b",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 5,
+      "block": 1,
+      "menu_frames": 3155,
+      "name": "b01-v9-005",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86330400,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4435356719,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "6c996a3f4c9d4ed024cb7a530c7e65415022358f31cf0116571ba183eb236d29",
+        "ram_sha256": "78722260a64b5410f9bd4677317a33ceed58189412fbd1d5a1c12ecb04203f0a",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001833f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202d417ff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "2b6f119a0467a90b53066507b89157dc47b9ed28d8a3ade24e018a8fb898a583"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 97,
+            "ticks": 26851335,
+            "seconds": 15.002652571765406,
+            "fps": 6.4655233156936145
+          },
+          "30": {
+            "intervals": 203,
+            "ticks": 53762405,
+            "seconds": 30.03868089380075,
+            "fps": 6.757953210984516
+          },
+          "60": {
+            "intervals": 411,
+            "ticks": 107614409,
+            "seconds": 60.1274234574506,
+            "fps": 6.835483318037829
+          }
+        },
+        "events_sha256": "f76169d6c6046604c136be57cb2d12ed551eb2dd9b56b3b8e174a66f9e6a54a8",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 2,
+      "block": 1,
+      "menu_frames": 3399,
+      "name": "b01-original-002",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 90310311,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4442494807,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "d5f88bfd3631bd9ced26648e1af3c759cbd82f1e69d5b28272ba563ed2ec981a",
+        "ram_sha256": "e5edc01c239b9ca88527611e4af9202f0680e92c0a93277e3fe91cffd2324624",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001423f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202647aff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000005001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "6895070b7e0bbaca3df209a4ef4edde0d9b33ba3bb44183eb6ae3c9f277e0cc2"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 83,
+            "ticks": 27090277,
+            "seconds": 15.136156690305612,
+            "fps": 5.483558455308523
+          },
+          "30": {
+            "intervals": 165,
+            "ticks": 53732536,
+            "seconds": 30.021992180570436,
+            "fps": 5.4959710537392095
+          },
+          "60": {
+            "intervals": 334,
+            "ticks": 107644272,
+            "seconds": 60.144108818299536,
+            "fps": 5.553328606281995
+          }
+        },
+        "events_sha256": "653d24971b2dc3649d1ea28dc4f34c11d6fad0a9db5d965c411176110ccef565",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 3,
+      "block": 1,
+      "menu_frames": 3250,
+      "name": "b01-original-003",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 87918385,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4438188609,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "cfcaa219b1c63c2dc96cc90c2f0cacca3c403a8346a896f117144d9095fb3919",
+        "ram_sha256": "6f2b06b95ffa4cf836d951e4150123e4e21bd248ac102b3b04240b27c85cab68",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001503f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320276baff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "35b4afe76fcc0f2a24573afae715cf7889e073be124afd2ed3055c1b214e7ad0"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 90,
+            "ticks": 27090277,
+            "seconds": 15.136156690305612,
+            "fps": 5.946027240695988
+          },
+          "30": {
+            "intervals": 179,
+            "ticks": 53792269,
+            "seconds": 30.055366813379912,
+            "fps": 5.9556751082576564
+          },
+          "60": {
+            "intervals": 355,
+            "ticks": 107465065,
+            "seconds": 60.04398045002927,
+            "fps": 5.912332882318547
+          }
+        },
+        "events_sha256": "2794ba9e7acf962e37cb165f8cac1b368667e34f74288d3418f8da111e582b76",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 3,
+      "block": 1,
+      "menu_frames": 3504,
+      "name": "b01-v9-003",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91637653,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4445080095,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "02336e8ca6087cea03a26f16c73f83ef988c0c37cdc6112a73570e6ac3375a1d",
+        "ram_sha256": "40203aae0963816a3bc579d37ad187910300874b410b96549635d508b68c8cb2",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001cc3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320014000d1212121204262c900006449a78ea962a2a2a2ad60044af64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "b7d693d95bf98dcfef69790124dab7f33d8d484b75902bdb1c32a7065badc0d4"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 100,
+            "ticks": 27030540,
+            "seconds": 15.102779822575215,
+            "fps": 6.621297613736167
+          },
+          "30": {
+            "intervals": 195,
+            "ticks": 53702666,
+            "seconds": 30.00530290860989,
+            "fps": 6.498851239526917
+          },
+          "60": {
+            "intervals": 407,
+            "ticks": 107614409,
+            "seconds": 60.1274234574506,
+            "fps": 6.768957932947436
+          }
+        },
+        "events_sha256": "be326ec70aaeb73808ea2c8a7feb60c2b0028f300e76ba9c281d4a1e1ec9b329",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 1,
+      "block": 1,
+      "menu_frames": 3407,
+      "name": "b01-v9-001",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 90339377,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4442593947,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "101950edabe966b40ebac28b5a9f341d89f91a90476facb6a32d35402ab3a85b",
+        "ram_sha256": "3cc2c0ee2785138a816df32eaefaa2d9ecbc3bbb6798e148829bd7bce884736a",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001eb3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320225cb391212121204262c900006449a78ea962a2a2a2ad60096ae64ff000005001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "11f319a7feed85cbd1910856d828e7577a154e505ebcff875ff0a015a34b106f"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 105,
+            "ticks": 26881202,
+            "seconds": 15.01934016753526,
+            "fps": 6.990986210363658
+          },
+          "30": {
+            "intervals": 213,
+            "ticks": 53702662,
+            "seconds": 30.005300673688975,
+            "fps": 7.098745728843014
+          },
+          "60": {
+            "intervals": 417,
+            "ticks": 107494929,
+            "seconds": 60.06066636960843,
+            "fps": 6.942979910243022
+          }
+        },
+        "events_sha256": "783224263a0e3f6b62e4bc7fc3123ca6314c06e21c991e6dcff9179be645b3d2",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 9,
+      "block": 2,
+      "menu_frames": 3503,
+      "name": "b02-original-009",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91946113,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4445458588,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "f1bb7f130fa14f647671d425b74417cf5af2906caecd5cdd3a59e80bae08db81",
+        "ram_sha256": "ebac6656436e760ee25ec1f3c832d1258c0ef90155060a89cd3b964df02aeffa",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001dd3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202f4f1ff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "ae44871fed80bb47c785b92ef85d80c3c895b12be28108d3e95124b54f81e03e"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 89,
+            "ticks": 27060409,
+            "seconds": 15.11946853580553,
+            "fps": 5.886450293489651
+          },
+          "30": {
+            "intervals": 178,
+            "ticks": 53941607,
+            "seconds": 30.13880646841987,
+            "fps": 5.906006934498633
+          },
+          "60": {
+            "intervals": 359,
+            "ticks": 107614405,
+            "seconds": 60.12742122252968,
+            "fps": 5.970653533790388
+          }
+        },
+        "events_sha256": "0841948ba8db3216480385b6ffbc37a5cc8746094daf3b3ce5bbe51486d0b392",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 6,
+      "block": 2,
+      "menu_frames": 3385,
+      "name": "b02-original-006",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 89711079,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4441628591,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "5ff3c6e8cd8d0e5d2a6089b36e4b3392e5ded075e4051252d0955bb58521106b",
+        "ram_sha256": "70e39292560ceac777b6eb88292920e1744eb4950626c86354b44f50226c5c01",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001073f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532002bfb4a1212121204262c900006449a78ea962a2a2a2ad60044af64ff000004001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "40bca3591b992198da4d2495bda42ccaf7a599108140edd7b143bbd362dd2e74"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 81,
+            "ticks": 27179878,
+            "seconds": 15.186219477615172,
+            "fps": 5.333783047149807
+          },
+          "30": {
+            "intervals": 161,
+            "ticks": 53911737,
+            "seconds": 30.122117196459328,
+            "fps": 5.3449098199154665
+          },
+          "60": {
+            "intervals": 330,
+            "ticks": 107465065,
+            "seconds": 60.04398045002927,
+            "fps": 5.495971411732734
+          }
+        },
+        "events_sha256": "4aeaec2b54db2ef1f3104064e9d4178c95be5fe1ede0657e539e20f687a32a6a",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 10,
+      "block": 2,
+      "menu_frames": 3564,
+      "name": "b02-original-010",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 92231073,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4446357031,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "41da9e1ce2a7051d6c601cd283dad5a7d9914f9d45baa4388b6724647020d948",
+        "ram_sha256": "c700672a999c472df3c2762bf4cbd2b9d5bc05a3d31c68d72ba3e73c50b03e20",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001d33f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202458dff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000005001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "95ec3d182bafde428e1a6e4d33ad4fbe754579f018fecf59b422bd5a67a7c577"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 83,
+            "ticks": 26940932,
+            "seconds": 15.052713124154048,
+            "fps": 5.513956143016879
+          },
+          "30": {
+            "intervals": 167,
+            "ticks": 53851998,
+            "seconds": 30.08873921126847,
+            "fps": 5.550249175527341
+          },
+          "60": {
+            "intervals": 335,
+            "ticks": 107554662,
+            "seconds": 60.0940410024179,
+            "fps": 5.574595990083628
+          }
+        },
+        "events_sha256": "28b5252fe77fc7de459bb6aabad2ba27863014f3c0e7b560e3a3ce85ff852957",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 7,
+      "block": 2,
+      "menu_frames": 3362,
+      "name": "b02-original-007",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 89213903,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4440803835,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "f0d8f67dd5998efdda31e11f681a171f90256b989de8e5f4a588b0124e047679",
+        "ram_sha256": "25f5849e74a014e93d2686216c4cadfaed369b23b987553e3bb111f40003393b",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004240000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f0019e3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53200d714ff1212121204262c900006449a78ea982a2a2a2ad60044af64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "07e93d717b15112d738f57af0ff0d3e6fbbbe967b2a24a255bfa88e1bd1cde51"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 87,
+            "ticks": 27090280,
+            "seconds": 15.1361583664963,
+            "fps": 5.7478256961537495
+          },
+          "30": {
+            "intervals": 178,
+            "ticks": 53762399,
+            "seconds": 30.03867754141937,
+            "fps": 5.925693624646475
+          },
+          "60": {
+            "intervals": 353,
+            "ticks": 107435200,
+            "seconds": 60.02729397171987,
+            "fps": 5.88065822467869
+          }
+        },
+        "events_sha256": "40bbc372b145f2709c3537bcc9b6221540b78e2972a75a2cd7d8cf7565fa48a3",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 7,
+      "block": 2,
+      "menu_frames": 3081,
+      "name": "b02-v9-007",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 84835279,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4432839995,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "608067c4d2e9f763d31e3e7c02b491da02d6cb613289fcb3477ca81b07e35b38",
+        "ram_sha256": "0ea16f0d8c8c974334a8affa2798d9b5849c95fcc4df9fbb81ea0140563b3e6f",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f0014c3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320021c62d1212121204262c900006449a78ea962a2a2a2ad60044af64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "bda89aa21acfaeef0578e3a72781ab3c9ed1cfb33f98432788332e70ea54c873"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 110,
+            "ticks": 27030542,
+            "seconds": 15.102780940035675,
+            "fps": 7.283426836206244
+          },
+          "30": {
+            "intervals": 209,
+            "ticks": 53822134,
+            "seconds": 30.072053291689308,
+            "fps": 6.949974382286663
+          },
+          "60": {
+            "intervals": 419,
+            "ticks": 107435195,
+            "seconds": 60.02729117806872,
+            "fps": 6.980158387574947
+          }
+        },
+        "events_sha256": "9648b1981098c924c96965d2df358db2b1a295d5fdfad091252ccd8c72010921",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 9,
+      "block": 2,
+      "menu_frames": 3113,
+      "name": "b02-v9-009",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 85366965,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4433782722,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "fcf08c0b644fb76b6a3083cc4e8ccb262965af3d6db9f7dd1c51fb3dfa1d211c",
+        "ram_sha256": "5bee77b96eb42f95f0a9c74344ba8218e05050449925f68bcce01e814f11079f",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f001b93f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320296aeff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000007001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "97f16534cc24ac384bc833f5f527b3a0c790aae8cecc0dd47ee62eed010067f2"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 106,
+            "ticks": 26970806,
+            "seconds": 15.069404631035509,
+            "fps": 7.03411996660389
+          },
+          "30": {
+            "intervals": 209,
+            "ticks": 53852007,
+            "seconds": 30.088744239840537,
+            "fps": 6.946119064791772
+          },
+          "60": {
+            "intervals": 409,
+            "ticks": 107614407,
+            "seconds": 60.12742233999014,
+            "fps": 6.802220751911034
+          }
+        },
+        "events_sha256": "4c2758164f0efbc45e441e78d1bfb8b44cf5b852e3471d61fd71dd93f548e1d1",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 10,
+      "block": 2,
+      "menu_frames": 3548,
+      "name": "b02-v9-010",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 93715993,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4448056960,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "edf943028aaf8c642bde487e0291b115706125b9d3eb57d5e7d1d3da7feb20ba",
+        "ram_sha256": "45ba211fb8609e07da7e27d933ef2f7b54f9582a0ece0a7d7ab5d18abebab883",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001d43f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53203102d021212121204262c900006449a78ea962a2a2a2ad600b7ae64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "1a8a9d9af12b3fda6cf931ad0a575b6d532b86d8d562ec6174802c6a5fec7591"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 105,
+            "ticks": 27030540,
+            "seconds": 15.102779822575215,
+            "fps": 6.9523624944229745
+          },
+          "30": {
+            "intervals": 212,
+            "ticks": 53732536,
+            "seconds": 30.021992180570436,
+            "fps": 7.061490081167954
+          },
+          "60": {
+            "intervals": 424,
+            "ticks": 107614404,
+            "seconds": 60.12742066379945,
+            "fps": 7.051691147218545
+          }
+        },
+        "events_sha256": "553efa9efabec7433afb3982fce6ac704f9a49a96b790c6115983d81b5d3200d",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 8,
+      "block": 2,
+      "menu_frames": 3109,
+      "name": "b02-original-008",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 85319933,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4433697454,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "493d120c7264ac46d7a7f38fdfae125f10c614ca60614d938721933c8996e386",
+        "ram_sha256": "50bfdff3ab5c41510c3b0c03b1f1b4abb6243eaf77b95d18a681b605ab62bc2b",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f001433f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532041d0c231212121204262c900006449a78ea962a2a2a2ad600efae64ff000004001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "c2ee3b58235df6cc641bf347cb7398f3df4659e9d3a220131124cf70d208665d"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 84,
+            "ticks": 27000671,
+            "seconds": 15.086091109344903,
+            "fps": 5.568042734937958
+          },
+          "30": {
+            "intervals": 170,
+            "ticks": 53762400,
+            "seconds": 30.0386781001496,
+            "fps": 5.659370210407274
+          },
+          "60": {
+            "intervals": 342,
+            "ticks": 107405327,
+            "seconds": 60.010603023568635,
+            "fps": 5.698992890734368
+          }
+        },
+        "events_sha256": "e123af5038a702be8265f4e2613eb436332b86236970ee1a12a71eaba3531147",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 8,
+      "block": 2,
+      "menu_frames": 3584,
+      "name": "b02-v9-008",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91949719,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4446154888,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "4687a285d019b69957ffad4d4ca9c75559e811427f018c398f805af1a968675e",
+        "ram_sha256": "344645af6d453d40ccfbdb67ca5ce68c56b8ec9ee39b0c4f6982bb2a8cbebf5c",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f0015f3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532002f2b551212121204262c900006449a78ea962a2a2a2ad60044af64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "645fb2a40397c25de19aab4e815333f610514292c2f4518e32631799d6021f8c"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 99,
+            "ticks": 27060410,
+            "seconds": 15.119469094535757,
+            "fps": 6.547848960898967
+          },
+          "30": {
+            "intervals": 211,
+            "ticks": 53762405,
+            "seconds": 30.03868089380075,
+            "fps": 7.024276490235137
+          },
+          "60": {
+            "intervals": 451,
+            "ticks": 107524805,
+            "seconds": 60.07735899395035,
+            "fps": 7.5069877829585465
+          }
+        },
+        "events_sha256": "6294ab370db1d7edbc9de34cf37ad06407548bf5bec4c2a857851fa327270395",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 6,
+      "block": 2,
+      "menu_frames": 3185,
+      "name": "b02-v9-006",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86578703,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4435933208,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "2603b8a62b6f1f99f089713658d47c7112d6e9dc512d8db4d3a6182b2ebfb316",
+        "ram_sha256": "b14b182029348ab30d577b514221cd42a9e8dd62b57845c25bb0cd281a4232b2",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001f73f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202f4e7ff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "68c91dbb27e107a140445ea85170bb502baedd20e938cb7d37e91e6e4e7fa2eb"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 99,
+            "ticks": 26940937,
+            "seconds": 15.052715917805196,
+            "fps": 6.576886227082599
+          },
+          "30": {
+            "intervals": 200,
+            "ticks": 53822136,
+            "seconds": 30.072054409149768,
+            "fps": 6.650692941655084
+          },
+          "60": {
+            "intervals": 408,
+            "ticks": 107465065,
+            "seconds": 60.04398045002927,
+            "fps": 6.795019199960471
+          }
+        },
+        "events_sha256": "d637df67c16fdf6e78801a5da887765b7c4c0b23d130032e8147d5f58d68eb12",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 11,
+      "block": 3,
+      "menu_frames": 3475,
+      "name": "b03-v9-011",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91547092,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4444706500,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "455c0edcf0af3b63bc0251b49be9c82273ac08d587ee4a1be17842fcd62f7f62",
+        "ram_sha256": "8d5d8dd05725920055ff5430a54515cce68a7db263947a3526cfa147e8e02478",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001013f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320420052a1212121204262c900006449a78ea962a2a2a2ad600efae64ff000004001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "88159553c2fca5003242fb5db4d91ddc6c11382ff20254cfcc9e7576f2935c96"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 98,
+            "ticks": 26851334,
+            "seconds": 15.002652013035176,
+            "fps": 6.532178438508865
+          },
+          "30": {
+            "intervals": 208,
+            "ticks": 53762401,
+            "seconds": 30.038678658879828,
+            "fps": 6.92440577570187
+          },
+          "60": {
+            "intervals": 409,
+            "ticks": 107494934,
+            "seconds": 60.060669163259575,
+            "fps": 6.8097809381416985
+          }
+        },
+        "events_sha256": "4ac4e4208461a610f592e377c68ebb50cd31fc4d938d974b9af08702c90b1565",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 12,
+      "block": 3,
+      "menu_frames": 3342,
+      "name": "b03-v9-012",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 89595062,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4441091344,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "e24c16fb434b3a5a7a573421c183c7b950e10d2322190ffc0c84d1d0dae9e357",
+        "ram_sha256": "aa8835442a1f12a5e70cb12a6d3767911023249cd17904e9b9ed0c89b883c792",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000081ff30000700fe0001f001dc3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532043000431212121204262c900006449a78ea962a2a2a2ad600efae64ff000004001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "2dea9fb79401e36c395abbcea0a7b9fb836f4c6d55b1c14906bfcbdbbdfacd75"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 102,
+            "ticks": 26940937,
+            "seconds": 15.052715917805196,
+            "fps": 6.776185809721466
+          },
+          "30": {
+            "intervals": 209,
+            "ticks": 53732534,
+            "seconds": 30.021991063109976,
+            "fps": 6.961563593855447
+          },
+          "60": {
+            "intervals": 425,
+            "ticks": 107554673,
+            "seconds": 60.09404714845043,
+            "fps": 7.072247920831854
+          }
+        },
+        "events_sha256": "da71c4f2c243de12862f632c1dc3e9b0e7c509066a2442596d4177210e47e581",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 13,
+      "block": 3,
+      "menu_frames": 3078,
+      "name": "b03-original-013",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86078092,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4434363992,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "50de039deaa172aabd969c77d7a65890e55e216854ab5d00d7da08aead6baaad",
+        "ram_sha256": "c31a6bb3e8d834f4cce1558b100ac924a2c0c40bca42ba2014c1ac9754a1192d",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f001783f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202172e151212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "06a87815944779938ec4473b10d45d3e650b15216c3dd4238dff7cd45dd969d8"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 80,
+            "ticks": 26851332,
+            "seconds": 15.002650895574718,
+            "fps": 5.332390959226902
+          },
+          "30": {
+            "intervals": 170,
+            "ticks": 53911738,
+            "seconds": 30.122117755189556,
+            "fps": 5.643693493984557
+          },
+          "60": {
+            "intervals": 349,
+            "ticks": 107614405,
+            "seconds": 60.12742122252968,
+            "fps": 5.804340064882577
+          }
+        },
+        "events_sha256": "2b6a5f9c27f5981428dd1ae860006388eddfcf7357ba3a021bcac2f7cfc1db73",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 12,
+      "block": 3,
+      "menu_frames": 3481,
+      "name": "b03-original-012",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91721300,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4444983427,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "fdfc333248057aa5d89cf3039f8e16bb0b3798ae2d7bc3ad4d892fc203ce10be",
+        "ram_sha256": "b4c3e99cb1c7e329803ce0900e27a95c9b7f888bedd4dcf529a7b948099ec45b",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001673f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320314240b1212121204262c900006449a78ea962a2a2a2ad600b7ae64ff000006001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "735a5c5c834234ef673117931009c1ea8ea351ab99fa823df5db3a1f366eadf0"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 89,
+            "ticks": 27090278,
+            "seconds": 15.136157249035842,
+            "fps": 5.879960054304353
+          },
+          "30": {
+            "intervals": 177,
+            "ticks": 53792271,
+            "seconds": 30.055367930840372,
+            "fps": 5.889131033341203
+          },
+          "60": {
+            "intervals": 355,
+            "ticks": 107465065,
+            "seconds": 60.04398045002927,
+            "fps": 5.912332882318547
+          }
+        },
+        "events_sha256": "95f7fb75c5b5011d7edefe6a0e025059d68c528a1f506f6e652406e148b06589",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 11,
+      "block": 3,
+      "menu_frames": 3297,
+      "name": "b03-original-011",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 87095741,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4437559955,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "b00e328e61672a34a62acbedccd0b981f32c473204de2858071aadd635151d8a",
+        "ram_sha256": "10400138b5321d89a3dd436ac500ff10e854fc192d36b387a80af7fa7e15a3e1",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000081ff30000700fe0001f0016b3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202d065391212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "99f5ca4f8ff6bd11668ac96452415ce29a65ea3fb649ebf75afd9bbccf478053"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 80,
+            "ticks": 26940936,
+            "seconds": 15.052715359074966,
+            "fps": 5.314655734307078
+          },
+          "30": {
+            "intervals": 160,
+            "ticks": 53792271,
+            "seconds": 30.055367930840372,
+            "fps": 5.323508278726511
+          },
+          "60": {
+            "intervals": 319,
+            "ticks": 107674140,
+            "seconds": 60.160796972799616,
+            "fps": 5.302456351172157
+          }
+        },
+        "events_sha256": "35300199bb5d70296fe188c822adc25ade3f1fefb00d8bc37e7f6b201d7c4e4e",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 13,
+      "block": 3,
+      "menu_frames": 3338,
+      "name": "b03-v9-013",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 89894568,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4441425960,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "74f257bc4ba3b3162227cda2f9269bf677a601c6379e4c1826584e018546c37e",
+        "ram_sha256": "691a51265aa1d329b23cb7bca5aba67fe7f2a529c1082bd74fd7d8fcc2f357f1",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000081ff30000700fe0001f001ff3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532026d2dff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "50cc52c79d03d0c4f2380b6507185bf3fc0c48f37e1608fca379f1c0aa92b993"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 96,
+            "ticks": 26970805,
+            "seconds": 15.069404072305279,
+            "fps": 6.370523979540099
+          },
+          "30": {
+            "intervals": 195,
+            "ticks": 53732530,
+            "seconds": 30.02198882818906,
+            "fps": 6.495239243341045
+          },
+          "60": {
+            "intervals": 403,
+            "ticks": 107614403,
+            "seconds": 60.12742010506922,
+            "fps": 6.702432921548614
+          }
+        },
+        "events_sha256": "bed0520a5ad889650d35d951cffee9a710de10aae582ab80276d15392ab3672d",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 14,
+      "block": 3,
+      "menu_frames": 3493,
+      "name": "b03-v9-014",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 92585444,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4446157489,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "43fb350af6d49b5284dac0d55d4a4b1d5a850c5413d39137fcb239dddbded3ee",
+        "ram_sha256": "618beeb9b05d9e33c7568d2892ffc00a0765ec7db5dbbb4bbc2fbf5336585044",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f0015f3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532022d854e1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000006001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "3889bfecc7a51f948fb77eb23996bb92f840c9b351499721df8569a31d49134d"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 99,
+            "ticks": 26940937,
+            "seconds": 15.052715917805196,
+            "fps": 6.576886227082599
+          },
+          "30": {
+            "intervals": 200,
+            "ticks": 53822136,
+            "seconds": 30.072054409149768,
+            "fps": 6.650692941655084
+          },
+          "60": {
+            "intervals": 393,
+            "ticks": 107494936,
+            "seconds": 60.06067028072003,
+            "fps": 6.543383518084982
+          }
+        },
+        "events_sha256": "568282879b8b11fdc3a4969787f31893983b5e8ab5a1a40ec7fc490a1279bc2b",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 14,
+      "block": 3,
+      "menu_frames": 3581,
+      "name": "b03-original-014",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 93665448,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4448300304,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "cfe41137efaee7f02e17ca8ab0f8d5266e0c4bd60549c33167aec8db275268c2",
+        "ram_sha256": "2305ae935faf75a86c436de7b4c42f0b0e01b011ce2b3f2ee9a29034f99bd883",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001a63f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53200f0f42d1212121204262c900006449a78ea962a2a2a2ad60044af64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "883f8b62199c50cd5db14dc35c53fb3e15d068b396d8a9900b1990ee4b51bfd0"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 92,
+            "ticks": 26851334,
+            "seconds": 15.002652013035176,
+            "fps": 6.132249146355261
+          },
+          "30": {
+            "intervals": 181,
+            "ticks": 53852008,
+            "seconds": 30.08874479857077,
+            "fps": 6.015538408521368
+          },
+          "60": {
+            "intervals": 346,
+            "ticks": 107494935,
+            "seconds": 60.060669721989804,
+            "fps": 5.760841522440104
+          }
+        },
+        "events_sha256": "d425b429f44188fd5e3b274495c56822f6d4efc92b932a501042c45ba3352b37",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 15,
+      "block": 3,
+      "menu_frames": 3149,
+      "name": "b03-original-015",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 86907574,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4436032392,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "b761909a3a2b38f2e0b62bb4ce1fd5447720eb539e3fb9cfc5a14a044d03efc7",
+        "ram_sha256": "9f078413dac7c1d628a7db59d90865e14d8ddb141ae2cf391c23429d413bbb76",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f001a63f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53204f000441212121204262c900006449a78ea962a2a2a2ad600efae64ff000007001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "4e6b19fdd9695cf366a45e9b915b76d3048a321948ab1e57b605829ba0913f7b"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 83,
+            "ticks": 26911070,
+            "seconds": 15.036028322035342,
+            "fps": 5.520074731328037
+          },
+          "30": {
+            "intervals": 179,
+            "ticks": 53971474,
+            "seconds": 30.15549406418972,
+            "fps": 5.935900092333961
+          },
+          "60": {
+            "intervals": 362,
+            "ticks": 107405328,
+            "seconds": 60.01060358229887,
+            "fps": 6.0322672726254325
+          }
+        },
+        "events_sha256": "5dd653a65e6b6c863aee89febe8fcee47366b5ee8d710ae8de51aed2fc79e03a",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 15,
+      "block": 3,
+      "menu_frames": 3289,
+      "name": "b03-v9-015",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 88902203,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4439755760,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "26dc0c7cfe01795fe61222a90a2f921bf8b3e32bb4b7b12108c317d6d1261f72",
+        "ram_sha256": "23ee10d6a4a5a9eaa59bbd4b6e57b5f8df6f322e843a6e6c34dde5cdcc2349b5",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000081ff30000700fe0001f001cd3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320420032c1212121204262c900006449a78ea962a2a2a2ad600efae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "8fc413487020200852b40c406a4154f1088a5cb0cfd7f327508d4f46de9f99f4"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 100,
+            "ticks": 26911069,
+            "seconds": 15.036027763305112,
+            "fps": 6.650692694519122
+          },
+          "30": {
+            "intervals": 204,
+            "ticks": 53911740,
+            "seconds": 30.122118872650017,
+            "fps": 6.772431941540006
+          },
+          "60": {
+            "intervals": 413,
+            "ticks": 107644268,
+            "seconds": 60.144106583378615,
+            "fps": 6.866840717426775
+          }
+        },
+        "events_sha256": "2a83105fc20a56cd5af112a1608895a7329c3fb0d150d29ba943303a931810a3",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 17,
+      "block": 4,
+      "menu_frames": 3581,
+      "name": "b04-v9-017",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 93838011,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4448501509,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "b38b805631387b15d6a8affe1ecce49145c8a94ebe1e5c5ba32ca9313a9a9f47",
+        "ram_sha256": "8ad2dd9f561195310d7d6b558c190718692fef3537f4dbffa470fc006a76bdaa",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001503f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532022c824a1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000002001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "6b0e1d7ef5dfd8e4535f61ee77a9e30eba779a81efa1384b4b8335e5c6b223c8"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 93,
+            "ticks": 26911067,
+            "seconds": 15.036026645844654,
+            "fps": 6.185144665575691
+          },
+          "30": {
+            "intervals": 195,
+            "ticks": 53702663,
+            "seconds": 30.005301232419203,
+            "fps": 6.498851602573228
+          },
+          "60": {
+            "intervals": 408,
+            "ticks": 107554667,
+            "seconds": 60.09404379606905,
+            "fps": 6.7893583827468875
+          }
+        },
+        "events_sha256": "8e4164017042c053f868a98999e43d90361e0d76709c6d705fbd236e524f2820",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 17,
+      "block": 4,
+      "menu_frames": 3467,
+      "name": "b04-original-017",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91403303,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4444466070,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "9e648b47b27f2168bc5c4efde7b2f5eda523409c0f5ba67ea748a7020a090709",
+        "ram_sha256": "a362467998c7ef5ba804ca7576629f15c61e7ebcb50393c66cbdde7b75db2259",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f0011e3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532047000211212121204262c900006449a78ea962a2a2a2ad600efae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "bd8f1ed08bf2eccf02a88ce98635485e59b877b36f0341a2a5da13210b785920"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 81,
+            "ticks": 27120142,
+            "seconds": 15.152843168615005,
+            "fps": 5.345531468824905
+          },
+          "30": {
+            "intervals": 168,
+            "ticks": 53941612,
+            "seconds": 30.138809262071018,
+            "fps": 5.574208275421951
+          },
+          "60": {
+            "intervals": 337,
+            "ticks": 107405327,
+            "seconds": 60.010603023568635,
+            "fps": 5.615674281220707
+          }
+        },
+        "events_sha256": "6c9b96826cb8005f49a9ff523a5583dc21d546ec311289e000688734ae305e11",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 20,
+      "block": 4,
+      "menu_frames": 3425,
+      "name": "b04-original-020",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 91375721,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4444053420,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "bccd34b0b1b5627a8f2af73ffacae94d200d57b4acbd92089945923aaa029b84",
+        "ram_sha256": "bccd7707ff60fbf0680de9f64ff40ae382148cc02835f17e72578196febdee44",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000083ff30000700fe0001f001bd3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202103a001212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "353cd410cff67220d0ac428dab30fe3e4c5a2caa15901e4410a86d01b0735820"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 86,
+            "ticks": 27060407,
+            "seconds": 15.119467418345069,
+            "fps": 5.688031041070446
+          },
+          "30": {
+            "intervals": 170,
+            "ticks": 53852002,
+            "seconds": 30.08874144618939,
+            "fps": 5.649953830871506
+          },
+          "60": {
+            "intervals": 341,
+            "ticks": 107584532,
+            "seconds": 60.11073027437845,
+            "fps": 5.6728640368115375
+          }
+        },
+        "events_sha256": "967921ea27641112a67f69e3bf8b4abcaca830c4180ef0bb168234879e736321",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 19,
+      "block": 4,
+      "menu_frames": 3390,
+      "name": "b04-original-019",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 90564885,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4442736712,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "279cf2f0a5289540f479da80022df199976a34aebb539b9e0950d2891f3f0924",
+        "ram_sha256": "408f80b2943e74b9c13ab813946317feb81373251b7378c563242fc925548748",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001e83f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532007000111212121204262c900006449a78ea962a2a2a2ad60044af64ff000006001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "cc80c1a186f021eea1c60d89cbafad86e0dbef74075169c4b222a60aaf431ba1"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 84,
+            "ticks": 26970803,
+            "seconds": 15.06940295484482,
+            "fps": 5.574208895448905
+          },
+          "30": {
+            "intervals": 170,
+            "ticks": 53792268,
+            "seconds": 30.055366254649684,
+            "fps": 5.656227861595276
+          },
+          "60": {
+            "intervals": 355,
+            "ticks": 107644273,
+            "seconds": 60.144109377029764,
+            "fps": 5.902489930885594
+          }
+        },
+        "events_sha256": "15c450cebb5896307d07fd2ad151de0e392ecf135e97996d56a66465b6d2c40c",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 20,
+      "block": 4,
+      "menu_frames": 3272,
+      "name": "b04-v9-020",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 88810148,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4439486685,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "90456081867440c1b72ae1f8d1bbc5f3dd3536b6db03ca4583744a78fa6cab26",
+        "ram_sha256": "f9980f4d9930d025aa7fab98c3a47c53bffaeef317740e59a7fb3b084b4929e3",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000081ff30000700fe0001f001c63f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320224a6361212121204262c900006449a78ea962a2a2a2ad60096ae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "606ef0a3acad448fdf0f6d51edcf54ad40f1b3a58a82625645ee505346eb75e2"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 100,
+            "ticks": 26970803,
+            "seconds": 15.06940295484482,
+            "fps": 6.635962970772505
+          },
+          "30": {
+            "intervals": 196,
+            "ticks": 53822137,
+            "seconds": 30.072054967879996,
+            "fps": 6.517678961725358
+          },
+          "60": {
+            "intervals": 414,
+            "ticks": 107465065,
+            "seconds": 60.04398045002927,
+            "fps": 6.894945952901066
+          }
+        },
+        "events_sha256": "0b333989a6e95f22cac21e0cf9fe21925d8482c728ae1543a5454977918bdb1a",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 18,
+      "block": 4,
+      "menu_frames": 3101,
+      "name": "b04-v9-018",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 85969806,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4434431689,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "aabd67124d3986f90bc4bd91d93ec2c71a9701c205234b54b214d65c362c9896",
+        "ram_sha256": "5fe33f16d2540c41945fa48c6ccef95997107de8f082e0b015c3c0d1f10e83ec",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e900056160000000000000000008cff30000700fe0001f001563f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53200307a2b1212121204262c900006449a78ea962a2a2a2ad60044af64ff000005001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "4a557dfe710a5a3f059daf6ce0ddb2e28aa1bc8171355ac4c367bc1f18e5e8f6"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 111,
+            "ticks": 27030539,
+            "seconds": 15.102779263844987,
+            "fps": 7.349640623148506
+          },
+          "30": {
+            "intervals": 218,
+            "ticks": 53911741,
+            "seconds": 30.122119431380245,
+            "fps": 7.23720654838433
+          },
+          "60": {
+            "intervals": 420,
+            "ticks": 107435197,
+            "seconds": 60.02729229552918,
+            "fps": 6.996817346553569
+          }
+        },
+        "events_sha256": "50f5e72ee48dcf42edf680689a0bddf465a82237c55db7672a3e91a301c294e0",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 16,
+      "block": 4,
+      "menu_frames": 3217,
+      "name": "b04-v9-016",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 87798656,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4437737012,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "66487c76a2fae3778564d9e0f80d345d9f221505b01459c81711937219cbc6da",
+        "ram_sha256": "336847213fdd89a6c62f0258d95a9ef3c299fefa8b884c6cd4702200a2d36553",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001713f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c5320226eb3a1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000001001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "b03b8907bd66682129ffbeef510d1625da30f9ed6a1cdc5fcb3cd071d63034e7"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 108,
+            "ticks": 27090277,
+            "seconds": 15.136156690305612,
+            "fps": 7.1352326888351865
+          },
+          "30": {
+            "intervals": 211,
+            "ticks": 53822134,
+            "seconds": 30.072053291689308,
+            "fps": 7.016481314174573
+          },
+          "60": {
+            "intervals": 395,
+            "ticks": 107494931,
+            "seconds": 60.06066748706889,
+            "fps": 6.576683485661292
+          }
+        },
+        "events_sha256": "6d6e4910e2cadfdf6cacf1a8de8c76364101fa35668c0678cf041d686c553ada",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 18,
+      "block": 4,
+      "menu_frames": 3543,
+      "name": "b04-original-018",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 93479570,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4447727172,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "94b19f2092d4e2af0b72b5e302431545114dfb5458cca3a02f7a46094d1192a4",
+        "ram_sha256": "0671e9c8a8efd3b9b2c33d61d46aaecba8bb5db5dcbf522a4662be3b4a2fa783",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000010000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f001873f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532041c0d221212121204262c900006449a78ea962a2a2a2ad600efae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "e8b324d8babda258f6f80b84123445da78bc807db7c6cb225adf9179789957cc"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 80,
+            "ticks": 26881203,
+            "seconds": 15.019340726265488,
+            "fps": 5.326465485938259
+          },
+          "30": {
+            "intervals": 164,
+            "ticks": 53852005,
+            "seconds": 30.08874312238008,
+            "fps": 5.450543392024122
+          },
+          "60": {
+            "intervals": 335,
+            "ticks": 107524802,
+            "seconds": 60.077357317759656,
+            "fps": 5.576144074182997
+          }
+        },
+        "events_sha256": "2f8e2e9e56daabbd9b9949373cd43c021c933dece4248c5ed6b5bb00d6cc5c5b",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "v9",
+      "trial": 19,
+      "block": 4,
+      "menu_frames": 3552,
+      "name": "b04-v9-019",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 93524927,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4447854165,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 5,
+          "size": 131072,
+          "bank": 2
+        },
+        "terrain_sha256": "9e2d9c5e7975e289c287f20e7a27bf1de99be5e2e8121290c65d12913e1abb98",
+        "ram_sha256": "16fdeaa88fdec273017f0542c7d4c57192f401547792ea78df73ca9d133564a2",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000000ff30000700fe0001f0010e3f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c53202e63cff1212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "b1a90bdff938b1aa63f70137c7eba8ad81980c64ee2b7778751609eafb46ed90"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 102,
+            "ticks": 26911070,
+            "seconds": 15.036028322035342,
+            "fps": 6.783706296330841
+          },
+          "30": {
+            "intervals": 203,
+            "ticks": 53941607,
+            "seconds": 30.13880646841987,
+            "fps": 6.735502290467542
+          },
+          "60": {
+            "intervals": 396,
+            "ticks": 107405330,
+            "seconds": 60.01060469975933,
+            "fps": 6.598833689166078
+          }
+        },
+        "events_sha256": "619e426747c90e1cc7a8fbfe3ca61b579375bed7b35719570640d856abc5388a",
+        "modes": [
+          2
+        ]
+      }
+    },
+    {
+      "variant": "original",
+      "trial": 16,
+      "block": 4,
+      "menu_frames": 3504,
+      "name": "b04-original-016",
+      "entry": {
+        "regs": {
+          "ok": true,
+          "PC": "$a32e",
+          "A": "$02",
+          "X": "$30",
+          "Y": "$ff",
+          "S": "$ff",
+          "P": "$35",
+          "flags": "---B-I-C",
+          "cycles": 92476318,
+          "mode": "6502"
+        },
+        "clock": {
+          "ok": true,
+          "tick": 4446128005,
+          "running": false,
+          "step_requested": 0,
+          "step_elapsed": 0,
+          "step_completed": false
+        },
+        "config": {
+          "ok": true,
+          "basic": false,
+          "machine": "800XL",
+          "memory": "64K",
+          "video": "ntsc",
+          "selftest": false,
+          "fastboot": true,
+          "u1mb": false,
+          "u1mbrom_id": "$0000000000000008",
+          "fppatch": false,
+          "stereo": false,
+          "stereomono": false,
+          "siopatch": "on",
+          "burstio": false,
+          "accuratedisk": false,
+          "casautoboot": true,
+          "casautobasicboot": false,
+          "artifact": "none",
+          "axlonmemsize": "none",
+          "highbanks": 0,
+          "highbanks_overridden": false,
+          "randmem": false,
+          "randdelay": false,
+          "diskemu": "generic",
+          "vbxe": false,
+          "covox": false,
+          "soundboard": false,
+          "rapidus": false,
+          "slightsid": false,
+          "addons": "off",
+          "exeloadmode": "default",
+          "kernel_id": "$0000000000000000",
+          "actual_kernel_id": "$0000000000000003",
+          "basic_id": "$0000000000000000",
+          "actual_basic_id": "$0000000000000005",
+          "debugbrkrun": false,
+          "history": false
+        },
+        "cart": {
+          "ok": true,
+          "present": true,
+          "mode": 4,
+          "size": 65536,
+          "bank": 2
+        },
+        "terrain_sha256": "7a99d5aa61f93fb43224eb5bf193fe280df4ba47498183bf56b962a56afc383b",
+        "ram_sha256": "4aed4fe5ff1942adffda56cdc588e7f6f53d04f4d25e0763a5b92bde6e71d68d",
+        "zero_page_hex": "ff0000640000010000009be400000000c0ff0004230000000000000000000000000032000000000000f4000000004d00000000004f0000000000000000000000000000005400000000ff02001ec0fe000000022700020000407c00000000427c000000ff0100407b0018cc0023040007db00ff1f1f000f0f01ff813500008053a008001e9000561600000000000000000084ff30000700fe0001f001833f3a1bff1de23363636b93bbe30b335b83abd3fb234b739b62eb0000910b923307070f0060b11010c532021369091212121204262c900006449a78ea962a2a2a2ad60096ae64ff000000001616171717171717171818181818181919191919191a1a00",
+        "game_data_sha256": "906c4a918ecfe040b9e22ba3bc50568a43b4c8d92f0139949015d373e135a74a"
+      },
+      "measurement": {
+        "checkpoints": {
+          "15": {
+            "intervals": 86,
+            "ticks": 27060408,
+            "seconds": 15.119467977075299,
+            "fps": 5.688030830872912
+          },
+          "30": {
+            "intervals": 166,
+            "ticks": 54001343,
+            "seconds": 30.172182777420034,
+            "fps": 5.501756410021136
+          },
+          "60": {
+            "intervals": 330,
+            "ticks": 107584539,
+            "seconds": 60.11073418549005,
+            "fps": 5.489868065521943
+          }
+        },
+        "events_sha256": "e554463f95140e3c643cf1d338311d29556d2a8f83ddff3deeacbbc7894c3a9e",
+        "modes": [
+          2
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "workers": 4,
+  "video": "pal",
+  "seconds": 15,
+  "emulator_sha256": "fe812e8385409d273cd518e6cbbc2ceca5176f65886384835d30067ae343c97b",
+  "results": [
+    {
+      "variant": "original",
+      "menu_frames": 3165,
+      "checks": {
+        "events": true,
+        "entry_ram": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "variant": "original",
+      "menu_frames": 3047,
+      "checks": {
+        "events": true,
+        "entry_ram": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "variant": "v9",
+      "menu_frames": 3058,
+      "checks": {
+        "events": true,
+        "entry_ram": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    },
+    {
+      "variant": "v9",
+      "menu_frames": 3005,
+      "checks": {
+        "events": true,
+        "entry_ram": true,
+        "entry": true,
+        "after-warmup": true,
+        "end": true
+      },
+      "passed": true
+    }
+  ]
+}
