@@ -406,6 +406,12 @@
       "git_blob_sha": "8a351b916a05ac02eb9b726a8bba9a0053da96b5"
     },
     {
+      "path": "docs/POMIAR_NTSC_V9_PL.md",
+      "bytes": 5175,
+      "sha256": "d1b587e8e6ed11c05dd9a1ade551cd2d23a4509ed2f97c57185b76d0e0a5baff",
+      "git_blob_sha": "de4f646747f81d720517650e0ceed031590245f6"
+    },
+    {
       "path": "docs/POMIAR_ORYGINALU_PL.txt",
       "bytes": 7225,
       "sha256": "e6d069157c58de4d0a3ee727f08aa05ebef0159137dab8d7dab749807f5a8f1c",
@@ -722,6 +728,42 @@
       "bytes": 5126,
       "sha256": "1b5572d87d945711aa4a0113d538104a8f61e21c890e2a703311fcb263cb7e5d",
       "git_blob_sha": "783b57e6e3208f9ff89d9b63c5d0316509f406f8"
+    },
+    {
+      "path": "results/ntsc_v9/benchmark.json",
+      "bytes": 5641,
+      "sha256": "09bfc9f5924efe485df682bd61d35d6217c47c257acbde4f43b6f0b4ea914eed",
+      "git_blob_sha": "4388cc92fd0288f0ad08c60ef17ed9cb5f32213e"
+    },
+    {
+      "path": "results/ntsc_v9/preparation.json",
+      "bytes": 4240,
+      "sha256": "5eb0343f9520f179c5c9087972968218829030d0604d02c8ecec8c06e38bf5dd",
+      "git_blob_sha": "d6934d08887d7a52cd651c9bef4ab9586a2a7b63"
+    },
+    {
+      "path": "results/ntsc_v9/stress.json",
+      "bytes": 3599,
+      "sha256": "4f141eca20bbf7fff834fcd6a4150134ca7f4cb37df231e5a04219a5128f6c0c",
+      "git_blob_sha": "3176e1bf74c90ec32a6965d26753123bb0ed9ae2"
+    },
+    {
+      "path": "results/ntsc_v9/summary.json",
+      "bytes": 1387,
+      "sha256": "868cfe0dbbac65b08b3738ea583059b0b780330eb0f0e9359a78aab41eb328bd",
+      "git_blob_sha": "549110dfa4f34e1c5272302269adb711cd49fb4a"
+    },
+    {
+      "path": "results/ntsc_v9/validation.json",
+      "bytes": 32038,
+      "sha256": "d0e6e446eb610d4669e04353986704999ea3d82d9a4f0e37d8905956c3c88841",
+      "git_blob_sha": "78bdac5eb587cf37fdbc7e8a14398bb072a42fb9"
+    },
+    {
+      "path": "results/ntsc_v9/visual-controls.json",
+      "bytes": 1842,
+      "sha256": "f8834c2e63daf2714fb7d3049f3e5dbdeabcfdaf954b7e2d7760c3565602ea90",
+      "git_blob_sha": "f106e1836ada2c60646260fffba93e101cc2a655"
     },
     {
       "path": "results/opt14/benchmark.json",
@@ -1102,6 +1144,12 @@
       "git_blob_sha": "70cd83670b7ebf3a4ff3b4b422c041dcdc1ab8b8"
     },
     {
+      "path": "scripts/benchmark_ntsc_v9.py",
+      "bytes": 1157,
+      "sha256": "d23c028ed6340d55c8e829b9aceaf62ce6da31774687eada994f02a0d1e4dc04",
+      "git_blob_sha": "a69303b7e99805637e5bbc44ffd8f0355d9c7bac"
+    },
+    {
       "path": "scripts/benchmark_opt14.py",
       "bytes": 1495,
       "sha256": "d39d4aef5eb4a3f4d0b78ceaa60ae362a0a3298476cf8a453d138797a2c1b34f",
@@ -1264,6 +1312,12 @@
       "git_blob_sha": "1f4a6ec0f34d0b98d59f2387976fced966b9d1c8"
     },
     {
+      "path": "scripts/ntsc_v9_common.py",
+      "bytes": 1405,
+      "sha256": "2ce151df0d3dd9efd4feb4cbceac0d5f08741b64dcf092bd444708eba4870767",
+      "git_blob_sha": "19f33ea2e6a31bc080d77aef6885f66ae6dbd2b0"
+    },
+    {
       "path": "scripts/opt14_common.py",
       "bytes": 1054,
       "sha256": "993db0e6fdbe337ef3f549b8b754fb7ece7e56b8fc8ec081e9dea835d971d194",
@@ -1274,6 +1328,18 @@
       "bytes": 356,
       "sha256": "4576bf56ecf3f5e499bb66660b290061c6a7c8c5177331852bf739d8687958a2",
       "git_blob_sha": "983002d290fb2c890f098d1b2e04a4308ab06323"
+    },
+    {
+      "path": "scripts/prepare_ntsc_v9.py",
+      "bytes": 1160,
+      "sha256": "29f0a8338123f52a11ff0df7aace8ef78f2e124d61fb34e963bcb7995583a983",
+      "git_blob_sha": "d948ed0aee168547e7263acc05ad13c5db2fd40c"
+    },
+    {
+      "path": "scripts/prepare_ntsc_v9_backup.py",
+      "bytes": 1244,
+      "sha256": "7d5c5dd05ea3bc2700adce06d7409e7f0398ed52e2cab9ae2ec99bac6bde10eb",
+      "git_blob_sha": "cac157e015eb0ea2e40e21ee81d4793624d85191"
     },
     {
       "path": "scripts/prepare_pmg_checks.py",
@@ -1420,6 +1486,12 @@
       "git_blob_sha": "8963d54b95b37ab878590a01487c82e10c3282db"
     },
     {
+      "path": "scripts/report_ntsc_v9.py",
+      "bytes": 6274,
+      "sha256": "ef54ee7e956616b1f8d527ae8f84e37822bb8f48d13913a7a25ae1b095473704",
+      "git_blob_sha": "7c653314bcde4258f28fd9a0366d0874a1bc031d"
+    },
+    {
       "path": "scripts/report_pmg_trial.py",
       "bytes": 5467,
       "sha256": "41b04d2f78cc5ef31275a2243592e896bff6096b31317b550ad16443c6bdb4d8",
@@ -1532,6 +1604,12 @@
       "bytes": 1884,
       "sha256": "3800264a08f16b3debbb8996d19266467212d4a5cf847c4df62c73693f697be0",
       "git_blob_sha": "47d5cac8201c611c85353f99bd6f04782744188f"
+    },
+    {
+      "path": "scripts/stress_ntsc_v9.py",
+      "bytes": 1747,
+      "sha256": "4929aa309203d80b469d3d58c77f7864c840a37f78595f3a8cc4ed718c4753d9",
+      "git_blob_sha": "be00bf5928758bc04bf2ac77dd5e498a8e9114e6"
     },
     {
       "path": "scripts/stress_opt14.py",
@@ -1738,10 +1816,22 @@
       "git_blob_sha": "2e406b58bb15ba898553ab2b07e848228f275e73"
     },
     {
+      "path": "scripts/validate_ntsc_v9.py",
+      "bytes": 1374,
+      "sha256": "699502764ce30702c39895df28d6941eb8a7b84f2634368f5a2bb20017a7449a",
+      "git_blob_sha": "ab0be56e6fbab472d367c8acf00701efe8dc511b"
+    },
+    {
       "path": "scripts/validate_pmg_trial.py",
       "bytes": 1178,
       "sha256": "3de68ea98cc24d3193febd50b990cf1217f902bd57eead9786b1f39d1a2be491",
       "git_blob_sha": "430cb69c7388f41a76fa4f5f9df656220ad58b57"
+    },
+    {
+      "path": "scripts/visual_ntsc_v9.py",
+      "bytes": 1492,
+      "sha256": "88ac229954fd78eae3a9b8f2971172df6b4733e3fb18f19180c62fc49c229273",
+      "git_blob_sha": "54c2660a97e5c075eb86387fccfb9e2f9256a12c"
     },
     {
       "path": "src/audit_interpolation.asm",
@@ -1964,5 +2054,6 @@
   "v6_reconstruction_verified": true,
   "v7_reconstruction_verified": true,
   "v8_reconstruction_verified": true,
-  "v9_reconstruction_verified": true
+  "v9_reconstruction_verified": true,
+  "v9_ntsc_tested": "2026-10-22"
 }

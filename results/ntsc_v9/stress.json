@@ -1,0 +1,172 @@
+{
+  "result": "pass",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "configuration": {
+    "ok": true,
+    "basic": false,
+    "machine": "800XL",
+    "memory": "64K",
+    "video": "ntsc",
+    "selftest": false,
+    "fastboot": true,
+    "u1mb": false,
+    "u1mbrom_id": "$0000000000000008",
+    "fppatch": false,
+    "stereo": false,
+    "stereomono": false,
+    "siopatch": "on",
+    "burstio": false,
+    "accuratedisk": false,
+    "casautoboot": true,
+    "casautobasicboot": false,
+    "artifact": "none",
+    "axlonmemsize": "none",
+    "highbanks": 0,
+    "highbanks_overridden": false,
+    "randmem": false,
+    "randdelay": false,
+    "diskemu": "generic",
+    "vbxe": false,
+    "covox": false,
+    "soundboard": false,
+    "rapidus": false,
+    "slightsid": false,
+    "addons": "off",
+    "exeloadmode": "default",
+    "kernel_id": "$0000000000000000",
+    "actual_kernel_id": "$0000000000000003",
+    "basic_id": "$0000000000000000",
+    "actual_basic_id": "$0000000000000005",
+    "debugbrkrun": false,
+    "history": false
+  },
+  "checks": [
+    {
+      "name": "cold-title",
+      "frames": 3600,
+      "ticks": 107554668,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "cold-flight",
+      "frames": 2400,
+      "ticks": 71683200,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "select7-left",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "select7-right",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "select7-center",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 0,
+      "bank": 2
+    },
+    {
+      "name": "select15-left",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "select15-right",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 2,
+      "bank": 11
+    },
+    {
+      "name": "select15-center",
+      "frames": 3600,
+      "ticks": 107524800,
+      "mode": 2,
+      "bank": 5
+    },
+    {
+      "name": "start-bank5",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 5
+    },
+    {
+      "name": "start-bank6",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-bank8",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 5
+    },
+    {
+      "name": "start-bank9",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-bank10",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 9
+    },
+    {
+      "name": "start-bank11",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-bank12",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-bank13",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "start-bank14",
+      "frames": 1800,
+      "ticks": 53762400,
+      "mode": 2,
+      "bank": 2
+    },
+    {
+      "name": "restart-flight",
+      "frames": 2400,
+      "ticks": 71683200,
+      "mode": 2,
+      "bank": 9
+    }
+  ],
+  "geometry_bank_selection": "Explicit test input forces all four orientations for START coverage."
+}

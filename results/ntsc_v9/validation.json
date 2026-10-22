@@ -1,0 +1,1968 @@
+{
+  "result": "pass",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "configuration": {
+    "ok": true,
+    "basic": false,
+    "machine": "800XL",
+    "memory": "64K",
+    "video": "ntsc",
+    "selftest": false,
+    "fastboot": true,
+    "u1mb": false,
+    "u1mbrom_id": "$0000000000000008",
+    "fppatch": false,
+    "stereo": false,
+    "stereomono": false,
+    "siopatch": "on",
+    "burstio": false,
+    "accuratedisk": false,
+    "casautoboot": true,
+    "casautobasicboot": false,
+    "artifact": "none",
+    "axlonmemsize": "none",
+    "highbanks": 0,
+    "highbanks_overridden": false,
+    "randmem": false,
+    "randdelay": false,
+    "diskemu": "generic",
+    "vbxe": false,
+    "covox": false,
+    "soundboard": false,
+    "rapidus": false,
+    "slightsid": false,
+    "addons": "off",
+    "exeloadmode": "default",
+    "kernel_id": "$0000000000000000",
+    "actual_kernel_id": "$0000000000000003",
+    "basic_id": "$0000000000000000",
+    "actual_basic_id": "$0000000000000005",
+    "debugbrkrun": false,
+    "history": false
+  },
+  "pmg_checks": [
+    {
+      "state": "flight",
+      "i": 0,
+      "previous": 51
+    },
+    {
+      "state": "flight",
+      "i": 1,
+      "previous": 52
+    },
+    {
+      "state": "flight",
+      "i": 2,
+      "previous": 51
+    },
+    {
+      "state": "flight",
+      "i": 3,
+      "previous": 51
+    },
+    {
+      "state": "flight",
+      "i": 4,
+      "previous": 50
+    },
+    {
+      "state": "flight",
+      "i": 5,
+      "previous": 50
+    },
+    {
+      "state": "flight",
+      "i": 6,
+      "previous": 49
+    },
+    {
+      "state": "flight",
+      "i": 7,
+      "previous": 49
+    },
+    {
+      "state": "flight",
+      "i": 8,
+      "previous": 49
+    },
+    {
+      "state": "flight",
+      "i": 9,
+      "previous": 48
+    },
+    {
+      "state": "flight",
+      "i": 10,
+      "previous": 48
+    },
+    {
+      "state": "flight",
+      "i": 11,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 12,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 13,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 14,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 15,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 16,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 17,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 18,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 19,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 20,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 21,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 22,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 23,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 24,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 25,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 26,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 27,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 28,
+      "previous": 42
+    },
+    {
+      "state": "flight",
+      "i": 29,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 30,
+      "previous": 42
+    },
+    {
+      "state": "flight",
+      "i": 31,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 32,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 33,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 34,
+      "previous": 42
+    },
+    {
+      "state": "flight",
+      "i": 35,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 36,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 37,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 38,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 39,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 40,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 41,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 42,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 43,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 44,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 45,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 46,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 47,
+      "previous": 42
+    },
+    {
+      "state": "flight",
+      "i": 48,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 49,
+      "previous": 41
+    },
+    {
+      "state": "flight",
+      "i": 50,
+      "previous": 42
+    },
+    {
+      "state": "flight",
+      "i": 51,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 52,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 53,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 54,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 55,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 56,
+      "previous": 43
+    },
+    {
+      "state": "flight",
+      "i": 57,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 58,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 59,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 60,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 61,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 62,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 63,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 64,
+      "previous": 44
+    },
+    {
+      "state": "flight",
+      "i": 65,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 66,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 67,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 68,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 69,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 70,
+      "previous": 45
+    },
+    {
+      "state": "flight",
+      "i": 71,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 72,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 73,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 74,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 75,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 76,
+      "previous": 46
+    },
+    {
+      "state": "flight",
+      "i": 77,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 78,
+      "previous": 47
+    },
+    {
+      "state": "flight",
+      "i": 79,
+      "previous": 47
+    },
+    {
+      "state": "select7",
+      "i": 0,
+      "previous": 20
+    },
+    {
+      "state": "select7",
+      "i": 1,
+      "previous": 21
+    },
+    {
+      "state": "select7",
+      "i": 2,
+      "previous": 21
+    },
+    {
+      "state": "select7",
+      "i": 3,
+      "previous": 22
+    },
+    {
+      "state": "select7",
+      "i": 4,
+      "previous": 22
+    },
+    {
+      "state": "select7",
+      "i": 5,
+      "previous": 22
+    },
+    {
+      "state": "select7",
+      "i": 6,
+      "previous": 23
+    },
+    {
+      "state": "select7",
+      "i": 7,
+      "previous": 24
+    },
+    {
+      "state": "select7",
+      "i": 8,
+      "previous": 24
+    },
+    {
+      "state": "select7",
+      "i": 9,
+      "previous": 25
+    },
+    {
+      "state": "select7",
+      "i": 10,
+      "previous": 26
+    },
+    {
+      "state": "select7",
+      "i": 11,
+      "previous": 26
+    },
+    {
+      "state": "select7",
+      "i": 12,
+      "previous": 27
+    },
+    {
+      "state": "select7",
+      "i": 13,
+      "previous": 27
+    },
+    {
+      "state": "select7",
+      "i": 14,
+      "previous": 27
+    },
+    {
+      "state": "select7",
+      "i": 15,
+      "previous": 28
+    },
+    {
+      "state": "select7",
+      "i": 16,
+      "previous": 28
+    },
+    {
+      "state": "select7",
+      "i": 17,
+      "previous": 29
+    },
+    {
+      "state": "select7",
+      "i": 18,
+      "previous": 29
+    },
+    {
+      "state": "select7",
+      "i": 19,
+      "previous": 30
+    },
+    {
+      "state": "select7",
+      "i": 20,
+      "previous": 30
+    },
+    {
+      "state": "select7",
+      "i": 21,
+      "previous": 31
+    },
+    {
+      "state": "select7",
+      "i": 22,
+      "previous": 31
+    },
+    {
+      "state": "select7",
+      "i": 23,
+      "previous": 31
+    },
+    {
+      "state": "select7",
+      "i": 24,
+      "previous": 32
+    },
+    {
+      "state": "select7",
+      "i": 25,
+      "previous": 32
+    },
+    {
+      "state": "select7",
+      "i": 26,
+      "previous": 33
+    },
+    {
+      "state": "select7",
+      "i": 27,
+      "previous": 32
+    },
+    {
+      "state": "select7",
+      "i": 28,
+      "previous": 33
+    },
+    {
+      "state": "select7",
+      "i": 29,
+      "previous": 34
+    },
+    {
+      "state": "select7",
+      "i": 30,
+      "previous": 34
+    },
+    {
+      "state": "select7",
+      "i": 31,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 32,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 33,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 34,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 35,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 36,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 37,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 38,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 39,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 40,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 41,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 42,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 43,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 44,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 45,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 46,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 47,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 48,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 49,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 50,
+      "previous": 38
+    },
+    {
+      "state": "select7",
+      "i": 51,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 52,
+      "previous": 38
+    },
+    {
+      "state": "select7",
+      "i": 53,
+      "previous": 38
+    },
+    {
+      "state": "select7",
+      "i": 54,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 55,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 56,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 57,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 58,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 59,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 60,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 61,
+      "previous": 37
+    },
+    {
+      "state": "select7",
+      "i": 62,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 63,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 64,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 65,
+      "previous": 36
+    },
+    {
+      "state": "select7",
+      "i": 66,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 67,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 68,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 69,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 70,
+      "previous": 35
+    },
+    {
+      "state": "select7",
+      "i": 71,
+      "previous": 34
+    },
+    {
+      "state": "select7",
+      "i": 72,
+      "previous": 34
+    },
+    {
+      "state": "select7",
+      "i": 73,
+      "previous": 34
+    },
+    {
+      "state": "select7",
+      "i": 74,
+      "previous": 33
+    },
+    {
+      "state": "select7",
+      "i": 75,
+      "previous": 33
+    },
+    {
+      "state": "select7",
+      "i": 76,
+      "previous": 33
+    },
+    {
+      "state": "select7",
+      "i": 77,
+      "previous": 32
+    },
+    {
+      "state": "select7",
+      "i": 78,
+      "previous": 32
+    },
+    {
+      "state": "select7",
+      "i": 79,
+      "previous": 32
+    },
+    {
+      "state": "select15",
+      "i": 0,
+      "previous": 45
+    },
+    {
+      "state": "select15",
+      "i": 1,
+      "previous": 45
+    },
+    {
+      "state": "select15",
+      "i": 2,
+      "previous": 46
+    },
+    {
+      "state": "select15",
+      "i": 3,
+      "previous": 47
+    },
+    {
+      "state": "select15",
+      "i": 4,
+      "previous": 47
+    },
+    {
+      "state": "select15",
+      "i": 5,
+      "previous": 47
+    },
+    {
+      "state": "select15",
+      "i": 6,
+      "previous": 46
+    },
+    {
+      "state": "select15",
+      "i": 7,
+      "previous": 45
+    },
+    {
+      "state": "select15",
+      "i": 8,
+      "previous": 45
+    },
+    {
+      "state": "select15",
+      "i": 9,
+      "previous": 44
+    },
+    {
+      "state": "select15",
+      "i": 10,
+      "previous": 44
+    },
+    {
+      "state": "select15",
+      "i": 11,
+      "previous": 44
+    },
+    {
+      "state": "select15",
+      "i": 12,
+      "previous": 43
+    },
+    {
+      "state": "select15",
+      "i": 13,
+      "previous": 43
+    },
+    {
+      "state": "select15",
+      "i": 14,
+      "previous": 43
+    },
+    {
+      "state": "select15",
+      "i": 15,
+      "previous": 42
+    },
+    {
+      "state": "select15",
+      "i": 16,
+      "previous": 41
+    },
+    {
+      "state": "select15",
+      "i": 17,
+      "previous": 41
+    },
+    {
+      "state": "select15",
+      "i": 18,
+      "previous": 40
+    },
+    {
+      "state": "select15",
+      "i": 19,
+      "previous": 40
+    },
+    {
+      "state": "select15",
+      "i": 20,
+      "previous": 39
+    },
+    {
+      "state": "select15",
+      "i": 21,
+      "previous": 39
+    },
+    {
+      "state": "select15",
+      "i": 22,
+      "previous": 38
+    },
+    {
+      "state": "select15",
+      "i": 23,
+      "previous": 38
+    },
+    {
+      "state": "select15",
+      "i": 24,
+      "previous": 38
+    },
+    {
+      "state": "select15",
+      "i": 25,
+      "previous": 37
+    },
+    {
+      "state": "select15",
+      "i": 26,
+      "previous": 37
+    },
+    {
+      "state": "select15",
+      "i": 27,
+      "previous": 37
+    },
+    {
+      "state": "select15",
+      "i": 28,
+      "previous": 36
+    },
+    {
+      "state": "select15",
+      "i": 29,
+      "previous": 36
+    },
+    {
+      "state": "select15",
+      "i": 30,
+      "previous": 36
+    },
+    {
+      "state": "select15",
+      "i": 31,
+      "previous": 35
+    },
+    {
+      "state": "select15",
+      "i": 32,
+      "previous": 35
+    },
+    {
+      "state": "select15",
+      "i": 33,
+      "previous": 35
+    },
+    {
+      "state": "select15",
+      "i": 34,
+      "previous": 34
+    },
+    {
+      "state": "select15",
+      "i": 35,
+      "previous": 34
+    },
+    {
+      "state": "select15",
+      "i": 36,
+      "previous": 34
+    },
+    {
+      "state": "select15",
+      "i": 37,
+      "previous": 34
+    },
+    {
+      "state": "select15",
+      "i": 38,
+      "previous": 33
+    },
+    {
+      "state": "select15",
+      "i": 39,
+      "previous": 32
+    },
+    {
+      "state": "select15",
+      "i": 40,
+      "previous": 32
+    },
+    {
+      "state": "select15",
+      "i": 41,
+      "previous": 32
+    },
+    {
+      "state": "select15",
+      "i": 42,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 43,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 44,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 45,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 46,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 47,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 48,
+      "previous": 31
+    },
+    {
+      "state": "select15",
+      "i": 49,
+      "previous": 30
+    },
+    {
+      "state": "select15",
+      "i": 50,
+      "previous": 30
+    },
+    {
+      "state": "select15",
+      "i": 51,
+      "previous": 30
+    },
+    {
+      "state": "select15",
+      "i": 52,
+      "previous": 30
+    },
+    {
+      "state": "select15",
+      "i": 53,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 54,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 55,
+      "previous": 30
+    },
+    {
+      "state": "select15",
+      "i": 56,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 57,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 58,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 59,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 60,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 61,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 62,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 63,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 64,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 65,
+      "previous": 28
+    },
+    {
+      "state": "select15",
+      "i": 66,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 67,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 68,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 69,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 70,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 71,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 72,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 73,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 74,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 75,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 76,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 77,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 78,
+      "previous": 29
+    },
+    {
+      "state": "select15",
+      "i": 79,
+      "previous": 29
+    }
+  ],
+  "sync_checks": [
+    {
+      "state": "flight",
+      "i": 0,
+      "ready": 0,
+      "beam_y": 159
+    },
+    {
+      "state": "flight",
+      "i": 1,
+      "ready": 0,
+      "beam_y": 260
+    },
+    {
+      "state": "flight",
+      "i": 2,
+      "ready": 0,
+      "beam_y": 71
+    },
+    {
+      "state": "flight",
+      "i": 3,
+      "ready": 0,
+      "beam_y": 258
+    },
+    {
+      "state": "flight",
+      "i": 4,
+      "ready": 0,
+      "beam_y": 100
+    },
+    {
+      "state": "flight",
+      "i": 5,
+      "ready": 0,
+      "beam_y": 63
+    },
+    {
+      "state": "flight",
+      "i": 6,
+      "ready": 0,
+      "beam_y": 258
+    },
+    {
+      "state": "flight",
+      "i": 7,
+      "ready": 0,
+      "beam_y": 60
+    },
+    {
+      "state": "flight",
+      "i": 8,
+      "ready": 0,
+      "beam_y": 125
+    },
+    {
+      "state": "flight",
+      "i": 9,
+      "ready": 0,
+      "beam_y": 121
+    },
+    {
+      "state": "flight",
+      "i": 10,
+      "ready": 0,
+      "beam_y": 22
+    },
+    {
+      "state": "flight",
+      "i": 11,
+      "ready": 0,
+      "beam_y": 62
+    },
+    {
+      "state": "flight",
+      "i": 12,
+      "ready": 0,
+      "beam_y": 131
+    },
+    {
+      "state": "flight",
+      "i": 13,
+      "ready": 0,
+      "beam_y": 223
+    },
+    {
+      "state": "flight",
+      "i": 14,
+      "ready": 0,
+      "beam_y": 66
+    },
+    {
+      "state": "flight",
+      "i": 15,
+      "ready": 0,
+      "beam_y": 55
+    },
+    {
+      "state": "flight",
+      "i": 16,
+      "ready": 0,
+      "beam_y": 93
+    },
+    {
+      "state": "flight",
+      "i": 17,
+      "ready": 0,
+      "beam_y": 3
+    },
+    {
+      "state": "flight",
+      "i": 18,
+      "ready": 0,
+      "beam_y": 167
+    },
+    {
+      "state": "flight",
+      "i": 19,
+      "ready": 0,
+      "beam_y": 258
+    },
+    {
+      "state": "flight",
+      "i": 20,
+      "ready": 0,
+      "beam_y": 55
+    },
+    {
+      "state": "flight",
+      "i": 21,
+      "ready": 0,
+      "beam_y": 96
+    },
+    {
+      "state": "flight",
+      "i": 22,
+      "ready": 0,
+      "beam_y": 64
+    },
+    {
+      "state": "flight",
+      "i": 23,
+      "ready": 0,
+      "beam_y": 142
+    },
+    {
+      "state": "flight",
+      "i": 24,
+      "ready": 0,
+      "beam_y": 55
+    },
+    {
+      "state": "flight",
+      "i": 25,
+      "ready": 0,
+      "beam_y": 51
+    },
+    {
+      "state": "flight",
+      "i": 26,
+      "ready": 0,
+      "beam_y": 260
+    },
+    {
+      "state": "flight",
+      "i": 27,
+      "ready": 0,
+      "beam_y": 23
+    },
+    {
+      "state": "flight",
+      "i": 28,
+      "ready": 0,
+      "beam_y": 119
+    },
+    {
+      "state": "flight",
+      "i": 29,
+      "ready": 0,
+      "beam_y": 70
+    },
+    {
+      "state": "flight",
+      "i": 30,
+      "ready": 0,
+      "beam_y": 138
+    },
+    {
+      "state": "flight",
+      "i": 31,
+      "ready": 0,
+      "beam_y": 123
+    },
+    {
+      "state": "flight",
+      "i": 32,
+      "ready": 0,
+      "beam_y": 190
+    },
+    {
+      "state": "flight",
+      "i": 33,
+      "ready": 0,
+      "beam_y": 115
+    },
+    {
+      "state": "flight",
+      "i": 34,
+      "ready": 0,
+      "beam_y": 27
+    },
+    {
+      "state": "flight",
+      "i": 35,
+      "ready": 0,
+      "beam_y": 217
+    },
+    {
+      "state": "flight",
+      "i": 36,
+      "ready": 0,
+      "beam_y": 213
+    },
+    {
+      "state": "flight",
+      "i": 37,
+      "ready": 0,
+      "beam_y": 198
+    },
+    {
+      "state": "flight",
+      "i": 38,
+      "ready": 0,
+      "beam_y": 54
+    },
+    {
+      "state": "flight",
+      "i": 39,
+      "ready": 0,
+      "beam_y": 191
+    },
+    {
+      "state": "select7",
+      "i": 0,
+      "ready": 0,
+      "beam_y": 235
+    },
+    {
+      "state": "select7",
+      "i": 1,
+      "ready": 0,
+      "beam_y": 55
+    },
+    {
+      "state": "select7",
+      "i": 2,
+      "ready": 0,
+      "beam_y": 73
+    },
+    {
+      "state": "select7",
+      "i": 3,
+      "ready": 0,
+      "beam_y": 102
+    },
+    {
+      "state": "select7",
+      "i": 4,
+      "ready": 0,
+      "beam_y": 211
+    },
+    {
+      "state": "select7",
+      "i": 5,
+      "ready": 0,
+      "beam_y": 36
+    },
+    {
+      "state": "select7",
+      "i": 6,
+      "ready": 0,
+      "beam_y": 58
+    },
+    {
+      "state": "select7",
+      "i": 7,
+      "ready": 0,
+      "beam_y": 18
+    },
+    {
+      "state": "select7",
+      "i": 8,
+      "ready": 0,
+      "beam_y": 147
+    },
+    {
+      "state": "select7",
+      "i": 9,
+      "ready": 0,
+      "beam_y": 79
+    },
+    {
+      "state": "select7",
+      "i": 10,
+      "ready": 0,
+      "beam_y": 52
+    },
+    {
+      "state": "select7",
+      "i": 11,
+      "ready": 0,
+      "beam_y": 82
+    },
+    {
+      "state": "select7",
+      "i": 12,
+      "ready": 0,
+      "beam_y": 69
+    },
+    {
+      "state": "select7",
+      "i": 13,
+      "ready": 0,
+      "beam_y": 128
+    },
+    {
+      "state": "select7",
+      "i": 14,
+      "ready": 0,
+      "beam_y": 115
+    },
+    {
+      "state": "select7",
+      "i": 15,
+      "ready": 0,
+      "beam_y": 102
+    },
+    {
+      "state": "select7",
+      "i": 16,
+      "ready": 0,
+      "beam_y": 163
+    },
+    {
+      "state": "select7",
+      "i": 17,
+      "ready": 0,
+      "beam_y": 46
+    },
+    {
+      "state": "select7",
+      "i": 18,
+      "ready": 0,
+      "beam_y": 71
+    },
+    {
+      "state": "select7",
+      "i": 19,
+      "ready": 0,
+      "beam_y": 139
+    },
+    {
+      "state": "select7",
+      "i": 20,
+      "ready": 0,
+      "beam_y": 229
+    },
+    {
+      "state": "select7",
+      "i": 21,
+      "ready": 0,
+      "beam_y": 25
+    },
+    {
+      "state": "select7",
+      "i": 22,
+      "ready": 0,
+      "beam_y": 48
+    },
+    {
+      "state": "select7",
+      "i": 23,
+      "ready": 0,
+      "beam_y": 157
+    },
+    {
+      "state": "select7",
+      "i": 24,
+      "ready": 0,
+      "beam_y": 97
+    },
+    {
+      "state": "select7",
+      "i": 25,
+      "ready": 0,
+      "beam_y": 122
+    },
+    {
+      "state": "select7",
+      "i": 26,
+      "ready": 0,
+      "beam_y": 171
+    },
+    {
+      "state": "select7",
+      "i": 27,
+      "ready": 0,
+      "beam_y": 62
+    },
+    {
+      "state": "select7",
+      "i": 28,
+      "ready": 0,
+      "beam_y": 61
+    },
+    {
+      "state": "select7",
+      "i": 29,
+      "ready": 0,
+      "beam_y": 91
+    },
+    {
+      "state": "select7",
+      "i": 30,
+      "ready": 0,
+      "beam_y": 77
+    },
+    {
+      "state": "select7",
+      "i": 31,
+      "ready": 0,
+      "beam_y": 74
+    },
+    {
+      "state": "select7",
+      "i": 32,
+      "ready": 0,
+      "beam_y": 62
+    },
+    {
+      "state": "select7",
+      "i": 33,
+      "ready": 0,
+      "beam_y": 39
+    },
+    {
+      "state": "select7",
+      "i": 34,
+      "ready": 0,
+      "beam_y": 57
+    },
+    {
+      "state": "select7",
+      "i": 35,
+      "ready": 0,
+      "beam_y": 75
+    },
+    {
+      "state": "select7",
+      "i": 36,
+      "ready": 0,
+      "beam_y": 67
+    },
+    {
+      "state": "select7",
+      "i": 37,
+      "ready": 0,
+      "beam_y": 91
+    },
+    {
+      "state": "select7",
+      "i": 38,
+      "ready": 0,
+      "beam_y": 151
+    },
+    {
+      "state": "select7",
+      "i": 39,
+      "ready": 0,
+      "beam_y": 83
+    },
+    {
+      "state": "select15",
+      "i": 0,
+      "ready": 0,
+      "beam_y": 62
+    },
+    {
+      "state": "select15",
+      "i": 1,
+      "ready": 0,
+      "beam_y": 89
+    },
+    {
+      "state": "select15",
+      "i": 2,
+      "ready": 0,
+      "beam_y": 222
+    },
+    {
+      "state": "select15",
+      "i": 3,
+      "ready": 0,
+      "beam_y": 258
+    },
+    {
+      "state": "select15",
+      "i": 4,
+      "ready": 0,
+      "beam_y": 147
+    },
+    {
+      "state": "select15",
+      "i": 5,
+      "ready": 0,
+      "beam_y": 61
+    },
+    {
+      "state": "select15",
+      "i": 6,
+      "ready": 0,
+      "beam_y": 111
+    },
+    {
+      "state": "select15",
+      "i": 7,
+      "ready": 0,
+      "beam_y": 52
+    },
+    {
+      "state": "select15",
+      "i": 8,
+      "ready": 0,
+      "beam_y": 257
+    },
+    {
+      "state": "select15",
+      "i": 9,
+      "ready": 0,
+      "beam_y": 133
+    },
+    {
+      "state": "select15",
+      "i": 10,
+      "ready": 0,
+      "beam_y": 40
+    },
+    {
+      "state": "select15",
+      "i": 11,
+      "ready": 0,
+      "beam_y": 20
+    },
+    {
+      "state": "select15",
+      "i": 12,
+      "ready": 0,
+      "beam_y": 93
+    },
+    {
+      "state": "select15",
+      "i": 13,
+      "ready": 0,
+      "beam_y": 201
+    },
+    {
+      "state": "select15",
+      "i": 14,
+      "ready": 0,
+      "beam_y": 105
+    },
+    {
+      "state": "select15",
+      "i": 15,
+      "ready": 0,
+      "beam_y": 150
+    },
+    {
+      "state": "select15",
+      "i": 16,
+      "ready": 0,
+      "beam_y": 37
+    },
+    {
+      "state": "select15",
+      "i": 17,
+      "ready": 0,
+      "beam_y": 71
+    },
+    {
+      "state": "select15",
+      "i": 18,
+      "ready": 0,
+      "beam_y": 123
+    },
+    {
+      "state": "select15",
+      "i": 19,
+      "ready": 0,
+      "beam_y": 26
+    },
+    {
+      "state": "select15",
+      "i": 20,
+      "ready": 0,
+      "beam_y": 51
+    },
+    {
+      "state": "select15",
+      "i": 21,
+      "ready": 0,
+      "beam_y": 213
+    },
+    {
+      "state": "select15",
+      "i": 22,
+      "ready": 0,
+      "beam_y": 19
+    },
+    {
+      "state": "select15",
+      "i": 23,
+      "ready": 0,
+      "beam_y": 53
+    },
+    {
+      "state": "select15",
+      "i": 24,
+      "ready": 0,
+      "beam_y": 42
+    },
+    {
+      "state": "select15",
+      "i": 25,
+      "ready": 0,
+      "beam_y": 51
+    },
+    {
+      "state": "select15",
+      "i": 26,
+      "ready": 0,
+      "beam_y": 100
+    },
+    {
+      "state": "select15",
+      "i": 27,
+      "ready": 0,
+      "beam_y": 257
+    },
+    {
+      "state": "select15",
+      "i": 28,
+      "ready": 0,
+      "beam_y": 57
+    },
+    {
+      "state": "select15",
+      "i": 29,
+      "ready": 0,
+      "beam_y": 258
+    },
+    {
+      "state": "select15",
+      "i": 30,
+      "ready": 0,
+      "beam_y": 80
+    },
+    {
+      "state": "select15",
+      "i": 31,
+      "ready": 0,
+      "beam_y": 82
+    },
+    {
+      "state": "select15",
+      "i": 32,
+      "ready": 0,
+      "beam_y": 235
+    },
+    {
+      "state": "select15",
+      "i": 33,
+      "ready": 0,
+      "beam_y": 51
+    },
+    {
+      "state": "select15",
+      "i": 34,
+      "ready": 0,
+      "beam_y": 223
+    },
+    {
+      "state": "select15",
+      "i": 35,
+      "ready": 0,
+      "beam_y": 53
+    },
+    {
+      "state": "select15",
+      "i": 36,
+      "ready": 0,
+      "beam_y": 22
+    },
+    {
+      "state": "select15",
+      "i": 37,
+      "ready": 0,
+      "beam_y": 67
+    },
+    {
+      "state": "select15",
+      "i": 38,
+      "ready": 0,
+      "beam_y": 39
+    },
+    {
+      "state": "select15",
+      "i": 39,
+      "ready": 0,
+      "beam_y": 138
+    }
+  ],
+  "start_while_waiting": true
+}

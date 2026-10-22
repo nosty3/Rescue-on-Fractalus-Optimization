@@ -1,0 +1,50 @@
+{
+  "result": "pass_with_stated_scope",
+  "version": "v9",
+  "rom_sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880",
+  "video": "ntsc",
+  "clock_hz": 1789772.5,
+  "frame_ticks": 29868,
+  "fps": 6.8109137930468435,
+  "presentation_intervals": 1639,
+  "ticks": 430696558,
+  "seconds": 240.643186773738,
+  "scenarios": [
+    {
+      "scenario": "straight",
+      "intervals": 405,
+      "ticks": 107614400,
+      "seconds": 60.12741842887853,
+      "fps": 6.735695803721435,
+      "mode_throughout": 2
+    },
+    {
+      "scenario": "right",
+      "intervals": 414,
+      "ticks": 107644272,
+      "seconds": 60.144108818299536,
+      "fps": 6.883467194613012,
+      "mode_throughout": 2
+    },
+    {
+      "scenario": "left",
+      "intervals": 408,
+      "ticks": 107674140,
+      "seconds": 60.160796972799616,
+      "fps": 6.7818250510289655,
+      "mode_throughout": 2
+    },
+    {
+      "scenario": "fast_right",
+      "intervals": 412,
+      "ticks": 107763746,
+      "seconds": 60.21086255376032,
+      "fps": 6.84261913092739,
+      "mode_throughout": 2
+    }
+  ],
+  "pmg_checks": 240,
+  "safe_clear_checks": 120,
+  "original_or_other_versions_tested": false,
+  "note": "Fresh NTSC states; not a controlled PAL/NTSC performance comparison. No physical hardware or exhaustive gameplay/audio verification."
+}
