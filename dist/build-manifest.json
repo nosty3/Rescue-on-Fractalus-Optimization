@@ -1,20 +1,20 @@
 {
-  "version": "v10",
+  "version": "v10.1",
   "cartridge": "XEGS 128 KB",
   "cartridge_type": 14,
   "rebuild": "python scripts/rebuild_current.py --mads PATH_TO_MADS",
   "files": {
     "optimized version/last_ver_info.txt": {
-      "bytes": 128,
-      "sha256": "2dc837e563bdd73195a9cc6cc5d284ce313e08accb510f499349957d4a8a6bcf"
+      "bytes": 197,
+      "sha256": "46e263b8434d06c117bff9e35469a0d34fff9700b5da2ff49c29540557982a8a"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.car": {
       "bytes": 131088,
-      "sha256": "d02a63ee5cabaecc8722719fbdb32778199fa4ff1bd48907f9f2a48fb47e88d8"
+      "sha256": "363ecf83c12518383661f67df4fb91cdc6baac533acf96de136392278c8c7c89"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.rom": {
       "bytes": 131072,
-      "sha256": "fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37"
+      "sha256": "afa04d6802a03333516936b4912f8f7abf23a1837362ac2b0ceaa83b6b6414da"
     },
     "original/Rescue on Fractalus!.rom": {
       "bytes": 65536,
@@ -22,7 +22,7 @@
     },
     "dist/fractalus-optimized-128KB.ips": {
       "bytes": 81226,
-      "sha256": "3ab81aa5b9c5d4d37a498d43893b7f9bc373ca8ea753527c6b5a4edadd4c3ee0"
+      "sha256": "d1dfc8d676e6a7f5c17ba5ee3b5be94a2b9c5ce9e1a36e4407d8c30e29aeae5f"
     }
   },
   "benchmarks": {
@@ -42,5 +42,7 @@
     }
   },
   "trials_per_version_and_system": 155,
-  "flight_limit_seconds": 60
+  "flight_limit_seconds": 60,
+  "benchmark_version": "v10",
+  "fps_tests_run_for_current_version": false
 }

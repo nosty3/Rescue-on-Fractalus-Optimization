@@ -133,6 +133,13 @@ reference=bytes(rom)
 code=asm('v10_plotter');assert len(code)==8192;rom[5*8192:6*8192]=code
 digest=sha(rom)
 assert digest=='fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37'
+# Keep the exact measured v10 available only as an ignored research artifact.
+(BUILD/'reference-v10.car').write_bytes(b'CART'+(14).to_bytes(4,'big')+(sum(rom)&0xffffffff).to_bytes(4,'big')+bytes(4)+rom)
+code=asm('pause_resume_stack');assert code==bytes.fromhex('a009')
+assert rom[0x1eb1d:0x1eb1f]==bytes.fromhex('a008')
+rom[0x1eb1d:0x1eb1f]=code
+digest=sha(rom)
+assert digest=='afa04d6802a03333516936b4912f8f7abf23a1837362ac2b0ceaa83b6b6414da'
 stem='Rescue on Fractalus! - optimized 128KB'
 car=b'CART'+(14).to_bytes(4,'big')+(sum(rom)&0xffffffff).to_bytes(4,'big')+bytes(4)+rom
 assert rom==(ROOT/'optimized version'/f'{stem}.rom').read_bytes()
@@ -145,5 +152,5 @@ while ips[i:i+3]!=b'EOF':
  restored[at:at+n]=ips[i:i+n];i+=n
 assert restored==rom
 (BUILD/f'{stem}.rom').write_bytes(rom);(BUILD/f'{stem}.car').write_bytes(car)
-(BUILD/'reconstruction.json').write_text(json.dumps(dict(result='pass',version='v10',sha256=digest,rom_bytes=len(rom),ips_verified=True,fixtures_required=False),indent=2))
-print('Current v10 ROM, CAR and IPS match exactly:',digest)
+(BUILD/'reconstruction.json').write_text(json.dumps(dict(result='pass',version='v10.1',sha256=digest,rom_bytes=len(rom),ips_verified=True,fixtures_required=False),indent=2))
+print('Current v10.1 ROM, CAR and IPS match exactly:',digest)

@@ -2,13 +2,15 @@
 
 [English](README.md) · [Polski](README_PL.md)
 
-Reverse engineering and 6502 assembly optimization of **Rescue on Fractalus!** for Atari XL/XE. The latest build, **v10**, uses a **128 KB XEGS cartridge** and runs on PAL and NTSC machines with 64 KB RAM, preserving the terrain detail and screen resolution.
+Reverse engineering and 6502 assembly optimization of **Rescue on Fractalus!** for Atari XL/XE. The latest build, **v10.1**, uses a **128 KB XEGS cartridge** and runs on PAL and NTSC machines with 64 KB RAM, preserving the terrain detail and screen resolution.
 
 ## Download
 
 Open **[optimized version](optimized%20version/)** for the latest `.car`, raw `.rom`, and a short version note. Use the `.car` in an emulator; for the raw ROM, select **XEGS 128 KB / cartridge type 14**. Start with a cold boot.
 
 ## Measured performance
+
+The current release **v10.1** fixes resuming the game with Esc. The results and charts below were measured on **v10**; no new FPS tests were run for v10.1. The fix only changes stack cleanup when resuming.
 
 | System | Original | v10 | Gain vs. original |
 | --- | ---: | ---: | ---: |
@@ -30,6 +32,8 @@ FPS counts completed terrain images, not the video refresh rate. The test uses a
 ![NTSC flight duration](docs/benchmarks/charts/FLIGHT_DURATION_NTSC_EN.png)
 
 ## What was optimized
+
+- Fixed Esc resume stack cleanup to account for the extra byte used by bank protection.
 
 - Reordered the terrain rasterizer and removed redundant work after subdivision.
 - Accelerated exact integer division and removed unnecessary normalization.

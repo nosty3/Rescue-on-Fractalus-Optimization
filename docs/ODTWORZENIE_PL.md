@@ -1,6 +1,6 @@
 # Odtworzenie aktualnego ROM-u i dalsza praca
 
-## Budowanie v10
+## Budowanie v10.1
 
 Wymagane są Python 3 oraz [MADS](https://github.com/tebe6502/Mad-Assembler). Emulator ani zapisane stany nie są potrzebne do budowania. Narzędzia instaluj lokalnie w `tools/`; katalog nie jest wersjonowany. Informacje o użytym MADS i emulatorze są w [tools/TOOLS.json](tools/TOOLS.json) oraz [tools/ALTIRRA-BUILD-INFO.txt](tools/ALTIRRA-BUILD-INFO.txt).
 
@@ -39,3 +39,7 @@ Pełny [protokół](benchmarks/METODA_PL.md) oraz plany w JSON określają kolej
 ## Powtórzenie v10
 
 Builder tworzy także `build/reference-v9.car` wyłącznie jako historyczną kontrolę w ignorowanym katalogu. Skrypty `pal_v9_common.py` i `ntsc_v9_common.py` wskazują ten plik, aby starsze narzędzia nie używały omyłkowo v10 jako v9. Nowa seria: `benchmark_v10.py --validate`, następnie `benchmark_v10.py`. Zachowane ukończone wyniki są wznawiane, nie nadpisywane. Aby wykonać niezależną replikację, przygotuj osobną kopię wyników i pusty katalog docelowy.
+
+## Poprawka pauzy v10.1
+
+`src/pause_resume_stack.asm` jest kompilowany i nakładany przez builder. Końcowy ROM ma jeden zmieniony bajt względem v10. Builder zachowuje `build/reference-v10.car` wyłącznie w ignorowanym katalogu, aby historyczny skrypt `benchmark_v10.py` nadal wskazywał dokładnie zmierzoną wersję. Nie wykonywano testów FPS v10.1.

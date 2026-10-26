@@ -1,3 +1,4 @@
-v10 — optimized plotter, XEGS 128 KB.
+v10.1 — fixes Esc pause/resume; XEGS 128 KB.
+Last measured performance (v10; no new FPS tests for v10.1):
 PAL: 7.6359 FPS; +18.53% versus original.
 NTSC: 6.9377 FPS; +19.53% versus original.

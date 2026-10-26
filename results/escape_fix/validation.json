@@ -1,0 +1,155 @@
+{
+  "version": "v10.1",
+  "rom_sha256": "afa04d6802a03333516936b4912f8f7abf23a1837362ac2b0ceaa83b6b6414da",
+  "changed_rom_offsets": [
+    125726
+  ],
+  "same_as_tested_candidate": true,
+  "fps_tests_run": false,
+  "cases": [
+    {
+      "video": "pal",
+      "trial": 0,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 1,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 2,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 3,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 4,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 5,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 6,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 7,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 8,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 9,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 10,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "pal",
+      "trial": 11,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 0,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 1,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 2,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 3,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 4,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 5,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 6,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 7,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 8,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 9,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 10,
+      "presentations_after_resume": 5,
+      "passed": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 11,
+      "presentations_after_resume": 5,
+      "passed": true
+    }
+  ]
+}

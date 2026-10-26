@@ -1,6 +1,12 @@
 # Optymalizacje Rescue on Fractalus! — pełny opis aktualnego buildu
 
-Dokument opisuje łącznie zmiany obecne w **v10**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
+Dokument opisuje łącznie zmiany obecne w **v10.1**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
+
+## Poprawka Esc w v10.1
+
+Wznowienie gry pod $AB1D usuwa teraz dziewięć zamiast ośmiu bajtów stosu. Dodatkowy bajt jest znacznikiem banku odkładanym przez ochronę VBI wprowadzoną w v2. Ścieżka wznowienia omijała normalne odtworzenie banku, co uszkadzało adres powrotu. Źródło MADS: `src/pause_resume_stack.asm`; builder nakłada poprawkę po plotterze. ROM różni się od v10 wyłącznie bajtem pod offsetem $1EB1E ($08 → $09).
+
+Kandydat identyczny z wydaniem przeszedł 12 cykli pauza/wznowienie PAL i 12 NTSC; po każdym potwierdzono pięć kolejnych obrazów. Wyniki FPS poniżej dotyczą v10; dla v10.1 nie wykonywano nowych pomiarów. [Diagnoza](research/DIAGNOZA_ESC_PL.md).
 
 ## Wynik i zakres
 
@@ -15,7 +21,7 @@ Są to średnie ze 155 niezależnych automatycznych lotów na wersję i system. 
 
 SHA256 oryginalnego ROM-u: `1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68`.
 
-SHA256 zoptymalizowanego ROM-u: `fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37`.
+SHA256 zoptymalizowanego ROM-u: `afa04d6802a03333516936b4912f8f7abf23a1837362ac2b0ceaa83b6b6414da`.
 
 ## Rasteryzator i powroty z podziału terenu
 
@@ -130,7 +136,7 @@ Przetestowano 256×4 warianty oczekiwania, 240 kasowań przy `$42=0`, zimny star
 
 ## Weryfikacja i odtwarzalność
 
-Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Builder sprawdza etap v9, a następnie końcowy ROM v10, CAR i IPS bajt w bajt. [Instrukcja](ODTWORZENIE_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
+Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Builder sprawdza etap v9, a następnie końcowy ROM v10.1, CAR i IPS bajt w bajt. [Instrukcja](ODTWORZENIE_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
 
 Mikrotesty CPU porównują określone kontrakty procedur; nie zastępują emulatora z DMA, VBI i DLI. Wczesne pozornie wysokie wyniki rzędu 8–10,7 FPS odrzucono z powodu błędnej trampoliny i nieobsługiwanych instrukcji modelu. W dalszych testach wymagano ścisłej obsługi opkodów i kontroli banku/PC. Profil z limitem 4096 próbek nie jest pełnym licznikiem wszystkich wywołań.
 

@@ -1,6 +1,6 @@
 # Dokumentacja projektu
 
-- [OPTYMALIZACJE_PL.md](OPTYMALIZACJE_PL.md) — jeden szczegółowy opis wszystkich zmian obecnych w aktualnym v10.
+- [OPTYMALIZACJE_PL.md](OPTYMALIZACJE_PL.md) — jeden szczegółowy opis wszystkich zmian obecnych w aktualnym v10.1.
 - [ODTWORZENIE_PL.md](ODTWORZENIE_PL.md) — budowanie aktualnych plików i przygotowanie dalszych badań.
 - [benchmarks/METODA_PL.md](benchmarks/METODA_PL.md) — aktualne wyniki PAL/NTSC, metoda, dane i wykresy.
 - [benchmarks/RAPORT_V10_PL.md](benchmarks/RAPORT_V10_PL.md) — pełne wyniki v10, zyski FPS, zmiany plottera i zakres walidacji.
@@ -10,3 +10,5 @@
 - [tools/](tools/) — pochodzenie i identyfikacja narzędzi.
 
 Badania są dokumentami historycznymi: mogą opisywać jeszcze niewdrożone pomysły, wcześniejsze wyniki, dawne nazwy plików albo warunki ograniczonego testu. O tym, co faktycznie znajduje się w bieżącym ROM-ie, rozstrzygają opis zbiorczy i `scripts/rebuild_current.py`. Starsze raporty wydań są dostępne w historii Gita.
+
+- [research/DIAGNOZA_ESC_PL.md](research/DIAGNOZA_ESC_PL.md) — przyczyna i naprawa zawieszenia przy wznowieniu po Esc (v10.1).

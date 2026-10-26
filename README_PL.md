@@ -2,13 +2,15 @@
 
 [English](README.md) · [Polski](README_PL.md)
 
-Inżynieria wsteczna i optymalizacja w asemblerze 6502 gry **Rescue on Fractalus!** dla Atari XL/XE. Najnowszy build, **v10**, wykorzystuje **cartridge XEGS 128 KB** i działa na komputerach PAL i NTSC z 64 KB RAM, zachowując szczegółowość terenu i rozdzielczość obrazu.
+Inżynieria wsteczna i optymalizacja w asemblerze 6502 gry **Rescue on Fractalus!** dla Atari XL/XE. Najnowszy build, **v10.1**, wykorzystuje **cartridge XEGS 128 KB** i działa na komputerach PAL i NTSC z 64 KB RAM, zachowując szczegółowość terenu i rozdzielczość obrazu.
 
 ## Pobieranie
 
 W katalogu **[optimized version](optimized%20version/)** znajdują się najnowsze pliki `.car`, surowy `.rom` i krótka informacja o wersji. W emulatorze użyj `.car`; dla surowego ROM-u wybierz **XEGS 128 KB / typ cartridge'a 14**. Uruchom grę od zimnego startu.
 
 ## Zmierzona wydajność
+
+Aktualne wydanie **v10.1** naprawia wznowienie gry klawiszem Esc. Poniższe wyniki i wykresy pochodzą z pomiarów **v10**; dla v10.1 nie wykonywano nowych testów FPS. Poprawka zmienia wyłącznie zdejmowanie kontekstu ze stosu przy wznowieniu.
 
 | System | Oryginał | v10 | Przyrost do oryginału |
 | --- | ---: | ---: | ---: |
@@ -30,6 +32,8 @@ FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświe
 ![Czas lotu dla NTSC](docs/benchmarks/charts/FLIGHT_DURATION_NTSC_EN.png)
 
 ## Co zoptymalizowano
+
+- Naprawiono kontekst stosu przy wznowieniu po Esc, uwzględniając dodatkowy bajt ochrony banków.
 
 - Zmieniono kolejność operacji rasteryzatora terenu i usunięto zbędną pracę po podziale odcinka.
 - Przyspieszono dokładne dzielenie całkowitoliczbowe i usunięto zbędną normalizację.
