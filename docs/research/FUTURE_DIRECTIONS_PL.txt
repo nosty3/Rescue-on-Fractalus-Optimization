@@ -1,0 +1,97 @@
+Dokument badawczy zachowany historycznie. Dawne ścieżki i wyniki dotyczą opisanego eksperymentu; aktualną implementację opisuje docs/OPTIMIZATIONS_PL.md, a wyniki zbiorcze docs/benchmarks/METHOD_PL.md (ścieżki od katalogu głównego repozytorium).
+
+English: FUTURE_DIRECTIONS.txt | Polski: FUTURE_DIRECTIONS_PL.txt
+
+AKTUALIZACJA v9 — przyjęto pierwszą próbę PMG
+Zysk +0,043721 FPS przyjęty na wyraźną prośbę użytkownika jako wyjątek
+od progu +0,05. Pozostałe pomysły PMG pozostają w PMG_AUDIT_PL.md.
+Nie rozszerzono implementacji na renderer RAM, RANDOM ani przewijanie.
+
+AKTUALIZACJA v8 — SYNCHRONIZACJA WYŚWIETLANIA
+Utrzymywać test braku czyszczenia przed potwierdzeniem VBI ($42=0).
+Testy końcowego RAM nie wykrywają wszystkich błędów czasu wyświetlania.
+Ewentualne ukrycie oczekiwania pracą bez zapisów do obrazu wymaga dowodu
+rozłączności danych i zysku >=0,05 FPS. Trzeci bufor wymaga analizy RAM
+i ANTIC; dodatkowy ROM sam nie wystarczy. Tych pomysłów nie wdrożono.
+Punkty 5–8 wcześniejszego audytu pozostają odłożone.
+
+AKTUALIZACJA v7 / PRÓG 0,05 FPS
+Wdrożono dalszą specjalizację geometrii (+0,1162 FPS) oraz szybkie
+obcinanie (+0,0760 FPS). Pozostałe sprawdzone drobne pomysły poniżej
+0,05 FPS odrzucono; patrz WYDANIE_V7_PL.txt i candidate-estimates.json.
+Punkty 5..8 wcześniejszego audytu nadal odłożone. Cache między klatkami
+nie ma wykazanego kontraktu poprawności ani wiarygodnego budżetu zysku.
+Nie ogłaszamy absolutnego optimum; dalsza implementacja wymaga nowego
+kandydata z uzasadnionym zyskiem >=0,05 FPS i zachowaniem wyników gry.
+
+DECYZJA UŻYTKOWNIKA / v6 — 21.10.2026
+Punkty 1–4 audytu V5_OPTIMIZATION_OPTIONS_PL.md wykonane i sprawdzone.
+Punkty 5–8 odłożone: wyrównanie stron; mnożenie $7CD6; kanały dźwięku;
+pierwszy wiersz wypełniania 33–48. Nie wdrażamy ich, pozostają opisane
+w historycznym audycie wraz z wstępnymi szacunkami.
+Nie ma już pustych banków 10..14, są zajęte przez v6. Dalsza praca wymaga
+nowego pomiaru i decyzji użytkownika; dawnych prognoz nie sumować z v6.
+
+NOWY AUDYT v5 — 21.10.2026
+Aktualne zestawienie: V5_OPTIMIZATION_OPTIONS_PL.md.
+Zebrano cztery świeże profile; największe priorytety: pominięcie normalizacji
+dzielenia (warunek martwego stanu), krótkie odcinki 4/5, kod stałych komend
+geometrii i tablicowa interpolacja RAM. Dostępne puste banki 10–14: 40 KiB.
+Są to modele i hipotezy, bez nowego ROM-u lub nowego pomiaru FPS.
+Poniżej pozostaje historyczny zapis kolejnych etapów badań.
+
+AKTUALIZACJA v5: wypełnianie wdrożono w banku 9. Wynik 7,367256 FPS;
+czas samego wypełniania w 58 scenach spadł o 7,26%. Warianty fill_zero
+i fill_first odrzucono: pierwszy zwiększa koszt CPU, drugi pogarsza średni FPS.
+Dalsze hipotezy: specjalizacja pierwszego wiersza także dla startów 33+,
+profilowanie dzielenia $8224 i rasteryzacji $982A. Zyski tych hipotez
+pozostają niezmierzone; potrzebny nowy profil v5 przed wyborem kolejności.
+
+AKTUALIZACJA v4: punkt 1 wdrożono, uzyskując 7,316840 FPS.
+Rozszerzenie do 128 KiB z punktu 8 jest już zrealizowane.
+Kolejny priorytet: wypełnianie $9308 (12 477 061 taktów, około 11,7%
+ze 106 704 000 w świeżym profilu v4). Nadal bez nowego wdrożenia.
+Wyniki profilu: results/clear128/v4-callgraph.json; bankowany adres
+$02B308 oznacza CPU $9308 w banku 2. Poniżej historyczna lista hipotez.
+
+DALSZE KIERUNKI — HIPOTEZY, NIE POTWIERDZONE ZYSKI
+
+1. Czyszczenie bitmapy $9214: pierwotny profil około 5,4% czasu maszyny.
+   Zbadać rozwinięte STA abs zamiast STA abs,X, specjalizację buforów
+   i koszt rozmiaru. Najpierw policzyć dynamiczne zapisy i cykle, potem
+   porównać cały RAM oraz FPS. To lepszy kandydat niż dalsze mikrooszczędności
+   w dźwięku, ale w tej kopii brak zweryfikowanego nowego wdrożenia.
+2. Wypełnianie $9308: nadal istotne. Rozważyć większe bloki zapisu i tablice
+   adresów; uwzględnić pierwszy wiersz, brzegi, maski oraz oba bufory.
+   Nie sumować udziałów czasu inclusive z kosztami ich procedur potomnych.
+3. Układ kodu: policzyć skoki i odczyty przekraczające stronę. Ustawienie
+   pętli/tablic może dać cykl bez zmiany algorytmu; nowy układ może też
+   pogorszyć inne skoki. Mierzyć na rzeczywistych danych, nie tylko losowych.
+4. Profil gór: ostrożnie poprawiać test całkowitego zasłonięcia. Zachować
+   konserwatywną granicę dodatkowej wysokości i skan każdej kolumny.
+   Agresywniejsze odrzucanie musi mieć dowód, że nie usuwa widocznych gór.
+5. Interpolacja $7EEB: spróbować częściowego rozwinięcia lub ulokowania
+   kodu bez przełączeń banku, zamiast pełnej wersji w bank6. Zachować
+   kolejność LSR/ADC, carry i destrukcyjne zmiany operandów. Obecny
+   eksperyment nie poprawił średniej FPS względem samego dźwięku.
+6. Mnożenie $7CD6: dotychczas nie zmienione. Wczesne wyjście po wyzerowaniu
+   operandu czyni naiwne rozwinięcie do 8 kroków nieoczywistym. Testować
+   pełny stan operandów i flag, nie tylko wynik liczbowy.
+7. Dźwięk: helper znacznika kosztuje dodatkowe wywołanie na ścieżce zdarzenia.
+   Można zbadać przeniesienie końca pętli i skok zamiast zagnieżdżonego JSR.
+   To pomysł, bez wdrożenia/testu. Przy wielu zdarzeniach obecna zmiana
+   flagi potrafi kosztować więcej niż oryginał; utrzymać testy wszystkich
+   14 kanałów, remisów priorytetów i kolejności zapisów POKEY.
+8. Cartridge 128 KiB: potencjalnie więcej specjalizacji i tablic wyników
+   kosztem bankowania i zgodności mapera. Obecne v3 potrzebuje tylko 64 KiB
+   i ma pusty bank6, więc najpierw wykorzystać dostępne miejsce. Sam wzrost
+   rozmiaru nie przyspiesza CPU. Brak pomierzonej wersji 128 KiB.
+9. Metodyka: przygotować więcej niezależnych lotów/poziomów oraz test
+   stałych wejść renderera z liczeniem cykli. Małe różnice FPS mogą wynikać
+   z synchronizacji VBI i zmiany kolejnych scen. Nie dobierać tylko prób,
+   w których nowy wariant wygrywa; publikować także regresje.
+
+Warunek przyjęcia zmiany: zgodność żywego stanu i obrazu, wymagane flagi,
+bezpieczne przerwania/banki, restart, osobny koszt integracji, a następnie
+pomiar pełnej gry. Nie deklarować zgodności audio próbka w próbkę na
+podstawie samej zgodności wartości i kolejności zapisów POKEY.

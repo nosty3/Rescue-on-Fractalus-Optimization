@@ -17,9 +17,9 @@ The current release **v10.1** fixes resuming the game with Esc. The results and 
 | PAL | 6.4421 FPS | 7.6359 FPS | **+18.53%** |
 | NTSC | 5.8043 FPS | 6.9377 FPS | **+19.53%** |
 
-These are means of **155 flights per version and system**, each lasting up to 60 seconds, from a fresh emulator process and cold boot. v10 uses a new series; the original uses the historical reference series. Historical control flights were reproduced on the same emulator. Four isolated emulator processes were validated for parallel measurement. No saved states were transferred and no outliers were discarded. The [v10 report](docs/benchmarks/RAPORT_V10_PL.md) includes confidence intervals and a historical comparison with the preceding release (in Polish).
+These are means of **155 flights per version and system**, each lasting up to 60 seconds, from a fresh emulator process and cold boot. v10 uses a new series; the original uses the historical reference series. Historical control flights were reproduced on the same emulator. Four isolated emulator processes were validated for parallel measurement. No saved states were transferred and no outliers were discarded. The [v10 report](docs/benchmarks/V10_REPORT.md) includes confidence intervals and a historical comparison with the preceding release.
 
-FPS counts completed terrain images, not the video refresh rate. The test uses automatic flight with a centered joystick; it does not cover turns or dives. Flights that ended naturally before 60 seconds remain in the sample. See the [measurement method and reports](docs/benchmarks/METODA_PL.md) for details (in Polish).
+FPS counts completed terrain images, not the video refresh rate. The test uses automatic flight with a centered joystick; it does not cover turns or dives. Flights that ended naturally before 60 seconds remain in the sample. See the [measurement method and reports](docs/benchmarks/METHOD.md) for details.
 
 ### PAL
 
@@ -48,7 +48,7 @@ FPS counts completed terrain images, not the video refresh rate. The test uses a
 - Updated only changed PMG bar segments and shortened PMG drawing and erasing loops.
 - Protected bank switching across interrupts and fixed display-buffer synchronization to prevent transient terrain artifacts.
 
-See the [complete technical description](docs/OPTYMALIZACJE_PL.md) and [rebuild instructions](docs/ODTWORZENIE_PL.md) (in Polish).
+See the [complete technical description](docs/OPTIMIZATIONS.md) and [rebuild instructions](docs/REBUILD.md).
 
 ## Repository layout
 
@@ -58,7 +58,7 @@ See the [complete technical description](docs/OPTYMALIZACJE_PL.md) and [rebuild 
 - **[src/](src/)** — MADS assembly sources for the optimizations and experiments.
 - **[scripts/](scripts/)** — reconstruction, analysis, validation, benchmark, and plotting tools.
 - **[analysis/](analysis/)** — disassembly and code analysis supporting the reverse engineering.
-- **[results/](results/)** — selected machine-readable measurements and verification results, including historical research.
+- **[results/](results)** — selected machine-readable measurements and verification results, including historical research.
 - **[docs/](docs/)** — the consolidated change description and research grouped by topic, including PMG, terrain, and benchmarks.
 
-Older release binaries and release notes remain in Git history. Research documents are in Polish and use `_PL` filenames. Emulator binaries, saved states, memory dumps, and test screenshots are not included.
+Older release binaries and release notes remain in Git history. Documentation is available in English and Polish. English filenames have no language suffix; Polish versions use `_PL`. Emulator binaries, saved states, memory dumps, and test screenshots are not included.

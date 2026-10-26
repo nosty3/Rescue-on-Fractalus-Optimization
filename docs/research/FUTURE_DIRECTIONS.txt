@@ -1,0 +1,97 @@
+Historical research document. Old paths and results refer to the experiment described; the current implementation is documented in docs/OPTIMIZATIONS.md and aggregate results in docs/benchmarks/METHOD.md (paths from the repository root).
+
+English: FUTURE_DIRECTIONS.txt | Polski: FUTURE_DIRECTIONS_PL.txt
+
+v9 UPDATE — first PMG trial accepted
+The +0.043721 FPS gain was accepted at the user's explicit request as an
+exception to the +0.05 threshold. Other PMG ideas remain in PMG_AUDIT.md.
+Implementation was not extended to the RAM renderer, RANDOM, or scrolling.
+
+v8 UPDATE — DISPLAY SYNCHRONIZATION
+Retain the check that clearing never precedes VBI acknowledgement ($42=0).
+Final-RAM tests do not detect all display-timing errors. Hiding the wait
+behind work that does not write the image requires proof of data
+independence and a gain >=0.05 FPS. A third buffer requires RAM/ANTIC
+analysis; extra ROM alone is insufficient. These ideas were not implemented.
+Items 5–8 of the earlier audit remain deferred.
+
+v7 UPDATE / 0.05 FPS THRESHOLD
+Further geometry specialization (+0.1162 FPS) and fast clipping
+(+0.0760 FPS) were implemented. Other tested minor ideas below 0.05 FPS
+were rejected; see historical WYDANIE_V7_PL.txt and candidate-estimates.json.
+Items 5..8 of the earlier audit remain deferred. Cross-frame caching has
+neither a demonstrated correctness contract nor a credible gain budget.
+No absolute optimum is claimed; further implementation requires a new
+candidate with justified gain >=0.05 FPS and preserved game results.
+
+USER DECISION / v6 — 2026-10-21
+Items 1–4 of V5_OPTIMIZATION_OPTIONS.md were implemented and checked.
+Items 5–8 deferred: page alignment; multiplication $7CD6; sound channels;
+first fill row at starts 33–48. They are not implemented and remain
+described in the historical audit with preliminary estimates.
+Banks 10..14 are no longer empty: v6 occupies them. Further work requires
+a new measurement and user decision; do not add old forecasts to v6.
+
+NEW v5 AUDIT — 2026-10-21
+Current overview: V5_OPTIMIZATION_OPTIONS.md.
+Four fresh profiles collected. Main priorities: skip division normalization
+(dead-state condition), short segments 4/5, fixed geometry-command code,
+and table-driven RAM interpolation. Empty banks 10–14: 40 KiB available.
+These are models and hypotheses, without a new ROM or FPS measurement.
+The historical record of successive research stages follows.
+
+v5 UPDATE: filling implemented in bank 9. Result 7.367256 FPS; filling
+time alone fell 7.26% across 58 scenes. fill_zero and fill_first rejected:
+the former raises CPU cost, the latter worsens mean FPS.
+Further hypotheses: specialize first row for starts 33+, profile division
+$8224 and rasterization $982A. Gains remain unmeasured; obtain a fresh v5
+profile before prioritizing.
+
+v4 UPDATE: item 1 implemented, reaching 7.316840 FPS.
+The 128 KiB expansion in item 8 is already complete.
+Next priority: filling $9308 (12,477,061 ticks, about 11.7% of 106,704,000
+in the fresh v4 profile). Still no new implementation.
+Profile results: results/clear128/v4-callgraph.json; banked address
+$02B308 means CPU $9308 in bank 2. Historical hypothesis list follows.
+
+FUTURE DIRECTIONS — HYPOTHESES, NOT CONFIRMED GAINS
+
+1. Bitmap clearing $9214: initial profile about 5.4% of machine time.
+   Investigate unrolled STA abs instead of STA abs,X, buffer specialization,
+   and code-size cost. First count dynamic stores/cycles, then compare
+   all RAM and FPS. Better candidate than further tiny sound savings,
+   but this copy has no verified new implementation.
+2. Filling $9308: still significant. Consider larger write blocks and
+   address tables; account for first row, edges, masks, and both buffers.
+   Do not add inclusive time shares to the costs of child routines.
+3. Code layout: count branches and reads crossing pages. Loop/table
+   placement may save a cycle without algorithm changes; a new layout
+   may worsen other branches. Measure actual data, not just random inputs.
+4. Mountain profile: cautiously improve the fully-occluded test. Preserve
+   the conservative extra-height bound and scan every column. More
+   aggressive rejection must be proven not to remove visible mountains.
+5. Interpolation $7EEB: try partial unrolling or code placement without
+   bank switches rather than a full version in bank6. Preserve LSR/ADC
+   order, carry, and destructive operand changes. The current experiment
+   did not improve mean FPS over sound-only changes.
+6. Multiplication $7CD6: unchanged so far. Early exit when the operand
+   becomes zero makes naive eight-step unrolling non-obvious. Test full
+   operand/flag state, not just the numerical result.
+7. Sound: marker helper adds a call on the event path. Investigate moving
+   the loop tail and using a jump instead of nested JSR. Idea only,
+   unimplemented/untested. With many events, the current flag change can
+   cost more than the original; retain tests of all 14 channels, priority
+   ties, and POKEY write ordering.
+8. 128 KiB cartridge: potentially more specializations and result tables,
+   at the cost of banking and mapper compatibility. Current v3 needs only
+   64 KiB and has empty bank6, so first use available space. Larger size
+   alone does not speed up the CPU. No measured 128 KiB version yet.
+9. Method: prepare more independent flights/levels and a fixed-renderer-
+   input test with cycle counting. Small FPS differences may come from
+   VBI synchronization and changing later scenes. Do not select only
+   trials in which the new variant wins; publish regressions too.
+
+Acceptance conditions: matching live state/image and required flags,
+safe interrupts/banks, restart support, separate integration cost, then
+full-game measurement. Matching POKEY write values/order alone does not
+justify claiming sample-by-sample audio equivalence.

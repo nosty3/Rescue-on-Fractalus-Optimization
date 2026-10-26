@@ -1,0 +1,110 @@
+Historical research document. Old paths and results refer to the experiment described; the current implementation is documented in docs/OPTIMIZATIONS.md and aggregate results in docs/benchmarks/METHOD.md (paths from the repository root).
+
+English: INITIAL_ASSESSMENT.txt | Polski: INITIAL_ASSESSMENT_PL.txt
+
+RESCUE ON FRACTALUS! OPTIMIZATION ASSESSMENT — PAL
+2026-10-20. Preliminary report; no game modifications or compilation.
+
+Conclusion: optimization is possible, but small patches yield small gains.
+The best-supported first step is simplifying the inner rasterization loop.
+Reaching 7–7.5 FPS would require larger algorithmic changes; at this stage,
+that is a scenario, not an implementation-backed forecast.
+
+1. WHERE THE COST IS
+A new profile of the original covers 3000 PAL frames (~60.17 s).
+Instruction profile: 22,465,006 instructions, 390 image presentations.
+A separate callgraph run estimates routine costs:
+  $982A, profile subdivision/rasterization: 37.06 million ticks, 34.7%;
+  $9308, bitmap scanning/filling: 11.60 million, 10.9%;
+  $8224, arithmetic division: 10.01 million, 9.4%;
+  $9214, bitmap clearing: 5.72 million, 5.4%.
+These are exclusive costs, avoiding double-counting children.
+The whole subsystem called by $87D3, including children, takes about 60.8%.
+Division $8224 has 18,653 calls in the callgraph run; $982A has 9103,
+while the deepest test $9933 executes 263,208 times in the instruction profile.
+The profiler may show $02B933 for CPU $9933: the banked address was converted
+as $8000+(gaddr & $1FFF), retaining bank 2.
+The two profiler runs are not identical traces; instruction counts for
+costing come only from insns.json, while time shares come from callgraph.json.
+
+2. SPECIFIC CANDIDATES (FPS RELATIVE TO THE EARLIER 6.55)
+
+A. Do not recheck the right boundary after segment subdivision alone.
+$9933: CPX #$D4 / BCS $9930 costs 4 cycles on the in-screen path.
+Returns from $9A18, $9A36, and $9A52 do not change X and could target $9937.
+The test remains at entry and on paths that increment X.
+127,113 returns -> 508,452 CPU cycles, about 1304 per image.
+Estimate: 6.58–6.59 FPS, +0.03–0.05 FPS (+0.5–0.7%).
+Smallest and best-supported change: three JMP targets, no code growth.
+SEC before SBC restores required C; TXA restores N/Z after the skipped CPX.
+
+B. Store $82 only when actually subdividing a segment.
+STX $82 at $9938 executes 261,505 times, subdivision path $99FA 127,113 times.
+Moving the store there saves up to 403,176 CPU cycles, about 1034 per image.
+Estimate: 6.57–6.58 FPS, +0.03–0.04 FPS.
+CONDITIONAL candidate: local uses of $82 at $9A20/$9A3C support it, but
+before implementation, prove that the exit value of $82 is not needed by other
+calling paths. Any preservation cost reduces savings. Safety is not yet proven.
+
+C. Further unroll bitmap clearing.
+$921A–$929B already contains 44 unrolled STA abs,X instructions; the outer
+loop has 42 iterations. Fully unrolled absolute addressing would save
+1848 store cycles and about 376 control cycles per image: 2224 total.
+Ideal-variant estimate: 6.60–6.63 FPS, +0.05–0.08 FPS.
+Cost: about 5.5 KiB code per buffer, about 11 KiB for both variants.
+This exceeds one 8 KiB bank; code layout redesign or RAM is required.
+Bank-switch/configuration overhead is excluded. Not recommended as the
+first step; current code is already heavily unrolled.
+
+D. Three NOPs at $95E1–$95E3 in filling.
+Each executes 15,716 times. Reorganizing the tail and all entry paths could
+save 94,296 CPU cycles, about 242 per image.
+Estimate: roughly +0.006–0.009 FPS. Too little to start here.
+Do not assume bytes can simply be removed without fixing branch targets;
+also confirm that the spacing is not serving a timing purpose.
+
+A+B together: modeled 6.60–6.63 FPS if B is safe.
+A+B+C: about 6.66–6.72 FPS before C's extra costs.
+These project instruction costs, NOT measured modified-game performance.
+
+3. WHERE TO SEEK LARGER GAINS
+- $982A–$9A54: reduce subdivisions/tests and intermediate rasterization
+  operations, e.g. specialize final short segments or process occluded
+  regions together. Preserve masks, occlusion profile, and exact rounding.
+  Simply removing points may change the image.
+- $8224: specialize division for actual operand ranges, possibly using an
+  approximation table corrected to the exact quotient. The current
+  algorithm is already unrolled; general-purpose division is unlikely
+  to help. Uncorrected approximations can change geometry.
+- $9308: investigate replacing bitmap scanning with maintained information
+  about the first hit in each column. Subtract the cost of updating this
+  information while drawing from the scan savings.
+
+Quantitative scenario, not a promise:
+20% less time in $982A -> save 6.95% overall -> about 7.04 FPS.
+25% less division time -> save 2.34% overall -> about 6.70 FPS.
+25% less filling time -> save 2.72% overall -> about 6.73 FPS.
+If all three targets were achieved together, with no extra costs or
+visual/gameplay changes, the model gives about 7.44 FPS (+13.6%).
+Those routine-reduction percentages are ASSUMPTIONS for assessing value,
+not estimates of a finished algorithm. There is currently no basis for
+promising 8–10 FPS through local instruction changes alone.
+
+4. HOW TO INTERPRET THE ESTIMATE
+For specific changes: F'=1/(1/F - k*C/f), where F=6.546616,
+f=1773447.5 Hz, C=CPU cycles saved per image.
+Two variants are given, k=1 and k=1.5. The latter roughly allows for DMA:
+e.g. original STX $82 nominally costs 3 cycles, but the profile assigns
+an average 4.55 machine ticks. This is neither a guaranteed conversion
+nor a confidence interval. Shifting execution relative to the raster
+changes DMA delays. VBI quantizes presentation to whole PAL frames;
+a small change may give no FPS increase in a scene or allow completion
+one frame earlier. Do not add speedup percentages or promise 0.01-FPS precision.
+
+RECOMMENDATION
+First A, then prove B correct and measure A/B with matching image/game state.
+Only then restructure $982A and division $8224.
+At this stage, no ROM changes, RAM patches, or MADS runs were performed.
+Only profiles, calculations, and the report were saved.
+Data: analysis/optimization/insns.json, callgraph.json, estimates.json.
+Profile collection script: scripts/profile_optimization.py.

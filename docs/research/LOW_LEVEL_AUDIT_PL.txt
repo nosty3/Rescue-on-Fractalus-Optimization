@@ -1,0 +1,107 @@
+Dokument badawczy zachowany historycznie. Dawne ścieżki i wyniki dotyczą opisanego eksperymentu; aktualną implementację opisuje docs/OPTIMIZATIONS_PL.md, a wyniki zbiorcze docs/benchmarks/METHOD_PL.md (ścieżki od katalogu głównego repozytorium).
+
+English: LOW_LEVEL_AUDIT.txt | Polski: LOW_LEVEL_AUDIT_PL.txt
+
+AUDYT NISKOPOZIOMOWY RESCUE ON FRACTALUS!, wersja v2
+2026-10-21
+
+Wniosek
+Istnieją dalsze oszczędności instrukcji poza rendererem. Zweryfikowano
+trzy prototypy zachowujące dokładny wynik i pełny stan rejestrów oraz RAM
+(z wyjątkiem martwej części stosu sprzętowego używanej przez test RTS).
+Nie przygotowano nowego wydania gry: zmiany są samodzielnymi mikrotestami.
+
+Już wykonane optymalizacje niskopoziomowe
+- Dzielenie: utrzymywanie wysokiego bajtu reszty w A, mniej operacji pamięci.
+- Raster: adresowanie strony zerowej zamiast absolutnego indeksowanego;
+  krótsze ścieżki flag/skoków i mniej zapisów/odczytów Y.
+Nie były to wyłącznie zmiany logiki, ale wcześniejszy zakres był skupiony
+na rendererze. Ten audyt rozszerza zakres o dźwięk, sterowanie i VBI.
+
+Świeży profil
+Odtworzono 3000 ramek PAL (60,167555 s) na ROM-ie v2.
+Łącznie 106 704 000 taktów maszyny w każdym przebiegu profilera.
+Wybrane koszty:
+  VBI $B46C: 13 191 186 taktów z potomkami, około 12,36% czasu maszyny.
+  Dźwięk $B91C: 4 368 638 z potomkami, około 4,09% czasu maszyny.
+  Interpolacja $7EEB: 2 167 749, około 2,03% czasu maszyny; 2250 wywołań.
+  $7310: odczyt sterowania i logika lotu, 1 938 986 kosztu własnego,
+  3 065 621 z potomkami, 1500 wywołań.
+Nie należy sumować kosztów VBI i jego potomków.
+
+1. Wybór minimum w mikserze dźwięku, $BB19
+Oryginał skanuje 12 wpisów. Po każdej iteracji wykonuje INX, CPX #12, BCC.
+Rozwinięty kod ma stałe adresy wpisów; indeks X ładowany jest tam, gdzie
+trzeba zapisać numer wybranego kanału. Na końcu odtworzono X i flagi.
+3000 przypadków losowych: wszystkie dane RAM i A/X/Y/P/SP zgodne.
+Oszczędność w testach: 66–78 cykli, średnio 75.37.
+Rozmiar: 322 bajty zamiast 37. Wywołania w aktualnym profilu: 4918.
+Model zysku gry przed kosztami integracji: około
+0.025–0.037 FPS.
+
+2. Wybór maksimum w mikserze, $BB3E
+Analogiczny skan 12 wpisów, z zachowaniem wyboru przy równych wartościach
+i wykluczania wskazanego kanału. Nie zmieniono kolejności przeglądania.
+3000 przypadków: pełna zgodność danych/rejestrów.
+Oszczędność w testach: 56–57 cykli, średnio 56.48.
+Rozmiar: 344 bajty zamiast 37. Wywołania w profilu: 1891.
+Model zysku gry: około 0.007–0.011 FPS.
+
+Ważne: LDA abs i LDA abs,X zwykle kosztują po 4 cykle, jeśli nie ma
+przekroczenia strony. Samo usunięcie indeksu nie daje tu automatycznie
+jednego cyklu. Główna oszczędność wynika z obsługi pętli i rejestru X.
+
+3. Interpolacja wysokości dla logiki lotu, $7EEB
+Procedura odczytuje cztery sąsiednie próbki z mapy $0900 i wykonuje trzy
+ośmiokrotne interpolacje: dwie w jednym kierunku, trzecią pomiędzy wynikami.
+Jest używana przez logikę lotu w VBI, niezależnie od rysowania krajobrazu.
+Rozwinięto pętle, usuwając liczniki Y oraz powroty do początku; zachowano
+kolejność LSR/ADC i przeniesienia. To ten sam algorytm i zaokrąglenia.
+1500 losowych przypadków: pełna zgodność pamięci i rejestrów.
+Oszczędność: 63–117 cykli w testach, średnio 91.15.
+Rozmiar 740 zamiast 215 bajtów. Model zysku gry:
+0.014–0.021 FPS.
+
+4. Dalsze miejsca wymagające audytu, jeszcze bez prototypu
+- $B91C: główna pętla dźwięku przegląda 14 wpisów co VBI. Warto zbadać
+  powtarzane zerowanie/odczyty znacznika $0718, zależności flag i pamięci.
+  Usunięcie zapisów wymaga sprawdzenia wszystkich wywołań i odbiorców flagi.
+- $7CD6: mnożenie przez przesuwanie i dodawanie, 4500 wywołań/minutę.
+  Pętla kończy się, gdy operand staje się zerem. Rozwinięcie do stałych
+  ośmiu iteracji nie jest automatycznie szybsze ani równoważne stanowo.
+- Przekroczenia stron przez pętle i tablice, jeśli często używane.
+  Zmiana rozmieszczenia może dać cykl oszczędności bez zmiany algorytmu,
+  ale trzeba policzyć dynamiczne wystąpienia i nowe cele skoków.
+- Czyszczenie bitmapy nadal daje możliwość rozwinięcia zapisów STA abs,X
+  do STA abs. To już omawiany kandydat, nie nowe odkrycie tego audytu.
+
+5. Co NIE jest znalezionym zaniedbaniem
+- DLI $AEEF zawiera STA $D40A (WSYNC). Jego czas obejmuje czekanie na raster.
+  Nie można traktować całego kosztu jako pracy, którą da się usunąć.
+- NOP przy $AE88 leży między zapisami do rejestrów grafiki w DLI;
+  wymaga analizy położenia zmian na linii obrazu, nie mechanicznego usunięcia.
+- Nie znaleziono w przejrzanej gorącej części profilu prostych par
+  JSR/RTS do zastąpienia przez JMP. To nie jest dowód braku takich miejsc
+  w całym ROM-ie, zwłaszcza na rzadko wykonywanych ścieżkach.
+- Wiele procedur już jest rozwiniętych, korzysta ze strony zerowej,
+  przeniesienia między instrukcjami i skoków końcowych JMP.
+
+Szacunek łączny trzech zweryfikowanych mikroprototypów
+Około 7.161–7.184 FPS wobec 7,115 FPS v2.
+To model, nie pomiar zmodyfikowanej gry. Użyto liczby wywołań z nowego
+profilu i średnich oszczędności z losowych testów. Mnożnik DMA 1..1,5 jest
+analizą wrażliwości, nie przedziałem ufności. Nie odjęto kosztów relokacji
+i ewentualnych przełączeń banków. Wymagane jest zaplanowanie miejsca na kod
+oraz potwierdzenie dostępności procedur we wszystkich trybach gry.
+Kod prototypów ma łącznie 1406 bajtów zamiast 289, czyli +1117 bajtów.
+
+Reprodukcja
+python scripts/audit_lowlevel.py
+python scripts/test_sound_unroll.py
+python scripts/test_interpolation_unroll.py
+Profilowanie po uruchomieniu scripts/launch.ps1:
+python scripts/profile_lowlevel.py
+
+Pliki źródłowe prototypów: src/audit_sound_minimum.asm,
+src/audit_sound_maximum.asm, src/audit_interpolation.asm.
+Profile, wyniki i estymacje: analysis/lowlevel/.

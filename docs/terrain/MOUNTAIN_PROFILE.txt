@@ -1,0 +1,127 @@
+Historical research document. Old paths and results refer to the experiment described; the current implementation is documented in docs/OPTIMIZATIONS.md and aggregate results in docs/benchmarks/METHOD.md (paths from the repository root).
+
+English: MOUNTAIN_PROFILE.txt | Polski: MOUNTAIN_PROFILE_PL.txt
+
+Rescue on Fractalus! — mountain profile drawing analysis
+2026-10-21
+
+Scope and method
+Analyzed bank 2 code, mainly $982A–$9A54, and its call from $9794.
+Profiled the current PAL optimized version by replaying 58 saved $87D3
+entry states in the py65 instruction emulator. Also executed the
+subsequent filling routine $9308. Combined time: 7,045,783 CPU cycles,
+matching this version's previous test. This profile samples scenes;
+it is not an FPS measurement in Altirra. No game image was changed or built.
+
+How the routine works
+1. $9627–$9794 prepares/clips segments, including 16-bit coordinates.
+   Heights passed to $982A are clamped to 0..255.
+2. $982A rejects reversed segments or those off the left side. Equal-X
+   coordinates are handled separately.
+3. $986D–$992F clips the left side through successive subdivisions.
+4. $9933–$9941 identifies width. Widths of 1 and 2 columns have separate
+   paths; wider fragments go to $99FA–$9A54.
+5. Subdivision computes midpoint X, the sum of phase parameters with
+   carry=1, and height. The phase-sum sign bit selects an ordinary mean
+   or a deviation; carry selects the deviation direction. Height saturates
+   at 0 or 255. This is deterministic arithmetic, with no random-generator
+   call in the loop. ADC/ROR/SBC order cannot be changed arbitrarily:
+   carry affects rounding and the result.
+6. After subdivision, the left fragment is processed first, then the right.
+   Recursion uses a software stack, not JSR/RTS.
+7. A point is drawn only when its height exceeds table entry $260E+X.
+   The entry is updated; heights >=$97 store $FF there, while drawing
+   height is clamped to $97.
+8. Row address comes from $28CA+Y / $28FA+Y, column byte from $3900+X,
+   and mask from $3800+X. The pixel is ORed into the bitmap.
+   Complete area filling remains a separate $9308 stage.
+
+Variables in this code range
+$60: saved caller X.
+$82: current/left X coordinate; also X register in the hot loop.
+$84: current/left endpoint height.
+$86: current/left endpoint phase parameter.
+$95+Y: right endpoint X on the stack.
+$EA+Y: right endpoint height on the stack.
+$F4+Y: right endpoint phase parameter on the stack.
+Y: stack depth; temporarily changed when plotting a pixel.
+$80/$81: bitmap-row pointer; $B5: scratch variable.
+
+Results for 58 scenes
+$982A calls: 1417.
+Routine alone: 3,702,088 cycles, 52.54% of measured rendering and filling.
+This is not 52.54% of total game time.
+
+Stage                         CPU cycles     Share of routine
+Entry                             25,460       0.69%
+Left clipping                     89,990       2.43%
+Path selection                   657,762      17.77%
+Single-column fragments          383,246      10.35%
+Subdivisions                   1,188,217      32.10%
+Two-column fragments           1,355,379      36.61%
+Separate exit path                 2,034       0.05%
+Single-/two-column blocks include occlusion tests and stack handling,
+not just pixel stores.
+
+Width selection: 40,419 passes; width 1: 6103, 2: 14,744, 3: 6000, 4: 3380.
+Widths 1..4 account for about 74.8% of passes.
+Subdivisions: 19,572; no deviation: 9684, negative: 7919, positive: 1969.
+Maximum observed stack depth: 6.
+Visibility tests: 35,591; visible: 13,893 (39.0%); occluded: 21,698 (61.0%).
+Occluded by equality: only 593.
+
+Best specific candidate: specialize stack depth
+Currently LDA/ADC/SBC address,Y cost 4 cycles, STA address,Y 5 cycles.
+A separate code variant for known depth can use a fixed zero-page address:
+3 and 3 cycles respectively. Example for depth 2:
+  LDA $00EA,Y -> LDA $EC
+  STA $00EB,Y -> STA $ED
+Effective addresses of all analyzed operations were within zero page.
+Instruction substitution preserves value and flags; transitions between
+code variants must be designed and checked separately.
+
+Gross saving from addresses alone: 287,409 cycles across 58 scenes,
+7.76% of routine time and 4.08% of renderer plus filling time. This does
+not assume removal of INY/DEY or Y saving/restoration during plotting.
+These are counted opportunities, not a working patch's result yet.
+
+Duplicated code needs roughly several KB. It should fit in one of the
+potentially free banks 5/6 of the current 64 KB ROM. Provide the full
+depth range or a general fallback: maximum sampled depth 6 does not
+prove a limit for every game state. Do not switch banks per subdivision.
+Switch once per routine call through fixed-bank or RAM code. Preserve
+caller-required registers/state and check VBI.
+
+FPS estimate
+An earlier long PAL profile contained 390 image presentations and 9209
+routine calls. At its instruction frequencies, changed addressing saves
+1,854,378 CPU cycles. Subtracting an ASSUMED 40 extra cycles per call leaves
+1,486,018 cycles, about 3810 per image. The 40-cycle cost is not yet the
+cost of a finished implementation.
+With baseline 6.77977 FPS, the model gives 6.87999 FPS for 1:1 conversion
+of CPU savings to machine time, and 6.93121 FPS with a 1.5 multiplier for
+DMA sensitivity: about +0.10..0.15 FPS (+1.5..2.2%).
+This range is sensitivity analysis, not a confidence interval. Frequencies
+come from an older profile, FPS from the current version. VBI synchronization,
+new branches, banking, and scene distribution may change results;
+measurement in Altirra is required.
+
+Further directions in the same routine
+- Separate width-3 path: 6000 cases still use general subdivision.
+  Directly processing its children may reduce stack work and repeated
+  path selection. Preserve phase, saturation, and rounding. No credible
+  net estimate yet.
+- Early rejection of occluded fragments: many rejected points are
+  encouraging, but occluded endpoints alone are insufficient. A safe
+  bound on the entire interior's height and a comparison against the
+  visibility table across the whole width are needed. Compare test cost
+  against the subdivisions avoided.
+- Reordering BCC/BEQ in visibility testing is not a priority: only 593
+  equality cases versus 21,105 lower-height cases. The current BCC-first
+  test suits the measured distribution.
+
+Reproduction
+python scripts/profile_mountain.py
+python scripts/report_mountain.py
+Raw results: analysis/mountain/profile.json and estimates.json.
+Annotated listing: analysis/mountain/annotated-listing.txt.

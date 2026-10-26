@@ -1,0 +1,106 @@
+Historical research document. Old paths and results refer to the experiment described; the current implementation is documented in docs/OPTIMIZATIONS.md and aggregate results in docs/benchmarks/METHOD.md (paths from the repository root).
+
+English: LOW_LEVEL_AUDIT.txt | Polski: LOW_LEVEL_AUDIT_PL.txt
+
+LOW-LEVEL AUDIT OF RESCUE ON FRACTALUS!, v2
+2026-10-21
+
+Conclusion
+Further instruction savings exist outside the renderer. Three prototypes
+were verified to preserve exact results and full register/RAM state
+(except dead hardware-stack memory used by the RTS test).
+No new game release was prepared: changes are standalone microtests.
+
+Low-level optimizations already completed
+- Division: high remainder byte kept in A, fewer memory operations.
+- Raster: zero-page instead of absolute-indexed addressing; shorter
+  flag/branch paths and fewer Y stores/loads.
+These were not just logic changes, but the earlier scope focused on the
+renderer. This audit extends it to sound, controls, and VBI.
+
+Fresh profile
+Replayed 3000 PAL frames (60.167555 s) on v2 ROM.
+Total 106,704,000 machine ticks in each profiler run.
+Selected costs:
+  VBI $B46C: 13,191,186 ticks including children, about 12.36% of machine time.
+  Sound $B91C: 4,368,638 including children, about 4.09% of machine time.
+  Interpolation $7EEB: 2,167,749, about 2.03% of machine time; 2250 calls.
+  $7310: controls and flight logic, 1,938,986 self cost,
+  3,065,621 including children, 1500 calls.
+Do not add VBI cost to its children's costs.
+
+1. Sound-mixer minimum selection, $BB19
+The original scans 12 entries, performing INX, CPX #12, BCC each iteration.
+Unrolled code uses fixed entry addresses; X is loaded where the selected
+channel index must be stored. X and flags are restored at the end.
+3000 random cases: all RAM data and A/X/Y/P/SP match.
+Test savings: 66–78 cycles, mean 75.37.
+Size: 322 bytes instead of 37. Calls in current profile: 4918.
+Game-gain model before integration costs: about 0.025–0.037 FPS.
+
+2. Mixer maximum selection, $BB3E
+Similar 12-entry scan, preserving tie-breaking and exclusion of the
+specified channel. Scan order is unchanged.
+3000 cases: full data/register agreement.
+Test savings: 56–57 cycles, mean 56.48.
+Size: 344 bytes instead of 37. Calls in profile: 1891.
+Game-gain model: about 0.007–0.011 FPS.
+
+Important: LDA abs and LDA abs,X usually both cost 4 cycles if there is
+no page crossing. Removing the index alone does not automatically save
+a cycle here. Most savings come from loop and X-register management.
+
+3. Height interpolation for flight logic, $7EEB
+The routine reads four neighboring samples from map $0900 and performs
+three eight-step interpolations: two in one direction, then a third
+between their results. It is used by flight logic in VBI, independently
+of landscape drawing. Loops were unrolled, removing Y counters and loop
+back branches while preserving LSR/ADC order and carries. The algorithm
+and rounding are unchanged.
+1500 random cases: full memory/register agreement.
+Savings: 63–117 cycles in tests, mean 91.15.
+Size: 740 instead of 215 bytes. Game-gain model: 0.014–0.021 FPS.
+
+4. Further audit targets, not yet prototyped
+- $B91C: main sound loop scans 14 entries each VBI. Investigate repeated
+  clearing/reading of marker $0718 and flag/memory dependencies. Removing
+  stores requires checking all calls and consumers of the flag.
+- $7CD6: shift/add multiplication, 4500 calls/minute. The loop ends when
+  an operand becomes zero. Unrolling to eight fixed iterations is not
+  automatically faster or state-equivalent.
+- Page crossings in frequently used loops and tables. Layout changes
+  may save a cycle without changing the algorithm, but dynamic instances
+  and new branch targets must be counted.
+- Bitmap clearing still offers unrolling from STA abs,X to STA abs.
+  This was already discussed, not newly discovered in this audit.
+
+5. What is NOT an identified oversight
+- DLI $AEEF contains STA $D40A (WSYNC). Its timing includes raster waiting;
+  its entire cost cannot be treated as removable work.
+- NOP at $AE88 lies between graphics-register writes in DLI. It needs
+  analysis of where changes occur along the scanline, not mechanical removal.
+- No simple JSR/RTS pairs replaceable by JMP were found in the inspected
+  hot profile region. This does not prove their absence throughout the
+  ROM, especially on infrequently executed paths.
+- Many routines are already unrolled, use zero page, carry between
+  instructions, and tail JMPs.
+
+Combined estimate for the three verified microprototypes
+About 7.161–7.184 FPS versus v2's 7.115 FPS.
+This is a model, not a measurement of the modified game. It uses call
+counts from the new profile and mean savings from random tests. The DMA
+multiplier 1..1.5 is sensitivity analysis, not a confidence interval.
+Relocation and possible bank-switch costs were not subtracted. Code
+placement and availability in every game mode still need planning.
+Prototype code totals 1406 bytes instead of 289, an increase of 1117 bytes.
+
+Reproduction
+python scripts/audit_lowlevel.py
+python scripts/test_sound_unroll.py
+python scripts/test_interpolation_unroll.py
+Profiling after running scripts/launch.ps1:
+python scripts/profile_lowlevel.py
+
+Prototype sources: src/audit_sound_minimum.asm,
+src/audit_sound_maximum.asm, src/audit_interpolation.asm.
+Profiles, results, and estimates: analysis/lowlevel/.

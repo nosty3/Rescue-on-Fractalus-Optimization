@@ -17,9 +17,9 @@ Aktualne wydanie **v10.1** naprawia wznowienie gry klawiszem Esc. Poniższe wyni
 | PAL | 6,4421 FPS | 7,6359 FPS | **+18,53%** |
 | NTSC | 5,8043 FPS | 6,9377 FPS | **+19,53%** |
 
-Są to średnie ze **155 lotów dla każdej wersji i systemu**, trwających do 60 sekund, uruchamianych w nowym procesie emulatora od zimnego startu. Dla v10 wykonano nową serię; oryginał wykorzystuje wcześniejszą serię odniesienia. Historyczne loty kontrolne odtworzono na tym samym emulatorze. Cztery odizolowane procesy emulatora zweryfikowano pod kątem pomiaru równoległego. Nie przenoszono zapisanych stanów ani nie odrzucano wyników odstających. [Raport v10](docs/benchmarks/RAPORT_V10_PL.md) zawiera przedziały ufności i historyczne porównanie z poprzednim wydaniem.
+Są to średnie ze **155 lotów dla każdej wersji i systemu**, trwających do 60 sekund, uruchamianych w nowym procesie emulatora od zimnego startu. Dla v10 wykonano nową serię; oryginał wykorzystuje wcześniejszą serię odniesienia. Historyczne loty kontrolne odtworzono na tym samym emulatorze. Cztery odizolowane procesy emulatora zweryfikowano pod kątem pomiaru równoległego. Nie przenoszono zapisanych stanów ani nie odrzucano wyników odstających. [Raport v10](docs/benchmarks/V10_REPORT_PL.md) zawiera przedziały ufności i historyczne porównanie z poprzednim wydaniem.
 
-FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświeżania obrazu. Test obejmuje automatyczny lot z joystickiem w położeniu neutralnym; nie obejmuje skrętów ani nurkowania. Loty zakończone naturalnie przed upływem 60 sekund pozostają w próbie. Szczegóły zawierają [metoda pomiaru i raporty](docs/benchmarks/METODA_PL.md) (po polsku).
+FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświeżania obrazu. Test obejmuje automatyczny lot z joystickiem w położeniu neutralnym; nie obejmuje skrętów ani nurkowania. Loty zakończone naturalnie przed upływem 60 sekund pozostają w próbie. Szczegóły zawierają [metoda pomiaru i raporty](docs/benchmarks/METHOD_PL.md).
 
 ### PAL
 
@@ -48,7 +48,7 @@ FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświe
 - Ograniczono aktualizację pasków PMG do zmienionych odcinków i skrócono pętle rysowania oraz kasowania PMG.
 - Zabezpieczono przełączanie banków podczas przerwań i naprawiono synchronizację buforów obrazu, aby zapobiegać chwilowym artefaktom terenu.
 
-Zobacz [pełny opis techniczny](docs/OPTYMALIZACJE_PL.md) i [instrukcję odtworzenia](docs/ODTWORZENIE_PL.md) (po polsku).
+Zobacz [pełny opis techniczny](docs/OPTIMIZATIONS_PL.md) i [instrukcję odtworzenia](docs/REBUILD_PL.md).
 
 ## Zawartość repozytorium
 
@@ -58,7 +58,7 @@ Zobacz [pełny opis techniczny](docs/OPTYMALIZACJE_PL.md) i [instrukcję odtworz
 - **[src/](src/)** — źródła asemblera MADS dla optymalizacji i eksperymentów.
 - **[scripts/](scripts/)** — narzędzia odtwarzania, analizy, weryfikacji, pomiarów i tworzenia wykresów.
 - **[analysis/](analysis/)** — deasemblacja i analiza kodu wspierające inżynierię wsteczną.
-- **[results/](results/)** — wybrane pomiary i wyniki weryfikacji w formacie maszynowym, w tym badania historyczne.
+- **[results/](results)** — wybrane pomiary i wyniki weryfikacji w formacie maszynowym, w tym badania historyczne.
 - **[docs/](docs/)** — zbiorczy opis zmian oraz badania pogrupowane tematycznie, m.in. PMG, teren i pomiary.
 
-Starsze pliki wydań i ich opisy pozostają w historii Gita. Dokumenty badawcze są po polsku i mają nazwy z `_PL`. Repozytorium nie zawiera emulatorów, zapisanych stanów, zrzutów pamięci ani screenów z testów.
+Starsze pliki wydań i ich opisy pozostają w historii Gita. Dokumentacja jest dostępna po angielsku i po polsku. Nazwy wersji angielskich nie mają sufiksu języka; polskie wersje mają sufiks `_PL`. Repozytorium nie zawiera emulatorów, zapisanych stanów, zrzutów pamięci ani screenów z testów.

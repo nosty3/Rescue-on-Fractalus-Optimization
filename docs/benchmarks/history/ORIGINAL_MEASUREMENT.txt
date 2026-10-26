@@ -1,0 +1,130 @@
+Historical research document. Old paths and results refer to the experiment described; the current implementation is documented in docs/OPTIMIZATIONS.md and aggregate results in docs/benchmarks/METHOD.md (paths from the repository root).
+
+English: ORIGINAL_MEASUREMENT.txt | Polski: ORIGINAL_MEASUREMENT_PL.txt
+
+RESCUE ON FRACTALUS! — IN-FLIGHT FPS, ATARI PAL
+Analysis of the supplied ROM, 20 October 2026
+
+RESULT
+An average of 6.55 new terrain views per second over four measured flight
+segments. Precisely: 1574 image-presentation intervals in 240.429552 s of
+emulated time = 6.546616 FPS. Mean image duration: 152.751 ms. Most new
+images arrive every 7 or 8 PAL frames. This is renderer throughput, not
+the video signal frequency.
+
+SCENARIOS
+straight      388 intervals; 60.087332 s; 6.457268 FPS
+right         387 intervals; 60.127445 s; 6.436329 FPS
+left          398 intervals; 60.107388 s; 6.621482 FPS
+fast_right    401 intervals; 60.107387 s; 6.671393 FPS
+
+Each trial starts from the same saved flight state on level 1.
+straight: centered joystick; right/left: held continuously right/left.
+fast_right: OPTION for 45 frames (increase thrust), then turn right.
+After setting controls, 50 frames run before setting the breakpoint.
+No firing or changes to game RAM. Intro, menu, and launch tunnel excluded.
+Sample images every 100 presentations are in results/*.png.
+
+TIME DISTRIBUTION
+6 PAL frames: 52; 7: 616; 8: 799; 9: 103; 10: 3; 15: 1.
+About 89.9% of intervals lasted 7–8 frames (140.39–160.45 ms).
+Individual intervals correspond to roughly 3.32–8.31 FPS.
+Do not treat this range as a guaranteed minimum/maximum for the whole game.
+
+HOW THE EXAMINED GAME SECTION WORKS
+The ROM has 8 blocks of 8192 bytes. During flight, the block at offset
+$4000 is visible at $8000–$9FFF and the final block (offset $E000) at
+$A000–$BFFF. Code from the beginning of ROM is also copied to RAM
+(matching at $4000).
+
+The main loop $A32E–$A3CF contains two very similar halves:
+- $8309: prepare/update scene data;
+- $9214: clear drawing area (a series of STA bitmap stores is visible);
+- $87D3: terrain calculation/drawing and buffer-offset selection;
+- $9308: scan columns and fill bitmap (unrolled CMP/STA sequences);
+- handle additional elements and signal a completed image.
+The first half uses X=$33/$30/$33, the second X=$03/$00/$03.
+The $30 difference is 48 bytes: buffers are interleaved in memory.
+In the observed display list, consecutive bitmap rows are $60 apart
+(96 bytes, or two 48-byte rows), using ANTIC mode $0D.
+The cockpit and text also use other ANTIC modes and DLI.
+
+Terrain-bank code $9933–$9A54 subdivides segments by calculating
+intermediate points (ADC/ROR), uses a Y-indexed work stack, and compares
+with table $260E,X. Samples that do not improve the visible boundary are
+rejected; visible points are plotted with bit masks and ORA/STA bitmap
+operations. This demonstrates adaptive profile subdivision/rasterization
+and hiding of occluded terrain. The complete semantics of fractal map
+generation were not reconstructed here; this describes the path to a
+finished image.
+
+DOUBLE BUFFERING AND SYNCHRONIZATION
+$A34A: STA $42 with A=2 — second buffer ready.
+$A3AF: STA $42 with A=1 — first buffer ready.
+$B4F4–$B519: part of VBI (VVBLKI points to $B46C).
+If flight mode $4A and ready flag $42 are nonzero:
+  $42=1 -> write $316B to DLISTL/DLISTH ($D402/$D403);
+  $42=2 -> write $3210 to DLISTL/DLISTH;
+  $B516: LDA #0;
+  $B518: STA $42 — acknowledge receipt of the buffer.
+Without a ready image, these stores are skipped and the previous image
+remains. Thus breakpoint $B516 occurs once per presented image, not once
+per VBI. The main loop does not impose a fixed 7- or 8-VBI interval;
+it depends on renderer and other game-logic execution time, while
+presentation is synchronized to VBI.
+
+METHOD AND CHECKS
+The breakpoint stops emulation before executing $B516. Each stop records
+64-bit CLOCK.tick. We use neither host-computer time nor REGS.cycles
+(CPU cycles without full machine time). The machine clock includes time
+taken by ANTIC DMA and interrupts, among other things.
+Exact PAL timing from this Altirra version's code:
+  f = 3546895 / 2 = 1773447.5 Hz
+  one PAL frame = 312 * 114 = 35568 cycles
+  PAL refresh frequency = 49.86075967 Hz
+  FPS = interval_count * f / (last_tick - first_tick)
+N measurement points give N-1 intervals. The pooled mean is total
+intervals / total time, not the average of instantaneous reciprocal times.
+Differences of a few ticks between events arise from two VBI branches;
+the histogram rounds time to the nearest number of PAL frames.
+
+Independent validation without a breakpoint in the same 300-frame sample:
+39 display-list-register changes and 39 profiler executions of $B516.
+Results and change indices: results/validation.json.
+MADS assembled 162 bytes of flight_loop.asm and 38 of present_buffer.asm.
+Both outputs matched the corresponding ROM sections byte for byte.
+These compiled fragments are not a complete rebuilt game ROM.
+
+SCOPE AND LIMITATIONS
+800XL, 64 KiB, PAL, standard 6502, no VBXE/Rapidus or game-code changes.
+The emulator uses built-in AltirraOS, not an original Atari OS ROM.
+This is an emulator measurement; no physical Atari measurement was made.
+Four roughly 60 s segments cover one level and starting point, not a
+statistical mean across all levels, combat, altitudes, and maps.
+A practical description of this version's flight smoothness is about
+6–7 FPS, with 6.55 FPS as a reference. Harder scenes may differ.
+Not all game systems were fully decompiled (AI, sound, pilot rescue,
+collisions, level generation). The rendering/presentation path needed
+for reliable FPS measurement was reconstructed.
+
+FILES
+scripts/measure.py — actual experiment; requires a running bridge.
+scripts/validate.py — independent validation and CSV statistics.
+scripts/export_mads.py — export fragments, assemble, verify bytes.
+results/flying.altstate2 — shared initial trial state.
+results/{straight,right,left,fast_right}.csv — raw presentation times.
+results/final-statistics.json — final statistics with the exact clock.
+results/manifest.json — ROM hash, tool versions, configuration.
+analysis/flight_loop.asm, present_buffer.asm — verified MADS fragments.
+analysis/terrain_bank2.txt, fixed_bank7.txt — auxiliary linear listings;
+WARNING: they also interpret data as instructions and are not complete
+code/data classifications. Conclusions rely only on the described,
+verified paths.
+
+TOOL AND INFORMATION SOURCES
+https://github.com/ilmenit/AltirraSDL/releases/tag/nightly-bridge
+https://github.com/tebe6502/Mad-Assembler
+https://github.com/ilmenit/AltirraSDL/blob/0f63108cd1a2d5804d1579ac2aa206aa7df8fc93/src/h/at/atcore/constants.h
+https://manualzz.com/doc/7417027/atari-rescue-on-fractalus--video-game-manual
+The manual was used only to check controls. FPS comes from the local
+experiment on the supplied ROM, not an online publication.
