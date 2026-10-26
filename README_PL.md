@@ -2,7 +2,7 @@
 
 [English](README.md) · [Polski](README_PL.md)
 
-Inżynieria wsteczna i optymalizacja w asemblerze 6502 gry **Rescue on Fractalus!** dla Atari XL/XE. Najnowszy build, **v9**, wykorzystuje **cartridge XEGS 128 KB** i działa na komputerach PAL i NTSC z 64 KB RAM, zachowując szczegółowość terenu i rozdzielczość obrazu.
+Inżynieria wsteczna i optymalizacja w asemblerze 6502 gry **Rescue on Fractalus!** dla Atari XL/XE. Najnowszy build, **v10**, wykorzystuje **cartridge XEGS 128 KB** i działa na komputerach PAL i NTSC z 64 KB RAM, zachowując szczegółowość terenu i rozdzielczość obrazu.
 
 ## Pobieranie
 
@@ -10,12 +10,12 @@ W katalogu **[optimized version](optimized%20version/)** znajdują się najnowsz
 
 ## Zmierzona wydajność
 
-| System | Oryginał | Zoptymalizowana v9 | Przyrost |
+| System | Oryginał | v10 | Przyrost do oryginału |
 | --- | ---: | ---: | ---: |
-| PAL | 6,4421 FPS | 7,5623 FPS | **+17,39%** |
-| NTSC | 5,8043 FPS | 6,8977 FPS | **+18,84%** |
+| PAL | 6,4421 FPS | 7,6359 FPS | **+18,53%** |
+| NTSC | 5,8043 FPS | 6,9377 FPS | **+19,53%** |
 
-Są to średnie ze **155 niezależnych lotów dla każdej wersji i systemu**, trwających do 60 sekund, uruchamianych w nowym procesie emulatora od zimnego startu. Cztery odizolowane procesy emulatora zweryfikowano pod kątem pomiaru równoległego. Nie przenoszono zapisanych stanów ani nie odrzucano wyników odstających. 95-procentowe przedziały ufności przyrostu wynoszą **16,46–18,32% (PAL)** i **17,90–19,78% (NTSC)**.
+Są to średnie ze **155 lotów dla każdej wersji i systemu**, trwających do 60 sekund, uruchamianych w nowym procesie emulatora od zimnego startu. Dla v10 wykonano nową serię; oryginał wykorzystuje wcześniejszą serię odniesienia. Historyczne loty kontrolne odtworzono na tym samym emulatorze. Cztery odizolowane procesy emulatora zweryfikowano pod kątem pomiaru równoległego. Nie przenoszono zapisanych stanów ani nie odrzucano wyników odstających. [Raport v10](docs/benchmarks/RAPORT_V10_PL.md) zawiera przedziały ufności i historyczne porównanie z poprzednim wydaniem.
 
 FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświeżania obrazu. Test obejmuje automatyczny lot z joystickiem w położeniu neutralnym; nie obejmuje skrętów ani nurkowania. Loty zakończone naturalnie przed upływem 60 sekund pozostają w próbie. Szczegóły zawierają [metoda pomiaru i raporty](docs/benchmarks/METODA_PL.md) (po polsku).
 
@@ -34,6 +34,7 @@ FPS oznacza liczbę ukończonych obrazów terenu, a nie częstotliwość odświe
 - Zmieniono kolejność operacji rasteryzatora terenu i usunięto zbędną pracę po podziale odcinka.
 - Przyspieszono dokładne dzielenie całkowitoliczbowe i usunięto zbędną normalizację.
 - Wyspecjalizowano generowanie profilu gór dla typowych głębokości i szerokości.
+- Ułożono tablice adresów wierszy plottera tak, by unikać przekraczania stron pamięci, i usunięto zbędne zapisy rejestru Y.
 - Pominięto podziały terenu tylko tam, gdzie zachowawcza granica widoczności dowodzi ich całkowitego zasłonięcia.
 - Wykorzystano dodatkowe banki ROM do bezpośredniego kasowania ekranu i wyspecjalizowanego wypełniania terenu.
 - Zastąpiono powtarzane interpretowanie poleceń geometrii wyspecjalizowanym kodem i tablicami.

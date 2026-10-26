@@ -1,6 +1,8 @@
-# Aktualne pomiary PAL i NTSC
+# Metoda pomiarów PAL i NTSC
 
-Wyniki główne pochodzą z dwóch serii po **155 lotów oryginału i 155 lotów v9**, osobno dla PAL i NTSC. Źródła to [raport PAL](pal/RAPORT_PAL_PL.md), [protokół PAL](pal/PROTOKOL_PL.md), [raport NTSC](ntsc/RAPORT_NTSC_PL.md) oraz [uzupełnienie protokołu NTSC](ntsc/UZUPELNIENIE_PROTOKOLU_PL.md).
+Aktualne v10 ma osobną serię 155 lotów PAL i 155 NTSC. [Raport v10](RAPORT_V10_PL.md) przedstawia wyniki, walidację i niepewność. Powtórzono momenty START z harmonogramu v9 oraz poniższe zasady. Oryginał i v9 pozostały historycznymi punktami odniesienia; kontrolne loty v9 odtworzyły jego wyniki. Poniższa tabela dokumentuje wcześniejsze badanie oryginału i v9.
+
+Historyczne wyniki pochodzą z dwóch serii po **155 lotów oryginału i 155 lotów v9**, osobno dla PAL i NTSC. Źródła to [raport PAL](pal/RAPORT_PAL_PL.md), [protokół PAL](pal/PROTOKOL_PL.md), [raport NTSC](ntsc/RAPORT_NTSC_PL.md) oraz [uzupełnienie protokołu NTSC](ntsc/UZUPELNIENIE_PROTOKOLU_PL.md).
 
 | System | Oryginał FPS | v9 FPS | Zysk | 95% przedział ufności zysku |
 | --- | ---: | ---: | ---: | --- |

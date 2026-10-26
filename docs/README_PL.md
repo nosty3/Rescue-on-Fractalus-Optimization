@@ -1,8 +1,9 @@
 # Dokumentacja projektu
 
-- [OPTYMALIZACJE_PL.md](OPTYMALIZACJE_PL.md) — jeden szczegółowy opis wszystkich zmian obecnych w aktualnym v9.
+- [OPTYMALIZACJE_PL.md](OPTYMALIZACJE_PL.md) — jeden szczegółowy opis wszystkich zmian obecnych w aktualnym v10.
 - [ODTWORZENIE_PL.md](ODTWORZENIE_PL.md) — budowanie aktualnych plików i przygotowanie dalszych badań.
 - [benchmarks/METODA_PL.md](benchmarks/METODA_PL.md) — aktualne wyniki PAL/NTSC, metoda, dane i wykresy.
+- [benchmarks/RAPORT_V10_PL.md](benchmarks/RAPORT_V10_PL.md) — pełne wyniki v10, zyski FPS, zmiany plottera i zakres walidacji.
 - [pmg/](pmg/) — rozpoznanie procedur PMG, pierwsza próba i audyt dalszych opcji.
 - [terrain/](terrain/) — rozpoznanie profilu gór.
 - [research/](research/) — audyty niskopoziomowe, odrzucone i przyszłe kierunki optymalizacji.

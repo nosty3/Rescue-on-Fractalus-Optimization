@@ -1,42 +1,44 @@
 {
-  "version": "v9",
+  "version": "v10",
   "cartridge": "XEGS 128 KB",
   "cartridge_type": 14,
   "rebuild": "python scripts/rebuild_current.py --mads PATH_TO_MADS",
   "files": {
     "optimized version/last_ver_info.txt": {
-      "bytes": 152,
-      "sha256": "bc970538475e3605f014e931b987ea12681366abc58447e92edf5e78da75a549"
+      "bytes": 128,
+      "sha256": "2dc837e563bdd73195a9cc6cc5d284ce313e08accb510f499349957d4a8a6bcf"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.car": {
       "bytes": 131088,
-      "sha256": "be7cc58aa1b92f563f17892c5194ae35ea2fc07208b31c0fa8e4aff137cae4ce"
+      "sha256": "d02a63ee5cabaecc8722719fbdb32778199fa4ff1bd48907f9f2a48fb47e88d8"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.rom": {
       "bytes": 131072,
-      "sha256": "0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880"
+      "sha256": "fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37"
     },
     "original/Rescue on Fractalus!.rom": {
       "bytes": 65536,
       "sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68"
     },
     "dist/fractalus-optimized-128KB.ips": {
-      "bytes": 81216,
-      "sha256": "7fadf73d496931e2043cb02e2570602c70ecd60ab110600fa73a8f69bb5f5236"
+      "bytes": 81226,
+      "sha256": "3ab81aa5b9c5d4d37a498d43893b7f9bc373ca8ea753527c6b5a4edadd4c3ee0"
     }
   },
   "benchmarks": {
     "PAL": {
-      "original_fps": 6.4421,
-      "optimized_fps": 7.5623,
-      "gain_percent": 17.39,
-      "data": "results/pal_isolated_main/benchmark.json"
+      "original_fps": 6.442127904539264,
+      "v9_fps": 7.5623140620060765,
+      "optimized_fps": 7.635931826997783,
+      "gain_percent": 18.531204908510723,
+      "data": "results/v10/pal/benchmark.json"
     },
     "NTSC": {
-      "original_fps": 5.8043,
-      "optimized_fps": 6.8977,
-      "gain_percent": 18.84,
-      "data": "results/ntsc_isolated_main/benchmark.json"
+      "original_fps": 5.804317880166299,
+      "v9_fps": 6.897685003697549,
+      "optimized_fps": 6.937667422472081,
+      "gain_percent": 19.52597300327925,
+      "data": "results/v10/ntsc/benchmark.json"
     }
   },
   "trials_per_version_and_system": 155,

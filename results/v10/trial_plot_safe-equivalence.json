@@ -1,0 +1,431 @@
+{
+  "result": "pass",
+  "variant": "trial_plot_safe",
+  "scenes": [
+    {
+      "scene": "center-0",
+      "old": 136551,
+      "new": 134858,
+      "saved": 1693,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-1",
+      "old": 107553,
+      "new": 106216,
+      "saved": 1337,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-2",
+      "old": 121666,
+      "new": 120042,
+      "saved": 1624,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-3",
+      "old": 118461,
+      "new": 116934,
+      "saved": 1527,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-4",
+      "old": 109715,
+      "new": 108350,
+      "saved": 1365,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-5",
+      "old": 117763,
+      "new": 116369,
+      "saved": 1394,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-6",
+      "old": 117345,
+      "new": 115955,
+      "saved": 1390,
+      "scratch_differences": []
+    },
+    {
+      "scene": "center-7",
+      "old": 121763,
+      "new": 120668,
+      "saved": 1095,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-0",
+      "old": 127386,
+      "new": 125878,
+      "saved": 1508,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-1",
+      "old": 100277,
+      "new": 99392,
+      "saved": 885,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-2",
+      "old": 100037,
+      "new": 98862,
+      "saved": 1175,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-3",
+      "old": 99957,
+      "new": 98892,
+      "saved": 1065,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-4",
+      "old": 113948,
+      "new": 112252,
+      "saved": 1696,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-5",
+      "old": 109536,
+      "new": 108415,
+      "saved": 1121,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-6",
+      "old": 120879,
+      "new": 119629,
+      "saved": 1250,
+      "scratch_differences": []
+    },
+    {
+      "scene": "right-7",
+      "old": 107355,
+      "new": 106337,
+      "saved": 1018,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-0",
+      "old": 114811,
+      "new": 113570,
+      "saved": 1241,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-1",
+      "old": 104427,
+      "new": 103472,
+      "saved": 955,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-2",
+      "old": 87941,
+      "new": 86990,
+      "saved": 951,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-3",
+      "old": 107876,
+      "new": 106463,
+      "saved": 1413,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-4",
+      "old": 115707,
+      "new": 114440,
+      "saved": 1267,
+      "scratch_differences": [
+        "0xb5"
+      ]
+    },
+    {
+      "scene": "left-5",
+      "old": 97849,
+      "new": 97013,
+      "saved": 836,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-6",
+      "old": 96484,
+      "new": 95674,
+      "saved": 810,
+      "scratch_differences": []
+    },
+    {
+      "scene": "left-7",
+      "old": 94278,
+      "new": 93304,
+      "saved": 974,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-0",
+      "old": 117181,
+      "new": 116164,
+      "saved": 1017,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-1",
+      "old": 57359,
+      "new": 57359,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-2",
+      "old": 66685,
+      "new": 66685,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-3",
+      "old": 61104,
+      "new": 61104,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-4",
+      "old": 62612,
+      "new": 62612,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-5",
+      "old": 57125,
+      "new": 57125,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-6",
+      "old": 62450,
+      "new": 62450,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "down-7",
+      "old": 64907,
+      "new": 64907,
+      "saved": 0,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-0",
+      "old": 127766,
+      "new": 125807,
+      "saved": 1959,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-1",
+      "old": 96575,
+      "new": 95378,
+      "saved": 1197,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-2",
+      "old": 105781,
+      "new": 104569,
+      "saved": 1212,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-3",
+      "old": 109826,
+      "new": 107923,
+      "saved": 1903,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-4",
+      "old": 110292,
+      "new": 108292,
+      "saved": 2000,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-5",
+      "old": 99172,
+      "new": 97251,
+      "saved": 1921,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-6",
+      "old": 101686,
+      "new": 99631,
+      "saved": 2055,
+      "scratch_differences": []
+    },
+    {
+      "scene": "up-7",
+      "old": 124542,
+      "new": 122341,
+      "saved": 2201,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-0",
+      "old": 100401,
+      "new": 99107,
+      "saved": 1294,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-1",
+      "old": 101223,
+      "new": 100026,
+      "saved": 1197,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-2",
+      "old": 91346,
+      "new": 90264,
+      "saved": 1082,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-3",
+      "old": 114781,
+      "new": 113640,
+      "saved": 1141,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-4",
+      "old": 101784,
+      "new": 100708,
+      "saved": 1076,
+      "scratch_differences": []
+    },
+    {
+      "scene": "cold_start-5",
+      "old": 98233,
+      "new": 97137,
+      "saved": 1096,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-0",
+      "old": 126547,
+      "new": 124852,
+      "saved": 1695,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-1",
+      "old": 121426,
+      "new": 119959,
+      "saved": 1467,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-2",
+      "old": 113631,
+      "new": 112339,
+      "saved": 1292,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-3",
+      "old": 140631,
+      "new": 139069,
+      "saved": 1562,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-4",
+      "old": 128401,
+      "new": 127032,
+      "saved": 1369,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level10-5",
+      "old": 108272,
+      "new": 107156,
+      "saved": 1116,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level26-0",
+      "old": 125565,
+      "new": 123653,
+      "saved": 1912,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level26-1",
+      "old": 141842,
+      "new": 139436,
+      "saved": 2406,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level26-2",
+      "old": 140245,
+      "new": 137608,
+      "saved": 2637,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level26-3",
+      "old": 120810,
+      "new": 118806,
+      "saved": 2004,
+      "scratch_differences": [
+        "0xb5"
+      ]
+    },
+    {
+      "scene": "level26-4",
+      "old": 119431,
+      "new": 117836,
+      "saved": 1595,
+      "scratch_differences": []
+    },
+    {
+      "scene": "level26-5",
+      "old": 106680,
+      "new": 105287,
+      "saved": 1393,
+      "scratch_differences": []
+    }
+  ],
+  "mean_saved": 1248.0862068965516,
+  "random_cases": 6000,
+  "random_cycles": [
+    12811476,
+    12614099
+  ],
+  "scratch_exceptions": [
+    "B5 after renderer",
+    "B4/B5 after subsequent geometry"
+  ],
+  "next_calls": [
+    "8E51",
+    "A444",
+    "8309"
+  ]
+}

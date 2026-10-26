@@ -127,6 +127,12 @@ rom[len(rom)-8192+0xa547-0xa000]=7
 
 digest=sha(rom)
 assert digest=='0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880',digest
+# Preserve a reproducible historical control in ignored build/.
+reference=bytes(rom)
+(BUILD/'reference-v9.car').write_bytes(b'CART'+(14).to_bytes(4,'big')+(sum(reference)&0xffffffff).to_bytes(4,'big')+bytes(4)+reference)
+code=asm('v10_plotter');assert len(code)==8192;rom[5*8192:6*8192]=code
+digest=sha(rom)
+assert digest=='fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37'
 stem='Rescue on Fractalus! - optimized 128KB'
 car=b'CART'+(14).to_bytes(4,'big')+(sum(rom)&0xffffffff).to_bytes(4,'big')+bytes(4)+rom
 assert rom==(ROOT/'optimized version'/f'{stem}.rom').read_bytes()
@@ -139,5 +145,5 @@ while ips[i:i+3]!=b'EOF':
  restored[at:at+n]=ips[i:i+n];i+=n
 assert restored==rom
 (BUILD/f'{stem}.rom').write_bytes(rom);(BUILD/f'{stem}.car').write_bytes(car)
-(BUILD/'reconstruction.json').write_text(json.dumps(dict(result='pass',version='v9',sha256=digest,rom_bytes=len(rom),ips_verified=True,fixtures_required=False),indent=2))
-print('Current v9 ROM, CAR and IPS match exactly:',digest)
+(BUILD/'reconstruction.json').write_text(json.dumps(dict(result='pass',version='v10',sha256=digest,rom_bytes=len(rom),ips_verified=True,fixtures_required=False),indent=2))
+print('Current v10 ROM, CAR and IPS match exactly:',digest)

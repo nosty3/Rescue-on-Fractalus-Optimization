@@ -1,0 +1,5 @@
+{
+  "result": "pass",
+  "checks": 232,
+  "scope": "Full flight VBI on 58 fixtures, four scratch poisons, return to bank 5; actual v9 RAM interpolation installed."
+}

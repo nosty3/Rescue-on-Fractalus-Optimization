@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "parallel": [
+    {
+      "video": "pal",
+      "trial": 4,
+      "parallel_equal": true
+    },
+    {
+      "video": "pal",
+      "trial": 2,
+      "parallel_equal": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 4,
+      "parallel_equal": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 2,
+      "parallel_equal": true
+    }
+  ],
+  "historical": [
+    {
+      "video": "pal",
+      "trial": 4,
+      "historical_equal": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 4,
+      "historical_equal": true
+    }
+  ],
+  "rom_sha256": "fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37"
+}

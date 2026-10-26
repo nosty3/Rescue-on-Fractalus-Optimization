@@ -1,25 +1,33 @@
 # Optymalizacje Rescue on Fractalus! — pełny opis aktualnego buildu
 
-Dokument opisuje łącznie zmiany obecne w **v9**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
+Dokument opisuje łącznie zmiany obecne w **v10**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
 
 ## Wynik i zakres
 
 Gra działa na Atari XL/XE z 64 KB RAM, na cartridge'u XEGS 128 KB (CART 14), w PAL i NTSC. Nie zmieniono rozdzielczości ani szczegółowości terenu. Zwiększenie ROM zapewnia miejsce na wyspecjalizowany kod i tablice; samo przepakowanie do większego cartridge'a nie przyspiesza gry.
 
-| System | Oryginał | v9 | Zysk |
+| System | Oryginał | v10 | Przyrost do oryginału |
 | --- | ---: | ---: | ---: |
-| PAL | 6,4421 FPS | 7,5623 FPS | 17,39% |
-| NTSC | 5,8043 FPS | 6,8977 FPS | 18,84% |
+| PAL | 6,4421 FPS | 7,6359 FPS | **+18,53%** |
+| NTSC | 5,8043 FPS | 6,9377 FPS | **+19,53%** |
 
 Są to średnie ze 155 niezależnych automatycznych lotów na wersję i system. [Metoda i ograniczenia](benchmarks/METODA_PL.md) są wspólne dla obu serii. Poniższe wyniki mikrotestów pochodzą z badań poszczególnych procedur: nie są dodatkowymi pomiarami końcowego FPS i nie wolno sumować ich procentowych zysków.
 
 SHA256 oryginalnego ROM-u: `1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68`.
 
-SHA256 zoptymalizowanego ROM-u: `0c8226e1f58ad26b2a103cbf59c4b8b23fdb87caac0e22f2586a83513a859880`.
+SHA256 zoptymalizowanego ROM-u: `fde2166f28d768514a933a76654c9c3f9a583d4cdac182ed08aa14d15761bc37`.
 
 ## Rasteryzator i powroty z podziału terenu
 
 W procedurze przy `$9937` przestawiono operacje STX/TXA, aby współdzielić potrzebną część wejścia. Skoki po podziale przy `$9A18`, `$9A36` i `$9A52` prowadzą do `$9939`: pomijają powtórne sprawdzenie granicy i zapis niezmienionej wartości `$82`. Oszczędność wynosi 7 cykli na taki powrót. Istotne jest zachowanie semantyki `$82`; bezwarunkowe przesunięcie zapisu byłoby niepoprawne. Źródło: `raster_order.asm` oraz poprawki adresów w builderze.
+
+## Tablice adresów wierszy plottera i zapisy Y
+
+Bank 5 korzysta z dwóch 48-bajtowych tablic ROM pod $9768 i $97A8. Dla wysokości Y=104..151 adres wiersza wynosi $1010+96*(151-Y). Efektywne podstawy odczytu $9700 i $9740 eliminują przekroczenia strony pamięci. Ogólne ścieżki, w tym nietypowe wysokości, zachowują oryginalne tablice RAM.
+
+Usunięto 48 instrukcji STY $B5 w wyspecjalizowanych ścieżkach, w których Y i tak odtwarzane jest instrukcją LDY ze stałą głębokością. Nie zmieniono liczby przełączeń banków ani synchronizacji buforów. Źródło: `v10_plotter.asm`.
+
+W zestawie 58 scen oszczędzono średnio 1248,09 cyklu na renderowanie i wypełnienie. Przeszło również 6000 losowych odcinków, 309 przypadków brzegowych i 232 kontrole VBI. B5 po rendererze, a B4/B5 po dalszej geometrii mogą różnić się jako dane pomocnicze nieużywane przez dalsze badane obliczenia; martwy stos pomijano. Rejestry i flagi na badanych wyjściach pozostają zgodne. Zakres i ograniczenia testów, wraz z pełnym pomiarem FPS, opisuje [raport v10](benchmarks/RAPORT_V10_PL.md).
 
 ## Dzielenie całkowitoliczbowe
 
@@ -122,7 +130,7 @@ Przetestowano 256×4 warianty oczekiwania, 240 kasowań przy `$42=0`, zimny star
 
 ## Weryfikacja i odtwarzalność
 
-Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Wynik odtworzenia po reorganizacji był identyczny bajt w bajt z wydanym v9. [Instrukcja](ODTWORZENIE_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
+Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Builder sprawdza etap v9, a następnie końcowy ROM v10, CAR i IPS bajt w bajt. [Instrukcja](ODTWORZENIE_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
 
 Mikrotesty CPU porównują określone kontrakty procedur; nie zastępują emulatora z DMA, VBI i DLI. Wczesne pozornie wysokie wyniki rzędu 8–10,7 FPS odrzucono z powodu błędnej trampoliny i nieobsługiwanych instrukcji modelu. W dalszych testach wymagano ścisłej obsługi opkodów i kontroli banku/PC. Profil z limitem 4096 próbek nie jest pełnym licznikiem wszystkich wywołań.
 
@@ -131,3 +139,5 @@ Testy wykonano w modelu CPU i Altirrze headless; nie są certyfikacją wszystkic
 ## Pomysły zachowane do dalszych badań
 
 Nie wdrażano pozostałych drobnych opcji: wyrównywania stron, mnożenia przy `$7CD6`, dalszej przebudowy skanowania kanałów dźwięku i specjalizacji początków wypełnienia 33–48. Są zachowane w [zestawieniu opcji](research/OPCJE_OPTYMALIZACJI_V5_PL.md), [dalszych kierunkach](research/DALSZE_KIERUNKI_PL.txt) i [audycie PMG](pmg/AUDYT_PMG_PL.md). To hipotezy, nie składniki wydanego ROM-u. Przy dalszych pracach obowiązywał próg szacowanego zysku 0,05 FPS, z osobno zaakceptowanym wyjątkiem dla małej zmiany PMG. Zakończenie obecnych prac nie dowodzi, że osiągnięto absolutne optimum.
+
+Dodatkowe badanie cache wyboru kanałów miksera odrzucono: po uwzględnieniu zapisów z RAM oszczędność wewnątrz miksera wynosiła średnio tylko 14,63 cyklu/VBI przed odjęciem narzutu poza nim. Eksperyment nie wchodzi do v10. Podobnie nie włączono nowych skrótów skalowania perspektywy.
