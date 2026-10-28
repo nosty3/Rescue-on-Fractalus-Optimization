@@ -1,0 +1,42 @@
+[
+  {
+    "video": "pal",
+    "version": "up38",
+    "reference_equal": true
+  },
+  {
+    "video": "pal",
+    "version": "up38",
+    "steering_parallel_equal": true
+  },
+  {
+    "video": "pal",
+    "version": "candidate",
+    "reference_equal": true
+  },
+  {
+    "video": "pal",
+    "version": "candidate",
+    "steering_parallel_equal": true
+  },
+  {
+    "video": "ntsc",
+    "version": "up38",
+    "reference_equal": true
+  },
+  {
+    "video": "ntsc",
+    "version": "up38",
+    "steering_parallel_equal": true
+  },
+  {
+    "video": "ntsc",
+    "version": "candidate",
+    "reference_equal": true
+  },
+  {
+    "video": "ntsc",
+    "version": "candidate",
+    "steering_parallel_equal": true
+  }
+]

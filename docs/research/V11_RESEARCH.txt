@@ -1,0 +1,83 @@
+Historical research-stage report. Final v11 FPS and XEX status: see ../../README.md.
+
+Further up38 optimizations — research report
+
+Conclusion
+Five additional simplifications have been implemented. Together they reduce CPU cycles for the complete rendering pipeline by 1.51–4.88% in the tested scenes versus up38. This compares identical scene states; it is NOT a new whole-game speedup percentage. Limited flight benchmarks do not yet establish a meaningful FPS gain. The candidate remains experimental.
+
+Scope and identity
+Baseline: supplied up38 ROM, SHA256 6087e9b314368b95e7885f5634c88a506bbc61d7a4c988db345e7373377253da.
+Candidate: sentinel_depth_lazy_scan_fill.rom / .car.
+ROM SHA256: ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868.
+Experiment source: scripts/research_up38.py. Generated assembly, symbol files and binaries are alongside this report. The supplied package, repository directory and published release were not modified. No corresponding XEX or official release was prepared.
+
+Profile
+Across 40 scenes: 114777 CPU cycles per pipeline on average. Bank 5 rasterization: 61609 (53.7%); bank 3 projection: 19005; bank 2: 15466; bank 9 fill: 10185; banks 6/8: 6912; bank 14 prologue: 1575. This motivated prioritizing the plotter and its clearing/filling helpers.
+
+Changes
+1. Represent a fully cleared column with HD=152 instead of 151.
+The maximum plotted height is 151. Previously HD=151 triggered lazy clear at that height, although the helper immediately returned without clearing. The new sentinel avoids these calls without adding per-pixel instructions. Dispatch tables, initialization and both helpers were updated. Object drawing can still produce 151; it remains supported rather than being assumed unreachable.
+2. Restore Y once at the shared path exit.
+In d0–d4 specializations, remove LDY after individual pixels and replace the shared DEY with LDY of a known constant. This does not modify general recursion dg or every specialized leaf. It removes redundant instructions without changing subdivision.
+3. Perform lazy clear directly in the HD/h coordinate domain.
+Reverse jump tables and comparisons remove conversions of both heights into row numbers. Clearing-boundary rounding and HD=151/152 handling remain equivalent. Applies to banks 5 and 8.
+4. Keep the occlusion threshold in the accumulator.
+In specialized scans o0–o4, replace four LDA/CMP pairs with four memory CMP instructions. Use Hmax-1 and reverse the failure condition; advance X with four INX instructions to preserve A. These paths handle widths of at least 5, so their positive bound contribution guarantees Hmax>0. This was not applied unconditionally to the generic path, where Hmax=0 would need separate handling.
+5. Fill directly uses HD instead of converting to D=152-HD.
+Reverse table indexing and comparisons remove subtraction from dispatch and sky-band handling, preserving image contents.
+
+Incremental results on the same 40-scene sample (mean CPU cycles saved per pipeline versus up38)
+Sentinel only: 2492.125.
++ Y restoration: 2815.075 (additional 322.950).
++ lazy clear: 3058.950 (additional 243.875).
++ occlusion scans: 3502.875 (additional 443.925).
++ fill: 3790.850 (additional 287.975).
+Code placement and branch page crossings also affect these figures. They are not universal costs of individual routines.
+
+Full comparison: 320 scenes, 80 per group
+Group                  up38           candidate       saving       fewer cycles
+PAL automatic          108001.2875    106369.1750     1632.1125     1.5112%
+NTSC automatic         109597.6500    107565.4250     2032.2250     1.8543%
+PAL steering           129267.9500    123019.4875     6248.4625     4.8337%
+NTSC steering          106477.0625    101278.6875     5198.3750     4.8822%
+These are py65 6502 CPU cycles, excluding DMA, interrupts and beam waiting. Percentages refer to the tested pipeline, not all game time. The stronger result in steering scenes is not a representative benchmark of every maneuver.
+
+Validation
+- 320 recorded scenes: identical image, relevant RAM, A/X/Y/SP, live stack and semantically normalized clearing-boundary cache.
+- 5000 randomized segments, including widths 1–128 and screen edges: identical image buffers and occlusion table; seed 20261029. This test does not require identical dead registers/scratch RAM after each segment.
+- 300 object-plotter calls: identical relevant RAM and A/X/Y/SP.
+- 160 successive states from a natively booted candidate, 80 each PAL/NTSC: neutral flight followed by random steering/firing. Replaying up38 with equivalent inputs produced identical images/relevant RAM/registers. Candidate sentinel 152 is converted to equivalent baseline value 151 when preparing baseline inputs.
+- For these 160 states, differing processor flags were tracked to their first read/write: none was consumed before being overwritten.
+- Three Esc PAUSE/RESUME cycles per video standard, with five presentations after each resume: passed.
+- Two clearing helpers: 11880 cases (5940 per bank), every valid HD/h combination that invokes the helper, six column positions, identical image, cache semantics and X/Y/SP. No differences.
+- Beam-synchronized sampling of 100 PAL and 100 NTSC frames found no image changes in a buffer still being displayed.
+Details: *-comparison.json, *-fuzz.json, *-objects.json and *-native.json. Beam-synchronization results are in *-tearing.json; helper results are in *-helpers.json.
+This is neither a proof covering every gameplay situation nor a hardware test. XEX, accelerators and every landing/pilot/alien/game-over scene were not validated.
+
+Limited native cold-boot FPS benchmark
+Preselected trials 4, 78 and 154 per standard, up to 60 seconds each, using four isolated emulator processes. Same B516 presentation measurement and 170-frame warmup methodology as before. All six entry RAM hashes matched up38. Arithmetic means of three trials:
+PAL: up38 9.244679; candidate 9.219327; difference -0.025352 FPS (-0.2742%).
+NTSC: up38 8.407107; candidate 8.444859; difference +0.037752 FPS (+0.4490%).
+Individual differences range from -0.407687 to +0.301633 FPS.
+These are not new reliable game averages and do not replace the 155-flight series. Lower cost for identical scenes is confirmed; a higher whole-game mean FPS is NOT established by this test. Execution timing changes can alter subsequent flight behavior; DMA/VBI and synchronization are also excluded from the cycle table. No diagnostic established the specific cause of each FPS discrepancy. Do not advertise a new +X% result based on this experiment.
+An earlier sentinel_depth_lazy candidate also received six flights; its results remain in a separate JSON file. Total: 12 measurement flights, not a full series.
+
+Rejected variants
+- Proactively clear one extra row: only 2049.95 cycles saved over 40 scenes, versus 2492.125 for the sentinel alone. LUT/per-column overhead outweighed reduced subsequent work. This does not rule out every predictive-clearing algorithm.
+- Defer STX $82 until subdivision: tested in sentinel_store_fill, correct across 320 scenes, but its small and uneven effect did not justify inclusion in the selected candidate.
+
+Further directions, without promised gains
+- Specializing buffer-address tables could eliminate some prologue work, but terrain and object paths need a consistent solution and revised bank layout. Simply removing table rewriting would be incorrect.
+- Projection still costs around 19000 cycles. Division is already unrolled and heavily optimized; reciprocal/table methods need exact remainder/overflow correction to preserve bitwise results. No faster working implementation or measured gain exists here yet.
+- Tighter phase-dependent culling bounds might eliminate more falsely visible subtrees; this needs a bound proof and cost analysis. Not implemented.
+None of the five working changes requires additional banks or expanded RAM.
+
+Reproduction
+python -X utf8 scripts/research_up38.py build sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py compare sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py validate sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py helpers sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py native sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py tearing sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py benchmark sentinel_depth_lazy_scan_fill
+Requires the supplied package, MADS, local py65 and previously captured audit states. Benchmarking reuses existing result files with the same name; choose a new variant identifier deliberately for an independent repeat measurement.

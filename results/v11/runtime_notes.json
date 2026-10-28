@@ -1,0 +1,10 @@
+{
+  "duplicate_runner": {
+    "old_pid": 34108,
+    "active_pid": 7492,
+    "reason": "Initial shutdown filter matched python.exe but actual process name was python3.13.exe.",
+    "overlap": "Two four-worker runners overlapped between the transport restart and explicit termination of PID 34108. Some flights were computed redundantly. Only one atomic completed file per arm/video/trial enters analysis.",
+    "resolution": "Verified command line, stopped old parent and its four child emulators; confirmed exactly four remaining children of PID 7492.",
+    "validation": "All completed straight up38 results will be checked against historical counts/FPS. Additional post-run candidate repetitions will compare event sequences."
+  }
+}

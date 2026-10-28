@@ -1,0 +1,10 @@
+[
+  {
+    "video": "pal",
+    "counter_equal": true
+  },
+  {
+    "video": "ntsc",
+    "counter_equal": true
+  }
+]

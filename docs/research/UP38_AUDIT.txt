@@ -1,0 +1,128 @@
+Independent audit of Fractalus up38
+Date: 2026-10-27
+English: AUDIT_REPORT.txt | Polski: AUDIT_REPORT_PL.txt
+
+Conclusion
+The cartridge speedup is credible and reproducible. In the examined cases,
+the changes preserve the image and the behavior of the tested routines.
+No confirmed game defect was found. This is not proof of correctness for
+every state of the entire game, particularly the additional XEX relocation.
+
+Artifacts
+The package was treated as material to assess, not instructions to modify
+the project. Neither it nor the release in repository was changed.
+All 96 package file hashes match SHA256SUMS.txt.
+The ROM rebuilt from copied sources and v10.1 matches the supplied ROM:
+6087e9b314368b95e7885f5634c88a506bbc61d7a4c988db345e7373377253da
+The IPS produces the same ROM. The XEX rebuilt from the instruction map
+and relocation decisions also matches:
+a89e57a7c8fd280b4f7b3db018b9b428952556736add18d434e96f07d43876ef.
+
+FPS
+Recalculated all 930 rows of full155.jsonl (3 versions x 2 systems x 155).
+PAL: original 6.4421279045; v10.1 7.6359318270; up38 8.9365618809 FPS.
+NTSC: original 5.8043178802; v10.1 6.9376674225; up38 8.1670301412 FPS.
+Gain over original: PAL 38.7207%, NTSC 40.7061%.
+Gain over v10.1: approximately 17.03% and 17.72%.
+All 620 reference rows match the published original and v10 results
+(the v10.1 fix does not affect ordinary flight).
+Independently ran 8 flights of up to 60 seconds with our original measurement
+code, cold boots, and no state transfer:
+PAL trials 4, 28, 78, 154; NTSC trials 4, 40, 78, 154.
+All 8 match the entry hash (the authors' prefix), interval count, and FPS.
+PAL 28 includes a natural early end.
+Did not repeat all 310 up38 flights. The means above are verified calculations
+from the authors' complete data, supported by independent replication of
+8 flights, not a new independent 155+155 series.
+
+Meaning of the changes
+1. wait_beam allows clearing after ANTIC has left the mountain area, without
+   waiting for VBI itself. This relaxes our conservative synchronization
+   condition; it does not unconditionally remove the wait.
+2. raster_cull extends our conservative E(w) bound to internal subtrees.
+   It does not reduce visible terrain subdivision depth. Reading up to three
+   extra columns can prevent culling, not incorrectly force it.
+3. VBI skips initial inactive sound channels faster and unrolls the cockpit
+   gauge. The main active-sound paths remain.
+4. sky retains the clean-sky boundary for each byte column. Clearing and
+   filling perform fewer stores. This is a substantial algorithmic change
+   that depends on every drawing routine updating the boundaries correctly.
+5. proj_loop uses banking, inlined division, a revised edge loop, fewer copies,
+   and unrolled prolog/epilog code. No approximation or resolution reduction
+   was identified; completed images were compared against the reference.
+
+Independent correctness tests
+- 320 clear/render/fill states captured from up38: PAL/NTSC, neutral flight
+  and steering/firing, with additional level-selection input sequences.
+  Images and compared RAM match, retaining known exclusions for dead rasterizer
+  variables, private sky state, and dead stack memory.
+- 20 states returned different C/V flags after the pipeline. Traced subsequent
+  execution: each differing flag was overwritten before being read. These
+  differences were not dismissed merely because the images matched.
+- 2500 random segments for the isolated raster_cull patch: matching pixels
+  and occlusion profiles, including reversed and offscreen endpoints.
+  Flags after the individual routine do not always match; this does not claim
+  complete register equivalence for every arbitrary routine invocation.
+- 320 VBI states: matching compared RAM and hardware-write sequences, excluding
+  bank switches. Registers and flags match after XITVBV/RTI. Register differences
+  before the OS exit were intermediate state.
+- 300 object-pixel calls, covering both $8B80 and $8B88 entries. During rendering,
+  compared equivalent representations: retained clean sky in up38 corresponds
+  to zeroes in the reference buffer before filling. After this normalization,
+  compared RAM and A/X/Y/SP match. This tests the internal representation;
+  it does not claim memory must be identical before image completion.
+- 100 PAL and 100 NTSC frames: sampled successive rows after ANTIC fetches,
+  with no changes within a period displaying the same buffer. Row 46, updated
+  by VBI, was excluded as specified by the test. No tearing detected.
+- 6 configurations: CAR 64K, XEX 320k, XEX 1088k, each in PAL/NTSC. Each passed
+  3 Esc pause/resume cycles, 5 successive images after each resume, steering,
+  and firing. Inspected control screenshots from PAL CAR/XEX.
+
+Important limitations and documentation observations
+- Not all landing, pilot rescue, alien, game-over, and new-game scenes were
+  dynamically verified. This matters particularly for XEX, relocated partly
+  using code coverage and manual decisions.
+- No physical Atari, cartridge-device, or accelerator tests. The README's
+  supported cartridge list is not backed by hardware tests in this package.
+- The authors explicitly acknowledge XEX limitations; retain that disclosure.
+- equiv.py excludes the entire stack page, $B5, and a list of dead variables;
+  it does not compare P flags. It does not emulate DMA or interrupts itself.
+  'All RAM identical' needs these qualifications. Our additional tests covered
+  live stack memory, VBI exit, and flags separately.
+- AGENT.md describes hang.py as random steering and firing, but that script
+  performs neutral flight. Other tools, including capture.py, do support
+  steering. This does not prove those tests were absent; the description of
+  the particular script is inaccurate.
+- The authors' measurement lacks our $4A-change watchpoint and checks mode at
+  successive stops. It is not literally identical measurement code. Eight
+  replications with our code, including an early end, matched.
+- VBI timing changes alter RANDOM reads and generated planets. Image equality
+  refers to identical algorithm inputs, not an identical movie after the same
+  menu delay. Full-series comparisons should remain independent; ladder steps
+  are not exact valuations of isolated patches on identical scenes, and their
+  percentages must not be added.
+- The gain applies to the defined automatic flight. Our clear/render/fill
+  microtests found: PAL neutral -10.37% cycles; NTSC neutral -10.06%; NTSC
+  steering -6.11%; PAL steering +1.96%. The last sample was slightly slower
+  in this subsystem. This is neither full-game FPS nor evidence of an overall
+  regression; it shows that cache value depends on the scene. Not every image
+  must become faster.
+- One energy-routine frequency measurement does not establish equivalence of
+  every game mechanism. A universal 25 Hz logic-clock claim is too broad
+  (TV standard and different execution paths also matter). No deliberate
+  gameplay acceleration, enemy omission, or LOD reduction was identified.
+
+Assessment
+A valuable, genuine continuation of optimization; the earlier +19% was not
+the limit. For the cartridge: strong evidence of speedup and correctness
+of the tested rendering, no discovered defect, without an absolute guarantee
+for the entire game. For XEX: working and reproducible, with a separate level
+of relocation risk; it still needs rare-scene and physical-hardware testing.
+
+Evidence in this directory
+data_and_build.json; benchmark_replication.json; equivalence.json;
+resolved-differences.json; flag-liveness.json; cull-fuzz.json; tearing.json;
+smoke.json; xex-build.json; captured scenes and logs. Initial differences in
+equivalence.json must be read alongside resolved-differences.json and
+flag-liveness.json.
+Audit tool: ../../scripts/audit_up38.py.

@@ -2,7 +2,46 @@
 
 [English](OPTIMIZATIONS.md) · [Polski](OPTIMIZATIONS_PL.md)
 
-This document describes all changes present in **v10.1**, organized by code area rather than release sequence. The reconstruction entry point is [rebuild_current.py](../scripts/rebuild_current.py); MADS sources are in [src](../src/). Experimental sources have been retained for further research, but the builder determines what goes into the release. Not every file in `src` is an active patch.
+This document describes all changes present in **v11**, organized by code area rather than release sequence. The reconstruction entry point is [rebuild_current.py](../scripts/rebuild_current.py); MADS sources are in [src](../src/). Experimental sources have been retained for further research, but the builder determines what goes into the release. Not every file in `src` is an active patch.
+
+## Current v11 renderer and contributions
+
+v11 combines the earlier nosty/Astra implementation with Solo’s Opus-team up38 work and Astra’s final five changes. Fable contributed the projection/edge-loop work within Solo’s team. The historical +18% and approximately +39% labels describe milestones, not additive contributions; final measured gains are in the README.
+
+### Solo/Opus: visibility, clearing and interrupt work
+
+- **Beam-aware clearing:** bank 2 entry `$9214` uses the up38 wait-beam path. Clearing can begin when no presentation is pending, or when VCOUNT is in the validated 74–123 interval after the terrain area. This supersedes the earlier unconditional buffer-acknowledgement wait described below; it does not permit arbitrary writes into visible terrain. DMA/VBI timing and bank restoration remain part of the correctness contract.
+- **Occlusion pruning:** the rasterizer in bank 5 rejects a subdivision only when conservative height bounds prove that its output is hidden by existing columns. This avoids recursive work without reducing geometric detail. Generic cases and fallback paths remain.
+- **Per-column clearing boundaries:** `$0100+column` records HD, the boundary separating known-clear sky from potentially dirty pixels. Banks 6/8 do initial clearing, banks 5/8 clear additional pixels on demand, and bank 9 fills only the necessary bands. Object plotting must update the same cache; this is not simply skipping all sky writes regardless of prior contents.
+- **VBI:** bank 14 handles shorter silent-channel paths and specialized gauge drawing, with protected bank switching. The optimization removes redundant interrupt work rather than changing the game timer.
+- **Projection/edge loop (Fable):** bank 3 performs projection with inline division; bank 2 streamlines edge iteration and clipping, and bank 14 supplies the prologue/tables. Generated return alignment and fixed-bank marker restoration must be retained. The bank 2 stub lands on a verified RTS in the receiving bank.
+
+Sources and generators: `arc/up38/src/`, `arc/up38/tools/`; detailed original handoff: [up38 technical notes](../arc/up38/TECHNICAL_NOTES.md). These are build inputs, not a second current release.
+
+### Astra: the five final changes
+
+1. **HD=152 means fully cleared.** Plotted heights stop at 151, so the former full-clear marker 151 caused redundant helper calls at maximum height. The new marker eliminates those calls; initialization and dispatch tables were updated. Objects can still produce HD=151, which remains a supported state.
+2. **Restore Y at common exits.** In depth specializations d0–d4, repeated pixel-level LDY instructions are removed and the common DEY is replaced by an LDY of the known final value. The general recursion path and other specialized leaves retain their required behavior.
+3. **Lazy clear in height coordinates.** Banks 5 and 8 use HD/h directly. Reversed jump tables and comparisons eliminate conversions to row numbers while preserving boundary rounding and the 151/152 edge cases.
+4. **Accumulator-held occlusion threshold.** Scans o0–o4 keep Hmax−1 in A, replace LDA/CMP pairs with memory CMP, reverse the branch condition and advance X with four INX instructions. Their width constraint guarantees Hmax>0. This shortcut is not applied to the generic zero-bound case.
+5. **Fill directly from HD.** Bank 9 uses reversed dispatch indexing and comparisons instead of repeatedly calculating D=152−HD; the resulting image is unchanged in the tested contracts.
+
+Current full-bank MADS sources: `src/v11/raster5.asm`, `sky_b6.asm`, `sky_b8.asm`, `sky_b9.asm`. The ROM remains 128 KB and the cartridge needs only 64 KB RAM. No new bank or extra RAM is required by these five changes.
+
+### Extended-memory XEX and the level-completion fix
+
+Solo’s loader moves resident `$4000–$7FFF` code to `$8000–$BFFF`, and maps cartridge-window/fixed code into the PORTB `$4000–$7FFF` extended-RAM window. Address mapping preserves low bytes and page boundaries. It requires 16 distinct extended banks (320 KB Rambo, 576 KB or 1088 KB), retains OS ROM and disables BASIC. The four changed banks are assembled directly for this layout; unchanged banks use the original relocation decisions.
+
+The supplied relocation missed two music-descriptor pointers at bank 0 `$57D3` and `$57D9`: `$57FB/$57DF` must become `$97FB/$97DF`. Without the fix, the completion tune read unrelated banked data and the main loop waited at XEX `$867B` for `$0655` to clear. v11 fixes both words, changing exactly two bytes of the earlier candidate XEX. CAR/ROM are unaffected. [Full diagnosis and regression tests](research/XEX_LEVEL_TRANSITION_FIX.txt).
+
+### Evidence and limitations
+
+The final five changes passed 320 captured renderer comparisons, 5000 randomized raster segments, 300 object cases, 11880 lazy-helper cases, and native checks for pause/resume and display tearing. Scene-cycle reductions of 1.51–4.88% are not whole-game FPS figures. Full flights measured an additional 1.58% PAL / 1.78% NTSC over up38 straight, and 4.97% / 5.27% with descent pulses. Original-to-v11 combined gains are 40.04% PAL / 43.13% NTSC.
+
+The fixed XEX passed 12 controlled level-transition scenarios (two video standards, three memory sizes, exact quota or quota+1) and six native smoke configurations. Level-transition fixtures set return/pilot game data, then execute the normal scoring/tune/transition code; these are not fully hand-played missions. The user also confirmed the corrected XEX works. No separate full XEX FPS benchmark or exhaustive hardware certification is claimed.
+
+
+The sections below document the inherited foundation; clearing/synchronization and bank-layout details superseded by the current renderer are identified above.
 
 ## Esc fix in v10.1
 
@@ -138,11 +177,11 @@ Tested 256×4 waiting variants, 240 clears with `$42=0`, cold boot, START, and l
 
 ## Verification and reproducibility
 
-The new builder reconstructs the current ROM without old release files, the emulator SDK, or saved states. It checks the output SHA256, CAR equivalence, and application of IPS to the original. It verifies the v9 stage and then the final v10.1 ROM, CAR, and IPS byte for byte. The [instructions](REBUILD.md) describe requirements and distinguish building from historical research.
+The new builder reconstructs the current ROM without old release files, the emulator SDK, or saved states. It checks the output SHA256, CAR equivalence, and application of IPS to the original. It verifies the v9 stage and then the final v11 ROM, CAR, XEX and IPS byte for byte. The [instructions](REBUILD.md) describe requirements and distinguish building from historical research.
 
 CPU microtests compare specific routine contracts; they do not replace an emulator with DMA, VBI, and DLI. Early apparently high results of 8–10.7 FPS were rejected because of a faulty trampoline and instructions unsupported by the model. Subsequent tests required strict opcode handling and bank/PC checks. A profile capped at 4096 samples is not a complete counter of all calls.
 
-Tests were performed in a CPU model and headless Altirra; they do not certify every mission or constitute testing on physical Atari hardware. The user confirmed that v9 works. Current FPS measurements cover automatic flight without steering, not all gameplay behavior.
+Tests were performed in a CPU model and headless Altirra; they do not certify every mission or constitute testing on physical Atari hardware. The user confirmed that v9 works. Current FPS measurements cover straight flight and timed descent pulses, not all gameplay behavior.
 
 ## Ideas retained for future research
 

@@ -1,0 +1,98 @@
+{
+  "pal": {
+    "arms": {
+      "original_straight": {
+        "mean_fps": 6.442127904539264,
+        "n": 155,
+        "sd": 0.22133135458439793,
+        "early_ends": 3
+      },
+      "original_steering": {
+        "mean_fps": 6.101334756324373,
+        "n": 155,
+        "sd": 0.1842202364243437,
+        "early_ends": 4
+      },
+      "candidate_straight": {
+        "mean_fps": 9.077906464527793,
+        "n": 155,
+        "sd": 0.525715662841676,
+        "early_ends": 5
+      },
+      "candidate_steering": {
+        "mean_fps": 8.487949726363917,
+        "n": 155,
+        "sd": 0.48047644287627717,
+        "early_ends": 3
+      }
+    },
+    "table": {
+      "straight": {
+        "original_fps": 6.442127904539264,
+        "candidate_fps": 9.077906464527793,
+        "delta_fps": 2.6357785599885286,
+        "gain_percent": 40.91471946918814
+      },
+      "steering": {
+        "original_fps": 6.101334756324373,
+        "candidate_fps": 8.487949726363917,
+        "delta_fps": 2.3866149700395436,
+        "gain_percent": 39.11627644370248
+      },
+      "combined": {
+        "original_fps": 6.271731330431819,
+        "candidate_fps": 8.782928095445854,
+        "delta_fps": 2.511196765014035,
+        "gain_percent": 40.039928892188925
+      }
+    }
+  },
+  "ntsc": {
+    "arms": {
+      "original_straight": {
+        "mean_fps": 5.804317880166299,
+        "n": 155,
+        "sd": 0.19365987766086704,
+        "early_ends": 1
+      },
+      "original_steering": {
+        "mean_fps": 5.378714435119368,
+        "n": 155,
+        "sd": 0.16535309373620383,
+        "early_ends": 4
+      },
+      "candidate_straight": {
+        "mean_fps": 8.312030365170154,
+        "n": 155,
+        "sd": 0.5048640332071794,
+        "early_ends": 2
+      },
+      "candidate_steering": {
+        "mean_fps": 7.694185811284076,
+        "n": 155,
+        "sd": 0.40836128533659893,
+        "early_ends": 5
+      }
+    },
+    "table": {
+      "straight": {
+        "original_fps": 5.804317880166299,
+        "candidate_fps": 8.312030365170154,
+        "delta_fps": 2.5077124850038546,
+        "gain_percent": 43.20425822253564
+      },
+      "steering": {
+        "original_fps": 5.378714435119368,
+        "candidate_fps": 7.694185811284076,
+        "delta_fps": 2.3154713761647088,
+        "gain_percent": 43.04878803466951
+      },
+      "combined": {
+        "original_fps": 5.591516157642833,
+        "candidate_fps": 8.003108088227116,
+        "delta_fps": 2.411591930584282,
+        "gain_percent": 43.12948156803531
+      }
+    }
+  }
+}

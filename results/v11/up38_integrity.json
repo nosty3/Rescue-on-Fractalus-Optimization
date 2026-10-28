@@ -1,0 +1,1870 @@
+{
+  "rows": 1240,
+  "unique": true,
+  "entry_equivalent_excluding_0270_0277": true,
+  "nonidentical_raw_entry_groups": 8,
+  "historical_up38_exact_matches": 310,
+  "maximum_joystick_jitter_ticks": 0.5,
+  "checks": [
+    {
+      "video": "pal",
+      "trial": 4,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 2,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 1,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 3,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 5,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 9,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 8,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 6,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 7,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 10,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 11,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 12,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 15,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 13,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 14,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 20,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 16,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 19,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 18,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 17,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 22,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 21,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 23,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 24,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 25,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 28,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 27,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 26,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 29,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 30,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 34,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 35,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 33,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 32,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 31,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 38,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 37,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 39,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 40,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 36,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 45,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 42,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 43,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 44,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 41,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 46,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 47,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 50,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 49,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 48,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 51,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 55,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 54,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 53,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 52,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 58,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 60,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 57,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 56,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 59,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 61,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 64,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 63,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 65,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 62,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 66,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 69,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 68,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 70,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 67,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 72,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 74,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 75,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 71,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 73,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 79,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 80,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 78,
+      "historical_equal": true,
+      "entry_exact": false
+    },
+    {
+      "video": "pal",
+      "trial": 76,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 77,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 83,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 85,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 84,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 82,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 81,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 87,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 90,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 89,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 88,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 86,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 91,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 94,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 92,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 95,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 93,
+      "historical_equal": true,
+      "entry_exact": false
+    },
+    {
+      "video": "pal",
+      "trial": 98,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 96,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 99,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 97,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 100,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 103,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 104,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 105,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 101,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 102,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 109,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 106,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 108,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 110,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 107,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 112,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 115,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 111,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 114,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 113,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 120,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 118,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 116,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 117,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 119,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 123,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 124,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 121,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 122,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 125,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 128,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 129,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 127,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 126,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 130,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 132,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 135,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 131,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 133,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 134,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 139,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 140,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 137,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 136,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 138,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 142,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 144,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 141,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 145,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 143,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 150,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 149,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 147,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 146,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 148,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 151,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 152,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 155,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 153,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "pal",
+      "trial": 154,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 4,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 2,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 1,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 3,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 5,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 9,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 8,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 6,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 7,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 10,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 11,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 12,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 15,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 13,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 14,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 20,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 16,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 19,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 18,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 17,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 22,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 21,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 23,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 24,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 25,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 28,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 27,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 26,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 29,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 30,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 34,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 35,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 33,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 32,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 31,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 38,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 37,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 39,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 40,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 36,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 45,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 42,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 43,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 44,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 41,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 46,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 47,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 50,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 49,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 48,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 51,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 55,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 54,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 53,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 52,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 58,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 60,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 57,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 56,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 59,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 61,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 64,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 63,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 65,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 62,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 66,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 69,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 68,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 70,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 67,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 72,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 74,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 75,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 71,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 73,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 79,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 80,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 78,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 76,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 77,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 83,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 85,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 84,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 82,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 81,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 87,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 90,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 89,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 88,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 86,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 91,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 94,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 92,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 95,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 93,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 98,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 96,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 99,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 97,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 100,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 103,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 104,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 105,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 101,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 102,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 109,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 106,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 108,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 110,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 107,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 112,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 115,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 111,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 114,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 113,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 120,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 118,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 116,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 117,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 119,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 123,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 124,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 121,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 122,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 125,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 128,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 129,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 127,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 126,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 130,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 132,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 135,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 131,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 133,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 134,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 139,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 140,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 137,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 136,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 138,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 142,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 144,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 141,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 145,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 143,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 150,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 149,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 147,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 146,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 148,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 151,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 152,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 155,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 153,
+      "historical_equal": true,
+      "entry_exact": true
+    },
+    {
+      "video": "ntsc",
+      "trial": 154,
+      "historical_equal": true,
+      "entry_exact": true
+    }
+  ]
+}

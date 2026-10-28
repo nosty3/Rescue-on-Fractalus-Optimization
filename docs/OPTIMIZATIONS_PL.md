@@ -2,7 +2,46 @@
 
 [English](OPTIMIZATIONS.md) · [Polski](OPTIMIZATIONS_PL.md)
 
-Dokument opisuje łącznie zmiany obecne w **v10.1**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
+Dokument opisuje łącznie zmiany obecne w **v11**, według obszarów kodu, a nie kolejnych wydań. Punktem wejścia do odtworzenia jest [rebuild_current.py](../scripts/rebuild_current.py); źródła MADS są w [src](../src/). Eksperymentalne źródła zachowano dla dalszych badań, lecz o składzie wydania rozstrzyga builder. Nie każdy plik w `src` jest aktywną poprawką.
+
+## Aktualny renderer v11 i wkład autorów
+
+v11 łączy wcześniejszą implementację nosty/Astry, pracę zespołu Opus Solo w up38 i pięć końcowych zmian Astry. Fable opracował projekcję i pętlę krawędzi w zespole Solo. Historyczne +18% i około +39% opisują etapy, a nie procenty, które można dodawać; końcowe wyniki pomiarów są w README.
+
+### Solo/Opus: widoczność, kasowanie i przerwania
+
+- **Kasowanie zależne od pozycji wiązki:** wejście `$9214` w banku 2 używa ścieżki wait-beam up38. Kasowanie może się rozpocząć, gdy nie czeka prezentacja obrazu albo VCOUNT jest w sprawdzonym zakresie 74–123, po obszarze terenu. Zastępuje to wcześniejsze bezwarunkowe oczekiwanie na potwierdzenie przełączenia bufora opisane niżej; nie pozwala dowolnie pisać po widocznym terenie. Czasy DMA/VBI i odtwarzanie banków pozostają warunkiem poprawności.
+- **Odrzucanie zasłoniętych podziałów:** rasteryzator banku 5 pomija podział wyłącznie, gdy zachowawcze ograniczenie wysokości dowodzi zasłonięcia wyniku przez istniejące kolumny. Usuwa pracę rekurencyjną bez zmniejszenia szczegółowości geometrii. Pozostają ścieżki ogólne i zapasowe.
+- **Granice kasowania kolumn:** `$0100+kolumna` przechowuje HD, granicę między pewnym czystym niebem a potencjalnie zabrudzonymi pikselami. Banki 6/8 wykonują kasowanie wstępne, 5/8 kasowanie na żądanie, a bank 9 wypełnia potrzebne pasma. Rysowanie obiektów aktualizuje ten sam cache; nie jest to bezwarunkowe pomijanie wszystkich zapisów nieba.
+- **VBI:** bank 14 skraca ścieżki milczących kanałów i specjalizuje rysowanie wskaźnika, zachowując ochronę banków. Usuwa zbędną pracę przerwania, a nie zmienia zegara logiki gry.
+- **Projekcja/pętla krawędzi (Fable):** bank 3 wykonuje projekcję z dzieleniem inline, bank 2 usprawnia iterację krawędzi i clipping, a bank 14 dostarcza prolog/tablice. Trzeba zachować wygenerowane wyrównanie powrotu i odtwarzanie znaczników banków. Stub banku 2 trafia na sprawdzony RTS w banku odbierającym.
+
+Źródła i generatory: `arc/up38/src/`, `arc/up38/tools/`; oryginalne szczegółowe notatki: [opis techniczny up38](../arc/up38/TECHNICAL_NOTES.md). To składniki budowania, nie drugie aktualne wydanie.
+
+### Astra: pięć końcowych zmian
+
+1. **HD=152 oznacza pełne wyczyszczenie.** Rysowane wysokości kończą się na 151, więc dawny znacznik 151 powodował zbędne wywołania pomocnika dla maksymalnej wysokości. Nowy znacznik usuwa te wywołania; poprawiono inicjalizację i tablice wyboru. Obiekty mogą nadal wytworzyć HD=151, który pozostaje obsługiwany.
+2. **Odtwarzanie Y na wspólnych wyjściach.** W specjalizacjach d0–d4 usunięto powtarzane LDY przy pikselach, a wspólne DEY zastąpiono LDY ze znaną wartością końcową. Ścieżka ogólnej rekurencji i inne liście zachowują wymagane zachowanie.
+3. **Kasowanie na żądanie we współrzędnych wysokości.** Banki 5 i 8 używają bezpośrednio HD/h. Odwrócone tablice skoków i porównania usuwają konwersje do numerów wierszy, zachowując zaokrąglanie granic oraz przypadki 151/152.
+4. **Próg zasłaniania w akumulatorze.** Skany o0–o4 zachowują Hmax−1 w A, zastępują pary LDA/CMP instrukcjami CMP z pamięcią, odwracają warunek skoku i przesuwają X czterema INX. Ograniczenie szerokości gwarantuje Hmax>0. Skrótu nie stosuje się do ogólnego przypadku zerowej granicy.
+5. **Wypełnianie bezpośrednio z HD.** Bank 9 używa odwróconego indeksowania i porównań zamiast ponownie liczyć D=152−HD; obraz jest zgodny w sprawdzonych kontraktach.
+
+Aktualne źródła pełnych banków MADS: `src/v11/raster5.asm`, `sky_b6.asm`, `sky_b8.asm`, `sky_b9.asm`. ROM nadal ma 128 KB, a kartridż potrzebuje tylko 64 KB RAM. Te pięć zmian nie wymaga nowego banku ani dodatkowego RAM-u.
+
+### XEX z rozszerzoną pamięcią i poprawka ukończenia poziomu
+
+Loader Solo przenosi kod rezydentny `$4000–$7FFF` do `$8000–$BFFF`, a kod okna kartridża i banku stałego mapuje do okna rozszerzonego RAM-u PORTB `$4000–$7FFF`. Mapowanie zachowuje młodsze bajty i granice stron. Wymaga 16 różnych banków rozszerzenia (320 KB Rambo, 576 KB albo 1088 KB), zachowuje ROM systemu i wyłącza BASIC. Cztery zmienione banki są asemblowane bezpośrednio pod ten układ; pozostałe korzystają z wcześniejszych decyzji relokacji.
+
+Dostarczona relokacja pominęła wskaźniki melodii banku 0 `$57D3` i `$57D9`: `$57FB/$57DF` trzeba zmienić na `$97FB/$97DF`. Bez poprawki melodia końca poziomu czytała niewłaściwe dane bankowe, a pętla czekała w XEX pod `$867B` na wyzerowanie `$0655`. v11 poprawia oba słowa, zmieniając dokładnie dwa bajty wcześniejszego XEX kandydata. CAR/ROM nie zmieniają się. [Pełna diagnoza i regresja](research/XEX_LEVEL_TRANSITION_FIX_PL.txt).
+
+### Dowody i ograniczenia
+
+Pięć końcowych zmian przeszło 320 porównań renderera, 5000 losowych segmentów, 300 przypadków obiektów, 11880 przypadków pomocników kasowania oraz testy pauzy i rozrywania obrazu w emulatorze. Oszczędności 1,51–4,88% cykli scen nie są FPS całej gry. Pełne loty wykazały dodatkowe 1,58% PAL / 1,78% NTSC względem up38 przy locie prosto i 4,97% / 5,27% z nurkowaniem. Zysk zbiorczy oryginał–v11 wynosi 40,04% PAL / 43,13% NTSC.
+
+Poprawiony XEX przeszedł 12 kontrolowanych scenariuszy zmiany poziomu (dwa standardy, trzy wielkości pamięci, komplet lub komplet+1) i sześć konfiguracji testów działania. Scenariusze przejścia ustawiają dane powrotu/pilotów, a następnie wykonują zwykły kod punktacji, melodii i zmiany poziomu; nie są to pełne misje rozegrane ręcznie. Użytkownik także potwierdził działanie poprawionego XEX. Nie deklarujemy osobnego pełnego benchmarku FPS XEX ani pełnej certyfikacji sprzętowej.
+
+
+Poniższe sekcje opisują odziedziczoną podstawę; szczegóły kasowania/synchronizacji i układu banków zastąpione przez aktualny renderer wskazano powyżej.
 
 ## Poprawka Esc w v10.1
 
@@ -138,11 +177,11 @@ Przetestowano 256×4 warianty oczekiwania, 240 kasowań przy `$42=0`, zimny star
 
 ## Weryfikacja i odtwarzalność
 
-Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Builder sprawdza etap v9, a następnie końcowy ROM v10.1, CAR i IPS bajt w bajt. [Instrukcja](REBUILD_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
+Nowy builder odtwarza aktualny ROM bez starych plików wydań, SDK emulatora i zapisów stanu. Sprawdza SHA256 wyniku, zgodność CAR oraz zastosowanie IPS do oryginału. Builder sprawdza etap v9, a następnie końcowy ROM v11, CAR, XEX i IPS bajt w bajt. [Instrukcja](REBUILD_PL.md) opisuje wymagania i rozdziela budowanie od historycznych badań.
 
 Mikrotesty CPU porównują określone kontrakty procedur; nie zastępują emulatora z DMA, VBI i DLI. Wczesne pozornie wysokie wyniki rzędu 8–10,7 FPS odrzucono z powodu błędnej trampoliny i nieobsługiwanych instrukcji modelu. W dalszych testach wymagano ścisłej obsługi opkodów i kontroli banku/PC. Profil z limitem 4096 próbek nie jest pełnym licznikiem wszystkich wywołań.
 
-Testy wykonano w modelu CPU i Altirrze headless; nie są certyfikacją wszystkich misji ani testem na fizycznym Atari. Użytkownik potwierdził działanie wydania v9. Aktualne pomiary FPS obejmują automatyczny lot bez sterowania, a nie wszystkie zachowania gry.
+Testy wykonano w modelu CPU i Altirrze headless; nie są certyfikacją wszystkich misji ani testem na fizycznym Atari. Użytkownik potwierdził działanie wydania v9. Aktualne pomiary FPS obejmują lot prosto oraz okresowe nurkowanie, a nie wszystkie zachowania gry.
 
 ## Pomysły zachowane do dalszych badań
 

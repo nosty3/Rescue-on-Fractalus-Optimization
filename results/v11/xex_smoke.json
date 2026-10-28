@@ -1,0 +1,56 @@
+[
+  {
+    "video": "pal",
+    "memory": "320k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  },
+  {
+    "video": "pal",
+    "memory": "576k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  },
+  {
+    "video": "pal",
+    "memory": "1088k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  },
+  {
+    "video": "ntsc",
+    "memory": "320k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  },
+  {
+    "video": "ntsc",
+    "memory": "576k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  },
+  {
+    "video": "ntsc",
+    "memory": "1088k",
+    "passed": true,
+    "pause_resume_cycles": 3,
+    "steering_and_fire": true,
+    "descent_pulses": 6,
+    "final_mode": 2
+  }
+]

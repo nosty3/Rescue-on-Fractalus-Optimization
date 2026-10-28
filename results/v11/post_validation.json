@@ -1,0 +1,26 @@
+[
+  {
+    "name": "pal-candidate-straight-011",
+    "events_and_results_exact": true,
+    "entry_ram": "identical",
+    "end_ram": "identical"
+  },
+  {
+    "name": "pal-candidate-steering-013",
+    "events_and_results_exact": true,
+    "entry_ram": "identical",
+    "end_ram": "identical"
+  },
+  {
+    "name": "ntsc-candidate-straight-011",
+    "events_and_results_exact": true,
+    "entry_ram": "identical",
+    "end_ram": "identical"
+  },
+  {
+    "name": "ntsc-candidate-steering-013",
+    "events_and_results_exact": true,
+    "entry_ram": "identical",
+    "end_ram": "identical"
+  }
+]

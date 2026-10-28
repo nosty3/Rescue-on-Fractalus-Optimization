@@ -1,49 +1,26 @@
-# Rebuilding the current ROM and continuing development
+# Rebuilding v11 from source
 
 [English](REBUILD.md) · [Polski](REBUILD_PL.md)
 
-## Building v10.1
-
-Python 3 and [MADS](https://github.com/tebe6502/Mad-Assembler) are required. Neither an emulator nor saved states are needed to build the game. Install tools locally in `tools/`; this directory is not versioned. Details of the MADS and emulator versions used are in [tools/TOOLS.json](tools/TOOLS.json) and [tools/ALTIRRA-BUILD-INFO.txt](tools/ALTIRRA-BUILD-INFO.txt).
-
-From the repository root, run:
+Requires Python 3, py65 and MADS. Install requirements.txt for plotting dependencies as well. No emulator or saved states are required to rebuild the game.
 
 ```powershell
-python scripts/rebuild_current.py --mads .\tools\mads\bin\windows_x86_64\mads.exe
+python -m pip install -r requirements.txt
+python scripts/rebuild_current.py --mads tools/mads/bin/windows_x86_64/mads.exe
 ```
 
-The builder reads `original/Rescue on Fractalus!.rom`, assembles the MADS sources, applies patches, and creates the final ROM/CAR in the ignored `build/` directory. It checks them against the files in `optimized version/` and also applies `dist/fractalus-optimized-128KB.ips` to the original as a verification step. The report is written to `build/reconstruction.json`. Checksums are listed in [dist/build-manifest.json](../dist/build-manifest.json).
+The builder reconstructs v10.1 from the original as an internal stage, runs the up38 generators in ignored build/up38, then assembles the four src/v11 banks. Archived sources remain untouched. It produces ROM/CAR and XEX with corrected music pointers. Every output is compared byte-for-byte with optimized version/, and IPS is applied to the original for verification. Result: build/reconstruction.json. Hashes: dist/build-manifest.json.
 
-The v1–v9 binaries are not required. Intermediate stages exist in the builder's memory and are checked against known hashes; they are not published as additional releases. The old `rebuild_*.py` scripts remain aliases for building the current version. To investigate a historical release using its original scripts, check out the corresponding Git commit.
-
-## Research workflow
-
-Documentation now uses English filenames, with `_PL` retained for Polish versions. Historical packaging scripts and some diagnostic messages still mention former document names (for example, `ODTWORZENIE_PL.md` now corresponds to `REBUILD_PL.md`). These scripts were left unchanged; use the current instructions here and the historical Git revision when reproducing an old packaging workflow.
-
-[OPTIMIZATIONS.md](OPTIMIZATIONS.md) describes the current implementation. Other sources and scripts also preserve experiments and comparative tests. Not every historical `build_*`, `test_*`, or `benchmark_*` script will run without preparation: some expect historical builds or local fixtures deliberately excluded from this repository. Names such as `v7` or `opt14` identify implementations in the sources, not additional downloadable game releases.
-
-Do not remove the VBI guard, the wait for buffer switching, or fallback paths solely on the strength of a CPU microtest. First compare a new change using identical routine inputs, then test it in the full emulator with DMA and interrupts. Document which bytes are live outputs and which are dead scratch memory. Assess complete flights separately from individual routine equivalence.
-
-## Data, charts, and emulator
-
-`python -m pip install -r requirements.txt` installs the analysis libraries. The English charts can be reproduced without an emulator:
+v11 ROM: ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868.
+Fixed XEX: ac0c217074d52a4db6163ad94339031e4610e9a99a5c7d02f629c6b34ce9a20b.
+No files from the old local workspace are needed. Historical research scripts may still require unpublished fixtures; they are distinct from the current builder.
 
 ```powershell
-python scripts/report_v10.py --published-data
+python scripts/report_v11.py
 ```
 
-The analysis script reads the historical series and `results/v10/`, writing PNG/SVG charts to `results/v10/pal/` and `results/v10/ntsc/`. Published copies are in `docs/benchmarks/charts/`. Checking all local event hashes requires unpublished diagnostic files; use `--published-data` to analyze the retained aggregates.
+This regenerates English charts without an emulator, using retained individual observations. New measurements: scripts/benchmark_v11.py --help and benchmarks/METHOD.md. Headless Altirra and MADS are external tools; previously used tool identities are in docs/tools and results/v11 plans. Do not overwrite published observations with a new series under the same names.
 
-For new flights, download the [Altirra headless bridge](https://github.com/ilmenit/AltirraSDL/releases/tag/nightly-bridge) and extract it into `tools/bridge/<package>/`, containing `AltirraBridgeServer.exe` and `sdk/python/altirra_bridge`. The nightly build may change: compare the emulator hash with the recorded protocol and repeat validation if it differs. The isolation mechanism sets TEMP/TMP to the local `tools` directory, launches windowless servers, and assigns separate ports and tokens.
+XEX requires 320 KB Rambo, 576 KB or 1088 KB, compatible PORTB banking and disabled BASIC. Cartridge builds need only 64 KB RAM. Cold-boot new files instead of loading an old emulator save state.
 
-The main tools are `benchmark_ntsc_isolated.py`, `validate_ntsc_parallel.py`, `benchmark_ntsc_parallel.py`, and `benchmark_pal_parallel.py` (with `--validate`). The retained results form a completed series: the scripts can resume it, rather than automatically start a new one. Run a new experiment in a separate working copy, preserving the published data; prepare empty output directories there and copy the frozen plan when repeating the same schedule. Do not overwrite an existing series while presenting it as a new measurement.
-
-The full [protocol](benchmarks/METHOD.md) and JSON plans define the order and conditions. PAL uses the NTSC plan. Parallel execution is validated before measurement flights; only matching results justify using four processes. Memory and event dumps may be generated locally for validation, but should not be added to the repository. Published hashes and aggregates document the study; they do not replace the omitted dumps when rechecking every byte.
-
-## Repeating v10
-
-The builder also creates `build/reference-v9.car` solely as a historical control in the ignored directory. `pal_v9_common.py` and `ntsc_v9_common.py` point to this file so that older tools do not accidentally use v10 as v9. To run a new series: `benchmark_v10.py --validate`, then `benchmark_v10.py`. Retained completed results are resumed, not overwritten. For an independent replication, prepare a separate copy of the results and an empty destination directory.
-
-## v10.1 pause fix
-
-The builder assembles and applies `src/pause_resume_stack.asm`. The final ROM differs from v10 by one byte. It retains `build/reference-v10.car` only in the ignored directory so that the historical `benchmark_v10.py` script still targets the exact version that was measured. No FPS tests were run for v10.1.
+After installing Altirra and rebuilding, functional tests: `python scripts/test_v11_xex.py` and `python scripts/test_v11_level_transition.py candidate --release` (optional `--ntsc`, `576k`, `1088k`, `--equal`).

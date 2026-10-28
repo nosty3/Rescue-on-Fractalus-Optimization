@@ -1,0 +1,6 @@
+src/v11/*.asm text eol=lf
+"optimized version/last_ver_info.txt" text eol=lf
+*.car -text
+*.rom -text
+*.xex -text
+*.ips -text

@@ -1,39 +1,43 @@
-# Metoda pomiarów PAL i NTSC
+# Metodyka pomiaru FPS — v11
 
 [English](METHOD.md) · [Polski](METHOD_PL.md)
 
-Aktualne v10 ma osobną serię 155 lotów PAL i 155 NTSC. [Raport v10](V10_REPORT_PL.md) przedstawia wyniki, walidację i niepewność. Powtórzono momenty START z harmonogramu v9 oraz poniższe zasady. Oryginał i v9 pozostały historycznymi punktami odniesienia; kontrolne loty v9 odtworzyły jego wyniki. Poniższa tabela dokumentuje wcześniejsze badanie oryginału i v9.
+## Scenariusze i liczebność
 
-Historyczne wyniki pochodzą z dwóch serii po **155 lotów oryginału i 155 lotów v9**, osobno dla PAL i NTSC. Źródła to [raport PAL](pal/PAL_REPORT_PL.md), [protokół PAL](pal/PROTOCOL_PL.md), [raport NTSC](ntsc/NTSC_REPORT_PL.md) oraz [uzupełnienie protokołu NTSC](ntsc/PROTOCOL_ADDENDUM_PL.md).
+Dwa standardy: PAL i NTSC. Dwa scenariusze: lot prosto z wycentrowanym joystickiem oraz powtarzane 1 s joysticka w górę (nurkowanie) / 3 s neutralnie. Sterowanie zaczyna się w chwili rozpoczęcia pomiaru; rozgrzewka pozostaje neutralna. Bez strzelania i skrętów. Każda kombinacja wersji, standardu i scenariusza zawiera 155 prób. Cztery konfiguracje up38/v11 × prosto/nurkowanie dały 1240 lotów; dodatkowy oryginał z nurkowaniem to 310 lotów. Historyczny oryginał w locie prosto dostarcza pozostałe 310 obserwacji do porównania oryginał–v11.
 
-| System | Oryginał FPS | v9 FPS | Zysk | 95% przedział ufności zysku |
-| --- | ---: | ---: | ---: | --- |
-| PAL | 6,4421 | 7,5623 | 17,39% | 16,46–18,32% |
-| NTSC | 5,8043 | 6,8977 | 18,84% | 17,90–19,78% |
+## Uruchamianie i licznik
 
-## Warunki i licznik
+Każda próba uruchamia świeży, izolowany proces AltirraBridge, Atari 800XL/64 KB, bez akceleratora, z natywnym zimnym startem właściwego kartridża. Nie przenosi się stanów ani nie modyfikuje pamięci gry. Cztery procesy mają osobne porty, tokeny i pliki; szybkość komputera gospodarza nie wyznacza czasu testu.
 
-Każdy lot uruchamiano w świeżym procesie Altirry, od natywnego zimnego startu właściwego cartridge'a: Atari 800XL, 64 KB, bez akceleratora. Nie przenoszono stanu ani nie poprawiano pamięci gry. Joystick pozostawał wycentrowany, bez strzelania, skrętów, nurkowania i dopalacza.
+Harmonogram startów wybrano wcześniej (ziarno 2026102303, menu_frames 3000–3599, 31 bloków po 5 prób). up38 i v11 w obu scenariuszach oraz nowe nurkowania oryginału używają 155 startów gałęzi v9 z historycznego planu NTSC. Historyczne loty prosto oryginału mają własne niezależnie losowane starty; nie należy traktować ich jako sparowanych z v11. Wspólny start nie gwarantuje identycznej geometrii i zdarzeń później, ponieważ czas wykonania kodu może wpływać na rozwój gry.
 
-Zamrożony harmonogram używa ziarna 2026102303 i 155 różnych momentów START dla każdej wersji, losowanych bez zwracania z 3000–3599 ramek menu. W 31 blokach przeplatano po pięć prób obu wersji. PAL powtarza ten sam harmonogram liczony w ramkach; nie oznacza to identycznych map pomiędzy standardami lub wersjami.
+Po pierwszym wejściu do $A32E zwalnia się START i wykonuje 170 klatek obrazu rozgrzewki. Pierwsze trafienie $B516 jest początkiem pomiaru. Liczone są pełne odstępy między kolejnymi prezentacjami gotowego obrazu. FPS = liczba odstępów / czas tych odstępów, nie częstość VBI ani odświeżania monitora. Zegar Atari: PAL 1773447,5 Hz; NTSC 1789772,5 Hz. Pomiar obejmuje DMA, VBI/DLI i oczekiwania synchronizacyjne.
 
-Po pierwszym wejściu `$A32E` zwalniano START i wykonywano 170 ramek rozgrzewki: około 3,41 s PAL i 2,84 s NTSC. Pomiar liczy pełne odstępy pomiędzy ukończonymi obrazami przy `$B516`. Czas pochodzi z taktów emulowanego Atari, z zegarem 1 773 447,5 Hz PAL lub 1 789 772,5 Hz NTSC, i obejmuje DMA oraz przerwania. FPS = liczba pełnych odstępów / czas tych odstępów; nie jest częstotliwością VBI ani szybkością działania komputera gospodarza.
+Pierwszy pełny odstęp przekraczający 60 s zamyka okno. Punkty 15/30/60 s są zagnieżdżone i nie stanowią osobnych prób. Zapis $4A wykrywa naturalny koniec lotu: zachowuje się wszystkie pełne obrazy sprzed wyjścia z lotu, bez animacji zakończenia. Krótsze loty i skrajne wyniki pozostają w próbie. W nowych nurkowaniach oryginału dotyczyło to 4/155 PAL i 4/155 NTSC.
 
-Okna 15/30/60 sekund są zagnieżdżonymi fragmentami jednego lotu. Domyka się pierwszy pełny odstęp po limicie. Gdy gra naturalnie kończy lot wcześniej, liczy się pełne odstępy przed opuszczeniem trybu lotu, bez animacji końcowej. Taka próba pozostaje w średniej; nie odrzucano ekstremów ani krótszych lotów. Dotyczyło to PAL: 3 oryginałów i 4 v9; NTSC: po jednym locie obu wersji.
+Wychylenia joysticka planuje się według taktów Atari, a nie FPS ani czasu komputera: 0, 4, 8… s początek nurkowania, 1, 5, 9… s powrót do neutralnego. Największe odchylenie zapisanego momentu wejścia wyniosło 0,5 taktu.
 
-## Równoległość i analiza
+## Przyspieszenie pomiaru i kontrola
 
-NTSC rozpoczęto sekwencyjnie; po 86 lotach pozostałe 224 wykonano równolegle po porównaniu czterech pełnych scenariuszy 60 s. PAL wykonywano czterema procesami po porównaniu czterech scenariuszy 15 s sekwencyjnie i równolegle. W kontrolach wymagano zgodności zdarzeń pomiarowych i RAM. Procesy miały osobne porty, tokeny i pliki; agregat zapisywano w kolejności planu. Kontrole nie należą do głównej średniej.
+Użyto zatwierdzonego grupowania komend FRAME/CYCLES, odczytu PC/trybu oraz CLOCK w jednym zapisie TCP. Nadal obowiązują breakpointy i kolejność wykonania. Nie użyto niepełnego profilu ograniczonego do 4096 wpisów jako licznika klatek. Walidacja transportu i sekwencyjne/równoległe kontrole dały zgodne zdarzenia oraz pamięć. Wszystkie 310 lotów prosto up38 odtworzyło historyczne liczniki i FPS.
 
-Główną statystyką jest średnia FPS poszczególnych lotów, z jednakową wagą każdego lotu. Zysk to `100 × (średnia_v9 / średnia_oryginału − 1)`. Nie jest średnią procentów z arbitralnie sparowanych map. Liczebność NTSC wybrano po pilocie, a dla PAL ustalono z góry taką samą. Sprawdzono również wynik ważony czasem i bootstrap warstwowy 50 000 replikacji. Regułę naturalnego końca doprecyzowano po pierwszych 47 lotach NTSC; dla PAL była ustalona przed pomiarem. Szczegóły i ograniczenia tego uzupełnienia zachowano w raporcie NTSC.
+Podczas części wcześniejszej serii 1240 lotów omyłkowo nakładały się dwa uruchomienia runnera (do ośmiu emulatorów). Zatrzymano duplikat; uwzględniono po jednym kompletnym rekordzie na próbę, bez wyboru po FPS. Cztery powtórzenia z tego okresu odtworzyły wszystkie znaczniki czasu i pamięć. Szczegóły zachowuje results/v11/runtime_notes.json. Nowe 310 lotów oryginału wykonano jednym runnerem i czterema emulatorami, w 1455,2 s czasu komputera.
 
-Przedziały ufności są przybliżone i dotyczą rozkładu scenariuszy tego protokołu. Nie dowodzą wydajności we wszystkich dolinach, skrętach, poziomach czy misjach. Ta sama wersja może mieć inny FPS na innej mapie. Nie należy utożsamiać różnicy pomiędzy dwoma krótkimi lotami ze zmianą kodu.
+Osiem grup początkowych stanów PAL w porównaniu up38/v11 różniło się jedynie bajtami $0270–$0277. Kontrole normalizacji i watchpointy wykazały zgodność reszty pamięci i brak odczytów tych bajtów w sprawdzonych scenariuszach. Nie modyfikowano ich w trakcie benchmarków.
 
-## Pliki i badania historyczne
+## Obliczenia
 
-- [Dane PAL](../../results/pal_isolated_main) i [dane NTSC](../../results/ntsc_isolated_main) zawierają plan, poszczególne próby, podsumowanie i wynik kontroli spójności.
-- [Walidacja PAL](../../results/pal_parallel_validation/validation.json) i [walidacja NTSC](../../results/ntsc_parallel_validation/validation.json) dokumentują kontrolę równoległości.
-- [charts/](charts/) zawiera angielskie PNG i SVG obu serii, użyte w README.
-- [history/](history/), [ntsc_cold_20x2/](ntsc_cold_20x2/), [ntsc_repro_audit/](ntsc_repro_audit/), [ntsc_isolated_pilot/](ntsc_isolated_pilot/) i [ntsc_parallel_validation/](ntsc_parallel_validation/) opisują dochodzenie do obecnej metody.
+Podstawą jest średnia arytmetyczna FPS pojedynczych lotów, każdy z równą wagą. Wynik zbiorczy = (średnia prosto + średnia nurkowanie) / 2. Zysk = 100 × (średnia v11 / średnia oryginału − 1), także w wierszu zbiorczym. Nie uśredniamy procentów scenariuszy. Waga 50/50 definiuje benchmark, a nie empiryczny udział tych zachowań w typowej grze.
 
-Historyczne wyniki krótkich lotów, wspólnych stanów, średnich obciętych i zestawu czterech lotów PAL nie zastępują aktualnej tabeli. Stare ścieżki, numery wersji i zalecenia występujące w tych badaniach odnoszą się do momentu ich wykonania; dawne pliki można odzyskać z odpowiedniego commitu. Surowych zrzutów RAM i screenów nie publikujemy.
+W porównaniu up38/v11 przedziały wyznaczono przez 50000 sparowanych powtórzeń bootstrap, losując całe loty w 31 blokach, z ziarnem 2026103001. Nie przenosimy tych przedziałów do tabel oryginał–v11; historyczny oryginał prosto nie jest sparowany. Główne tabele podają estymaty punktowe. Wykresy rozkładu pokazują wszystkie loty.
+
+## Dane i ograniczenia
+
+- results/v11/flights.jsonl: 1550 nowych obserwacji z czasami prezentacji i sterowaniem.
+- results/pal_isolated_main/benchmark.json i results/ntsc_isolated_main/benchmark.json: historyczne loty prosto oryginału.
+- results/v11/summary.json: tabele oryginał–v11; up38_comparison_summary.json: dodatkowy zysk względem up38.
+- scripts/report_v11.py odtwarza wykresy i sprawdza liczby z zapisanych obserwacji.
+- scripts/benchmark_v11.py uruchamia nowe serie w osobnym katalogu wskazanym przez --output; nie uruchamiaj go tylko po to, by odtworzyć wykresy.
+
+Są to wyniki kartridża. Nie wykonano osobnej pełnej serii FPS XEX. Test nie pokrywa całej różnorodności skrętów, poziomów, ratowania pilotów ani sprzętowych akceleratorów. Testy przejścia poziomu XEX celowo ustawiają dane diagnostyczne; nie wchodzą do pomiarów FPS.

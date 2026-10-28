@@ -1,0 +1,466 @@
+[
+  {
+    "video": "pal",
+    "trial": 11,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "095439f8b299b969f8d73bcc9a74ec5a45a49bf89463c447a92905dbbc56c266",
+    "equivalent_raw_hashes": {
+      "095439f8b299b969f8d73bcc9a74ec5a45a49bf89463c447a92905dbbc56c266": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dbd2db5c4442025b716e6a6960dee505eaaeaed70067a42168d3c9ae9769ff17": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 114482555,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4468485367,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 13,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "5881a1b8d7571a977111400e62d3a93e4cdbe2e9c963f36eef2f2e178d263def",
+    "equivalent_raw_hashes": {
+      "5881a1b8d7571a977111400e62d3a93e4cdbe2e9c963f36eef2f2e178d263def": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "b5d75cdd5c30b0219e9995fcc5dfb5ccc4ba1d5f6251ef534cdc066c4fc7f964": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 118566586,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4474951728,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 48,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "51cb3e5af273737fd5e9215793870f105ef6c93b91a072c31106a83a2d9031dd",
+    "equivalent_raw_hashes": {
+      "4054bf18901687caf4b60a3507bc3a00f112e9922300694672a17e620d13d568": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ],
+      "51cb3e5af273737fd5e9215793870f105ef6c93b91a072c31106a83a2d9031dd": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 113909881,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4467803874,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 78,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "57af4a098370ddbad36d4d3600dcfba3a1466cccdbd94e8aea4ffe57e179f499",
+    "equivalent_raw_hashes": {
+      "2d7f180dff90fd6f678f36723d6349af874d8232d7141173264b2ef9f9bd806d": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ],
+      "57af4a098370ddbad36d4d3600dcfba3a1466cccdbd94e8aea4ffe57e179f499": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 110121672,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4461261954,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 93,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "055642b26d09665afd122e6c8659583ec2e8238b11e2471170f422eaf160569d",
+    "equivalent_raw_hashes": {
+      "055642b26d09665afd122e6c8659583ec2e8238b11e2471170f422eaf160569d": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "095dc2b1f2a495aee12102eead86913ba5674f96ae97e8c3f064145ccfbdff26": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 108756411,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4459513595,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 112,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "ba91aab5dfb9f6498b29f996a08a3043a7f5f05824db2b7a26524dd5980f367c",
+    "equivalent_raw_hashes": {
+      "a2daa40a7bc9d8ac87a788de97cb28d89e6cf52e4ed002856d17f9a4f4a6bd7c": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ],
+      "ba91aab5dfb9f6498b29f996a08a3043a7f5f05824db2b7a26524dd5980f367c": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 107626748,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4457670220,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 128,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "595db5e405dafdd27915be5bacde91f9f369e7a8dcb4c1c157ea2ecb9cfec2db",
+    "equivalent_raw_hashes": {
+      "595db5e405dafdd27915be5bacde91f9f369e7a8dcb4c1c157ea2ecb9cfec2db": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "c4e43f87161dd747e6f9889d9b58829e0f9c0a3c17ff68b8f81de9da85dbf046": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 118772757,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4475627736,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  },
+  {
+    "video": "pal",
+    "trial": 129,
+    "excluded_addresses": [
+      "0x270",
+      "0x271",
+      "0x272",
+      "0x273",
+      "0x274",
+      "0x275",
+      "0x276",
+      "0x277"
+    ],
+    "normalized_sha256": "d91a625c5261890fc2a3f64d5cd182ca7144d2f9388d076d13eb3e645d97709c",
+    "equivalent_raw_hashes": {
+      "855f6d58d46eeca92e831ca856c8688850e408159a7496c14afd9e26c1449437": [
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228,
+        228
+      ],
+      "d91a625c5261890fc2a3f64d5cd182ca7144d2f9388d076d13eb3e645d97709c": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "regs": {
+      "ok": true,
+      "PC": "$a32e",
+      "A": "$02",
+      "X": "$30",
+      "Y": "$ff",
+      "S": "$ff",
+      "P": "$35",
+      "flags": "---B-I-C",
+      "cycles": 115149662,
+      "mode": "6502"
+    },
+    "clock": {
+      "ok": true,
+      "tick": 4469332463,
+      "running": false,
+      "step_requested": 0,
+      "step_elapsed": 0,
+      "step_completed": false
+    },
+    "method": "Offline transformation of captured RAM only; no writes to emulated game memory"
+  }
+]

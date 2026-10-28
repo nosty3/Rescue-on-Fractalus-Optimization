@@ -1,0 +1,22 @@
+XEX: blokada po ukończeniu poziomu — przyczyna i poprawka
+
+Błąd potwierdzono w poprzednim XEX kandydata i w dostarczonym XEX up38 Solo. Kartridż przechodził ten sam scenariusz poprawnie.
+
+Przyczyna
+Tablica $57D3 zawiera dwa sześciobajtowe opisy melodii. Pierwsze słowo każdego opisu jest adresem danych muzycznych: $57FB i $57DF. Po przeniesieniu kodu rezydentnego z $4000-$7FFF do $8000-$BFFF powinny to być $97FB i $97DF. Relokacja Solo nie obejmowała tych dwóch słów danych. Procedura $56ED (w XEX $96ED) kopiowała więc stary adres do $0657/$0658, a odtwarzacz czytał niewłaściwe dane z okna rozszerzonej pamięci.
+
+Po zaliczeniu wymaganej liczby pilotów gra uruchamia drugą melodię i w $467B (XEX $867B) czeka na wyzerowanie znacznika $0655. Z błędnym adresem znacznik pozostawał ustawiony. VBI, lampki i dźwięki nadal działały, ale główna procedura nie dochodziła do wyboru następnego poziomu. Nadmiarowy pilot nie jest konieczny: błąd dotyczy ścieżki ukończenia poziomu, również dokładnego kompletu.
+
+Poprawka
+Do decyzji relokacji dodano słowa [bank 0, $57D3] i [bank 0, $57D9]. W gotowym XEX zmienia to dokładnie dwa bajty: offsety pliku $187A i $1880, $57 -> $97. Poprawka obejmuje obie melodie. ROM i CAR nie zmieniają się.
+Skrypt: scripts/build_candidate_xex.py.
+Gotowy plik: results/candidate_xex/Rescue on Fractalus! - candidate 320KB-1MB.xex.
+
+Testy
+Scenariusz diagnostyczny rozpoczyna normalny lot po zimnym starcie. Następnie ustawia dane gry odpowiadające powrotowi do statku-matki i licznik uratowanych pilotów, a procedurę powrotu, rozliczenia, melodii i zmiany poziomu wykonuje gra. To kontrolowany test regresji, nie ręcznie rozegrana pełna misja ani benchmark FPS.
+Stary kandydat i Solo: po 2000 klatkach nadal $0655=1, oczekiwanie $867B/$867E. Kartridż: melodia kończy się, poziom 4 -> 5 i rozpoczyna się następny lot.
+Nowy XEX bez modyfikowania kodu w pamięci: 12/12 scenariuszy zaliczonych (PAL/NTSC x 320 KB Rambo/576 KB/1088 KB x dokładny komplet/komplet+1). Każdy osiągnął koniec melodii, poziom 5 i następną pętlę lotu $632E po naciśnięciu fire.
+Ponowione 6/6 testów uruchamiania, lotu, sterowania, strzelania i trzech cykli pauzy/wznowienia również zaliczone.
+
+Wcześniejsze testy XEX obejmowały lot i pauzę, ale nie ukończenie poziomu. To była luka w weryfikacji. Ograniczony test instrukcji od stanu po intrze również nie obejmował tej ścieżki. Wyniki tych wcześniejszych testów nie stanowiły dowodu poprawności przejścia poziomu.
+Nie wykonano testów na fizycznym Atari ani nowych pomiarów FPS.

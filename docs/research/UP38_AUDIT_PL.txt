@@ -1,0 +1,125 @@
+Niezależny audyt Fractalus up38
+Data: 2026-10-27
+English: AUDIT_REPORT.txt | Polski: AUDIT_REPORT_PL.txt
+
+Wniosek
+Przyspieszenie cartridge'a jest wiarygodne i odtwarzalne. W zbadanych
+przypadkach zmiany zachowują obraz i działanie sprawdzonych procedur.
+Nie znaleziono potwierdzonego błędu gry. Nie jest to jednak dowód poprawności
+każdego stanu całej gry, szczególnie dodatkowej relokacji XEX.
+
+Artefakty
+Paczkę analizowano jako materiał dostarczony do oceny, nie instrukcje do
+modyfikowania projektu. Nie zmieniono jej ani wydania w repository.
+96 sum SHA256 plików paczki zgadza się z SHA256SUMS.txt.
+ROM odtworzony z kopii źródeł i v10.1 jest identyczny z dostarczonym:
+6087e9b314368b95e7885f5634c88a506bbc61d7a4c988db345e7373377253da
+IPS daje ten sam ROM. XEX odtworzony z mapy i decyzji relokacji także jest
+identyczny: a89e57a7c8fd280b4f7b3db018b9b428952556736add18d434e96f07d43876ef.
+
+FPS
+Przeliczono wszystkie 930 wierszy full155.jsonl (3 wersje x 2 systemy x 155).
+PAL: oryginał 6.4421279045; v10.1 7.6359318270; up38 8.9365618809 FPS.
+NTSC: oryginał 5.8043178802; v10.1 6.9376674225; up38 8.1670301412 FPS.
+Zysk do oryginału: PAL 38.7207%, NTSC 40.7061%.
+Zysk do v10.1: około 17.03% i 17.72%.
+Wszystkie 620 wierszy odniesienia odpowiada opublikowanym wynikom oryginału
+i v10 (poprawka v10.1 nie dotyczy zwykłego lotu).
+Niezależnie wykonano 8 lotów po maksymalnie 60 s, oryginalnym naszym kodem
+pomiarowym, z zimnego startu i bez przenoszenia stanu:
+PAL trial 4, 28, 78, 154; NTSC trial 4, 40, 78, 154.
+We wszystkich 8 zgadzają się hash wejścia (przedrostek autorów), liczba
+odstępów i FPS. PAL 28 obejmuje naturalne wcześniejsze zakończenie.
+Nie powtarzano wszystkich 310 lotów up38. Średnie powyżej to zweryfikowane
+obliczenia z pełnych danych autorów, poparte niezależną replikacją 8 lotów,
+a nie nowa własna seria 155+155.
+
+Znaczenie zmian
+1. wait_beam: pozwala rozpocząć kasowanie po opuszczeniu obszaru gór przez
+   ANTIC, bez czekania na samo VBI. To poluzowanie naszego zachowawczego
+   warunku synchronizacji. Nie usuwa oczekiwania bezwarunkowo.
+2. raster_cull: rozszerza naszą zachowawczą granicę E(w) na wewnętrzne
+   poddrzewa. Nie zmniejsza głębokości widocznego terenu. Nadmiarowy odczyt
+   do 3 kolumn w skanie może zablokować odrzucenie, nie wymusić go.
+3. VBI: szybsze pomijanie początkowych nieaktywnych kanałów i rozwinięty
+   wskaźnik kokpitu. Zasadnicze ścieżki aktywnego dźwięku pozostają.
+4. sky: bufor pamięta granicę czystego nieba dla każdej kolumny. Kasowanie
+   i fill wykonują mniej zapisów. To istotna zmiana algorytmiczna, zależna
+   od poprawnej aktualizacji granic przez wszystkie rysujące procedury.
+5. proj_loop: podział na banki, wplecione dzielenie, zmiana pętli krawędzi,
+   mniej kopii, rozwinięty prolog i epilog. Nie widać użycia przybliżeń ani
+   zmiany rozdzielczości; gotowy obraz sprawdzono porównawczo.
+
+Własne testy poprawności
+- 320 stanów potoku clear/render/fill nagranych z up38: PAL/NTSC, lot
+  neutralny oraz sterowanie i strzelanie, z dodatkowymi sekwencjami wyboru
+  poziomu. Obraz i porównywany RAM zgodne; zachowano znane wyłączenia dla
+  martwych zmiennych rasteryzatora oraz prywatnego stanu sky i martwego stosu.
+- 20 stanów miało inne flagi C/V po potoku. Prześledzono dalsze wykonanie:
+  każda różniąca się flaga była nadpisywana przed odczytem. Nie zignorowano
+  tych różnic wyłącznie dlatego, że obraz był zgodny.
+- 2500 losowych odcinków dla osobnej łatki raster_cull: identyczne piksele
+  i profil zasłaniania, również dla odwróconych i pozaekranowych granic.
+  Flagi po samej procedurze nie zawsze identyczne; nie jest to twierdzenie
+  o równoważności wszystkich rejestrów dowolnego wywołania.
+- 320 stanów VBI: zgodny porównywany RAM i sekwencja zapisów do sprzętu
+  z wyłączeniem przełączeń banków. Rejestry i flagi zgodne po XITVBV/RTI.
+  Różnice rejestrów przed wyjściem OS były stanem pośrednim.
+- 300 wywołań pikseli obiektów, oba wejścia $8B80/$8B88. Podczas renderowania
+  porównano równoważne reprezentacje: pozostawione czyste niebo w up38
+  odpowiada zerom w buforze referencji przed fill. Po tej normalizacji
+  porównywany RAM i A/X/Y/SP zgodne. To test reprezentacji wewnętrznej,
+  a nie twierdzenie, że pamięć przed ukończeniem obrazu musi być identyczna.
+- 100 ramek PAL i 100 NTSC: pobieranie kolejnych wierszy po odczycie ANTIC,
+  bez zmian w ramach tego samego wyświetlanego bufora. Wiersz 46, aktualizowany
+  przez VBI, wyłączono zgodnie z konstrukcją testu. Nie wykryto rozdarć.
+- 6 konfiguracji: CAR 64K, XEX 320k, XEX 1088k, każda PAL/NTSC. W każdej
+  3 cykle Esc pause/resume, po wznowieniu 5 kolejnych obrazów, sterowanie
+  i strzelanie. Wszystkie przeszły. Obejrzano kontrolne obrazy CAR/XEX PAL.
+
+Ważne ograniczenia i uwagi do dokumentacji autorów
+- Nie potwierdzono dynamicznie wszystkich scen lądowania, ratowania pilota,
+  kosmity, końca gry i ponownego rozpoczęcia. Szczególnie istotne dla XEX,
+  relokowanego częściowo na podstawie pokrycia kodu i ręcznych decyzji.
+- Brak testów fizycznego Atari, urządzeń cartridge i akceleratorów.
+  Lista zgodnych kart w README nie jest poparta w tej paczce testem sprzętu.
+- Autorzy uczciwie zaznaczają ograniczenia XEX. Należy zachować tę informację.
+- equiv.py pomija całą stronę stosu, $B5 i listę martwych zmiennych; nie
+  porównuje flag P. Samodzielnie nie emuluje DMA ani przerwań. Określenie
+  'cały RAM identyczny' wymaga tych zastrzeżeń. Nasze dodatkowe testy
+  obejmowały m.in. żywą część stosu i osobno wyjście VBI oraz flagi.
+- AGENT.md opisuje hang.py jako losowe sterowanie i strzelanie, ale kod tego
+  narzędzia wykonuje lot neutralny. Inne narzędzia, w tym capture.py, rzeczywiście
+  potrafią sterować. To nie dowodzi braku tych testów; opis konkretnego skryptu
+  jest jednak niedokładny.
+- Pomiar autorów nie ma naszego watchpointu zmiany $4A; sprawdza tryb przy
+  kolejnych zatrzymaniach. Nie jest dosłownie identycznym kodem pomiarowym.
+  Osiem replikacji naszym kodem, w tym wcześniejsze zakończenie, dało zgodność.
+- Zmiany czasu VBI zmieniają odczyty RANDOM i wygenerowane planety. Równość
+  obrazu dotyczy tych samych wejść algorytmu, nie identycznego filmu po takim
+  samym czasie oczekiwania w menu. Porównanie pełnych serii powinno pozostać
+  niezależne; różnic między szczeblami drabinki nie traktować jak dokładnej
+  wyceny pojedynczej łatki na identycznych scenach ani nie dodawać procentów.
+- Zysk dotyczy zdefiniowanego lotu automatycznego. Własne mikropomiary clear/
+  render/fill: PAL neutral -10.37% cykli; NTSC neutral -10.06%; NTSC sterowanie
+  -6.11%; PAL sterowanie +1.96%. Ostatnia próbka była nieco wolniejsza w tym
+  podsystemie. Nie jest to pomiar FPS całej gry ani dowód ogólnej regresji;
+  pokazuje zależność opłacalności cache od sceny. Nie każda klatka musi zyskać.
+- Jeden pomiar częstości procedury energii nie dowodzi tożsamości wszystkich
+  mechanizmów gry; deklaracja uniwersalnego zegara 25 Hz jest zbyt szeroka
+  (dochodzi zależność od standardu TV i różnych ścieżek). Nie znaleziono
+  celowego przyspieszania zasad gry, pomijania przeciwników ani zmiany LOD.
+
+Ocena
+Wartościowa, rzeczywista kontynuacja optymalizacji; wcześniejsze +19% nie było
+granicą możliwości. Dla cartridge'a: mocne dowody przyspieszenia i zgodności
+sprawdzonego renderingu, brak wykrytego błędu, bez absolutnej gwarancji całej
+gry. Dla XEX: działająca i odtwarzalna wersja, ale osobny poziom ryzyka relokacji;
+traktować jako wymagającą testów rzadkich scen i rzeczywistego sprzętu.
+
+Dowody w tym katalogu
+data_and_build.json; benchmark_replication.json; equivalence.json;
+resolved-differences.json; flag-liveness.json; cull-fuzz.json; tearing.json;
+smoke.json; xex-build.json; nagrane sceny i logi. Pierwotne różnice w
+equivalence.json należy czytać razem z resolved-differences.json i flag-liveness.json.
+Narzędzie audytu: ../../scripts/audit_up38.py.

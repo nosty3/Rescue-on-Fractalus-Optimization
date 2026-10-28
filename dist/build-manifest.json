@@ -1,48 +1,54 @@
 {
-  "version": "v10.1",
+  "version": "v11",
   "cartridge": "XEGS 128 KB",
   "cartridge_type": 14,
+  "cartridge_ram_kb": 64,
+  "xex_memory": [
+    "320 KB Rambo",
+    "576 KB",
+    "1088 KB"
+  ],
   "rebuild": "python scripts/rebuild_current.py --mads PATH_TO_MADS",
+  "rom_sha256": "ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868",
+  "xex_sha256": "ac0c217074d52a4db6163ad94339031e4610e9a99a5c7d02f629c6b34ce9a20b",
+  "fps_source": "results/v11/summary.json",
+  "fps_applies_to": "CAR/ROM; no separate full XEX benchmark",
   "files": {
     "optimized version/last_ver_info.txt": {
-      "bytes": 197,
-      "sha256": "46e263b8434d06c117bff9e35469a0d34fff9700b5da2ff49c29540557982a8a"
+      "bytes": 457,
+      "sha256": "5410db68dc9a64ce73aee37d25d25f797b3ecec42ef844758b9dfcb01cbe9876"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.car": {
       "bytes": 131088,
-      "sha256": "363ecf83c12518383661f67df4fb91cdc6baac533acf96de136392278c8c7c89"
+      "sha256": "90fa4cfb8d55b8747bfcd393d397cc35f00dfdbe893ca60f3909ef767f631c97"
     },
     "optimized version/Rescue on Fractalus! - optimized 128KB.rom": {
       "bytes": 131072,
-      "sha256": "afa04d6802a03333516936b4912f8f7abf23a1837362ac2b0ceaa83b6b6414da"
+      "sha256": "ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868"
     },
-    "original/Rescue on Fractalus!.rom": {
-      "bytes": 65536,
-      "sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68"
+    "optimized version/Rescue on Fractalus! - optimized 320KB-1MB.xex": {
+      "bytes": 262699,
+      "sha256": "ac0c217074d52a4db6163ad94339031e4610e9a99a5c7d02f629c6b34ce9a20b"
     },
     "dist/fractalus-optimized-128KB.ips": {
-      "bytes": 81226,
-      "sha256": "d1dfc8d676e6a7f5c17ba5ee3b5be94a2b9c5ce9e1a36e4407d8c30e29aeae5f"
-    }
-  },
-  "benchmarks": {
-    "PAL": {
-      "original_fps": 6.442127904539264,
-      "v9_fps": 7.5623140620060765,
-      "optimized_fps": 7.635931826997783,
-      "gain_percent": 18.531204908510723,
-      "data": "results/v10/pal/benchmark.json"
+      "bytes": 84040,
+      "sha256": "414659ab4da469b16b99080f7032019fa7ac8245cd48dd3071bb7feebb70226c"
     },
-    "NTSC": {
-      "original_fps": 5.804317880166299,
-      "v9_fps": 6.897685003697549,
-      "optimized_fps": 6.937667422472081,
-      "gain_percent": 19.52597300327925,
-      "data": "results/v10/ntsc/benchmark.json"
+    "src/v11/raster5.asm": {
+      "bytes": 68805,
+      "sha256": "e98c42f885ba657b752c6c5e85bf5a250ad0562a6cb397badf4629afae15e68b"
+    },
+    "src/v11/sky_b6.asm": {
+      "bytes": 26906,
+      "sha256": "65bfd8af490d783f53b56a203bc207fe2f6c8ebeb8a5ad692d528aa0e9f5a1ea"
+    },
+    "src/v11/sky_b8.asm": {
+      "bytes": 30375,
+      "sha256": "5a8d1e95e9856ab6a7e2093da68cedb59286166d3b92b99a3922cdb9c6e67349"
+    },
+    "src/v11/sky_b9.asm": {
+      "bytes": 34559,
+      "sha256": "b8f800bd5c2666874718c6117e25675e31ab6d30ebd4746b87468fc4f46a0f4d"
     }
-  },
-  "trials_per_version_and_system": 155,
-  "flight_limit_seconds": 60,
-  "benchmark_version": "v10",
-  "fps_tests_run_for_current_version": false
+  }
 }

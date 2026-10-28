@@ -1,0 +1,83 @@
+Historyczny raport etapu badań. Końcowe FPS i stan XEX v11: ../../README_PL.md.
+
+Dalsze optymalizacje up38 — raport badawczy
+
+Wniosek
+Znalazłem i zaimplementowałem pięć dodatkowych uproszczeń. Połączony wariant zmniejsza liczbę cykli całego potoku renderowania w zbadanych scenach o 1,51–4,88% względem up38. To wynik porównania tych samych stanów, a nie nowy procent przyspieszenia całej gry. Ograniczony pomiar FPS nie potwierdza jeszcze istotnego zysku w pełnym locie. Wariant pozostaje eksperymentalny.
+
+Zakres i identyfikacja
+Bazą jest dostarczony ROM up38, SHA256 6087e9b314368b95e7885f5634c88a506bbc61d7a4c988db345e7373377253da.
+Kandydat: sentinel_depth_lazy_scan_fill.rom / .car.
+SHA256 ROM: ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868.
+Źródło eksperymentu: scripts/research_up38.py; wygenerowane źródła ASM, listy symboli i binaria znajdują się obok tego raportu. Oryginalna paczka, repository oraz opublikowane wydanie nie zostały zmodyfikowane. Nie przygotowano odpowiednika XEX ani nowego oficjalnego wydania.
+
+Profilowanie
+Profil 40 scen: średnio 114777 cykli CPU na potok. Rasteryzacja w banku 5: 61609 (53,7%); projekcja w banku 3: 19005; bank 2: 15466; fill w banku 9: 10185; banki 6/8: 6912; prolog banku 14: 1575. Stąd priorytet dla plottera i współpracujących z nim procedur kasowania/wypełniania.
+
+Zmiany
+1. Pełne skasowanie kolumny oznaczone wartością HD=152 zamiast 151.
+Najwyższa rysowana wysokość to 151. Dotychczas HD=151 powodowało wejście do lazy clear przy takiej wysokości, mimo że helper zaraz wracał bez kasowania. Nowy znacznik eliminuje te wywołania bez dodatkowej instrukcji przy każdym pikselu. Zmienione zostały także tablice dyspozycji, inicjalizacja i oba helpery. Wartość 151 wciąż może powstać po rysowaniu obiektów i pozostaje obsługiwana; nie zakładamy, że znika ze wszystkich ścieżek.
+2. Jedno odtworzenie Y na wspólnym wyjściu ścieżki.
+W specjalizacjach d0–d4 usunięto LDY po pojedynczych pikselach. Wspólny DEY zastępuje LDY znanej stałej. Nie dotyczy ogólnej rekurencji dg ani wszystkich specjalnych liści. Zyskiem jest usunięcie redundantnych instrukcji, bez zmiany podziału odcinków.
+3. Lazy clear pracuje bezpośrednio na wysokościach HD/h.
+Odwrócone tablice skoku i porównania eliminują przeliczanie obu wysokości na numery wierszy. Zachowano to samo zaokrąglanie granicy kasowania i obsługę HD=151/152. Dotyczy banków 5 i 8.
+4. Pętla sprawdzająca zasłonięcie trzyma próg w akumulatorze.
+W wyspecjalizowanych skanach o0–o4 cztery pary LDA/CMP zastępują cztery CMP z pamięcią. Próg wynosi Hmax-1, warunek odrzucenia jest odwrócony; X zwiększają cztery INX, aby nie niszczyć A. Te ścieżki obsługują szerokości co najmniej 5, więc dodatni składnik ograniczenia gwarantuje Hmax>0. Nie zastosowano tej transformacji bezwarunkowo w ogólnej ścieżce, gdzie Hmax=0 wymagałoby osobnej obsługi.
+5. Fill również używa HD bez przeliczenia na D=152-HD.
+Odwrócone indeksowanie tablic i warunki porównań usuwają odejmowanie w dyspozycji i obsłudze pasów nieba. Zawartość obrazu pozostaje taka sama.
+
+Przyrostowe wyniki na tej samej próbce 40 scen (średnio zaoszczędzone cykle CPU na potok względem up38)
+Tylko znacznik: 2492,125.
++ odtworzenie Y: 2815,075 (dodatkowo 322,950).
++ lazy clear: 3058,950 (dodatkowo 243,875).
++ skany zasłonięcia: 3502,875 (dodatkowo 443,925).
++ fill: 3790,850 (dodatkowo 287,975).
+Wyniki zależą również od rozmieszczenia kodu i przekraczania stron przez skoki. Nie są uniwersalnymi kosztami pojedynczej procedury.
+
+Pełne porównanie 320 scen, po 80 w grupie
+Grupa                  up38           kandydat      oszczędność     mniej cykli
+PAL automatyczny       108001,2875    106369,1750    1632,1125       1,5112%
+NTSC automatyczny      109597,6500    107565,4250    2032,2250       1,8543%
+PAL sterowanie         129267,9500    123019,4875    6248,4625       4,8337%
+NTSC sterowanie        106477,0625    101278,6875    5198,3750       4,8822%
+To cykle 6502 z symulatora py65, bez DMA, przerwań i oczekiwania na skanowanie. Procent dotyczy całego badanego potoku, nie całego czasu gry. Większy zysk w scenach sterowanych nie stanowi reprezentatywnego benchmarku wszystkich manewrów.
+
+Walidacja
+- 320 zapisanych scen: zgodny obraz, istotny RAM, A/X/Y/SP, żywy stos i semantycznie znormalizowana pamięć granic kasowania.
+- 5000 losowych segmentów, w tym szerokości 1–128 i brzegi ekranu: zgodne bufory obrazu i tablica zasłonięcia; seed 20261029. Ten test nie wymaga identycznych martwych rejestrów/scratch RAM po pojedynczym segmencie.
+- 300 wywołań plottera obiektów: zgodny istotny RAM oraz A/X/Y/SP.
+- 160 kolejnych stanów z natywnie uruchomionego kandydata, po 80 PAL/NTSC: neutralny lot, następnie losowe sterowanie i strzelanie; porównanie z up38 na tych samych wejściach bez różnic obrazu/istotnego RAM/rejestrów. Wartość pełnego skasowania 152 jest przy odtwarzaniu wejścia dla up38 zamieniana na równoważne 151.
+- W tych 160 stanach różne flagi procesora były sprawdzane do pierwszego odczytu/zapisu: nie stwierdzono użycia różnej flagi przed jej nadpisaniem.
+- 3 cykle Esc PAUSE/RESUME na każdy standard, po 5 prezentacji po wznowieniu: poprawne.
+- Dwa helpery kasowania: 11880 przypadków (5940 na bank), wszystkie prawidłowe kombinacje HD/h wywołujące helper, sześć położeń kolumn, zgodny obraz, semantyka cache i X/Y/SP. Bez różnic.
+- Kontrola 100 ramek PAL i 100 NTSC przy odczytach zsynchronizowanych z wiązką: bez wykrytych zmian obrazu w nadal prezentowanym buforze.
+Szczegóły w plikach *-comparison.json, *-fuzz.json, *-objects.json oraz *-native.json. Test synchronizacji zapisano w *-tearing.json, test helperów w *-helpers.json.
+Nie jest to dowód poprawności wszystkich scenariuszy gry ani test sprzętowy. Nie zweryfikowano odpowiednika XEX, akceleratorów ani wszystkich scen lądowania/pilota/obcego/game over.
+
+Ograniczony pomiar FPS od zimnego startu
+Wybrane z góry próby 4, 78 i 154 na standard, po maksymalnie 60 s lotu, cztery izolowane procesy emulatora; ta sama metodologia prezentacji B516 i rozgrzewki 170 ramek co wcześniej. Dla sześciu prób skrót RAM na wejściu był zgodny z up38. Średnia arytmetyczna trzech prób:
+PAL: up38 9,244679; kandydat 9,219327; różnica -0,025352 FPS (-0,2742%).
+NTSC: up38 8,407107; kandydat 8,444859; różnica +0,037752 FPS (+0,4490%).
+W pojedynczych próbach różnice: od -0,407687 do +0,301633 FPS.
+Nie są to nowe wiarygodne średnie dla gry; nie zastępują serii 155 lotów. Mniejszy koszt tych samych scen jest potwierdzony, lecz wzrost średniego FPS całej gry NIE został tym testem potwierdzony. Zmiany czasu wykonania mogą zmieniać dalszy przebieg testu; DMA/VBI i synchronizacja również nie są uwzględnione w tabeli cykli. Nie wykonano diagnostyki pozwalającej przypisać każdą rozbieżność FPS konkretnemu mechanizmowi. Nie należy deklarować nowego wyniku +X% na podstawie tego eksperymentu.
+Wcześniejszy wariant sentinel_depth_lazy również otrzymał sześć lotów; jego wyniki pozostają w osobnym JSON. Razem uruchomiono 12 lotów pomiarowych, nie pełną serię.
+
+Odrzucone warianty
+- Kasowanie jednego dodatkowego wiersza na zapas: w 40 scenach oszczędność tylko 2049,95 cyklu wobec 2492,125 dla samego znacznika. Koszt LUT i obsługi każdej kolumny przeważył nad zmniejszeniem późniejszej pracy. Nie dowodzi to nieopłacalności każdego możliwego algorytmu prognozowania kasowania.
+- Przeniesienie STX $82 wyłącznie do ścieżki podziału: sprawdzone w kombinacji sentinel_store_fill, poprawne w 320 scenach, ale efekt mały i nierówny; nie włączono do wybranego kandydata.
+
+Dalsze kierunki, bez obietnicy zysku
+- Specjalizacja tablic adresów bufora mogłaby usunąć część pracy prologu, ale wymaga zgodnego rozwiązania dla terenu i obiektów oraz nowego rozkładu banków. Samo skasowanie przepisywania tablic byłoby błędem.
+- Projekcja nadal kosztuje około 19 tys. cykli. Dzielenie jest już rozwinięte i mocno zoptymalizowane; użycie odwrotności/tablic wymagałoby dokładnej korekty reszty i przepełnień, żeby zachować wynik bit w bit. Nie ma tu jeszcze działającego szybszego wariantu ani pomiaru zysku.
+- Ciaśniejsze granice odrzucania zależne od fazy odcinka mogłyby ograniczyć fałszywie widoczne poddrzewa; potrzebny jest dowód ograniczenia i bilans kosztu testu. Nie zaimplementowano.
+Żadna z pięciu działających zmian nie wymaga dodatkowych banków ani rozszerzonego RAM.
+
+Odtworzenie
+python -X utf8 scripts/research_up38.py build sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py compare sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py validate sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py helpers sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py native sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py tearing sentinel_depth_lazy_scan_fill
+python -X utf8 scripts/research_up38.py benchmark sentinel_depth_lazy_scan_fill
+Wymagane są dostarczona paczka, MADS, lokalny py65 i wcześniej zapisane stany audytu. Benchmark ponownie używa istniejących plików wynikowych o tej samej nazwie; do niezależnego ponownego pomiaru należy świadomie wybrać nowy identyfikator wariantu.

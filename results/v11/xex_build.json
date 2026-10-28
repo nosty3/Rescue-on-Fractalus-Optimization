@@ -1,0 +1,41 @@
+{
+  "candidate_rom_sha256": "ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868",
+  "xex_sha256": "ac0c217074d52a4db6163ad94339031e4610e9a99a5c7d02f629c6b34ce9a20b",
+  "bytes": 262699,
+  "checks": [
+    {
+      "bank": 5,
+      "baseline_source_relocation_matches_solo_except_uncovered_jumps": true,
+      "additional_relocated_jump_operands": [
+        "0x8427",
+        "0x86bf",
+        "0x8957",
+        "0x8bef",
+        "0x9193",
+        "0x9274",
+        "0x99ea",
+        "0x9acb",
+        "0x9bac",
+        "0x9c8d",
+        "0x9d6e",
+        "0x9e4f"
+      ]
+    },
+    {
+      "bank": 6,
+      "baseline_source_relocation_matches_solo_except_uncovered_jumps": true,
+      "additional_relocated_jump_operands": []
+    },
+    {
+      "bank": 8,
+      "baseline_source_relocation_matches_solo_except_uncovered_jumps": true,
+      "additional_relocated_jump_operands": []
+    },
+    {
+      "bank": 9,
+      "baseline_source_relocation_matches_solo_except_uncovered_jumps": true,
+      "additional_relocated_jump_operands": []
+    }
+  ],
+  "loader_source": "D:\\AI\\Fractalus\\opus_i_fable\\fractalus-up38\\tools\\mkxex.py"
+}

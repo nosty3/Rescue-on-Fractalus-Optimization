@@ -1,0 +1,21 @@
+XEX level-completion stall: cause and fix
+
+Reproduced in the previous candidate XEX and Solo's supplied up38 XEX. The cartridge passed the same diagnostic scenario.
+
+Cause
+The table at $57D3 contains two six-byte music descriptors. Their first words point to music data at $57FB and $57DF. Relocating resident code from $4000-$7FFF to $8000-$BFFF requires $97FB and $97DF instead. Solo's relocation decisions omitted these data words. Routine $56ED ($96ED in XEX) copied the old pointer into $0657/$0658, so the player read unrelated data from the extended-memory window.
+After meeting the pilot quota, the game starts the second tune and waits at $467B ($867B in XEX) for $0655 to become zero. The bad pointer left this flag active. VBI, lamps and sound continued, but the main routine never reached next-level selection. An extra pilot is not required; the exact quota takes this path too.
+
+Fix
+Add relocation words [bank 0, $57D3] and [bank 0, $57D9]. Exactly two XEX bytes change: file offsets $187A and $1880, $57 -> $97. Both tunes are covered. ROM and CAR are unchanged.
+Build script: scripts/build_candidate_xex.py.
+Corrected file: results/candidate_xex/Rescue on Fractalus! - candidate 320KB-1MB.xex.
+
+Validation
+A diagnostic fixture cold-boots into flight, sets game data representing a mothership return and rescued-pilot counts, then lets the actual return, scoring, music and level-transition code execute. This is a controlled regression test, not a fully hand-played mission or an FPS benchmark.
+Old candidate and Solo: after 2000 video frames, $0655 remains 1 and execution waits at $867B/$867E. Cartridge: tune ends, level advances 4 -> 5 and the next flight starts.
+Corrected XEX, without runtime code patching: 12/12 scenarios passed (PAL/NTSC x 320 KB Rambo/576 KB/1088 KB x exact quota/quota+1). Every case reached tune completion, level 5 and the next flight loop $632E after fire input.
+Repeated all six native boot/flight/steering/fire tests and three pause/resume cycles per configuration: 6/6 passed.
+
+Previous XEX checks covered flight and pause but not level completion: a validation gap. The bounded post-intro instruction test did not cover this path either. Those earlier successes did not establish correctness of level transitions.
+No physical Atari testing or new FPS benchmarks were performed.

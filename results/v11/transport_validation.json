@@ -1,0 +1,66 @@
+[
+  {
+    "video": "pal",
+    "version": "up38",
+    "mode": "straight",
+    "equal": true,
+    "old_wall": 13.618262100033462,
+    "new_wall": 9.596087300218642
+  },
+  {
+    "video": "pal",
+    "version": "up38",
+    "mode": "steering",
+    "equal": true,
+    "old_wall": 13.943415899993852,
+    "new_wall": 9.90379839995876
+  },
+  {
+    "video": "pal",
+    "version": "candidate",
+    "mode": "straight",
+    "equal": true,
+    "old_wall": 13.47786880005151,
+    "new_wall": 10.510894499951974
+  },
+  {
+    "video": "pal",
+    "version": "candidate",
+    "mode": "steering",
+    "equal": true,
+    "old_wall": 14.11296600010246,
+    "new_wall": 10.981117999879643
+  },
+  {
+    "video": "ntsc",
+    "version": "up38",
+    "mode": "straight",
+    "equal": true,
+    "old_wall": 11.56964290002361,
+    "new_wall": 10.01106070005335
+  },
+  {
+    "video": "ntsc",
+    "version": "up38",
+    "mode": "steering",
+    "equal": true,
+    "old_wall": 12.102877099998295,
+    "new_wall": 10.509242299944162
+  },
+  {
+    "video": "ntsc",
+    "version": "candidate",
+    "mode": "straight",
+    "equal": true,
+    "old_wall": 11.635208500083536,
+    "new_wall": 10.046241499949247
+  },
+  {
+    "video": "ntsc",
+    "version": "candidate",
+    "mode": "steering",
+    "equal": true,
+    "old_wall": 12.054053700063378,
+    "new_wall": 11.150284700095654
+  }
+]
