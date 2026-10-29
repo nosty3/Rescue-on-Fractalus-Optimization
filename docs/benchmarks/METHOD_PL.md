@@ -6,6 +6,8 @@ Po 170 ramkach rozgrzewki liczymy pełne odstępy prezentacji terenu B516 w nomi
 
 Łączne FPS = 0,5 * średnia FPS lotów prosto + 0,5 * średnia FPS nurkowania. Zysk jest ilorazem średnich łącznych. Oryginał zachowuje historyczną referencję 155+155 lotów na system; v12 i oba v13 mają te same wybrane 155 planów startu, a początkowe mapy są zgodne.
 
-Przedziały 95%: 20 000 replik percentylowego bootstrapu, ziarno 2026102913; losujemy starty w grupach 78/77, parując v12 i oba v13 oraz zachowując współzależność z oryginałem z nurkowaniem. Historyczny oryginał prosto ma niezależny plan i jest resamplowany niezależnie.
+Przedziały 95%: 20 000 replik percentylowego bootstrapu, ziarno 2026102913; losujemy starty w grupach 78/77, parując oba warianty v13 oraz zachowując współzależność z oryginałem z nurkowaniem. Historyczny oryginał prosto ma niezależny plan i jest resamplowany niezależnie.
 
 Dane: results/v13/512KB i results/v13/1024KB oraz results/v12 i historyczne referencje oryginału. Obliczenia: scripts/report_v13.py. Testy funkcjonalne XEX są osobne; seria FPS dotyczy CAR. Emulator nie był łatany. Nowe pomiary wymagają świeżych katalogów wynikowych.
+
+Bieżące tabele porównują v13 wyłącznie z oryginałem i v11. Referencja v11 obejmuje wszystkie 155 lotów prosto i 155 z nurkowaniem na system z results/v11/summary.json. Zysk względem v11 liczony jest z niezaokrąglonych średnich 50/50; nie podajemy dla niego przedziału ufności. Archiwalne plany analizy i surowe dane zachowują historię pierwotnych obliczeń.

@@ -10,12 +10,12 @@ Oba cartridge’e działają na Atari XL/XE z podstawowymi 64 KB RAM. XEX 512 KB
 - [CAR 1 MB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%201024KB.car) / [ROM 1 MB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%201024KB.rom)
 - [XEX 512 KB — 1 MB RAM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20512KB%20-%201MB%20RAM.xex)
 
-| System | Wariant | FPS | Zysk względem oryginału | Zysk względem v12 |
+| System | Wariant | FPS | Zysk względem oryginału | Zysk względem v11 |
 |---|---|---:|---:|---:|
-| PAL | 512 KB | **9.2791** | **+47.95%** | **+3.87%** |
-| PAL | 1 MB | **9.3856** | **+49.65%** | **+5.07%** |
-| NTSC | 512 KB | **8.4698** | **+51.48%** | **+3.93%** |
-| NTSC | 1 MB | **8.5354** | **+52.65%** | **+4.73%** |
+| PAL | 512 KB | **9.2791** | **+47.95%** | **+5.65%** |
+| PAL | 1 MB | **9.3856** | **+49.65%** | **+6.86%** |
+| NTSC | 512 KB | **8.4698** | **+51.48%** | **+5.83%** |
+| NTSC | 1 MB | **8.5354** | **+52.65%** | **+6.65%** |
 
 ![FPS comparison](docs/benchmarks/charts/V13_COMPARISON.png)
 

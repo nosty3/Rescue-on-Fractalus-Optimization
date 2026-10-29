@@ -6,6 +6,8 @@ After 170 warmup video frames, count full B516 terrain-presentation intervals fo
 
 Combined FPS = 0.5 * mean(straight FPS) + 0.5 * mean(descent FPS). Gain is a ratio of combined means. The original reference retains 155+155 historical flights per system; v12 and both v13 variants have the same selected 155 start plans, and initial maps match.
 
-95% intervals: 20,000 percentile-bootstrap replicates, seed 2026102913; resample starts within the 78/77 groups, pairing v12 and both v13 variants and preserving original-descent dependence. Historical original straight uses an independent plan and is resampled independently.
+95% intervals: 20,000 percentile-bootstrap replicates, seed 2026102913; resample starts within the 78/77 groups, pairing both v13 variants and preserving original-descent dependence. Historical original straight uses an independent plan and is resampled independently.
 
 Data: results/v13/512KB and results/v13/1024KB, plus results/v12 and original historical references. Analysis: scripts/report_v13.py. XEX functional checks are separate; the FPS series measures CAR. The emulator binary was not patched. New measurements must use fresh output directories.
+
+Current tables compare v13 only with the original and v11. The v11 reference uses all 155 straight and 155 descent flights per system from results/v11/summary.json. Gain over v11 is calculated from unrounded 50/50 means; no confidence interval is reported for that ratio. Archived analysis plans and raw data retain the original calculation history.
