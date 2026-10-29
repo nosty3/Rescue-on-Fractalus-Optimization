@@ -4,3 +4,4 @@ src/v11/*.asm text eol=lf
 *.rom -text
 *.xex -text
 *.ips -text
+/results/v13/** -text

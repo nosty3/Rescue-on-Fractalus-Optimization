@@ -1,0 +1,9 @@
+{
+  "scope": "Canonical LF digests for historical reference files. Their original machine-byte digests remain in the frozen analysis plan. Only CRLF/LF equivalence is accepted.",
+  "sha256_lf": {
+    "results/v12/flights.jsonl": "d2f7b3bb90b3239921ceb564ae2f8a641b6c43ceeafae7db84db4a5ca3af8069",
+    "results/v11/flights.jsonl": "efd72b7407e50f24ae57673bd490280fc7bae3fec49592669ded86266c0132a4",
+    "results/pal_isolated_main/benchmark.json": "1f14904e53729bce230ea7590b9fbd3347601aec853eb29081a4940182566d22",
+    "results/ntsc_isolated_main/benchmark.json": "39945c9fef94c9d17aeed03eb6a1635325244bb28ceb51a127cc04593bd11f9e"
+  }
+}

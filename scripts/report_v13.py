@@ -12,7 +12,11 @@ SEED=2026102913;N=20000
 def freeze_analysis():
  d=dict(seed=SEED,replicates=N,confidence=.95,estimator='Half of straight mean plus half of descent mean; preserve all natural early ends.',bootstrap='Paired start-plan resampling within the preassigned 78/77 groups for v12 and both v13 variants; preserve original-descent dependence, independently resample original straight flights.',comparisons=['Each v13 variant vs original','Each v13 variant vs v12','v13 1024 KB vs v13 512 KB'],reference_sha256={n:sha(R/n) for n in ('results/v12/flights.jsonl','results/v11/flights.jsonl','results/pal_isolated_main/benchmark.json','results/ntsc_isolated_main/benchmark.json')})
  p=O/'analysis-plan.json'
- if p.exists():assert read(p)==d
+ if p.exists():
+  frozen=read(p);assert all(frozen[k]==v for k,v in d.items() if k!='reference_sha256')
+  canonical=read(O/'reference-content.json')['sha256_lf']
+  for name,expected in frozen['reference_sha256'].items():
+   data=(R/name).read_bytes();assert hashlib.sha256(data).hexdigest()==expected or hashlib.sha256(data.replace(b'\r\n',b'\n')).hexdigest()==canonical[name],name
  else:p.write_text(json.dumps(d,indent=2),encoding='utf-8')
  return d
 def main():
