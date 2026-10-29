@@ -1,0 +1,47 @@
+{
+  "version": "v13",
+  "static": {
+    "dispatcher_inputs_per_car": 256,
+    "mixer_cases_per_car": 1024,
+    "reference": "original ROM",
+    "channel11_regression": true
+  },
+  "native": [
+    {
+      "kb": 512,
+      "video": "pal",
+      "machine": "130XE",
+      "memory_kb": 1088,
+      "unchanged_map": true,
+      "clock_progress": true,
+      "render_presentations": true
+    },
+    {
+      "kb": 512,
+      "video": "ntsc",
+      "machine": "130XE",
+      "memory_kb": 1088,
+      "unchanged_map": true,
+      "clock_progress": true,
+      "render_presentations": true
+    },
+    {
+      "kb": 1024,
+      "video": "pal",
+      "machine": "130XE",
+      "memory_kb": 1088,
+      "unchanged_map": true,
+      "clock_progress": true,
+      "render_presentations": true
+    },
+    {
+      "kb": 1024,
+      "video": "ntsc",
+      "machine": "130XE",
+      "memory_kb": 1088,
+      "unchanged_map": true,
+      "clock_progress": true,
+      "render_presentations": true
+    }
+  ]
+}

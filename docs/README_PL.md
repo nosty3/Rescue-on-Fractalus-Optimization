@@ -6,3 +6,4 @@
 - [Pomiary v13](benchmarks/V13_REPORT_PL.md)
 - [Pomysły ilmenita](ILMENIT_IDEAS_PL.md)
 - [Drzewa podziału](terrain/COMPILED_TREES_PL.md)
+- [Naprawa dźwięku i awarii podczas skrętu v13](terrain/V13_SOUND_FIX_PL.md)

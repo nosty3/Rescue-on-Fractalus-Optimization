@@ -38,9 +38,15 @@ def main():
  for n in pages:
   if n!=7:pages[n][8192:]=fixed
  p=pages[2];p[0x1400:0x1500]=bytes(portb(n) if n else 0 for n in rom[0x5400:0x5500])
- selector=(O/'selector.asm').read_text(encoding='utf-8');selector=relocate(selector);selector=selector.replace(' lda #5\n jmp $5e50',f' lda #${portb(5):02x}\n jmp $5e50')
- code=assemble(selector,'selector');p[0x1c42:0x1c42+len(code)]=code;p[0x182a:0x182d]=bytes.fromhex('4c425c');p[0x1858:0x185b]=bytes.fromhex('8d01d3');p[0x1e50:0x1e53]=bytes.fromhex('8d01d3')
- assert pages[5][0x1e53:0x1e56]==b'\xff'*3;pages[5][0x1e53:0x1e56]=pages[5][0x182f:0x1832]
+ sound_helpers=bytes(p[0x1d3b:0x1fd5]);geometry=bytes(p[0x182f:0x1a55])
+ # Relocated fallback: bank 2 $5fef -> bank 5 $5ff2, outside live helpers.
+ assert p[0x1fef:0x1ff2]==b'\xff'*3
+ selector=(O/'selector.asm').read_text(encoding='utf-8');selector=relocate(selector);selector=selector.replace(' lda #5\n jmp $5fef',f' lda #${portb(5):02x}\n jmp $5fef')
+ code=assemble(selector,'selector');p[0x1c42:0x1c42+len(code)]=code;p[0x182a:0x182d]=bytes.fromhex('4c425c');p[0x1858:0x185b]=bytes.fromhex('8d01d3');p[0x1fef:0x1ff2]=bytes.fromhex('8d01d3')
+ assert pages[5][0x1ff2:0x1ff5]==b'\xff'*3;pages[5][0x1ff2:0x1ff5]=pages[5][0x182f:0x1832]
+ assert p[0x1d3b:0x1fd5]==sound_helpers
+ assert p[0x182f:0x1858]==geometry[:0x29]
+ assert p[0x185b:0x1a55]==geometry[0x2c:]
  checks=[]
  for n in range(16,16+meta['used_extra_banks']):
   paths=list((O/'workers').glob(f'*-b{n:03}.asm'));assert len(paths)==1,(n,paths)

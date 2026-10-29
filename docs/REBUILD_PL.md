@@ -23,3 +23,12 @@ python scripts/test_v13_level_transition.py candidate --release 1088k --ntsc
 ```
 
 Modelowe testy scen korzystały z prywatnych zapisów RAM, wyłączonych z repo; wybrane wyniki są w results/v13/validation. Nie są one potrzebne do odbudowy ani nowych testów natywnych. XEX wymaga rozszerzenia 1 MB RAM, 1088 KB łącznie; oba cartridge’e tylko 64 KB.
+
+Regresja naprawy dźwięku i bankowania, bez prywatnych stanów pamięci i bez pomiarów FPS:
+
+```text
+python scripts/test_v13_sound_fix.py
+python scripts/test_v13_sound_fix.py --native
+```
+
+Druga komenda dodatkowo uruchamia cztery próby w Altirrze: oba CAR-y, PAL/NTSC, 130XE z 1088 KB RAM i długie skręty. Wynik trafia do `build/v13-sound-fix-tests.json`. Sumy kontrolne aktualnych obrazów znajdują się w `src/v13/expected.json` i `dist/`.

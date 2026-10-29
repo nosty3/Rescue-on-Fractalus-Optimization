@@ -1,5 +1,7 @@
 # Pełne pomiary v13
 
+**Status FPS:** tabela i wykres zachowują pomiary wykonane przed naprawą bankowania z 2026-10-29. Poprawionych obrazów nie poddano nowej pełnej serii FPS.
+
 Wynik 50/50 to połowa średniej lotów prosto i połowa średniej nurkowania. Każdy wariant v13: 155 zimnych startów PAL i 155 NTSC, po 78 prosto i 77 z nurkowaniem, nominalnie 60 s. Łącznie 620 nowych lotów w czterech izolowanych emulatorach. Ten sam plan co v12; wszystkie początkowe mapy są zgodne. Oryginał zachowuje pełną historyczną referencję 155+155 na system. Naturalne wcześniejsze końce pozostają w danych. FPS dotyczy CAR; XEX przeszedł osobną walidację funkcjonalną.
 
 | System | Wariant | FPS | Zysk względem oryginału | Zysk względem v11 |

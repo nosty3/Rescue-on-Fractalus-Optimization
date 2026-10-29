@@ -1,10 +1,10 @@
 {
   "version": "v13",
   "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
-  "rom_sha256": "c3cc22f953f407d34816df22292de4719ead53bc07a2b61fff19b011eac6324d",
-  "car_sha256": "bb1cf8faf1c52424de00fa4eb926c00ea8abef0ef98d4892048f77d865ae5d1e",
+  "rom_sha256": "17d0c2dc8d8566a3fd289a75946854264f03c532b20f760aa3b3ff95dfe9fcaf",
+  "car_sha256": "151a36fdb3a18568cf3fa7268d0bae20060d4af81465b6c447ffec635eafdbe0",
   "rom_bytes": 1048576,
   "cartridge_type": 25,
   "ips_verified": true,
-  "ips_sha256": "afd80d192ad3ead015807430fa0c986509c32c6018632e59d4b659a0fd5d2da7"
+  "ips_sha256": "78c9d384c2d74baf3a08528368289cc346d3f60337d1e94abcd1bf8c32587a55"
 }

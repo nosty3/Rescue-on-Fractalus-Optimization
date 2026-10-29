@@ -692,7 +692,7 @@
   "used_extra_banks": 111,
   "free_extra_banks": 0,
   "size": 1048576,
-  "sha256": "c3cc22f953f407d34816df22292de4719ead53bc07a2b61fff19b011eac6324d",
+  "sha256": "17d0c2dc8d8566a3fd289a75946854264f03c532b20f760aa3b3ff95dfe9fcaf",
   "source": "v12 + ilmenit width generator + existing HD/lazy clear",
   "version": "v13"
 }

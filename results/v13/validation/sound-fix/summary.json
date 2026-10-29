@@ -1,0 +1,1043 @@
+{
+  "version": "v13",
+  "updated": "2026-10-29",
+  "replaces_images_in_place": true,
+  "release_filenames_unchanged": true,
+  "rom_changed_bytes": 14,
+  "cartridge_geometry_workers_unchanged": true,
+  "cartridge_dispatcher_256_inputs_per_variant": true,
+  "expected": {
+    "512": "5dd1d90d11ae7bc71a81468767b8c45b15e126bf8b2dbfd73d409ece1bbbf66e",
+    "1024": "17d0c2dc8d8566a3fd289a75946854264f03c532b20f760aa3b3ff95dfe9fcaf",
+    "xex": "4db14ac5fac542879604c832a50ba19bfba4bdee2bbebb831b2e9dfbfd60d9d7"
+  },
+  "prior_native_car_tests": [
+    {
+      "name": "v13-512KB",
+      "video": "pal",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "01650000b0"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "01650000b0",
+          "angles_after": "018f0f00bc"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "018f0f00bc",
+          "angles_after": "01c80fe0a3"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01c80fe0a3",
+          "angles_after": "02d90f20b3"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02df0fa0bc",
+          "angles_after": "02d60f60e5"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02d80f60e5",
+          "angles_after": "01f90f60e5"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01f60f60e5",
+          "angles_after": "01a50f60e5"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a50f60e5",
+          "angles_after": "01ce0f60e5"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "pal",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "01650000b0"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "01650000b0",
+          "angles_after": "018f0f00bc"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "018f0f00bc",
+          "angles_after": "01c80fe0a3"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01c80fe0a3",
+          "angles_after": "02d90f20b3"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02df0fa0bc",
+          "angles_after": "02d60f60e5"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02d80f60e5",
+          "angles_after": "01f90f60e5"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01f60f60e5",
+          "angles_after": "01a50f60e5"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a50f60e5",
+          "angles_after": "01ce0f60e5"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "pal",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "015e00e09a"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "015e00e09a",
+          "angles_after": "016d0f4084"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "016d0f4084",
+          "angles_after": "018f0fc0a6"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "018f0fc0a6",
+          "angles_after": "02a20f40c8"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02a70fc0d1",
+          "angles_after": "01a00f20f7"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a20f20f7",
+          "angles_after": "01c20f20f7"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c20f20f7",
+          "angles_after": "01700f20f7"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01740f20f7",
+          "angles_after": "019e0f20f7"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "pal",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "015e00e09a"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "015e00e09a",
+          "angles_after": "016d0f4084"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "016d0f4084",
+          "angles_after": "018f0fc0a6"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "018f0fc0a6",
+          "angles_after": "02a20f40c8"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02a70fc0d1",
+          "angles_after": "01a00f20f7"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a20f20f7",
+          "angles_after": "01c20f20f7"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c20f20f7",
+          "angles_after": "01700f20f7"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01740f20f7",
+          "angles_after": "019e0f20f7"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "ntsc",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "015f00209b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "015f00209b",
+          "angles_after": "01740f2085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01740f2085",
+          "angles_after": "019b0fe09f"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019b0fe09f",
+          "angles_after": "02b20f00ba"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02b90fc0c5",
+          "angles_after": "01ac0f80ee"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b00f80ee",
+          "angles_after": "01d10f80ee"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01d10f80ee",
+          "angles_after": "01770f80e8"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "017a0f80e8",
+          "angles_after": "019a0f80e8"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "ntsc",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016600009d"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016600009d",
+          "angles_after": "01760fe085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01760fe085",
+          "angles_after": "01a20fa0a3"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01a20fa0a3",
+          "angles_after": "02b40fc0c4"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ba0f40ce",
+          "angles_after": "01b30f80f4"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b50f80f4",
+          "angles_after": "01d60f80f4"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01d10f80f4",
+          "angles_after": "017b0f80f4"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01800f80f4",
+          "angles_after": "01a90f80f4"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "ntsc",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "015f00209b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "015f00209b",
+          "angles_after": "01740f2085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01740f2085",
+          "angles_after": "019b0fe09f"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019b0fe09f",
+          "angles_after": "02b20f00ba"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02b90fc0c5",
+          "angles_after": "01ac0f80ee"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b00f80ee",
+          "angles_after": "01d10f80ee"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01d10f80ee",
+          "angles_after": "01770f80e8"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "017a0f80e8",
+          "angles_after": "019a0f80e8"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-512KB",
+      "video": "ntsc",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016600009d"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016600009d",
+          "angles_after": "01760fe085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01760fe085",
+          "angles_after": "01a20fa0a3"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01a20fa0a3",
+          "angles_after": "02b40fc0c4"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ba0f40ce",
+          "angles_after": "01b30f80f4"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b50f80f4",
+          "angles_after": "01d60f80f4"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01d10f80f4",
+          "angles_after": "017b0f80f4"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01800f80f4",
+          "angles_after": "01a90f80f4"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "pal",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "01620000b0"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "01620000b0",
+          "angles_after": "018f0f00bc"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "018f0f00bc",
+          "angles_after": "01cb0f00a8"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01cb0f00a8",
+          "angles_after": "02e30f60ba"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ea0fa0c5",
+          "angles_after": "02e00f40f0"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02e30f40f0",
+          "angles_after": "01060040f0"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01060040f0",
+          "angles_after": "01b60f40f0"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b60f40f0",
+          "angles_after": "01e00f40f0"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "pal",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "01620000b0"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "01620000b0",
+          "angles_after": "018f0f00bc"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "018f0f00bc",
+          "angles_after": "01cb0f00a8"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01cb0f00a8",
+          "angles_after": "02e30f60ba"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ea0fa0c5",
+          "angles_after": "02e00f40f0"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02e30f40f0",
+          "angles_after": "01060040f0"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01060040f0",
+          "angles_after": "01b60f40f0"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01b60f40f0",
+          "angles_after": "01e00f40f0"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "pal",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016200e09b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016200e09b",
+          "angles_after": "016f0f2085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "016f0f2085",
+          "angles_after": "01930f80a7"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01930f80a7",
+          "angles_after": "02a60f80ca"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ac0f00d4",
+          "angles_after": "01a20f20fb"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a50f20fb",
+          "angles_after": "01c70f20fb"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c50f20fb",
+          "angles_after": "01720f20fb"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01760f20fb",
+          "angles_after": "019f0f20fb"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "pal",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016200e09b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016200e09b",
+          "angles_after": "016f0f2085"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "016f0f2085",
+          "angles_after": "01930f80a7"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "01930f80a7",
+          "angles_after": "02a60f80ca"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02ac0f00d4",
+          "angles_after": "01a20f20fb"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01a50f20fb",
+          "angles_after": "01c70f20fb"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c50f20fb",
+          "angles_after": "01720f20fb"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01760f20fb",
+          "angles_after": "019f0f20fb"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "ntsc",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016200409b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016200409b",
+          "angles_after": "01730f0088"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01730f0088",
+          "angles_after": "019f0f00a4"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019f0f00a4",
+          "angles_after": "02b90f40c5"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02c00f20d1",
+          "angles_after": "02b40fe0fa"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02b70fe0fa",
+          "angles_after": "01da0fe0fa"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01da0fe0fa",
+          "angles_after": "01860fe0fa"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "018b0fe0fa",
+          "angles_after": "01b40fe0fa"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "ntsc",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3009,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016200409b"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016200409b",
+          "angles_after": "01730f0088"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01730f0088",
+          "angles_after": "019f0f00a4"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019f0f00a4",
+          "angles_after": "02b90f40c5"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02c00f20d1",
+          "angles_after": "02b40fe0fa"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "02b70fe0fa",
+          "angles_after": "01da0fe0fa"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01da0fe0fa",
+          "angles_after": "01860fe0fa"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "018b0fe0fa",
+          "angles_after": "01b40fe0fa"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "ntsc",
+      "memory": "64k",
+      "machine": "800XL",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016900409c"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016900409c",
+          "angles_after": "01720fe083"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01720fe083",
+          "angles_after": "019b0f00a0"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019b0f00a0",
+          "angles_after": "02ac0fa0bf"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02b00fa0c8",
+          "angles_after": "01a90f60ed"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01ab0f60ed",
+          "angles_after": "01cd0f60ed"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c90f60ed",
+          "angles_after": "01760f60ed"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "017b0f60ed",
+          "angles_after": "01a70f60ed"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    },
+    {
+      "name": "v13-1024KB",
+      "video": "ntsc",
+      "memory": "1088k",
+      "machine": "130XE",
+      "menu_frames": 3165,
+      "flight_frames_at_least": 2738,
+      "stages": [
+        {
+          "joy": "e",
+          "frames": 200,
+          "angles_before": "0000000000",
+          "angles_after": "016900409c"
+        },
+        {
+          "joy": "w",
+          "frames": 200,
+          "angles_before": "016900409c",
+          "angles_after": "01720fe083"
+        },
+        {
+          "joy": "n",
+          "frames": 200,
+          "angles_before": "01720fe083",
+          "angles_after": "019b0f00a0"
+        },
+        {
+          "joy": "s",
+          "frames": 200,
+          "angles_before": "019b0f00a0",
+          "angles_after": "02ac0fa0bf"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "02b00fa0c8",
+          "angles_after": "01a90f60ed"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "01ab0f60ed",
+          "angles_after": "01cd0f60ed"
+        },
+        {
+          "joy": "e",
+          "frames": 400,
+          "angles_before": "01c90f60ed",
+          "angles_after": "01760f60ed"
+        },
+        {
+          "joy": "w",
+          "frames": 400,
+          "angles_before": "017b0f60ed",
+          "angles_after": "01a70f60ed"
+        }
+      ],
+      "clock_progress": true,
+      "render_presentations": true,
+      "pause_resume": true
+    }
+  ],
+  "systems_on": [
+    {
+      "video": "pal",
+      "memory": "1088k",
+      "keys": [
+        "S",
+        "B",
+        "PLUS"
+      ],
+      "channel11": "08",
+      "long_turns": true,
+      "rendering_alive": true
+    },
+    {
+      "video": "ntsc",
+      "memory": "1088k",
+      "keys": [
+        "S",
+        "B",
+        "PLUS"
+      ],
+      "channel11": "08",
+      "long_turns": true,
+      "rendering_alive": true
+    }
+  ],
+  "xex_native": [
+    {
+      "video": "pal",
+      "memory": "1088k",
+      "boot": true,
+      "steering_fire": true,
+      "pause_resume": true
+    },
+    {
+      "video": "ntsc",
+      "memory": "1088k",
+      "boot": true,
+      "steering_fire": true,
+      "pause_resume": true
+    }
+  ],
+  "prior_cpu_model": {
+    "mixer_cases_per_rom": 4096,
+    "vbi_captured_inputs_per_rom": 320,
+    "queued_tone_inputs_per_rom": 8,
+    "render_pipelines_per_rom": 40
+  },
+  "user_confirmed_car_1024_sha256": "151a36fdb3a18568cf3fa7268d0bae20060d4af81465b6c447ffec635eafdbe0",
+  "fps_remeasured": false,
+  "scope": "Correctness tests; captured-state CPU fixtures excluded. See docs/terrain/V13_SOUND_FIX.md. Public regression and source rebuild need no private RAM states."
+}

@@ -4,23 +4,23 @@
     "512": {
       "version": "v13",
       "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
-      "rom_sha256": "6aa312d7fe244eb805942e5252f004d5017102a05c9ac73419d559d460f0f1f2",
-      "car_sha256": "2984758aace2532cd7c0327fad801cc0f7885307ba2147f8cdade9698d0e66a1",
+      "rom_sha256": "5dd1d90d11ae7bc71a81468767b8c45b15e126bf8b2dbfd73d409ece1bbbf66e",
+      "car_sha256": "e8c743cf728f99abfdc953f7c7f970358c17cf5791ddb76210b0da78dc7605de",
       "rom_bytes": 524288,
       "cartridge_type": 24,
       "ips_verified": true,
-      "ips_sha256": "5bc8b7a6831c00fc727d5013cb0763aa68359c00a1a2a86d5148a03c4c646e7c"
+      "ips_sha256": "53ac8f838e3a5ae74bcec39794693adfa22d6791811cf398425f17ce94d8b93c"
     },
     "1024": {
       "version": "v13",
       "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
-      "rom_sha256": "c3cc22f953f407d34816df22292de4719ead53bc07a2b61fff19b011eac6324d",
-      "car_sha256": "bb1cf8faf1c52424de00fa4eb926c00ea8abef0ef98d4892048f77d865ae5d1e",
+      "rom_sha256": "17d0c2dc8d8566a3fd289a75946854264f03c532b20f760aa3b3ff95dfe9fcaf",
+      "car_sha256": "151a36fdb3a18568cf3fa7268d0bae20060d4af81465b6c447ffec635eafdbe0",
       "rom_bytes": 1048576,
       "cartridge_type": 25,
       "ips_verified": true,
-      "ips_sha256": "afd80d192ad3ead015807430fa0c986509c32c6018632e59d4b659a0fd5d2da7"
+      "ips_sha256": "78c9d384c2d74baf3a08528368289cc346d3f60337d1e94abcd1bf8c32587a55"
     }
   },
-  "xex_sha256": "f9114318b2566d5a31b05356749fbffedc495a1c8e8595ed3cfe8e55bd06d3f5"
+  "xex_sha256": "4db14ac5fac542879604c832a50ba19bfba4bdee2bbebb831b2e9dfbfd60d9d7"
 }

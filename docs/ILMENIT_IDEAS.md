@@ -14,6 +14,8 @@ The FPS table shows the cumulative effect of changes implemented in v12 and v13,
 | GTIA / GR.10 | **Outside this GR.7 line** | Changes graphics and sampling; not a visually transparent GR.7 optimization. |
 | Earlier PMG, sound, interpolation, geometry, clipping | Already in our **≤v10.1/v11** base | Inherited from our project; not counted as new work or another gain. |
 
+**FPS status:** the table and chart retain measurements made before the 2026-10-29 banking repair. The repaired images have not undergone a new full FPS series.
+
 | System | Version / cartridge | FPS | Gain over original | Gain over v11 |
 |---|---|---:|---:|---:|
 | PAL | v12 / 128 KB | **8.9329** | **+42.43%** | **+1.71%** |

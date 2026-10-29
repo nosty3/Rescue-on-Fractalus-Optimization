@@ -1,5 +1,7 @@
 # Full v13 measurements
 
+**FPS status:** the table and chart retain measurements made before the 2026-10-29 banking repair. The repaired images have not undergone a new full FPS series.
+
 The 50/50 result is half of the straight-flight mean and half of the descent mean. Each v13 variant: 155 PAL cold boots and 155 NTSC, with 78 straight and 77 descent, nominally 60 s. Total: 620 new flights in four isolated emulators. Same plan as v12; all initial maps match. Original retains the full historical 155+155 reference per system. Natural early ends remain in the data. FPS measures CAR; XEX passed separate functional validation.
 
 | System | Variant | FPS | Gain over original | Gain over v11 |

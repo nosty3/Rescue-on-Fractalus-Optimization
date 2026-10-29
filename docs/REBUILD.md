@@ -23,3 +23,12 @@ python scripts/test_v13_level_transition.py candidate --release 1088k --ntsc
 ```
 
 The CPU-model scene tests used private RAM fixtures excluded from this repository; selected results are in results/v13/validation. Those fixtures are not needed to rebuild or run new native tests. XEX needs 1 MB extended RAM, 1088 KB total; both cartridges need only 64 KB.
+
+Sound/banking repair regression, without private RAM states or FPS measurements:
+
+```text
+python scripts/test_v13_sound_fix.py
+python scripts/test_v13_sound_fix.py --native
+```
+
+The second command additionally runs four Altirra cases: both CARs, PAL/NTSC, 130XE with 1088 KB RAM and sustained turns. Results go to `build/v13-sound-fix-tests.json`. Current image checksums are in `src/v13/expected.json` and `dist/`.

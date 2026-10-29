@@ -1,5 +1,5 @@
 """v13: width-compiled ilmenit terrain workers integrated with v12.
-Experimental only. Original generator is read, never modified.
+The upstream tree generator is read, never modified.
 """
 from pathlib import Path
 import sys,re,subprocess,json,hashlib,dis,os
@@ -126,15 +126,21 @@ fallback
  ldx $60
  plp
  lda #5
- jmp $9e50
+ jmp $9fef
  ert * > $9d20
 '''
  src=O/'selector.asm';src.write_text(selector);out=O/'selector.bin';r=subprocess.run([str(MADS),str(src),'-o:'+str(out)],capture_output=True,text=True);assert not r.returncode,r.stdout+r.stderr;code=out.read_bytes();rom[0x5c42:0x5c42+len(code)]=code
  assert rom[0x582a:0x582f]==bytes.fromhex('a9058d00d5');rom[0x582a:0x582d]=bytes.fromhex('4c429c')
  assert rom[0x5858:0x585b]==b'\xff'*3;rom[0x5858:0x585b]=bytes.fromhex('8d00d5')
- rom[0x5e50:0x5e53]=bytes.fromhex('8d00d5')
- assert rom[5*8192+0x1e53:5*8192+0x1e56]==b'\xff'*3
- rom[5*8192+0x1e53:5*8192+0x1e56]=rom[5*8192+0x182f:5*8192+0x1832]
+ # Fallback handover: bank 2 $9fef -> bank 5 $9ff2.
+ # $9e50 belongs to the mixer; $9875 belongs to live geometry dispatch.
+ assert rom[0x5fef:0x5ff2]==b'\xff'*3
+ rom[0x5fef:0x5ff2]=bytes.fromhex('8d00d5')
+ assert rom[5*8192+0x1ff2:5*8192+0x1ff5]==b'\xff'*3
+ rom[5*8192+0x1ff2:5*8192+0x1ff5]=rom[5*8192+0x182f:5*8192+0x1832]
+ assert rom[0x5d3b:0x5fd5]==BASE[0x5d3b:0x5fd5]
+ assert rom[0x582f:0x5858]==BASE[0x582f:0x5858]
+ assert rom[0x585b:0x5a55]==BASE[0x585b:0x5a55]
  return bytes(rom),dict(entries=entries,used_extra_banks=bank-16,free_extra_banks=size//8192-1-bank)
 
 def save(size,selected):

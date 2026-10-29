@@ -6,9 +6,13 @@ Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%).
 
 Oba cartridge’e działają na Atari XL/XE z podstawowymi 64 KB RAM. XEX 512 KB wymaga rozszerzenia 1 MB (1088 KB łącznie), zgodnego bankowania PORTB i wyłączonego BASIC-a. Wariant cartridge’a 1 MB nie ma XEX w tym układzie loadera. Dla XEX na 320/576 KB pozostaje [gałąź v12](https://github.com/nosty3/Rescue-on-Fractalus-Optimization/tree/v12). Uruchamiaj nowe pliki od zimnego startu.
 
+**Naprawa v13 z 2026-10-29:** obrazy CAR/ROM/XEX zostały zastąpione pod dotychczasowymi nazwami. Poprawiono kolizję kodu miksera dźwięku i awarię podczas skrętu. [Opis i testy](docs/terrain/V13_SOUND_FIX_PL.md).
+
 - [CAR 512 KB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20512KB.car) / [ROM 512 KB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20512KB.rom)
 - [CAR 1 MB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%201024KB.car) / [ROM 1 MB](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%201024KB.rom)
 - [XEX 512 KB — 1 MB RAM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20512KB%20-%201MB%20RAM.xex)
+
+**Status FPS:** tabela i wykres zachowują pomiary wykonane przed naprawą bankowania z 2026-10-29. Poprawionych obrazów nie poddano nowej pełnej serii FPS.
 
 | System | Wariant | FPS | Zysk względem oryginału | Zysk względem v11 |
 |---|---|---:|---:|---:|

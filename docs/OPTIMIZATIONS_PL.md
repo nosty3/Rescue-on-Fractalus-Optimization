@@ -202,3 +202,7 @@ Na bazie v12 gotowe drzewa usuwają obliczenia środkowego X i sterowanie przej�
 XEX wariantu 512 KB używa 62 stron po 16 KB na rozszerzeniu 1 MB (1088 KB łącznie). Prawidłowe PORTB poniżej $80 wymagają strażnika VBI akceptującego niezerowe znaczniki; zero oznacza bank 2. Loader sprawdza 64 niezależne strony i zachowuje poprawki Esc oraz melodii końca poziomu. Cartridge 1 MB przekracza pojemność tego układu stron; nie dostarczamy jego XEX. Oba cartridge’e wymagają tylko 64 KB RAM.
 
 [Implementacja i walidacja](terrain/COMPILED_TREES_PL.md), [pełne pomiary](benchmarks/V13_REPORT_PL.md), [pomysły ilmenita](ILMENIT_IDEAS_PL.md). Bieżące źródła banków to src/v12 i generatory src/v13; starsze etapy pozostają potrzebne do odbudowy.
+
+### Naprawa bankowania v13 (2026-10-29)
+
+Trampolina fallbacku błędnie nadpisywała mikser pod `$9E50`, zaburzając dźwięk pilota. Pierwsza lokalna poprawka z kolei nadpisała dyspozytor geometrii pod `$9875` i powodowała awarię podczas skrętu. Obecny v13 zachowuje oba obszary, przełączając bank pod `$9FEF` i kontynuując pod `$9FF2` w banku 5. Dodano ochronę obszarów i test regresji bez prywatnych zrzutów pamięci. CAR/ROM/XEX oraz IPS zastąpiono pod istniejącymi nazwami; numer wersji pozostaje v13. Nie wykonano nowej serii FPS. [Diagnoza i testy](terrain/V13_SOUND_FIX_PL.md).

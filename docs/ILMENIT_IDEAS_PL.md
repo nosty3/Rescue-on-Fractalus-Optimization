@@ -14,6 +14,8 @@ Tabela FPS pokazuje łączny efekt zmian wdrożonych w v12 i v13, wyłącznie wz
 | GTIA / GR.10 | **Poza zakresem tej linii** | Zmienia grafikę i próbkowanie; nie jest przezroczystą optymalizacją GR.7. |
 | Dawne PMG, audio, interpolacja, geometria, clipping | Już w bazie **≤v10.1/v11** | Elementy odziedziczone z naszego projektu; nie liczymy ich jako nowego wkładu ani ponownego zysku. |
 
+**Status FPS:** tabela i wykres zachowują pomiary wykonane przed naprawą bankowania z 2026-10-29. Poprawionych obrazów nie poddano nowej pełnej serii FPS.
+
 | System | Wersja / cartridge | FPS | Zysk względem oryginału | Zysk względem v11 |
 |---|---|---:|---:|---:|
 | PAL | v12 / 128 KB | **8.9329** | **+42.43%** | **+1.71%** |

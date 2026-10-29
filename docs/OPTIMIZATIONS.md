@@ -202,3 +202,7 @@ On the v12 base, generated trees remove midpoint-X arithmetic and traversal book
 The 512 KB XEX uses 62 pages of 16 KB on a 1 MB expansion (1088 KB total). Valid PORTB values below $80 require a nonzero-marker VBI guard; zero is bank-2 fallback. The loader checks 64 independent pages and retains Esc and level-end music fixes. The 1 MB cartridge exceeds this loader's page capacity; no XEX is supplied for it. Both cartridges require only 64 KB RAM.
 
 [Implementation and validation](terrain/COMPILED_TREES.md), [full measurements](benchmarks/V13_REPORT.md), [ilmenit ideas](ILMENIT_IDEAS.md). Current banked sources are src/v12 plus the src/v13 generators; historical stage sources remain necessary for reconstruction.
+
+### v13 banking repair (2026-10-29)
+
+The fallback trampoline incorrectly overwrote the mixer at `$9E50`, disrupting pilot audio. The first local repair then overwrote geometry dispatch at `$9875`, causing a turn crash. Current v13 preserves both areas, switching banks at `$9FEF` and continuing at `$9FF2` in bank 5. Protected-region checks and a regression test without private RAM dumps were added. CAR/ROM/XEX and IPS were replaced under existing filenames; the version remains v13. No new FPS series was run. [Diagnosis and tests](terrain/V13_SOUND_FIX.md).
