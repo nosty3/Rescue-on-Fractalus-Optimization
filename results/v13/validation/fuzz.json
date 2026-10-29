@@ -1,0 +1,7 @@
+{
+  "cases": 1500,
+  "variants": 3,
+  "seed": 2026102803,
+  "passed": true,
+  "scope": "random widths, clipping, seeds, heights, existing bitmap and randomized HD 108..152"
+}

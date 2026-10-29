@@ -1,3 +1,5 @@
-v12 â€” local / unpublished
-PAL: 8.9329 FPS; original 6.2717 FPS; gain +42.43% (50/50 straight/descent).
-NTSC: 8.1499 FPS; original 5.5915 FPS; gain +45.75% (50/50 straight/descent).
+v13: 512 KB / 1 MB CAR; 512 KB XEX requires 1 MB RAM (1088 KB total).
+PAL 512 KB: 9.2791 FPS, +47.95% over original; +3.87% over v12 (50/50).
+PAL 1 MB: 9.3856 FPS, +49.65% over original; +5.07% over v12 (50/50).
+NTSC 512 KB: 8.4698 FPS, +51.48% over original; +3.93% over v12 (50/50).
+NTSC 1 MB: 8.5354 FPS, +52.65% over original; +4.73% over v12 (50/50).

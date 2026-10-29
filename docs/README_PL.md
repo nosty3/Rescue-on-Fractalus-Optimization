@@ -1,18 +1,8 @@
-# Dokumentacja projektu
+# Dokumentacja v13
 
-[English](README.md) · [Polski](README_PL.md)
-
-- [OPTIMIZATIONS_PL.md](OPTIMIZATIONS_PL.md) — jeden szczegółowy opis wszystkich zmian obecnych w aktualnym v11.
-- [REBUILD_PL.md](REBUILD_PL.md) — budowanie aktualnych plików i przygotowanie dalszych badań.
-- [benchmarks/METHOD_PL.md](benchmarks/METHOD_PL.md) — aktualne wyniki PAL/NTSC, metoda, dane i wykresy.
-- [benchmarks/V10_REPORT_PL.md](benchmarks/V10_REPORT_PL.md) — pełne wyniki v10, zyski FPS, zmiany plottera i zakres walidacji.
-- [pmg/](pmg/) — rozpoznanie procedur PMG, pierwsza próba i audyt dalszych opcji.
-- [terrain/](terrain/) — rozpoznanie profilu gór.
-- [research/](research/) — audyty niskopoziomowe, odrzucone i przyszłe kierunki optymalizacji.
-- [tools/](tools/) — pochodzenie i identyfikacja narzędzi.
-
-Badania są dokumentami historycznymi: mogą opisywać jeszcze niewdrożone pomysły, wcześniejsze wyniki, dawne nazwy plików albo warunki ograniczonego testu. O tym, co faktycznie znajduje się w bieżącym ROM-ie, rozstrzygają opis zbiorczy i `scripts/rebuild_current.py`. Starsze raporty wydań są dostępne w historii Gita.
-
-- [research/ESC_DIAGNOSIS_PL.md](research/ESC_DIAGNOSIS_PL.md) — przyczyna i naprawa zawieszenia przy wznowieniu po Esc (v11).
-
-- [benchmarks/V11_REPORT_PL.md](benchmarks/V11_REPORT_PL.md) — aktualne wyniki dwóch scenariuszy i porównanie z up38.
+- [Optymalizacje](OPTIMIZATIONS_PL.md)
+- [Odbudowa](REBUILD_PL.md)
+- [Metodyka](benchmarks/METHOD_PL.md)
+- [Pomiary v13](benchmarks/V13_REPORT_PL.md)
+- [Pomysły ilmenita](ILMENIT_IDEAS_PL.md)
+- [Drzewa podziału](terrain/COMPILED_TREES_PL.md)

@@ -1,0 +1,27 @@
+{
+  "video": "ntsc",
+  "memory": "1088k",
+  "equal_quota": true,
+  "kind": "candidate",
+  "patched": false,
+  "melody_descriptor": "df97302804fe",
+  "melody_finished": true,
+  "regs": {
+    "ok": true,
+    "PC": "$8680",
+    "A": "$00",
+    "X": "$01",
+    "Y": "$05",
+    "S": "$fd",
+    "P": "$37",
+    "flags": "---B-IZC",
+    "cycles": 102904127,
+    "mode": "6502"
+  },
+  "sound_active": 0,
+  "level_before": 4,
+  "level_increment_reached": true,
+  "level_after": 5,
+  "launch_screen": true,
+  "next_flight": true
+}

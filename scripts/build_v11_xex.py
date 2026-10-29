@@ -7,7 +7,7 @@ R=Path(__file__).resolve().parents[1];P=R/'build/up38';O=R/'build/xex';O.mkdir(e
 os.environ['FRACTALUS_WORK']=str(O);assert os.environ.get('FRACTALUS_MADS'), 'Run rebuild_current.py --mads PATH'
 sys.path.insert(0,str(R/'tools/up38_audit_deps'));sys.path.insert(0,str(P/'tools'))
 import reloc,mkxex
-VAR='sentinel_depth_lazy_scan_fill';candidate=(R/'build/Rescue on Fractalus! - optimized 128KB.rom').read_bytes();baseline=(P/'bin/fractalus_up38.rom').read_bytes()
+VAR='sentinel_depth_lazy_scan_fill';candidate=(R/'build/Rescue on Fractalus! - optimized 128KB.rom').read_bytes();baseline=(R/'build/up38work/build/final.rom').read_bytes()
 assert hashlib.sha256(candidate).hexdigest()=='ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868'
 dec=json.loads((P/'xex/decisions.json').read_text());ins=reloc.extend(baseline,reloc.instructions(json.loads((P/'work/cov/all.json').read_text())))
 # Two six-byte music descriptors begin with resident-code pointers.

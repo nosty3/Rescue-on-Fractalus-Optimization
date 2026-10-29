@@ -193,3 +193,12 @@ Dodatkowe badanie cache wyboru kanałów miksera odrzucono: po uwzględnieniu za
 ## v12: dalsze dokładne optymalizacje 128 KB
 
 Skrót fill `$AA`, wcześniejszy test zasłaniania, tablica liczby grup, próg skanu w A, dalsze usunięcie obsługi Y w d0–d4 z odtworzeniem Y=5 oraz grupowanie geometrii 33–44 rozwijają pomysły ilmenita i Astry. Obraz pozostaje dokładny. Pełny wynik 50/50: 8,9329 FPS PAL (+42,43% względem oryginału) i 8,1499 FPS NTSC (+45,75%). Składowych oszczędności nie przedstawiamy jako niezależnie zmierzonych przyrostów FPS. [Badanie](research/V12_RESEARCH_PL.md) i [pełny test](benchmarks/V12_REPORT_PL.md).
+
+
+## v13: dokładne drzewa szerokości i rozszerzony XEX
+
+Na bazie v12 gotowe drzewa usuwają obliczenia środkowego X i sterowanie przejściem dla wybranych szerokości i clippingu. 512 KB ma 46 specjalizacji w 47 bankach; 1 MB — 86 w 111. Pozostałe przypadki obsługuje dokładny fallback v12. Zapisy pikseli uwzględniają HD/lazy clear; konserwatywne testy i przejścia banków z zachowaniem A/P zachowują obraz. Powyższe opisy bazowe dokumentują rozwój kodu nadal używanego w fallbacku i innych procedurach; opis stałego banku 15 dotyczył etapu 128 KB. Aktualny fizyczny stały bank to 63/127.
+
+XEX wariantu 512 KB używa 62 stron po 16 KB na rozszerzeniu 1 MB (1088 KB łącznie). Prawidłowe PORTB poniżej $80 wymagają strażnika VBI akceptującego niezerowe znaczniki; zero oznacza bank 2. Loader sprawdza 64 niezależne strony i zachowuje poprawki Esc oraz melodii końca poziomu. Cartridge 1 MB przekracza pojemność tego układu stron; nie dostarczamy jego XEX. Oba cartridge’e wymagają tylko 64 KB RAM.
+
+[Implementacja i walidacja](terrain/COMPILED_TREES_PL.md), [pełne pomiary](benchmarks/V13_REPORT_PL.md), [pomysły ilmenita](ILMENIT_IDEAS_PL.md). Bieżące źródła banków to src/v12 i generatory src/v13; starsze etapy pozostają potrzebne do odbudowy.

@@ -1,0 +1,258 @@
+{
+  "version": "v13",
+  "rom_sha256": "6aa312d7fe244eb805942e5252f004d5017102a05c9ac73419d559d460f0f1f2",
+  "xex_sha256": "f9114318b2566d5a31b05356749fbffedc495a1c8e8595ed3cfe8e55bd06d3f5",
+  "bytes": 1033498,
+  "ram_pages": 62,
+  "ram_required_kb": 1088,
+  "portb_bits": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "os_rom_bit0_always_one": true,
+  "basic_and_selftest_disabled_before_banking": true,
+  "vbi_guard": "Nonzero PORTB marker valid, zero marker falls back to bank2",
+  "base_loader_tail_unchanged": true,
+  "music_pointers_fixed": true,
+  "workers": [
+    {
+      "bank": 16,
+      "portb": 129,
+      "source_matches_car": true
+    },
+    {
+      "bank": 17,
+      "portb": 133,
+      "source_matches_car": true
+    },
+    {
+      "bank": 18,
+      "portb": 137,
+      "source_matches_car": true
+    },
+    {
+      "bank": 19,
+      "portb": 141,
+      "source_matches_car": true
+    },
+    {
+      "bank": 20,
+      "portb": 161,
+      "source_matches_car": true
+    },
+    {
+      "bank": 21,
+      "portb": 165,
+      "source_matches_car": true
+    },
+    {
+      "bank": 22,
+      "portb": 169,
+      "source_matches_car": true
+    },
+    {
+      "bank": 23,
+      "portb": 173,
+      "source_matches_car": true
+    },
+    {
+      "bank": 24,
+      "portb": 193,
+      "source_matches_car": true
+    },
+    {
+      "bank": 25,
+      "portb": 197,
+      "source_matches_car": true
+    },
+    {
+      "bank": 26,
+      "portb": 201,
+      "source_matches_car": true
+    },
+    {
+      "bank": 27,
+      "portb": 205,
+      "source_matches_car": true
+    },
+    {
+      "bank": 28,
+      "portb": 225,
+      "source_matches_car": true
+    },
+    {
+      "bank": 29,
+      "portb": 229,
+      "source_matches_car": true
+    },
+    {
+      "bank": 30,
+      "portb": 233,
+      "source_matches_car": true
+    },
+    {
+      "bank": 31,
+      "portb": 237,
+      "source_matches_car": true
+    },
+    {
+      "bank": 32,
+      "portb": 3,
+      "source_matches_car": true
+    },
+    {
+      "bank": 33,
+      "portb": 7,
+      "source_matches_car": true
+    },
+    {
+      "bank": 34,
+      "portb": 11,
+      "source_matches_car": true
+    },
+    {
+      "bank": 35,
+      "portb": 15,
+      "source_matches_car": true
+    },
+    {
+      "bank": 36,
+      "portb": 35,
+      "source_matches_car": true
+    },
+    {
+      "bank": 37,
+      "portb": 39,
+      "source_matches_car": true
+    },
+    {
+      "bank": 38,
+      "portb": 43,
+      "source_matches_car": true
+    },
+    {
+      "bank": 39,
+      "portb": 47,
+      "source_matches_car": true
+    },
+    {
+      "bank": 40,
+      "portb": 67,
+      "source_matches_car": true
+    },
+    {
+      "bank": 41,
+      "portb": 71,
+      "source_matches_car": true
+    },
+    {
+      "bank": 42,
+      "portb": 75,
+      "source_matches_car": true
+    },
+    {
+      "bank": 43,
+      "portb": 79,
+      "source_matches_car": true
+    },
+    {
+      "bank": 44,
+      "portb": 99,
+      "source_matches_car": true
+    },
+    {
+      "bank": 45,
+      "portb": 103,
+      "source_matches_car": true
+    },
+    {
+      "bank": 46,
+      "portb": 107,
+      "source_matches_car": true
+    },
+    {
+      "bank": 47,
+      "portb": 111,
+      "source_matches_car": true
+    },
+    {
+      "bank": 48,
+      "portb": 1,
+      "source_matches_car": true
+    },
+    {
+      "bank": 49,
+      "portb": 5,
+      "source_matches_car": true
+    },
+    {
+      "bank": 50,
+      "portb": 9,
+      "source_matches_car": true
+    },
+    {
+      "bank": 51,
+      "portb": 13,
+      "source_matches_car": true
+    },
+    {
+      "bank": 52,
+      "portb": 33,
+      "source_matches_car": true
+    },
+    {
+      "bank": 53,
+      "portb": 37,
+      "source_matches_car": true
+    },
+    {
+      "bank": 54,
+      "portb": 41,
+      "source_matches_car": true
+    },
+    {
+      "bank": 55,
+      "portb": 45,
+      "source_matches_car": true
+    },
+    {
+      "bank": 56,
+      "portb": 65,
+      "source_matches_car": true
+    },
+    {
+      "bank": 57,
+      "portb": 69,
+      "source_matches_car": true
+    },
+    {
+      "bank": 58,
+      "portb": 73,
+      "source_matches_car": true
+    },
+    {
+      "bank": 59,
+      "portb": 77,
+      "source_matches_car": true
+    },
+    {
+      "bank": 60,
+      "portb": 97,
+      "source_matches_car": true
+    },
+    {
+      "bank": 61,
+      "portb": 101,
+      "source_matches_car": true
+    },
+    {
+      "bank": 62,
+      "portb": 105,
+      "source_matches_car": true
+    }
+  ]
+}

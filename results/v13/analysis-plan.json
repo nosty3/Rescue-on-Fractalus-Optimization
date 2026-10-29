@@ -1,0 +1,18 @@
+{
+  "seed": 2026102913,
+  "replicates": 20000,
+  "confidence": 0.95,
+  "estimator": "Half of straight mean plus half of descent mean; preserve all natural early ends.",
+  "bootstrap": "Paired start-plan resampling within the preassigned 78/77 groups for v12 and both v13 variants; preserve original-descent dependence, independently resample original straight flights.",
+  "comparisons": [
+    "Each v13 variant vs original",
+    "Each v13 variant vs v12",
+    "v13 1024 KB vs v13 512 KB"
+  ],
+  "reference_sha256": {
+    "results/v12/flights.jsonl": "df5272b13b865dbe64a59cf1f9efd3c9ebc0e00a392aecd1b72bc17a6793a684",
+    "results/v11/flights.jsonl": "aaaeb9520832e0895f6a7f42aaa9aa9a91ea374594bc2de0f5d65e261dfd29c1",
+    "results/pal_isolated_main/benchmark.json": "9ef80c5987ddb7a511a2bd3bbbe20671643eeae63c24ef18b9329e27e35440c2",
+    "results/ntsc_isolated_main/benchmark.json": "b8b8cb2fc7680b1aebdfc08b7a5f7414cce4477c63a26567632b807a10ef4154"
+  }
+}

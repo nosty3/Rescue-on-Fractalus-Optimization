@@ -150,7 +150,7 @@ Verification covered 5268 CPU cases, 320 bar checks, the first 40 real calls aft
 
 ## Banking and interrupts
 
-The `$8000..$9FFF` window is selected through `$D500`, while `$A000..$BFFF` remains the fixed bank. After ROM expansion, a copy of the old fixed bank is in bank 15; the old bank 7 is not automatically free space. The `$9FFF` marker is `$FF` for bank 2 and the bank number for expansion banks. The guard at `$BFEA` recognizes numbers below 15 and restores the bank after VBI.
+The `$8000..$9FFF` window is selected through `$D500`, while `$A000..$BFFF` remains the fixed bank. After ROM expansion, a copy of the old fixed bank is in bank 15; the old bank 7 is not automatically free space. The `$9FFF` marker is `$FF` for bank 2 and the bank number for expansion banks. In v13, the guard at `$BFEA` recognizes numbers below the final physical bank: 63 for 512 KB and 127 for 1 MB, then restores the interrupted bank. The fixed `$A000..$BFFF` window maps that final physical bank; bank 15 retains the earlier fixed-code copy. XEX uses a separate relocated PORTB layout, described below.
 
 The RAM trampoline at `$7FFE` has an operand crossing `$8000`, so its correctness depends on banking and the interrupt guard. Title-screen VBI and START may abandon the current context. Restarts from banks 2, 5, 6, and 8–14 were checked. The NOP at `$AE88` and WSYNC stores to `$D40A` were not removed: they are part of display timing dependencies.
 
@@ -193,3 +193,12 @@ An additional mixer-channel-selection cache study was rejected: after accounting
 ## v12: further exact 128 KB optimizations
 
 The `$AA` fill shortcut, earlier occlusion check, group-count table, threshold in A, further removal of Y bookkeeping at d0–d4 with Y=5 restoration, and grouped geometry for points 33–44 develop ilmenit and Astra ideas. Image accuracy is retained. Full 50/50 result: 8.9329 FPS PAL (+42.43% over original) and 8.1499 FPS NTSC (+45.75%). Component savings are not presented as independently measured FPS gains. [Research](research/V12_RESEARCH.md) and [full benchmark](benchmarks/V12_REPORT.md).
+
+
+## v13: exact width-compiled trees and extended XEX
+
+On the v12 base, generated trees remove midpoint-X arithmetic and traversal bookkeeping for selected widths and clipping. 512 KB has 46 specializations in 47 extra banks; 1 MB has 86 in 111. Exact v12 fallback covers other cases. Pixel writes integrate HD/lazy clear; selective conservative occlusion and A/P-preserving bank handovers retain the image. The old baseline sections above describe the development of code still used in fallback and other routines; their bank-15 layout was the 128 KB stage. Current fixed-bank IDs are 63/127.
+
+The 512 KB XEX uses 62 pages of 16 KB on a 1 MB expansion (1088 KB total). Valid PORTB values below $80 require a nonzero-marker VBI guard; zero is bank-2 fallback. The loader checks 64 independent pages and retains Esc and level-end music fixes. The 1 MB cartridge exceeds this loader's page capacity; no XEX is supplied for it. Both cartridges require only 64 KB RAM.
+
+[Implementation and validation](terrain/COMPILED_TREES.md), [full measurements](benchmarks/V13_REPORT.md), [ilmenit ideas](ILMENIT_IDEAS.md). Current banked sources are src/v12 plus the src/v13 generators; historical stage sources remain necessary for reconstruction.

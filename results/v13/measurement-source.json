@@ -1,0 +1,17 @@
+{
+  "scope": "Exact source snapshots used by both completed series. Preserve bytes for provenance; not standalone entry points.",
+  "files": {
+    "scripts/benchmark_current.py": {
+      "snapshot": "measurement-source/benchmark_current.py",
+      "sha256": "ddaa3ff2ce65ec09b6fbf011bcb5d260430ecaaadc8be45e74bd61dfb8fc8e39"
+    },
+    "scripts/flight_common.py": {
+      "snapshot": "measurement-source/flight_common.py",
+      "sha256": "c18e3f4df328085dfdd4ae2a0450f3901bc613a409bc46ff4a92377cc7b418f2"
+    },
+    "scripts/flight_transport.py": {
+      "snapshot": "measurement-source/flight_transport.py",
+      "sha256": "b60bf7fc12c36f3f3cb4cc9a219f992847eade45c261719ca80c80e2f3a2146d"
+    }
+  }
+}

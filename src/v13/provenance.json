@@ -1,0 +1,8 @@
+{
+  "origin": "ilmenit package / scripts/gr7_raster.py",
+  "original_file_sha256": "6c694e725570bb86567725f1fa9bfec36d79b33207aa87b80aad214e604b3606",
+  "function_body_unchanged": true,
+  "adaptation": "Project root path and removal of import-time report directory creation only; integration and XEX code are separate. End-of-file whitespace normalized.",
+  "selection": "Nested selections retained from independent prior 40-scene profile; not tuned to the v13 full-study flights.",
+  "function_body_ast_unchanged": true
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 0,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 116662,
+    "cycles": 107204,
+    "saved_cycles": 9458
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 0,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 116662,
+    "cycles": 106823,
+    "saved_cycles": 9839
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 4,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 103366,
+    "cycles": 95920,
+    "saved_cycles": 7446
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 4,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 103366,
+    "cycles": 94023,
+    "saved_cycles": 9343
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 8,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 103976,
+    "cycles": 96793,
+    "saved_cycles": 7183
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 8,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 103976,
+    "cycles": 95342,
+    "saved_cycles": 8634
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 12,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 94229,
+    "cycles": 89939,
+    "saved_cycles": 4290
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 12,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 94229,
+    "cycles": 87062,
+    "saved_cycles": 7167
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 16,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 120491,
+    "cycles": 111909,
+    "saved_cycles": 8582
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 16,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 120491,
+    "cycles": 109514,
+    "saved_cycles": 10977
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 20,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 117005,
+    "cycles": 107328,
+    "saved_cycles": 9677
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 20,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 117005,
+    "cycles": 106298,
+    "saved_cycles": 10707
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 24,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 108639,
+    "cycles": 101319,
+    "saved_cycles": 7320
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 24,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 108639,
+    "cycles": 98573,
+    "saved_cycles": 10066
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 28,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 106173,
+    "cycles": 100339,
+    "saved_cycles": 5834
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 28,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 106173,
+    "cycles": 100449,
+    "saved_cycles": 5724
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 32,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 98106,
+    "cycles": 92122,
+    "saved_cycles": 5984
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 32,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 98106,
+    "cycles": 91929,
+    "saved_cycles": 6177
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 36,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 95363,
+    "cycles": 89994,
+    "saved_cycles": 5369
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 36,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 95363,
+    "cycles": 89328,
+    "saved_cycles": 6035
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 40,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 115546,
+    "cycles": 107631,
+    "saved_cycles": 7915
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 40,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 115546,
+    "cycles": 107091,
+    "saved_cycles": 8455
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 44,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 108111,
+    "cycles": 102210,
+    "saved_cycles": 5901
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 44,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 108111,
+    "cycles": 100609,
+    "saved_cycles": 7502
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 48,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 105768,
+    "cycles": 97669,
+    "saved_cycles": 8099
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 48,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 105768,
+    "cycles": 97121,
+    "saved_cycles": 8647
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 52,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 99477,
+    "cycles": 92620,
+    "saved_cycles": 6857
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 52,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 99477,
+    "cycles": 91334,
+    "saved_cycles": 8143
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 56,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 97505,
+    "cycles": 91564,
+    "saved_cycles": 5941
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 56,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 97505,
+    "cycles": 89095,
+    "saved_cycles": 8410
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 60,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 95428,
+    "cycles": 87901,
+    "saved_cycles": 7527
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 60,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 95428,
+    "cycles": 87258,
+    "saved_cycles": 8170
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 64,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 88570,
+    "cycles": 82462,
+    "saved_cycles": 6108
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 64,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 88570,
+    "cycles": 81481,
+    "saved_cycles": 7089
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 68,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 89654,
+    "cycles": 83421,
+    "saved_cycles": 6233
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 68,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 89654,
+    "cycles": 83106,
+    "saved_cycles": 6548
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 72,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 119097,
+    "cycles": 109821,
+    "saved_cycles": 9276
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 72,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 119097,
+    "cycles": 109210,
+    "saved_cycles": 9887
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 76,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 113727,
+    "cycles": 106564,
+    "saved_cycles": 7163
+  },
+  {
+    "scene": "scenes-ntsc-0",
+    "k": 76,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 113727,
+    "cycles": 105268,
+    "saved_cycles": 8459
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 0,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 80081,
+    "cycles": 84118,
+    "saved_cycles": -4037
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 0,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 80081,
+    "cycles": 83893,
+    "saved_cycles": -3812
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 4,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 113957,
+    "cycles": 111193,
+    "saved_cycles": 2764
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 4,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 113957,
+    "cycles": 109971,
+    "saved_cycles": 3986
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 8,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 103206,
+    "cycles": 95872,
+    "saved_cycles": 7334
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 8,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 103206,
+    "cycles": 95207,
+    "saved_cycles": 7999
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 12,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 95750,
+    "cycles": 90491,
+    "saved_cycles": 5259
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 12,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 95750,
+    "cycles": 87955,
+    "saved_cycles": 7795
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 16,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 83727,
+    "cycles": 80438,
+    "saved_cycles": 3289
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 16,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 83727,
+    "cycles": 80138,
+    "saved_cycles": 3589
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 20,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 87264,
+    "cycles": 82274,
+    "saved_cycles": 4990
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 20,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 87264,
+    "cycles": 81851,
+    "saved_cycles": 5413
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 24,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 114778,
+    "cycles": 107623,
+    "saved_cycles": 7155
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 24,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 114778,
+    "cycles": 107086,
+    "saved_cycles": 7692
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 28,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 110908,
+    "cycles": 102841,
+    "saved_cycles": 8067
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 28,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 110908,
+    "cycles": 102023,
+    "saved_cycles": 8885
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 32,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 97793,
+    "cycles": 95986,
+    "saved_cycles": 1807
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 32,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 97793,
+    "cycles": 93163,
+    "saved_cycles": 4630
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 36,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 92792,
+    "cycles": 90060,
+    "saved_cycles": 2732
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 36,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 92792,
+    "cycles": 89555,
+    "saved_cycles": 3237
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 40,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 104778,
+    "cycles": 103440,
+    "saved_cycles": 1338
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 40,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 104778,
+    "cycles": 101846,
+    "saved_cycles": 2932
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 44,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 96879,
+    "cycles": 95882,
+    "saved_cycles": 997
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 44,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 96879,
+    "cycles": 93998,
+    "saved_cycles": 2881
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 48,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 90260,
+    "cycles": 94717,
+    "saved_cycles": -4457
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 48,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 90260,
+    "cycles": 91831,
+    "saved_cycles": -1571
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 52,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 89845,
+    "cycles": 89495,
+    "saved_cycles": 350
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 52,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 89845,
+    "cycles": 89453,
+    "saved_cycles": 392
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 56,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 69460,
+    "cycles": 73235,
+    "saved_cycles": -3775
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 56,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 69460,
+    "cycles": 76312,
+    "saved_cycles": -6852
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 60,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 101056,
+    "cycles": 96663,
+    "saved_cycles": 4393
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 60,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 101056,
+    "cycles": 95108,
+    "saved_cycles": 5948
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 64,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 120131,
+    "cycles": 113829,
+    "saved_cycles": 6302
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 64,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 120131,
+    "cycles": 111565,
+    "saved_cycles": 8566
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 68,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 116039,
+    "cycles": 111957,
+    "saved_cycles": 4082
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 68,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 116039,
+    "cycles": 110878,
+    "saved_cycles": 5161
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 72,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 100623,
+    "cycles": 95670,
+    "saved_cycles": 4953
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 72,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 100623,
+    "cycles": 96476,
+    "saved_cycles": 4147
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 76,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 99842,
+    "cycles": 95884,
+    "saved_cycles": 3958
+  },
+  {
+    "scene": "scenes-ntsc-277",
+    "k": 76,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 99842,
+    "cycles": 95904,
+    "saved_cycles": 3938
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 0,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 137467,
+    "cycles": 127749,
+    "saved_cycles": 9718
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 0,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 137467,
+    "cycles": 127296,
+    "saved_cycles": 10171
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 4,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 127313,
+    "cycles": 118274,
+    "saved_cycles": 9039
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 4,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 127313,
+    "cycles": 118225,
+    "saved_cycles": 9088
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 8,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 120803,
+    "cycles": 111741,
+    "saved_cycles": 9062
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 8,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 120803,
+    "cycles": 107953,
+    "saved_cycles": 12850
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 12,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 93676,
+    "cycles": 86950,
+    "saved_cycles": 6726
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 12,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 93676,
+    "cycles": 85690,
+    "saved_cycles": 7986
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 16,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 110867,
+    "cycles": 102866,
+    "saved_cycles": 8001
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 16,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 110867,
+    "cycles": 101808,
+    "saved_cycles": 9059
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 20,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 111693,
+    "cycles": 104869,
+    "saved_cycles": 6824
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 20,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 111693,
+    "cycles": 102347,
+    "saved_cycles": 9346
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 24,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 115125,
+    "cycles": 107278,
+    "saved_cycles": 7847
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 24,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 115125,
+    "cycles": 105992,
+    "saved_cycles": 9133
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 28,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 101577,
+    "cycles": 94332,
+    "saved_cycles": 7245
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 28,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 101577,
+    "cycles": 93354,
+    "saved_cycles": 8223
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 32,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 103440,
+    "cycles": 97659,
+    "saved_cycles": 5781
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 32,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 103440,
+    "cycles": 97568,
+    "saved_cycles": 5872
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 36,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 101667,
+    "cycles": 96682,
+    "saved_cycles": 4985
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 36,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 101667,
+    "cycles": 96403,
+    "saved_cycles": 5264
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 40,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 95237,
+    "cycles": 89656,
+    "saved_cycles": 5581
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 40,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 95237,
+    "cycles": 90367,
+    "saved_cycles": 4870
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 44,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 93395,
+    "cycles": 88985,
+    "saved_cycles": 4410
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 44,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 93395,
+    "cycles": 87411,
+    "saved_cycles": 5984
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 48,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 98743,
+    "cycles": 93101,
+    "saved_cycles": 5642
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 48,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 98743,
+    "cycles": 92529,
+    "saved_cycles": 6214
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 52,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 86268,
+    "cycles": 81264,
+    "saved_cycles": 5004
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 52,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 86268,
+    "cycles": 81021,
+    "saved_cycles": 5247
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 56,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 111494,
+    "cycles": 104108,
+    "saved_cycles": 7386
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 56,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 111494,
+    "cycles": 103616,
+    "saved_cycles": 7878
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 60,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 106602,
+    "cycles": 100639,
+    "saved_cycles": 5963
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 60,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 106602,
+    "cycles": 98636,
+    "saved_cycles": 7966
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 64,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 101317,
+    "cycles": 94506,
+    "saved_cycles": 6811
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 64,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 101317,
+    "cycles": 93436,
+    "saved_cycles": 7881
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 68,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 97485,
+    "cycles": 92143,
+    "saved_cycles": 5342
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 68,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 97485,
+    "cycles": 89611,
+    "saved_cycles": 7874
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 72,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 94616,
+    "cycles": 88737,
+    "saved_cycles": 5879
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 72,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 94616,
+    "cycles": 86745,
+    "saved_cycles": 7871
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 76,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 93915,
+    "cycles": 88364,
+    "saved_cycles": 5551
+  },
+  {
+    "scene": "scenes-pal-0",
+    "k": 76,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 93915,
+    "cycles": 87945,
+    "saved_cycles": 5970
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 0,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 107489,
+    "cycles": 97760,
+    "saved_cycles": 9729
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 0,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 107489,
+    "cycles": 97440,
+    "saved_cycles": 10049
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 4,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 110160,
+    "cycles": 101836,
+    "saved_cycles": 8324
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 4,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 110160,
+    "cycles": 101600,
+    "saved_cycles": 8560
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 8,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 140822,
+    "cycles": 129129,
+    "saved_cycles": 11693
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 8,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 140822,
+    "cycles": 126826,
+    "saved_cycles": 13996
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 12,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 129627,
+    "cycles": 118032,
+    "saved_cycles": 11595
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 12,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 129627,
+    "cycles": 116143,
+    "saved_cycles": 13484
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 16,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 130313,
+    "cycles": 121376,
+    "saved_cycles": 8937
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 16,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 130313,
+    "cycles": 116862,
+    "saved_cycles": 13451
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 20,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 124328,
+    "cycles": 118312,
+    "saved_cycles": 6016
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 20,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 124328,
+    "cycles": 115796,
+    "saved_cycles": 8532
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 24,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 132846,
+    "cycles": 129204,
+    "saved_cycles": 3642
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 24,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 132846,
+    "cycles": 120897,
+    "saved_cycles": 11949
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 28,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 129893,
+    "cycles": 125980,
+    "saved_cycles": 3913
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 28,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 129893,
+    "cycles": 122994,
+    "saved_cycles": 6899
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 32,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 115412,
+    "cycles": 110921,
+    "saved_cycles": 4491
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 32,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 115412,
+    "cycles": 109617,
+    "saved_cycles": 5795
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 36,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 109481,
+    "cycles": 109393,
+    "saved_cycles": 88
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 36,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 109481,
+    "cycles": 108486,
+    "saved_cycles": 995
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 40,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 130450,
+    "cycles": 122544,
+    "saved_cycles": 7906
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 40,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 130450,
+    "cycles": 120547,
+    "saved_cycles": 9903
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 44,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 135652,
+    "cycles": 128345,
+    "saved_cycles": 7307
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 44,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 135652,
+    "cycles": 129929,
+    "saved_cycles": 5723
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 48,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 118586,
+    "cycles": 112576,
+    "saved_cycles": 6010
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 48,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 118586,
+    "cycles": 109289,
+    "saved_cycles": 9297
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 52,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 121761,
+    "cycles": 115094,
+    "saved_cycles": 6667
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 52,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 121761,
+    "cycles": 112268,
+    "saved_cycles": 9493
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 56,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 115297,
+    "cycles": 106280,
+    "saved_cycles": 9017
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 56,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 115297,
+    "cycles": 106067,
+    "saved_cycles": 9230
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 60,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 109844,
+    "cycles": 101386,
+    "saved_cycles": 8458
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 60,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 109844,
+    "cycles": 99306,
+    "saved_cycles": 10538
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 64,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 108820,
+    "cycles": 98598,
+    "saved_cycles": 10222
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 64,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 108820,
+    "cycles": 98618,
+    "saved_cycles": 10202
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 68,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 115928,
+    "cycles": 106605,
+    "saved_cycles": 9323
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 68,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 115928,
+    "cycles": 105756,
+    "saved_cycles": 10172
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 72,
+    "held_out": false,
+    "kb": 512,
+    "baseline_cycles": 114448,
+    "cycles": 106545,
+    "saved_cycles": 7903
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 72,
+    "held_out": false,
+    "kb": 1024,
+    "baseline_cycles": 114448,
+    "cycles": 106461,
+    "saved_cycles": 7987
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 76,
+    "held_out": true,
+    "kb": 512,
+    "baseline_cycles": 124593,
+    "cycles": 118191,
+    "saved_cycles": 6402
+  },
+  {
+    "scene": "scenes-pal-277",
+    "k": 76,
+    "held_out": true,
+    "kb": 1024,
+    "baseline_cycles": 124593,
+    "cycles": 117200,
+    "saved_cycles": 7393
+  }
+]

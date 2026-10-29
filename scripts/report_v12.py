@@ -48,7 +48,7 @@ def main():
   for t in sorted(new):
    r=new[t];c=r['measurement']['checkpoints']['60'];baseline=old['candidate',r['mode']][t]
    csvrows.append(dict(video=video,trial=t,execution_order=r['execution_order'],scenario=r['mode'],menu_frames=r['menu_frames'],intervals=c['intervals'],emulated_seconds=c['seconds'],v12_fps=c['fps'],v11_matched_fps=fps(baseline),natural_early_end=r['measurement']['termination'] is not None,flight_wall_seconds=r['flight_wall_seconds'],total_trial_wall_seconds=r['wall_seconds']))
- result=dict(version='v12',publication='branch v12',rom_sha256=hashlib.sha256((B/'Rescue on Fractalus! - optimized 128KB.rom').read_bytes()).hexdigest(),plan_sha256=integrity['plan_sha256'],analysis_plan_sha256=sha(O/'analysis-plan.json'),replicates=REPLICATES,run=read(O/'run.json'),video=out)
+ result=dict(version='v12',publication='branch v12',rom_sha256=rows[0]['rom_sha256'],plan_sha256=integrity['plan_sha256'],analysis_plan_sha256=sha(O/'analysis-plan.json'),replicates=REPLICATES,run=read(O/'run.json'),video=out)
  (O/'summary.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
  with (O/'flights.csv').open('w',newline='',encoding='utf-8') as f:
   writer=csv.DictWriter(f,fieldnames=list(csvrows[0]));writer.writeheader();writer.writerows(csvrows)

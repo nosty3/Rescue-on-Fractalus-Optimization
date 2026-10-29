@@ -1,16 +1,25 @@
-# Odbudowa v12
+# Odbudowa v13
 
-Wymagane Python 3, py65 i MADS. Zainstaluj requirements.txt. Z głównego folderu repo:
+Wymagane Python 3, py65 i MADS. Wykresy korzystają też z numpy/matplotlib (requirements.txt).
 
 ```text
 python scripts/rebuild_current.py --mads PATH_TO_MADS
 ```
 
-Builder odtwarza v10.1 i v11 jako etapy wewnętrzne, następnie asembluje sześć banków src/v12. XEX powstaje przez relokację tych samych źródeł, z zachowaniem sprawdzonego loadera i poprawionych wskaźników muzyki. ROM, CAR, XEX i IPS porównywane są bajtowo z bieżącym wydaniem. Wynik: build/reconstruction.json. Bez emulatora, zapisów stanu ani prywatnych plików badawczych.
+Wcześniejsze etapy są odtwarzane wewnętrznie od original/Rescue on Fractalus!.rom. Banki v12 tworzą bazę; src/v13 zawiera generator drzew, wybór banków i relokację XEX. Nie wymaga prywatnej paczki ilmenita, emulatora, starych obrazów wydań ani zrzutów pamięci. Oba CAR/ROM, XEX i obie łatki IPS są sprawdzane bajt w bajt. Wynik: build/reconstruction.json. Generowane źródła ASM są w ignorowanym build/v13/workers.
 
 ```text
-python scripts/report_v12.py
-python scripts/plot_v12.py
+python scripts/report_v13.py
+python scripts/plot_v13.py
+python scripts/write_v13_docs.py
 ```
 
-Te polecenia odtwarzają obliczenia i angielski wykres z danych w results/v12. Instalacja bridge potrzebna jest tylko do nowych lotów. Pełne wcześniejsze wyniki pozostają danymi historycznymi, nie są nowymi pomiarami przy uruchomieniu raportu.
+Polecenia odtwarzają statystyki, wykres i opisy z zachowanych danych. Nowa seria: scripts/benchmark_current.py --help i świeży katalog wynikowy; nie nadpisuj opublikowanych obserwacji. Zainstaluj Altirrę pod tools/bridge lub ustaw FRACTALUS_BRIDGE_DIR.
+
+```text
+python scripts/test_v13_xex.py
+python scripts/test_v13_level_transition.py candidate --release 1088k --equal
+python scripts/test_v13_level_transition.py candidate --release 1088k --ntsc
+```
+
+Modelowe testy scen korzystały z prywatnych zapisów RAM, wyłączonych z repo; wybrane wyniki są w results/v13/validation. Nie są one potrzebne do odbudowy ani nowych testów natywnych. XEX wymaga rozszerzenia 1 MB RAM, 1088 KB łącznie; oba cartridge’e tylko 64 KB.

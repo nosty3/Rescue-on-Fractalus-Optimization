@@ -1,0 +1,14 @@
+[
+  {
+    "kb": 512,
+    "banks_checked": 58,
+    "passed": true,
+    "scope": "active flight banks; bank2 uses the original FF-marker fallback"
+  },
+  {
+    "kb": 1024,
+    "banks_checked": 122,
+    "passed": true,
+    "scope": "active flight banks; bank2 uses the original FF-marker fallback"
+  }
+]

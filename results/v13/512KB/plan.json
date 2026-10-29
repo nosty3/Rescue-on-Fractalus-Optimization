@@ -1,0 +1,1280 @@
+{
+  "status": "APPROVED MIXED PLAN FOR v13-512KB",
+  "seed": 2026102905,
+  "source_plan_sha256": "8a595d7ee7b6d5c88eb3f12cbbb7439033f6b43c882d7c85dacf911270a78815",
+  "flights_per_video": 155,
+  "straight_per_video": 78,
+  "steering_per_video": 77,
+  "total_per_rom_pal_plus_ntsc": 310,
+  "workers": 2,
+  "seconds": 60,
+  "warmup_frames": 170,
+  "statistic": "0.5 * mean(straight flight FPS) + 0.5 * mean(steering flight FPS)",
+  "gain": "100 * (new combined mean / original combined mean - 1)",
+  "rules": [
+    "Native cold boot for every trial; no cross-ROM state transfer.",
+    "Same precommitted scenario assignment for PAL, NTSC and all newly compared ROMs.",
+    "Retain natural flight ends; no outlier rejection or retry of an inconvenient valid result.",
+    "Keep all existing original-reference observations; do not reduce its sample.",
+    "Separate strata retained internally for correct weighting and uncertainty, even if only combined results are published.",
+    "Original straight/descent records use different historical seed plans; do not invent paired original observations by trial number."
+  ],
+  "schedule": [
+    {
+      "trial": 60,
+      "menu_frames": 3048,
+      "source_block": 12,
+      "block": 1,
+      "execution_order": 1,
+      "mode": "straight"
+    },
+    {
+      "trial": 124,
+      "menu_frames": 3513,
+      "source_block": 25,
+      "block": 1,
+      "execution_order": 2,
+      "mode": "steering"
+    },
+    {
+      "trial": 19,
+      "menu_frames": 3020,
+      "source_block": 4,
+      "block": 1,
+      "execution_order": 3,
+      "mode": "straight"
+    },
+    {
+      "trial": 1,
+      "menu_frames": 3401,
+      "source_block": 1,
+      "block": 1,
+      "execution_order": 4,
+      "mode": "steering"
+    },
+    {
+      "trial": 77,
+      "menu_frames": 3074,
+      "source_block": 16,
+      "block": 1,
+      "execution_order": 5,
+      "mode": "straight"
+    },
+    {
+      "trial": 48,
+      "menu_frames": 3378,
+      "source_block": 10,
+      "block": 2,
+      "execution_order": 6,
+      "mode": "steering"
+    },
+    {
+      "trial": 97,
+      "menu_frames": 3206,
+      "source_block": 20,
+      "block": 2,
+      "execution_order": 7,
+      "mode": "straight"
+    },
+    {
+      "trial": 107,
+      "menu_frames": 3531,
+      "source_block": 22,
+      "block": 2,
+      "execution_order": 8,
+      "mode": "steering"
+    },
+    {
+      "trial": 71,
+      "menu_frames": 3397,
+      "source_block": 15,
+      "block": 2,
+      "execution_order": 9,
+      "mode": "straight"
+    },
+    {
+      "trial": 128,
+      "menu_frames": 3597,
+      "source_block": 26,
+      "block": 2,
+      "execution_order": 10,
+      "mode": "steering"
+    },
+    {
+      "trial": 108,
+      "menu_frames": 3584,
+      "source_block": 22,
+      "block": 3,
+      "execution_order": 11,
+      "mode": "straight"
+    },
+    {
+      "trial": 52,
+      "menu_frames": 3053,
+      "source_block": 11,
+      "block": 3,
+      "execution_order": 12,
+      "mode": "steering"
+    },
+    {
+      "trial": 147,
+      "menu_frames": 3268,
+      "source_block": 30,
+      "block": 3,
+      "execution_order": 13,
+      "mode": "straight"
+    },
+    {
+      "trial": 23,
+      "menu_frames": 3338,
+      "source_block": 5,
+      "block": 3,
+      "execution_order": 14,
+      "mode": "steering"
+    },
+    {
+      "trial": 109,
+      "menu_frames": 3446,
+      "source_block": 22,
+      "block": 3,
+      "execution_order": 15,
+      "mode": "straight"
+    },
+    {
+      "trial": 144,
+      "menu_frames": 3089,
+      "source_block": 29,
+      "block": 4,
+      "execution_order": 16,
+      "mode": "steering"
+    },
+    {
+      "trial": 146,
+      "menu_frames": 3367,
+      "source_block": 30,
+      "block": 4,
+      "execution_order": 17,
+      "mode": "straight"
+    },
+    {
+      "trial": 129,
+      "menu_frames": 3376,
+      "source_block": 26,
+      "block": 4,
+      "execution_order": 18,
+      "mode": "steering"
+    },
+    {
+      "trial": 37,
+      "menu_frames": 3372,
+      "source_block": 8,
+      "block": 4,
+      "execution_order": 19,
+      "mode": "straight"
+    },
+    {
+      "trial": 150,
+      "menu_frames": 3078,
+      "source_block": 30,
+      "block": 4,
+      "execution_order": 20,
+      "mode": "steering"
+    },
+    {
+      "trial": 137,
+      "menu_frames": 3130,
+      "source_block": 28,
+      "block": 5,
+      "execution_order": 21,
+      "mode": "straight"
+    },
+    {
+      "trial": 55,
+      "menu_frames": 3256,
+      "source_block": 11,
+      "block": 5,
+      "execution_order": 22,
+      "mode": "steering"
+    },
+    {
+      "trial": 5,
+      "menu_frames": 3473,
+      "source_block": 1,
+      "block": 5,
+      "execution_order": 23,
+      "mode": "straight"
+    },
+    {
+      "trial": 50,
+      "menu_frames": 3536,
+      "source_block": 10,
+      "block": 5,
+      "execution_order": 24,
+      "mode": "steering"
+    },
+    {
+      "trial": 94,
+      "menu_frames": 3259,
+      "source_block": 19,
+      "block": 5,
+      "execution_order": 25,
+      "mode": "straight"
+    },
+    {
+      "trial": 76,
+      "menu_frames": 3566,
+      "source_block": 16,
+      "block": 6,
+      "execution_order": 26,
+      "mode": "steering"
+    },
+    {
+      "trial": 113,
+      "menu_frames": 3526,
+      "source_block": 23,
+      "block": 6,
+      "execution_order": 27,
+      "mode": "straight"
+    },
+    {
+      "trial": 130,
+      "menu_frames": 3541,
+      "source_block": 26,
+      "block": 6,
+      "execution_order": 28,
+      "mode": "steering"
+    },
+    {
+      "trial": 32,
+      "menu_frames": 3162,
+      "source_block": 7,
+      "block": 6,
+      "execution_order": 29,
+      "mode": "straight"
+    },
+    {
+      "trial": 27,
+      "menu_frames": 3506,
+      "source_block": 6,
+      "block": 6,
+      "execution_order": 30,
+      "mode": "steering"
+    },
+    {
+      "trial": 95,
+      "menu_frames": 3029,
+      "source_block": 19,
+      "block": 7,
+      "execution_order": 31,
+      "mode": "straight"
+    },
+    {
+      "trial": 29,
+      "menu_frames": 3485,
+      "source_block": 6,
+      "block": 7,
+      "execution_order": 32,
+      "mode": "steering"
+    },
+    {
+      "trial": 104,
+      "menu_frames": 3514,
+      "source_block": 21,
+      "block": 7,
+      "execution_order": 33,
+      "mode": "straight"
+    },
+    {
+      "trial": 82,
+      "menu_frames": 3516,
+      "source_block": 17,
+      "block": 7,
+      "execution_order": 34,
+      "mode": "steering"
+    },
+    {
+      "trial": 139,
+      "menu_frames": 3301,
+      "source_block": 28,
+      "block": 7,
+      "execution_order": 35,
+      "mode": "straight"
+    },
+    {
+      "trial": 119,
+      "menu_frames": 3221,
+      "source_block": 24,
+      "block": 8,
+      "execution_order": 36,
+      "mode": "steering"
+    },
+    {
+      "trial": 101,
+      "menu_frames": 3125,
+      "source_block": 21,
+      "block": 8,
+      "execution_order": 37,
+      "mode": "straight"
+    },
+    {
+      "trial": 112,
+      "menu_frames": 3092,
+      "source_block": 23,
+      "block": 8,
+      "execution_order": 38,
+      "mode": "steering"
+    },
+    {
+      "trial": 21,
+      "menu_frames": 3285,
+      "source_block": 5,
+      "block": 8,
+      "execution_order": 39,
+      "mode": "straight"
+    },
+    {
+      "trial": 102,
+      "menu_frames": 3347,
+      "source_block": 21,
+      "block": 8,
+      "execution_order": 40,
+      "mode": "steering"
+    },
+    {
+      "trial": 72,
+      "menu_frames": 3507,
+      "source_block": 15,
+      "block": 9,
+      "execution_order": 41,
+      "mode": "straight"
+    },
+    {
+      "trial": 33,
+      "menu_frames": 3119,
+      "source_block": 7,
+      "block": 9,
+      "execution_order": 42,
+      "mode": "steering"
+    },
+    {
+      "trial": 6,
+      "menu_frames": 3309,
+      "source_block": 2,
+      "block": 9,
+      "execution_order": 43,
+      "mode": "straight"
+    },
+    {
+      "trial": 54,
+      "menu_frames": 3056,
+      "source_block": 11,
+      "block": 9,
+      "execution_order": 44,
+      "mode": "steering"
+    },
+    {
+      "trial": 2,
+      "menu_frames": 3005,
+      "source_block": 1,
+      "block": 9,
+      "execution_order": 45,
+      "mode": "straight"
+    },
+    {
+      "trial": 38,
+      "menu_frames": 3255,
+      "source_block": 8,
+      "block": 10,
+      "execution_order": 46,
+      "mode": "steering"
+    },
+    {
+      "trial": 58,
+      "menu_frames": 3517,
+      "source_block": 12,
+      "block": 10,
+      "execution_order": 47,
+      "mode": "straight"
+    },
+    {
+      "trial": 149,
+      "menu_frames": 3334,
+      "source_block": 30,
+      "block": 10,
+      "execution_order": 48,
+      "mode": "steering"
+    },
+    {
+      "trial": 13,
+      "menu_frames": 3545,
+      "source_block": 3,
+      "block": 10,
+      "execution_order": 49,
+      "mode": "straight"
+    },
+    {
+      "trial": 91,
+      "menu_frames": 3034,
+      "source_block": 19,
+      "block": 10,
+      "execution_order": 50,
+      "mode": "steering"
+    },
+    {
+      "trial": 15,
+      "menu_frames": 3434,
+      "source_block": 3,
+      "block": 11,
+      "execution_order": 51,
+      "mode": "straight"
+    },
+    {
+      "trial": 64,
+      "menu_frames": 3156,
+      "source_block": 13,
+      "block": 11,
+      "execution_order": 52,
+      "mode": "steering"
+    },
+    {
+      "trial": 75,
+      "menu_frames": 3138,
+      "source_block": 15,
+      "block": 11,
+      "execution_order": 53,
+      "mode": "straight"
+    },
+    {
+      "trial": 136,
+      "menu_frames": 3546,
+      "source_block": 28,
+      "block": 11,
+      "execution_order": 54,
+      "mode": "steering"
+    },
+    {
+      "trial": 3,
+      "menu_frames": 3502,
+      "source_block": 1,
+      "block": 11,
+      "execution_order": 55,
+      "mode": "straight"
+    },
+    {
+      "trial": 145,
+      "menu_frames": 3465,
+      "source_block": 29,
+      "block": 12,
+      "execution_order": 56,
+      "mode": "steering"
+    },
+    {
+      "trial": 4,
+      "menu_frames": 3058,
+      "source_block": 1,
+      "block": 12,
+      "execution_order": 57,
+      "mode": "straight"
+    },
+    {
+      "trial": 30,
+      "menu_frames": 3141,
+      "source_block": 6,
+      "block": 12,
+      "execution_order": 58,
+      "mode": "steering"
+    },
+    {
+      "trial": 35,
+      "menu_frames": 3403,
+      "source_block": 7,
+      "block": 12,
+      "execution_order": 59,
+      "mode": "straight"
+    },
+    {
+      "trial": 86,
+      "menu_frames": 3320,
+      "source_block": 18,
+      "block": 12,
+      "execution_order": 60,
+      "mode": "steering"
+    },
+    {
+      "trial": 39,
+      "menu_frames": 3353,
+      "source_block": 8,
+      "block": 13,
+      "execution_order": 61,
+      "mode": "straight"
+    },
+    {
+      "trial": 40,
+      "menu_frames": 3375,
+      "source_block": 8,
+      "block": 13,
+      "execution_order": 62,
+      "mode": "steering"
+    },
+    {
+      "trial": 155,
+      "menu_frames": 3557,
+      "source_block": 31,
+      "block": 13,
+      "execution_order": 63,
+      "mode": "straight"
+    },
+    {
+      "trial": 63,
+      "menu_frames": 3543,
+      "source_block": 13,
+      "block": 13,
+      "execution_order": 64,
+      "mode": "steering"
+    },
+    {
+      "trial": 138,
+      "menu_frames": 3223,
+      "source_block": 28,
+      "block": 13,
+      "execution_order": 65,
+      "mode": "straight"
+    },
+    {
+      "trial": 122,
+      "menu_frames": 3107,
+      "source_block": 25,
+      "block": 14,
+      "execution_order": 66,
+      "mode": "steering"
+    },
+    {
+      "trial": 143,
+      "menu_frames": 3354,
+      "source_block": 29,
+      "block": 14,
+      "execution_order": 67,
+      "mode": "straight"
+    },
+    {
+      "trial": 36,
+      "menu_frames": 3486,
+      "source_block": 8,
+      "block": 14,
+      "execution_order": 68,
+      "mode": "steering"
+    },
+    {
+      "trial": 62,
+      "menu_frames": 3544,
+      "source_block": 13,
+      "block": 14,
+      "execution_order": 69,
+      "mode": "straight"
+    },
+    {
+      "trial": 140,
+      "menu_frames": 3143,
+      "source_block": 28,
+      "block": 14,
+      "execution_order": 70,
+      "mode": "steering"
+    },
+    {
+      "trial": 116,
+      "menu_frames": 3540,
+      "source_block": 24,
+      "block": 15,
+      "execution_order": 71,
+      "mode": "straight"
+    },
+    {
+      "trial": 57,
+      "menu_frames": 3393,
+      "source_block": 12,
+      "block": 15,
+      "execution_order": 72,
+      "mode": "steering"
+    },
+    {
+      "trial": 111,
+      "menu_frames": 3281,
+      "source_block": 23,
+      "block": 15,
+      "execution_order": 73,
+      "mode": "straight"
+    },
+    {
+      "trial": 103,
+      "menu_frames": 3102,
+      "source_block": 21,
+      "block": 15,
+      "execution_order": 74,
+      "mode": "steering"
+    },
+    {
+      "trial": 83,
+      "menu_frames": 3449,
+      "source_block": 17,
+      "block": 15,
+      "execution_order": 75,
+      "mode": "straight"
+    },
+    {
+      "trial": 134,
+      "menu_frames": 3159,
+      "source_block": 27,
+      "block": 16,
+      "execution_order": 76,
+      "mode": "steering"
+    },
+    {
+      "trial": 65,
+      "menu_frames": 3272,
+      "source_block": 13,
+      "block": 16,
+      "execution_order": 77,
+      "mode": "straight"
+    },
+    {
+      "trial": 85,
+      "menu_frames": 3129,
+      "source_block": 17,
+      "block": 16,
+      "execution_order": 78,
+      "mode": "steering"
+    },
+    {
+      "trial": 141,
+      "menu_frames": 3225,
+      "source_block": 29,
+      "block": 16,
+      "execution_order": 79,
+      "mode": "straight"
+    },
+    {
+      "trial": 120,
+      "menu_frames": 3453,
+      "source_block": 24,
+      "block": 16,
+      "execution_order": 80,
+      "mode": "steering"
+    },
+    {
+      "trial": 69,
+      "menu_frames": 3493,
+      "source_block": 14,
+      "block": 17,
+      "execution_order": 81,
+      "mode": "straight"
+    },
+    {
+      "trial": 80,
+      "menu_frames": 3591,
+      "source_block": 16,
+      "block": 17,
+      "execution_order": 82,
+      "mode": "steering"
+    },
+    {
+      "trial": 90,
+      "menu_frames": 3380,
+      "source_block": 18,
+      "block": 17,
+      "execution_order": 83,
+      "mode": "straight"
+    },
+    {
+      "trial": 74,
+      "menu_frames": 3355,
+      "source_block": 15,
+      "block": 17,
+      "execution_order": 84,
+      "mode": "steering"
+    },
+    {
+      "trial": 41,
+      "menu_frames": 3060,
+      "source_block": 9,
+      "block": 17,
+      "execution_order": 85,
+      "mode": "straight"
+    },
+    {
+      "trial": 14,
+      "menu_frames": 3349,
+      "source_block": 3,
+      "block": 18,
+      "execution_order": 86,
+      "mode": "steering"
+    },
+    {
+      "trial": 49,
+      "menu_frames": 3197,
+      "source_block": 10,
+      "block": 18,
+      "execution_order": 87,
+      "mode": "straight"
+    },
+    {
+      "trial": 133,
+      "menu_frames": 3067,
+      "source_block": 27,
+      "block": 18,
+      "execution_order": 88,
+      "mode": "steering"
+    },
+    {
+      "trial": 99,
+      "menu_frames": 3076,
+      "source_block": 20,
+      "block": 18,
+      "execution_order": 89,
+      "mode": "straight"
+    },
+    {
+      "trial": 117,
+      "menu_frames": 3553,
+      "source_block": 24,
+      "block": 18,
+      "execution_order": 90,
+      "mode": "steering"
+    },
+    {
+      "trial": 87,
+      "menu_frames": 3555,
+      "source_block": 18,
+      "block": 19,
+      "execution_order": 91,
+      "mode": "straight"
+    },
+    {
+      "trial": 123,
+      "menu_frames": 3419,
+      "source_block": 25,
+      "block": 19,
+      "execution_order": 92,
+      "mode": "steering"
+    },
+    {
+      "trial": 53,
+      "menu_frames": 3026,
+      "source_block": 11,
+      "block": 19,
+      "execution_order": 93,
+      "mode": "straight"
+    },
+    {
+      "trial": 42,
+      "menu_frames": 3593,
+      "source_block": 9,
+      "block": 19,
+      "execution_order": 94,
+      "mode": "steering"
+    },
+    {
+      "trial": 18,
+      "menu_frames": 3236,
+      "source_block": 4,
+      "block": 19,
+      "execution_order": 95,
+      "mode": "straight"
+    },
+    {
+      "trial": 10,
+      "menu_frames": 3582,
+      "source_block": 2,
+      "block": 20,
+      "execution_order": 96,
+      "mode": "steering"
+    },
+    {
+      "trial": 68,
+      "menu_frames": 3581,
+      "source_block": 14,
+      "block": 20,
+      "execution_order": 97,
+      "mode": "straight"
+    },
+    {
+      "trial": 78,
+      "menu_frames": 3152,
+      "source_block": 16,
+      "block": 20,
+      "execution_order": 98,
+      "mode": "steering"
+    },
+    {
+      "trial": 81,
+      "menu_frames": 3278,
+      "source_block": 17,
+      "block": 20,
+      "execution_order": 99,
+      "mode": "straight"
+    },
+    {
+      "trial": 31,
+      "menu_frames": 3508,
+      "source_block": 7,
+      "block": 20,
+      "execution_order": 100,
+      "mode": "steering"
+    },
+    {
+      "trial": 70,
+      "menu_frames": 3310,
+      "source_block": 14,
+      "block": 21,
+      "execution_order": 101,
+      "mode": "straight"
+    },
+    {
+      "trial": 67,
+      "menu_frames": 3548,
+      "source_block": 14,
+      "block": 21,
+      "execution_order": 102,
+      "mode": "steering"
+    },
+    {
+      "trial": 59,
+      "menu_frames": 3160,
+      "source_block": 12,
+      "block": 21,
+      "execution_order": 103,
+      "mode": "straight"
+    },
+    {
+      "trial": 28,
+      "menu_frames": 3054,
+      "source_block": 6,
+      "block": 21,
+      "execution_order": 104,
+      "mode": "steering"
+    },
+    {
+      "trial": 17,
+      "menu_frames": 3105,
+      "source_block": 4,
+      "block": 21,
+      "execution_order": 105,
+      "mode": "straight"
+    },
+    {
+      "trial": 9,
+      "menu_frames": 3394,
+      "source_block": 2,
+      "block": 22,
+      "execution_order": 106,
+      "mode": "steering"
+    },
+    {
+      "trial": 88,
+      "menu_frames": 3233,
+      "source_block": 18,
+      "block": 22,
+      "execution_order": 107,
+      "mode": "straight"
+    },
+    {
+      "trial": 34,
+      "menu_frames": 3359,
+      "source_block": 7,
+      "block": 22,
+      "execution_order": 108,
+      "mode": "steering"
+    },
+    {
+      "trial": 121,
+      "menu_frames": 3500,
+      "source_block": 25,
+      "block": 22,
+      "execution_order": 109,
+      "mode": "straight"
+    },
+    {
+      "trial": 153,
+      "menu_frames": 3260,
+      "source_block": 31,
+      "block": 22,
+      "execution_order": 110,
+      "mode": "steering"
+    },
+    {
+      "trial": 12,
+      "menu_frames": 3115,
+      "source_block": 3,
+      "block": 23,
+      "execution_order": 111,
+      "mode": "straight"
+    },
+    {
+      "trial": 115,
+      "menu_frames": 3409,
+      "source_block": 23,
+      "block": 23,
+      "execution_order": 112,
+      "mode": "steering"
+    },
+    {
+      "trial": 114,
+      "menu_frames": 3117,
+      "source_block": 23,
+      "block": 23,
+      "execution_order": 113,
+      "mode": "straight"
+    },
+    {
+      "trial": 26,
+      "menu_frames": 3305,
+      "source_block": 6,
+      "block": 23,
+      "execution_order": 114,
+      "mode": "steering"
+    },
+    {
+      "trial": 151,
+      "menu_frames": 3293,
+      "source_block": 31,
+      "block": 23,
+      "execution_order": 115,
+      "mode": "straight"
+    },
+    {
+      "trial": 16,
+      "menu_frames": 3203,
+      "source_block": 4,
+      "block": 24,
+      "execution_order": 116,
+      "mode": "steering"
+    },
+    {
+      "trial": 96,
+      "menu_frames": 3362,
+      "source_block": 20,
+      "block": 24,
+      "execution_order": 117,
+      "mode": "straight"
+    },
+    {
+      "trial": 8,
+      "menu_frames": 3075,
+      "source_block": 2,
+      "block": 24,
+      "execution_order": 118,
+      "mode": "steering"
+    },
+    {
+      "trial": 152,
+      "menu_frames": 3405,
+      "source_block": 31,
+      "block": 24,
+      "execution_order": 119,
+      "mode": "straight"
+    },
+    {
+      "trial": 66,
+      "menu_frames": 3179,
+      "source_block": 14,
+      "block": 24,
+      "execution_order": 120,
+      "mode": "steering"
+    },
+    {
+      "trial": 126,
+      "menu_frames": 3487,
+      "source_block": 26,
+      "block": 25,
+      "execution_order": 121,
+      "mode": "straight"
+    },
+    {
+      "trial": 89,
+      "menu_frames": 3348,
+      "source_block": 18,
+      "block": 25,
+      "execution_order": 122,
+      "mode": "steering"
+    },
+    {
+      "trial": 79,
+      "menu_frames": 3199,
+      "source_block": 16,
+      "block": 25,
+      "execution_order": 123,
+      "mode": "straight"
+    },
+    {
+      "trial": 131,
+      "menu_frames": 3571,
+      "source_block": 27,
+      "block": 25,
+      "execution_order": 124,
+      "mode": "steering"
+    },
+    {
+      "trial": 73,
+      "menu_frames": 3022,
+      "source_block": 15,
+      "block": 25,
+      "execution_order": 125,
+      "mode": "straight"
+    },
+    {
+      "trial": 20,
+      "menu_frames": 3592,
+      "source_block": 4,
+      "block": 26,
+      "execution_order": 126,
+      "mode": "steering"
+    },
+    {
+      "trial": 154,
+      "menu_frames": 3472,
+      "source_block": 31,
+      "block": 26,
+      "execution_order": 127,
+      "mode": "straight"
+    },
+    {
+      "trial": 98,
+      "menu_frames": 3535,
+      "source_block": 20,
+      "block": 26,
+      "execution_order": 128,
+      "mode": "steering"
+    },
+    {
+      "trial": 84,
+      "menu_frames": 3166,
+      "source_block": 17,
+      "block": 26,
+      "execution_order": 129,
+      "mode": "straight"
+    },
+    {
+      "trial": 46,
+      "menu_frames": 3174,
+      "source_block": 10,
+      "block": 26,
+      "execution_order": 130,
+      "mode": "steering"
+    },
+    {
+      "trial": 105,
+      "menu_frames": 3458,
+      "source_block": 21,
+      "block": 27,
+      "execution_order": 131,
+      "mode": "straight"
+    },
+    {
+      "trial": 56,
+      "menu_frames": 3326,
+      "source_block": 12,
+      "block": 27,
+      "execution_order": 132,
+      "mode": "steering"
+    },
+    {
+      "trial": 45,
+      "menu_frames": 3161,
+      "source_block": 9,
+      "block": 27,
+      "execution_order": 133,
+      "mode": "straight"
+    },
+    {
+      "trial": 127,
+      "menu_frames": 3340,
+      "source_block": 26,
+      "block": 27,
+      "execution_order": 134,
+      "mode": "steering"
+    },
+    {
+      "trial": 47,
+      "menu_frames": 3045,
+      "source_block": 10,
+      "block": 27,
+      "execution_order": 135,
+      "mode": "straight"
+    },
+    {
+      "trial": 135,
+      "menu_frames": 3318,
+      "source_block": 27,
+      "block": 28,
+      "execution_order": 136,
+      "mode": "steering"
+    },
+    {
+      "trial": 92,
+      "menu_frames": 3352,
+      "source_block": 19,
+      "block": 28,
+      "execution_order": 137,
+      "mode": "straight"
+    },
+    {
+      "trial": 125,
+      "menu_frames": 3497,
+      "source_block": 25,
+      "block": 28,
+      "execution_order": 138,
+      "mode": "steering"
+    },
+    {
+      "trial": 148,
+      "menu_frames": 3524,
+      "source_block": 30,
+      "block": 28,
+      "execution_order": 139,
+      "mode": "straight"
+    },
+    {
+      "trial": 51,
+      "menu_frames": 3008,
+      "source_block": 11,
+      "block": 28,
+      "execution_order": 140,
+      "mode": "steering"
+    },
+    {
+      "trial": 61,
+      "menu_frames": 3254,
+      "source_block": 13,
+      "block": 29,
+      "execution_order": 141,
+      "mode": "straight"
+    },
+    {
+      "trial": 132,
+      "menu_frames": 3171,
+      "source_block": 27,
+      "block": 29,
+      "execution_order": 142,
+      "mode": "steering"
+    },
+    {
+      "trial": 22,
+      "menu_frames": 3411,
+      "source_block": 5,
+      "block": 29,
+      "execution_order": 143,
+      "mode": "straight"
+    },
+    {
+      "trial": 44,
+      "menu_frames": 3276,
+      "source_block": 9,
+      "block": 29,
+      "execution_order": 144,
+      "mode": "steering"
+    },
+    {
+      "trial": 100,
+      "menu_frames": 3133,
+      "source_block": 20,
+      "block": 29,
+      "execution_order": 145,
+      "mode": "straight"
+    },
+    {
+      "trial": 110,
+      "menu_frames": 3390,
+      "source_block": 22,
+      "block": 30,
+      "execution_order": 146,
+      "mode": "steering"
+    },
+    {
+      "trial": 7,
+      "menu_frames": 3009,
+      "source_block": 2,
+      "block": 30,
+      "execution_order": 147,
+      "mode": "straight"
+    },
+    {
+      "trial": 43,
+      "menu_frames": 3245,
+      "source_block": 9,
+      "block": 30,
+      "execution_order": 148,
+      "mode": "steering"
+    },
+    {
+      "trial": 11,
+      "menu_frames": 3374,
+      "source_block": 3,
+      "block": 30,
+      "execution_order": 149,
+      "mode": "straight"
+    },
+    {
+      "trial": 25,
+      "menu_frames": 3291,
+      "source_block": 5,
+      "block": 30,
+      "execution_order": 150,
+      "mode": "steering"
+    },
+    {
+      "trial": 142,
+      "menu_frames": 3288,
+      "source_block": 29,
+      "block": 31,
+      "execution_order": 151,
+      "mode": "straight"
+    },
+    {
+      "trial": 106,
+      "menu_frames": 3201,
+      "source_block": 22,
+      "block": 31,
+      "execution_order": 152,
+      "mode": "steering"
+    },
+    {
+      "trial": 93,
+      "menu_frames": 3146,
+      "source_block": 19,
+      "block": 31,
+      "execution_order": 153,
+      "mode": "straight"
+    },
+    {
+      "trial": 24,
+      "menu_frames": 3357,
+      "source_block": 5,
+      "block": 31,
+      "execution_order": 154,
+      "mode": "steering"
+    },
+    {
+      "trial": 118,
+      "menu_frames": 3306,
+      "source_block": 24,
+      "block": 31,
+      "execution_order": 155,
+      "mode": "straight"
+    }
+  ],
+  "version": "v13-512KB",
+  "cartridge": "optimized version/Rescue on Fractalus! - optimized 512KB.car",
+  "rom_sha256": "6aa312d7fe244eb805942e5252f004d5017102a05c9ac73419d559d460f0f1f2",
+  "car_sha256": "2984758aace2532cd7c0327fad801cc0f7885307ba2147f8cdade9698d0e66a1",
+  "emulator_sha256": "fe812e8385409d273cd518e6cbbc2ceca5176f65886384835d30067ae343c97b",
+  "emulator_binary": "D:\\AI\\Fractalus\\tools\\bridge\\AltirraBridge-nightly-windows-x86_64\\AltirraBridgeServer.exe",
+  "proposal_sha256": "7ebe095a3bc081af064114256a0590d2ed78afb91ac8644bd15d987b55ac4e8b",
+  "dependencies_sha256": {
+    "scripts/benchmark_current.py": "ddaa3ff2ce65ec09b6fbf011bcb5d260430ecaaadc8be45e74bd61dfb8fc8e39",
+    "scripts/flight_common.py": "c18e3f4df328085dfdd4ae2a0450f3901bc613a409bc46ff4a92377cc7b418f2",
+    "scripts/flight_transport.py": "b60bf7fc12c36f3f3cb4cc9a219f992847eade45c261719ca80c80e2f3a2146d"
+  },
+  "reference_flights_sha256": "aaaeb9520832e0895f6a7f42aaa9aa9a91ea374594bc2de0f5d65e261dfd29c1",
+  "max_batch": 16,
+  "transport": "validated bounded packets; per-gate snapshots, presentation BP B516 and game mode watch 4A",
+  "publication": "local only"
+}

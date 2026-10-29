@@ -1,0 +1,16 @@
+[
+  {
+    "memory": "320k",
+    "rejected": true,
+    "halt_loop": "0x54d",
+    "observed_pc": "0x54e",
+    "scope": "Frame gates may stop inside the JMP instruction; verify the known loader halt loop."
+  },
+  {
+    "memory": "576k",
+    "rejected": true,
+    "halt_loop": "0x54d",
+    "observed_pc": "0x54e",
+    "scope": "Frame gates may stop inside the JMP instruction; verify the known loader halt loop."
+  }
+]

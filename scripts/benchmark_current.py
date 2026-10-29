@@ -1,4 +1,4 @@
-"""Full local v12 study: 155 mixed flights per video, four isolated emulators."""
+"""Current cartridge study: 155 mixed flights per video, isolated emulators."""
 from pathlib import Path
 import sys,json,hashlib,time,datetime,traceback,argparse
 from concurrent.futures import ThreadPoolExecutor,as_completed
@@ -8,6 +8,7 @@ from flight_transport import measure
 EXPECTED='4959a82ab36528a0448a40e6178fdb72d321e5d1e23c258036f5e22e51cfa20e'
 CART=R/'optimized version/Rescue on Fractalus! - optimized 128KB.car'
 LABEL='v12'
+WORKERS=4
 utc=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
@@ -16,7 +17,7 @@ def freeze():
  assert CART.read_bytes()[:4]==b'CART' and hashlib.sha256(CART.read_bytes()[16:]).hexdigest()==EXPECTED
  proposed=R/'results/v12/plan.json';base=json.loads(proposed.read_text())
  deps=[Path(__file__),R/'scripts/flight_common.py',R/'scripts/flight_transport.py']
- plan={**base,'status':'APPROVED MIXED PLAN FOR '+LABEL,'version':LABEL,'cartridge':CART.relative_to(R).as_posix(),'rom_sha256':EXPECTED,'car_sha256':sha(CART),'emulator_sha256':sha(pal.EXE),'emulator_binary':str(pal.EXE),'proposal_sha256':sha(proposed),'dependencies_sha256':{p.relative_to(R).as_posix():sha(p) for p in deps},'reference_flights_sha256':sha(R/'results/v11/flights.jsonl'),'max_batch':16,'transport':'validated bounded packets; per-gate snapshots, presentation BP B516 and game mode watch 4A','publication':'local only'}
+ plan={**base,'status':'APPROVED MIXED PLAN FOR '+LABEL,'version':LABEL,'cartridge':CART.relative_to(R).as_posix(),'rom_sha256':EXPECTED,'car_sha256':sha(CART),'emulator_sha256':sha(pal.EXE),'emulator_binary':str(pal.EXE),'proposal_sha256':sha(proposed),'dependencies_sha256':{p.relative_to(R).as_posix():sha(p) for p in deps},'reference_flights_sha256':sha(R/'results/v11/flights.jsonl'),'workers':WORKERS,'max_batch':16,'transport':'validated bounded packets; per-gate snapshots, presentation BP B516 and game mode watch 4A','publication':'local only'}
  path=O/'plan.json'
  if path.exists():assert json.loads(path.read_text())==plan,'Frozen study settings differ'
  else:path.write_text(json.dumps(plan,indent=2),encoding='utf-8')
@@ -53,9 +54,9 @@ def validate(result):
    assert cue['tick']==math.ceil(cue['requested_second']*api.FREQ)
 
 def main():
- global O,CART,LABEL,EXPECTED
- parser=argparse.ArgumentParser();parser.add_argument('--audit-only',action='store_true');parser.add_argument('--cart',type=Path,default=CART);parser.add_argument('--label',default='v12');parser.add_argument('--output',type=Path,default=O);args=parser.parse_args()
- O=args.output.resolve();CART=args.cart.resolve();LABEL=args.label;EXPECTED=hashlib.sha256(CART.read_bytes()[16:]).hexdigest()
+ global O,CART,LABEL,EXPECTED,WORKERS
+ parser=argparse.ArgumentParser();parser.add_argument('--audit-only',action='store_true');parser.add_argument('--cart',type=Path,default=CART);parser.add_argument('--label',default='v12');parser.add_argument('--output',type=Path,default=O);parser.add_argument('--workers',type=int,default=4,choices=range(1,5));args=parser.parse_args()
+ O=args.output.resolve();CART=args.cart.resolve();LABEL=args.label;WORKERS=args.workers;EXPECTED=hashlib.sha256(CART.read_bytes()[16:]).hexdigest()
  plan,plan_id=freeze();jobs=[(video,t) for t in plan['schedule'] for video in ('pal','ntsc')]
  assert len(jobs)==310
  if args.audit_only:
@@ -63,7 +64,7 @@ def main():
   assert len(results)==310
  else:
   results=[];begin=time.perf_counter();started=utc()
-  with ThreadPoolExecutor(max_workers=4) as pool:
+  with ThreadPoolExecutor(max_workers=WORKERS) as pool:
    futures={pool.submit(run,j,plan_id):j for j in jobs}
    for f in as_completed(futures):
     try:result=f.result();validate(result)
@@ -74,7 +75,7 @@ def main():
      raise
     results.append(result)
     elapsed=time.perf_counter()-begin
-    status=dict(completed=len(results),total=310,elapsed_wall_seconds=elapsed,started_utc=started,updated_utc=utc(),workers=4,early_ends=sum(r['measurement']['termination'] is not None for r in results))
+    status=dict(completed=len(results),total=310,elapsed_wall_seconds=elapsed,started_utc=started,updated_utc=utc(),workers=WORKERS,early_ends=sum(r['measurement']['termination'] is not None for r in results))
     (O/'status.json').write_text(json.dumps(status,indent=2))
     if len(results)%8==0 or len(results)==310:print(f'{len(results)}/310 wall={elapsed:.1f}s early={status["early_ends"]}',flush=True)
   (O/'run.json').write_text(json.dumps(dict(started_utc=started,finished_utc=utc(),wall_seconds=time.perf_counter()-begin,plan_sha256=plan_id),indent=2))
@@ -86,6 +87,6 @@ def main():
  results.sort(key=lambda r:(r['execution_order'],r['video']))
  (O/'flights.jsonl').write_text(''.join(json.dumps(r,separators=(',',':'))+'\n' for r in results),encoding='utf-8')
  (O/'integrity.json').write_text(json.dumps(dict(complete=True,flights=310,plan_sha256=plan_id,flights_sha256=sha(O/'flights.jsonl'),no_state_transfer=True,no_outlier_rejection=True,all_cues_exact=True,all_event_counts_and_fps_exact=True),indent=2))
- print('COMPLETE: 310 valid independent flights, frozen v12 ROM, mixed 50/50 estimator.',flush=True)
+ print(f'COMPLETE: 310 valid independent flights, frozen {LABEL} ROM, mixed 50/50 estimator.',flush=True)
 
 if __name__=='__main__':main()

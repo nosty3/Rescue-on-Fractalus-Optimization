@@ -1,0 +1,38 @@
+[
+  {
+    "kb": 512,
+    "subset": "all",
+    "scenes": 80,
+    "old_mean_cycles": 107431.4,
+    "new_mean_cycles": 101430.1,
+    "saved_mean_cycles": 6001.3,
+    "renderer_cycle_reduction_percent": 5.58616940670977
+  },
+  {
+    "kb": 512,
+    "subset": "held_out",
+    "scenes": 40,
+    "old_mean_cycles": 106293.075,
+    "new_mean_cycles": 100466.3,
+    "saved_mean_cycles": 5826.775,
+    "renderer_cycle_reduction_percent": 5.481801142736721
+  },
+  {
+    "kb": 1024,
+    "subset": "all",
+    "scenes": 80,
+    "old_mean_cycles": 107431.4,
+    "new_mean_cycles": 100189.775,
+    "saved_mean_cycles": 7241.625,
+    "renderer_cycle_reduction_percent": 6.740696853992408
+  },
+  {
+    "kb": 1024,
+    "subset": "held_out",
+    "scenes": 40,
+    "old_mean_cycles": 106293.075,
+    "new_mean_cycles": 99288.8,
+    "saved_mean_cycles": 7004.275,
+    "renderer_cycle_reduction_percent": 6.589587327302366
+  }
+]

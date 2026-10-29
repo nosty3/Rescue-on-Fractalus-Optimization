@@ -1,11 +1,11 @@
-# v12 FPS methodology
+# v13 FPS methodology
 
-155 independent cold boots per system: 78 straight flights and 77 descent flights. Four isolated Altirra processes, 800XL/64 KB, PAL or NTSC, CPU history off and unlimited host pacing. 170 warmup video frames, then a nominal 60 s window closed at a B516 presentation interval. Use the emulated Atari clock, not host time. Descent: joystick up for 1 s every 4 s, otherwise neutral.
+Each cartridge variant has 155 independent PAL cold boots and 155 NTSC: 78 straight and 77 descent flights per system. Both variants run concurrently with two workers each, four isolated emulators total. Stock 800XL/64 KB, history disabled, unlimited host pacing. The same frozen start/scenario assignment as v12 is retained.
 
-Start/scenario assignments were frozen before the series. Result = 0.5 * mean straight-flight FPS + 0.5 * mean descent-flight FPS. This is not a simple average of 155 samples with unequal scenario counts. Retain natural ends, without outlier removal or cross-ROM save-state transfer.
+After 170 warmup video frames, count full B516 terrain-presentation intervals for a nominal 60 s window, using the Atari clock. Natural early ends remain. Descent is joystick up for 1 s followed by 3 s neutral. Cycle deadlines are exact. Bounded command packets preserve events and the RAM snapshot at the chosen endpoint. No cross-ROM state transfer, outlier rejection or retries of valid inconvenient results.
 
-The transport queues bounded command packets, retains every presentation and joystick deadline, and selects RAM at the correct endpoint. The emulator was not modified. Original/v11 retain full historical data of 155 flights per scenario/system. Original straight flight uses an independent start plan; do not invent pairs by trial number.
+Combined FPS = 0.5 * mean(straight FPS) + 0.5 * mean(descent FPS). Gain is a ratio of combined means. The original reference retains 155+155 historical flights per system; v12 and both v13 variants have the same selected 155 start plans, and initial maps match.
 
-95% bootstrap: 20,000 replicates, seed 2026102912; resample whole starts within the 78/77 groups, retaining dependence with v11 and original descent; independently resample original straight. Data: results/v12/plan.json, flights.jsonl, summary.json and analysis-plan.json. Report: V12_REPORT.md.
+95% intervals: 20,000 percentile-bootstrap replicates, seed 2026102913; resample starts within the 78/77 groups, pairing v12 and both v13 variants and preserving original-descent dependence. Historical original straight uses an independent plan and is resampled independently.
 
-Use a fresh output directory for a new measurement; do not overwrite published observations. New runner: scripts/benchmark_current.py --help. Install the bridge under tools/bridge or set FRACTALUS_BRIDGE_DIR. XEX has separate functional validation; published FPS measures CAR.
+Data: results/v13/512KB and results/v13/1024KB, plus results/v12 and original historical references. Analysis: scripts/report_v13.py. XEX functional checks are separate; the FPS series measures CAR. The emulator binary was not patched. New measurements must use fresh output directories.

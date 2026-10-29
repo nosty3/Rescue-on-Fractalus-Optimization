@@ -1,0 +1,1127 @@
+{
+  "passed": true,
+  "cases": 160,
+  "scope": "80 pipeline and 80 geometry cases: same input data, no interrupts/DMA; identical bitmap/horizon/cache/CPU and cycle counts after source relocation.",
+  "rows": [
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 0,
+      "stage": "pipeline",
+      "cycles": 107204,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 0,
+      "stage": "geometry",
+      "cycles": 9732,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 4,
+      "stage": "pipeline",
+      "cycles": 95920,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 4,
+      "stage": "geometry",
+      "cycles": 9769,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 8,
+      "stage": "pipeline",
+      "cycles": 96793,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 8,
+      "stage": "geometry",
+      "cycles": 9651,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 12,
+      "stage": "pipeline",
+      "cycles": 89939,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 12,
+      "stage": "geometry",
+      "cycles": 9638,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 16,
+      "stage": "pipeline",
+      "cycles": 111909,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 16,
+      "stage": "geometry",
+      "cycles": 9676,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 20,
+      "stage": "pipeline",
+      "cycles": 107328,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 20,
+      "stage": "geometry",
+      "cycles": 9729,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 24,
+      "stage": "pipeline",
+      "cycles": 101319,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 24,
+      "stage": "geometry",
+      "cycles": 9688,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 28,
+      "stage": "pipeline",
+      "cycles": 100339,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 28,
+      "stage": "geometry",
+      "cycles": 9715,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 32,
+      "stage": "pipeline",
+      "cycles": 92122,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 32,
+      "stage": "geometry",
+      "cycles": 9643,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 36,
+      "stage": "pipeline",
+      "cycles": 89994,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 36,
+      "stage": "geometry",
+      "cycles": 9653,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 40,
+      "stage": "pipeline",
+      "cycles": 107631,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 40,
+      "stage": "geometry",
+      "cycles": 9734,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 44,
+      "stage": "pipeline",
+      "cycles": 102210,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 44,
+      "stage": "geometry",
+      "cycles": 9746,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 48,
+      "stage": "pipeline",
+      "cycles": 97669,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 48,
+      "stage": "geometry",
+      "cycles": 9747,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 52,
+      "stage": "pipeline",
+      "cycles": 92620,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 52,
+      "stage": "geometry",
+      "cycles": 9738,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 56,
+      "stage": "pipeline",
+      "cycles": 91564,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 56,
+      "stage": "geometry",
+      "cycles": 9735,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 60,
+      "stage": "pipeline",
+      "cycles": 87901,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 60,
+      "stage": "geometry",
+      "cycles": 9708,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 64,
+      "stage": "pipeline",
+      "cycles": 82462,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 64,
+      "stage": "geometry",
+      "cycles": 9726,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 68,
+      "stage": "pipeline",
+      "cycles": 83421,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 68,
+      "stage": "geometry",
+      "cycles": 9693,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 72,
+      "stage": "pipeline",
+      "cycles": 109821,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 72,
+      "stage": "geometry",
+      "cycles": 9774,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 76,
+      "stage": "pipeline",
+      "cycles": 106564,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 76,
+      "stage": "geometry",
+      "cycles": 9814,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 0,
+      "stage": "pipeline",
+      "cycles": 84118,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 0,
+      "stage": "geometry",
+      "cycles": 9737,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 4,
+      "stage": "pipeline",
+      "cycles": 111193,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 4,
+      "stage": "geometry",
+      "cycles": 9833,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 8,
+      "stage": "pipeline",
+      "cycles": 95872,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 8,
+      "stage": "geometry",
+      "cycles": 9808,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 12,
+      "stage": "pipeline",
+      "cycles": 90491,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 12,
+      "stage": "geometry",
+      "cycles": 9782,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 16,
+      "stage": "pipeline",
+      "cycles": 80438,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 16,
+      "stage": "geometry",
+      "cycles": 9866,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 20,
+      "stage": "pipeline",
+      "cycles": 82274,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 20,
+      "stage": "geometry",
+      "cycles": 9841,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 24,
+      "stage": "pipeline",
+      "cycles": 107623,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 24,
+      "stage": "geometry",
+      "cycles": 9849,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 28,
+      "stage": "pipeline",
+      "cycles": 102841,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 28,
+      "stage": "geometry",
+      "cycles": 9790,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 32,
+      "stage": "pipeline",
+      "cycles": 95986,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 32,
+      "stage": "geometry",
+      "cycles": 10003,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 36,
+      "stage": "pipeline",
+      "cycles": 90060,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 36,
+      "stage": "geometry",
+      "cycles": 9788,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 40,
+      "stage": "pipeline",
+      "cycles": 103440,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 40,
+      "stage": "geometry",
+      "cycles": 9821,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 44,
+      "stage": "pipeline",
+      "cycles": 95882,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 44,
+      "stage": "geometry",
+      "cycles": 9997,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 48,
+      "stage": "pipeline",
+      "cycles": 94717,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 48,
+      "stage": "geometry",
+      "cycles": 9920,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 52,
+      "stage": "pipeline",
+      "cycles": 89495,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 52,
+      "stage": "geometry",
+      "cycles": 9925,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 56,
+      "stage": "pipeline",
+      "cycles": 73235,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 56,
+      "stage": "geometry",
+      "cycles": 9825,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 60,
+      "stage": "pipeline",
+      "cycles": 96663,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 60,
+      "stage": "geometry",
+      "cycles": 9884,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 64,
+      "stage": "pipeline",
+      "cycles": 113829,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 64,
+      "stage": "geometry",
+      "cycles": 9753,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 68,
+      "stage": "pipeline",
+      "cycles": 111957,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 68,
+      "stage": "geometry",
+      "cycles": 9842,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 72,
+      "stage": "pipeline",
+      "cycles": 95670,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 72,
+      "stage": "geometry",
+      "cycles": 9735,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 76,
+      "stage": "pipeline",
+      "cycles": 95884,
+      "equal": true
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 76,
+      "stage": "geometry",
+      "cycles": 9956,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 0,
+      "stage": "pipeline",
+      "cycles": 127749,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 0,
+      "stage": "geometry",
+      "cycles": 9741,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 4,
+      "stage": "pipeline",
+      "cycles": 118274,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 4,
+      "stage": "geometry",
+      "cycles": 9698,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 8,
+      "stage": "pipeline",
+      "cycles": 111741,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 8,
+      "stage": "geometry",
+      "cycles": 9774,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 12,
+      "stage": "pipeline",
+      "cycles": 86950,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 12,
+      "stage": "geometry",
+      "cycles": 9747,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 16,
+      "stage": "pipeline",
+      "cycles": 102866,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 16,
+      "stage": "geometry",
+      "cycles": 9719,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 20,
+      "stage": "pipeline",
+      "cycles": 104869,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 20,
+      "stage": "geometry",
+      "cycles": 9721,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 24,
+      "stage": "pipeline",
+      "cycles": 107278,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 24,
+      "stage": "geometry",
+      "cycles": 9696,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 28,
+      "stage": "pipeline",
+      "cycles": 94332,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 28,
+      "stage": "geometry",
+      "cycles": 9799,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 32,
+      "stage": "pipeline",
+      "cycles": 97659,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 32,
+      "stage": "geometry",
+      "cycles": 9885,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 36,
+      "stage": "pipeline",
+      "cycles": 96682,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 36,
+      "stage": "geometry",
+      "cycles": 9669,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 40,
+      "stage": "pipeline",
+      "cycles": 89656,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 40,
+      "stage": "geometry",
+      "cycles": 9710,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 44,
+      "stage": "pipeline",
+      "cycles": 88985,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 44,
+      "stage": "geometry",
+      "cycles": 9668,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 48,
+      "stage": "pipeline",
+      "cycles": 93101,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 48,
+      "stage": "geometry",
+      "cycles": 9654,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 52,
+      "stage": "pipeline",
+      "cycles": 81264,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 52,
+      "stage": "geometry",
+      "cycles": 9833,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 56,
+      "stage": "pipeline",
+      "cycles": 104108,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 56,
+      "stage": "geometry",
+      "cycles": 9826,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 60,
+      "stage": "pipeline",
+      "cycles": 100639,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 60,
+      "stage": "geometry",
+      "cycles": 9758,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 64,
+      "stage": "pipeline",
+      "cycles": 94506,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 64,
+      "stage": "geometry",
+      "cycles": 9904,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 68,
+      "stage": "pipeline",
+      "cycles": 92143,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 68,
+      "stage": "geometry",
+      "cycles": 9826,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 72,
+      "stage": "pipeline",
+      "cycles": 88737,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 72,
+      "stage": "geometry",
+      "cycles": 9827,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 76,
+      "stage": "pipeline",
+      "cycles": 88364,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 76,
+      "stage": "geometry",
+      "cycles": 9919,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 0,
+      "stage": "pipeline",
+      "cycles": 97760,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 0,
+      "stage": "geometry",
+      "cycles": 9676,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 4,
+      "stage": "pipeline",
+      "cycles": 101836,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 4,
+      "stage": "geometry",
+      "cycles": 9676,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 8,
+      "stage": "pipeline",
+      "cycles": 129129,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 8,
+      "stage": "geometry",
+      "cycles": 9809,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 12,
+      "stage": "pipeline",
+      "cycles": 118032,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 12,
+      "stage": "geometry",
+      "cycles": 9829,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 16,
+      "stage": "pipeline",
+      "cycles": 121376,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 16,
+      "stage": "geometry",
+      "cycles": 9856,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 20,
+      "stage": "pipeline",
+      "cycles": 118312,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 20,
+      "stage": "geometry",
+      "cycles": 9819,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 24,
+      "stage": "pipeline",
+      "cycles": 129204,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 24,
+      "stage": "geometry",
+      "cycles": 9732,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 28,
+      "stage": "pipeline",
+      "cycles": 125980,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 28,
+      "stage": "geometry",
+      "cycles": 9734,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 32,
+      "stage": "pipeline",
+      "cycles": 110921,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 32,
+      "stage": "geometry",
+      "cycles": 9714,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 36,
+      "stage": "pipeline",
+      "cycles": 109393,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 36,
+      "stage": "geometry",
+      "cycles": 9619,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 40,
+      "stage": "pipeline",
+      "cycles": 122544,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 40,
+      "stage": "geometry",
+      "cycles": 9967,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 44,
+      "stage": "pipeline",
+      "cycles": 128345,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 44,
+      "stage": "geometry",
+      "cycles": 9879,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 48,
+      "stage": "pipeline",
+      "cycles": 112576,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 48,
+      "stage": "geometry",
+      "cycles": 9904,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 52,
+      "stage": "pipeline",
+      "cycles": 115094,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 52,
+      "stage": "geometry",
+      "cycles": 9875,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 56,
+      "stage": "pipeline",
+      "cycles": 106280,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 56,
+      "stage": "geometry",
+      "cycles": 9781,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 60,
+      "stage": "pipeline",
+      "cycles": 101386,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 60,
+      "stage": "geometry",
+      "cycles": 9753,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 64,
+      "stage": "pipeline",
+      "cycles": 98598,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 64,
+      "stage": "geometry",
+      "cycles": 9872,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 68,
+      "stage": "pipeline",
+      "cycles": 106605,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 68,
+      "stage": "geometry",
+      "cycles": 9680,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 72,
+      "stage": "pipeline",
+      "cycles": 106545,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 72,
+      "stage": "geometry",
+      "cycles": 9722,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 76,
+      "stage": "pipeline",
+      "cycles": 118191,
+      "equal": true
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 76,
+      "stage": "geometry",
+      "cycles": 9993,
+      "equal": true
+    }
+  ]
+}

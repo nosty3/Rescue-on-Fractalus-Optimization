@@ -1,10 +1,26 @@
 {
-  "version": "v12",
-  "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
-  "rom_sha256": "4959a82ab36528a0448a40e6178fdb72d321e5d1e23c258036f5e22e51cfa20e",
-  "car_sha256": "3e79b44d10aaa2ed2b689b4391b706172aa81c171c1bdc8f90370b490f8d70cf",
-  "rom_bytes": 131072,
-  "cartridge_type": 14,
-  "ips_verified": true,
-  "ips_sha256": "02e5d8806848f76c8e32bdcc9e954ab553a5479a186e397ae6571050749cf131"
+  "version": "v13",
+  "variants": {
+    "512": {
+      "version": "v13",
+      "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+      "rom_sha256": "6aa312d7fe244eb805942e5252f004d5017102a05c9ac73419d559d460f0f1f2",
+      "car_sha256": "2984758aace2532cd7c0327fad801cc0f7885307ba2147f8cdade9698d0e66a1",
+      "rom_bytes": 524288,
+      "cartridge_type": 24,
+      "ips_verified": true,
+      "ips_sha256": "5bc8b7a6831c00fc727d5013cb0763aa68359c00a1a2a86d5148a03c4c646e7c"
+    },
+    "1024": {
+      "version": "v13",
+      "original_sha256": "1eb18e2a1ff31f43871a5e4e21e73f61b7659177d33d2cdbb29f36530b9f4d68",
+      "rom_sha256": "c3cc22f953f407d34816df22292de4719ead53bc07a2b61fff19b011eac6324d",
+      "car_sha256": "bb1cf8faf1c52424de00fa4eb926c00ea8abef0ef98d4892048f77d865ae5d1e",
+      "rom_bytes": 1048576,
+      "cartridge_type": 25,
+      "ips_verified": true,
+      "ips_sha256": "afd80d192ad3ead015807430fa0c986509c32c6018632e59d4b659a0fd5d2da7"
+    }
+  },
+  "xex_sha256": "f9114318b2566d5a31b05356749fbffedc495a1c8e8595ed3cfe8e55bd06d3f5"
 }
