@@ -188,3 +188,8 @@ Testy wykonano w modelu CPU i Altirrze headless; nie są certyfikacją wszystkic
 Nie wdrażano pozostałych drobnych opcji: wyrównywania stron, mnożenia przy `$7CD6`, dalszej przebudowy skanowania kanałów dźwięku i specjalizacji początków wypełnienia 33–48. Są zachowane w [zestawieniu opcji](research/V5_OPTIMIZATION_OPTIONS_PL.md), [dalszych kierunkach](research/FUTURE_DIRECTIONS_PL.txt) i [audycie PMG](pmg/PMG_AUDIT_PL.md). To hipotezy, nie składniki wydanego ROM-u. Przy dalszych pracach obowiązywał próg szacowanego zysku 0,05 FPS, z osobno zaakceptowanym wyjątkiem dla małej zmiany PMG. Zakończenie obecnych prac nie dowodzi, że osiągnięto absolutne optimum.
 
 Dodatkowe badanie cache wyboru kanałów miksera odrzucono: po uwzględnieniu zapisów z RAM oszczędność wewnątrz miksera wynosiła średnio tylko 14,63 cyklu/VBI przed odjęciem narzutu poza nim. Eksperyment nie wchodzi do v10. Podobnie nie włączono nowych skrótów skalowania perspektywy.
+
+
+## v12: dalsze dokładne optymalizacje 128 KB
+
+Skrót fill `$AA`, wcześniejszy test zasłaniania, tablica liczby grup, próg skanu w A, dalsze usunięcie obsługi Y w d0–d4 z odtworzeniem Y=5 oraz grupowanie geometrii 33–44 rozwijają pomysły ilmenita i Astry. Obraz pozostaje dokładny. Pełny wynik 50/50: 8,9329 FPS PAL (+42,43% względem oryginału) i 8,1499 FPS NTSC (+45,75%). Składowych oszczędności nie przedstawiamy jako niezależnie zmierzonych przyrostów FPS. [Badanie](research/V12_RESEARCH_PL.md) i [pełny test](benchmarks/V12_REPORT_PL.md).

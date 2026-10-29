@@ -1,0 +1,19 @@
+{
+  "bootstrap_replicates": 20000,
+  "seed": 2026102912,
+  "confidence": 0.95,
+  "method": "Percentile bootstrap; resample start-plan clusters within the preassigned 78/77 scenario groups. Preserve paired v11 and original descent data for each start. Historical original straight data have an independent seed plan and are resampled independently.",
+  "estimator": "Half of the mean straight-flight FPS plus half of mean descent-flight FPS. Each flight equally weighted within scenario; retain early ends; no outlier trimming.",
+  "comparisons": [
+    "v12 versus full original reference",
+    "v12 versus full published v11 reference",
+    "v12 versus v11 restricted to the same 155 assigned starts and scenarios"
+  ],
+  "references_sha256": {
+    "release-v11/results/v11/flights.jsonl": "aaaeb9520832e0895f6a7f42aaa9aa9a91ea374594bc2de0f5d65e261dfd29c1",
+    "release-v11/results/v11/summary.json": "006487a8e09b3a20619a185a5769e9fe6861759f88fa8e2251701ee8fe7c5d19",
+    "release-v11/results/pal_isolated_main/benchmark.json": "9ef80c5987ddb7a511a2bd3bbbe20671643eeae63c24ef18b9329e27e35440c2",
+    "release-v11/results/ntsc_isolated_main/benchmark.json": "b8b8cb2fc7680b1aebdfc08b7a5f7414cce4477c63a26567632b807a10ef4154"
+  },
+  "analysis_script_sha256": "2894a150057ee4a8313d491838667b84f0a8cf07a0c6763a006c9be22430bc13"
+}

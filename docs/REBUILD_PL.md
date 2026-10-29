@@ -1,26 +1,16 @@
-# Odtwarzanie v11 ze źródeł
+# Odbudowa v12
 
-[English](REBUILD.md) · [Polski](REBUILD_PL.md)
+Wymagane Python 3, py65 i MADS. Zainstaluj requirements.txt. Z głównego folderu repo:
 
-Potrzebujesz Python 3, py65 oraz MADS. Dla wykresów zainstaluj także zależności z requirements.txt. Nie potrzeba emulatora ani zapisów stanu do przebudowania gry.
-
-```powershell
-python -m pip install -r requirements.txt
-python scripts/rebuild_current.py --mads tools/mads/bin/windows_x86_64/mads.exe
+```text
+python scripts/rebuild_current.py --mads PATH_TO_MADS
 ```
 
-Builder odtwarza v10.1 z oryginału jako etap wewnętrzny, uruchamia generatory up38 w ignorowanym build/up38, a następnie asembluje cztery banki src/v11. Archiwalne źródła pozostają nienaruszone. Powstają ROM/CAR i XEX z poprawionymi wskaźnikami melodii. Każdy wynik jest porównywany bajt w bajt z optimized version/, a IPS nakładany kontrolnie na oryginał. Wynik: build/reconstruction.json. Hashe: dist/build-manifest.json.
+Builder odtwarza v10.1 i v11 jako etapy wewnętrzne, następnie asembluje sześć banków src/v12. XEX powstaje przez relokację tych samych źródeł, z zachowaniem sprawdzonego loadera i poprawionych wskaźników muzyki. ROM, CAR, XEX i IPS porównywane są bajtowo z bieżącym wydaniem. Wynik: build/reconstruction.json. Bez emulatora, zapisów stanu ani prywatnych plików badawczych.
 
-Pełny ROM v11: ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868.
-Poprawiony XEX: ac0c217074d52a4db6163ad94339031e4610e9a99a5c7d02f629c6b34ce9a20b.
-Nie są wymagane lokalne pliki z dawnego katalogu roboczego. Historyczne skrypty badawcze mogą natomiast wymagać niepublikowanych fixture; nie myl ich z aktualnym builderem.
-
-```powershell
-python scripts/report_v11.py
+```text
+python scripts/report_v12.py
+python scripts/plot_v12.py
 ```
 
-To odtwarza angielskie wykresy bez emulatora z zachowanych pojedynczych obserwacji. Nowe pomiary: scripts/benchmark_v11.py --help i metodyka benchmarks/METHOD_PL.md. Headless Altirra i MADS są narzędziami zewnętrznymi; identyfikatory wcześniej użytych wersji znajdują się w docs/tools oraz planach results/v11. Nie zastępuj opublikowanych obserwacji nową serią pod tymi samymi nazwami.
-
-XEX wymaga 320 KB Rambo, 576 KB albo 1088 KB, zgodnego PORTB i wyłączonego BASIC-a. Wersja kartridżowa wymaga tylko 64 KB RAM. Należy uruchamiać nowy plik od początku, nie ze starego zapisu emulatora.
-
-Testy funkcjonalne po przygotowaniu Altirry i przebudowaniu: `python scripts/test_v11_xex.py` oraz `python scripts/test_v11_level_transition.py candidate --release` (opcjonalnie `--ntsc`, `576k`, `1088k`, `--equal`).
+Te polecenia odtwarzają obliczenia i angielski wykres z danych w results/v12. Instalacja bridge potrzebna jest tylko do nowych lotów. Pełne wcześniejsze wyniki pozostają danymi historycznymi, nie są nowymi pomiarami przy uruchomieniu raportu.

@@ -1,0 +1,5 @@
+{
+  "cases": 332,
+  "passed": true,
+  "scope": "Explicit Hmax=0 root-cull cases, widths 1/2 across all interior positions, zero horizon."
+}

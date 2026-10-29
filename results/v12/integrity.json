@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "flights": 310,
+  "plan_sha256": "7ebe095a3bc081af064114256a0590d2ed78afb91ac8644bd15d987b55ac4e8b",
+  "flights_sha256": "df5272b13b865dbe64a59cf1f9efd3c9ebc0e00a392aecd1b72bc17a6793a684",
+  "no_state_transfer": true,
+  "no_outlier_rejection": true,
+  "all_cues_exact": true,
+  "all_event_counts_and_fps_exact": true
+}

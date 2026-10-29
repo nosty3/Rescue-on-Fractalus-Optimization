@@ -1,0 +1,246 @@
+{
+  "version": "v12",
+  "publication": "branch v12",
+  "rom_sha256": "4959a82ab36528a0448a40e6178fdb72d321e5d1e23c258036f5e22e51cfa20e",
+  "plan_sha256": "7ebe095a3bc081af064114256a0590d2ed78afb91ac8644bd15d987b55ac4e8b",
+  "analysis_plan_sha256": "169938079e3525ec00186c7679602dcf2b67ad7f4040b130181f30bd2f6eddcd",
+  "replicates": 20000,
+  "run": {
+    "started_utc": "2026-10-29T07:57:04.873501+00:00",
+    "finished_utc": "2026-10-29T08:17:19.771214+00:00",
+    "wall_seconds": 1214.8977300999686,
+    "plan_sha256": "7ebe095a3bc081af064114256a0590d2ed78afb91ac8644bd15d987b55ac4e8b"
+  },
+  "video": {
+    "pal": {
+      "n": 155,
+      "arms": {
+        "v12_straight": {
+          "n": 78,
+          "mean_fps": 9.231276539249041,
+          "sd_fps": 0.4542073157383564,
+          "median_fps": 9.221452505165756,
+          "min_fps": 8.10486928070381,
+          "max_fps": 10.235102055819606,
+          "early_ends": 5,
+          "duration_seconds_min": 36.822543661427815,
+          "duration_seconds_max": 60.12744386287161
+        },
+        "v12_steering": {
+          "n": 77,
+          "mean_fps": 8.634582069673439,
+          "sd_fps": 0.5438407859535266,
+          "median_fps": 8.651747146778424,
+          "min_fps": 7.527409346427611,
+          "max_fps": 9.698851343455518,
+          "early_ends": 3,
+          "duration_seconds_min": 41.956843379913984,
+          "duration_seconds_max": 60.18761254562089
+        },
+        "v11_matched_straight": {
+          "n": 78,
+          "mean_fps": 9.063796502119382,
+          "sd_fps": 0.4655738717372754,
+          "median_fps": 9.069376133544642,
+          "min_fps": 7.9025734857971095,
+          "max_fps": 10.2683879041633,
+          "early_ends": 2,
+          "duration_seconds_min": 33.533380040852634,
+          "duration_seconds_max": 60.16755838557386
+        },
+        "v11_matched_steering": {
+          "n": 77,
+          "mean_fps": 8.423323379045199,
+          "sd_fps": 0.4960022781803637,
+          "median_fps": 8.45718394430063,
+          "min_fps": 7.336868333783954,
+          "max_fps": 9.436265707715705,
+          "early_ends": 2,
+          "duration_seconds_min": 29.722772735025988,
+          "duration_seconds_max": 60.127444426745086
+        }
+      },
+      "combined": {
+        "original_fps": 6.27173133043182,
+        "v11_full_fps": 8.782928095445856,
+        "v11_matched_fps": 8.74355994058229,
+        "v12_fps": 8.93292930446124,
+        "v12_fps_ci95": [
+          8.85402196672723,
+          9.011272410568576
+        ],
+        "original_fps_ci95": [
+          6.249091370500838,
+          6.294408100509982
+        ],
+        "v11_full_fps_ci95": [
+          8.719584187569184,
+          8.84677941058487
+        ]
+      },
+      "versus_original": {
+        "baseline_fps": 6.27173133043182,
+        "v12_fps": 8.93292930446124,
+        "delta_fps": 2.6611979740294203,
+        "gain_percent": 42.43163225307025,
+        "delta_ci95": [
+          2.579429364483747,
+          2.7426138473228927
+        ],
+        "gain_ci95_percent": [
+          41.07865411694184,
+          43.78300416808259
+        ]
+      },
+      "versus_v11_full": {
+        "baseline_fps": 8.782928095445856,
+        "v12_fps": 8.93292930446124,
+        "delta_fps": 0.15000120901538416,
+        "gain_percent": 1.707872447380776,
+        "delta_ci95": [
+          0.09477160845566254,
+          0.20560803167748823
+        ],
+        "gain_ci95_percent": [
+          1.0789594318940916,
+          2.34437598642321
+        ]
+      },
+      "versus_v11_matched": {
+        "baseline_fps": 8.74355994058229,
+        "v12_fps": 8.93292930446124,
+        "delta_fps": 0.18936936387894931,
+        "gain_percent": 2.1658153562831073,
+        "delta_ci95": [
+          0.14147980785440298,
+          0.23538267272314864
+        ],
+        "gain_ci95_percent": [
+          1.613463079411372,
+          2.6986224523383
+        ]
+      },
+      "transport": {
+        "mean_flight_wall_seconds": 11.159875162590234,
+        "mean_total_trial_wall_seconds": 15.814306581927644,
+        "total_measured_emulated_seconds": 9228.86059102398
+      },
+      "bootstrap_scope": "Percentile bootstrap; resample start-plan clusters within the preassigned 78/77 scenario groups. Preserve paired v11 and original descent data for each start. Historical original straight data have an independent seed plan and are resampled independently."
+    },
+    "ntsc": {
+      "n": 155,
+      "arms": {
+        "v12_straight": {
+          "n": 78,
+          "mean_fps": 8.486967517910996,
+          "sd_fps": 0.46902408291909525,
+          "median_fps": 8.49973883873804,
+          "min_fps": 7.575672888894545,
+          "max_fps": 9.878839453921993,
+          "early_ends": 1,
+          "duration_seconds_min": 59.176191387452874,
+          "duration_seconds_max": 60.16079585533916
+        },
+        "v12_steering": {
+          "n": 77,
+          "mean_fps": 7.81273474510829,
+          "sd_fps": 0.41461235232889054,
+          "median_fps": 7.839892262064193,
+          "min_fps": 6.682152109709487,
+          "max_fps": 8.762681098362247,
+          "early_ends": 8,
+          "duration_seconds_min": 36.663877671603515,
+          "duration_seconds_max": 60.144109377029764
+        },
+        "v11_matched_straight": {
+          "n": 78,
+          "mean_fps": 8.353537370218755,
+          "sd_fps": 0.4874212012832638,
+          "median_fps": 8.307111969938052,
+          "min_fps": 7.4945070284567015,
+          "max_fps": 9.781604665831848,
+          "early_ends": 0,
+          "duration_seconds_min": 60.01060078864772,
+          "duration_seconds_max": 60.144109377029764
+        },
+        "v11_matched_steering": {
+          "n": 77,
+          "mean_fps": 7.629935628248781,
+          "sd_fps": 0.39257372580180744,
+          "median_fps": 7.673439768865986,
+          "min_fps": 6.565506185163192,
+          "max_fps": 8.389183998582801,
+          "early_ends": 4,
+          "duration_seconds_min": 48.445711396280814,
+          "duration_seconds_max": 60.1441082595693
+        }
+      },
+      "combined": {
+        "original_fps": 5.591516157642833,
+        "v11_full_fps": 8.003108088227116,
+        "v11_matched_fps": 7.991736499233768,
+        "v12_fps": 8.149851131509642,
+        "v12_fps_ci95": [
+          8.080668510231074,
+          8.218044852568342
+        ],
+        "original_fps_ci95": [
+          5.571573102105025,
+          5.611814413051702
+        ],
+        "v11_full_fps_ci95": [
+          7.947893142453043,
+          8.057263243934566
+        ]
+      },
+      "versus_original": {
+        "baseline_fps": 5.591516157642833,
+        "v12_fps": 8.149851131509642,
+        "delta_fps": 2.558334973866809,
+        "gain_percent": 45.753868928196106,
+        "delta_ci95": [
+          2.4865815838520753,
+          2.628945395847173
+        ],
+        "gain_ci95_percent": [
+          44.403782963367696,
+          47.083643525490935
+        ]
+      },
+      "versus_v11_full": {
+        "baseline_fps": 8.003108088227116,
+        "v12_fps": 8.149851131509642,
+        "delta_fps": 0.14674304328252674,
+        "gain_percent": 1.8335756766598044,
+        "delta_ci95": [
+          0.09411806085007957,
+          0.1995588778256204
+        ],
+        "gain_ci95_percent": [
+          1.1732165547792406,
+          2.4947896406083063
+        ]
+      },
+      "versus_v11_matched": {
+        "baseline_fps": 7.991736499233768,
+        "v12_fps": 8.149851131509642,
+        "delta_fps": 0.15811463227587463,
+        "gain_percent": 1.9784765462554255,
+        "delta_ci95": [
+          0.11696203286709093,
+          0.19837015522152493
+        ],
+        "gain_ci95_percent": [
+          1.459783658547742,
+          2.4901735447998874
+        ]
+      },
+      "transport": {
+        "mean_flight_wall_seconds": 10.976737469030665,
+        "mean_total_trial_wall_seconds": 15.507901094191437,
+        "total_measured_emulated_seconds": 9218.353007994032
+      },
+      "bootstrap_scope": "Percentile bootstrap; resample start-plan clusters within the preassigned 78/77 scenario groups. Preserve paired v11 and original descent data for each start. Historical original straight data have an independent seed plan and are resampled independently."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Previously completed validation of the byte-identical candidate, inherited by v12; not newly rerun as part of this FPS series.",
+  "v12_rom_sha256": "4959a82ab36528a0448a40e6178fdb72d321e5d1e23c258036f5e22e51cfa20e",
+  "v12_xex_sha256": "7e8fea0ffad7df5ecc3c6bc4fad33352f4903e184f7a5b969124f9e36b833bc8",
+  "evidence_sha256": {
+    "experiments/compact_128/candidate-comparison.json": "ed03551e3387f145343b1e0ba300c45b0aef6af3e75fe344f8527477a1e0b6a2",
+    "experiments/compact_128/candidate-native.json": "23f79edd57402e917c0b21c94f7aaec6faff378f71bfa969a7f669621a80c42c",
+    "experiments/compact_128/candidate-fuzz.json": "bfe885c07ccb5388d2a99d93140e9c7e69be040c2e6c51c8901fabe2373327d6",
+    "experiments/compact_128/candidate-zero-bounds.json": "b08facb1f477063355ccfe12fce432c0661512c9fc4134a58dbba38a1bdbb9ae",
+    "experiments/compact_128/candidate-geometry.json": "215e018e79120417a8e95cdecf26e58e8ff8c3a7e352c20f45879bd9e8fd9386",
+    "experiments/compact_128/xex-tests/smoke.json": "9de33b4f137cfab979e6312912967cc5725299a3b490cf69d43bfce581c31e37",
+    "experiments/compact_128/xex-tests/levels.json": "647b00d7bfebb43e6b81a67dbca349d51c283050cbf78c9da968a720884958fc",
+    "experiments/compact_128/xex-tests/relocation-equivalence.json": "e951ace9f1e1202b2f1da700ea24d1b85a0aa28a29c584c5d2d6e14556ef9181"
+  },
+  "counts": {
+    "pipeline_scenes": 320,
+    "geometry_scenes": 320,
+    "random_segments": 4000,
+    "explicit_zero_bounds": 332,
+    "native_scenes": 160,
+    "car_pause_resume_cycles": 6,
+    "xex_pal_ntsc_memory_configurations": 6,
+    "xex_pause_resume_cycles": 18,
+    "xex_controlled_level_transitions": 12,
+    "car_xex_relocation_cases": 160
+  }
+}

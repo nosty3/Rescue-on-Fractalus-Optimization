@@ -1,5 +1,3 @@
-v11 — CAR/ROM: XEGS 128 KB, 64 KB RAM; XEX: 320 KB Rambo / 576 KB / 1088 KB.
-Measured cartridge FPS (original -> v11; gain):
-PAL straight: 6.4421 -> 9.0779; +40.91%. Descent: 6.1013 -> 8.4879; +39.12%. 50/50: 6.2717 -> 8.7829; +40.04%.
-NTSC straight: 5.8043 -> 8.3120; +43.20%. Descent: 5.3787 -> 7.6942; +43.05%. 50/50: 5.5915 -> 8.0031; +43.13%.
-155 trials per scenario/system. XEX includes the level-completion fix; no separate full XEX FPS benchmark.
+v12 â€” local / unpublished
+PAL: 8.9329 FPS; original 6.2717 FPS; gain +42.43% (50/50 straight/descent).
+NTSC: 8.1499 FPS; original 5.5915 FPS; gain +45.75% (50/50 straight/descent).

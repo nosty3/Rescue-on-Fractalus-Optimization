@@ -188,3 +188,8 @@ Tests were performed in a CPU model and headless Altirra; they do not certify ev
 Other small options were not implemented: page alignment, multiplication at `$7CD6`, further restructuring of sound-channel scanning, and specialization of fill starting positions 33–48. They are retained in the [options overview](research/V5_OPTIMIZATION_OPTIONS.md), [future directions](research/FUTURE_DIRECTIONS.txt), and [PMG audit](pmg/PMG_AUDIT.md). They are hypotheses, not parts of the released ROM. Further work used an estimated-gain threshold of 0.05 FPS, with a separately approved exception for a small PMG change. Finishing the current work does not prove that an absolute optimum has been reached.
 
 An additional mixer-channel-selection cache study was rejected: after accounting for writes from RAM, the internal mixer saving averaged only 14.63 cycles/VBI before subtracting external overhead. This experiment is not in v10. New shortcuts for perspective scaling were likewise excluded.
+
+
+## v12: further exact 128 KB optimizations
+
+The `$AA` fill shortcut, earlier occlusion check, group-count table, threshold in A, further removal of Y bookkeeping at d0–d4 with Y=5 restoration, and grouped geometry for points 33–44 develop ilmenit and Astra ideas. Image accuracy is retained. Full 50/50 result: 8.9329 FPS PAL (+42.43% over original) and 8.1499 FPS NTSC (+45.75%). Component savings are not presented as independently measured FPS gains. [Research](research/V12_RESEARCH.md) and [full benchmark](benchmarks/V12_REPORT.md).

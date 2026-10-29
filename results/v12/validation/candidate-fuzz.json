@@ -1,0 +1,6 @@
+{
+  "cases": 4000,
+  "seed": 2026102917,
+  "passed": true,
+  "scope": "Random/clipped segments, heights/seeds, existing bitmap and HD 108..152; first 100 include zero height bounds. X/SP preserved; A/Y/flags are dead at actual raster caller."
+}

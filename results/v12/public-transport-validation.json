@@ -1,0 +1,14 @@
+[
+  {
+    "video": "pal",
+    "trial": 60,
+    "mode": "straight",
+    "equal": true
+  },
+  {
+    "video": "ntsc",
+    "trial": 124,
+    "mode": "steering",
+    "equal": true
+  }
+]

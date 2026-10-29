@@ -1,0 +1,3848 @@
+{
+  "variant": "candidate",
+  "scenes": 320,
+  "mean_saved": 2108.95,
+  "reduction_percent": 1.9290698985985155,
+  "rows": [
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 0,
+      "held_out": false,
+      "old": 118876,
+      "new": 116662,
+      "saved": 2214,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 1,
+      "held_out": false,
+      "old": 118332,
+      "new": 116153,
+      "saved": 2179,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 2,
+      "held_out": false,
+      "old": 117249,
+      "new": 115165,
+      "saved": 2084,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 3,
+      "held_out": false,
+      "old": 115800,
+      "new": 113703,
+      "saved": 2097,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 4,
+      "held_out": true,
+      "old": 105336,
+      "new": 103366,
+      "saved": 1970,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 5,
+      "held_out": false,
+      "old": 104087,
+      "new": 102164,
+      "saved": 1923,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 6,
+      "held_out": false,
+      "old": 106190,
+      "new": 104266,
+      "saved": 1924,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 7,
+      "held_out": false,
+      "old": 105113,
+      "new": 103311,
+      "saved": 1802,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 8,
+      "held_out": false,
+      "old": 105838,
+      "new": 103976,
+      "saved": 1862,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 9,
+      "held_out": false,
+      "old": 103395,
+      "new": 101588,
+      "saved": 1807,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 10,
+      "held_out": false,
+      "old": 103112,
+      "new": 101320,
+      "saved": 1792,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 11,
+      "held_out": false,
+      "old": 97813,
+      "new": 96063,
+      "saved": 1750,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 12,
+      "held_out": true,
+      "old": 96016,
+      "new": 94229,
+      "saved": 1787,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 13,
+      "held_out": false,
+      "old": 97479,
+      "new": 95696,
+      "saved": 1783,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 14,
+      "held_out": false,
+      "old": 122883,
+      "new": 120344,
+      "saved": 2539,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 15,
+      "held_out": false,
+      "old": 125095,
+      "new": 122555,
+      "saved": 2540,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 16,
+      "held_out": false,
+      "old": 122876,
+      "new": 120491,
+      "saved": 2385,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 17,
+      "held_out": false,
+      "old": 122422,
+      "new": 120067,
+      "saved": 2355,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 18,
+      "held_out": false,
+      "old": 118211,
+      "new": 116028,
+      "saved": 2183,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 19,
+      "held_out": false,
+      "old": 118651,
+      "new": 116561,
+      "saved": 2090,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 20,
+      "held_out": true,
+      "old": 119189,
+      "new": 117005,
+      "saved": 2184,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 21,
+      "held_out": false,
+      "old": 110545,
+      "new": 108376,
+      "saved": 2169,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 22,
+      "held_out": false,
+      "old": 111857,
+      "new": 109674,
+      "saved": 2183,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 23,
+      "held_out": false,
+      "old": 110733,
+      "new": 108584,
+      "saved": 2149,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 24,
+      "held_out": false,
+      "old": 110774,
+      "new": 108639,
+      "saved": 2135,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 25,
+      "held_out": false,
+      "old": 110448,
+      "new": 108326,
+      "saved": 2122,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 26,
+      "held_out": false,
+      "old": 110893,
+      "new": 108681,
+      "saved": 2212,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 27,
+      "held_out": false,
+      "old": 110899,
+      "new": 108718,
+      "saved": 2181,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 28,
+      "held_out": true,
+      "old": 108332,
+      "new": 106173,
+      "saved": 2159,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 29,
+      "held_out": false,
+      "old": 103058,
+      "new": 100989,
+      "saved": 2069,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 30,
+      "held_out": false,
+      "old": 100005,
+      "new": 97907,
+      "saved": 2098,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 31,
+      "held_out": false,
+      "old": 99917,
+      "new": 97873,
+      "saved": 2044,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 32,
+      "held_out": false,
+      "old": 100103,
+      "new": 98106,
+      "saved": 1997,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 33,
+      "held_out": false,
+      "old": 100048,
+      "new": 98039,
+      "saved": 2009,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 34,
+      "held_out": false,
+      "old": 93269,
+      "new": 91321,
+      "saved": 1948,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 35,
+      "held_out": false,
+      "old": 94032,
+      "new": 92078,
+      "saved": 1954,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 36,
+      "held_out": true,
+      "old": 97015,
+      "new": 95363,
+      "saved": 1652,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 37,
+      "held_out": false,
+      "old": 96532,
+      "new": 94871,
+      "saved": 1661,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 38,
+      "held_out": false,
+      "old": 124542,
+      "new": 122260,
+      "saved": 2282,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 39,
+      "held_out": false,
+      "old": 121956,
+      "new": 119343,
+      "saved": 2613,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 40,
+      "held_out": false,
+      "old": 118023,
+      "new": 115546,
+      "saved": 2477,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 41,
+      "held_out": false,
+      "old": 111331,
+      "new": 108803,
+      "saved": 2528,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 42,
+      "held_out": false,
+      "old": 112434,
+      "new": 109900,
+      "saved": 2534,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 43,
+      "held_out": false,
+      "old": 110894,
+      "new": 108449,
+      "saved": 2445,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 44,
+      "held_out": true,
+      "old": 110508,
+      "new": 108111,
+      "saved": 2397,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 45,
+      "held_out": false,
+      "old": 108846,
+      "new": 106504,
+      "saved": 2342,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 46,
+      "held_out": false,
+      "old": 106662,
+      "new": 104353,
+      "saved": 2309,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 47,
+      "held_out": false,
+      "old": 107657,
+      "new": 105303,
+      "saved": 2354,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 48,
+      "held_out": false,
+      "old": 107902,
+      "new": 105768,
+      "saved": 2134,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 49,
+      "held_out": false,
+      "old": 109260,
+      "new": 107089,
+      "saved": 2171,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 50,
+      "held_out": false,
+      "old": 106420,
+      "new": 104332,
+      "saved": 2088,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 51,
+      "held_out": false,
+      "old": 106188,
+      "new": 104047,
+      "saved": 2141,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 52,
+      "held_out": true,
+      "old": 101383,
+      "new": 99477,
+      "saved": 1906,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 53,
+      "held_out": false,
+      "old": 99428,
+      "new": 97549,
+      "saved": 1879,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 54,
+      "held_out": false,
+      "old": 99788,
+      "new": 97857,
+      "saved": 1931,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 55,
+      "held_out": false,
+      "old": 99706,
+      "new": 97888,
+      "saved": 1818,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 56,
+      "held_out": false,
+      "old": 99181,
+      "new": 97505,
+      "saved": 1676,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 57,
+      "held_out": false,
+      "old": 98182,
+      "new": 96564,
+      "saved": 1618,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 58,
+      "held_out": false,
+      "old": 97794,
+      "new": 96210,
+      "saved": 1584,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 59,
+      "held_out": false,
+      "old": 98309,
+      "new": 96635,
+      "saved": 1674,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 60,
+      "held_out": true,
+      "old": 97039,
+      "new": 95428,
+      "saved": 1611,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 61,
+      "held_out": false,
+      "old": 98660,
+      "new": 97055,
+      "saved": 1605,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 62,
+      "held_out": false,
+      "old": 97822,
+      "new": 96251,
+      "saved": 1571,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 63,
+      "held_out": false,
+      "old": 90777,
+      "new": 89168,
+      "saved": 1609,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 64,
+      "held_out": false,
+      "old": 90255,
+      "new": 88570,
+      "saved": 1685,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 65,
+      "held_out": false,
+      "old": 89610,
+      "new": 87909,
+      "saved": 1701,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 66,
+      "held_out": false,
+      "old": 89892,
+      "new": 88108,
+      "saved": 1784,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 67,
+      "held_out": false,
+      "old": 89464,
+      "new": 87622,
+      "saved": 1842,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 68,
+      "held_out": true,
+      "old": 91475,
+      "new": 89654,
+      "saved": 1821,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 69,
+      "held_out": false,
+      "old": 122488,
+      "new": 120019,
+      "saved": 2469,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 70,
+      "held_out": false,
+      "old": 123258,
+      "new": 120827,
+      "saved": 2431,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 71,
+      "held_out": false,
+      "old": 121920,
+      "new": 119395,
+      "saved": 2525,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 72,
+      "held_out": false,
+      "old": 121449,
+      "new": 119097,
+      "saved": 2352,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 73,
+      "held_out": false,
+      "old": 120191,
+      "new": 117839,
+      "saved": 2352,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 74,
+      "held_out": false,
+      "old": 120021,
+      "new": 117688,
+      "saved": 2333,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 75,
+      "held_out": false,
+      "old": 119290,
+      "new": 116902,
+      "saved": 2388,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 76,
+      "held_out": true,
+      "old": 116062,
+      "new": 113727,
+      "saved": 2335,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 77,
+      "held_out": false,
+      "old": 114502,
+      "new": 112214,
+      "saved": 2288,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 78,
+      "held_out": false,
+      "old": 113847,
+      "new": 111543,
+      "saved": 2304,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-0",
+      "k": 79,
+      "held_out": false,
+      "old": 111306,
+      "new": 109079,
+      "saved": 2227,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 0,
+      "held_out": false,
+      "old": 81523,
+      "new": 80081,
+      "saved": 1442,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 1,
+      "held_out": false,
+      "old": 78940,
+      "new": 76736,
+      "saved": 2204,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 2,
+      "held_out": false,
+      "old": 78776,
+      "new": 76921,
+      "saved": 1855,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 3,
+      "held_out": false,
+      "old": 81005,
+      "new": 79621,
+      "saved": 1384,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 4,
+      "held_out": true,
+      "old": 115483,
+      "new": 113957,
+      "saved": 1526,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 5,
+      "held_out": false,
+      "old": 109779,
+      "new": 108137,
+      "saved": 1642,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 6,
+      "held_out": false,
+      "old": 119621,
+      "new": 117546,
+      "saved": 2075,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 7,
+      "held_out": false,
+      "old": 105182,
+      "new": 103224,
+      "saved": 1958,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 8,
+      "held_out": false,
+      "old": 105345,
+      "new": 103206,
+      "saved": 2139,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 9,
+      "held_out": false,
+      "old": 106888,
+      "new": 104724,
+      "saved": 2164,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 10,
+      "held_out": false,
+      "old": 99245,
+      "new": 97239,
+      "saved": 2006,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 11,
+      "held_out": false,
+      "old": 98168,
+      "new": 96196,
+      "saved": 1972,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 12,
+      "held_out": true,
+      "old": 97649,
+      "new": 95750,
+      "saved": 1899,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 13,
+      "held_out": false,
+      "old": 100848,
+      "new": 99035,
+      "saved": 1813,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 14,
+      "held_out": false,
+      "old": 85600,
+      "new": 84367,
+      "saved": 1233,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 15,
+      "held_out": false,
+      "old": 78546,
+      "new": 77419,
+      "saved": 1127,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 16,
+      "held_out": false,
+      "old": 84814,
+      "new": 83727,
+      "saved": 1087,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 17,
+      "held_out": false,
+      "old": 87509,
+      "new": 86271,
+      "saved": 1238,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 18,
+      "held_out": false,
+      "old": 84261,
+      "new": 82994,
+      "saved": 1267,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 19,
+      "held_out": false,
+      "old": 83027,
+      "new": 81801,
+      "saved": 1226,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 20,
+      "held_out": true,
+      "old": 88505,
+      "new": 87264,
+      "saved": 1241,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 21,
+      "held_out": false,
+      "old": 89435,
+      "new": 88070,
+      "saved": 1365,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 22,
+      "held_out": false,
+      "old": 90062,
+      "new": 88608,
+      "saved": 1454,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 23,
+      "held_out": false,
+      "old": 116016,
+      "new": 113917,
+      "saved": 2099,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 24,
+      "held_out": false,
+      "old": 116936,
+      "new": 114778,
+      "saved": 2158,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 25,
+      "held_out": false,
+      "old": 118689,
+      "new": 116496,
+      "saved": 2193,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 26,
+      "held_out": false,
+      "old": 116844,
+      "new": 114825,
+      "saved": 2019,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 27,
+      "held_out": false,
+      "old": 114913,
+      "new": 113058,
+      "saved": 1855,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 28,
+      "held_out": true,
+      "old": 112818,
+      "new": 110908,
+      "saved": 1910,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 29,
+      "held_out": false,
+      "old": 108618,
+      "new": 106770,
+      "saved": 1848,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 30,
+      "held_out": false,
+      "old": 93845,
+      "new": 92098,
+      "saved": 1747,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 31,
+      "held_out": false,
+      "old": 88313,
+      "new": 86509,
+      "saved": 1804,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 32,
+      "held_out": false,
+      "old": 99686,
+      "new": 97793,
+      "saved": 1893,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 33,
+      "held_out": false,
+      "old": 100590,
+      "new": 98608,
+      "saved": 1982,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 34,
+      "held_out": false,
+      "old": 105166,
+      "new": 102957,
+      "saved": 2209,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 35,
+      "held_out": false,
+      "old": 107818,
+      "new": 105816,
+      "saved": 2002,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 36,
+      "held_out": true,
+      "old": 94646,
+      "new": 92792,
+      "saved": 1854,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 37,
+      "held_out": false,
+      "old": 93787,
+      "new": 91857,
+      "saved": 1930,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 38,
+      "held_out": false,
+      "old": 101422,
+      "new": 98983,
+      "saved": 2439,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 39,
+      "held_out": false,
+      "old": 96315,
+      "new": 94315,
+      "saved": 2000,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 40,
+      "held_out": false,
+      "old": 106644,
+      "new": 104778,
+      "saved": 1866,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 41,
+      "held_out": false,
+      "old": 107999,
+      "new": 106125,
+      "saved": 1874,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 42,
+      "held_out": false,
+      "old": 105097,
+      "new": 103253,
+      "saved": 1844,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 43,
+      "held_out": false,
+      "old": 106739,
+      "new": 104885,
+      "saved": 1854,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 44,
+      "held_out": true,
+      "old": 99042,
+      "new": 96879,
+      "saved": 2163,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 45,
+      "held_out": false,
+      "old": 95771,
+      "new": 93578,
+      "saved": 2193,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 46,
+      "held_out": false,
+      "old": 97412,
+      "new": 95340,
+      "saved": 2072,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 47,
+      "held_out": false,
+      "old": 96228,
+      "new": 94070,
+      "saved": 2158,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 48,
+      "held_out": false,
+      "old": 92382,
+      "new": 90260,
+      "saved": 2122,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 49,
+      "held_out": false,
+      "old": 94140,
+      "new": 92253,
+      "saved": 1887,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 50,
+      "held_out": false,
+      "old": 95275,
+      "new": 93476,
+      "saved": 1799,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 51,
+      "held_out": false,
+      "old": 89456,
+      "new": 87570,
+      "saved": 1886,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 52,
+      "held_out": true,
+      "old": 91782,
+      "new": 89845,
+      "saved": 1937,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 53,
+      "held_out": false,
+      "old": 90461,
+      "new": 88560,
+      "saved": 1901,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 54,
+      "held_out": false,
+      "old": 86547,
+      "new": 84759,
+      "saved": 1788,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 55,
+      "held_out": false,
+      "old": 72464,
+      "new": 70625,
+      "saved": 1839,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 56,
+      "held_out": false,
+      "old": 71200,
+      "new": 69460,
+      "saved": 1740,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 57,
+      "held_out": false,
+      "old": 87908,
+      "new": 85779,
+      "saved": 2129,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 58,
+      "held_out": false,
+      "old": 89735,
+      "new": 87964,
+      "saved": 1771,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 59,
+      "held_out": false,
+      "old": 92263,
+      "new": 90404,
+      "saved": 1859,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 60,
+      "held_out": true,
+      "old": 103062,
+      "new": 101056,
+      "saved": 2006,
+      "flags": [
+        119,
+        119
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 61,
+      "held_out": false,
+      "old": 112643,
+      "new": 110312,
+      "saved": 2331,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 62,
+      "held_out": false,
+      "old": 122896,
+      "new": 120315,
+      "saved": 2581,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 63,
+      "held_out": false,
+      "old": 122189,
+      "new": 119589,
+      "saved": 2600,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 64,
+      "held_out": false,
+      "old": 122823,
+      "new": 120131,
+      "saved": 2692,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 65,
+      "held_out": false,
+      "old": 123834,
+      "new": 121235,
+      "saved": 2599,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 66,
+      "held_out": false,
+      "old": 120863,
+      "new": 118304,
+      "saved": 2559,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 67,
+      "held_out": false,
+      "old": 116603,
+      "new": 114105,
+      "saved": 2498,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 68,
+      "held_out": true,
+      "old": 118228,
+      "new": 116039,
+      "saved": 2189,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 69,
+      "held_out": false,
+      "old": 110908,
+      "new": 108637,
+      "saved": 2271,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 70,
+      "held_out": false,
+      "old": 117101,
+      "new": 115116,
+      "saved": 1985,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 71,
+      "held_out": false,
+      "old": 109804,
+      "new": 107794,
+      "saved": 2010,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 72,
+      "held_out": false,
+      "old": 102594,
+      "new": 100623,
+      "saved": 1971,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 73,
+      "held_out": false,
+      "old": 98837,
+      "new": 97058,
+      "saved": 1779,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 74,
+      "held_out": false,
+      "old": 107478,
+      "new": 105493,
+      "saved": 1985,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 75,
+      "held_out": false,
+      "old": 99756,
+      "new": 98112,
+      "saved": 1644,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 76,
+      "held_out": true,
+      "old": 101438,
+      "new": 99842,
+      "saved": 1596,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 77,
+      "held_out": false,
+      "old": 106041,
+      "new": 104383,
+      "saved": 1658,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 78,
+      "held_out": false,
+      "old": 106848,
+      "new": 105195,
+      "saved": 1653,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-ntsc-277",
+      "k": 79,
+      "held_out": false,
+      "old": 98578,
+      "new": 96842,
+      "saved": 1736,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 0,
+      "held_out": false,
+      "old": 139930,
+      "new": 137467,
+      "saved": 2463,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 1,
+      "held_out": false,
+      "old": 142164,
+      "new": 139809,
+      "saved": 2355,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 2,
+      "held_out": false,
+      "old": 137967,
+      "new": 135761,
+      "saved": 2206,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 3,
+      "held_out": false,
+      "old": 136645,
+      "new": 134542,
+      "saved": 2103,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 4,
+      "held_out": true,
+      "old": 129621,
+      "new": 127313,
+      "saved": 2308,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 5,
+      "held_out": false,
+      "old": 127969,
+      "new": 125885,
+      "saved": 2084,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 6,
+      "held_out": false,
+      "old": 127329,
+      "new": 124837,
+      "saved": 2492,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 7,
+      "held_out": false,
+      "old": 122060,
+      "new": 119299,
+      "saved": 2761,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 8,
+      "held_out": false,
+      "old": 123653,
+      "new": 120803,
+      "saved": 2850,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 9,
+      "held_out": false,
+      "old": 121976,
+      "new": 119869,
+      "saved": 2107,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 10,
+      "held_out": false,
+      "old": 114319,
+      "new": 112665,
+      "saved": 1654,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 11,
+      "held_out": false,
+      "old": 96630,
+      "new": 94954,
+      "saved": 1676,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 12,
+      "held_out": true,
+      "old": 95429,
+      "new": 93676,
+      "saved": 1753,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 13,
+      "held_out": false,
+      "old": 88736,
+      "new": 86991,
+      "saved": 1745,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 14,
+      "held_out": false,
+      "old": 87769,
+      "new": 86026,
+      "saved": 1743,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 15,
+      "held_out": false,
+      "old": 87389,
+      "new": 85615,
+      "saved": 1774,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 16,
+      "held_out": false,
+      "old": 113291,
+      "new": 110867,
+      "saved": 2424,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 17,
+      "held_out": false,
+      "old": 115517,
+      "new": 113063,
+      "saved": 2454,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 18,
+      "held_out": false,
+      "old": 114579,
+      "new": 112122,
+      "saved": 2457,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 19,
+      "held_out": false,
+      "old": 115127,
+      "new": 112669,
+      "saved": 2458,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 20,
+      "held_out": true,
+      "old": 114181,
+      "new": 111693,
+      "saved": 2488,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 21,
+      "held_out": false,
+      "old": 115467,
+      "new": 112991,
+      "saved": 2476,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 22,
+      "held_out": false,
+      "old": 114326,
+      "new": 111909,
+      "saved": 2417,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 23,
+      "held_out": false,
+      "old": 114661,
+      "new": 112291,
+      "saved": 2370,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 24,
+      "held_out": false,
+      "old": 117639,
+      "new": 115125,
+      "saved": 2514,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 25,
+      "held_out": false,
+      "old": 112691,
+      "new": 110394,
+      "saved": 2297,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 26,
+      "held_out": false,
+      "old": 112237,
+      "new": 109928,
+      "saved": 2309,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 27,
+      "held_out": false,
+      "old": 103932,
+      "new": 101657,
+      "saved": 2275,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 28,
+      "held_out": true,
+      "old": 103811,
+      "new": 101577,
+      "saved": 2234,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 29,
+      "held_out": false,
+      "old": 104491,
+      "new": 102271,
+      "saved": 2220,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 30,
+      "held_out": false,
+      "old": 104963,
+      "new": 102804,
+      "saved": 2159,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 31,
+      "held_out": false,
+      "old": 104485,
+      "new": 102457,
+      "saved": 2028,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 32,
+      "held_out": false,
+      "old": 105421,
+      "new": 103440,
+      "saved": 1981,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 33,
+      "held_out": false,
+      "old": 103754,
+      "new": 101846,
+      "saved": 1908,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 34,
+      "held_out": false,
+      "old": 104795,
+      "new": 102865,
+      "saved": 1930,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 35,
+      "held_out": false,
+      "old": 103950,
+      "new": 101997,
+      "saved": 1953,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 36,
+      "held_out": true,
+      "old": 103555,
+      "new": 101667,
+      "saved": 1888,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 37,
+      "held_out": false,
+      "old": 104355,
+      "new": 102474,
+      "saved": 1881,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 38,
+      "held_out": false,
+      "old": 102876,
+      "new": 100949,
+      "saved": 1927,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 39,
+      "held_out": false,
+      "old": 98927,
+      "new": 96988,
+      "saved": 1939,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 40,
+      "held_out": false,
+      "old": 97124,
+      "new": 95237,
+      "saved": 1887,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 41,
+      "held_out": false,
+      "old": 95276,
+      "new": 93371,
+      "saved": 1905,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 42,
+      "held_out": false,
+      "old": 93496,
+      "new": 91704,
+      "saved": 1792,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 43,
+      "held_out": false,
+      "old": 93979,
+      "new": 92241,
+      "saved": 1738,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 44,
+      "held_out": true,
+      "old": 95094,
+      "new": 93395,
+      "saved": 1699,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 45,
+      "held_out": false,
+      "old": 93610,
+      "new": 91971,
+      "saved": 1639,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 46,
+      "held_out": false,
+      "old": 95322,
+      "new": 93645,
+      "saved": 1677,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 47,
+      "held_out": false,
+      "old": 95108,
+      "new": 93406,
+      "saved": 1702,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 48,
+      "held_out": false,
+      "old": 100467,
+      "new": 98743,
+      "saved": 1724,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 49,
+      "held_out": false,
+      "old": 105310,
+      "new": 103664,
+      "saved": 1646,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 50,
+      "held_out": false,
+      "old": 95811,
+      "new": 94013,
+      "saved": 1798,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 51,
+      "held_out": false,
+      "old": 89656,
+      "new": 88002,
+      "saved": 1654,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 52,
+      "held_out": true,
+      "old": 87883,
+      "new": 86268,
+      "saved": 1615,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 53,
+      "held_out": false,
+      "old": 116994,
+      "new": 114663,
+      "saved": 2331,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 54,
+      "held_out": false,
+      "old": 113816,
+      "new": 111505,
+      "saved": 2311,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 55,
+      "held_out": false,
+      "old": 113656,
+      "new": 111360,
+      "saved": 2296,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 56,
+      "held_out": false,
+      "old": 113796,
+      "new": 111494,
+      "saved": 2302,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 57,
+      "held_out": false,
+      "old": 111167,
+      "new": 108918,
+      "saved": 2249,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 58,
+      "held_out": false,
+      "old": 113215,
+      "new": 111128,
+      "saved": 2087,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 59,
+      "held_out": false,
+      "old": 107051,
+      "new": 104802,
+      "saved": 2249,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 60,
+      "held_out": true,
+      "old": 108853,
+      "new": 106602,
+      "saved": 2251,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 61,
+      "held_out": false,
+      "old": 105780,
+      "new": 103640,
+      "saved": 2140,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 62,
+      "held_out": false,
+      "old": 105939,
+      "new": 103701,
+      "saved": 2238,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 63,
+      "held_out": false,
+      "old": 106050,
+      "new": 103809,
+      "saved": 2241,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 64,
+      "held_out": false,
+      "old": 103515,
+      "new": 101317,
+      "saved": 2198,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 65,
+      "held_out": false,
+      "old": 102078,
+      "new": 99878,
+      "saved": 2200,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 66,
+      "held_out": false,
+      "old": 101771,
+      "new": 99620,
+      "saved": 2151,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 67,
+      "held_out": false,
+      "old": 99842,
+      "new": 97835,
+      "saved": 2007,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 68,
+      "held_out": true,
+      "old": 99504,
+      "new": 97485,
+      "saved": 2019,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 69,
+      "held_out": false,
+      "old": 99153,
+      "new": 97134,
+      "saved": 2019,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 70,
+      "held_out": false,
+      "old": 99450,
+      "new": 97438,
+      "saved": 2012,
+      "flags": [
+        119,
+        119
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 71,
+      "held_out": false,
+      "old": 98743,
+      "new": 96630,
+      "saved": 2113,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 72,
+      "held_out": false,
+      "old": 96660,
+      "new": 94616,
+      "saved": 2044,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 73,
+      "held_out": false,
+      "old": 96599,
+      "new": 94609,
+      "saved": 1990,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 74,
+      "held_out": false,
+      "old": 95501,
+      "new": 93532,
+      "saved": 1969,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 75,
+      "held_out": false,
+      "old": 93789,
+      "new": 91956,
+      "saved": 1833,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 76,
+      "held_out": true,
+      "old": 95775,
+      "new": 93915,
+      "saved": 1860,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 77,
+      "held_out": false,
+      "old": 94590,
+      "new": 92752,
+      "saved": 1838,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 78,
+      "held_out": false,
+      "old": 98591,
+      "new": 97032,
+      "saved": 1559,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-0",
+      "k": 79,
+      "held_out": false,
+      "old": 93791,
+      "new": 92095,
+      "saved": 1696,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 0,
+      "held_out": false,
+      "old": 109420,
+      "new": 107489,
+      "saved": 1931,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 1,
+      "held_out": false,
+      "old": 115663,
+      "new": 113726,
+      "saved": 1937,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 2,
+      "held_out": false,
+      "old": 111899,
+      "new": 110029,
+      "saved": 1870,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 3,
+      "held_out": false,
+      "old": 109747,
+      "new": 107896,
+      "saved": 1851,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 4,
+      "held_out": true,
+      "old": 112043,
+      "new": 110160,
+      "saved": 1883,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 5,
+      "held_out": false,
+      "old": 106970,
+      "new": 105098,
+      "saved": 1872,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 6,
+      "held_out": false,
+      "old": 103472,
+      "new": 101548,
+      "saved": 1924,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 7,
+      "held_out": false,
+      "old": 136951,
+      "new": 134255,
+      "saved": 2696,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 8,
+      "held_out": false,
+      "old": 143563,
+      "new": 140822,
+      "saved": 2741,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 9,
+      "held_out": false,
+      "old": 140190,
+      "new": 137522,
+      "saved": 2668,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 10,
+      "held_out": false,
+      "old": 138068,
+      "new": 135357,
+      "saved": 2711,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 11,
+      "held_out": false,
+      "old": 138088,
+      "new": 135484,
+      "saved": 2604,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 12,
+      "held_out": true,
+      "old": 132449,
+      "new": 129627,
+      "saved": 2822,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 13,
+      "held_out": false,
+      "old": 133368,
+      "new": 130581,
+      "saved": 2787,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 14,
+      "held_out": false,
+      "old": 133392,
+      "new": 130718,
+      "saved": 2674,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 15,
+      "held_out": false,
+      "old": 130837,
+      "new": 128283,
+      "saved": 2554,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 16,
+      "held_out": false,
+      "old": 132990,
+      "new": 130313,
+      "saved": 2677,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 17,
+      "held_out": false,
+      "old": 131116,
+      "new": 128636,
+      "saved": 2480,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 18,
+      "held_out": false,
+      "old": 132508,
+      "new": 129774,
+      "saved": 2734,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 19,
+      "held_out": false,
+      "old": 121266,
+      "new": 118678,
+      "saved": 2588,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 20,
+      "held_out": true,
+      "old": 126669,
+      "new": 124328,
+      "saved": 2341,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 21,
+      "held_out": false,
+      "old": 129450,
+      "new": 127136,
+      "saved": 2314,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 22,
+      "held_out": false,
+      "old": 129150,
+      "new": 127042,
+      "saved": 2108,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 23,
+      "held_out": false,
+      "old": 124990,
+      "new": 122534,
+      "saved": 2456,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 24,
+      "held_out": false,
+      "old": 135278,
+      "new": 132846,
+      "saved": 2432,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 25,
+      "held_out": false,
+      "old": 132064,
+      "new": 129723,
+      "saved": 2341,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 26,
+      "held_out": false,
+      "old": 129533,
+      "new": 127110,
+      "saved": 2423,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 27,
+      "held_out": false,
+      "old": 131220,
+      "new": 128677,
+      "saved": 2543,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 28,
+      "held_out": true,
+      "old": 132068,
+      "new": 129893,
+      "saved": 2175,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 29,
+      "held_out": false,
+      "old": 123395,
+      "new": 121064,
+      "saved": 2331,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 30,
+      "held_out": false,
+      "old": 121303,
+      "new": 118893,
+      "saved": 2410,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 31,
+      "held_out": false,
+      "old": 119488,
+      "new": 117222,
+      "saved": 2266,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 32,
+      "held_out": false,
+      "old": 117715,
+      "new": 115412,
+      "saved": 2303,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 33,
+      "held_out": false,
+      "old": 113981,
+      "new": 111692,
+      "saved": 2289,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 34,
+      "held_out": false,
+      "old": 106724,
+      "new": 104447,
+      "saved": 2277,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 35,
+      "held_out": false,
+      "old": 107561,
+      "new": 105217,
+      "saved": 2344,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 36,
+      "held_out": true,
+      "old": 111620,
+      "new": 109481,
+      "saved": 2139,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 37,
+      "held_out": false,
+      "old": 96090,
+      "new": 94104,
+      "saved": 1986,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 38,
+      "held_out": false,
+      "old": 128169,
+      "new": 125020,
+      "saved": 3149,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 39,
+      "held_out": false,
+      "old": 132183,
+      "new": 129166,
+      "saved": 3017,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 40,
+      "held_out": false,
+      "old": 133411,
+      "new": 130450,
+      "saved": 2961,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 41,
+      "held_out": false,
+      "old": 135108,
+      "new": 132322,
+      "saved": 2786,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 42,
+      "held_out": false,
+      "old": 141501,
+      "new": 138944,
+      "saved": 2557,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 43,
+      "held_out": false,
+      "old": 136929,
+      "new": 134409,
+      "saved": 2520,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 44,
+      "held_out": true,
+      "old": 138033,
+      "new": 135652,
+      "saved": 2381,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 45,
+      "held_out": false,
+      "old": 130631,
+      "new": 128358,
+      "saved": 2273,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 46,
+      "held_out": false,
+      "old": 121358,
+      "new": 118741,
+      "saved": 2617,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 47,
+      "held_out": false,
+      "old": 125064,
+      "new": 122874,
+      "saved": 2190,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 48,
+      "held_out": false,
+      "old": 120928,
+      "new": 118586,
+      "saved": 2342,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 49,
+      "held_out": false,
+      "old": 123990,
+      "new": 121896,
+      "saved": 2094,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 50,
+      "held_out": false,
+      "old": 121020,
+      "new": 118510,
+      "saved": 2510,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 51,
+      "held_out": false,
+      "old": 123684,
+      "new": 121185,
+      "saved": 2499,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 52,
+      "held_out": true,
+      "old": 123878,
+      "new": 121761,
+      "saved": 2117,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 53,
+      "held_out": false,
+      "old": 122337,
+      "new": 120149,
+      "saved": 2188,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 54,
+      "held_out": false,
+      "old": 123177,
+      "new": 120940,
+      "saved": 2237,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 55,
+      "held_out": false,
+      "old": 123724,
+      "new": 121449,
+      "saved": 2275,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 56,
+      "held_out": false,
+      "old": 117463,
+      "new": 115297,
+      "saved": 2166,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 57,
+      "held_out": false,
+      "old": 115647,
+      "new": 113543,
+      "saved": 2104,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 58,
+      "held_out": false,
+      "old": 120982,
+      "new": 118827,
+      "saved": 2155,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 59,
+      "held_out": false,
+      "old": 101749,
+      "new": 99825,
+      "saved": 1924,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 60,
+      "held_out": true,
+      "old": 112378,
+      "new": 109844,
+      "saved": 2534,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 61,
+      "held_out": false,
+      "old": 110409,
+      "new": 107919,
+      "saved": 2490,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 62,
+      "held_out": false,
+      "old": 122541,
+      "new": 120255,
+      "saved": 2286,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 63,
+      "held_out": false,
+      "old": 112321,
+      "new": 110004,
+      "saved": 2317,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 64,
+      "held_out": false,
+      "old": 111103,
+      "new": 108820,
+      "saved": 2283,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 65,
+      "held_out": false,
+      "old": 116937,
+      "new": 114524,
+      "saved": 2413,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 66,
+      "held_out": false,
+      "old": 117070,
+      "new": 114781,
+      "saved": 2289,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 67,
+      "held_out": false,
+      "old": 116628,
+      "new": 114348,
+      "saved": 2280,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 68,
+      "held_out": true,
+      "old": 118194,
+      "new": 115928,
+      "saved": 2266,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 69,
+      "held_out": false,
+      "old": 118661,
+      "new": 116401,
+      "saved": 2260,
+      "flags": [
+        55,
+        55
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 70,
+      "held_out": false,
+      "old": 116576,
+      "new": 114357,
+      "saved": 2219,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 71,
+      "held_out": false,
+      "old": 117288,
+      "new": 115088,
+      "saved": 2200,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 72,
+      "held_out": false,
+      "old": 116661,
+      "new": 114448,
+      "saved": 2213,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 73,
+      "held_out": false,
+      "old": 119624,
+      "new": 117154,
+      "saved": 2470,
+      "flags": [
+        118,
+        118
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 74,
+      "held_out": false,
+      "old": 118891,
+      "new": 116313,
+      "saved": 2578,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 75,
+      "held_out": false,
+      "old": 126372,
+      "new": 123746,
+      "saved": 2626,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 76,
+      "held_out": true,
+      "old": 127206,
+      "new": 124593,
+      "saved": 2613,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 77,
+      "held_out": false,
+      "old": 123859,
+      "new": 121225,
+      "saved": 2634,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 78,
+      "held_out": false,
+      "old": 123866,
+      "new": 121320,
+      "saved": 2546,
+      "flags": [
+        54,
+        54
+      ]
+    },
+    {
+      "scene": "scenes-pal-277",
+      "k": 79,
+      "held_out": false,
+      "old": 125787,
+      "new": 123134,
+      "saved": 2653,
+      "flags": [
+        54,
+        54
+      ]
+    }
+  ]
+}
