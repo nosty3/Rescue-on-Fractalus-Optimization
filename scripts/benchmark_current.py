@@ -16,7 +16,7 @@ def freeze():
  assert CART.read_bytes()[:4]==b'CART' and hashlib.sha256(CART.read_bytes()[16:]).hexdigest()==EXPECTED
  proposed=R/'results/v12/plan.json';base=json.loads(proposed.read_text())
  deps=[Path(__file__),R/'scripts/flight_common.py',R/'scripts/flight_transport.py']
- plan={**base,'status':'APPROVED MIXED PLAN FOR '+LABEL,'version':LABEL,'cartridge':CART.relative_to(R).as_posix(),'rom_sha256':EXPECTED,'car_sha256':sha(CART),'emulator_sha256':sha(pal.EXE),'emulator_binary':str(pal.EXE.relative_to(R)),'proposal_sha256':sha(proposed),'dependencies_sha256':{p.relative_to(R).as_posix():sha(p) for p in deps},'reference_flights_sha256':sha(R/'results/v11/flights.jsonl'),'max_batch':16,'transport':'validated bounded packets; per-gate snapshots, presentation BP B516 and game mode watch 4A','publication':'local only'}
+ plan={**base,'status':'APPROVED MIXED PLAN FOR '+LABEL,'version':LABEL,'cartridge':CART.relative_to(R).as_posix(),'rom_sha256':EXPECTED,'car_sha256':sha(CART),'emulator_sha256':sha(pal.EXE),'emulator_binary':str(pal.EXE),'proposal_sha256':sha(proposed),'dependencies_sha256':{p.relative_to(R).as_posix():sha(p) for p in deps},'reference_flights_sha256':sha(R/'results/v11/flights.jsonl'),'max_batch':16,'transport':'validated bounded packets; per-gate snapshots, presentation BP B516 and game mode watch 4A','publication':'local only'}
  path=O/'plan.json'
  if path.exists():assert json.loads(path.read_text())==plan,'Frozen study settings differ'
  else:path.write_text(json.dumps(plan,indent=2),encoding='utf-8')
