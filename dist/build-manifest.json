@@ -2,7 +2,7 @@
   "version": "v14",
   "author": "Solo (Opus/Fable team)",
   "base": "v11",
-  "upstream": "up74",
+  "upstream": "v14",
   "files": {
     "optimized version\\Rescue on Fractalus! - optimized 128KB.car": {
       "bytes": 131088,

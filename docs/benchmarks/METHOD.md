@@ -1,10 +1,17 @@
-# Current release: v14
+[English](METHOD.md) · [Polski](METHOD_PL.md)
 
-50/50 result: half the straight-flight mean plus half the descent-flight mean. Solo supplied 620 flights (155 per scenario and system), up to 60 s, cold boot, 170 warmup frames. An independent audit exactly reproduced 50 selected flights. Original and v11 references are historical. No cross-version state transfers; faster VBI can change the randomized planet. Natural early ends remain in the data.
+# FPS measurement — v14
 
-Measurement source: `results/v14/full155_up74_*.json`. Joystick: 1 s up, 3 s neutral. Presentations at $B516; Atari time, not host time. Four isolated emulators. Gains use unrounded means. Earlier methodological details are retained below.
+Each flight lasts up to **60 seconds** and starts from a fresh game boot. We test **PAL and NTSC** in two scenarios: straight flight and descent pulses (1 s joystick up, 3 s neutral). The combined result gives both scenarios equal **50/50** weight.
+
+**The standard reduced series contains 310 flights in total:** 155 PAL and 155 NTSC, with 78 straight and 77 descent flights per system.
+
+**The v14 results in the table come from a larger series run by Solo: 620 flights in total**, with 155 straight and 155 descent flights for each system. Verification reran 50 selected flights from this series; it was not a new full 310-flight series. Original-game results come from retained earlier measurements. Gain is calculated from the ratio of mean FPS, not the mean of percentage gains.
+
+Historical full-protocol details are retained below. Solo’s v14 series has 155 trials per scenario and system; the reduced 310-flight series is a separate plan, not a description of these data.
 
 ---
+
 
 # FPS measurement method — v11
 

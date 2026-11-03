@@ -1,4 +1,4 @@
-v14 — Solo up74, 128 KB cartridge.
+v14 — Solo v14, 128 KB cartridge.
 PAL: 10.9172 FPS, +74.07% over original.
 NTSC: 9.8961 FPS, +76.98% over original.
 50/50 straight flight and descent.

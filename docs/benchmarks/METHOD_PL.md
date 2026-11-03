@@ -1,10 +1,17 @@
-# Bieżące wydanie: v14
+[English](METHOD.md) · [Polski](METHOD_PL.md)
 
-Wynik 50/50: połowa średniej lotu prosto i połowa średniej lotu z nurkowaniem. Solo dostarczył 620 lotów (155 na scenariusz i system), do 60 s, zimny start, 170 ramek rozgrzewki. Niezależny audyt odtworzył dokładnie 50 wybranych lotów. Referencje oryginału i v11 są historyczne. Nie przenoszono stanów między wersjami; szybsze VBI może zmieniać losowaną planetę. Naturalne końce lotu pozostają w danych.
+# Pomiar FPS — v14
 
-Źródło pomiarów: `results/v14/full155_up74_*.json`. Joystick: 1 s w górę, 3 s neutralnie. Prezentacje $B516; czas Atari, nie czas komputera. Cztery izolowane emulatory. Zyski liczone z niezaokrąglonych średnich. Poniżej zachowano szczegóły wcześniejszej metodyki.
+Każdy lot trwa do **60 sekund** i zaczyna się od świeżego uruchomienia gry. Badamy **PAL i NTSC**, w dwóch scenariuszach: lot prosto oraz nurkowanie (1 s joystick w górę, 3 s neutralnie). Wynik końcowy nadaje obu scenariuszom równą wagę **50/50**.
+
+**Standardowa skrócona seria to 310 lotów łącznie:** 155 PAL i 155 NTSC; na każdy system przypada 78 lotów prosto i 77 z nurkowaniem.
+
+**Wyniki v14 w tabeli pochodzą z większej serii wykonanej przez Solo: 620 lotów łącznie**, po 155 prosto i 155 z nurkowaniem dla każdego systemu. Weryfikacja obejmowała ponowne wykonanie 50 wybranych lotów z tej serii; nie była nową pełną serią 310 lotów. Wyniki oryginału pochodzą z zachowanych wcześniejszych pomiarów. Zysk obliczamy z ilorazu średnich FPS, a nie ze średniej procentowych zysków.
+
+Poniżej zachowano szczegóły historycznej pełnej procedury. Zastosowana do v14 seria Solo ma 155 prób na scenariusz i system; skrócona seria 310 prób to osobny plan, nie opis tych danych.
 
 ---
+
 
 # Metodyka pomiaru FPS — v11
 

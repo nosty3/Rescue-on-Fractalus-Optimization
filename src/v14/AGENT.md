@@ -1,16 +1,16 @@
-# Fractalus up74 - technical handoff for an AI agent
+# Fractalus v14 - technical handoff for an AI agent
 
 This file is for a coding agent (and a human who wants the details) who wants to verify, rebuild or merge
-round 2 of our work on Rescue on Fractalus! for Atari XL/XE. up74 is built on **v11 by nosty3** (his repo,
+round 2 of our work on Rescue on Fractalus! for Atari XL/XE. v14 is built on **v11 by nosty3** (his repo,
 commit `3726a11`, ROM SHA256 `ec019821...`). It lists every change on top of v11, the bytes it occupies, the
 assumptions it relies on, how it was verified and how to repeat each check. Read README.md first.
 
 ## 1. Result
 
 155 flights x 60 s per scenario and TV system with nosty3's protocol (`docs/benchmarks/METHOD.md`, scenarios as
-in `V11_REPORT.md`). Details and raw data: `results/results.md`, `results/full155_up74_*.json`.
+in `V11_REPORT.md`). Details and raw data: `results/results.md`, `results/full155_v14_*.json`.
 
-| Scenario | Original | v11 | up74 | up74 vs v11 | up74 vs original |
+| Scenario | Original | v11 | v14 | v14 vs v11 | v14 vs original |
 |---|---:|---:|---:|---:|---:|
 | PAL straight | 6.4421 | 9.0779 | 11.3277 | +24.78% | +75.84% |
 | PAL descent | 6.1013 | 8.4879 | 10.5067 | +23.79% | +72.20% |
@@ -20,7 +20,7 @@ in `V11_REPORT.md`). Details and raw data: `results/results.md`, `results/full15
 | NTSC 50/50 | 5.5915 | 8.0031 | 9.8962 | **+23.65%** | **+76.99%** |
 
 Original and v11 are his published numbers. Our `tools/bench.py` reproduces his flights to the digit (620/620 in
-round 1), and it is deterministic: rerunning trials 2 and 4 of the up74 series while preparing this package gave
+round 1), and it is deterministic: rerunning trials 2 and 4 of the v14 series while preparing this package gave
 the same `fps` and the same entry hash as the JSON files, PAL straight and descent.
 
 ## 2. Build and file identity
@@ -35,20 +35,20 @@ Paths, `tools/paths.py`, each overridable by an environment variable:
 `AltirraBridgeServer.exe` and `sdk/python`).
 
 ```
-python tools/build.py --name=up74 v11src vbi2_mul vbi2_sound vbi2_interp scene_grid scene_pre reorder proj2 loop2
+python tools/build.py --name=v14 v11src vbi2_mul vbi2_sound vbi2_interp scene_grid scene_pre reorder proj2 loop2
 ```
-writes `<WORK>/build/up74.rom` and `up74.car` (CART type 14, XEGS 128 KB). The base is `work/base/v11.rom`,
+writes `<WORK>/build/v14.rom` and `v14.car` (CART type 14, XEGS 128 KB). The base is `work/base/v11.rom`,
 identical to `optimized version/Rescue on Fractalus! - optimized 128KB.rom` in his repo at `3726a11`; `build.py`
 asserts its SHA256. Every patch asserts the base bytes it overwrites (`put(..., expect=...)`, SHA256 of whole
 regions in `patches_proj.py`), so a different base fails loudly instead of building something wrong.
 
 | File | SHA256 |
 |---|---|
-| `bin/fractalus_up74.car` | `8362476209a3740162c304b0eff710615af45656838f5f9a88fbe63e88160526` |
-| `bin/fractalus_up74.rom` | `63baff0da13b5da2678eba44d4b392e7fa3de6df18044233a7eb7b19d796b3c7` |
+| `bin/fractalus_v14.car` | `8362476209a3740162c304b0eff710615af45656838f5f9a88fbe63e88160526` |
+| `bin/fractalus_v14.rom` | `63baff0da13b5da2678eba44d4b392e7fa3de6df18044233a7eb7b19d796b3c7` |
 | `work/base/v11.rom` | `ec01982121b70baca35f04568617965c3164e716e0a5eb3c6ebcbb123566a868` |
 
-`bin/up74_from_v11.ips` turns `v11.rom` into `fractalus_up74.rom` (167 records, no RLE).
+`bin/v14_from_v11.ips` turns `v11.rom` into `fractalus_v14.rom` (167 records, no RLE).
 
 Patch order matters: `proj2` after `reorder` (reorder checks bytes at `$87D3` and `$984C` that proj2 changes),
 `loop2` after `proj2`. Build time is a few seconds.
@@ -96,7 +96,7 @@ unless noted; short series have about +-2 percentage points of noise, the final 
 | 7 | Projection and edge loop, round 2 | `proj2`, `loop2` | bank 3 `$97F1-$9F82`, bank 2 `$85D4-$87D2`, bank 14 | +2.59% / +2.69% |
 | 8 | Shorter rasteriser exit | `v11src` | bank 5 | -0.56% pipeline cycles (within the noise of 24 flights) |
 
-The render pipeline (from the clear to the end of the fill) of up74 takes 17.7% fewer CPU cycles than v11 on the
+The render pipeline (from the clear to the end of the fill) of v14 takes 17.7% fewer CPU cycles than v11 on the
 48 sample scenes (`equiv.py`, 107 619 -> 88 592 per image); `jsr $8309` 26% fewer (10 131 -> 7 471); VBI in
 flight about 12% fewer (3 370 -> 2 979 per VBI on the sample).
 
@@ -222,7 +222,7 @@ game).
 ## 8. Verification
 
 ### 8.1 What "equivalent" means
-For the same machine state at the entry of a changed routine, up74 leaves the same RAM `$0000-$7FFF` (both frame
+For the same machine state at the entry of a changed routine, v14 leaves the same RAM `$0000-$7FFF` (both frame
 buffers, the HD table and flags on page 1 included), the same A/X/Y/SP/P where they are live, and the same
 hardware writes in the same order (VBI) as v11. Dead bytes and registers (section 5) are excluded only where
 listed. Hardware write timing inside the visible lines is not changed: DLI code is untouched, VBI hardware writes
@@ -246,12 +246,12 @@ HD 152 for a clean column, up38 used 151).
 
 ### 8.3 Run everything on the bundled sample (no emulator)
 ```
-python tools/check_up74.py            # about 2 minutes: rebuild + SHA, IPS, reference ROMs, 11 checks
-python tools/check_up74.py --full     # larger N + exhaustive multiply and heading sweep, about an hour
+python tools/check_v14.py            # about 2 minutes: rebuild + SHA, IPS, reference ROMs, 11 checks
+python tools/check_v14.py --full     # larger N + exhaustive multiply and heading sweep, about an hour
 ```
-It rebuilds up74, applies the IPS, builds two reference ROMs and runs each check, v11 against up74 directly
+It rebuilds v14, applies the IPS, builds two reference ROMs and runs each check, v11 against v14 directly
 except where the tool needs the same caller code on both sides:
-- `ref_b5` = up74 with bank 5 copied from v11, for `fuzzseg.py`/`fuzzseg2.py` (they finish the pipeline in the
+- `ref_b5` = v14 with bank 5 copied from v11, for `fuzzseg.py`/`fuzzseg2.py` (they finish the pipeline in the
   candidate code with both register sets);
 - `ref_proj` = the first seven patches without `proj2 loop2`, for `fuzzloop.py` (with v11 as reference the dead
   rasteriser bytes differ too).
@@ -265,7 +265,7 @@ Simulator (py65; `REF`, `CAND` = `.rom` or `.car`):
 ```
 python tools/equiv.py --hd152 REF CAND SCENES...            # pipeline: clear + mountains + fill, all RAM + P
 python tools/equivwait.py --hd152 [--n=0,3,10] REF CAND SCENES...   # pipeline with N steps of work in the wait
-python tools/fuzzseg.py REF CAND SCENE_DIR N [SEED] --hd152  # rasteriser segments (REF with up74 bank 2/3)
+python tools/fuzzseg.py REF CAND SCENE_DIR N [SEED] --hd152  # rasteriser segments (REF with v14 bank 2/3)
 python tools/fuzzseg2.py REF CAND SCENE_DIR N [SEED] --hd152 # same + HD table, page-1 flags, more modes
 python tools/fuzzfill.py REF CAND N [SEED] [SCENE.in]        # fill, random buffers and HD
 python tools/fuzzproj.py REF CAND SCENE_DIR N [SEED]         # projection of one point, random N1/N2/D
@@ -290,11 +290,11 @@ python tools/capture_vbi.py ROM OUT_DIR N SEED PRESSES   # VBI states ($B46C)
 python tools/capture_vbi2.py ROM OUT_DIR N SEED PRESSES random|descent|straight [pal|ntsc]
 ```
 Package checks of this run: bench trials 2 and 4 identical to the JSON (PAL straight and descent), hang 3/3,
-hangrand 1 x 30 s, tearcheck 100 frames 0 torn, entrydiff `ref_proj` vs up74 0 bytes.
+hangrand 1 x 30 s, tearcheck 100 frames 0 torn, entrydiff `ref_proj` vs v14 0 bytes.
 
 ## 9. Integrating with other changes (for example ilmenit's patches)
 
-1. **Compare per bank first.** Section 7 lists every byte range up74 changes. Diff the other patch set against
+1. **Compare per bank first.** Section 7 lists every byte range v14 changes. Diff the other patch set against
    v11 the same way (a few lines of Python over the 16 banks). Non-overlapping banks can be combined directly.
    Watch the shared resources: bank 7 (whole, our multiply tables), bank 4 `$9141-$9FFF`, bank 14 (49 B left),
    the `$9FFF` markers, landing bytes after `sta $D500`, bank 2 `$9907-$9909` and `$9FD5-$9FEE`, resident
@@ -305,7 +305,7 @@ hangrand 1 x 30 s, tearcheck 100 frames 0 torn, entrydiff `ref_proj` vs up74 0 b
 3. **Do not reuse `$FF` without `entrydiff.py`** (section 6). A change that moves RAM at the flight entry changes
    the planet and breaks paired comparisons.
 4. **Re-run the checks on the merge**, REF = merged ROM without our patches (or without the other side's change),
-   CAND = merged ROM with both: `check_up74.py` style (equiv, equivwait, fuzzers, vbieq, scene tools), scenes
+   CAND = merged ROM with both: `check_v14.py` style (equiv, equivwait, fuzzers, vbieq, scene tools), scenes
    captured from the merged candidate (`capture.py`, `scene_capture.py`, `capture_vbi2.py`), then `hang.py`,
    `hangrand.py`, `tearcheck.py`, `entrydiff.py`, and the 155-flight benchmark.
 5. If the other side changes code that our dead-state assumptions refer to (section 5: callers of the rasteriser
@@ -323,10 +323,10 @@ hangrand 1 x 30 s, tearcheck 100 frames 0 torn, entrydiff `ref_proj` vs up74 0 b
 
 ## 11. Package map
 
-- `bin/` cartridge `.car`, raw `.rom`, `up74_from_v11.ips`.
+- `bin/` cartridge `.car`, raw `.rom`, `v14_from_v11.ips`.
 - `src/` MADS sources (`opt h-`, `org` = CPU address): `src/v11/*` (banks 5/6/8/9) and the round 2 patches.
 - `tools/` build, patches, generators, simulator, checks, benchmark (comments mostly in Polish, one-line usage at
-  the top of each file). `check_up74.py`, `entrydiff.py`, `mul_exhaustive.py`, `scene_*.py`, `capture_vbi2.py`
+  the top of each file). `check_v14.py`, `entrydiff.py`, `mul_exhaustive.py`, `scene_*.py`, `capture_vbi2.py`
   are portable copies of round 2 scripts made for this package; `mkhandoff74.py` built the package (our paths).
 - `work/base/v11.rom` base ROM; `work/scenes/` sample states (24 each): `f_n` straight, `f_r1` random steering
   (pipeline, from up38), `vbi_r7` (VBI entry, random steering), `scene_rnd` (`jsr $8309`, random steering).

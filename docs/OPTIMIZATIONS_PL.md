@@ -1,6 +1,6 @@
-# v14 — Solo up74
+# Optymalizacje Rescue on Fractalus! — v14
 
-Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem agentów **Opus** uzyskał około 39%, a **Astra** rozwinęła te prace w v11. **Nowe optymalizacje v14 są autorstwa Solo i jego zespołu Opus/Fable**: to wydanie up74, nadal mieszczące się w cartridgu 128 KB.
+Nad projektem pracowali **nosty**, **Solo** i **ilmenit**, korzystając z agentów **ChatGPT 6 Astra/Sol** i **Claude Opus/Fable**. Ostatnie, największe optymalizacje są zasługą **Solo**.
 
 - Ściślejsze odrzucanie niewidocznych poddrzew i nowa rasteryzacja gór.
 - Szybsze wypełnianie kolumn bez zmiany obrazu.
@@ -9,7 +9,7 @@ Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%).
 - Szybsze rzutowanie i pętla krawędzi.
 - Bezpieczna część rzutowania wykonywana podczas oczekiwania na poprzedni obraz.
 
-[Audyt / Audit](benchmarks/UP74_INTEGRATION_AUDIT_PL.md).
+[Audyt / Audit](benchmarks/V14_INTEGRATION_AUDIT_PL.md).
 
 Poniżej zachowano opis odziedziczonej bazy v11. Nowe implementacje Solo opisane powyżej i w audycie zastępują odpowiednie procedury tej bazy.
 

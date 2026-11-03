@@ -1,7 +1,7 @@
 [
   {
     "ok": true,
-    "name": "up74",
+    "name": "v14",
     "video": "ntsc",
     "memory": "64k",
     "machine": "800XL",
@@ -63,7 +63,7 @@
   },
   {
     "ok": true,
-    "name": "up74",
+    "name": "v14",
     "video": "ntsc",
     "memory": "1088k",
     "machine": "130XE",
@@ -125,7 +125,7 @@
   },
   {
     "ok": true,
-    "name": "up74",
+    "name": "v14",
     "video": "pal",
     "memory": "64k",
     "machine": "800XL",
@@ -187,7 +187,7 @@
   },
   {
     "ok": true,
-    "name": "up74",
+    "name": "v14",
     "video": "pal",
     "memory": "1088k",
     "machine": "130XE",
@@ -249,7 +249,7 @@
   },
   {
     "ok": true,
-    "name": "up74-aa",
+    "name": "v14-aa",
     "video": "pal",
     "memory": "1088k",
     "machine": "130XE",
@@ -311,7 +311,7 @@
   },
   {
     "ok": true,
-    "name": "up74-aa",
+    "name": "v14-aa",
     "video": "pal",
     "memory": "64k",
     "machine": "800XL",
@@ -373,7 +373,7 @@
   },
   {
     "ok": true,
-    "name": "up74-aa",
+    "name": "v14-aa",
     "video": "ntsc",
     "memory": "64k",
     "machine": "800XL",
@@ -435,7 +435,7 @@
   },
   {
     "ok": true,
-    "name": "up74-aa",
+    "name": "v14-aa",
     "video": "ntsc",
     "memory": "1088k",
     "machine": "130XE",

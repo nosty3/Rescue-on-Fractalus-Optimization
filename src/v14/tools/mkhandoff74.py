@@ -1,14 +1,14 @@
-"""Składa paczkę rundy 2 dla nosty3 (i jego agenta): fractalus up74 = v11 + 9 łatek rundy 2 (build s2_m8).
-Zawartość: README EN/PL + AGENT.md + worklog (z <WORK>/handoff74/docs), źródła i generatory buildu up74,
+"""Składa paczkę rundy 2 dla nosty3 (i jego agenta): fractalus v14 = v11 + 9 łatek rundy 2 (build s2_m8).
+Zawartość: README EN/PL + AGENT.md + worklog (z <WORK>/handoff74/docs), źródła i generatory buildu v14,
 narzędzia weryfikacji (+ przenośne kopie skryptów rundy 2 spoza repo z <WORK>/handoff74/extra), pliki gry,
 łatka IPS z v11, ROM bazowy v11 (work/base), próbka nagranych stanów (work/scenes), wyniki 155 lotów, raport.
-Wynik: <WORK>/release/<NAZWA>/ i <NAZWA>.zip obok (w zipie folder i tak nazywa się fractalus-up74).
-Użycie: mkhandoff74.py [NAZWA_KATALOGU]   (domyślnie fractalus-up74)"""
+Wynik: <WORK>/release/<NAZWA>/ i <NAZWA>.zip obok (w zipie folder i tak nazywa się fractalus-v14).
+Użycie: mkhandoff74.py [NAZWA_KATALOGU]   (domyślnie fractalus-v14)"""
 import os, shutil, json, sys, hashlib, zipfile
 from paths import WORK
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NAME = sys.argv[1] if len(sys.argv) > 1 else "fractalus-up74"
+NAME = sys.argv[1] if len(sys.argv) > 1 else "fractalus-v14"
 OUT = f"{WORK}/release/{NAME}"
 H74 = f"{WORK}/handoff74"
 if os.path.exists(OUT):
@@ -30,7 +30,7 @@ TOOLS = ["build", "paths", "patches_vbi2", "patches_scene", "patches_reorder", "
          "hang", "hangrand", "tearcheck", "vbieq", "vbisim", "bench", "fx", "fxsim",
          "capture", "capture_vbi", "mkhandoff74"]
 EXTRA = ["entrydiff", "mul_exhaustive", "scene_capture", "scene_eq8309", "scene_fuzz8309", "scene_exh_pre",
-         "scene_post_fuzz", "capture_vbi2", "check_up74"]
+         "scene_post_fuzz", "capture_vbi2", "check_v14"]
 # próbka stanów (pełne zestawy to 229 MB): katalog źródłowy -> nazwa w work/scenes, liczba stanów
 SCENES = [(f"{WORK}/scenes/f_n", "f_n", 24), (f"{WORK}/scenes/f_r1", "f_r1", 24),
           (f"{WORK}/s2vbi/cap/c_r7", "vbi_r7", 24), (f"{WORK}/s2scene/c_rnd", "scene_rnd", 24)]
@@ -111,14 +111,14 @@ assert not any('"G:/' in open(f"{OUT}/tools/{f}", encoding="utf-8").read() for f
 car = open(f"{WORK}/build/s2_m8.car", "rb").read()
 rom = open(f"{WORK}/build/s2_m8.rom", "rb").read()
 assert hashlib.sha256(car).hexdigest() == CAR_SHA and car[16:] == rom
-assert open(f"{WORK}/release/fractalus-up74.car", "rb").read() == car
+assert open(f"{WORK}/release/fractalus-v14.car", "rb").read() == car
 v11 = open(f"{WORK}/base/v11.rom", "rb").read()
 assert hashlib.sha256(v11).hexdigest() == V11_SHA
 patch = ips(v11, rom)
 assert apply_ips(v11, patch) == rom
-put("bin/fractalus_up74.car", car)
-put("bin/fractalus_up74.rom", rom)
-put("bin/up74_from_v11.ips", patch)
+put("bin/fractalus_v14.car", car)
+put("bin/fractalus_v14.rom", rom)
+put("bin/v14_from_v11.ips", patch)
 put("work/base/v11.rom", v11)   # = "optimized version/Rescue on Fractalus! - optimized 128KB.rom" z repo nosty3 @3726a11
 
 # próbka nagranych stanów
@@ -130,7 +130,7 @@ for src, name, n in SCENES:
 
 # wyniki i raport
 for s in ("pal", "pal_descent", "ntsc", "ntsc_descent"):
-    cp(f"{WORK}/s2full155_m8_{s}.json", f"results/full155_up74_{s}.json")
+    cp(f"{WORK}/s2full155_m8_{s}.json", f"results/full155_v14_{s}.json")
 cp(f"{WORK}/page2/fractalus-runda2.html", "report/index.html")
 
 # bez długich myślników w tekstach dla ludzi
@@ -151,5 +151,5 @@ with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
     for dp, _, fs in sorted(os.walk(OUT)):
         for f in sorted(fs):
             p = os.path.join(dp, f)
-            z.write(p, os.path.join("fractalus-up74", os.path.relpath(p, OUT)).replace(os.sep, "/"))
+            z.write(p, os.path.join("fractalus-v14", os.path.relpath(p, OUT)).replace(os.sep, "/"))
 print(zp, os.path.getsize(zp), "B; plików", len(lines) + 1, "; IPS", len(patch), "B; łatki:", " ".join(PATCHES))
