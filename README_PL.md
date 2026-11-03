@@ -1,4 +1,4 @@
-# Rescue on Fractalus! — v14
+# Rescue on Fractalus! — Atari XL/XE optimization
 
 Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem agentów **Opus** uzyskał około 39%, a **Astra** rozwinęła te prace w v11. **Nowe optymalizacje v14 są autorstwa Solo i jego zespołu Opus/Fable**: to wydanie up74, nadal mieszczące się w cartridgu 128 KB.
 
