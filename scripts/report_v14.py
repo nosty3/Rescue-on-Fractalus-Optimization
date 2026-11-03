@@ -14,7 +14,7 @@ for video in ('pal','ntsc'):
   values.append(sum(r['fps'] for r in rows)/155)
  values.append(sum(values)/2)
  fig,ax=plt.subplots(figsize=(9,5),layout='constrained');x=list(range(3))
- for offset,label,data,color in [(-.25,'Original',[ref[video]['table'][s]['original_fps'] for s in ('straight','steering','combined')],'#707b89'),(0,'v11',[ref[video]['table'][s]['candidate_fps'] for s in ('straight','steering','combined')],'#5b9bd5'),(.25,'v14 — Solo up74',values,'#16744a')]:
+ for offset,label,data,color in [(-.25,'Original',[ref[video]['table'][s]['original_fps'] for s in ('straight','steering','combined')],'#707b89'),(0,'v11',[ref[video]['table'][s]['candidate_fps'] for s in ('straight','steering','combined')],'#5b9bd5'),(.25,'v14 — Solo',values,'#16744a')]:
   bars=ax.bar([i+offset for i in x],data,.24,label=label,color=color);ax.bar_label(bars,fmt='%.2f',fontsize=9,padding=3)
  ax.set_xticks(x,['Straight flight','Descent pulses','50/50 mean']);ax.set_ylabel('Rendered images per second (FPS)');ax.set_title(f'Rescue on Fractalus! — {video.upper()}, 128 KB cartridge');ax.set_ylim(0,14);ax.legend(loc='upper left',ncol=3,fontsize=9);ax.spines[['top','right']].set_visible(False)
  ax.set_xlabel('155 cold-boot flights per scenario; v14 data by Solo, independently sampled for reproduction.',fontsize=8,labelpad=12)

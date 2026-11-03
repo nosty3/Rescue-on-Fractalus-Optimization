@@ -1,12 +1,12 @@
 # Rescue on Fractalus! — Atari XL/XE optimization
 
-Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem agentów **Opus** uzyskał około 39%, a **Astra** rozwinęła te prace w v11. **Nowe optymalizacje v14 są autorstwa Solo i jego zespołu Opus/Fable**: to wydanie up74, nadal mieszczące się w cartridgu 128 KB.
+Zoptymalizowana wersja **Rescue on Fractalus!** na Atari XL/XE. Działa płynniej, zachowując grafikę i zasady oryginału. **Wersja v14 mieści się w cartridgu 128 KB i wymaga standardowych 64 KB RAM.** Nowe optymalizacje tego wydania przygotował **Solo** ze swoim zespołem agentów **Opus/Fable**.
 
 [English](README.md) · [Polski](README_PL.md)
 
 [CAR](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.car) · [ROM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.rom)
 
-CAR i ROM wymagają standardowych 64 KB RAM. Uruchamiaj od zimnego startu. **v14 nie ma jeszcze XEX-a**; starszy XEX nie zawiera tych zmian.
+Pobierz **CAR**, aby uruchomić grę w emulatorze jako cartridge, lub **ROM**, jeśli Twój sprzęt wymaga surowego obrazu. Uruchom grę od zimnego startu zamiast wczytywać zapis stanu ze starszej wersji.
 
 | System | Oryginał FPS | v11 FPS | v14 FPS | Zysk / oryginał | Zysk / v11 |
 |---|---:|---:|---:|---:|---:|
@@ -41,3 +41,7 @@ Wynik 50/50: połowa średniej lotu prosto i połowa średniej lotu z nurkowanie
 - docs/ — opis zmian, metodyka i badania.
 - analysis/ — inżynieria wsteczna oryginału.
 - arc/ — historyczne materiały up38.
+
+## Autorzy
+
+Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem **Opus** osiągnął około 39%, a **Astra** rozwinęła te prace w v11. Kolejny duży przyrost wydajności w v14 jest dziełem **Solo** i jego zespołu **Opus/Fable**. Te historyczne procenty nie sumują się.

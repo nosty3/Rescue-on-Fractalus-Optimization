@@ -1,12 +1,12 @@
 # Rescue on Fractalus! — Atari XL/XE optimization
 
-The first optimization stage was prepared by **nosty** with **ChatGPT-6 Astra** (+18%). Then **Solo**, working with **Opus** agents, achieved about 39%, and **Astra** developed this into v11. **The new v14 optimizations are by Solo and his Opus/Fable team**: this is the up74 release, still fitting a 128 KB cartridge.
+An optimized version of **Rescue on Fractalus!** for Atari XL/XE. It runs more smoothly while preserving the original graphics and gameplay. **Version v14 fits a 128 KB cartridge and requires the standard 64 KB RAM.** The new optimizations in this release are by **Solo** and his **Opus/Fable** agent team.
 
 [English](README.md) · [Polski](README_PL.md)
 
 [CAR](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.car) · [ROM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.rom)
 
-CAR and ROM require the standard 64 KB RAM. Cold-boot the game. **v14 has no updated XEX yet**; the older XEX does not contain these changes.
+Download **CAR** to run the game as a cartridge in an emulator, or **ROM** if your hardware requires a raw image. Start the game from a cold boot instead of loading a save state from an older version.
 
 | System | Original FPS | v11 FPS | v14 FPS | Gain / original | Gain / v11 |
 |---|---:|---:|---:|---:|---:|
@@ -41,3 +41,7 @@ CAR and ROM require the standard 64 KB RAM. Cold-boot the game. **v14 has no upd
 - docs/ — changes, methodology and research.
 - analysis/ — reverse engineering of the original.
 - arc/ — historical up38 material.
+
+## Credits
+
+The first optimization stage was prepared by **nosty** with **ChatGPT-6 Astra** (+18%). Then **Solo**, working with **Opus** agents, achieved about 39%, and **Astra** developed this into v11. The next substantial performance increase in v14 is by **Solo** and his **Opus/Fable** team. These historical percentages are not additive.
