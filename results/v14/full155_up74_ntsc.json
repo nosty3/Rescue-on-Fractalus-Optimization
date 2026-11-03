@@ -1,0 +1,1429 @@
+[
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 4,
+  "menu_frames": 3058,
+  "entry": "cd229aee12624230",
+  "fps": 10.192528989630798,
+  "intervals": 612,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 2,
+  "menu_frames": 3005,
+  "entry": "e3133314d66569dc",
+  "fps": 10.450287116788472,
+  "intervals": 628,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 1,
+  "menu_frames": 3401,
+  "entry": "9c6820cc1e4478c9",
+  "fps": 11.1325505670744,
+  "intervals": 669,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 3,
+  "menu_frames": 3502,
+  "entry": "29fb875c4d02276d",
+  "fps": 10.456093861538685,
+  "intervals": 628,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 5,
+  "menu_frames": 3473,
+  "entry": "83ea9f1634c8b423",
+  "fps": 10.353318540032797,
+  "intervals": 622,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 9,
+  "menu_frames": 3394,
+  "entry": "e2aea41a0a0be5bc",
+  "fps": 10.28388117536435,
+  "intervals": 618,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 8,
+  "menu_frames": 3075,
+  "entry": "279826c8d79baef5",
+  "fps": 9.962135545286356,
+  "intervals": 598,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 6,
+  "menu_frames": 3309,
+  "entry": "cc96afdfcc158b24",
+  "fps": 9.799111356412183,
+  "intervals": 582,
+  "end": {
+   "mode": 0,
+   "pc": 41158,
+   "at": 62.73063196579454
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 7,
+  "menu_frames": 3009,
+  "entry": "a2f3d04a45a1ea75",
+  "fps": 10.120285552728301,
+  "intervals": 608,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 10,
+  "menu_frames": 3582,
+  "entry": "d5242560953c722b",
+  "fps": 10.536416107220514,
+  "intervals": 633,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 11,
+  "menu_frames": 3374,
+  "entry": "fd82c22c26dd4067",
+  "fps": 10.145385435800488,
+  "intervals": 609,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 12,
+  "menu_frames": 3115,
+  "entry": "af7db0f5b1608614",
+  "fps": 11.331330682856528,
+  "intervals": 680,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 15,
+  "menu_frames": 3434,
+  "entry": "657e65dcb8246a28",
+  "fps": 11.764587553794351,
+  "intervals": 706,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 13,
+  "menu_frames": 3545,
+  "entry": "09a938df4d0153ec",
+  "fps": 9.826130888696357,
+  "intervals": 590,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 14,
+  "menu_frames": 3349,
+  "entry": "b46a84df91e3a0d4",
+  "fps": 10.075948150738,
+  "intervals": 605,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 20,
+  "menu_frames": 3592,
+  "entry": "8cb6d4f5b67611e9",
+  "fps": 9.4763873350764,
+  "intervals": 569,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 16,
+  "menu_frames": 3203,
+  "entry": "2b874b2431e1e472",
+  "fps": 9.814932109327016,
+  "intervals": 589,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 19,
+  "menu_frames": 3020,
+  "entry": "09ea9d3f99650585",
+  "fps": 10.605942636439828,
+  "intervals": 637,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 18,
+  "menu_frames": 3236,
+  "entry": "a697022f72fa299b",
+  "fps": 9.528999128535105,
+  "intervals": 572,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 17,
+  "menu_frames": 3105,
+  "entry": "df368e1ae0bff08f",
+  "fps": 9.371250911557114,
+  "intervals": 563,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 22,
+  "menu_frames": 3411,
+  "entry": "76db6a3f64351f72",
+  "fps": 11.008597077411212,
+  "intervals": 661,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 21,
+  "menu_frames": 3285,
+  "entry": "38cccef399784602",
+  "fps": 12.500550431171705,
+  "intervals": 751,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 23,
+  "menu_frames": 3338,
+  "entry": "e9d2dfc3286f70f6",
+  "fps": 11.411475591798592,
+  "intervals": 685,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 24,
+  "menu_frames": 3357,
+  "entry": "5b06eb742409b179",
+  "fps": 11.008597487166597,
+  "intervals": 661,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 25,
+  "menu_frames": 3291,
+  "entry": "d4c4b7abb617400e",
+  "fps": 10.914737541423689,
+  "intervals": 655,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 28,
+  "menu_frames": 3054,
+  "entry": "42119635a4678f16",
+  "fps": 10.245339972113793,
+  "intervals": 615,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 27,
+  "menu_frames": 3506,
+  "entry": "90085fd1abfd0734",
+  "fps": 11.111611999605344,
+  "intervals": 667,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 26,
+  "menu_frames": 3305,
+  "entry": "7954054288ccb9fd",
+  "fps": 10.320028030742675,
+  "intervals": 620,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 29,
+  "menu_frames": 3485,
+  "entry": "f92527917c73cec7",
+  "fps": 10.445248461398126,
+  "intervals": 627,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 30,
+  "menu_frames": 3141,
+  "entry": "a8cd73b15b875be9",
+  "fps": 10.683255300920699,
+  "intervals": 642,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 34,
+  "menu_frames": 3359,
+  "entry": "1484c674d2e2419c",
+  "fps": 11.238636336256636,
+  "intervals": 675,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 35,
+  "menu_frames": 3403,
+  "entry": "7953fe1dc4c7af58",
+  "fps": 12.047870823503281,
+  "intervals": 723,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 33,
+  "menu_frames": 3119,
+  "entry": "6d8b023af15145b3",
+  "fps": 10.725471781703341,
+  "intervals": 644,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 32,
+  "menu_frames": 3162,
+  "entry": "4268cca46438b249",
+  "fps": 10.614791247357452,
+  "intervals": 637,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 31,
+  "menu_frames": 3508,
+  "entry": "418e9b532961f8b2",
+  "fps": 10.50312500921299,
+  "intervals": 631,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 38,
+  "menu_frames": 3255,
+  "entry": "a8cfe1109cba8ab9",
+  "fps": 9.379067673264226,
+  "intervals": 563,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 37,
+  "menu_frames": 3372,
+  "entry": "1091e69ace4856e7",
+  "fps": 9.174056960675003,
+  "intervals": 551,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 39,
+  "menu_frames": 3353,
+  "entry": "9a936709515fc497",
+  "fps": 9.698767005905626,
+  "intervals": 583,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 40,
+  "menu_frames": 3375,
+  "entry": "834fb3d1d0eb3ee6",
+  "fps": 10.542272729531389,
+  "intervals": 633,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 36,
+  "menu_frames": 3486,
+  "entry": "42fab8de0682eb96",
+  "fps": 10.572642481757072,
+  "intervals": 635,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 45,
+  "menu_frames": 3161,
+  "entry": "b019c942388d3b31",
+  "fps": 9.619821620657259,
+  "intervals": 550,
+  "end": {
+   "mode": 0,
+   "pc": 41160,
+   "at": 60.51110853474394
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 42,
+  "menu_frames": 3593,
+  "entry": "be79704af0c70c61",
+  "fps": 9.876094082295488,
+  "intervals": 593,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 43,
+  "menu_frames": 3245,
+  "entry": "9cd7c481ce9162f4",
+  "fps": 9.973249597846134,
+  "intervals": 599,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 44,
+  "menu_frames": 3276,
+  "entry": "e72b4af3fafba4aa",
+  "fps": 9.428532750469596,
+  "intervals": 512,
+  "end": {
+   "mode": 0,
+   "pc": 41160,
+   "at": 57.6407431670785
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 41,
+  "menu_frames": 3060,
+  "entry": "8ba1516f1d0e843c",
+  "fps": 9.798268387579432,
+  "intervals": 588,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 46,
+  "menu_frames": 3174,
+  "entry": "3e03d00388090b18",
+  "fps": 9.568536960050325,
+  "intervals": 541,
+  "end": {
+   "mode": 0,
+   "pc": 41160,
+   "at": 59.87695810501055
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 47,
+  "menu_frames": 3045,
+  "entry": "37df0e97fde1f55c",
+  "fps": 10.681445043502215,
+  "intervals": 641,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 50,
+  "menu_frames": 3536,
+  "entry": "ad7d977fc0d1447b",
+  "fps": 9.998233420905652,
+  "intervals": 600,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 49,
+  "menu_frames": 3197,
+  "entry": "2d348d76ab43a7b7",
+  "fps": 9.956599302342918,
+  "intervals": 598,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 48,
+  "menu_frames": 3378,
+  "entry": "a36e55ff4f8a16d1",
+  "fps": 9.748276859290375,
+  "intervals": 585,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 51,
+  "menu_frames": 3008,
+  "entry": "87c70a4281eddd10",
+  "fps": 10.250599720594185,
+  "intervals": 616,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 55,
+  "menu_frames": 3256,
+  "entry": "03468da7c399998a",
+  "fps": 10.209182878764075,
+  "intervals": 613,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 54,
+  "menu_frames": 3056,
+  "entry": "ca28216f80699414",
+  "fps": 10.359073773754243,
+  "intervals": 622,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 53,
+  "menu_frames": 3026,
+  "entry": "b0c6d36bac10018f",
+  "fps": 10.131543011191084,
+  "intervals": 608,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 52,
+  "menu_frames": 3053,
+  "entry": "70c3ec6ad223919f",
+  "fps": 10.858707253922075,
+  "intervals": 652,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 58,
+  "menu_frames": 3517,
+  "entry": "99d38a7a2be9a91f",
+  "fps": 10.145385530233096,
+  "intervals": 609,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 60,
+  "menu_frames": 3048,
+  "entry": "38a17a8935a0ec96",
+  "fps": 8.976753556425622,
+  "intervals": 539,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 57,
+  "menu_frames": 3393,
+  "entry": "9951cee671362de5",
+  "fps": 11.464640562337838,
+  "intervals": 688,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 56,
+  "menu_frames": 3326,
+  "entry": "f0e1f7af4b5ccc5e",
+  "fps": 10.745111953576556,
+  "intervals": 645,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 59,
+  "menu_frames": 3160,
+  "entry": "d9838f9595c036ee",
+  "fps": 9.856700496076424,
+  "intervals": 592,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 61,
+  "menu_frames": 3254,
+  "entry": "8d3f72770b0555cb",
+  "fps": 9.362408147534893,
+  "intervals": 562,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 64,
+  "menu_frames": 3156,
+  "entry": "3aafe67908247cd7",
+  "fps": 10.014896863541972,
+  "intervals": 601,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 63,
+  "menu_frames": 3543,
+  "entry": "b19a2f9fba8b1156",
+  "fps": 9.892748633174405,
+  "intervals": 594,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 65,
+  "menu_frames": 3272,
+  "entry": "259eda4163d8b45b",
+  "fps": 10.661816809794496,
+  "intervals": 640,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 62,
+  "menu_frames": 3544,
+  "entry": "7a02726c356ae20d",
+  "fps": 10.749817039559352,
+  "intervals": 646,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 66,
+  "menu_frames": 3179,
+  "entry": "27156bca941db8ad",
+  "fps": 8.655507219627337,
+  "intervals": 520,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 69,
+  "menu_frames": 3493,
+  "entry": "85b9207feef2dda1",
+  "fps": 9.995453259182339,
+  "intervals": 600,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 68,
+  "menu_frames": 3581,
+  "entry": "abb16460b29a65c6",
+  "fps": 11.114702198671147,
+  "intervals": 667,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 70,
+  "menu_frames": 3310,
+  "entry": "477a9443398250e8",
+  "fps": 11.967902917843004,
+  "intervals": 719,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 67,
+  "menu_frames": 3548,
+  "entry": "2f49a671bea2d6e5",
+  "fps": 10.531472340580205,
+  "intervals": 632,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 72,
+  "menu_frames": 3507,
+  "entry": "5fa5a64f0d064e27",
+  "fps": 10.542272729531389,
+  "intervals": 633,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 74,
+  "menu_frames": 3355,
+  "entry": "f18c4001eada7290",
+  "fps": 10.428589567080241,
+  "intervals": 626,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 75,
+  "menu_frames": 3138,
+  "entry": "c3be87c6102c4d50",
+  "fps": 11.214685153782508,
+  "intervals": 673,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 71,
+  "menu_frames": 3397,
+  "entry": "f81c4ea16e959bfb",
+  "fps": 9.998233141639242,
+  "intervals": 600,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 73,
+  "menu_frames": 3022,
+  "entry": "b6ce573380939d5e",
+  "fps": 10.881410301172396,
+  "intervals": 653,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 79,
+  "menu_frames": 3199,
+  "entry": "b50a2fc26261957d",
+  "fps": 10.081551657288362,
+  "intervals": 605,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 80,
+  "menu_frames": 3591,
+  "entry": "c3ff6f73df805898",
+  "fps": 10.972239030508332,
+  "intervals": 659,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 78,
+  "menu_frames": 3152,
+  "entry": "0039cd03239fef16",
+  "fps": 10.236802569461329,
+  "intervals": 615,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 76,
+  "menu_frames": 3566,
+  "entry": "8f6b70ea9fd197dc",
+  "fps": 9.923299269867924,
+  "intervals": 596,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 77,
+  "menu_frames": 3074,
+  "entry": "55cb6517523ae2e2",
+  "fps": 11.56140792595946,
+  "intervals": 694,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 83,
+  "menu_frames": 3449,
+  "entry": "f146db03ce5cad91",
+  "fps": 10.348171397943524,
+  "intervals": 621,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 85,
+  "menu_frames": 3129,
+  "entry": "f10f5df6f781fe7c",
+  "fps": 10.969190982273942,
+  "intervals": 659,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 84,
+  "menu_frames": 3166,
+  "entry": "8441313f764262c2",
+  "fps": 10.683255102263484,
+  "intervals": 642,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 82,
+  "menu_frames": 3516,
+  "entry": "eb939e392bedd212",
+  "fps": 10.456094153350412,
+  "intervals": 628,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 81,
+  "menu_frames": 3278,
+  "entry": "f03fc67166dec71b",
+  "fps": 10.275800807198111,
+  "intervals": 617,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 87,
+  "menu_frames": 3555,
+  "entry": "f95254030d4565ee",
+  "fps": 10.469834597139416,
+  "intervals": 629,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 90,
+  "menu_frames": 3380,
+  "entry": "5ec01408382f2d9e",
+  "fps": 10.731437005274767,
+  "intervals": 644,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 89,
+  "menu_frames": 3348,
+  "entry": "5f24e6ff53137e91",
+  "fps": 10.123097524262818,
+  "intervals": 608,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 88,
+  "menu_frames": 3233,
+  "entry": "968b148e3be1b662",
+  "fps": 10.04822458801018,
+  "intervals": 603,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 86,
+  "menu_frames": 3320,
+  "entry": "bf08a21d5f3e71d1",
+  "fps": 10.822390445346763,
+  "intervals": 650,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 91,
+  "menu_frames": 3034,
+  "entry": "9a380d8dd5cb201d",
+  "fps": 10.808744178724282,
+  "intervals": 649,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 94,
+  "menu_frames": 3259,
+  "entry": "6d1e8cbb21ebd8cc",
+  "fps": 10.039848460389262,
+  "intervals": 603,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 92,
+  "menu_frames": 3352,
+  "entry": "1f4449395dee0ed9",
+  "fps": 11.1917966417774,
+  "intervals": 672,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 95,
+  "menu_frames": 3029,
+  "entry": "16ada8b7eb8c6b68",
+  "fps": 10.548136357264156,
+  "intervals": 633,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 93,
+  "menu_frames": 3146,
+  "entry": "727de27860e11a00",
+  "fps": 10.648118494124942,
+  "intervals": 639,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 98,
+  "menu_frames": 3535,
+  "entry": "9fcee3d9b020696d",
+  "fps": 10.948065290094968,
+  "intervals": 657,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 96,
+  "menu_frames": 3362,
+  "entry": "195c9248853a4d15",
+  "fps": 9.454477468537071,
+  "intervals": 568,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 99,
+  "menu_frames": 3076,
+  "entry": "f96a8797248b5eca",
+  "fps": 11.428135105743186,
+  "intervals": 686,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 97,
+  "menu_frames": 3206,
+  "entry": "40123d079a087954",
+  "fps": 10.267239827252881,
+  "intervals": 617,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 100,
+  "menu_frames": 3133,
+  "entry": "20c2e6037719dd8d",
+  "fps": 10.500208675277662,
+  "intervals": 631,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 103,
+  "menu_frames": 3102,
+  "entry": "39ca28e09feac3e8",
+  "fps": 10.3866089533448,
+  "intervals": 624,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 104,
+  "menu_frames": 3514,
+  "entry": "51be86d6c8e2d533",
+  "fps": 10.042638950880614,
+  "intervals": 603,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 105,
+  "menu_frames": 3458,
+  "entry": "02248fd91a0741fb",
+  "fps": 9.773450609120315,
+  "intervals": 587,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 101,
+  "menu_frames": 3125,
+  "entry": "ab1e1a37836fa903",
+  "fps": 11.27506862346382,
+  "intervals": 677,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 102,
+  "menu_frames": 3347,
+  "entry": "90eda23868394442",
+  "fps": 10.197846020381164,
+  "intervals": 613,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 109,
+  "menu_frames": 3446,
+  "entry": "35c6f2e7e8e3d63f",
+  "fps": 10.14793841092438,
+  "intervals": 610,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 106,
+  "menu_frames": 3201,
+  "entry": "75dc576965163ec3",
+  "fps": 10.214860860634724,
+  "intervals": 613,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 108,
+  "menu_frames": 3584,
+  "entry": "dd4a960c11dbe7c7",
+  "fps": 10.278658055211796,
+  "intervals": 617,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 110,
+  "menu_frames": 3390,
+  "entry": "047b6b09ed72c830",
+  "fps": 10.561862768748412,
+  "intervals": 634,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 107,
+  "menu_frames": 3531,
+  "entry": "d426aa3d367304b3",
+  "fps": 9.54904377379228,
+  "intervals": 574,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 112,
+  "menu_frames": 3092,
+  "entry": "823af08bd2a83b81",
+  "fps": 10.858706950789879,
+  "intervals": 652,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 115,
+  "menu_frames": 3409,
+  "entry": "65ca6bb143773fd9",
+  "fps": 10.80874377640771,
+  "intervals": 649,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 111,
+  "menu_frames": 3281,
+  "entry": "e44d1c70d89d09f9",
+  "fps": 9.973248855615838,
+  "intervals": 599,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 114,
+  "menu_frames": 3117,
+  "entry": "63ca732a18281dc0",
+  "fps": 9.659586207476693,
+  "intervals": 580,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 113,
+  "menu_frames": 3526,
+  "entry": "3fa930c0755a410c",
+  "fps": 10.428589372942946,
+  "intervals": 626,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 120,
+  "menu_frames": 3453,
+  "entry": "88383bcd3ec3c115",
+  "fps": 9.66495852361292,
+  "intervals": 580,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 118,
+  "menu_frames": 3306,
+  "entry": "e08a1b757f706c77",
+  "fps": 10.395271292791108,
+  "intervals": 624,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 116,
+  "menu_frames": 3540,
+  "entry": "d97ca0dbf479a64b",
+  "fps": 10.405947351103682,
+  "intervals": 617,
+  "end": {
+   "mode": 0,
+   "pc": 41158,
+   "at": 62.630504714984724
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 117,
+  "menu_frames": 3553,
+  "entry": "b929d2050aa4e8e6",
+  "fps": 9.64094920262582,
+  "intervals": 557,
+  "end": {
+   "mode": 0,
+   "pc": 41160,
+   "at": 61.11188265547716
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 119,
+  "menu_frames": 3221,
+  "entry": "117a086574f4a56f",
+  "fps": 10.145385058070074,
+  "intervals": 609,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 123,
+  "menu_frames": 3419,
+  "entry": "48f91e802ea7033c",
+  "fps": 10.309110587284003,
+  "intervals": 619,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 124,
+  "menu_frames": 3513,
+  "entry": "592b2e1820bd57d2",
+  "fps": 10.542272729531389,
+  "intervals": 633,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 121,
+  "menu_frames": 3500,
+  "entry": "93d3737229156f70",
+  "fps": 10.003769386330486,
+  "intervals": 601,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 122,
+  "menu_frames": 3107,
+  "entry": "e11e48b9b72c8095",
+  "fps": 9.568335511264447,
+  "intervals": 575,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 125,
+  "menu_frames": 3497,
+  "entry": "19b49366e2f85dcf",
+  "fps": 10.708817521713568,
+  "intervals": 643,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 128,
+  "menu_frames": 3597,
+  "entry": "d27b75a2d13c166e",
+  "fps": 10.009329752882948,
+  "intervals": 601,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 129,
+  "menu_frames": 3376,
+  "entry": "283c1f69c13c1263",
+  "fps": 11.164693259033855,
+  "intervals": 670,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 127,
+  "menu_frames": 3340,
+  "entry": "bce163533306b4a7",
+  "fps": 11.57484877457759,
+  "intervals": 695,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 126,
+  "menu_frames": 3487,
+  "entry": "bde08799139c50c2",
+  "fps": 10.259146826164333,
+  "intervals": 616,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 130,
+  "menu_frames": 3541,
+  "entry": "06d45fa66ea04b6c",
+  "fps": 11.231348771580924,
+  "intervals": 674,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 132,
+  "menu_frames": 3171,
+  "entry": "6f1e2b5e0a18001b",
+  "fps": 10.478566833376153,
+  "intervals": 629,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 135,
+  "menu_frames": 3318,
+  "entry": "2e7c33ea8d638969",
+  "fps": 9.967709793240124,
+  "intervals": 599,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 131,
+  "menu_frames": 3571,
+  "entry": "74d1c1d373b50f6e",
+  "fps": 10.345294604720447,
+  "intervals": 621,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 133,
+  "menu_frames": 3067,
+  "entry": "1f5c7ec911a8f67f",
+  "fps": 9.870607363411906,
+  "intervals": 593,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 134,
+  "menu_frames": 3159,
+  "entry": "06e1b10d7bf09575",
+  "fps": 10.367084290273084,
+  "intervals": 623,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 139,
+  "menu_frames": 3301,
+  "entry": "53b75428dad743db",
+  "fps": 9.948241883307688,
+  "intervals": 597,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 140,
+  "menu_frames": 3143,
+  "entry": "c3e59bd087a4711e",
+  "fps": 10.11487910078353,
+  "intervals": 607,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 137,
+  "menu_frames": 3130,
+  "entry": "5f009f8370e61006",
+  "fps": 10.831419135929645,
+  "intervals": 650,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 136,
+  "menu_frames": 3546,
+  "entry": "c0fac87a19efce3c",
+  "fps": 10.748100327050809,
+  "intervals": 645,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 138,
+  "menu_frames": 3223,
+  "entry": "c08426f813dc54f4",
+  "fps": 10.445249141964123,
+  "intervals": 627,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 142,
+  "menu_frames": 3288,
+  "entry": "34cc50bd6d2dbba5",
+  "fps": 10.698109461553988,
+  "intervals": 642,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 144,
+  "menu_frames": 3089,
+  "entry": "b521759687f02ccc",
+  "fps": 10.08979776749105,
+  "intervals": 606,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 141,
+  "menu_frames": 3225,
+  "entry": "894533ffe71791f8",
+  "fps": 9.792821788178326,
+  "intervals": 588,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 145,
+  "menu_frames": 3465,
+  "entry": "992d57a28b236a3f",
+  "fps": 11.438434634795048,
+  "intervals": 687,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 143,
+  "menu_frames": 3354,
+  "entry": "1a47cad457a438e2",
+  "fps": 11.558194638568258,
+  "intervals": 694,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 150,
+  "menu_frames": 3078,
+  "entry": "1ff2ab0b2a7df5af",
+  "fps": 10.270092315725375,
+  "intervals": 617,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 149,
+  "menu_frames": 3334,
+  "entry": "4d95d696fda0712b",
+  "fps": 10.728453464435002,
+  "intervals": 644,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 147,
+  "menu_frames": 3268,
+  "entry": "ebe57b40aa595cce",
+  "fps": 9.348347552242565,
+  "intervals": 561,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 146,
+  "menu_frames": 3367,
+  "entry": "c78314c763ef8506",
+  "fps": 9.697421193932964,
+  "intervals": 424,
+  "end": {
+   "mode": 0,
+   "pc": 41158,
+   "at": 47.060456007676954
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 148,
+  "menu_frames": 3524,
+  "entry": "5ef6cb8e46bbc52d",
+  "fps": 10.181533798183013,
+  "intervals": 611,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 151,
+  "menu_frames": 3293,
+  "entry": "179f9861a88810ae",
+  "fps": 9.239100972478465,
+  "intervals": 457,
+  "end": {
+   "mode": 0,
+   "pc": 41158,
+   "at": 52.801178362054394
+  }
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 152,
+  "menu_frames": 3405,
+  "entry": "67d7750cf056f43a",
+  "fps": 9.681622515628321,
+  "intervals": 581,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 155,
+  "menu_frames": 3557,
+  "entry": "862287476314113c",
+  "fps": 9.390504940270114,
+  "intervals": 564,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 153,
+  "menu_frames": 3260,
+  "entry": "b968309d51107093",
+  "fps": 9.94547617803015,
+  "intervals": 597,
+  "end": null
+ },
+ {
+  "rom": "G:/tmp/claude/atari/fractalus/build/s2_m8.car",
+  "trial": 154,
+  "menu_frames": 3472,
+  "entry": "5661d79b06c184fc",
+  "fps": 10.345294219547064,
+  "intervals": 621,
+  "end": null
+ }
+]

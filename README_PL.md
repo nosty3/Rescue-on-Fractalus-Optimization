@@ -1,78 +1,43 @@
-# Rescue on Fractalus! — Atari XL/XE optimization
+# Rescue on Fractalus! — v14
 
-Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem agentów **Opus** znalazł dalsze optymalizacje uzyskując wynik około 39%. Jego prace znów poprawiła **Astra** uzyskując obecny wynik. Wydanie **v11** optymalizuje Rescue on Fractalus! na Atari XL/XE, zachowując szczegółowość terenu i rozdzielczość obrazu. Obecny wynik zbiorczy to **+40,04% PAL i +43,13% NTSC**.
+Pierwszy etap optymalizacji przygotował **nosty** z **ChatGPT-6 Astra** (+18%). Następnie **Solo** z zespołem agentów **Opus** uzyskał około 39%, a **Astra** rozwinęła te prace w v11. **Nowe optymalizacje v14 są autorstwa Solo i jego zespołu Opus/Fable**: to wydanie up74, nadal mieszczące się w cartridgu 128 KB.
 
 [English](README.md) · [Polski](README_PL.md)
 
-## Pobieranie
+[CAR](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.car) · [ROM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.rom)
 
-Katalog **[optimized version](optimized%20version/)** zawiera wyłącznie aktualne pliki gry i informację o wersji:
+CAR i ROM wymagają standardowych 64 KB RAM. Uruchamiaj od zimnego startu. **v14 nie ma jeszcze XEX-a**; starszy XEX nie zawiera tych zmian.
 
-- **[CAR](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.car)** / **[ROM](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20128KB.rom)** — XEGS 128 KB (type 14), Atari XL/XE 64 KB RAM, PAL/NTSC.
-- **[XEX](optimized%20version/Rescue%20on%20Fractalus%21%20-%20optimized%20320KB-1MB.xex)** — 320 KB Rambo, 576 KB lub 1088 KB RAM; wyłącz BASIC. Zawiera poprawkę ukończenia poziomu.
+| System | Oryginał FPS | v11 FPS | v14 FPS | Zysk / oryginał | Zysk / v11 |
+|---|---:|---:|---:|---:|---:|
+| PAL | 6.2717 | 8.7829 | **10.9172** | **+74.07%** | **+24.30%** |
+| NTSC | 5.5915 | 8.0031 | **9.8961** | **+76.98%** | **+23.65%** |
 
-Uruchom od zimnego startu; stary zapis emulatora może zawierać poprzedni kod.
+Wynik 50/50: połowa średniej lotu prosto i połowa średniej lotu z nurkowaniem. Solo dostarczył 620 lotów (155 na scenariusz i system), do 60 s, zimny start, 170 ramek rozgrzewki. Niezależny audyt odtworzył dokładnie 50 wybranych lotów. Referencje oryginału i v11 są historyczne. Nie przenoszono stanów między wersjami; szybsze VBI może zmieniać losowaną planetę. Naturalne końce lotu pozostają w danych.
 
-## Zmierzone FPS
+![PAL FPS](docs/benchmarks/charts/V14_PAL.png)
 
-Poniższe wyniki dotyczą **kartridża**. XEX przeszedł testy działania, ale nie osobną pełną serię FPS. Procenty we wstępie opisują w przybliżeniu kolejne etapy; dokładne wyniki zależą od standardu i scenariusza.
+![NTSC FPS](docs/benchmarks/charts/V14_NTSC.png)
 
-### PAL
+## Nowe optymalizacje Solo
 
-| Scenariusz | Oryginał — FPS | v11 — FPS | Przyrost FPS | Zysk |
-|---|---:|---:|---:|---:|
-| Lot prosto | 6.4421 | 9.0779 | +2.6358 | +40.91% |
-| Okresowe nurkowanie | 6.1013 | 8.4879 | +2.3866 | +39.12% |
-| **Wynik zbiorczy 50/50** | **6.2717** | **8.7829** | **+2.5112** | **+40.04%** |
+- Ściślejsze odrzucanie niewidocznych poddrzew i nowa rasteryzacja gór.
+- Szybsze wypełnianie kolumn bez zmiany obrazu.
+- Tablicowe mnożenie, interpolacja i kolejka dźwięku w VBI.
+- Szybsza geometria siatki, jej przygotowanie i etap końcowy.
+- Szybsze rzutowanie i pętla krawędzi.
+- Bezpieczna część rzutowania wykonywana podczas oczekiwania na poprzedni obraz.
 
-![PAL FPS comparison](docs/benchmarks/charts/V11_COMPARISON_PAL.png)
+[Details / Szczegóły](docs/OPTIMIZATIONS_PL.md) · [Method / Metodyka](docs/benchmarks/METHOD_PL.md) · [Audit / Audyt](docs/benchmarks/UP74_INTEGRATION_AUDIT_PL.md) · [Build](docs/REBUILD_PL.md)
 
-![PAL FPS distribution](docs/benchmarks/charts/V11_DISTRIBUTION_PAL.png)
+## Katalogi
 
-### NTSC
-
-| Scenariusz | Oryginał — FPS | v11 — FPS | Przyrost FPS | Zysk |
-|---|---:|---:|---:|---:|
-| Lot prosto | 5.8043 | 8.3120 | +2.5077 | +43.20% |
-| Okresowe nurkowanie | 5.3787 | 7.6942 | +2.3155 | +43.05% |
-| **Wynik zbiorczy 50/50** | **5.5915** | **8.0031** | **+2.4116** | **+43.13%** |
-
-![NTSC FPS comparison](docs/benchmarks/charts/V11_COMPARISON_NTSC.png)
-
-![NTSC FPS distribution](docs/benchmarks/charts/V11_DISTRIBUTION_NTSC.png)
-
-Każdy scenariusz: **155 prób do 60 sekund**, nowy proces emulatora i zimny start. Nurkowanie: 1 s joystick w górę, 3 s neutralnie, cyklicznie. Zachowano naturalnie krótsze loty i wszystkie wyniki. FPS oznacza gotowe obrazy terenu, nie odświeżanie ekranu. Wynik zbiorczy jest średnią 50/50 dwóch scenariuszy; zysk to iloraz średnich FPS, nie średnia procentów. Oryginał w locie prosto pochodzi z historycznej serii z osobno losowanymi startami; nurkowanie ma harmonogram wspólny z v11.
-
-[Metodyka i dane](docs/benchmarks/METHOD_PL.md) · [Raport v11](docs/benchmarks/V11_REPORT_PL.md)
-
-## Co zoptymalizowano
-
-- Przebudowano rasteryzację terenu i wyspecjalizowano typowe głębokości oraz szerokości profilu gór.
-- Przyspieszono dokładne dzielenie, interpolację i przetwarzanie geometrii, zachowując ścieżki zapasowe.
-- Ograniczono odwołania plottera do pamięci i koszty przekraczania granic stron.
-- Skrócono rysowanie/kasowanie PMG i aktualizowano tylko zmienione fragmenty wskaźników.
-- Rozwinięto pętle miksera oraz zabezpieczono przełączanie banków i wznowienie po Esc.
-- Solo/Opus: rozpoczęto kasowanie po przejściu wiązki obrazu przez teren, z zabezpieczeniem buforów.
-- Solo/Opus: pominięto pewnie zasłonięte podziały terenu i kasowano tylko potrzebne fragmenty kolumn.
-- Solo/Opus: skrócono obsługę przerwania dla milczących kanałów dźwięku i wskaźnika kokpitu.
-- Zespół Solo, w tym Fable: włączono dzielenie bezpośrednio do projekcji i usprawniono pętlę krawędzi.
-- Astra: zastosowano HD=152 dla wyczyszczonych kolumn i jednorazowe odtwarzanie Y na wspólnych wyjściach plottera.
-- Astra: usunięto przeliczanie wysokości na wiersze z kasowania na żądanie i wypełniania.
-- Astra: zachowano próg zasłaniania w A, ograniczając powtarzane odczyty.
-- Dostosowano loader XEX Solo do v11 i poprawiono wskaźniki melodii blokujące ukończenie poziomu.
-
-[Pełny opis techniczny](docs/OPTIMIZATIONS_PL.md) · [Odtwarzanie ze źródeł](docs/REBUILD_PL.md)
-
-## Katalogi repozytorium
-
-- **[optimized version/](optimized%20version/)** — Aktualny v11: CAR, ROM, XEX i informacja o wersji.
-- **[original/](original/)** — Oryginalny ROM do rekonstrukcji i porównań.
-- **[dist/](dist/)** — Aktualny IPS i manifest sum kontrolnych.
-- **[src/](src/)** — Źródła MADS; najnowsze banki znajdują się w src/v11.
-- **[scripts/](scripts/)** — Narzędzia budowania, pomiarów, analizy i wykresów.
-- **[analysis/](analysis/)** — Materiały inżynierii wstecznej.
-- **[results/](results/)** — Wybrane dane pomiarowe i walidacja; najnowsze w results/v11.
-- **[docs/](docs/)** — Szczegółowy opis zmian, metodyka i badania.
-- **[arc/up38/](arc/up38/)** — Archiwum pracy Solo/Opusa, źródła i historyczne pliki up38.
-
-Starsze nasze wydania pozostają w historii Git. Archiwalny XEX up38 ma znany błąd ukończenia poziomu — używaj v11. Dokumentacja jest po polsku (_PL) i angielsku (bez sufiksu). Nie publikujemy zrzutów pamięci, zapisów stanu ani screenów testowych. Testy emulatora nie obejmują wszystkich sytuacji gry ani wszystkich fizycznych rozszerzeń pamięci.
+- optimized version/ — aktualne CAR, ROM i informacja o wydaniu.
+- original/ — oryginalny ROM.
+- dist/ — łatka IPS od oryginału oraz sumy kontrolne.
+- src/ — źródła; nowe prace Solo w src/up74.
+- scripts/ — budowanie, pomiary i wykresy.
+- results/ — wyniki; bieżące w results/v14.
+- docs/ — opis zmian, metodyka i badania.
+- analysis/ — inżynieria wsteczna oryginału.
+- arc/ — historyczne materiały up38.

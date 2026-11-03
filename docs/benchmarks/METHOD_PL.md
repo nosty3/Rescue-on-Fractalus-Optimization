@@ -1,3 +1,11 @@
+# Bieżące wydanie: v14
+
+Wynik 50/50: połowa średniej lotu prosto i połowa średniej lotu z nurkowaniem. Solo dostarczył 620 lotów (155 na scenariusz i system), do 60 s, zimny start, 170 ramek rozgrzewki. Niezależny audyt odtworzył dokładnie 50 wybranych lotów. Referencje oryginału i v11 są historyczne. Nie przenoszono stanów między wersjami; szybsze VBI może zmieniać losowaną planetę. Naturalne końce lotu pozostają w danych.
+
+Źródło pomiarów: `results/v14/full155_up74_*.json`. Joystick: 1 s w górę, 3 s neutralnie. Prezentacje $B516; czas Atari, nie czas komputera. Cztery izolowane emulatory. Zyski liczone z niezaokrąglonych średnich. Poniżej zachowano szczegóły wcześniejszej metodyki.
+
+---
+
 # Metodyka pomiaru FPS — v11
 
 [English](METHOD.md) · [Polski](METHOD_PL.md)

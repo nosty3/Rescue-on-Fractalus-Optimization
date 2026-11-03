@@ -1,3 +1,20 @@
+# v14 — Solo up74
+
+The first optimization stage was prepared by **nosty** with **ChatGPT-6 Astra** (+18%). Then **Solo**, working with **Opus** agents, achieved about 39%, and **Astra** developed this into v11. **The new v14 optimizations are by Solo and his Opus/Fable team**: this is the up74 release, still fitting a 128 KB cartridge.
+
+- Tighter hidden-subtree rejection and rewritten mountain rasterization.
+- Faster column fill with identical image output.
+- Table-based multiplication, interpolation and sound queue in VBI.
+- Faster grid geometry, preparation and postpass.
+- Faster projection and edge loop.
+- Safe projection work performed while waiting for the previous image.
+
+[Audyt / Audit](benchmarks/UP74_INTEGRATION_AUDIT.md).
+
+The inherited v11 description is retained below. The new Solo implementations described above and in the audit supersede the corresponding base routines.
+
+---
+
 # Rescue on Fractalus! optimizations — complete description of the current build
 
 [English](OPTIMIZATIONS.md) · [Polski](OPTIMIZATIONS_PL.md)

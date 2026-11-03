@@ -1,3 +1,11 @@
+# Current release: v14
+
+50/50 result: half the straight-flight mean plus half the descent-flight mean. Solo supplied 620 flights (155 per scenario and system), up to 60 s, cold boot, 170 warmup frames. An independent audit exactly reproduced 50 selected flights. Original and v11 references are historical. No cross-version state transfers; faster VBI can change the randomized planet. Natural early ends remain in the data.
+
+Measurement source: `results/v14/full155_up74_*.json`. Joystick: 1 s up, 3 s neutral. Presentations at $B516; Atari time, not host time. Four isolated emulators. Gains use unrounded means. Earlier methodological details are retained below.
+
+---
+
 # FPS measurement method — v11
 
 [English](METHOD.md) · [Polski](METHOD_PL.md)

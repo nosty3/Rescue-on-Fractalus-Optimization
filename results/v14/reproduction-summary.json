@@ -1,0 +1,580 @@
+{
+  "recomputed_reported": {
+    "pal-straight": {
+      "n": 155,
+      "fps": 11.327717768745279,
+      "early": 15
+    },
+    "pal-steering": {
+      "n": 155,
+      "fps": 10.506743798861773,
+      "early": 8
+    },
+    "ntsc-straight": {
+      "n": 155,
+      "fps": 10.3604727927813,
+      "early": 8
+    },
+    "ntsc-steering": {
+      "n": 155,
+      "fps": 9.431751305704136,
+      "early": 9
+    }
+  },
+  "native_count": 50,
+  "all_entry_equal": true,
+  "all_fps_equal": true,
+  "all_intervals_equal": true,
+  "rows": [
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 2,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.394840953775166,
+      "reported": 11.394840953775166
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 3,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 12.227797393573459,
+      "reported": 12.227797393573459
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 4,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.261568277525054,
+      "reported": 11.261568277525054
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 14,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.515302991931428,
+      "reported": 11.515302991931428
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 24,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.720930106111242,
+      "reported": 11.720930106111242
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 34,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.408475606313678,
+      "reported": 10.408475606313678
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 47,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 12.157098937368112,
+      "reported": 12.157098937368112
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 63,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 12.502648387124754,
+      "reported": 12.502648387124754
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 76,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 12.240366853252164,
+      "reported": 12.240366853252164
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 93,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.04424377778867,
+      "reported": 11.04424377778867
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 112,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.811771708287138,
+      "reported": 10.811771708287138
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 132,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.85812134465362,
+      "reported": 10.85812134465362
+    },
+    {
+      "video": "pal",
+      "mode": "straight",
+      "trial": 154,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.730436084278681,
+      "reported": 10.730436084278681
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 2,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.315562878548018,
+      "reported": 9.315562878548018
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 3,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.934085353497371,
+      "reported": 10.934085353497371
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 4,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.6291629948626,
+      "reported": 8.6291629948626
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 14,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.651163714717198,
+      "reported": 10.651163714717198
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 34,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.628521739712024,
+      "reported": 10.628521739712024
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 47,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.774853441749546,
+      "reported": 10.774853441749546
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 63,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.065355756000105,
+      "reported": 11.065355756000105
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 76,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.95438382502116,
+      "reported": 10.95438382502116
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 93,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.468097133075663,
+      "reported": 10.468097133075663
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 112,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.84903857790019,
+      "reported": 9.84903857790019
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 132,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.737960130881657,
+      "reported": 10.737960130881657
+    },
+    {
+      "video": "pal",
+      "mode": "steering",
+      "trial": 154,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.285029768989578,
+      "reported": 10.285029768989578
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 2,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.450287116788472,
+      "reported": 10.450287116788472
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 3,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.456093861538685,
+      "reported": 10.456093861538685
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 4,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.192528989630798,
+      "reported": 10.192528989630798
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 6,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.799111356412183,
+      "reported": 9.799111356412183
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 14,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.075948150738,
+      "reported": 10.075948150738
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 34,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 11.238636336256636,
+      "reported": 11.238636336256636
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 47,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.681445043502215,
+      "reported": 10.681445043502215
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 63,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.892748633174405,
+      "reported": 9.892748633174405
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 76,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.923299269867924,
+      "reported": 9.923299269867924
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 93,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.648118494124942,
+      "reported": 10.648118494124942
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 112,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.858706950789879,
+      "reported": 10.858706950789879
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 132,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.478566833376153,
+      "reported": 10.478566833376153
+    },
+    {
+      "video": "ntsc",
+      "mode": "straight",
+      "trial": 154,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.345294219547064,
+      "reported": 10.345294219547064
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 2,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.566782758743207,
+      "reported": 8.566782758743207
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 3,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.543004905826837,
+      "reported": 9.543004905826837
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 4,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.902712502445732,
+      "reported": 8.902712502445732
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 14,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.504413177362242,
+      "reported": 9.504413177362242
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 34,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.125910776196697,
+      "reported": 10.125910776196697
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 47,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.468491834208898,
+      "reported": 9.468491834208898
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 63,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.974259153910623,
+      "reported": 8.974259153910623
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 76,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 9.926057458765786,
+      "reported": 9.926057458765786
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 93,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.067553577824322,
+      "reported": 10.067553577824322
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 112,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 10.256296080485951,
+      "reported": 10.256296080485951
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 132,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.712407834505191,
+      "reported": 8.712407834505191
+    },
+    {
+      "video": "ntsc",
+      "mode": "steering",
+      "trial": 154,
+      "entry_equal": true,
+      "fps_equal": true,
+      "intervals_equal": true,
+      "fps_delta": 0.0,
+      "native": 8.995908184464133,
+      "reported": 8.995908184464133
+    }
+  ]
+}
